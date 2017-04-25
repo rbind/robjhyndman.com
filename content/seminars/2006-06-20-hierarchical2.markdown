@@ -6,7 +6,7 @@ link: http://robjhyndman.com/seminars/hierarchical2/
 slug: hierarchical2
 title: Optimal combination forecasts for hierarchical time series
 wordpress_id: 226
-file: Hierarchical%20ISF2006.pdf
+file: "Hierarchical ISF2006.pdf"
 tags:
 - forecasting
 - hierarchical time series

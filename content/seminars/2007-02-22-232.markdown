@@ -2,10 +2,9 @@
 author: robjhyndman
 comments: false
 date: 2007-02-22 08:14:01+00:00
-slug: '232'
-title: 'Stochastic population forecasts using functional data models:'
-wordpress_id: 232
-slides: Monash.pdf
+slug: 'stochastic-population'
+title: 'Stochastic population forecasts using functional data models'
+file: Monash.pdf
 tags:
 - demography
 - functional data

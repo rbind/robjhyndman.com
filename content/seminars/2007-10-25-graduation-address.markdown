@@ -10,12 +10,9 @@ wordpress_id: 221
 
 Mr Chancellor, Madam Deputy Vice-Chancellor, colleagues, guests, and especially graduates.
 
-
-
 I would like to congratulate all of you who are graduating tonight.
 
-It is a great achievement to have completed a university degree, andyoushould all feel very, very proud of your accomplishment. This is one of the six great milestones in your life: the others being birth, death, marriage, parenthood and the day you finally pay off your HECS debt.
-
+It is a great achievement to have completed a university degree, and you should all feel very, very proud of your accomplishment. This is one of the six great milestones in your life: the others being birth, death, marriage, parenthood and the day you finally pay off your HECS debt.
 
 For the families and friends of graduates, it is also a time to celebrate and bask in some reflected glory. You have nurtured, encouraged and supported these graduands to get to this point, and you have every right to feel very proud today, too. Every one of you has had to make some sacrifices in order to be here tonight. As Martin Luther King Jr said
 
@@ -23,16 +20,9 @@ For the families and friends of graduates, it is also a time to celebrate and ba
 
 If a university degree was easy, it would not be such a valuable achievement.
 
-
 This is a time for you to reflect on the past and contemplate what the future holds. That's where I come in: the future is my business. I am a forecaster-I build mathematical models to help predict the future, and I train other people to do the same.
 
-
-
-
 You might not realise that forecasting has been part of academic discourse for several thousand years. In the days of the Babylonian empire more than 2500 years ago, the students in the court of Babylon were taught to forecast using sheep's livers. When the king went to war, one of his advisers would carry a rotting sheep's liver. If a forecast was required, such as whether the next battle would be won or lost, the liver carrier would investigate the distribution of maggots in the liver. Certain patterns were omens of victory. Other patterns were omens of defeat.
-
-
-
 
 We don't use sheep livers at Monash, although some of our software still has bugs. But we still do forecasting, and I'd like to do a spot of forecasting for you tonight. I have two predictions to make.
 
@@ -42,7 +32,6 @@ We don't use sheep livers at Monash, although some of our software still has bug
 I guess the maggots aren't in your favour tonight.
 
 Let me explain what I mean.
-
 
 **1. Most of the detail of what you've learned here at Monash will be irrelevant within a few years.** You may be proud of your mastery of the theory in your discipline and the techniques required in applying it, but the reality is that such details will only be valuable to you in the short-term.
 
@@ -69,7 +58,6 @@ I hope you can look back on your experience of university recognizing the privil
 I hope Monash has helped you grow to see the world more clearly and yourself more honestly.
 
 Once again, I congratulate you and I wish you well for the future, whatever shape it takes.
-
 
 **Citations**
 
