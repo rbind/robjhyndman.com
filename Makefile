@@ -2,5 +2,9 @@ all:
 	Rscript -e "blogdown::serve_site()"
 
 clean:
-	rm -r blogdown
-	rm -r public
+	rm -rf blogdown
+	rm -rf public
+	rm -rf content/hyndsight/*.html
+	rm -rf content/seminars/*.html
+	rm -rf static/hyndsight
+

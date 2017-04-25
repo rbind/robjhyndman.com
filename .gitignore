@@ -2,6 +2,7 @@
 public
 blogdown
 content/hyndsight/*.html
+content/seminars/*.html
 *.sublime-workspace
 static/hyndsight/*
 
