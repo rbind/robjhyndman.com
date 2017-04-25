@@ -1,0 +1,51 @@
+<footer class="whatisthis">
+  <hr class='separator'/>
+  <span style="font-family: Carlito, sans; font-size: 0.9em; line-height: 1.05em;">
+  <div class="row">
+    <div class="column small-12 medium-4">
+      <figure class='image-left'>
+	<img src="/img/rjh.png" alt="Portrait of the author" class='avatar' style="max-width: 50%;">
+  </figure>
+  <p>
+Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=http://monash.edu>Monash University</a>, Australia, and Editor-​​in-​​Chief of the <a href=http://www.forecasters.org/ijf>Inter­na­tional Jour­nal of Fore­cast­ing</a>.  </p>
+    </div>
+    <div class="column small-12 medium-4">
+      {{ if isset .Site.Params "education" }}
+      <h3>Education</h3>
+      <ul class="ul-edu fa-ul">
+	{{ range $.Site.Params.education }}
+	<li><i class="fa-li fa fa-graduation-cap"></i>
+          {{ .course }}, {{ .year }} ({{ .institution }})
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      <h3 id="contact">Contact</h3>
+      <ul class="fa-ul">
+	{{ range $.Site.Params.social }}
+	<li><i class="fa-li {{ .icon_pack }} {{ .icon_pack}}-{{ .icon }}" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="{{ .link }}">{{ .text }}</a>{{ if .site}} on {{ .site }}{{ end }}</li>
+	{{ end }}
+      </ul>
+    </div>
+    <div class="column small-12 medium-4">
+      <h3>Subscribe</h3>
+      <p><i><i class="fa fa-rss-square" style="color:#03396c;"></i> To receive updates from this site, you can subscribe to using an <a href="http://feeds.feedburner.com/ProfessorRobJHyndman">RSS feed reader</a> or <a href="https://feedburner.google.com/fb/a/mailverify?uri=ProfessorRobJHyndman">by email</a>.</i></p>
+      <h3>Search</h3>
+      <a id="searchsite">
+	<form method="get" action="https://duckduckgo.com/">
+	  <label for="search-field" class="show-for-sr">Search the site</label>
+	  <input type="search" name="q" maxlength="255" placeholder="Search the site" id="search-field">
+	  <input type="hidden" name="sites" value="{{ .Site.BaseURL }}"/>
+	  <input type="hidden" name="k7" value="#faf8f8"/>
+	  <input type="hidden" name="kj" value="#b33"/>
+	  <input type="hidden" name="ky" value="#fafafa"/>
+	  <input type="hidden" name="kx" value="b"/>
+	  <input type="hidden" name="ko" value="-1"/>
+	  <input type="hidden" name="k1" value="-1"/>
+	  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+	</form>
+      </a>
+    </div>
+  </div>
+  </span>
+</footer>

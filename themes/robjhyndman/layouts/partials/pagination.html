@@ -1,0 +1,15 @@
+<div class="row">
+<div class='sans'>
+  <div class="column small-12">
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      {{ if .Paginator.HasNext }}
+      <li class="arrow" aria-disabled="true"><a href="{{ .Paginator.Next.URL }}">&laquo; <em>Older<span class="show-for-sr"> blog entries</span></em></a></li>
+      {{ end }}
+      <li><span>Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span></li>      
+      {{ if .Paginator.HasPrev }}
+      <li class="arrow" aria-disabled="true"><a href="{{ .Paginator.Prev.URL }}"><em>Newer<span class="show-for-sr"> blog entries</span></em>:&nbsp;&raquo;</a></li>
+      {{ end }}
+    </ul>    
+  </div>
+</div>
+</div>

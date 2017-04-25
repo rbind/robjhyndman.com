@@ -1,0 +1,54 @@
+{{ define "top-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "title-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "whatisthis" }}
+{{ partial "whatisthis.html" . }}
+{{ end }}
+{{ define "main" }}
+
+<div class="wrapper">
+<div class="units-row" style='margin-bottom: 0px;'>   
+<div class="unit-20">&nbsp;</div>
+<div class="unit-60"><h1>{{ .Title }}</h1></div>
+</div>
+<div class="units-row">   
+  <div class="unit-20 dateblock" style='text-align: right;'><h3 style='padding-top: .8ex;'>Hyndsight</h3>
+      {{ partial "post-metadata" . }}
+    </div>
+<div class="unit-60">
+  
+  {{ .Content }}
+
+      <meta itemprop="wordCount" content="{{ .WordCount }}">
+      <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
+      <meta itemprop="url" content="{{ .Permalink }}">
+
+<div class='sans'>
+<hr class='separator'>
+<div style="padding-bottom: 1em" >
+{{ partial "share2.html" . }}
+</div>
+
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      {{ if .PrevInSection }}
+      <li class="arrow" aria-disabled="true"><a href="{{.PrevInSection.RelPermalink}}">&laquo; <em>Previous<span class="show-for-sr"> page</span></em>: {{ .PrevInSection.Title }}</a></li>
+      {{ end }}
+      {{ if .NextInSection }}
+      <li class="arrow" aria-disabled="true"><a href="{{.NextInSection.RelPermalink}}"><em>Next<span class="show-for-sr"> page</span></em>: {{ .NextInSection.Title }}&nbsp;&raquo;</a></li>
+      {{ end }}
+    </ul>
+    <a href="/hyndsight/">All Hyndsight posts by date</a> &middot; <a href="/categories/">All Hyndsight posts by subject</a>
+</div>
+
+<br><br>
+
+<span style='font-family: Carlito'>
+{{ template "_internal/disqus.html" . }}
+</span>
+
+  </div>
+  </div></div>
+{{ end }}

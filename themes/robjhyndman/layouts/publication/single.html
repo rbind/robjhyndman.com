@@ -1,0 +1,56 @@
+{{ define "top-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "title-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "whatisthis" }}
+{{ partial "whatisthis.html" . }}
+{{ end }}
+{{ define "main" }}
+<div class="wrapper">
+<div class="units-row" style='margin-bottom: 0px;'>   
+<div class="unit-20">&nbsp;</div>
+<div class="unit-60"><h1>{{ .Title }}</h1></div>
+</div>
+<div class="units-row">   
+  <div class="unit-20 dateblock" style='text-align: right;'>
+                  {{ if .Params.author }}
+                  {{ .Params.author | safeHTML }}
+                  {{ end }}
+                  {{ if .Params.authors }}
+                  {{ .Params.authors | safeHTML }}
+                  {{ end }}
+                  <br> 
+                  {{ .Date.Format "(2006)" | safeHTML }}
+                  {{ if .Params.citation }} 
+                  {{.Params.citation | safeHTML }}
+                  {{ end }} </p>
+                  {{ partial "pub-icon.html" . }}
+    </div>
+    <div class="unit-60">
+    <article class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+      {{ if .Params.image }}
+      <img src="{{ $.Site.BaseURL }}img/{{ .Params.image }}" class="pub-banner" itemprop="image">
+      {{end}}
+      <div class="pub-info">
+	{{ if .Params.publication }}
+	<div class="row">
+	  <div class="column small-2 medium-1 pub-row-heading">Cite</div>
+	  <div class="column small-10 medium-11">{{ .Params.publication | markdownify }}</div>
+	</div>
+	{{ end }}
+      </div>
+      <div class="pub-content">{{ .Content }}</div>
+  
+  </article>
+
+          <hr>
+        {{ if .PrevInSection }}
+        <span style="font-family: Carlito;">
+        <a href="{{.PrevInSection.RelPermalink}}"> &laquo;&nbsp;{{.PrevInSection.Title}}</a> {{ end }}{{ if .NextInSection }} | <a href="{{.NextInSection.RelPermalink}}">{{.NextInSection.Title}}&nbsp;&raquo; </a></span>
+        {{ end }}
+  </div>
+  </div>
+  </div>
+{{ end }}

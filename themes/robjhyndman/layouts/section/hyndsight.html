@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="row">
+  <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-3 large-push-9">
+    {{ partial "post-aside" . }}
+  </div>
+<div class="row">
+  <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
+  <h1>All Hyndsight posts by date</h1>
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+    {{ partial "post-summary" . }}
+    {{ end }}
+    {{ partial "pagination" . }}
+
+    <div class='sans'>
+<a href="{{ .Site.BaseURL }}categories">Index of Hyndsight posts by subject</a>.
+</div>
+  </div>
+</div>
+</div>
+{{ end }}

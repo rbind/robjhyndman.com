@@ -1,0 +1,31 @@
+{{ define "top-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "title-bar-right" }}
+{{ partial "share.html" $ }}
+{{ end }}
+{{ define "whatisthis" }}
+{{ partial "whatisthis-short.html" . }}
+{{ end }}
+{{ define "main" }}
+
+<div class="wrapper">
+  <div class="units-row">
+    <div class="unit-centered unit-80">  
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+      {{ if .Params.image }}
+      <img src="{{ $.Site.BaseURL }}img/{{ .Params.image }}" class="article-banner" itemprop="image">
+      {{ end }}
+      <h1 itemprop="name">{{ .Title }}</h1>
+        {{ .Content }}
+      </article>
+    </div>
+  </div>
+
+      <meta itemprop="wordCount" content="{{ .WordCount }}">
+      <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
+      <meta itemprop="url" content="{{ .Permalink }}">
+    </article>
+
+  </div>
+{{ end }}

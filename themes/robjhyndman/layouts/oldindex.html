@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $posts_title := index .Site.Params "posts_title" | default "posts" }}
+{{ $posts_count := index .Site.Params "posts_count" | default 2 }}
+{{ $pubs_title := index .Site.Params "pubs_title" | default "publications" }}
+{{ $pubs_count := index .Site.Params "pubs_count" | default 3 }}
+{{ $seminars_title := index .Site.Params "seminars_title" | default "seminars" }}
+{{ $seminars_count := index .Site.Params "seminars_count" | default 3 }}
+<div class="row">
+  <div class="column small-12 medium-7 large-6">
+    {{ range first $posts_count ((where .Data.Pages.ByDate "Section" "hyndsight").Reverse) }}
+    {{ partial "post-summary" . }}
+    {{ end }}
+    <footer>
+      <nav style="padding-top: 5px; text-align: right;">
+	<a href="/hyndsight/" class="button primary">All Hyndsight Posts</a>
+      </nav>
+    </footer>
+  </div>
+  <div class="column small-12 medium-5 large-offset-1">
+    <h2>Recent {{ $pubs_title }}</h2>
+    <ul class="compact fa-ul">
+      {{ range first $pubs_count (where .Data.Pages.ByDate "Section" "publication").Reverse }}
+      <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
+      {{ end }}
+    </ul>
+    <footer>
+      <nav style="padding-top: 15px; text-align: right;">
+	<a href="/publication/" class="button primary">All {{ $pubs_title }}</a>
+      </nav>
+    </footer>
+    <div style="padding-top: 2ex;"></div>
+    <h2>Recent and upcoming {{ $seminars_title }}</h2>
+    <ul class="compact fa-ul">
+    {{ range first $seminars_count ((where .Data.Pages.ByDate "Section" "seminars").Reverse) }}
+      <li style="margin-bottom: 9px;">{{ partial "seminar-summary" . }}</li>
+    {{ end }}
+    </ul>
+    <footer>
+      <nav style="padding-top: 15px; text-align: right;">
+  <a href="/seminars/" class="button primary">All {{ $seminars_title }}</a>
+      </nav>
+    </footer>
+  </div>
+
+  </div>
+</div>
+{{ end }}

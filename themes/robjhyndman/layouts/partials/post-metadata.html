@@ -1,0 +1,18 @@
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="{{ $.Date }}" itemprop="datePublished">{{ $.Date.Format (default "2 January 2006" (index $.Site.Params "date_format")) }}</time>
+  </span>
+  {{ if isset $.Params "categories" }}
+  {{ $categoriesLen := len $.Params.categories }}
+  {{ if gt $categoriesLen 0 }}
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    {{ range $k, $v := $.Params.categories }}
+    <a class="post-tag" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>{{ if lt $k (sub $categoriesLen 1) }},{{ if eq 0 $k }}
+    {{ end}} 
+    {{ end }}
+    {{ end }}
+  </span>
+  {{ end }}
+  {{ end }}
+</div>
