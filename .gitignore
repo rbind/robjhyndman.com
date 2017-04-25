@@ -2,3 +2,5 @@
 public
 blogdown
 content/*/*.html
+*.sublime-workspace
+
