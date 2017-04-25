@@ -1,0 +1,105 @@
+baseurl = "file:///home/hyndman/git/Website/public/"
+title = "Rob J Hyndman"
+author = "Rob J Hyndman"
+copyright = "Copyright (c) 2017 Rob J Hyndman"
+canonifyurls = true
+relativeurl = true
+paginate = 10
+theme = "robjhyndman"
+disqusShortname = "researchtips"
+addThis = "ra-58fca0029c2c12b1"
+
+# Date format (refer to Go's date format: http://flippinggodateformat.com)
+# Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+date_format = "2 January 2006"
+
+# Publications can have a Params.publication for citation references.
+# Publications can have a Params.kind, such as "book".
+# Both parameters are mapped to an icon in partials/pub-icon.html.
+
+bio_twitter = "robjhyndman"
+
+# Title of posts section on main page.
+posts_title = "Hyndsight posts" 
+
+# Number of posts to show on main page.
+posts_count = 2
+
+# Title of publications section on main page.
+pubs_title = "publications"
+
+# Number of publications to show on main page.
+pubs_count = 5
+
+
+[[params.social]]
+  icon = "university"
+  icon_pack = "fa"
+  link = "https://business.monash.edu/econometrics-and-business-statistics"
+  text = "Department of Econometrics & Business Statistics, Monash University, Clayton VIC 3800, Australia."
+
+[[params.social]]
+  icon = "envelope"
+  icon_pack = "fa"
+  link = "mailto:Rob.Hyndman@monash.edu"
+  text = "Rob.Hyndman@monash.edu"
+    
+[[params.social]]
+  icon = "twitter"
+  icon_pack = "fa"
+  link = "https://twitter.com/robjhyndman"
+  text = "@robjhyndman"
+  site = "Twitter"
+
+[[params.social]]
+  icon = "github"
+  icon_pack = "fa"
+  link = "//https://github.com/robjhyndman"
+  text = "robjhyndman"
+  site = "GitHub"
+
+[[params.social]]
+  icon = "google-scholar"
+  icon_pack = "ai"
+  link = "https://scholar.google.com/citations?user=vamErfkAAAAJ"
+  text = "Google Scholar"
+
+
+
+# Navigation Links
+# The weight parameter defines the order that the links will appear in.
+
+[[menu.main]]
+  name = "Hyndsight blog"
+  url = "/hyndsight/"
+  weight = 1
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publication/"
+  weight = 2
+
+[[menu.main]]
+  name = "Software"
+  url = "/software/"
+  weight = 3
+
+[[menu.main]]
+  name = "Seminars"
+  url = "/seminars/"
+  weight = 4
+
+[[menu.main]]
+  name = "Teaching"
+  url = "/teaching/"
+  weight = 4
+
+[[menu.main]]
+  name = "Research team"
+  url = "/research-team/"
+  weight = 5
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 6
