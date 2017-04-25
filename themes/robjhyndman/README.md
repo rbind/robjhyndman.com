@@ -2,7 +2,7 @@
 
 The design is inspired by kieranhealy.org and is a modification of hugo-finite. 
 
-# License of third-parties
+### License of third-parties
 
 * hugo-finite: MIT License
 * hugo-academic: MIT License
