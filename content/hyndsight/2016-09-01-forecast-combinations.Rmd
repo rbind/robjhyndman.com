@@ -2,11 +2,8 @@
 author: robjhyndman
 comments: true
 date: 2016-09-01 09:56:16+00:00
-
-link: http://robjhyndman.com/hyndsight/forecast-combinations/
 slug: forecast-combinations
 title: R packages for forecast combinations
-wordpress_id: 3841
 categories:
 - forecasting
 - R

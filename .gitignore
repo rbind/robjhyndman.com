@@ -1,6 +1,7 @@
 .Rproj.user
 public
 blogdown
-content/*/*.html
+content/hyndsight/*.html
 *.sublime-workspace
+static/hyndsight/*
 
