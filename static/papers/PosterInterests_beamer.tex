@@ -1,0 +1,120 @@
+\documentclass[final]{beamer}
+\usetheme{RJH}
+\usepackage[orientation=portrait,size=a2,scale=1.4,debug]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\usepackage[sorting=ynt,style=authoryear,doi=false,url=false,isbn=false,labelyear=false,firstinits=true,maxnames=20]{biblatex}
+\bibliography{rjhpubs}
+\def\bibfont{\scriptsize}
+\defbibheading{none}{}
+
+\DeclareBibliographyCategory{fda}
+\DeclareBibliographyCategory{expsmooth}
+\DeclareBibliographyCategory{expsmooth08}
+\DeclareBibliographyCategory{hts}
+\DeclareBibliographyCategory{elec}
+\DeclareBibliographyCategory{tourism}
+\DeclareBibliographyCategory{other1}
+\DeclareBibliographyCategory{other2}
+\DeclareBibliographyCategory{stats}
+
+% Adjust formatting of bib items.
+\setbeamertemplate{bibliography item}{}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[incollection]{pages}{#1}
+\DeclareFieldFormat[article]{volume}{\textbf{#1}}
+\DeclareFieldFormat[article]{number}{(#1)}
+\renewbibmacro{in:}{}
+
+% Remove dot between volume and number in journal articles.
+\renewbibmacro*{journal+issuetitle}{%
+  \usebibmacro{journal}%
+  \setunit*{\addspace}%
+  \iffieldundef{series}
+    {}
+    {\newunit
+     \printfield{series}%
+     \setunit{\addspace}}%
+  \printfield{volume}%
+%  \setunit*{\adddot}%
+  \printfield{number}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}%
+  \setunit{\addspace}%
+  \usebibmacro{issue+date}%
+  \newunit\newblock
+  \usebibmacro{issue}%
+  \newunit}
+
+% Remove month. There has to be a better solution.
+\renewcommand{\mkbibmonth}[1]{\hspace{-.9ex}}
+
+\title{Rob J Hyndman}
+\author{Research publications (2008--2010)}
+\footer{More information at \texttt{robjhyndman.com}}
+\date{}
+
+\begin{document}\nocite{*}
+\setlength{\bibitemsep}{4pt plus 2pt}
+\setlength{\bibhang}{20pt}
+\addtocategory{fda}{HS10,EAGE+10,HB08,HS09,SH09}
+\addtocategory{expsmooth}{HAA08,Gould08,AHO09,dSHS09,OKSH09,VISTS10}
+\addtocategory{expsmooth08}{expsmooth08}
+\addtocategory{elec}{HF10}
+\addtocategory{tourism}{austourism,hiertourism}
+\addtocategory{other1}{MBH08,forecastpackage,WSH09}
+\addtocategory{other2}{VHNC10}
+\addtocategory{stats}{laura1}
+
+\begin{frame}{} 
+
+\begin{textblock}{6}(0.,0.2)
+\includegraphics[width=5.7cm]{vintage}
+\end{textblock}
+
+\begin{textblock}{19.5}(1,5)
+\begin{block}{Forecasting functional data}
+\hbox to \textwidth{\includegraphics[height=7cm]{"/dropbox/archive/research/han lin shang/rainbowplot/JCGS/plots/france"}\hfill
+\includegraphics[height=7cm]{"/dropbox/archive/research/han lin shang/rainbowplot/JCGS/plots/hdrmale"}}
+%\begin{multicols}{2}
+\printbibliography[category=fda,heading=none]\vspace*{-0.5cm}
+%\end{multicols}
+\end{block}
+
+\begin{block}{Tourism forecasting}\vspace*{-0.5cm}
+\printbibliography[category=tourism,heading=none]\vspace*{-0.5cm}
+\end{block}
+\begin{block}{Other time series \& forecasting}\vspace*{-0.5cm}
+\printbibliography[category=other1,heading=none]\vspace*{-0.9cm}
+\hspace*{-0.4cm}\begin{tabular}{@{}p{12.5cm}c@{}}
+\printbibliography[category=other2,heading=none]&
+\hspace*{0.4cm}\raisebox{-4.5cm}[0cm][0cm]{\includegraphics[width=5.5cm]{/dropbox/Archive/Research/PhenologicalChange/figs/yearofbreak}}
+\end{tabular}\vspace*{-2.1cm}
+\end{block}
+
+\end{textblock}
+\setlength{\bibitemsep}{8pt plus 2pt}
+
+\begin{textblock}{19.3}(21.8,5)
+\begin{block}{Exponential smoothing}\vspace*{-0.8cm}
+\begin{tabular}{@{}lp{14cm}@{}}
+\raisebox{-5.5cm}{\includegraphics[height=5.5cm]{"/dropbox/Archive/Research/Akram/Positive ES/frontcover"}}&
+\raggedright\printbibliography[category=expsmooth08,heading=none]
+\end{tabular}\vspace*{0.1cm}
+
+\printbibliography[category=expsmooth,heading=none]
+\end{block}
+
+\begin{block}{Electricity demand forecasting}
+\hbox to \textwidth{\includegraphics[height=6cm]{/dropbox/Archive/Research/ShuFan/plot/fittedjan-paper}\hfill\includegraphics[height=6cm]{"/dropbox/Archive/Research/ShuFan/plot/poeallplus(new)"}}
+\printbibliography[category=elec,heading=none]
+\end{block}
+
+\begin{block}{Other applied statistics}
+\printbibliography[category=stats,heading=none]
+\end{block}
+\end{textblock}
+
+\end{frame}
+\end{document}

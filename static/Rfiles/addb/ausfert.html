@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Australian fertility data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for aus.fertility {addb}"><tr><td>aus.fertility {addb}</td><td align="right">R Documentation</td></tr></table>
+<h2>Australian fertility data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Age-specific fertility rates and female child-bearing population for Australia.
+</p>
+
+
+<h3>Format</h3>
+
+<p>
+Object of class <code>demogdata</code> containing the following components:
+<dl><dt>year</dt><dd>Vector of years</dd>
+<dt>age</dt><dd>Vector of ages</dd>
+<dt>rate</dt><dd>List containing one matrix with one age group per row and one column per year.</dd>
+<dt>pop</dt><dd>Population data in same form as <code>rate</code>.</dd>
+<dt>type</dt><dd>Type of object. In this case, &ldquo;fertility&rdquo;.</dd>
+<dt>label</dt><dd>Character string giving area from which data are taken. In this case, &ldquo;Australia&rdquo;.</dd>
+</dl>
+
+<h3>Details</h3>
+
+<p>
+Australian fertility rates and populations (1921-2007) for 
+single year age groups (15-49) as provided by the Australian Bureau 
+of Statistics. The population numbers for 2002 onwards differ 
+slighly from those in the <code>australia</code> (mortality) object. The 
+population numbers in <code>aus.fertility</code> have been updated to the 
+latest ABS estimates.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="../../demography/html/aus.fert.html">aus.fert</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(aus.fertility)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>addb</em> version 3.222 <a href="00Index.html">Index]</a></div>
+
+</body></html>

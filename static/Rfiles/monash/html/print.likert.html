@@ -1,0 +1,64 @@
+<html><head><title>R: Print Likert-scale data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for print.likert {monash}"><tr><td>print.likert {monash}</td><td align="right">R Documentation</td></tr></table>
+<h2>Print Likert-scale data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+It prints Likert-scale data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+print.likert(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+An object of class likert</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+output</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+See Also <code><a href="statfun.likert.html">mean.likert</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Let x be a set of responses to 5-point Likert scale questions
+x &lt;- c(rep(3,9),rep(4,7),rep(5,14))
+y &lt;- likert(x)
+print(y)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>monash</em> version 1.0 <a href="00Index.html">Index]</a></div>
+
+</body></html>
