@@ -6,7 +6,7 @@ All content and theme files for http://robjhyndman.com, using [Blogdown](https:/
 The design is inspired by http://kieranhealy.org and is a modification of [hugo-finite](https://github.com/lambdafu/hugo-finite). 
 
 
-# Licenses of third-party components
+### Licenses of third-party components
 
 * kube: MIT License
 * hugo-finite: MIT License
