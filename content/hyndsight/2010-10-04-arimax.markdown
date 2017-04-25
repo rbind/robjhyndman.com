@@ -23,7 +23,7 @@ where $z\_t$ is a white noise process (i.e., zero mean and iid).
 
 
 
-### ARMAX models
+## ARMAX models
 
 
 
@@ -43,7 +43,7 @@ where $\phi(B)=1-\phi_1B -\cdots - \phi_pB^p$ and $\theta(B)=1-\theta_1B-\cdots-
 
 
 
-### Regression with ARMA errors
+## Regression with ARMA errors
 
 
 
@@ -61,7 +61,7 @@ $$
 
 
 
-### Transfer function models
+## Transfer function models
 
 
 
@@ -77,7 +77,7 @@ The method for selecting the orders of a transfer function model that is describ
 
 
 
-### Non-stationary data
+## Non-stationary data
 
 
 
@@ -85,7 +85,7 @@ For ARIMA errors, we simply replace $\phi(B)$ with $\nabla^d\phi(B)$ where $\nab
 
 
 
-### R functions
+## R functions
 
 
 
