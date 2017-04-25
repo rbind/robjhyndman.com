@@ -1,0 +1,114 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-01 09:56:16+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast-combinations/
+slug: forecast-combinations
+title: R packages for forecast combinations
+wordpress_id: 3841
+categories:
+- forecasting
+- R
+---
+
+It has been well-known since at least 1969, when Bates and Granger wrote their famous paper on [“The Combination of Forecasts”](https://www.jstor.org/stable/3008764), that combining forecasts often leads to better forecast accuracy.
+
+So it is helpful to have a couple of new R packages which do just that: **opera** and **forecastHybrid**.
+
+<!-- more -->
+
+## opera
+
+Opera stands for “Online Prediction by ExpeRt Aggregation”. It was written by Pierre Gaillard and Yannig Goude, and Pierre provides a nice introduction in [the vignette](https://cran.r-project.org/web/packages/opera/vignettes/opera-vignette.html). While it can be used with combining any sort of predictions, I will just consider simple univariate time series forecasts, using the monthly `co2` data.
+
+```{r opera, message=FALSE, cache=TRUE}
+library(forecast)
+library(ggplot2)
+train <- window(co2, end=c(1990,12))
+test <- window(co2, start=c(1991,1))
+h <- length(test)
+ETS <- forecast(ets(train), h=h)
+ARIMA <- forecast(auto.arima(train, lambda=0), h=h)
+STL <- stlf(train, lambda=0, h=h)
+X <- cbind(ETS=ETS$mean, ARIMA=ARIMA$mean, STL=STL$mean)
+df <- cbind(co2, X)
+colnames(df) <- c("Data","ETS","ARIMA","STL")
+autoplot(df) + 
+  xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
+```
+
+Here, ETS has done a particularly bad job at picking the trend, while the other two look ok.
+
+The mixture function from the `opera` package computes weights when combining the forecasts based on how well it has done up to that point.
+
+```{r opera2, message=FALSE, cache=TRUE}
+library(opera)
+MLpol0 <- mixture(model = "MLpol", loss.type = "square")
+weights <- predict(MLpol0, X, test, type='weights')
+head(weights)
+tail(weights)
+```
+
+
+It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to ETS alone. But by the end of the test set, it is giving weight 0.23 to ETS, 0.36 to ARIMA and 0.41 to STL. Here are the resulting forecasts:
+
+```{r opera3, message=FALSE, cache=TRUE}
+z <- ts(predict(MLpol0, X, test, type='response'), start=c(1991,1), freq=12)
+df <- cbind(co2, z)
+colnames(df) <- c("Data","Mixture")
+autoplot(df) + 
+  xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
+```
+
+
+## forecastHybrid
+
+
+
+The `forecastHybrid` package from David Shaub and Peter Ellis fits multiple models from the `forecast` package and then combines them using either equal weights, or weights based on in-sample errors. By default, the models combined are from the `auto.arima`, `ets`, `nnetar`, `stlm` and `tbats` functions. David Shaub provides a [helpful vignette](https://cran.r-project.org/web/packages/forecastHybrid/vignettes/forecastHybrid.html) explaining how to use the package.
+
+Here is an example using the same `co2` data.
+
+```{r forecastHybrid, message=FALSE, cache=TRUE}
+library(forecastHybrid)
+fit1 <- hybridModel(train, weights="equal")
+fit2 <- hybridModel(train, weights="insample")
+fc1 <- forecast(fit1, h=h)
+fc2 <- forecast(fit2, h=h)
+autoplot(fc1) + ggtitle("Hybrid 1") + xlab("Year") +
+ ylab(expression("Atmospheric concentration of CO"[2]))
+```
+
+
+
+Those prediction intervals look dodgy because they are way too conservative. The package is taking the widest possible intervals that includes all the intervals produced by the individual models. So you only need one bad model, and the prediction intervals are screwed. To compute prediction intervals with the required coverage, it would be necessary to estimate the covariances between the different forecast errors, and then find the resulting variance expression for the linear combination of methods.
+
+The combination point forecasts look much better:
+
+```{r forecastHybrid2, message=FALSE, cache=TRUE}
+df <- cbind(Data=co2, Hybrid1=fc1$mean, Hybrid2=fc2$mean)
+autoplot(df) + 
+  xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
+```
+
+Note that the weights are not being updated, unlike with the `opera` package. In this particular example, the `opera` forecasts are doing substantially better:
+
+```{r forecastHybrid3, message=FALSE, cache=TRUE}
+mse <- c(Opera=mean((test-z)^2),
+          Hybrid1=mean((test - fc1$mean)^2),
+          Hybrid2=mean((test - fc2$mean)^2))
+round(mse,2)
+```
+
+It should be noted, however, that the opera weights are updated using the past test data, while the forecastHybrid weights are based only on the training data. So this comparison is not entirely "fair".
+
+Also, all of these results are much better than any of the individual forecasting methods:
+
+```{r forecastHybrid4, message=FALSE, cache=TRUE}
+mse2 <- c(ETS=mean((test-ETS$mean)^2),
+          ARIMA=mean((test-ARIMA$mean)^2),
+          STL=mean((test-STL$mean)^2))
+round(mse2,2)
+```    
+

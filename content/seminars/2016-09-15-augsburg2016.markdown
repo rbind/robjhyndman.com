@@ -1,0 +1,21 @@
+---
+author: Rob&nbsp;J&nbsp;Hyndman
+comments: false
+date: 2016-09-15
+link: http://robjhyndman.com/seminars/augsburg2016/
+slug: augsburg2016
+title: Forecasting large collections of related time series
+wordpress_id: 3630
+
+tags:
+- forecasting
+- hierarchical time series
+- R
+- seasonality
+- time series
+speakerdeck: 8c13df9c61c74b9185288b97c538f1c6
+---
+
+German Statistical Week, Augsburg.
+
+

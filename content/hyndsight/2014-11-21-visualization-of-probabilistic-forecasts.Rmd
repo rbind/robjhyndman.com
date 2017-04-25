@@ -1,0 +1,123 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-11-21 06:40:51+00:00
+
+link: http://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/
+slug: visualization-of-probabilistic-forecasts
+title: Visualization of probabilistic forecasts
+wordpress_id: 3068
+categories:
+- forecasting
+- graphics
+- R
+- statistics
+---
+
+This week my research group discussed Adrian Raftery's recent paper on ["Use and Communication of Probabilistic Forecasts"](http://arxiv.org/abs/1408.4812) which provides a fascinating but brief survey of some of his work on modelling and communicating uncertain futures. Coincidentally, today I was also sent a copy of David Spiegelhalter's paper on ["Visualizing Uncertainty About the Future"](http://www.sciencemag.org/content/333/6048/1393.abstract). Both are well-worth reading.
+
+It made me think about my own efforts to communicate future uncertainty through graphics. Of course, for time series forecasts I normally show prediction intervals. I prefer to use more than one interval at a time because it helps convey a little more information. The default in the forecast package for R is to show both an 80% and a 95% interval like this:<!-- more -->
+
+```{r, message=FALSE, cache=TRUE}
+library(forecast)
+fit <- ets(fma::hsales)
+plot(forecast(fit), include=120)
+```
+
+It is sometimes preferable to use a 50% and a 95% interval, rather like a boxplot:
+
+```{r, cache=TRUE}
+plot(forecast(fit, level=c(50,95)), include=120)
+```
+
+In some circles (especially macroeconomic forecasting), fan charts are popular:
+
+```{r, cache=TRUE}
+plot(forecast(fit,fan=TRUE),include=120)
+```
+
+Personally, I don't like these at all as they lose any specific probabilistic interpretability. What does the darker shaded region actually refer to? At least in the previous version, it is clear that the dark region contains 50% of the probability.
+
+
+For multi-modal distributions I like to use highest density regions. Here is an example applied to Nicholson's blowfly data using a threshold model:
+
+[![Screenshot from 2014-11-21 15:42:37](/files/Screenshot-from-2014-11-21-154237.png)](/files/Screenshot-from-2014-11-21-154237.png)
+
+The dark region has 50% coverage and the light region has 95% coverage. The forecast distributions become bimodal after the first ten iterations, and so the 50% region is split in two to show that. This graphic was taken from a [_J. Forecasting_ paper](http://robjhyndman.com/papers/highest-density-forecast-regions-for-non-linear-and-non-normal-time-series-models/) I wrote in 1996, so these ideas have been around for a while!
+
+It is easy enough to produce forecast HDR with time series. Here is some R code to do it:
+
+```{r, cache=TRUE}
+#HDR for time series object
+# Assumes that forecasts can be computed and futures simulated from object
+forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10), 
+                        nsim=2000, plot=TRUE, level=c(50,95), xlim=NULL, ylim=NULL, ...)
+{
+  require(hdrcde)
+  # Compute forecasts
+  fc <- forecast(object)
+  ft <- time(fc$mean)
+  
+  # Simulate future sample paths
+  sim <- matrix(0,nrow=h,ncol=nsim)
+  for(i in 1:nsim)
+    sim[,i] <- simulate(object, nsim=h)
+  
+  # Compute HDRs
+  nl <- length(level)
+  hd <- array(0, c(h,nl,10))
+  mode <- numeric(h)
+  for(k in 1:h)
+  {
+    hdtmp <- hdr(sim[k,], prob=level)
+    hd[k,,1:ncol(hdtmp$hdr)] <- hdtmp$hdr
+    mode[k] <- hdtmp$mode
+  }
+  # Remove unnecessary sections of HDRs
+  nz <- apply(abs(hd),3,sum) > 0
+  hd <- hd[,,nz]
+  dimnames(hd)[[1]] <- 1:h
+  dimnames(hd)[[2]] <- level
+  
+  
+  # Produce plot if required
+  if(plot)
+  {
+    if(is.null(xlim))
+      xlim <- range(time(object$x),ft)
+    if(is.null(ylim))
+      ylim <- range(object$x, hd)
+    plot(object$x,xlim=xlim, ylim=ylim, ...)
+    # Show HDRs
+    cols <- rev(colorspace::sequential_hcl(52))[level - 49]
+    for(k in 1:h)
+    {
+      for(j in 1:nl)
+      {
+        hdtmp <- hd[k,j,]
+        nint <- length(hdtmp)/2
+        for(l in 1:nint)
+        {
+          polygon(ft[k]+c(-1,-1,1,1)/object$m/2, 
+                  c(hdtmp[2*l-1],hdtmp[2*l],hdtmp[2*l],hdtmp[2*l-1]),
+                col=cols[j], border=FALSE)
+        }
+      }
+      points(ft[k], mode[k], pch=19, col="blue",cex=0.8)
+    }
+    #lines(fc$mean,col='blue',lwd=2)
+  }
+
+  # Return HDRs
+  return(list(hdr=hd,mode=mode,level=level))
+}
+```    
+
+We can apply it using the example I started with:
+
+```{r, cache=TRUE, message=FALSE}
+z <- forecasthdr(fit,xlim=c(1986,1998),nsim=5000,
+                  xlab="Year",ylab="US monthly housing sales")
+```    
+
+The dots are modes of the forecast distributions, and the 50% and 95% highest density regions are also shown. In this case, the distributions are unimodal, and so all the regions are intervals.

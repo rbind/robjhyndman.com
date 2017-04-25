@@ -1,0 +1,39 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-01-20 05:03:37+00:00
+
+link: http://robjhyndman.com/hyndsight/acems-prize-2016/
+slug: acems-prize-2016
+title: ACEMS Business Analytics Prize 2016
+wordpress_id: 3550
+categories:
+- data science
+- Monash University
+- phd
+- statistics
+---
+
+We have established a new annual prize for research students at Monash University in the general area of business analytics, funded by the [Australian Centre of Excellence in Mathematical and Statistical Frontiers (ACEMS)](http://acems.org.au/). The rules of the award are listed below.
+
+
+
+
+    
+  1. The student must have submitted a paper to a high quality journal or refereed conference on some topic in the general area of business analytics, computational statistics or data visualization.
+
+    
+  2. Up to $3000 will be awarded to the student to assist with research expenses subject to the approval of the relevant supervisor.
+
+    
+  3. Applications should include the submitted paper, along with a brief statement (no more than 200 words) on how they intend to spend the money. Applications should be emailed to [econometrics@monash.edu](mailto:econometrics@monash.edu) by 31 March 2016.
+
+    
+  4. The winning student will be selected by a panel consisting of [Di Cook](https://dicook.github.io/), [Rob Hyndman](http://robjhyndman.com/), [Catherine Forbes](https://monash.edu/research/people/profiles/profile.html?sid=915&pid=2827) and [Geoff Webb](http://www.csse.monash.edu.au/~webb/).
+
+    
+  5. Any HDR student currently enrolled at Monash University is eligible to apply.
+
+
+
+Questions about the award can be asked in the comments section below.

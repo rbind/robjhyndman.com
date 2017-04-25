@@ -1,0 +1,21 @@
+---
+author: Souhaib Ben Taieb, James W Taylor, Rob&nbsp;J&nbsp;Hyndman
+Status: Published
+comments: false
+date: 2017-03-07 02:56:39+00:00
+slug: probhts
+title: Coherent Probabilistic Forecasts for Hierarchical Time Series
+wordpress_id: 3893
+kind:
+ unpublished
+tags:
+- data science
+- density estimation
+- electricity
+- forecasting
+- hierarchical time series
+link: http://souhaib-bentaieb.com/pdf/icml2017_probhts.pdf
+---
+
+Many applications require forecasts for a hierarchy comprising a set of time series along with aggregates of subsets of these series. Although forecasts can be produced independently for each series in the hierarchy, typically this does not lead to coherent forecasts — the property that forecasts add up appropriately across the hierarchy. State-of-the-art hierarchical forecasting methods usually reconcile these independently generated forecasts to satisfy the aggregation constraints. A fundamental limitation of prior research is that it has looked only at the problem of forecasting the mean of each time series. We consider the situation where probabilistic forecasts are needed for each series in the hierarchy. We define forecast coherency in this setting, and propose an algorithm to compute predictive distributions for each series in the hierarchy. Our algorithm has the advantage of synthesizing information from different levels in the hierarchy through a sparse forecast combination and a probabilistic hierarchical aggregation. We evaluate the accuracy of our forecasting algorithm on both simulated data and large-scale electricity smart meter data. The results show consistent performance gains compared to state-of-the art methods
+

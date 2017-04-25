@@ -1,0 +1,67 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-14 14:44:50+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/
+slug: forecast-intervals-for-aggregates
+title: Forecast intervals for aggregates
+wordpress_id: 3869
+categories:
+- forecasting
+- R
+- time series
+---
+
+A common problem is to forecast the aggregate of several time periods of data, using a model fitted to the disaggregated data. For example, you may have monthly data but wish to forecast the total for the next year. Or you may have weekly data, and want to forecast the total for the next four weeks.
+
+If the point forecasts are means, then adding them up will give a good estimate of the total. But prediction intervals are more tricky due to the correlations between forecast errors.
+
+<!-- more -->
+
+I’ve previously posted [a trick using seasonal ARIMA models](http://robjhyndman.com/hyndsight/forecasting-annual-totals/) to do this. There is also Section 6.6 in my [2008 Springer book](http://www.exponentialsmoothing.net), deriving the analytical results for some ETS models.
+
+But a more general solution, if you only need empirical results, is to use simulations.
+
+Here is an example using ETS models applied to Australian monthly gas production data.
+
+
+```{r, cache=TRUE}
+library(forecast)
+library(ggplot2)
+
+fit <- ets(gas)
+# Forecast two years ahead
+fc <- forecast(fit, h=24)
+plot(fc)
+```
+
+
+Suppose we wish to forecast the aggregate gas demand in the next six months.
+
+```{r, cache=TRUE}
+nsim <- 10000
+h <- 6 
+sim <- numeric(nsim)
+for(i in seq_len(nsim))
+  sim[i] <- sum(simulate(fit, future=TRUE, nsim=h))
+meanagg <- mean(sim)
+```
+
+
+The mean of the simulations is very close to the sum of the individual forecasts:
+
+```{r, cache=TRUE}
+sum(fc$mean[1:6])
+```
+
+
+Prediction intervals are now easy to obtain:
+
+```{r, cache=TRUE}
+#80% interval:
+quantile(sim, prob=c(0.1, 0.9))
+
+#95% interval:
+quantile(sim, prob=c(0.025, 0.975))
+```

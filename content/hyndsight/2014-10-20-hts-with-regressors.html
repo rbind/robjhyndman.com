@@ -1,0 +1,44 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-10-20 02:08:07+00:00
+
+link: http://robjhyndman.com/hyndsight/hts-with-regressors/
+slug: hts-with-regressors
+title: hts with regressors
+wordpress_id: 3005
+categories:
+- forecasting
+- hts
+- R
+- statistics
+---
+
+
+<p>The <a href="http://robjhyndman.com/software/hts/">hts package for R</a> allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in <a href="http://robjhyndman.com/working-papers/foresight-hts/">this Foresight paper</a>.)</p>
+<p>The base forecasts can be generated using any method, with ETS models and ARIMA models provided as options in the <code>forecast.gts()</code> function. As ETS models do not allow for regressors, you will need to choose ARIMA models if you want to include regressors.<!-- more --></p>
+<p>Suppose <code>x</code> is a matrix of historical regressors (with each column containing one regressor and with the number of rows equal to the number of time periods of historical data), and <code>f</code> is the corresponding matrix of future regressors (with the number of rows equal to the forecast horizon). Then if <code>y</code> is an <code>hts</code> or <code>gts</code> object, the following code can be used for forecasting:</p>
+<pre class="r"><code>fc &lt;- forecast(y, fmethod=&quot;arima&quot;, xreg=&quot;x&quot;, newxreg=&quot;f&quot;)</code></pre>
+<p>That will fit a regression with ARIMA errors to each of the original series (at all levels of aggregation), produce forecasts from each model, and then reconcile the forecasts so they satisfy the aggregation constraints.</p>
+<div id="infant-deaths" class="section level3">
+<h3>Infant deaths</h3>
+<p>I will illustrate using infant death numbers for Australia. These are disaggregated by state and sex as shown below.</p>
+<pre class="r"><code>library(hts)
+plot(infantgts)</code></pre>
+<p><img src="/hyndsight/2014-10-20-hts-with-regressors_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>A potential forecasting method is to use a regression model on the log scale with a constant to 1970 and a decreasing trend thereafter. The figure below shows the model for the most aggregated data.</p>
+<pre class="r"><code>plot(log(aggts(infantgts, level=0)), xlab=&quot;Year&quot;, ylab=&quot;Log total infant deaths&quot;)
+y &lt;- log(aggts(infantgts, level=0))
+z &lt;- pmax(time(infantgts$bts) - 1970, 0)
+fit &lt;- lm(y ~ z)
+lines(ts(fitted(fit),start=1933),col=&#39;red&#39;)</code></pre>
+<p><img src="/hyndsight/2014-10-20-hts-with-regressors_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>To apply this model to all series, and allow for ARMA errors, we can use the following code.</p>
+<pre class="r"><code>    y = window(infantgts, start=1944)
+    z = pmax(time(y$bts) - 1970, 0)
+    fz = max(z) + 1:10
+    fc = forecast(y, h=10, fmethod=&quot;arima&quot;, xreg=z, newxreg=fz, lambda=0)
+    plot(fc)</code></pre>
+<p><img src="/hyndsight/2014-10-20-hts-with-regressors_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>I started the series at 1944 as there were a few zero observations before that, and taking logs caused problems. The argument <code>lambda=0</code> means the models are fitted to the logged data (although reconciliation must occur on the original scale).</p>
+</div>

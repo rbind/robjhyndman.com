@@ -1,0 +1,79 @@
+---
+author: robjhyndman
+comments: true
+date: 2017-02-28 14:00:53+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast8/
+slug: forecast8
+title: forecast 8.0
+wordpress_id: 4029
+categories:
+- forecasting
+- graphics
+- R
+- time series
+---
+
+
+<p>In what is now a roughly annual event, the forecast package has been updated on CRAN with a new version, this time 8.0.</p>
+<p>A few of the more important new features are described below.</p>
+<div id="check-residuals" class="section level2">
+<h2>Check residuals</h2>
+<p>A common task when building forecasting models is to check that the residuals satisfy some assumptions (that they are uncorrelated, normally distributed, etc.). The new function <code>checkresiduals</code> makes this very easy: it produces a time plot, an ACF, a histogram with super-imposed normal curve, and does a Ljung-Box test on the residuals with appropriate number of lags and degrees of freedom.</p>
+<pre class="r"><code>library(forecast)    
+fit &lt;- auto.arima(WWWusage)
+checkresiduals(fit)</code></pre>
+<p><img src="/hyndsight/2017-02-28-forecast8_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre><code>## 
+##  Ljung-Box test
+## 
+## data:  Residuals from ARIMA(1,1,1)
+## Q* = 7.8338, df = 8, p-value = 0.4499
+## 
+## Model df: 2.   Total lags used: 10</code></pre>
+<p>This should work for all the modelling functions in the package, as well as some of the time series modelling functions in the <code>stats</code> package.</p>
+</div>
+<div id="different-types-of-residuals" class="section level2">
+<h2>Different types of residuals</h2>
+<p>Usually, residuals are computed as the difference between observations and the corresponding one-step forecasts. But for some models, residuals are computed differently; for example, a multiplicative ETS model or a model with a Box-Cox transformation. So the <code>residuals()</code> function now has an additional argument to deal with this situation.</p>
+<p>“Innovation residuals”&quot; correspond to the white noise process that drives the evolution of the time series model. “Response residuals” are the difference between the observations and the fitted values (as with GLMs). For homoscedastic models, the innovation residuals and the one-step response residuals are identical. “Regression residuals” are also available for regression models with ARIMA errors, and are equal to the original data minus the effect of the regression variables. If there are no regression variables, the errors will be identical to the original series (possibly adjusted to have zero mean).</p>
+<pre class="r"><code>library(ggplot2)
+fit &lt;- ets(woolyrnq)
+res &lt;- cbind(Residuals = residuals(fit), 
+             Response.residuals = residuals(fit, type=&#39;response&#39;))
+autoplot(res, facets=TRUE)</code></pre>
+<p><img src="/hyndsight/2017-02-28-forecast8_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="some-new-graphs" class="section level2">
+<h2>Some new graphs</h2>
+<p>The <code>geom_histogram()</code> function in the <code>ggplot2</code> package is nice, but it does not have a good default binwidth. So I added the <code>gghistogram</code> function which provides a quick histogram with good defaults. You can also overlay a normal density curve or a kernel density estimate.</p>
+<pre class="r"><code>gghistogram(lynx)</code></pre>
+<p><img src="/hyndsight/2017-02-28-forecast8_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>The <code>ggseasonplot</code> function is useful for studying seasonal patterns and how they change over time. It now has a <code>polar</code> argument to create graphs like this.</p>
+<pre class="r"><code>ggseasonplot(USAccDeaths, polar=TRUE)</code></pre>
+<p><img src="/hyndsight/2017-02-28-forecast8_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>I often want to add a time series line to an existing plot. Base graphics has <code>line()</code> which works well when a time series is passed as an argument. So I added <code>autolayer</code> which is similar (but more general). It is an S3 method like <code>autoplot</code>, and adds a layer to an existing <code>ggplot</code> object. <code>autolayer</code> will eventually form part of the next release of <code>ggplot2</code>, but for now it is available in the <code>forecast</code> package. There are methods provided for <code>ts</code> and <code>forecast</code> objects:</p>
+<pre class="r"><code>WWWusage %&gt;% ets %&gt;% forecast(h=20) -&gt; fc
+autoplot(WWWusage, series=&quot;Data&quot;) + 
+  autolayer(fc, series=&quot;Forecast&quot;) + 
+  autolayer(fitted(fc), series=&quot;Fitted&quot;)</code></pre>
+<p><img src="/hyndsight/2017-02-28-forecast8_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+</div>
+<div id="cross-validation" class="section level2">
+<h2>Cross-validation</h2>
+<p>The <code>tsCV</code> and <code>CVar</code> functions have been added. These were discussed in a <a href="http://robjhyndman.com/hyndsight/tscv/">previous post</a>.</p>
+</div>
+<div id="bagged-ets" class="section level2">
+<h2>Bagged ETS</h2>
+<p>The <code>baggedETS</code> function has been added, which implements the procedure discussed in <a href="http://robjhyndman.com/papers/bagging-ets/">Bergmeir et al (2016)</a> for bagging ETS forecasts.</p>
+</div>
+<div id="head-and-tail-of-time-series" class="section level2">
+<h2>head and tail of time series</h2>
+<p>I’ve long found it annoying that <code>head</code> and <code>tail</code> do not work on multiple time series. So I added some functions to the package so they now work.</p>
+</div>
+<div id="imports-and-dependencies" class="section level2">
+<h2>Imports and Dependencies</h2>
+<p>The pipe operator from the <code>magrittr</code> package is now imported. So you don’t need to load the <code>magrittr</code> package to use it.</p>
+<p>There are now no packages that are loaded with <code>forecast</code> – everything required is imported. This makes the start up much cleaner (no more annoying messages from all those packages being loaded). Instead, some random tips are occasionally printed when you load the forecast package (much like <code>ggplot2</code> does).</p>
+<p>There is quite a bit more — see the <a href="https://github.com/robjhyndman/forecast/blob/master/ChangeLog">Changelog</a> for a list.</p>
+</div>

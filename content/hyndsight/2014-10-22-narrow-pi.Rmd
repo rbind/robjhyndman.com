@@ -1,0 +1,56 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-10-22 05:25:12+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/narrow-pi/
+slug: narrow-pi
+title: Prediction intervals too narrow
+wordpress_id: 3017
+categories:
+- forecasting
+- R
+- statistics
+---
+
+Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of uncertainty. In my [2002 IJF paper](http://robjhyndman.com/papers/hksg/), we measured the size of the problem by computing the actual coverage percentage of the prediction intervals on hold-out samples. We found that for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.
+
+There are at least four sources of uncertainty in forecasting using time series models:
+
+  1. The random error term;
+  2. The parameter estimates;
+  3. The choice of model for the historical data;
+  4. The continuation of the historical data generating process into the future.
+
+<!-- more -->
+
+When we produce prediction intervals for time series models, we generally only take into account the first of these sources of uncertainty. It would be possible to account for 2 and 3 using simulations, but that is almost never done because it would take too much time to compute. As computing speeds increase, it might become a viable approach in the future.
+
+Even if we ignore the model uncertainty and the DGP uncertainty (sources 3 and 4), and just try to allow for parameter uncertainty as well as the random error term (sources 1 and 2), there are no closed form solutions apart from some simple special cases.
+
+One such special case is an ARIMA(0,1,0) model with drift, which can be written as 
+
+<div>
+$$
+y_t = y_{t-1} + c + e_t,
+$$
+</div>
+
+where $e_t$ is a white noise process. In this case, it is easy to compute the uncertainty associated with the estimate of $c$, and then allow for it in the forecasts.
+
+This model can be fitted using either the `Arima` function or the `rwf` function from the forecast package for R. If the `Arima` function is used, the uncertainty in $c$ is ignored, but if the `rwf` function is used, the uncertainty in $c$ is included in the prediction intervals. The difference can be seen in the following simulated example.
+
+
+```{r, message=FALSE, cache=TRUE}
+library(forecast)
+
+set.seed(22)
+x <-ts(cumsum(rnorm(50, -2.5, 4)))
+
+RWD.x <- rwf(x,  h=40, drift=TRUE, level=95)
+ARIMA.x <- Arima(x, c(0,1,0), include.drift=TRUE)
+
+plot(forecast(ARIMA.x, h=40, level=95))
+lines(RWD.x$lower, lty=2)
+lines(RWD.x$upper, lty=2)
+```

@@ -1,0 +1,22 @@
+---
+author: robjhyndman
+comments: true
+date: 2010-09-16 01:59:21+00:00
+
+link: http://robjhyndman.com/hyndsight/names/
+slug: names
+title: Your name is your brand
+wordpress_id: 959
+categories:
+- journals
+- references
+- writing
+---
+
+As a researcher, you want to become known as an expert in your field. You need people to recognize your name and associate it with your research. Consequently, it is important to be consistent in the name you use on publications.
+
+For example, I could write under "R Hyndman", "R J Hyndman", "Rob Hyndman", "Rob J Hyndman", etc. I've chosen the last of these and I try to use it on all publications. Unfortunately, some journals insist on only initials, in which case I become "R J Hyndman". In other cases, a coauthor handles all the correspondence with the journal and, despite my requests, they just list me as "R Hyndman" or "Rob Hyndman". So I have not achieved consistency, but I try. Researchers from countries with more elaborate naming conventions than the Western tradition will have even more options, and so it is even more important to aim for consistency in publications.
+
+Consistency is also important when others are searching for one of your papers. If you have changed your name, or you use two very different names, then it will be harder for other researchers to find the paper of yours that they are looking for. This can be a problem when people have changed their name at marriage, for example. It may be better to keep your "academic name" the same, even if the name you use elsewhere is changed.
+
+Having an uncommon surname makes it easier --- there are no other Hyndmans working in statistics or forecasting (although there are several working in mathematics). If you have a common name, try being distinctive by consistently using other initials.

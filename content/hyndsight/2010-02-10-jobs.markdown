@@ -1,0 +1,69 @@
+---
+author: robjhyndman
+comments: true
+date: 2010-02-10 06:25:22+00:00
+
+link: http://robjhyndman.com/hyndsight/jobs/
+slug: jobs
+title: What to do when the PhD is finished?
+wordpress_id: 702
+categories:
+- jobs
+- phd
+---
+
+So you're wondering what to do once your PhD is finally completed? First, take a holiday. Completing a PhD is an intense and draining exercise, and you should take some time to refresh.
+
+Then you need to decide what career path you prefer. In statistics, there are three choices: the academic route, the semi-academic route and the business route.
+
+
+### Academic route
+
+
+Most PhD students would like an academic job. In fact, I think all of my PhD students have rather fancied my job! However, it is not an easy path, especially in the first few years. The ideal situation is to get a post-doctoral fellowship, preferably in a different university (and a different country) from where you studied for your doctorate. That gives you some time to concentrate on consolidating your research and to learn from another supervisor. Working in a different country also helps you develop a broader network of research contacts. But there aren't many post-doc positions around, and so it is hard to get something suitable.
+
+I am occasionally asked by other researchers if I have any good students finishing soon as they have a post-doc position available. In this case, I pass the information on to any students likely to finish at about the right time.  But these are positions usually overseas, and many of my students are unwilling to leave Australia.
+
+There is no harm in asking the leading researchers in the field if they have any research positions coming up. If you are flexible enough to travel and are willing to take something short-term, you never know where it might lead.
+
+Often a student will need to take whatever they can get in a university environment for a couple of years until something more suitable crops up. If there are positions for tutors, research assistants, part-time lecturing, etc., then take the opportunity while continuing to look for something better.
+
+Remember that academic jobs almost always require a strong research record. So the most important thing to do when you finish a PhD is to write papers, as many as you can and submit them to the best journals that will accept them. The more papers you have, especially if they are in top journals, the more likely you will get a good academic job.
+
+After spending two or three years in a post-doctoral fellowship, you would normally then aim for a lectureship at the best university who will employ you. If you've produced a large number of publications in the top journals, you are a chance for a lectureship at one of the top universities in the country. If you have a smaller number of publications, or publications in lower-ranked journals, you probably should aim for one of the lower-ranked universities. If you're very lucky, you might get a tenured lectureship. Then you are set for life -- all you have to do is keep churning out papers every year for the rest of your working days!
+
+
+### Semi-academic route
+
+
+Often, a more realistic route for many students is to provide statistical support to researchers in other disciplines. There are always lots of available jobs in this area, as almost every research discipline uses statistical methods and most researchers aren't trained to use them effectively. Apart from universities, statistical research skills are required at CSIRO and many medical and health research organizations. Consequently, many of my students end up in departments of sports science, public health, finance, etc., where they can use their statistical expertise in applied research. You will still end up doing research, writing papers, etc., but the papers are unlikely to be published in _JASA_ or _Econometrica_. They are more likely to appear in journals associated with the discipline in which you are working.
+
+The downside of this route is that it is hard to be promoted beyond a junior academic as you will often be seen as support staff rather than an academic in your own right. Every discipline values its natives more than outsiders. Over time, you might become sufficiently expert in the discipline to be taken more seriously.
+
+Another drawback is that you can't set your own research agenda. You will always be doing whatever the senior researchers in your group want you to do.
+
+One benefit of this career path is that there are often part-time positions available. So if you are juggling young children and only want a few days of work each week, this can be a good choice.
+
+However, it is very difficult to move from this sort of position to an academic position within a statistics or econometrics department. You simply won't have the publications to land yourself a job. So if you really want to work in the sort of department where you got your PhD, then don't take this route.
+
+
+### Business route
+
+
+The third route is to work in a business environment. There is a growing number of positions for PhD-level statisticians in many different organizations including the Australian Bureau of Statistics, large finance institutions, pharmaceutical companies, energy companies and organizations, etc. Statistical skills are highly transferrable, and so you can have a very varied career working in different environments and on many different problems.
+
+As with all non-academic jobs, there is usually much less freedom with this sort of position, and you will find that you have to work to much tighter deadlines than academics are used to. Consequently, the solutions you develop usually involve short-cuts, fudges, and all sorts of things that are not found in textbooks. Some people love the challenge. Others find it frustrating.
+
+It is relatively easy to move from a business environment to a statistical support position in a research environment. But it is very difficult to move from business into an academic position within a statistics or econometrics department unless you have also been publishing papers.
+
+
+### Finding a job
+
+
+Contact the leaders in the organizations where you want to work. Let it be known that you are looking for work.
+
+Network. Talk to as many people as possible, especially people who already work for organizations you would like to work for. Ask if there are any openings, and find out who to talk to about possible job opportunities.
+
+Also keep an eye on the job websites. In statistics, the key Australian site is [www.statsci.org/jobs/](http://www.statsci.org/jobs/).
+
+Be patient and don't give up.

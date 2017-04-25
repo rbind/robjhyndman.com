@@ -1,0 +1,18 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-02-02 01:03:35+00:00
+
+link: http://robjhyndman.com/hyndsight/monash-top10/
+slug: monash-top10
+title: Monash Econometrics in the top 10
+wordpress_id: 2425
+categories:
+- forecasting
+- Monash University
+- statistics
+---
+
+Dave Giles pointed out on [his blog yesterday](http://davegiles.blogspot.com.au/2014/02/econometrics-at-monash-university.html) that my department is currently ranked in the [top 10 in the world for econometrics](http://ideas.repec.org/top/top.ecm.html), according to IDEAS. We are also ranked [13th in the world](http://ideas.repec.org/top/top.for.html) in forecasting. Since IDEAS only covers the economics literature, the forecasting rank does not take account of our work in other areas such as demographic forecasting, and electricity demand forecasting.
+
+These rankings are only a rough indication of quality, but it is nice to see the department being recognized.

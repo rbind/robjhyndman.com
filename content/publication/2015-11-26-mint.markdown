@@ -1,0 +1,31 @@
+---
+author: Shanika L Wickramasuriya, George Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman
+Status: Published
+comments: false
+date: 2015-11-26 08:19:42+00:00
+slug: mint
+title: Forecasting hierarchical and  grouped time series through  trace minimization
+wordpress_id: 3522
+kind:
+ unpublished
+tags:
+- accuracy
+- arima models
+- exponential smoothing
+- forecasting
+- hierarchical time series
+- optimization
+- R
+- time series
+- tourism
+figshare: 3012981
+---
+
+
+
+Large collections of time series often have aggregation constraints due to product or geographical hierarchies. The forecasts for the disaggregated series are usually required to add up exactly to the forecasts of the aggregated series, a constraint known as “aggregate consistency”. The combination forecasts proposed by Hyndman et al. (2011) are based on a Generalized Least Squares (GLS) estimator and require an estimate of the covariance matrix of the reconciliation errors (i.e., the errors that arise due to aggregate inconsistency). We show that this is impossible to estimate in practice due to identifiability conditions.
+
+We propose a new combination forecasting approach that incorporates the information from a full covariance matrix of forecast errors in obtaining a set of aggregate consistent forecasts. Our approach minimizes the mean squared error of the aggregate consistent forecasts across the entire collection of time series under the assumption of unbiasedness. The minimization problem has a closed form solution. We make this solution scalable by providing a computationally less demanding alternative representation.
+
+We evaluate the performance of the proposed method compared to alternative methods using a series of simulation designs which take into account various features of the collected time series. This is followed by an empirical application using Australian domestic tourism data. The results indicate that the proposed method works well with artificial and real data.
+

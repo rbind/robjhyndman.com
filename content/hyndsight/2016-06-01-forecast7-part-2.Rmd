@@ -1,0 +1,129 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-06-01 07:22:52+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast7-part-2/
+slug: forecast7-part-2
+title: Forecast v7 (part 2)
+wordpress_id: 3761
+categories:
+- forecasting
+- graphics
+- R
+- time series
+---
+
+As mentioned in [my previous post on the forecast package v7](http://robjhyndman.com/hyndsight/forecast7-ggplot2/), the most visible feature was the introduction of [ggplot2 graphics](http://ggplot2.org/). This post briefly summarizes the remaining new features of forecast v7.
+<!-- more -->
+
+
+```{r, message=FALSE}
+library(forecast)
+library(ggplot2)
+```
+
+### tslm rewritten
+
+The `tslm` function is designed to fit linear models to time series data. It is intended to approximately mimic `lm` (and  calls `lm` to do the estimation), but to package the output to remember the `ts` attributes. It also handles some predictor variables automatically, notably `trend` and `season`. The re-write means that `tslm` now handles functions as predictors, including `fourier`.
+
+
+```{r, cache=TRUE}    
+deaths.lm  <- tslm(mdeaths ~ trend + fourier(mdeaths,3))
+mdeaths.fcast <- forecast(deaths.lm,
+    data.frame(fourier(mdeaths,3,36)))
+autoplot(mdeaths.fcast)
+```    
+
+Note that `fourier` now takes 3 arguments. The first is the series, which is only used to grab the seasonal period and the `tsp` attribute. The second argument `K` is the number of Fourier harmonics to compute. If the third argument `h` is `NULL` (the default), the function returns Fourier terms for the times of the historical observations. But if `h` is a positive integer, the function returns Fourier terms for the next `h` time periods after the end of the historical data.
+
+The `lm` function has long allowed a matrix to be passed and independent linear models fitted to each column. The new `tslm` function also allows this now.
+
+
+
+### Bias adjustment for Box-Cox transformations
+
+
+
+Almost all modelling and forecasting functions in the package allow Box-Cox transformations to be applied before the model is fitted, and for the forecasts to be back transformed. This will give median forecasts on the original scale, as [I've explained before](http://robjhyndman.com/hyndsight/backtransforming/).
+
+There is now an option to adjust the forecasts so they are means rather than medians, but setting `biasadj=TRUE` whenever the forecasts are computed. I will probably make this the default in some future version, but for now the default is `biasadj=FALSE` so the forecasts are actually medians.
+
+
+```{r, message=FALSE, cache=TRUE}
+library(fpp, quietly=TRUE)
+fit <- ets(eggs, model="AAN", lambda=0)
+fc1 <- forecast(fit, biasadj=TRUE, h=20, level=95)
+fc2 <- forecast(fit, biasadj=FALSE, h=20)
+cols <- c("Mean"="#0000ee","Median"="#ee0000")
+autoplot(fc1) + ylab("Price") + xlab("Year") +
+  geom_line(aes(x=time(fc2$mean),y=fc2$mean, colour="Median")) +
+  geom_line(aes(x=time(fc1$mean),y=fc1$mean, colour="Mean")) +
+  guides(fill=FALSE) +
+  scale_colour_manual(name="Forecasts",values=cols)
+```
+
+
+
+### A new Ccf function
+
+
+
+Cross-correlations can now be computed using `Ccf`, mimicing `ccf` except that the axes are more informative.
+
+The `Acf` function now handles multivariate time series, with cross-correlation functions computed as well as the ACFs of each series.
+
+
+
+### Covariates in neural net AR models
+
+
+
+The `nnetar` function allows neural networks to be applied to time series data by building a nonlinear autoregressive model. A new feature allows additional inputs to be included in the model.
+
+
+
+### Better subsetting of time series
+
+
+
+`subset.ts` allows quite sophisticated subsetting of a time series. For example
+
+
+```{r, cache=TRUE}
+plot(subset(gas,month="November"))
+subset(woolyrnq,quarter=3)
+```
+
+
+
+This is now substantially more robust than it used to be.
+
+
+
+### What's next?
+
+
+
+The next major release will probably be around the end of 2016. On the to-do list are:
+
+
+
+
+
+  * **In-sample multi-step fitted values**. Currently `fitted` returns in-sample one-step forecasts. A new argument to `fitted` will allow multi-step forecasts of the training data.
+
+
+
+  * **Applying fitted models to new data sets**. A related issue is to take an estimated model and apply it to some new data without re-estimating parameters. This is already possible with `Arima` and `ets` models. It will be extended to many more model types.
+
+
+
+  * **Better choice of seasonal differencing**. Currently `auto.arima` does a pretty good job at finding the orders of a model, and the number of first-differences required, but it does not handle seasonal differences well. It often selects 0 differences, when I think it should select 1 difference. So I tend to over-ride the automatic choice with `auto.arima(x, D=1)`. I will attempt to find some better tests of seasonal unit roots than those that are currently implemented.
+
+
+
+  * **Prediction intervals for NNAR forecasts**. The forecasts obtained using a NNAR model (via the `nnetar` function) do not have prediction intervals because there is no underlying stochastic model on which to base them. However, there are ways of computing the uncertainty using simulation, and I hope to implement something like that for the next version.
+
+
+

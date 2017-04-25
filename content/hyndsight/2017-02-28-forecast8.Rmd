@@ -1,0 +1,115 @@
+---
+author: robjhyndman
+comments: true
+date: 2017-02-28 14:00:53+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast8/
+slug: forecast8
+title: forecast 8.0
+wordpress_id: 4029
+categories:
+- forecasting
+- graphics
+- R
+- time series
+---
+
+In what is now a roughly annual event, the forecast package has been updated on CRAN with a new version, this time 8.0.
+
+A few of the more important new features are described below.
+
+
+
+## Check residuals
+
+
+A common task when building forecasting models is to check that the residuals satisfy some assumptions (that they are uncorrelated, normally distributed, etc.). The new function `checkresiduals` makes this very easy: it produces a time plot, an ACF, a histogram with super-imposed normal curve, and does a Ljung-Box test on the residuals with appropriate number of lags and degrees of freedom.
+
+```{r, message=FALSE, cache=TRUE}
+library(forecast)    
+fit <- auto.arima(WWWusage)
+checkresiduals(fit)
+```
+
+
+This should work for all the modelling functions in the package, as well as some of the time series modelling functions in the `stats` package.
+
+
+
+## Different types of residuals
+
+
+
+Usually, residuals are computed as the difference between observations and the corresponding one-step forecasts. But for some models, residuals are computed differently; for example, a multiplicative ETS model or a model with a Box-Cox transformation. So the `residuals()` function now has an additional argument to deal with this situation.
+
+“Innovation residuals”" correspond to the white noise process that drives the evolution of the time series model. “Response residuals” are the difference between the observations and the fitted values (as with GLMs). For homoscedastic models, the innovation residuals and the one-step response residuals are identical. “Regression residuals” are also available for regression models with ARIMA errors, and are equal to the original data minus the effect of the regression variables. If there are no regression variables, the errors will be identical to the original series (possibly adjusted to have zero mean).
+
+```{r, message=FALSE, cache=TRUE}
+library(ggplot2)
+fit <- ets(woolyrnq)
+res <- cbind(Residuals = residuals(fit), 
+             Response.residuals = residuals(fit, type='response'))
+autoplot(res, facets=TRUE)
+```
+
+
+
+## Some new graphs
+
+
+
+The `geom_histogram()` function in the `ggplot2` package is nice, but it does not have a good default binwidth. So I added the `gghistogram` function which provides a quick histogram with good defaults. You can also overlay a normal density curve or a kernel density estimate.
+
+```{r, message=FALSE, cache=TRUE}
+gghistogram(lynx)
+```
+
+The `ggseasonplot` function is useful for studying seasonal patterns and how they change over time. It now has a `polar` argument to create graphs like this.
+
+```{r, message=FALSE, cache=TRUE}
+ggseasonplot(USAccDeaths, polar=TRUE)
+```
+
+
+I often want to add a time series line to an existing plot. Base graphics has `line()` which works well when a time series is passed as an argument. So I added `autolayer` which is similar (but more general). It is an S3 method like `autoplot`, and adds a layer to an existing `ggplot` object. `autolayer` will eventually form part of the next release of `ggplot2`, but for now it is available in the `forecast` package. There are methods provided for `ts` and `forecast` objects:
+
+```{r, message=FALSE, cache=TRUE}
+WWWusage %>% ets %>% forecast(h=20) -> fc
+autoplot(WWWusage, series="Data") + 
+  autolayer(fc, series="Forecast") + 
+  autolayer(fitted(fc), series="Fitted")
+```
+
+## Cross-validation
+
+
+
+The `tsCV` and `CVar` functions have been added. These were discussed in a [previous post](http://robjhyndman.com/hyndsight/tscv/).
+
+
+
+## Bagged ETS
+
+
+
+The `baggedETS` function has been added, which implements the procedure discussed in [Bergmeir et al (2016)](http://robjhyndman.com/papers/bagging-ets/) for bagging ETS forecasts.
+
+
+
+## head and tail of time series
+
+
+
+I’ve long found it annoying that `head` and `tail` do not work on multiple time series. So I added some functions to the package so they now work.
+
+
+
+## Imports and Dependencies
+
+
+
+The pipe operator from the `magrittr` package is now imported. So you don’t need to load the `magrittr` package to use it.
+
+There are now no packages that are loaded with `forecast` – everything required is imported. This makes the start up much cleaner (no more annoying messages from all those packages being loaded). Instead, some random tips are occasionally printed when you load the forecast package (much like `ggplot2` does).
+
+There is quite a bit more — see the [Changelog](https://github.com/robjhyndman/forecast/blob/master/ChangeLog) for a list.

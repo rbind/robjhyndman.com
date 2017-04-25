@@ -1,0 +1,89 @@
+---
+author: robjhyndman
+comments: true
+date: 2015-07-16 07:57:46+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/murphy-diagrams/
+slug: murphy-diagrams
+title: Murphy diagrams in R
+wordpress_id: 3322
+categories:
+- forecasting
+- graphics
+- R
+- statistics
+- time series
+---
+
+At the recent [_International Symposium on Forecasting_](http://www.forecasters.org/isf), held in Riverside, California, Tillman Gneiting gave a great talk on **"Evaluating forecasts: why proper scoring rules and consistent scoring functions matter"**. It will be the subject of an IJF invited paper in due course.
+
+One of the things he talked about was the "Murphy diagram" for comparing forecasts, as proposed in [Ehm et al (2015)](http://arxiv.org/abs/1503.08195). Here's how it works for comparing mean forecasts.<!-- more -->
+
+It is well-known that the mean of the forecast distribution is obtained by minimizing the squared error loss function, $S(x,y)=(x-y)^2$ where $x$ is the point forecast and $y$ is the actual observation. That is
+
+<div>
+$$
+\text{E}(Y) = \text{min arg}_x S(x,y).
+$$
+</div>
+
+An old result that is not so well known is that there are other loss functions which would also lead to the forecast mean. In fact, [Savage (1971)](http://www.jstor.org/stable/2284229) showed that any scoring function is consistent for the mean if and only if it is of the form
+<div>
+\begin{equation}\label{savage}
+S(x,y) = \phi(y) - \phi(x) - \phi'(x)(y-x)
+\end{equation}
+</div>
+where the function $\phi$ is convex with subgradient $\phi'$. Setting $\phi(u)=u^2$ gives the usual squared error result. So when comparing point forecasts that are intended to be estimates of the mean, it may not be appropriate to only compare the MSE values. A different scoring function that satisfies condition (1) may give a different ranking of competing forecasts.
+
+Ehm et al (2015) showed that any scoring function satisfying condition (1) can be written as
+<div>
+$$
+S(x,y) = \int_{-\infty}^\infty S_{\theta}(x,y) dH(\theta)
+$$ 
+</div>
+where $H$ is a non-negative measure and 
+<div>
+$$
+S_{\theta}(x,y) = \begin{cases}
+  |y-\theta| & \text{if} \min(x,y)\le\theta < \max(x,y) \\
+  0 & \text{otherwise}.
+\end{cases}
+$$
+</div>
+Different $H$ measures give different scoring functions, but $S_{\theta}(x,y)$ is the same for all such scoring functions.
+
+So if we have point forecasts for $n$ events, we can calculate the average value of $S_{\theta}(x,y)$ for each $\theta$:
+<div>
+$$
+s(\theta) = \frac{1}{n}\sum_{i=1}^n S_{\theta}(x_i,y_i)
+$$
+</div>
+and plot this as a function of $\theta$. This is what Ehm et al call a "Murphy diagram". A similar approach can be taken for quantile and expectile forecasts (with a different function $S_\theta(x,y)$ of course).
+
+I have written some R code for producing these plots. Here it is applied to rolling one-step forecasts computed using ETS and ARIMA models. The data was simulated from an ARIMA model, so we would expect the ARIMA forecasts to be better:
+
+```{r, cache=TRUE}    
+    source("http://robjhyndman.com/Rfiles/murphy.R")
+    library(forecast)
+    y <- arima.sim(n = 300, list(ar = c(0.8897, -0.4858), ma = c(-0.2279, 0.2488)),
+                   sd = sqrt(0.1796))
+    
+    # Rolling one-step forecasts
+    f1 <- f2 <- ts(numeric(300)*NA)
+    for(i in 30:299)
+    {
+      fit1 <- ets(window(y,end=i))
+      fit2 <- auto.arima(window(y,end=i))
+      f1[i+1] <- forecast(fit1, PI=FALSE, h=1)$mean
+      f2[i+1] <- forecast(fit2, h=1)$mean
+    } 
+    
+    murphydiagram(y, f1, f2)
+    legend("topleft", lty=1, col=c("blue","red"), legend=c("ETS","ARIMA"))
+    
+    murphydiagram(y, f1, f2, type='diff', main="ETS - ARIMA")
+```
+
+The shaded region shows 95% pointwise confidence intervals for the difference between the two functions.
+
+Currently my R code only works for the mean function, but it would be easy enough to modify the function to handle quantiles and expectiles as well.

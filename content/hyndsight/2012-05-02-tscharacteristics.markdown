@@ -1,0 +1,337 @@
+---
+author: robjhyndman
+comments: true
+date: 2012-05-02 07:51:05+00:00
+
+link: http://robjhyndman.com/hyndsight/tscharacteristics/
+slug: tscharacteristics
+title: Measuring time series characteristics
+wordpress_id: 1796
+categories:
+- forecasting
+- R
+- statistics
+- time series
+---
+
+A few years ago, I was working on a project where we measured various characteristics of a time series and used the information to determine what forecasting method to apply or how to cluster the time series into meaningful groups. The two main papers to come out of that project were:
+
+
+
+
+    
+  1. [Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. _Data Mining and Knowledge Discovery_, **13**(3), 335-364.](http://robjhyndman.com/papers/characteristic-based-clustering-for-time-series-data/)
+
+    
+  2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputin_g, **72**, 2581-2594.](http://robjhyndman.com/papers/forecast-rules/)
+
+
+
+I've since had a lot of requests for the code which one of my coauthors has been helpfully emailing to anyone who asked. But to make it easier, we thought it might be helpful if I post some updated code here. This is not the same as the R code we used in the paper, as I've improved it in several ways (so it will give different results). If you just want the code, skip to the bottom of the post.<!-- more -->
+
+
+
+## Finding the period of the data
+
+
+
+Usually in time series work, we know the period of the data (if the observations are monthly, the period is 12, for example). But in this project, some of our data was of unknown period and we wanted a method to automatically determine the appropriate period. The method we used was based on local peaks and troughs in the ACF. But I've since devised a better approach ([prompted on crossvalidated.com](http://stats.stackexchange.com/a/1214/159)) using an estimate of the spectral density:
+
+
+    
+    
+    find.freq <- function(x)
+    {
+      n <- length(x)
+      x <- as.ts(x)
+      # Remove trend from data
+      x <- residuals(tslm(x ~ trend))
+      # Compute spectrum by fitting ar model to largest section of x
+      n.freq <- 500
+      spec <- spec.ar(c(na.contiguous(x)), plot=FALSE, n.freq=n.freq)
+      if(max(spec$spec)>10) # Arbitrary threshold chosen by trial and error.
+      {
+        period <- floor(1/spec$freq[which.max(spec$spec)] + 0.5)
+        if(period==Inf) # Find next local maximum
+        {
+          j <- which(diff(spec$spec)>0)
+          if(length(j)>0)
+          {
+            nextmax <- j[1] + which.max(spec$spec[(j[1]+1):n.freq])
+            if(nextmax < length(spec$freq))
+              period <- floor(1/spec$freq[nextmax] + 0.5)
+            else
+              period <- 1L
+          }
+          else
+            period <- 1L
+        }
+      }
+      else
+        period <- 1L
+    
+      return(as.integer(period))
+    }
+    
+
+
+
+
+The function is called `find.freq` because time series people often call the period of seasonality the "frequency" (which is of course highly confusing).
+[Update: This function is now part of the forecast package as `findfrequency()`.]
+
+
+
+## Decomposing the data into trend and seasonal components
+
+
+
+We needed a measure of the strength of trend and the strength of seasonality, and to do this we decomposed the data into trend, seasonal and error terms.
+
+Because not all data could be decomposed additively, we first needed to apply an automated Box-Cox transformation. We tried a range of Box-Cox parameters on a grid, and selected the one which gave the most normal errors. That worked ok, but I've since found some papers that provide quite good automated Box-Cox algorithms that I've implemented in the forecast package. So this code uses Guerrero's (1993) method instead.
+
+For seasonal time series, we decomposed the transformed data using an stl decomposition with periodic seasonality.
+
+For non-seasonal time series, we estimated the trend of the transformed data using penalized regression splines via the [mgcv package](http://cran.r-project.org/package=mgcv).
+
+
+    
+    
+    decomp <- function(x,transform=TRUE)
+    {
+      require(forecast)
+      # Transform series
+      if(transform & min(x,na.rm=TRUE) >= 0)
+      {
+        lambda <- BoxCox.lambda(na.contiguous(x))
+        x <- BoxCox(x,lambda)
+      }
+      else
+      {
+        lambda <- NULL
+        transform <- FALSE
+      }
+      # Seasonal data
+      if(frequency(x)>1)
+      {
+        x.stl <- stl(x,s.window="periodic",na.action=na.contiguous)
+        trend <- x.stl$time.series[,2]
+        season <- x.stl$time.series[,1]
+        remainder <- x - trend - season
+      }
+      else #Nonseasonal data
+      {
+        require(mgcv)
+        tt <- 1:length(x)
+        trend <- rep(NA,length(x))
+        trend[!is.na(x)] <- fitted(gam(x ~ s(tt)))
+        season <- NULL
+        remainder <- x - trend
+      }
+      return(list(x=x,trend=trend,season=season,remainder=remainder,
+        transform=transform,lambda=lambda))
+    }
+    
+
+
+
+
+
+
+
+## Putting everything on a [0,1] scale
+
+
+
+We wanted to measure a range of characteristics such as strength of seasonality, strength of trend, level of nonlinearity, skewness, kurtosis, serial correlatedness, self-similarity, level of chaoticity (is that a word?) and the periodicity of the data. But we wanted all these on the same scale which meant mapping the natural range of each measure onto [0,1]. The following two functions were used to do this.
+
+
+    
+    
+    # f1 maps [0,infinity) to [0,1]
+    f1 <- function(x,a,b)
+    {
+      eax <- exp(a*x)
+      if (eax == Inf)
+        f1eax <- 1
+      else
+        f1eax <- (eax-1)/(eax+b)
+      return(f1eax)
+    }
+    
+    # f2 maps [0,1] onto [0,1]
+    f2 <- function(x,a,b)
+    {
+      eax <- exp(a*x)
+      ea <- exp(a)
+      return((eax-1)/(eax+b)*(ea+b)/(ea-1))
+    }
+    
+
+
+
+
+The values of $a$ and $b$ in each function were chosen so the measure had a 90th percentile of 0.10 when the data were iid standard normal, and a value of 0.9 using a well-known benchmark time series.
+
+
+
+## Calculating the measures
+
+
+
+Now we are ready to calculate the measures on the original data, as well as on the adjusted data (after removing trend and seasonality).
+
+
+    
+    
+    measures <- function(x)
+    {
+      require(forecast)
+    
+      N <- length(x)
+      freq <- find.freq(x)
+      fx <- c(frequency=(exp((freq-1)/50)-1)/(1+exp((freq-1)/50)))
+      x <- ts(x,f=freq)
+    
+      # Decomposition
+      decomp.x <- decomp(x)
+    
+      # Adjust data
+      if(freq > 1)
+        fits <- decomp.x$trend + decomp.x$season
+      else # Nonseasonal data
+        fits <- decomp.x$trend
+      adj.x <- decomp.x$x - fits + mean(decomp.x$trend, na.rm=TRUE)
+    
+      # Backtransformation of adjusted data
+      if(decomp.x$transform)
+        tadj.x <- InvBoxCox(adj.x,decomp.x$lambda)
+      else
+        tadj.x <- adj.x
+    
+      # Trend and seasonal measures
+      v.adj <- var(adj.x, na.rm=TRUE)
+      if(freq > 1)
+      {
+        detrend <- decomp.x$x - decomp.x$trend
+        deseason <- decomp.x$x - decomp.x$season
+        trend <- ifelse(var(deseason,na.rm=TRUE) < 1e-10, 0, 
+          max(0,min(1,1-v.adj/var(deseason,na.rm=TRUE))))
+        season <- ifelse(var(detrend,na.rm=TRUE) < 1e-10, 0,
+          max(0,min(1,1-v.adj/var(detrend,na.rm=TRUE))))
+      }
+      else #Nonseasonal data
+      {
+        trend <- ifelse(var(decomp.x$x,na.rm=TRUE) < 1e-10, 0,
+          max(0,min(1,1-v.adj/var(decomp.x$x,na.rm=TRUE))))
+        season <- 0
+      }
+    
+      m <- c(fx,trend,season)
+    
+      # Measures on original data
+      xbar <- mean(x,na.rm=TRUE)
+      s <- sd(x,na.rm=TRUE)
+      
+      # Serial correlation
+      Q <- Box.test(x,lag=10)$statistic/(N*10)
+      fQ <- f2(Q,7.53,0.103)
+    
+      # Nonlinearity
+      p <- terasvirta.test(na.contiguous(x))$statistic
+      fp <- f1(p,0.069,2.304)
+    
+      # Skewness
+      sk <- abs(mean((x-xbar)^3,na.rm=TRUE)/s^3)
+      fs <- f1(sk,1.510,5.993)
+    
+      # Kurtosis
+      k <- mean((x-xbar)^4,na.rm=TRUE)/s^4
+      fk <- f1(k,2.273,11567)
+    
+      # Hurst=d+0.5 where d is fractional difference.
+      H <- fracdiff(na.contiguous(x),0,0)$d + 0.5
+    
+      # Lyapunov Exponent
+      if(freq > N-10)
+          stop("Insufficient data")
+      Ly <- numeric(N-freq)
+      for(i in 1:(N-freq))
+      {
+        idx <- order(abs(x[i] - x))
+        idx <- idx[idx < (N-freq)]
+        j <- idx[2]
+        Ly[i] <- log(abs((x[i+freq] - x[j+freq])/(x[i]-x[j])))/freq
+        if(is.na(Ly[i]) | Ly[i]==Inf | Ly[i]==-Inf)
+          Ly[i] <- NA
+      }
+      Lyap <- mean(Ly,na.rm=TRUE)
+      fLyap <- exp(Lyap)/(1+exp(Lyap))
+    
+      m <- c(m,fQ,fp,fs,fk,H,fLyap)
+      
+      # Measures on adjusted data
+      xbar <- mean(tadj.x, na.rm=TRUE)
+      s <- sd(tadj.x, na.rm=TRUE)
+    
+      # Serial
+      Q <- Box.test(adj.x,lag=10)$statistic/(N*10)
+      fQ <- f2(Q,7.53,0.103)
+    
+      # Nonlinearity
+      p <- terasvirta.test(na.contiguous(adj.x))$statistic
+      fp <- f1(p,0.069,2.304)
+    
+      # Skewness
+      sk <- abs(mean((tadj.x-xbar)^3,na.rm=TRUE)/s^3)
+      fs <- f1(sk,1.510,5.993)
+    
+      # Kurtosis
+      k <- mean((tadj.x-xbar)^4,na.rm=TRUE)/s^4
+      fk <- f1(k,2.273,11567)
+    
+      m <- c(m,fQ,fp,fs,fk)
+      names(m) <- c("frequency", "trend","seasonal",
+        "autocorrelation","non-linear","skewness","kurtosis",
+        "Hurst","Lyapunov",
+        "dc autocorrelation","dc non-linear","dc skewness","dc kurtosis")
+    
+      return(m)
+    }
+    
+
+
+
+
+
+Here is a quick example applied to Australian monthly gas production:
+
+
+    
+    
+    library(forecast)
+    measures(gas)
+         frequency              trend           seasonal    autocorrelation 
+            0.1096             0.9989             0.9337             0.9985 
+        non-linear           skewness           kurtosis              Hurst 
+            0.4947             0.1282             0.0055             0.9996 
+          Lyapunov dc autocorrelation      dc non-linear        dc skewness 
+            0.5662             0.1140             0.0538             0.1743 
+       dc kurtosis 
+            0.9992
+    
+
+
+
+
+The function is far from perfect, and it is not hard to find examples where it fails. For example, it doesn't work with multiple seasonality --- try `measure(taylor)` and check the seasonality. Also, I'm not convinced the kurtosis provides anything useful here, or that the skewness measure is done in the best way possible. But it was really a proof of concept, so we will leave it to others to revise and improve the code.
+
+In our papers, we took the measures obtained using R, and produced self-organizing maps using [Viscovery](http://www.viscovery.net/somine/). There is now a [som package](http://cran.r-project.org/web/packages/som/) in R for that, so it might be possible to integrate that step into R as well. The dendogram was generated in matlab, although that could now also be done in R using the [ggdendro package](http://cran.r-project.org/web/packages/ggdendro/) for example.
+
+
+
+* * *
+
+
+
+**[Download the code in a single file.](http://robjhyndman.com/papers/measures2.R)**

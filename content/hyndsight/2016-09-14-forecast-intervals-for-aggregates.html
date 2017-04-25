@@ -1,0 +1,49 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-14 14:44:50+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/
+slug: forecast-intervals-for-aggregates
+title: Forecast intervals for aggregates
+wordpress_id: 3869
+categories:
+- forecasting
+- R
+- time series
+---
+
+
+<p>A common problem is to forecast the aggregate of several time periods of data, using a model fitted to the disaggregated data. For example, you may have monthly data but wish to forecast the total for the next year. Or you may have weekly data, and want to forecast the total for the next four weeks.</p>
+<p>If the point forecasts are means, then adding them up will give a good estimate of the total. But prediction intervals are more tricky due to the correlations between forecast errors.</p>
+<!-- more -->
+<p>I’ve previously posted <a href="http://robjhyndman.com/hyndsight/forecasting-annual-totals/">a trick using seasonal ARIMA models</a> to do this. There is also Section 6.6 in my <a href="http://www.exponentialsmoothing.net">2008 Springer book</a>, deriving the analytical results for some ETS models.</p>
+<p>But a more general solution, if you only need empirical results, is to use simulations.</p>
+<p>Here is an example using ETS models applied to Australian monthly gas production data.</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+
+fit &lt;- ets(gas)
+# Forecast two years ahead
+fc &lt;- forecast(fit, h=24)
+plot(fc)</code></pre>
+<p><img src="/hyndsight/2016-09-14-forecast-intervals-for-aggregates_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Suppose we wish to forecast the aggregate gas demand in the next six months.</p>
+<pre class="r"><code>nsim &lt;- 10000
+h &lt;- 6 
+sim &lt;- numeric(nsim)
+for(i in seq_len(nsim))
+  sim[i] &lt;- sum(simulate(fit, future=TRUE, nsim=h))
+meanagg &lt;- mean(sim)</code></pre>
+<p>The mean of the simulations is very close to the sum of the individual forecasts:</p>
+<pre class="r"><code>sum(fc$mean[1:6])</code></pre>
+<pre><code>## [1] 277861.9</code></pre>
+<p>Prediction intervals are now easy to obtain:</p>
+<pre class="r"><code>#80% interval:
+quantile(sim, prob=c(0.1, 0.9))</code></pre>
+<pre><code>##      10%      90% 
+## 256649.5 299969.4</code></pre>
+<pre class="r"><code>#95% interval:
+quantile(sim, prob=c(0.025, 0.975))</code></pre>
+<pre><code>##     2.5%    97.5% 
+## 245807.4 311645.5</code></pre>

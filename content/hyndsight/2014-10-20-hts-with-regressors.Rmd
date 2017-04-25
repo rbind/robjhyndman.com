@@ -1,0 +1,65 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-10-20 02:08:07+00:00
+
+link: http://robjhyndman.com/hyndsight/hts-with-regressors/
+slug: hts-with-regressors
+title: hts with regressors
+wordpress_id: 3005
+categories:
+- forecasting
+- hts
+- R
+- statistics
+---
+
+The [hts package for R](http://robjhyndman.com/software/hts/) allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in [this Foresight paper](http://robjhyndman.com/working-papers/foresight-hts/).)
+
+The base forecasts can be generated using any method, with ETS models and ARIMA models provided as options in the `forecast.gts()` function. As ETS models do not allow for regressors, you will need to choose ARIMA models if you want to include regressors.<!-- more -->
+
+Suppose `x` is a matrix of historical regressors (with each column containing one regressor and with the number of rows equal to the number of time periods of historical data), and `f` is the corresponding matrix of future regressors (with the number of rows equal to the forecast horizon). Then if `y` is an `hts` or `gts` object, the following code can be used for forecasting:
+
+```r
+fc <- forecast(y, fmethod="arima", xreg="x", newxreg="f")
+```
+
+
+
+That will fit a regression with ARIMA errors to each of the original series (at all levels of aggregation), produce forecasts from each model, and then reconcile the forecasts so they satisfy the aggregation constraints.
+
+
+
+### Infant deaths
+
+
+
+I will illustrate using infant death numbers for Australia. These are disaggregated by state and sex as shown below. 
+
+```{r, echo=TRUE, message=FALSE, cache=TRUE}
+library(hts)
+plot(infantgts)
+```
+
+A potential forecasting method is to use a regression model on the log scale with a constant to 1970 and a decreasing trend thereafter. The figure below shows the model for the most aggregated data.
+
+```{r, cache=TRUE}
+plot(log(aggts(infantgts, level=0)), xlab="Year", ylab="Log total infant deaths")
+y <- log(aggts(infantgts, level=0))
+z <- pmax(time(infantgts$bts) - 1970, 0)
+fit <- lm(y ~ z)
+lines(ts(fitted(fit),start=1933),col='red')
+```
+
+To apply this model to all series, and allow for ARMA errors, we can use the following code.
+
+
+```{r, echo=TRUE, cache=TRUE}
+    y = window(infantgts, start=1944)
+    z = pmax(time(y$bts) - 1970, 0)
+    fz = max(z) + 1:10
+    fc = forecast(y, h=10, fmethod="arima", xreg=z, newxreg=fz, lambda=0)
+    plot(fc)
+```
+
+I started the series at 1944 as there were a few zero observations before that, and taking logs caused problems. The argument `lambda=0` means the models are fitted to the logged data (although reconciliation must occur on the original scale).

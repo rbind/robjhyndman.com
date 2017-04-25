@@ -1,0 +1,35 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-02-20 04:20:29+00:00
+
+link: http://robjhyndman.com/hyndsight/backcasting/
+slug: backcasting
+title: Backcasting in R
+wordpress_id: 2488
+categories:
+- forecasting
+- R
+- statistics
+---
+
+Sometimes it is useful to "backcast" a time series --- that is, forecast in reverse time. Although there are no in-built R functions to do this, it is very easy to implement. Suppose `x` is our time series and we want to backcast for $h$ periods. Here is some code that should work for most univariate time series. The example is non-seasonal, but the code will also work with seasonal data.<!-- more -->
+
+```{r, cache=TRUE, message=FALSE}
+    library(forecast)
+    x <- WWWusage
+    h <- 20
+    f <- frequency(x)
+    # Reverse time
+    revx <- ts(rev(x), frequency=f)
+    # Forecast
+    fc <- forecast(auto.arima(revx), h)
+    plot(fc)
+    # Reverse time again
+    fc$mean <- ts(rev(fc$mean),end=tsp(x)[1] - 1/f, frequency=f)
+    fc$upper <- fc$upper[h:1,]
+    fc$lower <- fc$lower[h:1,]
+    fc$x <- x
+    # Plot result
+    plot(fc, xlim=c(tsp(x)[1]-h/f, tsp(x)[2]))
+```

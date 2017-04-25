@@ -1,0 +1,32 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-10-10 07:06:04+00:00
+
+link: http://robjhyndman.com/hyndsight/abs-seasonal-adjustment-2/
+slug: abs-seasonal-adjustment-2
+title: Explaining the ABS unemployment fluctuations
+wordpress_id: 2985
+categories:
+- jobs
+- seasonality
+- statistics
+---
+
+
+<p>Although the <a href="http://www.theguardian.com/news/datablog/2014/oct/09/abs-jobs-and-unemployment-figures-key-questions-answered-by-an-expert"><em>Guardian</em> claimed yesterday that I had explained</a> “what went wrong” in the July and August unemployment figures, I made no attempt to do so as I had no information about the problems. Instead, I just explained a little about the purpose of seasonal adjustment.</p>
+<p>However, today I learned a little more about the ABS unemployment data problems, including what may be the explanation for the fluctuations. This <a href="http://www.abc.net.au/news/2014-10-10/janda-when-unemployment-figures-go-awol/5802638">explanation was offered by Westpac’s chief economist, Bill Evans</a> (see <a href="http://www.abc.net.au/news/2014-10-08/westpac-chief-economist-bill-evans-discusses-the/5799396">here for a video</a> of him explaining the issue).<!-- more --></p>
+<p>The problem is that August is traditionally a weak month for employment and so the seasonal factors that are applied in the seasonal adjustment result in an increase in the August employment numbers. On the other hand, September tends to be stronger, and so the September figures are reduced in the seasonal adjustment. However, this year, there were more August jobs than September jobs, and after the seasonal adjustment, the difference was even greater. The graph below shows the total employment numbers for the last few years using a <a href="https://www.otexts.org/fpp/2/1">seasonplot</a>. The problem with August is clearly seen here. It also seems that September is a little low as September is normally well above July whereas September and July are almost equal in 2014.</p>
+<p><img src="/hyndsight/2014-10-10-abs-seasonal-adjustment-2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The estimated total number of employed persons was 11.37 million in August 2013 and 11.55 million in September 2013. While in 2014, the corresponding figures were 11.62 million and 11.59 million. The ABS website provides 37 years of unemployment data and this was the first time that September’s figure had been lower than August’s figure. The graph below shows a boxplot of the differences over those 37 years. The outlier at the bottom corresponds to 2014.</p>
+<p><img src="/hyndsight/2014-10-10-abs-seasonal-adjustment-2_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>It is rather unlikely that employers behaved differently this year than in all previous years. It is also unlikely that that the survey data was so noisy as to cause this anomaly. Most likely (and this is Westpac’s suggestion) is that the problem is due to a change in the methodology for collecting the data.</p>
+<p>Before August 2014, if people in the survey said they were employed, they then had to answer a long list of additional questions. It seems likely that some employed people were wanting to avoid answering lots of questions, so they falsely claimed they were unemployed. From August 2014, the additional questions were no longer asked, and so there was no incentive for people to give a false answer. Consequently, they said they were employed, and the August numbers were much larger than expected. September surveys never had the additional questions, and so September figures were not affected by the change. So this explains that higher August figure, but not the lower September figure. Hence, it may only be a partial explanation.</p>
+<p>The ABS actually hinted at this explanation in their <a href="http://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/6202.0Main%20Features2Sep%202014?opendocument&amp;tabname=Summary&amp;prodno=6202.0&amp;issue=Sep%202014&amp;num=&amp;view=">own notes</a> on the release:</p>
+<blockquote>
+<p>The ABS has been unable to determine a definitive cause of this change in seasonality. It could have resulted from one or more factors including changes in ‘real world’ labour market behaviour, changes in the timing and content of the supplementary survey program (run in conjunction with the Labour Force Survey), the introduction of web-forms, the introduction of the new labour force questionnaire, or refinements to collection procedures.</p>
+</blockquote>
+<p>I guess one lesson to learn from all this is neatly summarized by <a href="http://en.wikipedia.org/wiki/Josiah_Stamp,_1st_Baron_Stamp">Josiah Stamp</a>:</p>
+<blockquote>
+<p>“The government are very keen on amassing statistics. They collect them, add them, raise them to the nth power, take the cube root and prepare wonderful diagrams. But you must never forget that every one of these figures comes in the first instance from the village watchman, who just puts down what he damn pleases.”</p>
+</blockquote>

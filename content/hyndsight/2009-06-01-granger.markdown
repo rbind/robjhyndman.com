@@ -1,0 +1,15 @@
+---
+author: robjhyndman
+comments: true
+date: 2009-06-01 08:27:37+00:00
+
+link: http://robjhyndman.com/hyndsight/granger/
+slug: granger
+title: Clive Granger (1934-2009)
+wordpress_id: 101
+categories:
+- forecasting
+- obituary
+---
+
+Sir Clive Granger has died at the age of 74. There are some nice obituaries in the [New York Times](http://www.nytimes.com/2009/05/31/business/31granger.html) and the [Daily Telegraph](http://www.telegraph.co.uk/news/obituaries/finance-obituaries/5407598/Professor-Sir-Clive-Granger.html). Also, his [Wikipedia page](http://en.wikipedia.org/wiki/Clive_Granger) has some good information. I met Clive on several occasions and he was "a scholar and a gentleman", a remarkably humble man given his outstanding achievements and someone who was always willing to help young researchers. The world of forecasting will miss him.

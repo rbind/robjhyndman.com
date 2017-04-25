@@ -1,0 +1,18 @@
+---
+author: robjhyndman
+comments: true
+date: 2013-06-29 08:19:25+00:00
+
+link: http://robjhyndman.com/hyndsight/feedly/
+slug: feedly
+title: End of Google Reader
+wordpress_id: 2213
+categories:
+- computing
+---
+
+If you are reading this in Google Reader, or you are reading in an RSS reader that uses Google Reader as a back-end, then you probably need this reminder. Everyone else can stop reading now.<!-- more -->
+
+Google Reader will cease to be available on 1 July and you will lose all your feeds and other data if you have not switched before then.
+
+I have switched to using [Feedly](http://www.feedly.com) and it is a very convenient replacement. Just go to feedly, import your Google Reader feeds, and you're done. But you need to do it before 1 July or you will lose all your Google Reader feeds. Other possible replacements are [discussed here](http://lifehacker.com/5990881/five-best-google-reader-alternatives).

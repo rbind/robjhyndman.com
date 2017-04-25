@@ -1,0 +1,71 @@
+---
+date: 2010-10-13 04:45:21+00:00
+slug: animations
+title: Animated plots in R and LaTeX
+categories:
+- graphics
+- LaTeX
+- R
+- seminars
+---
+
+I like to use animated plots in my talks on functional time series, partly because it is the only way to really see what is going on with changes in the shapes of curves over time, and also because audiences love them! Here is how it is done.
+
+For LaTeX, you need to create every frame as a separate graphics file. Here is an example. First the R code:
+
+```r
+library(demography)
+nyears <- length(fr.mort$year)
+for(i in 1:nyears)
+{
+    pdf(paste("frmale",i,".pdf",sep=""),height=4,width=6.5)
+    x <- fr.mort
+    if(i<nyears)
+        x$rate$male[,(i+1):nyears] <- NA
+    plot(x,series="male",ylim=c(-9.5,1.5),
+        main=paste("French: male mortality (",fr.mort$year[1]-1+i,")",sep=""))
+    if(i>1)
+        x$rate$male[,1:(i-1)] <- NA
+    lines(x,series='male',lwd=2,col=1)
+    dev.off()
+}
+```
+
+This creates a series of pdf files in the figs directory, named frmale1.pdf, …, frmale191.pdf.  In the LaTeX file, you need to load the animate package. Then the following command will do the magic:
+
+```
+\centerline{\animategraphics[controls,buttonsize=0.3cm,width=12.5cm]
+    {6}{"frmale"}{1}{191}}
+```
+(Put it all on one line without the spaces.) This is how the graph on slide 2 of this presentation was produced.
+
+For web usage, it is better to produce an animated gif version in R:
+
+```r
+library(animation)
+library(demography)
+nyears <- length(fr.mort$year)
+makeplot <- function(){
+for(i in 1:nyears)
+{
+    x <- fr.mort
+    if(i<nyears)
+        x$rate$male[,(i+1):nyears] <- NA
+    plot(x,series="male",ylim=c(-9.5,1.5),
+        main=paste("French: male mortality (",fr.mort$year[1]-1+i,")",sep=""))
+    if(i>1)
+        x$rate$male[,1:(i-1)] <- NA
+    lines(x,series='male',lwd=2,col=1)
+}
+}
+oopt = ani.options(interval = 0, nmax = nyears)
+saveMovie(makeplot(),interval = 0.1, width = 580, height = 400)
+ani.options(oopt)
+```
+
+![](http://robjhyndman.com/Rfiles/animation/animation.gif)
+
+For an explanation of the colours, see my [rainbow plot paper](http://robjhyndman.com/publications/rainbow-fda/).
+
+The [animation package for R](http://cran.r-project.org/web/packages/animation/) also allows graphics to be saved in other formats. See [this post](https://yihui.name/animation/) for further explanation.
+

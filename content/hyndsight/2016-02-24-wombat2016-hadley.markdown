@@ -1,0 +1,22 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-02-24 22:25:44+00:00
+
+link: http://robjhyndman.com/hyndsight/wombat2016-hadley/
+slug: wombat2016-hadley
+title: 'Making data analysis easier: Hadley Wickham at WOMBAT2016'
+wordpress_id: 3669
+categories:
+- conferences
+- data science
+- R
+- seminars
+- statistics
+---
+
+
+
+[Slides for Hadley's talk](http://wombat2016.org/slides/hadley.pdf)
+
+The slides for all the other talks from the workshop are also now online at [wombat2016.org](http://wombat2016.org)

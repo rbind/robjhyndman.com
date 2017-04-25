@@ -1,0 +1,20 @@
+---
+author: robjhyndman
+comments: true
+date: 2009-08-25 02:13:37+00:00
+
+link: http://robjhyndman.com/hyndsight/seek-help/
+slug: seek-help
+title: Seek help when it's needed
+wordpress_id: 441
+categories:
+- welfare
+---
+
+I don't think I've had a research student who did not think about giving up at some point. It was part through my second year when I felt like giving up. I felt I was not going to be able to finish my thesis, and that I would be better off throwing in the towel and doing something else. Fortunately, I couldn't think of anything better to do, plus I hate giving up on anything, so I persevered and it turned out ok. I was also fortunate to have a very supportive wife and a great associate supervisor in Gary Grunwald who kept me going.
+
+Feelings of frustration, inadequacy, and isolation are normal for research students. It is a pity this is not discussed more, as many students seem to think they are the only ones struggling. In reality, it seems to be common to every research student at some point during their canditature. It is even more difficult for students with families overseas, or who have conflicting demands on them such as family or cultural expectations that make it difficult to study.  Also, the sheer intensity of doing doctoral research can bring personal issues to the surface that may make study difficult.
+
+Several of my students have experienced phases of distress and depression, during which they find it almost impossible to work at all. Some students feel unable to talk about their stuggles, and battle on feeling lonely, inadequate and isolated. I try to help as much as I can as a supervisor, but sometimes it is necessary to seek additional assistance.
+
+For those students at Monash, please consider using the [free counselling service](http://www.adm.monash.edu.au/community-services/counselling/clayton/). The staff are very experienced and trained to deal with exactly the sorts of problems outlined above. Most universities have such services these days, and I encourage students to seek help when it's needed. There's no shame in asking for assistance.

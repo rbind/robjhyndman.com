@@ -1,0 +1,27 @@
+---
+author: Rob&nbsp;J&nbsp;Hyndman
+Status: Published
+comments: false
+date: 1992-12-17 00:19:33+00:00
+slug: phd
+title: Continuous-time threshold autoregressive modelling
+status: Published
+kind: phd
+file: PhDThesis.pdf
+citation: "PhD thesis, The University of Melbourne"
+tag:
+- highest density regions
+- time series
+---
+
+This thesis considers continuous time autoregressive processes defined by stochastic differential equations and develops some methods for modelling time series data by such processes.
+
+The first part of the thesis looks at continuous time linear autoregressive (CAR) processes defined by linear stochastic differential equations. These processes are well-understood and there is a large body of literature devoted to their study. I summarise some of the relevant material and develop some further results. In particular, I propose a new and very fast method of estimation using an approach analogous to the Yule--Walker estimates for discrete time autoregressive processes. The models so estimated may be used for preliminary analysis of the appropriate model structure and as a starting point for maximum likelihood estimation.
+
+A natural extension of CAR processes is the class of continuous time threshold autoregressive (CTAR) processes defined by piecewise linear stochastic differential equations. Very little attention has been given to these processes with a few isolated papers in the engineering and probability literature over the past 30 years and some recent publications by Tong and Yeung (summarised in Tong, 1990). I consider the order one case in detail and derive conditions for stationarity, equations for the stationary density, equations for the first two moments and discuss various approximating Markov chains. Higher order processes are also discussed and several approaches to estimation and forecasting are developed.
+
+Both CAR and CTAR models are fitted to several real data sets and the results are compared. A rule-based procedure is suggested for fitting these models to a given time series.
+
+One difficulty with using non-linear models (such as CTAR models) is that the forecast densities are not Gaussian, not symmetric and often multi-modal. Therefore, it is inappropriate to just consider the mean and standard deviation of forecasts. It is argued that for non-Gaussian forecast densities, highest density regions should be used when describing forecasts. An algorithm which enables the rapid construction of highest density regions given a probability density function is developed. The methods described are applicable to univariate data with a continuous density containing any number of local modes. The density may be known analytically or may be estimated from observations or simulations. Code for the algorithm is provided in the C language.
+
+

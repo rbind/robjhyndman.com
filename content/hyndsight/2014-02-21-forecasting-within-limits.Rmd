@@ -1,0 +1,62 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-02-21 10:36:14+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/forecasting-within-limits/
+slug: forecasting-within-limits
+title: Forecasting within limits
+wordpress_id: 2492
+categories:
+- forecasting
+- R
+- statistics
+---
+
+It is common to want forecasts to be positive, or to require them to be within some specified range $[a,b]$. Both of these situations are relatively easy to handle using transformations.<!-- more -->
+
+
+
+### Positive forecasts
+
+
+
+To impose a positivity constraint, simply work on the log scale. With the forecast package in R, this can be handled by specifying the Box-Cox parameter $\lambda=0$. For example, consider the real price of a dozen eggs (1900-1993; in cents):
+
+```{r, message=FALSE, cache=TRUE}
+    library(fpp)
+    fit <- ets(eggs, lambda=0)
+    plot(forecast(fit, h=50))
+```    
+
+
+### Forecasts constrained to an interval
+
+
+
+To see how to handle data constrained to an interval, imagine that the egg prices were constrained to lie within $a=50$ and $b=400$. Then we can transform the data using a scaled logit transform which maps $(a,b)$ to the whole real line:
+$$
+y = \log\left(\frac{x-a}{b-x}\right)
+$$
+where $x$ is on the original scale and $y$ is the transformed data.
+
+
+```{r, cache=TRUE}
+    # Bounds
+    a <- 50
+    b <- 400
+    # Transform data
+    y <- log((eggs-a)/(b-eggs))
+    fit <- ets(y)
+    fc <- forecast(fit, h=50)
+    # Back-transform forecasts
+    fc$mean <- (b-a)*exp(fc$mean)/(1+exp(fc$mean)) + a
+    fc$lower <- (b-a)*exp(fc$lower)/(1+exp(fc$lower)) + a
+    fc$upper <- (b-a)*exp(fc$upper)/(1+exp(fc$upper)) + a
+    fc$x <- eggs
+    # Plot result on original scale
+    plot(fc)
+```    
+
+
+The prediction intervals from these transformations have the same coverage probability as on the transformed scale, because quantiles are preserved under monotonically increasing transformations.

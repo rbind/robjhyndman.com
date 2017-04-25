@@ -1,0 +1,89 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-03-04 23:57:02+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/forecasting-weekly-data/
+slug: forecasting-weekly-data
+title: Forecasting weekly data
+wordpress_id: 2541
+categories:
+- forecasting
+- R
+- statistics
+---
+
+This is another situation where Fourier terms are useful for handling the seasonality. Not only is the seasonal period rather long, it is non-integer (averaging 365.25/7 = 52.18). So ARIMA and ETS models do not tend to give good results, even with a period of 52 as an approximation.
+<!-- more -->
+
+
+
+### Regression with ARIMA errors
+
+
+
+The simplest approach is a regression with ARIMA errors. Here is an example using weekly data on US finished motor gasoline products supplied (in thousands of barrels per day) from February 1991 to May 2005. An updated version of the data is available from [the EIA website](http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=wgfupus2&f=W). I select the number of Fourier terms by minimizing the AICc. The order of the ARIMA model is also selected by minimizing the AICc, although that is done within the `auto.arima()` function.
+
+```{r, message=FALSE, cache=TRUE}
+library(forecast)
+gas <- ts(read.csv("http://robjhyndman.com/data/gasoline.csv", header=FALSE)[,1], 
+          freq=365.25/7, start=1991+31/365.25)
+bestfit <- list(aicc=Inf)
+for(i in 1:25)
+{
+  fit <- auto.arima(gas, xreg=fourier(gas, K=i), seasonal=FALSE)
+  if(fit$aicc < bestfit$aicc)
+    bestfit <- fit
+  else break;
+}
+fc <- forecast(bestfit, xreg=fourier(gas, K=12, h=104))
+plot(fc)
+```
+
+
+
+The fitted model has 12 pairs of Fourier terms and can be written as
+
+<div>
+$$
+y_t = bt + \sum_{j=1}^{12} \left[ \alpha_j\sin\left(\frac{2\pi j t}{52.18}\right) + \beta_j\cos\left(\frac{2\pi j t}{52.18}\right) \right] + n_t
+$$
+</div>
+
+where $n\_t$ is an ARIMA(3,1,3) process. Because $n\_t$ is non-stationary, the model is actually estimated on the differences of the variables on both sides of this equation. That is why there is no need for an intercept term. There are 24 parameters to capture the seasonality which is rather a lot, but apparently required according to the AIC selection. (BIC would have given fewer.) The total number of degrees of freedom is 31 (the other seven coming from the 6 ARMA parameters and the drift parameter).
+
+
+
+### TBATS
+
+
+
+An alternative approach is the TBATS model introduced by [De Livera et al (JASA, 2011)](http://robjhyndman.com/papers/complex-seasonality/). This uses a state space model that is a generalization of those underpinning exponential smoothing. It also allows for automatic Box-Cox transformation and ARMA errors. The modelling algorithm is entirely automated:
+
+```{r, cache=TRUE}
+gastbats <- tbats(gas)
+fc2 <- forecast(gastbats, h=104)
+plot(fc2, ylab="thousands of barrels per day")
+```
+
+Here the fitted model is given at the top of the plot as TBATS(0.999, {2,2}, 1, {<52.18,8>}). That is, a Box-Cox transformation of 0.999 (essentially doing nothing), ARMA(2,2) errors, a damping parameter of 1 (doing nothing) and 8 Fourier pairs with period $m=52.18$. This model can be written as
+
+<div>
+\begin{align}
+y_t &= \ell_{t-1} + b_{t-1} + s_{t-1} + \alpha d_t\\
+b_t &= b_{t-1} + \beta d_t\\
+s_t &= \sum_{j=1}^{8} s_{j,t}\\
+s_{j,t} &= s_{j,t-1}\cos \left(\frac{2\pi j t}{52.18}\right) +s_{j,t-1}^{\ast}\sin \left(\frac{2\pi j t}{52.18}\right) + \gamma_1d_t \\
+s_{j,t}^{\ast} &= -s_{j,t-1}\sin\left(\frac{2\pi j t}{52.18}\right) + s_{j,t-1}^{\ast}\cos\left(\frac{2\pi j t}{52.18}\right)+\gamma_2d_t,
+\end{align}
+</div>
+
+where $d\_t$ is an ARMA(2,2) process and  $\alpha$, $\beta$, $\gamma\_1$ and $\gamma_2$ are smoothing parameters. Here the seasonality has been handled with 18 parameters (the sixteen initial values for $s\_{j,0}$ and $s\_{j,0}^{\ast}$ and the two smoothing parameters $\gamma\_1$ and $\gamma\_2$). The total number of degrees of freedom is 26 (the other 8 coming from the two smoothing parameters $\alpha$ and $\beta$, the four ARMA parameters, and the initial level and slope values $\ell\_0$ and $b\_0$).
+
+
+
+### Which to use?
+
+
+
+In this example, the forecasts are almost identical and there is little to differentiate the two models. The TBATS model is preferable when the seasonality changes over time. The ARIMA approach is preferable if there are covariates that are useful predictors as these can be added as additional regressors.

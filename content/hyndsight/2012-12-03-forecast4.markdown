@@ -1,0 +1,132 @@
+---
+author: robjhyndman
+comments: true
+date: 2012-12-03 03:53:53+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/forecast4/
+slug: forecast4
+title: New in forecast 4.0
+wordpress_id: 2042
+categories:
+- computing
+- forecasting
+- R
+- statistics
+---
+
+A few days ago I released version 4.0 of the [forecast package for R](http://cran.r-project.org/web/packages/forecast/). There were quite a few changes and new features, so I thought it deserved a new version number. I keep a list of changes in the [Changelog](http://cran.r-project.org/web/packages/forecast/ChangeLog) for the package, but I doubt that many people look at it. So for the record, here are the most important changes to the forecast package made since [v3.0 was released](http://robjhyndman.com/hyndsight/forecast3/).<!-- more -->
+
+
+
+### Exponential smoothing
+
+
+
+The `ets()` function handles exponential smoothing in the ETS framework, but for teaching purposes it is sometimes useful to discuss a more traditional implementation that does not involve optimizing the initial values. The `HoltWinters()` function in the `stats` package attempts to do this, although the initialization used for the Holt and Holt-Winters methods is non-standard, making it unsuitable for teaching.
+
+Consequently, I've now modified the `ses()`, `holt()` and `hw()` functions to allow both traditional heuristic initialization and ETS-style optimization of initial states. These functions also now allow damped trend and multiplicative trend.
+
+
+
+### Multiple seasonality and BATS and TBATS models
+
+
+
+Time series with multiple seasonal patterns (e.g., hourly data that contains a daily pattern, weekly pattern and an annual pattern) now have their own model class `msts`. This is useful when plotting the data, and in using the `dshw()` double seasonal Holt-Winters function for example.
+
+The BATS and TBATS models (fitted using `bats()` and `tbats()`) also handle multiple seasonalities as well as complex seasonalities (such as non-integer seasonality, non-nested seasonality and large period seasonality). The models are in the exponential-smoothing framework and were proposed by [De Livera, Hyndman and Snyder (JASA 2011)](http://robjhyndman.com/papers/complex-seasonality/).
+
+BATS and TBATS models allow a form of time series decomposition, and so the fitted objects can now plotted in the same way as other decomposition objects (e.g., `stl` objects).
+
+These models are quite computationally intensive, and so the functions will use parallel processing when it is available.
+
+
+
+### auto.arima()
+
+
+
+This is probably the most popular function in the package, and I am always looking at ways to speed it up and improve the results.
+
+
+
+
+    
+  * Default model selection has been switched from AIC to AICc (the bias-corrected form of AIC) which may affect model selection for very short time series.
+
+    
+  * The maximum orders are now restricted to less than 1/3 of the length of the data.
+
+    
+  * Parallel processing is used where possible when `stepwise=FALSE`.
+
+
+
+
+
+### Accuracy calculations
+
+
+
+The `accuracy` function now works with both time series forecasts and cross-sectional forecasts.
+
+The MASE for seasonal time series is now defined using seasonal naive forecasts for the in-sample scaling. The MASE for cross-sectional forecasts is defined using the mean forecasts for in-sample scaling. This is consistent with [my new book](http://otexts.com/fpp/2/5/).
+
+
+
+### Neural network AR models
+
+
+
+A new experimental function `nnetar` has been introduced to fit a neural network with lagged values of the time series as inputs. It is a feed-forward network with one hidden layer, specified using the notation NNAR($p,k$) to indicate there are $p$ lagged inputs and $k$ nodes in the hidden layer. For example, a NNAR(9,5) model is a neural network with the last nine observations $(y\_{t-1},y\_{t-2},\dots,y\_{t-9}$) used as inputs to forecast the output $y\_t$, and with five neurons in the hidden layer. A NNAR($p,0$) model is equivalent to an ARIMA($p,0,0$) model but without the restrictions on the parameters to ensure stationarity.
+
+With seasonal data, it is useful to also add the last observed values from the same season as inputs. For example, an NNAR(3,1,2)$\_{12}$ model has inputs $y\_{t-1}$, $y\_{t-2}$, $y\_{t-3}$ and $y\_{t-12}$, and two neurons in the hidden layer. More generally, an NNAR($p,P,k$)$\_m$ model has inputs $(y\_{t-1},y\_{t-2},\dots,y\_{t-p},y\_{t-m},y\_{t-2m},y_{t-Pm})$ and $k$ neurons in the hidden layer. A NNAR($p,P,0$)$\_m$ model is equivalent to an ARIMA($p,0,0$)($P,0,0$)$_m$ model but without the restrictions on the parameters to ensure stationarity.
+
+The `nnetar()` function fits an NNAR($p,P,k$)$_m$ model. If the values of $p$ and $P$ are not specified, they are automatically selected. For non-seasonal time series, the default is the optimal number of lags (according to the AIC) for a linear AR($p$) model. For seasonal time series, the default values are $P=1$ and $p$ is chosen from the optimal linear model fitted to the seasonally adjusted data. If $k$ is not specified, it is set to $k=(p+P+1)/2$ (rounded to the nearest integer).
+
+By default, 25 networks with random starting values are trained and their predictions averaged.
+
+Like many of the functions in the forecast package, the default arguments usually give reasonably good forecasts without the user needing to know much. For example:
+
+
+    
+    
+    fit <- nnetar(lynx)
+    plot(forecast(fit,h=20))
+    
+
+
+
+Because random starting values are used, the forecasts will be slightly different each time the function is called.
+
+It is possibly to compute prediction intervals from NNAR models via simulation, but I have not yet implemented this. The function will only give point forecasts for now.
+
+
+
+### New default colors for forecast plots
+
+
+
+The old yellow and orange colors have been replaced by shades of blue-grey which are a little easier on the eye. The darker the color, the higher the density. Here is an example with 80% and 95% prediction intervals.
+
+
+    
+    
+    library(fpp)
+    fit <- Arima(euretail, order=c(0,1,3), seasonal=c(0,1,1))
+    plot(forecast(fit,h=12))
+    
+
+
+
+[![](http://otexts.com/fppfigs/euretail6.png)](http://otexts.com/fppfigs/euretail6.png)
+
+
+
+### Future development
+
+
+
+Earlier this year I started using the package for an undergraduate forecasting class which gave it a good work-out, and I'm also using it as the basis of [my new book](http://otexts.com/fpp/) with George Athanasopoulos. As a result, a lot of new functionality has been added, and lots of bugs have been discovered and fixed.
+
+The process is continuing and I have lots of ideas I want to implement, and no doubt more bugs will be discovered. The development of the forecast package is now [maintained on github](http://github.com/robjhyndman/forecast) where you can see what is in development and report any new problems. Please let me know if you find anything you think is an error, or if you have a suggestion.

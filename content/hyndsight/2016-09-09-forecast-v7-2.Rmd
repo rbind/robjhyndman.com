@@ -1,0 +1,107 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-09 10:01:03+00:00
+mathjax: true
+link: http://robjhyndman.com/hyndsight/forecast-v7-2/
+slug: forecast-v7-2
+title: R package forecast v7.2 now on CRAN
+wordpress_id: 3861
+categories:
+- forecasting
+- graphics
+- R
+- seasonality
+- time series
+---
+
+I’ve pushed a minor update to the forecast package to CRAN. Some highlights are listed here.
+
+<!-- more -->
+
+
+
+## Plotting time series with ggplot2
+
+
+You can now facet a time series plot like this:
+
+```{r, cache=TRUE}
+library(forecast)
+library(ggplot2)
+lungDeaths <- cbind(mdeaths, fdeaths)
+autoplot(lungDeaths, facets=TRUE)
+```
+
+
+So `autoplot.mts` now behaves similarly to `plot.mts`
+
+## Multi-step fitted values
+
+
+The `fitted` function has a new argument `h` to allow computation of in-sample fitted values of more than one-step-ahead. In time series, fitted values are defined as the one-step-forecasts of the data used in training a model. Sometimes it is useful to have corresponding \(h\)-step forecasts, where \(h>1\). This is now possible.
+
+```{r, cache=TRUE}
+fit <- Arima(WWWusage,c(3,1,0))
+tab <- cbind(data=WWWusage,
+  'h=1' = fitted(fit, h=1),
+  'h=2' = fitted(fit, h=2),
+  'h=3' = fitted(fit, h=3))
+autoplot(tab) + ylab("Internet users") + xlab("Minute")
+```
+
+
+## Theta method now with seasonal adjustment
+
+
+The Theta method was proposed by [Assimakopoulos and Nikolopoulos (2000)](http://dx.doi.org/10.1016/S0169-2070(00)00066-2), and has been repeatedly shown to produce remarkably good forecasts. I included a non-seasonal form of the method (via `thetaf`) in the forecast package a long time ago, but I’ve now updated it to allow for seasonal time series as well. It is not quite identical to the A&N method, due to differences in optimization criteria, but it is close.
+
+
+
+
+
+
+
+
+
+## Tiny time series
+
+
+With the forecast package being increasingly used for large scale automatic forecasting, it is important that it does not fail on edge cases such as time series consisting of 2 or 3 observations. I’ve made some new tweaks to allow `ets()` and `auto.arima()` to produce sensible results in these cases. I wouldn’t bet my house on forecasts using only 2 observations, but they aren’t too bad.
+
+
+
+
+
+
+
+
+
+## Seasonal adjustment extensions
+
+
+The package has long offered seasonal adjustment via the `seasadj` function, applied to objects created using `stl`, `decompose`, and `tbats`. This has now been generalized to an S3 function so other people can write S3 seasonal adjustment methods.
+
+
+
+
+
+
+
+
+
+## Standardized first arguments
+
+
+The various modelling functions have either used `x` as the first argument or `y` as the first argument, to refer to the univariate time series to be modelled. To be consistent, this is now `y` in all functions. However, `x` will still work to avoid backwards compatibility issues.
+
+
+
+
+
+
+## Bug fixes and speed improvements
+
+
+
+As usual, there have been lots of bug fixes, mostly in functionality introduced in v7. More details are provided in the [Changelog](https://cran.r-project.org/web/packages/forecast/ChangeLog) or in the [github commits](https://github.com/robjhyndman/forecast/commits/master).

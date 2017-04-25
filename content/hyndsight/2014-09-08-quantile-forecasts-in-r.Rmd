@@ -1,0 +1,61 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-09-08 05:36:56+00:00
+
+link: http://robjhyndman.com/hyndsight/quantile-forecasts-in-r/
+slug: quantile-forecasts-in-r
+title: Generating quantile forecasts in R
+wordpress_id: 2921
+categories:
+- computing
+- energy
+- forecasting
+- R
+- statistics
+---
+
+From today's email:
+
+
+
+>I have just finished reading a copy of ['Forecasting:Principles and Practice'](http://www.otexts.org/fpp) and I have found the book really interesting. I have particularly enjoyed the case studies and focus on practical applications.
+>
+>After finishing the book I have joined a forecasting competition to put what I've learnt to the test. I do have a couple of queries about the forecasting outputs required. The output required is a quantile forecast, is this the same as prediction intervals? Is there any R function to produce quantiles from 0 to 99?
+>
+>If you were able to point me in the right direction regarding the above it would be greatly appreciated.
+>
+>Many Thanks,
+
+
+
+<!-- more -->
+
+Presumably the competition is [GEFCOM2014](http://www.gefcom.org) which I've [posted about before](http://robjhyndman.com/hyndsight/gefcom-2014/).
+
+The future value of a time series is unknown, so you can think of it as a random variable, and its distribution is the "forecast distribution". A "quantile forecast" is a quantile of the forecast distribution. The usual point forecast is often the mean or the median of the forecast distribution. A prediction interval is a range of specified coverage probability under that distribution. For example, if we assume the forecast distribution is normal, then the 95% prediction interval is defined by the 2.5% and 97.5% quantiles of the forecast distribution.
+
+Still assuming normality, we could generate the forecast quantiles from 1% to 99% in R using
+
+
+```r
+    qnorm((1:99)/100, m, s)
+```
+
+where `mu` and `sigma` are the estimated mean and standard deviation of the forecast distribution. So if you are using the forecast package in R, you can do something like this:
+
+```{r, message=FALSE, cache=TRUE}
+    library(forecast)
+    fit <- auto.arima(WWWusage)
+    fc <- forecast(fit, h=20, level=95)
+    qf <- matrix(0, nrow=99, ncol=20)
+    m <- fc$mean
+    s <- (fc$upper-fc$lower)/1.96/2
+    for(h in 1:20)
+      qf[,h] <- qnorm((1:99)/100, m[h], s[h])
+    
+    plot(fc)
+    matlines(101:120, t(qf), col=rainbow(120), lty=1)
+```
+
+Of course, assuming a normal distribution is rather restrictive and not very interesting. For a more interesting but much more complicated approach to generating quantiles, see my 2010 paper on [Density forecasting for long-term peak electricity demand](http://robjhyndman.com/papers/peak-electricity-demand/).

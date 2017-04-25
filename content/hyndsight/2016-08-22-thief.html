@@ -1,0 +1,57 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-08-22 07:58:42+00:00
+link: http://robjhyndman.com/hyndsight/thief/
+slug: thief
+title: 'The thief package for R: Temporal HIErarchical Forecasting'
+wordpress_id: 3804
+categories:
+- forecasting
+- R
+- seasonality
+- time series
+---
+
+
+<p>I have a new R package available to do temporal hierarchical forecasting, based on <a href="http://robjhyndman.com/working-papers/temporal-hierarchies/">my paper with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos</a>. (Guess the odd guy out there!)</p>
+<p>It is called <a href="http://github.com/robjhyndman/thief">“thief”</a> - an acronym for Temporal HIErarchical Forecasting. The idea is to take a seasonal time series, and compute all possible temporal aggregations that result in an integer number of observations per year. For example, a quarterly time series is aggregated to biannual and annual; while a monthly time series is aggregated to 2-monthly, quarterly, 4-monthly, biannual and annual. Each of the resulting time series are forecast, and then the forecasts are reconciled using the hierarchical reconciliation algorithm described in our paper.</p>
+<p>It turns out that this tends to give better forecasts, even though no new information has been added, especially for time series with long seasonal periods. It also allows different types of forecasts for different forecast horizons to be combined in a consistent manner.</p>
+<!-- more -->
+<p>The main function is <code>thief</code> which can be used like any of the forecast functions from the <code>forecast</code> package. For example:</p>
+<pre class="r"><code>library(thief)
+library(ggplot2)
+fc &lt;- thief(USAccDeaths)
+autoplot(fc)</code></pre>
+<p><img src="/hyndsight/2016-08-22-thief_files/figure-html/thief-1.png" width="672" /></p>
+<p>Under the hood, the <code>thief</code> function computes the temporal aggregates, then calculates all forecasts (using <code>ets</code> by default), and finally reconciles the forecasts using the approach described in our paper. The reconciled forecasts corresponding to the original series are returned.</p>
+<p>There are options for computing forecasts using other methods such as <code>auto.arima</code>, the Theta method, or a user-defined forecast function.</p>
+<p>There are also functions for doing each part separately: <code>tsaggregates</code> will compute all aggregated time series, <code>reconcilethief</code> will reconcile a list of time series (or a list of forecast objects) of different levels of temporal aggregation.</p>
+<p>Here is an example using these lower-level functions. This example is in the paper, and uses weekly data (which we treat as having seasonal period of 52).</p>
+<pre class="r"><code># Original series: Total Weekly Emergency Admissions in the UK
+total &lt;- AEdemand[,12]
+
+# Construct all temporal aggregates
+totalagg &lt;- tsaggregates(total)
+autoplot(totalagg, main=&quot;Total Emergency Admissions&quot;)</code></pre>
+<p><img src="/hyndsight/2016-08-22-thief_files/figure-html/thief2-1.png" width="672" /></p>
+<pre class="r"><code># Compute base forecasts
+base &lt;- list()
+for(i in seq_along(totalagg))
+  base[[i]] &lt;- forecast(auto.arima(totalagg[[i]]),
+                 h=2*frequency(totalagg[[i]]), level=80)
+
+# Reconcile forecasts
+reconciled &lt;- reconcilethief(base)
+
+#Plot original and reconciled forecasts
+par(mfrow=c(2,3), mar=c(3,3,1,0))
+for(i in 6:1)
+{
+  plot(reconciled[[i]], main=names(totalagg)[i],
+       xlim=c(2010.5,2017.5), flwd=1)
+  lines(base[[i]]$mean, col=&quot;red&quot;)
+}</code></pre>
+<p><img src="/hyndsight/2016-08-22-thief_files/figure-html/thief2-2.png" width="672" /></p>
+<p>The red line represents the original base forecasts and the blue line the reconciled forecasts. Observe how different the base forecasts are across the aggregation levels. At the annual level there is no trend captured in the forecast due to the limited fitting sample, and there is a weak trend captured in the weekly forecasts due to the noisy data. But the trend is quite strong at the intermediate temporal aggregation levels. Similarly seasonality is captured relatively accurately in the quarterly, monthly and bi-weekly levels, but not at the weekly level. Once these are reconciled, the trend at the annual and weekly levels are stronger, and the weekly seasonality looks more reasonable.</p>
+<p>For now, the package is <a href="http://github.com/robjhyndman/thief">available on github</a> only. It will probably migrate to CRAN soon.</p>

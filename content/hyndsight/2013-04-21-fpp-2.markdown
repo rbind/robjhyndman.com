@@ -1,0 +1,26 @@
+---
+author: robjhyndman
+comments: true
+date: 2013-04-21 00:19:14+00:00
+
+link: http://robjhyndman.com/hyndsight/fpp-2/
+slug: fpp-2
+title: My new forecasting book is finally finished
+wordpress_id: 2155
+categories:
+- forecasting
+- fpp
+- otexts
+- R
+---
+
+My [new online forecasting book](http://otexts.com/fpp/) (written with George Athanasopoulos) is now completed. I [previously described it on this blog](http://robjhyndman.com/hyndsight/fpp/) nearly a year ago.
+
+In reality, an online book is never complete, and we plan to continually update it. But it is now at the point where it is suitable for course work, and contains exercises and references.
+
+We hope that users (especially other lecturers) will submit materials such as slides and exercises, that can be shared on the website.
+
+For those wanting a print version, we will be selling it via Amazon in the next few months. The online version will remain freely available.
+
+If other authors are interested in this publishing model, please [see this page](http://otexts.com/authors/). The book is being published by [OTexts](http://otexts.com), a new innovative publishing company I am establishing. The forecasting book is our first publication, but we have three others that should be online within the next month or two. [
+](http://otexts.com/authors/)

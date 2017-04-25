@@ -1,0 +1,66 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-05-09 05:00:00+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast7-ggplot2/
+slug: forecast7-ggplot2
+title: forecast v7 and ggplot2 graphics
+wordpress_id: 3730
+categories:
+- forecasting
+- graphics
+- R
+- time series
+---
+
+
+<p>Version 7 of the <a href="https://github.com/robjhyndman/forecast">forecast package</a> was released on CRAN about a month ago, but I’m only just getting around to posting about the new features.</p>
+<p>The most visible feature was the introduction of <a href="http://ggplot2.org/">ggplot2 graphics</a>. I first wrote the forecast package before ggplot2 existed, and so only base graphics were available. But I figured it was time to modernize and use the nice features available from ggplot2. The following examples illustrate the main new graphical functionality.</p>
+<p>For illustration purposes, I’m using the male and female monthly deaths from lung diseases in the UK.</p>
+<!-- more -->
+<p>For all base plot() methods, there is now an autoplot() method with the same functionality.</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+
+# autoplot of a ts object
+autoplot(mdeaths)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code># autoplot of a forecast object
+fc &lt;- forecast(fdeaths)
+autoplot(fc)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code># autoplot of an stl object
+autoplot(stl(mdeaths, s.window=&quot;periodic&quot;, robust=TRUE))</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code># Plotting multiple forecasts in one plot
+fmdeaths &lt;- cbind(Males=mdeaths, Females=fdeaths)
+fit &lt;- tslm(fmdeaths ~ trend + season)
+fcast &lt;- forecast(fit, h=10)
+autoplot(fcast)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code># Plotting the components of an ETS model
+fit &lt;- ets(mdeaths)
+autoplot(fit)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code># Plotting the inverse characteristic roots of an ARIMA model
+fit &lt;- auto.arima(mdeaths, D=1)
+autoplot(fit)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>For plotting functions that do not use an S3 plot() method, there is now a ggplot2 version with “gg” prefixed to the function name.</p>
+<pre class="r"><code>    ggtsdisplay(mdeaths)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>    ggAcf(mdeaths, main=&quot;&quot;)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-7-2.png" width="672" /></p>
+<pre class="r"><code>    ggPacf(mdeaths, main=&quot;&quot;)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-7-3.png" width="672" /></p>
+<pre class="r"><code>    ggCcf(mdeaths, fdeaths)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-7-4.png" width="672" /></p>
+<pre class="r"><code>    ggseasonplot(mdeaths)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>    ggmonthplot(mdeaths)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p>There is also a new <code>geom_forecast()</code> function which uses <code>forecast.ts()</code> to obtain forecasts of the time series passed to <code>autoplot()</code>.</p>
+<pre class="r"><code>    autoplot(mdeaths) + geom_forecast(h=36)</code></pre>
+<p><img src="/hyndsight/2016-05-09-forecast7-ggplot2_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Almost all of this new gglot2 goodness was created by Mitchell O’Hara-Wild, a Monash University student who I employ as a research assistant.</p>

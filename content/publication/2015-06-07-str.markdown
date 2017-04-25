@@ -1,0 +1,25 @@
+---
+author: Alex Dokumentov and Rob&nbsp;J&nbsp;Hyndman
+Status: Published
+comments: false
+date: 2015-06-07 22:50:17+00:00
+excerpt: By Alex Dokumentov and Rob&nbsp;J&nbsp;Hyndman
+slug: str
+title: 'STR: A Seasonal-Trend Decomposition Procedure Based on Regression'
+wordpress_id: 2996
+kind:
+ unpublished
+tags:
+- electricity
+- forecasting
+- nonparametric smoothing
+- optimization
+- seasonality
+- time series
+file: wp13-15.pdf
+---
+
+
+
+We propose new generic methods for decomposing seasonal data: STR (a Seasonal-Trend decomposition procedure based on Regression) and Robust STR. In some ways, STR is similar to Ridge Regression and Robust STR can be related to LASSO. Our new methods are much more general than any alternative time series decomposition methods. They allow for multiple seasonal and cyclic components, and multiple linear regressors with constant, flexible, seasonal and cyclic influence. Seasonal patterns (for both seasonal components and seasonal regressors) can be fractional and flexible over time; moreover they can be either strictly periodic or have a more complex topology. We also provide confidence intervals for the estimated components, and discuss how STR can be used for forecasting.
+

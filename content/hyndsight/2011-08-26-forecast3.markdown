@@ -1,0 +1,175 @@
+---
+author: robjhyndman
+comments: true
+date: 2011-08-26 00:20:04+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast3/
+slug: forecast3
+title: Major changes to the forecast package
+wordpress_id: 1385
+categories:
+- forecasting
+- R
+---
+
+The [forecast package for R](http://cran.r-project.org/web/packages/forecast/) has undergone a major upgrade, and I've given it version number 3 as a result. Some of these changes were suggestions from the forecasting workshop I ran in Switzerland a couple of months ago, and some have been on the drawing board for a long time. Here are the main changes in version 3, plus a few earlier additions that I thought deserved a mention.
+<!-- more -->
+
+
+
+### Box-Cox transformations
+
+
+A Box-Cox transformation can now be incorporated into the forecasting model when calling `Arima(), auto.arima(), ets(), arfima(), tslm(), stlf(), rwf(), meanf(), splinef()`. For example:
+
+    
+    
+    fit <- Arima(lynx, order=c(2,0,0), lambda=0.5)
+    plot(forecast(fit,h=20))
+    
+
+
+The model is based on the transformed data, forecasts are calculated, and then the forecasts and prediction intervals are back-transformed. The point forecasts can be interpreted as medians after back-transforming.
+
+If the transformation is done outside the fitting function, the forecasts can still be back-transformed. For example:
+
+    
+    
+    fit <- ar(BoxCox(lynx,0.5))
+    plot(forecast(fit,lambda=0.5))
+    
+
+
+Back-transforming forecasts like this is now available in `forecast.Arima(), forecast.ets(), forecast.fracdiff(), forecast.ar(), forecast.StructTS, forecast.HoltWinters()`.
+
+I have also added a function for automatically choosing the Box-Cox parameter using either Guerrero's (1993) method or the profile log likelihood method. For example:
+
+    
+    
+    fit <- Arima(lynx, order=c(2,0,0), lambda=BoxCox.lambda(lynx))
+    plot(forecast(fit))
+    
+
+
+Note that previously there was a lambda argument in the `plot.forecast()` function. This is no longer available (and so some old code may break). Instead, back-transform the forecasts within the `forecast()` function.
+
+
+
+### Improved auto.arima()
+
+
+
+The `auto.arima()` function is widely used for automatically selecting ARIMA models. It works quite well, except that selection of $D$, the order of seasonal differencing, has always been poor. Up until now, the default has been to use the Canova-Hansen test to select $D$. Because the CH test has a null hypothesis of deterministic seasonality based on dummy variables, the function will often select $D=0$. So I've now switched to using the OCSB test for selecting $D$ which has a null hypothesis involving a seasonal difference, so it is much more likely to choose $D=1$ than previously. I've done extensive testing of the forecasts obtained under the two methods, and the OCSB test leads to better forecasts. Hence it is now the default. This means that the function may return a different ARIMA model than previously when the data are seasonal.
+
+A separate function for selecting the seasonal order has also been made visible. So you can now call `nsdiffs()` to find the recommended number of seasonal differences without calling `auto.arima()`. There is also a `ndiffs()` function for selecting the number of first differences. Within `auto.arima()`, `nsdiffs()` is called first to select $D$, and then `ndiffs()` is applied to `diff(x,D)` if $D>0$ or to `x` if $D=0$.
+
+
+
+### Double-seasonal Holt-Winters
+
+
+
+The new `dshw()` function implements Taylor's (2003) double-seasonal Holt-Winters method. This allows for two levels of seasonality. For example, with hourly data, there is often a daily period of 24 and a weekly period of 168. These are modelled separately in the `dshw()` function.
+
+I am planning some major new functionality to extend this to the various types of complex seasonality discussed in [my recent JASA paper](http://robjhyndman.com/papers/complex-seasonality/). Hopefully that will be ready in the next few weeks -- I have a research assistant working on the new code.
+
+
+
+### Sub-setting time series
+
+
+
+Occasionally you want to extract all the Novembers in a monthly time series (or something similar), but this has been fiddly to do up to now. So I've included a new function `subset.ts`. For example:
+
+    
+    
+    plot(subset(gas,month="November"))
+    subset(woolyrnq,quarter=3)
+    
+
+
+
+
+
+### Acf() and Pacf()
+
+
+
+These were actually added in v2.19 but I've not mentioned them anywhere so I thought it would be useful to say something here. The `acf()` function always includes a spike of length 1 at lag 0. This is pointless because the ACF at lag 0 is 1 by definition. It is also annoying because it forces the scale of the y-axis to include 1 which can obscure smaller correlations that might be of interest. The `Acf()` function works in the same way as the `acf()` function except that it omits lag 0. The `Pacf()` function is included for consistency only --- it returns the same object and produces the same plot as `pacf()`.
+
+
+
+### Time series linear models
+
+
+
+Another recent addition, but not new in v3, is the `tslm()` function for handling linear models for time series. This works in the same way as `lm()` except that the time series characteristics of the data are preserved in the residuals and fitted values. Also, the variables `trend` and `seasonal` can be used without needing to be defined. For example:
+
+    
+    
+    y <- ts(rnorm(120,0,3) + 20*sin(2*pi*(1:120)/12), frequency=12)
+    fit1 <- tslm(y ~ trend + season)
+    plot(forecast(fit1))
+    
+
+
+`trend` takes values $1,2,\dots,n$ where $n$ is the length of `y`, and `season` is a matrix of seasonal dummy variables.
+
+
+
+### Cross-validation
+
+
+
+The `CV()` function is another addition from earlier in the year. It implements the [cross-validation statistic](http://robjhyndman.com/hyndsight/crossvalidation/), AIC, corrected AIC, BIC and adjusted R2 values for a linear model. For example:
+
+    
+    
+    y <- ts(rnorm(120,0,3) + 20*sin(2*pi*(1:120)/12), frequency=12)
+    fit1 <- tslm(y ~ trend + season)
+    fit2 <- tslm(y ~ season)
+    CV(fit1)
+    CV(fit2)
+    
+
+
+`CV` works with any lm objects including those produced by `tslm()` and `lm()`.
+
+
+
+### Forecasting with STL
+
+
+
+This functionality was added earlier in the year, but it is so cool I wanted to mention it here. STL is a great method for decomposing time series into trend, seasonal and irregular components. It is robust and handles time series of any frequency.
+
+To forecast with STL, you seasonally adjust the data by subtracting the seasonal component, then forecast the seasonally adjusted data using a non-seasonal ARIMA or ETS model, then re-seasonalize the forecasts by adding back in the most recent values of the seasonal component (effectively using a seasonal naive forecast for the seasonal component). The whole procedure is handled effortlessly as follows
+
+    
+    
+    fit <- stl(USAccDeaths,s.window="periodic")
+    plot(forecast(fit))
+    
+
+
+There is also a new function `stlf()` which does the STL decomposition as well as the forecasting in one step.
+
+    
+    
+    plot(stlf(AirPassengers, lambda=BoxCox.lambda(AirPassengers)))
+    
+
+
+STL decompositions are always additive, but the inclusion of the Box-Cox parameter as shown here allows non-additive decompositions as well.
+
+For data with high seasonal period (such as weekly data, hourly data, etc.), forecasting with STL is often the simplest approach. It also works amazingly well on a wide range of series. If you apply the `forecast()` function to a time series (rather than a time series model), the forecasts returned will be from `stlf()` when the seasonal period is 13 or more.
+
+
+
+### Other changes
+
+
+
+A list of all changes to the forecast package is maintained in the [ChangeLog](http://cran.ms.unimelb.edu.au/web/packages/forecast/ChangeLog).
+
+With so many changes and new functions, I've probably introduced new bugs. Please let me know if you find any problems and I'll endeavour to fix anything ASAP. (Make sure you get v3.02 or later as v3.00 had some bugs.)

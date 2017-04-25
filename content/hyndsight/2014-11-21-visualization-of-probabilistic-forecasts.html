@@ -1,0 +1,102 @@
+---
+author: robjhyndman
+comments: true
+date: 2014-11-21 06:40:51+00:00
+
+link: http://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/
+slug: visualization-of-probabilistic-forecasts
+title: Visualization of probabilistic forecasts
+wordpress_id: 3068
+categories:
+- forecasting
+- graphics
+- R
+- statistics
+---
+
+
+<p>This week my research group discussed Adrian Raftery’s recent paper on <a href="http://arxiv.org/abs/1408.4812">“Use and Communication of Probabilistic Forecasts”</a> which provides a fascinating but brief survey of some of his work on modelling and communicating uncertain futures. Coincidentally, today I was also sent a copy of David Spiegelhalter’s paper on <a href="http://www.sciencemag.org/content/333/6048/1393.abstract">“Visualizing Uncertainty About the Future”</a>. Both are well-worth reading.</p>
+<p>It made me think about my own efforts to communicate future uncertainty through graphics. Of course, for time series forecasts I normally show prediction intervals. I prefer to use more than one interval at a time because it helps convey a little more information. The default in the forecast package for R is to show both an 80% and a 95% interval like this:<!-- more --></p>
+<pre class="r"><code>library(forecast)
+fit &lt;- ets(fma::hsales)
+plot(forecast(fit), include=120)</code></pre>
+<p><img src="/hyndsight/2014-11-21-visualization-of-probabilistic-forecasts_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>It is sometimes preferable to use a 50% and a 95% interval, rather like a boxplot:</p>
+<pre class="r"><code>plot(forecast(fit, level=c(50,95)), include=120)</code></pre>
+<p><img src="/hyndsight/2014-11-21-visualization-of-probabilistic-forecasts_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>In some circles (especially macroeconomic forecasting), fan charts are popular:</p>
+<pre class="r"><code>plot(forecast(fit,fan=TRUE),include=120)</code></pre>
+<p><img src="/hyndsight/2014-11-21-visualization-of-probabilistic-forecasts_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Personally, I don’t like these at all as they lose any specific probabilistic interpretability. What does the darker shaded region actually refer to? At least in the previous version, it is clear that the dark region contains 50% of the probability.</p>
+<p>For multi-modal distributions I like to use highest density regions. Here is an example applied to Nicholson’s blowfly data using a threshold model:</p>
+<p><a href="/files/Screenshot-from-2014-11-21-154237.png"><img src="/files/Screenshot-from-2014-11-21-154237.png" alt="Screenshot from 2014-11-21 15:42:37" /></a></p>
+<p>The dark region has 50% coverage and the light region has 95% coverage. The forecast distributions become bimodal after the first ten iterations, and so the 50% region is split in two to show that. This graphic was taken from a <a href="http://robjhyndman.com/papers/highest-density-forecast-regions-for-non-linear-and-non-normal-time-series-models/"><em>J. Forecasting</em> paper</a> I wrote in 1996, so these ideas have been around for a while!</p>
+<p>It is easy enough to produce forecast HDR with time series. Here is some R code to do it:</p>
+<pre class="r"><code>#HDR for time series object
+# Assumes that forecasts can be computed and futures simulated from object
+forecasthdr &lt;- function(object, h = ifelse(object$m &gt; 1, 2 * object$m, 10), 
+                        nsim=2000, plot=TRUE, level=c(50,95), xlim=NULL, ylim=NULL, ...)
+{
+  require(hdrcde)
+  # Compute forecasts
+  fc &lt;- forecast(object)
+  ft &lt;- time(fc$mean)
+  
+  # Simulate future sample paths
+  sim &lt;- matrix(0,nrow=h,ncol=nsim)
+  for(i in 1:nsim)
+    sim[,i] &lt;- simulate(object, nsim=h)
+  
+  # Compute HDRs
+  nl &lt;- length(level)
+  hd &lt;- array(0, c(h,nl,10))
+  mode &lt;- numeric(h)
+  for(k in 1:h)
+  {
+    hdtmp &lt;- hdr(sim[k,], prob=level)
+    hd[k,,1:ncol(hdtmp$hdr)] &lt;- hdtmp$hdr
+    mode[k] &lt;- hdtmp$mode
+  }
+  # Remove unnecessary sections of HDRs
+  nz &lt;- apply(abs(hd),3,sum) &gt; 0
+  hd &lt;- hd[,,nz]
+  dimnames(hd)[[1]] &lt;- 1:h
+  dimnames(hd)[[2]] &lt;- level
+  
+  
+  # Produce plot if required
+  if(plot)
+  {
+    if(is.null(xlim))
+      xlim &lt;- range(time(object$x),ft)
+    if(is.null(ylim))
+      ylim &lt;- range(object$x, hd)
+    plot(object$x,xlim=xlim, ylim=ylim, ...)
+    # Show HDRs
+    cols &lt;- rev(colorspace::sequential_hcl(52))[level - 49]
+    for(k in 1:h)
+    {
+      for(j in 1:nl)
+      {
+        hdtmp &lt;- hd[k,j,]
+        nint &lt;- length(hdtmp)/2
+        for(l in 1:nint)
+        {
+          polygon(ft[k]+c(-1,-1,1,1)/object$m/2, 
+                  c(hdtmp[2*l-1],hdtmp[2*l],hdtmp[2*l],hdtmp[2*l-1]),
+                col=cols[j], border=FALSE)
+        }
+      }
+      points(ft[k], mode[k], pch=19, col=&quot;blue&quot;,cex=0.8)
+    }
+    #lines(fc$mean,col=&#39;blue&#39;,lwd=2)
+  }
+
+  # Return HDRs
+  return(list(hdr=hd,mode=mode,level=level))
+}</code></pre>
+<p>We can apply it using the example I started with:</p>
+<pre class="r"><code>z &lt;- forecasthdr(fit,xlim=c(1986,1998),nsim=5000,
+                  xlab=&quot;Year&quot;,ylab=&quot;US monthly housing sales&quot;)</code></pre>
+<p><img src="/hyndsight/2014-11-21-visualization-of-probabilistic-forecasts_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>The dots are modes of the forecast distributions, and the 50% and 95% highest density regions are also shown. In this case, the distributions are unimodal, and so all the regions are intervals.</p>

@@ -1,0 +1,113 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-01 09:56:16+00:00
+
+link: http://robjhyndman.com/hyndsight/forecast-combinations/
+slug: forecast-combinations
+title: R packages for forecast combinations
+wordpress_id: 3841
+categories:
+- forecasting
+- R
+---
+
+
+<p>It has been well-known since at least 1969, when Bates and Granger wrote their famous paper on <a href="https://www.jstor.org/stable/3008764">“The Combination of Forecasts”</a>, that combining forecasts often leads to better forecast accuracy.</p>
+<p>So it is helpful to have a couple of new R packages which do just that: <strong>opera</strong> and <strong>forecastHybrid</strong>.</p>
+<!-- more -->
+<div id="opera" class="section level2">
+<h2>opera</h2>
+<p>Opera stands for “Online Prediction by ExpeRt Aggregation”. It was written by Pierre Gaillard and Yannig Goude, and Pierre provides a nice introduction in <a href="https://cran.r-project.org/web/packages/opera/vignettes/opera-vignette.html">the vignette</a>. While it can be used with combining any sort of predictions, I will just consider simple univariate time series forecasts, using the monthly <code>co2</code> data.</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+train &lt;- window(co2, end=c(1990,12))
+test &lt;- window(co2, start=c(1991,1))
+h &lt;- length(test)
+ETS &lt;- forecast(ets(train), h=h)
+ARIMA &lt;- forecast(auto.arima(train, lambda=0), h=h)
+STL &lt;- stlf(train, lambda=0, h=h)
+X &lt;- cbind(ETS=ETS$mean, ARIMA=ARIMA$mean, STL=STL$mean)
+df &lt;- cbind(co2, X)
+colnames(df) &lt;- c(&quot;Data&quot;,&quot;ETS&quot;,&quot;ARIMA&quot;,&quot;STL&quot;)
+autoplot(df) + 
+  xlab(&quot;Year&quot;) + ylab(expression(&quot;Atmospheric concentration of CO&quot;[2]))</code></pre>
+<p><img src="/hyndsight/2016-09-01-forecast-combinations_files/figure-html/opera-1.png" width="672" /></p>
+<p>Here, ETS has done a particularly bad job at picking the trend, while the other two look ok.</p>
+<p>The mixture function from the <code>opera</code> package computes weights when combining the forecasts based on how well it has done up to that point.</p>
+<pre class="r"><code>library(opera)
+MLpol0 &lt;- mixture(model = &quot;MLpol&quot;, loss.type = &quot;square&quot;)
+weights &lt;- predict(MLpol0, X, test, type=&#39;weights&#39;)
+head(weights)</code></pre>
+<pre><code>##             X1        X2        X3
+## [1,] 0.3333333 0.3333333 0.3333333
+## [2,] 0.5597968 0.0000000 0.4402032
+## [3,] 0.6172052 0.0000000 0.3827948
+## [4,] 1.0000000 0.0000000 0.0000000
+## [5,] 1.0000000 0.0000000 0.0000000
+## [6,] 1.0000000 0.0000000 0.0000000</code></pre>
+<pre class="r"><code>tail(weights)</code></pre>
+<pre><code>##              X1        X2        X3
+## [79,] 0.3602002 0.2940271 0.3457726
+## [80,] 0.2797890 0.3343480 0.3858630
+## [81,] 0.2773691 0.3355292 0.3871016
+## [82,] 0.3583211 0.2975537 0.3441252
+## [83,] 0.2135662 0.3690052 0.4174286
+## [84,] 0.2329466 0.3594576 0.4075959</code></pre>
+<p>It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to ETS alone. But by the end of the test set, it is giving weight 0.23 to ETS, 0.36 to ARIMA and 0.41 to STL. Here are the resulting forecasts:</p>
+<pre class="r"><code>z &lt;- ts(predict(MLpol0, X, test, type=&#39;response&#39;), start=c(1991,1), freq=12)
+df &lt;- cbind(co2, z)
+colnames(df) &lt;- c(&quot;Data&quot;,&quot;Mixture&quot;)
+autoplot(df) + 
+  xlab(&quot;Year&quot;) + ylab(expression(&quot;Atmospheric concentration of CO&quot;[2]))</code></pre>
+<p><img src="/hyndsight/2016-09-01-forecast-combinations_files/figure-html/opera3-1.png" width="672" /></p>
+</div>
+<div id="forecasthybrid" class="section level2">
+<h2>forecastHybrid</h2>
+<p>The <code>forecastHybrid</code> package from David Shaub and Peter Ellis fits multiple models from the <code>forecast</code> package and then combines them using either equal weights, or weights based on in-sample errors. By default, the models combined are from the <code>auto.arima</code>, <code>ets</code>, <code>nnetar</code>, <code>stlm</code> and <code>tbats</code> functions. David Shaub provides a <a href="https://cran.r-project.org/web/packages/forecastHybrid/vignettes/forecastHybrid.html">helpful vignette</a> explaining how to use the package.</p>
+<p>Here is an example using the same <code>co2</code> data.</p>
+<pre class="r"><code>library(forecastHybrid)
+fit1 &lt;- hybridModel(train, weights=&quot;equal&quot;)</code></pre>
+<pre><code>## Fitting the auto.arima model
+## Fitting the ets model
+## Fitting the thetam model
+## Fitting the nnetar model
+## Fitting the stlm model
+## Fitting the tbats model</code></pre>
+<pre class="r"><code>fit2 &lt;- hybridModel(train, weights=&quot;insample&quot;)</code></pre>
+<pre><code>## Warning in hybridModel(train, weights = &quot;insample&quot;): Using insample.error
+## weights is not recommended for accuracy and may be deprecated in the
+## future.</code></pre>
+<pre><code>## Fitting the auto.arima model
+## Fitting the ets model
+## Fitting the thetam model
+## Fitting the nnetar model
+## Fitting the stlm model
+## Fitting the tbats model</code></pre>
+<pre class="r"><code>fc1 &lt;- forecast(fit1, h=h)
+fc2 &lt;- forecast(fit2, h=h)
+autoplot(fc1) + ggtitle(&quot;Hybrid 1&quot;) + xlab(&quot;Year&quot;) +
+ ylab(expression(&quot;Atmospheric concentration of CO&quot;[2]))</code></pre>
+<p><img src="/hyndsight/2016-09-01-forecast-combinations_files/figure-html/forecastHybrid-1.png" width="672" /></p>
+<p>Those prediction intervals look dodgy because they are way too conservative. The package is taking the widest possible intervals that includes all the intervals produced by the individual models. So you only need one bad model, and the prediction intervals are screwed. To compute prediction intervals with the required coverage, it would be necessary to estimate the covariances between the different forecast errors, and then find the resulting variance expression for the linear combination of methods.</p>
+<p>The combination point forecasts look much better:</p>
+<pre class="r"><code>df &lt;- cbind(Data=co2, Hybrid1=fc1$mean, Hybrid2=fc2$mean)
+autoplot(df) + 
+  xlab(&quot;Year&quot;) + ylab(expression(&quot;Atmospheric concentration of CO&quot;[2]))</code></pre>
+<p><img src="/hyndsight/2016-09-01-forecast-combinations_files/figure-html/forecastHybrid2-1.png" width="672" /></p>
+<p>Note that the weights are not being updated, unlike with the <code>opera</code> package. In this particular example, the <code>opera</code> forecasts are doing substantially better:</p>
+<pre class="r"><code>mse &lt;- c(Opera=mean((test-z)^2),
+          Hybrid1=mean((test - fc1$mean)^2),
+          Hybrid2=mean((test - fc2$mean)^2))
+round(mse,2)</code></pre>
+<pre><code>##   Opera Hybrid1 Hybrid2 
+##    0.25    1.82    0.73</code></pre>
+<p>It should be noted, however, that the opera weights are updated using the past test data, while the forecastHybrid weights are based only on the training data. So this comparison is not entirely “fair”.</p>
+<p>Also, all of these results are much better than any of the individual forecasting methods:</p>
+<pre class="r"><code>mse2 &lt;- c(ETS=mean((test-ETS$mean)^2),
+          ARIMA=mean((test-ARIMA$mean)^2),
+          STL=mean((test-STL$mean)^2))
+round(mse2,2)</code></pre>
+<pre><code>##   ETS ARIMA   STL 
+##  5.92  2.35  2.04</code></pre>
+</div>

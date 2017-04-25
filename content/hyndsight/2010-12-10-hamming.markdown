@@ -1,0 +1,15 @@
+---
+author: robjhyndman
+comments: true
+date: 2010-12-10 09:14:32+00:00
+
+link: http://robjhyndman.com/hyndsight/hamming/
+slug: hamming
+title: Hamming on research
+wordpress_id: 1209
+categories:
+- productivity
+- progress
+---
+
+[Richard Hamming](http://en.wikipedia.org/wiki/Richard_Hamming) was an excellent mathematician who worked at the interface of mathematics and computer science. In 1986 he gave a wonderful talk entitled [_You and Your Research_](http://www.paulgraham.com/hamming.html). Derek Smith on the [AMS Graduate Student blog](http://mathgradblog.williams.edu/?p=1224) reminded me of it today. If you haven't read it previously, stop work immediately and [**read it now**](http://www.paulgraham.com/hamming.html).
