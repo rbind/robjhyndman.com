@@ -1,5 +1,5 @@
 all:
-	Rscript -e "blogdown::serve_site()"
+	Rscript -e "blogdown::build_site()"
 
 clean:
 	rm -rf blogdown

@@ -1,35 +1,21 @@
 baseurl = "file:///home/hyndman/git/Website/public/"
 title = "Rob J Hyndman"
-author = "Rob J Hyndman"
-copyright = "Copyright (c) 2017 Rob J Hyndman"
 canonifyurls = true
 relativeurl = true
 paginate = 10
 theme = "robjhyndman"
 disqusShortname = "researchtips"
-addThis = "ra-58fca0029c2c12b1"
+
+[params]
 
 # Date format (refer to Go's date format: http://flippinggodateformat.com)
-# Examples: "Mon, Jan 2, 2006" or "2006-01-02"
 date_format = "2 January 2006"
-
-# Publications can have a Params.publication for citation references.
-# Publications can have a Params.kind, such as "book".
-# Both parameters are mapped to an icon in partials/pub-icon.html.
-
-bio_twitter = "robjhyndman"
-
-# Title of posts section on main page.
-posts_title = "Hyndsight posts" 
 
 # Number of posts to show on main page.
 posts_count = 2
 
-# Title of publications section on main page.
-pubs_title = "publications"
-
 # Number of publications to show on main page.
-pubs_count = 5
+pubs_count = 4
 
 
 [[params.social]]
@@ -76,7 +62,7 @@ pubs_count = 5
 
 [[menu.main]]
   name = "Publications"
-  url = "/publication/"
+  url = "/publications/"
   weight = 2
 
 [[menu.main]]
