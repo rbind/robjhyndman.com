@@ -14,7 +14,7 @@
   <div class="column small-12 medium-5 large-offset-1">
     <h2><a href="/publications/">Recent {{ $pubs_title }}</a></h2>
     <ul class="compact fa-ul">
-      {{ range first $pubs_count (where .Data.Pages.ByDate "Section" "publication").Reverse }}
+      {{ range first $pubs_count (where .Data.Pages.ByDate "Section" "publications").Reverse }}
       <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
       {{ end }}
     </ul>
