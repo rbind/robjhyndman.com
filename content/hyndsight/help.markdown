@@ -14,4 +14,4 @@ If you have questions about data analysis, ask for help on [crossvalidated.com](
 
 If you have questions about R, ask for help on [stackoverflow.com](http://stackoverflow.com).
 
-If you think you have found a bug in one of my R packages, report it on github as explained [here](http://robjhyndman.com/hyndsight/minimal-reproducible-examples/).
+If you think you have found a bug in one of my R packages, report it on github as explained [here](/hyndsight/minimal-reproducible-examples/).

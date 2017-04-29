@@ -2,8 +2,6 @@
 author: robjhyndman
 comments: true
 date: 2015-06-16 03:11:43+00:00
-
-link: http://robjhyndman.com/hyndsight/northamerica2015/
 slug: northamerica2015
 title: 'North American seminars: June 2015'
 wordpress_id: 3299
@@ -19,9 +17,6 @@ categories:
 ---
 
 For the next few weeks I am travelling in North America and will be giving the following talks.
-
-
-
 
     
   * **19 June: **[Southern California Edison](https://www.sce.com), Rosemead CA.
@@ -47,4 +42,4 @@ _"Exploring the feature space of large collections of time series"._
 
 The Yahoo talk will be [streamed live](https://labs.yahoo.com/events/big-thinker-rob-hyndman-yahoo).
 
-I'll post slides on [my main site](http://robjhyndman.com/publications/talks/) after each talk.
+I'll post slides on [my main site](http://robjhyndman.com/seminars/) after each talk.

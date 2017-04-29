@@ -18,7 +18,7 @@ categories:
 
 First, read the [instructions](http://business.monash.edu/programs/research-degrees/how-to-apply) on how to apply.
 
-Second, poke around [my website](http://robjhyndman.com) to see the sorts of topics I work on. There's no point asking to do a PhD with me if you want to do research on something I don't know much about. In particular, please note that I'm not really interested in finance or economics. There are some excellent researchers at Monash on both topics, but I'm not one of them.
+Second, poke around [my website](/) to see the sorts of topics I work on. There's no point asking to do a PhD with me if you want to do research on something I don't know much about. In particular, please note that I'm not really interested in finance or economics. There are some excellent researchers at Monash on both topics, but I'm not one of them.
 
 If you're still interested, here is what I normally expect. You should have a strong background in statistics or econometrics (at least honours or Masters level) along with some mathematics and computing. It is essential that you have studied some matrix algebra, multivariate calculus and optimization. You should be capable of programming with a high level language such as R or Matlab; if you can write in C as well, even better.
 
@@ -28,7 +28,7 @@ I do not expect that you have studied specific topics close to my research such 
 
 Much of the first year of a PhD is spent in reading the relevant background literature and developing some necessary research skills. Most students have not produced anything publishable after one year, but they will usually have developed good research skills, have read a lot of papers and will be ready to start doing some research of their own.
 
-I expect all my PhD students to have read all of the archives of this blog (even the [jokes page)](http://robjhyndman.com/hyndsight/statistical-jokes/) and to subscribe to new posts. The primary purpose of the blog is to discuss research issues that students working with me should know about.
+I expect all my PhD students to have read all of the archives of this blog (even the [jokes page)](/hyndsight/statistical-jokes/) and to subscribe to new posts. The primary purpose of the blog is to discuss research issues that students working with me should know about.
 
 Most students will need a scholarship. Applications for PhD scholarships at Monash close on 31 October each year. Check out the [instructions for scholarship applications](http://www.monash.edu.au/migr/apply/application/guide/). Scholarships are highly competitive and we receive many applications from students around the world. You would normally need first class honours from an excellent university to be in the running for a scholarship. International students will also need to have satisfied the [English language requirements](http://www.monash.edu.au/migr/research-degrees/handbook/chapter-two/2-2.html).
 
