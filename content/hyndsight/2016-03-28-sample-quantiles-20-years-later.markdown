@@ -13,7 +13,7 @@ categories:
 - statistics
 ---
 
-Almost exactly 20 years ago I wrote a paper with [Yanan Fan](https://research.unsw.edu.au/people/dr-yanan-fan) on how [sample quantiles are computed in statistical software](http://robjhyndman.com/papers/quantiles/). It was cited 43 times in the first 10 years, and 457 times in the next 10 years, making it my third paper to receive [500+ citations](https://scholar.google.com.au/citations?user=vamErfkAAAAJ&hl=en).
+Almost exactly 20 years ago I wrote a paper with [Yanan Fan](https://research.unsw.edu.au/people/dr-yanan-fan) on how [sample quantiles are computed in statistical software](/publications/quantiles/). It was cited 43 times in the first 10 years, and 457 times in the next 10 years, making it my third paper to receive [500+ citations](https://scholar.google.com.au/citations?user=vamErfkAAAAJ&hl=en).
 
 So what happened in 2006 to suddenly increase the citations? I think it was a combination of things:<!-- more -->
 

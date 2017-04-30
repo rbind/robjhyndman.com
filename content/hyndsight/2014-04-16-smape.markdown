@@ -28,7 +28,7 @@ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the
 
 
 
-Thus, the MAPE puts a heavier penalty on negative errors (when $y_t < {\hat{y}_t}$) than on positive errors. This is what is stated in [my textbook](http://www.otexts.org/fpp/2/5). Unfortunately, Anne Koehler and I got it the wrong way around in [our 2006 paper on measures of forecast accuracy](http://robjhyndman.com/papers/another-look-at-measures-of-forecast-accuracy/), where we said the heavier penalty was on positive errors. We were probably thinking that a forecast that is too large is a positive error. However, forecast errors are defined as $y_t - \hat{y}_{t}$, so positive errors arise only when the forecast is too small.
+Thus, the MAPE puts a heavier penalty on negative errors (when $y_t < {\hat{y}_t}$) than on positive errors. This is what is stated in [my textbook](http://www.otexts.org/fpp/2/5). Unfortunately, Anne Koehler and I got it the wrong way around in [our 2006 paper on measures of forecast accuracy](/publications/another-look-at-measures-of-forecast-accuracy/), where we said the heavier penalty was on positive errors. We were probably thinking that a forecast that is too large is a positive error. However, forecast errors are defined as $y_t - \hat{y}_{t}$, so positive errors arise only when the forecast is too small.
 
 
 

@@ -68,7 +68,7 @@ In some books (e.g., [Bowerman, O'Connell and Koehler, 2005](http://www.amazon.c
 While it would be possible to implement a reasonably good regression method, a much better procedure is based on a decomposition. This is what was recommended in my [2008 Springer book](http://www.exponentialsmoothing.net) and is implemented in the `HoltWinters` and `ets` functions in R.
 
 
-  1. First fit a $2\times m$ moving average smoother to the first 2 or 3 years of data (`HoltWinters` uses 2 years, `ets` uses 3 years). Here is a [quick intro to moving average smoothing](http://robjhyndman.com/papers/movingaverage.pdf).
+  1. First fit a $2\times m$ moving average smoother to the first 2 or 3 years of data (`HoltWinters` uses 2 years, `ets` uses 3 years). Here is a [quick intro to moving average smoothing](/publications/movingaverage.pdf).
 
   2. Then subtract (for additive HW) or divide (for multiplicative HW) the smooth trend from the original data to get de-trended data. The initial seasonal values are then obtained from the averaged de-trended data. For example, the initial seasonal value for January is the average of the de-trended Januaries. 
 

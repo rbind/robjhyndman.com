@@ -14,7 +14,7 @@ categories:
 - statistics
 ---
 
-This is an example of how to use the demography package in R for stochastic population forecasting with coherent components. It is based on the papers by [Hyndman and Booth (IJF 2008)](http://robjhyndman.com/papers/stochastic-population-forecasts/) and [Hyndman, Booth and Yasmeen (Demography 2013)](http://robjhyndman.com/papers/coherentfdm/). I will use Australian data from 1950 to 2009 and forecast the next 50 years.
+This is an example of how to use the demography package in R for stochastic population forecasting with coherent components. It is based on the papers by [Hyndman and Booth (IJF 2008)](/publications/stochastic-population-forecasts/) and [Hyndman, Booth and Yasmeen (Demography 2013)](/publications/coherentfdm/). I will use Australian data from 1950 to 2009 and forecast the next 50 years.
 
 In demography, "coherent" forecasts are where male and females (or other sub-groups) do not diverge over time. (Essentially, we require the difference between the groups to be stationary.) When we wrote the 2008 paper, we did not know how to constrain the forecasts to be coherent in a functional data context and so this was not discussed. My later 2013 paper provided a way of imposing coherence. This blog post shows how to implement both ideas using R.<!-- more -->
 

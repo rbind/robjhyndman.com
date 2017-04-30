@@ -71,7 +71,7 @@ A separate function for selecting the seasonal order has also been made visible.
 
 The new `dshw()` function implements Taylor's (2003) double-seasonal Holt-Winters method. This allows for two levels of seasonality. For example, with hourly data, there is often a daily period of 24 and a weekly period of 168. These are modelled separately in the `dshw()` function.
 
-I am planning some major new functionality to extend this to the various types of complex seasonality discussed in [my recent JASA paper](http://robjhyndman.com/papers/complex-seasonality/). Hopefully that will be ready in the next few weeks -- I have a research assistant working on the new code.
+I am planning some major new functionality to extend this to the various types of complex seasonality discussed in [my recent JASA paper](/publications/complex-seasonality/). Hopefully that will be ready in the next few weeks -- I have a research assistant working on the new code.
 
 
 

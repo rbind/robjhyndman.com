@@ -60,7 +60,7 @@ The bottom plot shows half-hourly electricity demand in England and Wales from M
 
 
 
-The class of ETS models (exponential smoothing within a state space framework) allows for seasonality but not cyclicity. For example, the ETS(A,A,A) model has an additive trend and additive seasonal pattern. However, there is no ETS model that can reproduce aperiodic cyclic behaviour. For ETS models handling multiple seasonal data (such as the electricity demand data above), see [my paper on complex seasonality](http://robjhyndman.com/papers/complex-seasonality/).
+The class of ETS models (exponential smoothing within a state space framework) allows for seasonality but not cyclicity. For example, the ETS(A,A,A) model has an additive trend and additive seasonal pattern. However, there is no ETS model that can reproduce aperiodic cyclic behaviour. For ETS models handling multiple seasonal data (such as the electricity demand data above), see [my paper on complex seasonality](/publications/complex-seasonality/).
 
 
 

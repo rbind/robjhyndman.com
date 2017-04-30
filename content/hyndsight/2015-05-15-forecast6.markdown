@@ -114,7 +114,7 @@ There is a new `stlm` function and a corresponding `forecast.stlm` function to a
 
 The `Acf` function replaces the `acf` function to provide better plots of the autocorrelation function. The horizontal axis now highlights the seasonal lags.
 
-I have added two new functions `taperedacf` and `taperedpacf` to implement the estimates and plots proposed in [this recent paper](http://robjhyndman.com/papers/mpcomments/).
+I have added two new functions `taperedacf` and `taperedpacf` to implement the estimates and plots proposed in [this recent paper](/publications/mpcomments/).
 
 
 

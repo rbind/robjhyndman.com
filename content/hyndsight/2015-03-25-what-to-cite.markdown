@@ -20,7 +20,7 @@ This question comes from [a comment on another post](http://robjhyndman.com/hynd
 
 
 
-It depends on the subject and style of the paper. I've written [a paper with over 900 citations](http://robjhyndman.com/papers/25-years-of-time-series-forecasting/), but that was a review of time series forecasting over a 25 year period, and so it had to include a lot of references.
+It depends on the subject and style of the paper. I've written [a paper with over 900 citations](/publications/25-years-of-time-series-forecasting/), but that was a review of time series forecasting over a 25 year period, and so it had to include a lot of references.
 
 I've also written [a paper with just four citations](http://dx.doi.org/10.1016/j.ijforecast.2004.03.005). As it was a commentary, it did not need a lot of contextual information.
 

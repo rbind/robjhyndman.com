@@ -33,6 +33,6 @@ We use two methods to identify outliers.
 
 I explained the ideas in a talk last Tuesday given at a [joint meeting of the Statistical Society of Australia and the Melbourne Data Science Meetup Group](http://www.meetup.com/Data-Science-Melbourne/events/220621482/). Slides are available [here](http://robjhyndman.com/talks/big-time-series/). A link to a video of the talk will also be added there when it is ready.
 
-The density-ranking of PC scores was also used in my work on detecting outliers in functional data. See my [2010 JCGS paper](http://robjhyndman.com/papers/rainbow-fda/) and the associated [rainbow package for R](http://cran.r-project.org/package=rainbow).
+The density-ranking of PC scores was also used in my work on detecting outliers in functional data. See my [2010 JCGS paper](/publications/rainbow-fda/) and the associated [rainbow package for R](http://cran.r-project.org/package=rainbow).
 
 There are two versions of the package: one [under an ACM licence](https://github.com/robjhyndman/anomalous-acm), and a limited version [under a GPL licence](https://github.com/robjhyndman/anomalous). Eventually we hope to make the GPL version contain everything, but we are currently dependent on the [alphahull package](http://cran.r-project.org/package=alphahull) which has an ACM licence.

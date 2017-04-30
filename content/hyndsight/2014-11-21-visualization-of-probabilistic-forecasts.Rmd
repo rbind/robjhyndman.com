@@ -43,7 +43,7 @@ For multi-modal distributions I like to use highest density regions. Here is an 
 
 [![Screenshot from 2014-11-21 15:42:37](/files/Screenshot-from-2014-11-21-154237.png)](/files/Screenshot-from-2014-11-21-154237.png)
 
-The dark region has 50% coverage and the light region has 95% coverage. The forecast distributions become bimodal after the first ten iterations, and so the 50% region is split in two to show that. This graphic was taken from a [_J. Forecasting_ paper](http://robjhyndman.com/papers/highest-density-forecast-regions-for-non-linear-and-non-normal-time-series-models/) I wrote in 1996, so these ideas have been around for a while!
+The dark region has 50% coverage and the light region has 95% coverage. The forecast distributions become bimodal after the first ten iterations, and so the 50% region is split in two to show that. This graphic was taken from a [_J. Forecasting_ paper](/publications/highest-density-forecast-regions-for-non-linear-and-non-normal-time-series-models/) I wrote in 1996, so these ideas have been around for a while!
 
 It is easy enough to produce forecast HDR with time series. Here is some R code to do it:
 

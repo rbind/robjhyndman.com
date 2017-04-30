@@ -20,7 +20,7 @@ I have updated my LaTeX templates for use at Monash so they no longer depend on 
   * The style files and Monash crest are provided [here](http://robjhyndman.com/research/monash.zip). This should be unzipped in a directory on the MikTeX search path; for example, in `C:\Program Files\MiKTeX 2.9\tex\latex`.
 
 	
-  * **Monash working paper**. Here is a [template](http://www.robjhyndman.com/research/wptemplate.tex). You will need to provide the working paper number (ask Elke) and some [JEL codes](http://www.aeaweb.org/jel/jel_class_system.php). See [an example of its use](http://robjhyndman.com/papers/brca_bw.pdf).
+  * **Monash working paper**. Here is a [template](http://www.robjhyndman.com/research/wptemplate.tex). You will need to provide the working paper number (ask Elke) and some [JEL codes](http://www.aeaweb.org/jel/jel_class_system.php). See [an example of its use](/publications/brca_bw.pdf).
 
 	
   * **Monash thesis**. Here is a [template](http://www.robjhyndman.com/research/thesis.zip). You should be able to figure the rest out yourself! Here is [an example of what it looks like](http://robjhyndman.com/research/thesis.pdf).

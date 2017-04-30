@@ -14,6 +14,6 @@ categories:
 - time series
 ---
 
-The data used in the tourism forecasting competition, discussed in [Athanasopoulos et al (2011)](http://robjhyndman.com/papers/the-tourism-forecasting-competition/), have been made available in the [Tcomp package for R](https://cran.r-project.org/package=Tcomp). The objects are of the same format as for [Mcomp package](https://cran.r-project.org/package=Mcomp) containing data from the M1 and M3 competitions.
+The data used in the tourism forecasting competition, discussed in [Athanasopoulos et al (2011)](/publications/the-tourism-forecasting-competition/), have been made available in the [Tcomp package for R](https://cran.r-project.org/package=Tcomp). The objects are of the same format as for [Mcomp package](https://cran.r-project.org/package=Mcomp) containing data from the M1 and M3 competitions.
 
 Thanks to [Peter Ellis](http://ellisp.github.io/) for putting the package together. He has also produced a [nice blog post](http://ellisp.github.io/blog/2016/10/19/Tcomp) about it.

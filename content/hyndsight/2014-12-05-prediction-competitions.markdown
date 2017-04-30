@@ -23,7 +23,7 @@ In my research group meeting today, we discussed our (limited) experiences in co
 
 
     
-  1. [Athanasopoulos and Hyndman (IJF 2011). The value of feedback in forecasting competitions](http://dx.doi.org/10.1016/j.ijforecast.2011.03.002). [[preprint version](http://robjhyndman.com/papers/kaggle.pdf)]
+  1. [Athanasopoulos and Hyndman (IJF 2011). The value of feedback in forecasting competitions](http://dx.doi.org/10.1016/j.ijforecast.2011.03.002). [[preprint version](/publications/kaggle.pdf)]
 
     
   2. [Roy et al (2013). The Microsoft Academic Search Dataset and KDD Cup 2013](http://www.kdd.org/kddcup2013/sites/default/files/papers/papers.pdf).

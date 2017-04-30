@@ -14,7 +14,7 @@ categories:
 - statistics
 ---
 
-The ETS modelling framework developed in my [2002 IJF paper](http://robjhyndman.com/papers/hksg/) (with Koehler, Snyder and Grose), and in my [2008 Springer book](http://www.exponentialsmoothing.net/) (with Koehler, Ord and Snyder), is now available in [EViews 8](http://www.eviews.com/EViews8/ev8whatsnew.html). I had no idea they were even working on it, so it was quite a surprise to be told that EViews now includes ETS models.<!-- more -->
+The ETS modelling framework developed in my [2002 IJF paper](/publications/hksg/) (with Koehler, Snyder and Grose), and in my [2008 Springer book](http://www.exponentialsmoothing.net/) (with Koehler, Ord and Snyder), is now available in [EViews 8](http://www.eviews.com/EViews8/ev8whatsnew.html). I had no idea they were even working on it, so it was quite a surprise to be told that EViews now includes ETS models.<!-- more -->
 
 Here is the blurb from the [release notes](http://www.eviews.com/EViews8/ev8eccomp_n.html#ets):
 

@@ -58,4 +58,4 @@ where `mu` and `sigma` are the estimated mean and standard deviation of the fore
     matlines(101:120, t(qf), col=rainbow(120), lty=1)
 ```
 
-Of course, assuming a normal distribution is rather restrictive and not very interesting. For a more interesting but much more complicated approach to generating quantiles, see my 2010 paper on [Density forecasting for long-term peak electricity demand](http://robjhyndman.com/papers/peak-electricity-demand/).
+Of course, assuming a normal distribution is rather restrictive and not very interesting. For a more interesting but much more complicated approach to generating quantiles, see my 2010 paper on [Density forecasting for long-term peak electricity demand](/publications/peak-electricity-demand/).

@@ -13,7 +13,7 @@ categories:
 - statistics
 ---
 
-Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of uncertainty. In my [2002 IJF paper](http://robjhyndman.com/papers/hksg/), we measured the size of the problem by computing the actual coverage percentage of the prediction intervals on hold-out samples. We found that for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.
+Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of uncertainty. In my [2002 IJF paper](/publications/hksg/), we measured the size of the problem by computing the actual coverage percentage of the prediction intervals on hold-out samples. We found that for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.
 
 There are at least four sources of uncertainty in forecasting using time series models:
 

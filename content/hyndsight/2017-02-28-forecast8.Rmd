@@ -92,7 +92,7 @@ The `tsCV` and `CVar` functions have been added. These were discussed in a [prev
 
 
 
-The `baggedETS` function has been added, which implements the procedure discussed in [Bergmeir et al (2016)](http://robjhyndman.com/papers/bagging-ets/) for bagging ETS forecasts.
+The `baggedETS` function has been added, which implements the procedure discussed in [Bergmeir et al (2016)](/publications/bagging-ets/) for bagging ETS forecasts.
 
 
 

@@ -30,7 +30,7 @@ It is possible to have a percentage version of MSE, the Mean Squared Percentage 
 
 The MASE (mean absolute scaled error) was intended to avoid these problems.
 
-For further discussion on these and related points, see [Hyndman & Koehler (IJF, 2006)](http://robjhyndman.com/papers/another-look-at-measures-of-forecast-accuracy/). A [preprint version](http://robjhyndman.com/papers/mase.pdf) is also available.
+For further discussion on these and related points, see [Hyndman & Koehler (IJF, 2006)](/publications/another-look-at-measures-of-forecast-accuracy/). A [preprint version](/publications/mase.pdf) is also available.
 
 >Also, suppose we have a lognormal model, where the estimation is done on the log-transformed scale and the prediction is done on the original, untransformed scale. One could either predict with the conditional mean or the conditional median. It seems to me that you would predict with the mean if the MSE is your metric, but you would predict with the median if the MAD is your metric. My thought is that the mean would minimize MSE, while the median would minimize MAD. So whether you use the mean or the median depends on which metric you use for evaluating the model.
 

@@ -75,4 +75,4 @@ The order of $N_t$ can also be chosen automatically:
 
 Note that the ARIMA model for $N_t$ should be non-seasonal.
 
-A state space approach to the problem is possible using TBATS models, as described in this [paper on complex seasonality](http://robjhyndman.com/papers/complex-seasonality/).  The `tbats()` function which implements TBATS models will automatically select the Fourier order as well as the other aspects of the model. One advantage of the TBATS model is the seasonality is allowed to change slowly over time.
+A state space approach to the problem is possible using TBATS models, as described in this [paper on complex seasonality](/publications/complex-seasonality/).  The `tbats()` function which implements TBATS models will automatically select the Fourier order as well as the other aspects of the model. One advantage of the TBATS model is the seasonality is allowed to change slowly over time.

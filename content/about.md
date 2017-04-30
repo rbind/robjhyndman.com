@@ -33,7 +33,7 @@ Office: Room 762, Menzies Building, Clayton campus, [Monash University](http://m
 
 ## In the news
 
-Here is a list of [recent news articles about me](in-the-news/).
+Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Administrative responsibilities
 

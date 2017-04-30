@@ -34,7 +34,7 @@ Consequently, I've now modified the `ses()`, `holt()` and `hw()` functions to al
 
 Time series with multiple seasonal patterns (e.g., hourly data that contains a daily pattern, weekly pattern and an annual pattern) now have their own model class `msts`. This is useful when plotting the data, and in using the `dshw()` double seasonal Holt-Winters function for example.
 
-The BATS and TBATS models (fitted using `bats()` and `tbats()`) also handle multiple seasonalities as well as complex seasonalities (such as non-integer seasonality, non-nested seasonality and large period seasonality). The models are in the exponential-smoothing framework and were proposed by [De Livera, Hyndman and Snyder (JASA 2011)](http://robjhyndman.com/papers/complex-seasonality/).
+The BATS and TBATS models (fitted using `bats()` and `tbats()`) also handle multiple seasonalities as well as complex seasonalities (such as non-integer seasonality, non-nested seasonality and large period seasonality). The models are in the exponential-smoothing framework and were proposed by [De Livera, Hyndman and Snyder (JASA 2011)](/publications/complex-seasonality/).
 
 BATS and TBATS models allow a form of time series decomposition, and so the fitted objects can now plotted in the same way as other decomposition objects (e.g., `stl` objects).
 

@@ -20,10 +20,10 @@ A few years ago, I was working on a project where we measured various characteri
 
 
     
-  1. [Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. _Data Mining and Knowledge Discovery_, **13**(3), 335-364.](http://robjhyndman.com/papers/characteristic-based-clustering-for-time-series-data/)
+  1. [Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. _Data Mining and Knowledge Discovery_, **13**(3), 335-364.](/publications/characteristic-based-clustering-for-time-series-data/)
 
     
-  2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputin_g, **72**, 2581-2594.](http://robjhyndman.com/papers/forecast-rules/)
+  2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputin_g, **72**, 2581-2594.](/publications/forecast-rules/)
 
 
 
@@ -334,4 +334,4 @@ In our papers, we took the measures obtained using R, and produced self-organizi
 
 
 
-**[Download the code in a single file.](http://robjhyndman.com/papers/measures2.R)**
+**[Download the code in a single file.](/publications/measures2.R)**

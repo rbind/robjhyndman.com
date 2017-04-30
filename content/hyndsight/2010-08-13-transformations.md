@@ -32,7 +32,7 @@ The usual Box-Cox transformation sets $\lambda\_2=0$. One common choice with the
 
 Alternatively, when $\lambda\_1=0$, [it has been suggested](http://www.mail-archive.com/r-sig-ecology@r-project.org/msg00655.html) that $\lambda\_2$ should be approximately one half of the smallest, non-zero value. Another suggestion is that $\lambda\_2$ should be the square of the first quartile divided by the third quartile [(Stahel,  2002)](http://stat.ethz.ch/~stahel/stat-dat-ana/).
 
-I've used functions like this several times including in [Hyndman & Grunwald (2000)](http://robjhyndman.com/papers/gam-rainfall/) where we used $\log(y+\lambda_2)$ applied to daily rainfall data.
+I've used functions like this several times including in [Hyndman & Grunwald (2000)](/publications/gam-rainfall/) where we used $\log(y+\lambda_2)$ applied to daily rainfall data.
 
 One simple special case is the square root where $\lambda_2=0$ and $\lambda_1=0.5$. This works fine with zeros (although not with negative values). However, often the square root is not a strong enough transformation to deal with the high levels of skewness seen in real data.
 
@@ -62,4 +62,4 @@ With insurance data, a similar phenomenon occurs -- the distribution of claims i
 
 A fourth example might be income data -- zero if someone is not in paid work, but a continuous positive value otherwise.
 
-In each of these cases, a mixture model is probably the most appropriate where part of the model determines the probability of a zero, and the other part of the model determines the distribution of the data when it is positive. We also used something like this in [Hyndman and Grunwald (2000)](http://robjhyndman.com/papers/gam-rainfall/).
+In each of these cases, a mixture model is probably the most appropriate where part of the model determines the probability of a zero, and the other part of the model determines the distribution of the data when it is positive. We also used something like this in [Hyndman and Grunwald (2000)](/publications/gam-rainfall/).

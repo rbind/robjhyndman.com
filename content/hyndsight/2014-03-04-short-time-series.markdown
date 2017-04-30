@@ -47,6 +47,6 @@ What tends to happen with short series is that the AIC suggests very simple mode
 
 
 
-Seasonal models bring their own difficulties because the seasonality usually takes up $m-1$ degrees of freedom where $m$ is the seasonal period (e.g., $m=12$ for monthly data). [Fourier terms](http://robjhyndman.com/hyndsight/longseasonality/) are one way to reduce the problem -- useful whenever the ratio of $m$ to sample size is large. Further comments on seasonality and sample size are in my short _Foresight_ paper with Andrey Kostenko: ["Minimum sample size requirements for seasonal forecasting models"](http://robjhyndman.com/papers/shortseasonal.pdf), although I wrote that for a statistically unsophisticated audience, so there is no mention of the LASSO or AIC as possible solutions.
+Seasonal models bring their own difficulties because the seasonality usually takes up $m-1$ degrees of freedom where $m$ is the seasonal period (e.g., $m=12$ for monthly data). [Fourier terms](http://robjhyndman.com/hyndsight/longseasonality/) are one way to reduce the problem -- useful whenever the ratio of $m$ to sample size is large. Further comments on seasonality and sample size are in my short _Foresight_ paper with Andrey Kostenko: ["Minimum sample size requirements for seasonal forecasting models"](/publications/shortseasonal.pdf), although I wrote that for a statistically unsophisticated audience, so there is no mention of the LASSO or AIC as possible solutions.
 
 
