@@ -13,7 +13,7 @@ categories:
 - seminars
 ---
 
-**An expanded version of this post is available in my article on [“Giving an academic talk”](http://robjhyndman.com/opinion/usertalk/).**
+**An expanded version of this post is available in my article on [“Giving an academic talk”](/publications/usertalk/).**
 
 
 

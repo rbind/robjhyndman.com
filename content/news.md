@@ -29,7 +29,7 @@ slug: "in-the-news"
 <ul>
   <li><a class="vt-p" href="http://www.buseco.monash.edu.au/news/buseco-bulletin08/august/stories/moranmedal.html">Faculty news</a></li>
   <li><a class="vt-p" href="http://adm.monash.edu/records-archives/archives/memo-archive/2004-2007/stories/20080820/research-awards.html">Monash memo</a></li>
-  <li><a class="vt-p" href="http://robjhyndman.com/researchtips/supervision-award/">My thoughts on winning the award</a></li>
+  <li><a class="vt-p" href="http://robjhyndman.com/hyndsight/supervision-award/">My thoughts on winning the award</a></li>
 </ul>
 </li>
   <li><a class="vt-p" href="http://adm.monash.edu/records-archives/archives/memo-archive/2004-2007/stories/20070815/rob-hyndman.html">Peak electricity demand determined by forecasting model, <em>Monash News</em></a>, 15 August 2007.</li>

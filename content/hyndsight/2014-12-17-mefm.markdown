@@ -16,7 +16,7 @@ categories:
 
 Shu Fan and I have developed a model for electricity demand forecasting that is now widely used in Australia for long-term forecasting of peak electricity demand. It has become known as the "Monash Electricity Forecasting Model". We have decided to release an R package that implements our model so that other people can easily use it. The package is called "[MEFM](https://github.com/robjhyndman/MEFM-package)" and is [available on github](https://github.com/robjhyndman/MEFM-package). We will probably also put in on CRAN eventually.
 
-The model was first described in  [Hyndman and Fan (2010)](/publications/peak-electricity-demand/). We are continually improving it, and the latest version is decribed in the [model documentation](http://robjhyndman.com/working-papers/mefm/) which will be updated from time to time.
+The model was first described in  [Hyndman and Fan (2010)](/publications/peak-electricity-demand/). We are continually improving it, and the latest version is decribed in the [model documentation](/publications/mefm/) which will be updated from time to time.
 
 The package is being released under a [GPL licence](https://www.gnu.org/copyleft/gpl.html), so anyone can use it. All we ask is that our work is properly cited.
 

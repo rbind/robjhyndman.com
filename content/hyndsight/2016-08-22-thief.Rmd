@@ -13,7 +13,7 @@ categories:
 - time series
 ---
 
-I have a new R package available to do temporal hierarchical forecasting, based on [my paper with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos](http://robjhyndman.com/working-papers/temporal-hierarchies/). (Guess the odd guy out there!)
+I have a new R package available to do temporal hierarchical forecasting, based on [my paper with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos](/publications/temporal-hierarchies/). (Guess the odd guy out there!)
 
 It is called ["thief"](http://github.com/robjhyndman/thief) - an acronym for Temporal HIErarchical Forecasting. The idea is to take a seasonal time series, and compute all possible temporal aggregations that result in an integer number of observations per year. For example, a quarterly time series is aggregated to biannual and annual; while a monthly time series is aggregated to 2-monthly, quarterly, 4-monthly, biannual and annual. Each of the resulting time series are forecast, and then the forecasts are reconciled using the hierarchical reconciliation algorithm described in our paper.
 

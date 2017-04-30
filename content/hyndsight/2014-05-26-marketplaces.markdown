@@ -30,9 +30,9 @@ Experfy is a more specialized version of [Zombal](http://zombal.com/) which cove
 
 The "unit" for sale with SnapAnalytx is a model or algorithm, whereas the "unit" for sale with Experfy is a person.
 
-I imagine that the SnapAnalytx approach would be more suited to some problems than others. My algorithm for [hierarchical forecasting](http://robjhyndman.com/working-papers/foresight-hts/) would probably work well on such a platform as it takes a lot of computing power (for large hierarchies) and is suited to parallel processing. (I assume SnapAnalytx allows multiple processes.) It also works out-of-the-box for a lot of problems.
+I imagine that the SnapAnalytx approach would be more suited to some problems than others. My algorithm for [hierarchical forecasting](/publications/foresight-hts/) would probably work well on such a platform as it takes a lot of computing power (for large hierarchies) and is suited to parallel processing. (I assume SnapAnalytx allows multiple processes.) It also works out-of-the-box for a lot of problems.
 
-On the other hand, my algorithm for [electricity demand forecasting](http://robjhyndman.com/working-papers/mefm/) would probably not work well on this platform as we have to tailor the model carefully to each particular region, so having a generic cloud-hosted algorithm is unlikely to give effective forecasts.
+On the other hand, my algorithm for [electricity demand forecasting](/publications/mefm/) would probably not work well on this platform as we have to tailor the model carefully to each particular region, so having a generic cloud-hosted algorithm is unlikely to give effective forecasts.
 
 SnapAnalytx makes money from both model providers and model users. They charge $99 per month per model to providers to list models in the catalog (which seems to me like a huge cost, but perhaps there is a lot of manual work in setting up every model), and then each user is charged a fee for using the model. SnapAnalytx retains part of the user fees, and the rest goes to the model provider.
 

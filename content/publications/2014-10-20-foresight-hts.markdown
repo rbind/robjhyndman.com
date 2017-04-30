@@ -18,8 +18,8 @@ file: Foresight-hts-final.pdf
 
 This is an introduction to our approach to forecast reconciliation without using any matrices. The original research is available here:
 
-  * [Hyndman, Ahmed, Athanasopoulos and Shang (CSDA, 2011)](/publication/hierarchical/)
-  * [Athanasopoulos, Ahmed and Hyndman (IJF, 2009)](/publication/hierarchical-tourism/)
+  * [Hyndman, Ahmed, Athanasopoulos and Shang (CSDA, 2011)](/publications/hierarchical/)
+  * [Athanasopoulos, Ahmed and Hyndman (IJF, 2009)](/publications/hierarchical-tourism/)
 
-The software is available in the [hts package for R](http://github.com/robjhyndman/hts/) with some notes on usage in [the vignette](/publication/hts-an-r-package-for-forecasting-hierarchical-or-grouped-time-series/). There is also a gentle introduction in our [forecasting textbook](http://www.otexts.org/fpp/9/4).
+The software is available in the [hts package for R](http://github.com/robjhyndman/hts/) with some notes on usage in [the vignette](/publications/hts-an-r-package-for-forecasting-hierarchical-or-grouped-time-series/). There is also a gentle introduction in our [forecasting textbook](http://www.otexts.org/fpp/9/4).
 

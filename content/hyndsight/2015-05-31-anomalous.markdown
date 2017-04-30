@@ -16,7 +16,7 @@ categories:
 
 The [anomalous package](https://github.com/robjhyndman/anomalous-acm) provides some tools to detect unusual time series in a large collection of time series. This is joint work with [Earo Wang](http://earo.me) (an honours student at Monash) and [Nikolay Laptev](http://labs.yahoo.com/author/nlaptev/) (from Yahoo Labs). Yahoo is interested in detecting [unusual patterns in server metrics](https://yahooresearch.tumblr.com/post/118966433256/egads-a-scalable-configurable-and-novel-anomaly). <!-- more -->
 
-The package is based on [this paper with Earo and Nikolay](http://robjhyndman.com/working-papers/cikm2015/).
+The package is based on [this paper with Earo and Nikolay](/publications/cikm2015/).
 
 The basic idea is to measure a range of features of the time series (such as strength of seasonality, an index of spikiness, first order autocorrelation, etc.) Then a principal component decomposition of the feature matrix is calculated, and outliers are identified in 2-dimensional space of the first two principal component scores.
 

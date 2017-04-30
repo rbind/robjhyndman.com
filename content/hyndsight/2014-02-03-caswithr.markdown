@@ -2,8 +2,6 @@
 author: robjhyndman
 comments: true
 date: 2014-02-03 03:00:32+00:00
-
-link: http://robjhyndman.com/hyndsight/caswithr/
 slug: caswithr
 title: Computational Actuarial Science with R
 wordpress_id: 2428
@@ -17,4 +15,4 @@ categories:
 
 [![41JYoNQh2HL._SY300_](/files/41JYoNQh2HL._SY300_.jpg)](http://www.amazon.com/Computational-Actuarial-Science-Chapman-Series/dp/1466592591?tag=prorobjhyn-20)
 
-I recently co-authored [a chapter on "Prospective Life Tables"](http://robjhyndman.com/chapters/prospective-life-tables/) for this book, edited by [Arthur Charpentier](http://perso.univ-rennes1.fr/arthur.charpentier/). R code to reproduce the figures and to complete the exercises for our chapter is [now available on github](https://github.com/CASwithR/life/tree/master/ch8). Code for the other chapters should also be available soon. The book can be [pre-ordered on Amazon](http://www.amazon.com/Computational-Actuarial-Science-Chapman-Series/dp/1466592591?tag=prorobjhyn-20).
+I recently co-authored [a chapter on "Prospective Life Tables"](/publications/prospective-life-tables/) for this book, edited by [Arthur Charpentier](http://perso.univ-rennes1.fr/arthur.charpentier/). R code to reproduce the figures and to complete the exercises for our chapter is [now available on github](https://github.com/CASwithR/life/tree/master/ch8). Code for the other chapters should also be available soon. The book can be [pre-ordered on Amazon](http://www.amazon.com/Computational-Actuarial-Science-Chapman-Series/dp/1466592591?tag=prorobjhyn-20).

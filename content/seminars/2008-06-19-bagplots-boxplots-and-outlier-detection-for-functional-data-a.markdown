@@ -27,6 +27,6 @@ tags:
 
 	
 	
-  * [**Paper**](http://robjhyndman.com/papers/iwfos08.pdf)
+  * [**Paper**](/papers/iwfos08.pdf)
 
 

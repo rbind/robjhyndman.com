@@ -28,4 +28,4 @@ Now a good statistician can avoid all of these errors and use statistical tests 
 
 In forecasting, the only  place in which I find testing useful is in determining the order of integration of a time series; i.e., choosing d in an ARIMA(p,d,q) model. If I could come up with some way of doing this effectively without using a unit-root test, I would gladly do so. But so far, I have not found a reliable alternative.
 
-For more on this topic, see my [working paper](http://robjhyndman.com/working-papers/forecasting-without-significance-tests) with Andrey Kostenko.
+For more on this topic, see my [working paper](/publications/forecasting-without-significance-tests) with Andrey Kostenko.

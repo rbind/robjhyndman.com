@@ -22,7 +22,7 @@ I've added a couple of new functions to the [forecast package for R](https://git
 
 
 
-The first is regular k-fold cross-validation for autoregressive models. Although cross-validation is sometimes not valid for time series models, it does work for autoregressions, which includes many machine learning approaches to time series. The theoretical background is provided in [Bergmeir, Hyndman and Koo (2015)](http://robjhyndman.com/working-papers/cv-time-series). So cross-validation can be applied to any model where the predictors are lagged values of the response variable.
+The first is regular k-fold cross-validation for autoregressive models. Although cross-validation is sometimes not valid for time series models, it does work for autoregressions, which includes many machine learning approaches to time series. The theoretical background is provided in [Bergmeir, Hyndman and Koo (2015)](/publications/cv-time-series). So cross-validation can be applied to any model where the predictors are lagged values of the response variable.
 
 This is implemented for NNAR models (neural network autoregressions) in R as follows:
 
