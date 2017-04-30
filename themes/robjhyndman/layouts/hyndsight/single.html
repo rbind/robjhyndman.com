@@ -26,8 +26,7 @@
       <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">
       <meta itemprop="url" content="{{ .Permalink }}">
 
-<div class='sans'>
-<hr class='separator'>
+<div class='sans' style="background: #dddddd; padding: 2em;">
 <div style="padding-bottom: 1em" >
 {{ partial "share2.html" . }}
 </div>
@@ -42,8 +41,6 @@
     </ul>
     <a href="/hyndsight/">All Hyndsight posts by date</a> &middot; <a href="/categories/">All Hyndsight posts by subject</a>
 </div>
-
-<br><br>
 
 <span style='font-family: Carlito'>
  {{ partial "disqus.html" . }}
