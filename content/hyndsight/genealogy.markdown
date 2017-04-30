@@ -94,7 +94,7 @@ D. 22 June 1925
 Best known for his work in non-euclidean geometry, for his work on the connections between geometry and group theory, and for results in function theory.</td>
 </tr>
 <tr>
-<td><img align="top" src="genealogy/story.png" width="200" /></td>
+<td><img align="top" src="/genealogy/Story.jpg" width="200" /></td>
 <td><strong><a class="vt-p" href="http://www-groups.dcs.st-and.ac.uk/~history/Mathematicians/Story.html">William Story</a></strong>
 <em>Ph.D. Universität Leipzig, 1875</em>
 B. 29 April 1850
