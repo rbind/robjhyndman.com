@@ -11,7 +11,7 @@ tags:
 - forecasting
 - time series
 citation: "Contribution to the <em>International Encyclopedia of Statistical Science</em>, ed. Miodrag Lovric, Springer. pp.866-869"
-link: http://www.springer.com/statistics/book/978-3-642-04897-5
+online: http://www.springer.com/statistics/book/978-3-642-04897-5
 file: movingaverage.pdf
 ---
 

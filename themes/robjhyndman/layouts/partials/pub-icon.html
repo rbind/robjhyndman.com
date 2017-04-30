@@ -1,7 +1,10 @@
 {{ if .Params.doi }}<a href="http://dx.doi.org/{{.Params.doi}}" class="badge badge-small badge-blue">DOI</a>{{ end }}
 {{ if .Params.jstor }}<a href="http://jstor.org/stable/{{.Params.jstor}}" class="badge badge-small badge-blue">JSTOR</a>{{ end }}
 {{ if isset .Params "link" }}
-<a href={{ .Params.link }} class="badge badge-small badge-blue">Online</a>
+<a href={{ .Params.link }} class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>
+{{ end }}
+{{ if isset .Params "online" }}
+<a href={{ .Params.online }} class="badge badge-small badge-blue">Online</a>
 {{ end }}
 {{ if .Params.figshare }} <a href="https://monash.figshare.com/file/download/{{.Params.figshare}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>{{ end }}
 {{ if .Params.file }}<a href="http://robjhyndman.com/papers/{{.Params.file}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>{{ end }}

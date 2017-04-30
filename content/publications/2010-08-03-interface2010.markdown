@@ -12,7 +12,7 @@ tags:
 - graphics
 - highest density regions
 citation: "<em>Interface 2010: Computing Science and Statistics</em>, Seattle, Washington, June 16-19, 2010"
-link: http://www.interfacesymposia.org/Interface2010/
+online: http://www.interfacesymposia.org/Interface2010/
 file: Interface2010v2.pdf
 ---
 
