@@ -4,7 +4,7 @@ canonifyurls = true
 relativeurl = true
 paginate = 10
 theme = "robjhyndman"
-disqusShortname = "researchtips"
+DisqusShortname = "researchtips"
 
 [params]
 

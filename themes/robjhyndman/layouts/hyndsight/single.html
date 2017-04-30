@@ -10,16 +10,16 @@
 {{ define "main" }}
 
 <div class="wrapper">
-<div class="units-row" style='margin-bottom: 0px;'>   
+<div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
 <div class="unit-60"><h1>{{ .Title }}</h1></div>
 </div>
-<div class="units-row">   
+<div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'><h3 style='padding-top: .8ex;'>Hyndsight</h3>
       {{ partial "post-metadata" . }}
     </div>
 <div class="unit-60">
-  
+
   {{ .Content }}
 
       <meta itemprop="wordCount" content="{{ .WordCount }}">
@@ -46,7 +46,7 @@
 <br><br>
 
 <span style='font-family: Carlito'>
-{{ template "_internal/disqus.html" . }}
+ {{ partial "disqus.html" . }}
 </span>
 
   </div>
