@@ -7,14 +7,14 @@ The following bio and photos may be used in media releases without further permi
 
 >**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://www.forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://www.forecasters.org/). Rob is the author of over 150 research papers and books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. His recent consulting work has involved forecasting electricity demand, tourism demand, the Australian government health budget and case volume at a US call centre.
 
-**Photos:** 
-  [low-res](http://robjhyndman.com/pics/vintage.png)
-  [medium-res](http://robjhyndman.com/pics/RobHyndman-medres.jpg)
-  [high-res](http://robjhyndman.com/pics/RobHyndman-highres.jpg).
+**Photos:**
+  [low-res](/pics/vintage.png)
+  [medium-res](/pics/RobHyndman-medres.jpg)
+  [high-res](/pics/RobHyndman-highres.jpg).
 
 
-<h4><a href="http://robjhyndman.com/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a> <a href="http://robjhyndman.com/RobHyndmanCV.pdf">Curriculum Vitae</a> &nbsp; </h4>
-   
+<h4><a href="/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a> <a href="/RobHyndmanCV.pdf">Curriculum Vitae</a> &nbsp; </h4>
+
 
 <ul class="fa-ul">
   <li><i class="fa-li fa fa-github" style="padding-top:3px;"></i><a href="https://github.com/robjhyndman">robjhyndman on GitHub</a></li>
@@ -63,12 +63,12 @@ I am a member of the following organizations:
 ## Things I've started
 
   * **[CrossValidated.com](http://crossvalidated.com)**: a Q&A site for questions on statistics modelling, machine learning, data analysis, data visualization, etc. (Further information in [this interview](http://magazine.amstat.org/blog/2011/12/01/qasitedec11/">this interview).
-  * **[Time Series Data Library](http://data.is/TSDLdemo)**: About 800 time series, including data from many time series textbooks. Now hosted on <a href="http://datamarket.com/">DataMarket</a>. (Further information in this <a href="http://robjhyndman.com/hyndsight/tsdl/">blog post</a>.)</li>
+  * **[Time Series Data Library](http://data.is/TSDLdemo)**: About 800 time series, including data from many time series textbooks. Now hosted on <a href="http://datamarket.com/">DataMarket</a>. (Further information in this <a href="/hyndsight/tsdl/">blog post</a>.)</li>
 </ul>
 
 ## Trivia
 
-My [mathematical genealogy](http://robjhyndman.com/hyndsight/mathematical-genealogy/) goes back to Leibniz, Bernoulli, Euler, Lagrange and Poisson.
+My [mathematical genealogy](/hyndsight/mathematical-genealogy/) goes back to Leibniz, Bernoulli, Euler, Lagrange and Poisson.
 
 My [Erdös number](http://www.oakland.edu/enp/) is 3 in two different ways.
 
@@ -81,4 +81,4 @@ For nearly 30 years, until July 2013, I was an active Christian believer, writer
 
 I am no longer a Christian. Eventually I came to the view that there was little or no evidence that the Bible was inspired, or that God (if he exists at all) was interacting with humans in any way. So if you're looking for my religious materials, they are no longer here. That part of this site is now closed, and that part of my life is now over.
 
-In 2015 I wrote a book about my deconversion titled *[Unbelievable](http://robjhyndman.com/unbelievable/)*.
+In 2015 I wrote a book about my deconversion titled *[Unbelievable](/unbelievable/)*.

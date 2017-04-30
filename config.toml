@@ -29,7 +29,7 @@ pubs_count = 4
   icon_pack = "fa"
   link = "mailto:Rob.Hyndman@monash.edu"
   text = "Rob.Hyndman@monash.edu"
-    
+
 [[params.social]]
   icon = "twitter"
   icon_pack = "fa"
@@ -89,3 +89,4 @@ pubs_count = 4
   name = "About"
   url = "/about/"
   weight = 6
+
