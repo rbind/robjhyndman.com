@@ -3,14 +3,14 @@
 {{ end }}
 {{ define "main" }}
 <div class="wrapper">
-<div class="units-row" style='margin-bottom: 0px;'>   
+<div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
 <div class="unit-60"><h1>{{ .Title }}</h1></div>
 </div>
-<div class="units-row">   
+<div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'>
                   {{ .Date.Format "2&nbsp;January&nbsp;2006" | safeHTML }}
-                  {{ if .Params.citation }} 
+                  {{ if .Params.citation }}
                   {{.Params.citation | safeHTML }}
                   {{ end }} </p>
     </div>
@@ -29,22 +29,22 @@
       </div>
       <div class="pub-content">{{ .Content }}</div>
       {{ if .Params.speakerdeck }}
-        <div id='speakerdeck'> 
+        <div id='speakerdeck'>
         <p><script async class="speakerdeck-embed" data-id="{{ .Params.speakerdeck }}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
         </p>
-        </div>  
-      {{ end }}  
+        </div>
+      {{ end }}
       {{ if .Params.figshare }}
       <p><iframe src="http://wl.figshare.com/articles/{{ .Params.figshare }}/embed?show_title=0" width="568" height="481" frameborder="0"></iframe></p>
       {{ end }}
-      {{ if .Params.slideshare }} 
+      {{ if .Params.slideshare }}
       <div class="embed slideshare">
       <iframe src="http://www.slideshare.net/slideshow/embed_code/key/{{ .Params.slideshare }}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen  webkitallowfullscreen mozallowfullscreen> </iframe>
       </div>
       {{ end }}
       {{ if .Params.file }}<a href="/talks/{{.Params.file}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a>{{ end }}
       {{ if .Params.file }}
-      <iframe src="http://docs.google.com/gview?url={{.Site.BaseURL}}talks/{{.Params.file}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+      <iframe src="http://docs.google.com/gview?url=http://robjhyndman.com/talks/{{.Params.file}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
       {{ end }}
   </article>
 
