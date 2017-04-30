@@ -5,8 +5,9 @@ comments: false
 date: 2011-03-15 23:52:31+00:00
 slug: hierarchical
 title: Optimal combination forecasts for hierarchical time series
-kind:
- article
+kind: article
+aliases:
+  - /papers/hierarchical/
 tags:
 - forecasting
 - hierarchical time series

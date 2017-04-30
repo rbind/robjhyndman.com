@@ -5,7 +5,8 @@ comments: false
 date: 2008-07-16 05:29:32+00:00
 slug: automatic-forecasting
 title: 'Automatic time series forecasting: the forecast package for R'
-wordpress_id: 500
+aliases: 
+  - /papers/automatic-forecasting/
 kind: article
 tags:
 - exponential smoothing

@@ -5,7 +5,8 @@ comments: false
 date: 2011-12-31 02:38:49+00:00
 slug: complex-seasonality
 title: Forecasting time series with complex seasonal patterns using exponential smoothing
-wordpress_id: 1031
+aliases:
+  - /papers/complex-seasonality/
 kind:
  article
 tags:
