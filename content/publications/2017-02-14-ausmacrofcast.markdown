@@ -5,13 +5,13 @@ comments: false
 date: 2017-02-14 05:23:28+00:00
 slug: ausmacrofcast
 title: Macroeconomic forecasting for Australia using a large number of predictors
-wordpress_id: 3865
 kind: unpublished
 tags:
 - data science
 - econometrics
 - forecasting
 - time series
+link: http://business.monash.edu/econometrics-and-business-statistics/research/publications/ebs/wp02-17.pdf
 ---
 
 

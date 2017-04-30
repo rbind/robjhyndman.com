@@ -3,15 +3,15 @@ author: Bin Jiang, Anastasios Panagiotelis, George Athanasopoulos, Rob&nbsp;J&nb
 Status: Published
 comments: false
 date: 2016-01-30 00:58:44+00:00
-slug: bayesian-rank-selection-in-multivariate-regressions
-title: Bayesian rank selection in multivariate regressions
-wordpress_id: 3567
+slug: bayesian-rank-selection-in-multivariate-regression
+title: Bayesian rank selection in multivariate regression
 kind:
  unpublished
 tags:
 - arima models
 - econometrics
 - time series
+link: http://business.monash.edu/econometrics-and-business-statistics/research/publications/ebs/wp06-16.pdf
 ---
 
 

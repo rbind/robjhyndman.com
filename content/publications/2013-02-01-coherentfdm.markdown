@@ -4,11 +4,8 @@ Status: Published
 comments: false
 date: 2013-02-01 07:31:52+00:00
 slug: coherentfdm
-title: 'Coherent mortality forecasting: the product-ratio method with functional time
-  series models'
-wordpress_id: 1371
-kind:
- article
+title: 'Coherent mortality forecasting: the product-ratio method with functional time series models'
+kind: article
 tags:
 - demography
 - functional data
