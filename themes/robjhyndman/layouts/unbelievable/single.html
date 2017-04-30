@@ -1,47 +1,47 @@
 {{ define "main" }}
 <div class="wrapper">
-<div class="units-row" style='margin-bottom: 0px;'>   
+<div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
 <div class="unit-60"><h1>{{ .Title }}</h1></div>
 </div>
-<div class="units-row">   
+<div class="units-row">
    <div class="unit-20 dateblock" text-align="left">
-      <span style="text-align: left; font-family: 'Carlito';"><h4 align='left'>Contents</h4><h5><a href="unbelievable/preface/">Preface</a></h5>  
+      <span style="text-align: left; font-family: 'Carlito';"><h4 align='left'>Contents</h4><h5><a href="/unbelievable/preface/">Preface</a></h5>
 <h5>A. Falsifiable Faith</h5>
       <ol>
-        <li><a href="unbelievable/ch1/">No reason to believe</a></li>
-        <li><a href="unbelievable/ch2/">An end of faith</a></li>
-        <li><a href="unbelievable/ch3/">Which is the better story?</a></li>
-        <li><a href="unbelievable/ch4/">What would convince you?</a></li>
+        <li><a href="/unbelievable/ch1/">No reason to believe</a></li>
+        <li><a href="/unbelievable/ch2/">An end of faith</a></li>
+        <li><a href="/unbelievable/ch3/">Which is the better story?</a></li>
+        <li><a href="/unbelievable/ch4/">What would convince you?</a></li>
       </ol>
 <h5>B. Exploring the Evidence</h5>
     <ol start=5>
-      <li><a href="unbelievable/ch5/">Talking to myself</a></li>
-      <li><a href="unbelievable/ch6/">What are the chances?</a></li>
-      <li><a href="unbelievable/ch7/">Thank God</a></li>
-      <li><a href="unbelievable/ch8/">The biblical crystal ball</a></li>
-      <li><a href="unbelievable/ch9/">Legend of the empty tomb</a></li>
-      <li><a href="unbelievable/ch10/">Evolving views on creation</a></li>
-      <li><a href="unbelievable/ch11/">Artefacts and anachronisms</a></li>
-      <li><a href="unbelievable/ch12/">Does God make mistakes?</a></li>
-      <li><a href="unbelievable/ch13/">Drink the magic potion</a></li>
-      <li><a href="unbelievable/ch14/">Did you hear about the guy…?</a></li>
-      <li><a href="unbelievable/ch15/">I am not an axe-murderer</a></li>
+      <li><a href="/unbelievable/ch5/">Talking to myself</a></li>
+      <li><a href="/unbelievable/ch6/">What are the chances?</a></li>
+      <li><a href="/unbelievable/ch7/">Thank God</a></li>
+      <li><a href="/unbelievable/ch8/">The biblical crystal ball</a></li>
+      <li><a href="/unbelievable/ch9/">Legend of the empty tomb</a></li>
+      <li><a href="/unbelievable/ch10/">Evolving views on creation</a></li>
+      <li><a href="/unbelievable/ch11/">Artefacts and anachronisms</a></li>
+      <li><a href="/unbelievable/ch12/">Does God make mistakes?</a></li>
+      <li><a href="/unbelievable/ch13/">Drink the magic potion</a></li>
+      <li><a href="/unbelievable/ch14/">Did you hear about the guy…?</a></li>
+      <li><a href="/unbelievable/ch15/">I am not an axe-murderer</a></li>
     </ol>
 <h5>C. Responses and Reflections</h5>
     <ol start=16>
-      <li><a href="unbelievable/ch16/">Repent or die</a></li>
-      <li><a href="unbelievable/ch17/">You made me cry</a></li>
-      <li><a href="unbelievable/ch18/">I’m praying for you</a></li>
-      <li><a href="unbelievable/ch19/">Was the pressure too much?</a></li>
-      <li><a href="unbelievable/ch20/">You must be ignorant</a></li>
-      <li><a href="unbelievable/ch21/">What now?</a></li>
-      <li><a href="unbelievable/ch22/">Me too</a></li>
-      <li><a href="unbelievable/ch23/">Welcome to the dark side</a></li>
+      <li><a href="/unbelievable/ch16/">Repent or die</a></li>
+      <li><a href="/unbelievable/ch17/">You made me cry</a></li>
+      <li><a href="/unbelievable/ch18/">I’m praying for you</a></li>
+      <li><a href="/unbelievable/ch19/">Was the pressure too much?</a></li>
+      <li><a href="/unbelievable/ch20/">You must be ignorant</a></li>
+      <li><a href="/unbelievable/ch21/">What now?</a></li>
+      <li><a href="/unbelievable/ch22/">Me too</a></li>
+      <li><a href="/unbelievable/ch23/">Welcome to the dark side</a></li>
     </ol>
-  <h5><a href="unbelievable/bibliography/">Bibliography</a></h5>
-  <h5><a href="unbelievable/buy-book/">Buy book</a></h5>
-  <h5><a href="http://robjhyndman.com">Return to main web site</a></h5>
+  <h5><a href="/unbelievable/bibliography/">Bibliography</a></h5>
+  <h5><a href="/unbelievable/buy-book/">Buy book</a></h5>
+  <h5><a href="/">Return to main web site</a></h5>
   </span>
       </div>
 
@@ -50,16 +50,9 @@
       {{ if .Params.image }}
       <img src="{{ $.Site.BaseURL }}img/{{ .Params.image }}" class="pub-banner" itemprop="image">
       {{end}}
-      <div class="pub-info">
-  {{ if .Params.publication }}
-  <div class="row">
-    <div class="column small-2 medium-1 pub-row-heading">Cite</div>
-    <div class="column small-10 medium-11">{{ .Params.publication | markdownify }}</div>
-  </div>
-  {{ end }}
-      </div>
+      <div style="padding-top: 5ex;"></div>
       <div class="pub-content">{{ .Content }}</div>
-  
+
   </article>
 
           <hr>
