@@ -28,9 +28,9 @@ A new innovations state space modeling framework, incorporating Box-Cox transfor
 
 #### Data
 
-  * [Call center data](http://robjhyndman.com/data/callcenter.txt)
-  * [Gasoline data](http://robjhyndman.com/data/gasoline.csv)
-  * [Turkish electricity data](http://robjhyndman.com/data/turkey_elec.csv)
+  * [Call center data](/data/callcenter.txt)
+  * [Gasoline data](/data/gasoline.csv)
+  * [Turkish electricity data](/data/turkey_elec.csv)
 
 
 To read the data into R:
