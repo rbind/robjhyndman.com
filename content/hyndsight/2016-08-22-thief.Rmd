@@ -23,7 +23,7 @@ It turns out that this tends to give better forecasts, even though no new inform
 
 The main function is `thief` which can be used like any of the forecast functions from the `forecast` package. For example:
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, cache=TRUE}
 # Load methods package to avoid bizarre error
 # which arises from Matrix package.
 # See http://stackoverflow.com/a/43284496/144157

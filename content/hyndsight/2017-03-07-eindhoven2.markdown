@@ -18,7 +18,7 @@ categories:
 - time series
 ---
 
-Last October I gave a 3-day masterclass on ["Forecasting with R"](http://robjhyndman.com/eindhoven) in Eindhoven, Netherlands. There is a follow-up event planned for Tuesday 18 April 2017. It is particularly designed for people who attended the 3-day class, but if anyone else wants to attend they would be welcome.
+Last October I gave a 3-day masterclass on ["Forecasting with R"](/seminars/eindhoven) in Eindhoven, Netherlands. There is a follow-up event planned for Tuesday 18 April 2017. It is particularly designed for people who attended the 3-day class, but if anyone else wants to attend they would be welcome.
 
 Please **[register here](https://www.eventbrite.com/e/follow-up-meeting-forecasting-with-r-tickets-32615646276)** if you want to attend.<!-- more -->
 
