@@ -5,6 +5,7 @@ relativeurl = true
 paginate = 10
 theme = "robjhyndman"
 DisqusShortname = "researchtips"
+googleAnalytics = "UA-5004894-1"
 
 [params]
 
