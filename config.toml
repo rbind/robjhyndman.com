@@ -41,7 +41,7 @@ pubs_count = 4
 [[params.social]]
   icon = "github"
   icon_pack = "fa"
-  link = "//https://github.com/robjhyndman"
+  link = "https://github.com/robjhyndman/"
   text = "robjhyndman"
   site = "GitHub"
 
