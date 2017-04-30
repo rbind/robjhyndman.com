@@ -1,4 +1,4 @@
-baseurl = "file:///home/hyndman/git/Website/public/"
+baseurl = "http://robjhyndman.com/"
 title = "Rob J Hyndman"
 canonifyurls = true
 relativeurl = true

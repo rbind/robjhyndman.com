@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+
+<div class="wrapper">
+  <div class="units-row">
+    <div class="unit-centered unit-80">
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+      <h1 itemprop="name">404</h1>
+      <img src="/img/oops.png" width=100 style='padding-bottom:2em;'>
+        <h2>File not found</h2>
+
+        <p>Sorry, that doesn&rsquo;t seem to be here.<br>
+        Possibly the URL changed when I reorganized the site.</p>
+
+        <ul>
+        <li>Old URLS of the form<br>
+        <code>robjhyndman.com/papers/xxx/</code><br>
+        are now of the form<br>
+        <code>robjhyndman.com/publications/xxx</code>.</li>
+        <li>Software is now listed at <a href="/software/"><code>robjhyndman.com/software/</code></a>.</li>
+        </ul>
+
+        <p>If that's not it, perhaps try a search to find what you are looking for.</p>
+
+
+        <p><a id="searchsite">
+        <form method="get" action="https://duckduckgo.com/">
+        <input type="search" name="q" maxlength="255" placeholder="Search the site">
+        <input type="hidden" name="sites" value="robjhyndman.com"/>
+        <input type="hidden" name="k7" value="#faf8f8"/>
+        <input type="hidden" name="kj" value="#b33"/>
+        <input type="hidden" name="ky" value="#fafafa"/>
+        <input type="hidden" name="kx" value="b"/>
+        <input type="hidden" name="ko" value="-1"/>
+        <input type="hidden" name="k1" value="-1"/>
+        <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" /></form></a></p>
+
+      </article>
+</div>
+</div>
+</div>
+
+
+{{ end }}
