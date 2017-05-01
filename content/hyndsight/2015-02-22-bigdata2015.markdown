@@ -16,7 +16,7 @@ categories:
 - statistics
 ---
 
-I'm currently attending the [one day workshop on this topic](http://acems.org.au/statistical-modelling-and-analysis-of-big-data-workshop-2015/) at QUT in Brisbane. This morning I spoke on "Visualizing and forecasting big time series data". My [slides are here](http://robjhyndman.com/talks/big-time-series-data/).
+I'm currently attending the [one day workshop on this topic](http://acems.org.au/statistical-modelling-and-analysis-of-big-data-workshop-2015/) at QUT in Brisbane. This morning I spoke on "Visualizing and forecasting big time series data". My [slides are here](/seminars/big-time-series-data/).
 
 [The talks are being streamed](http://acems.org.au/acems_wp/wp-content/uploads/2015/02/Streaming-instructions.pdf).
 

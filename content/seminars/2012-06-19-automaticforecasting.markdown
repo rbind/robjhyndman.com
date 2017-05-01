@@ -28,9 +28,9 @@ I will look at some algorithms recently developed for automatically forecasting 
 ### Downloads
 
 	
-  * [Long version](/ASC2012_RobJHyndman.pdf) (for ASC2012 and [Lancaster Uni](http://www.stor-i.lancs.ac.uk/))
+  * [Long version](/talks/ASC2012_RobJHyndman.pdf) (for ASC2012 and [Lancaster Uni](http://www.stor-i.lancs.ac.uk/))
 
 	
-  * [Short version](/COMPSTAT12.pdf) (for [COMPSTAT12](http://www.compstat2012.org/))
+  * [Short version](/talks/COMPSTAT12.pdf) (for [COMPSTAT12](http://www.compstat2012.org/))
 
 

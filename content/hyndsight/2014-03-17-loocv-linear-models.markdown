@@ -106,4 +106,4 @@ and the result follows.
 
 
 
-This result is implemented in the `CV()` function from the [**forecast** package for R](http://robjhyndman.com/software/forecast/).
+This result is implemented in the `CV()` function from the [**forecast** package for R](http://github.com/robjhyndman/forecast/).

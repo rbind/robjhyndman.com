@@ -334,4 +334,4 @@ In our papers, we took the measures obtained using R, and produced self-organizi
 
 
 
-**[Download the code in a single file.](/publications/measures2.R)**
+**[Download the code in a single file.](/papers/measures2.R)**

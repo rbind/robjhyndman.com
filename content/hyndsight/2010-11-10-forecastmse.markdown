@@ -30,7 +30,7 @@ It is possible to have a percentage version of MSE, the Mean Squared Percentage 
 
 The MASE (mean absolute scaled error) was intended to avoid these problems.
 
-For further discussion on these and related points, see [Hyndman & Koehler (IJF, 2006)](/publications/another-look-at-measures-of-forecast-accuracy/). A [preprint version](/publications/mase.pdf) is also available.
+For further discussion on these and related points, see [Hyndman & Koehler (IJF, 2006)](/publications/another-look-at-measures-of-forecast-accuracy/). A [preprint version](/papers/mase.pdf) is also available.
 
 >Also, suppose we have a lognormal model, where the estimation is done on the log-transformed scale and the prediction is done on the original, untransformed scale. One could either predict with the conditional mean or the conditional median. It seems to me that you would predict with the mean if the MSE is your metric, but you would predict with the median if the MAD is your metric. My thought is that the mean would minimize MSE, while the median would minimize MAD. So whether you use the mean or the median depends on which metric you use for evaluating the model.
 
@@ -42,7 +42,7 @@ To get the conditional mean on the original scale, it is necessary to adjust the
 
 Occasionally, there may be some reason to prefer a conditional mean point forecast; for example, if you are forecasting a number of related products and you need the point forecasts to sum to give the forecast of total number of products. But in most situations, the conditional median will be suitable.
 
-In R, the `plot.forecast()` function (from the [forecast package](http://cran.r-project.org/web/packages/forecast/)) will back-transform point forecasts and prediction intervals using an inverse Box-Cox transformation. Just include the argument `lambda`. For example:
+In R, the `plot.forecast()` function (from the [forecast package](http://github.com/robjhyndman/forecast/)) will back-transform point forecasts and prediction intervals using an inverse Box-Cox transformation. Just include the argument `lambda`. For example:
 
 ```r    
     fit <- ar(BoxCox(lynx,0.5))

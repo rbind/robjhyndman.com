@@ -19,7 +19,7 @@ One of the best ways to get started with research in a new area is to try to rep
 
 Unfortunately, a lot of papers are not reproducible because the data are not made available, or the description of the methods are not detailed enough. The good news is that there is a growing move amongst funding agencies and journals to make more research reproducible.  Peng, Dominici and Zeger (2006) and Koenker and Zeileis (2009) provide helpful discussions of new tools (especially Sweave) for making research easier to reproduce.
 
-The _International Journal of Forecasting_ is also encouraging researchers to make their data and computer code available in order to allow others to replicate the research. I have just written an [editorial](http://robjhyndman.com/editorials/replication) on this topic which will appear in the first issue of 2010. Here is an excerpt from the article:
+The _International Journal of Forecasting_ is also encouraging researchers to make their data and computer code available in order to allow others to replicate the research. I have just written an [editorial](http://robjhyndman.com/publications/replication) on this topic which will appear in the first issue of 2010. Here is an excerpt from the article:
 
 
 >As the leading journal in forecasting, the IJF has a responsibility to set research standards.

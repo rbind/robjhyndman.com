@@ -14,7 +14,7 @@ categories:
 - statistics
 ---
 
-The [hts package for R](http://robjhyndman.com/software/hts/) allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in [this Foresight paper](/publications/foresight-hts/).)
+The [hts package for R](http://github.com/robjhyndman/hts/) allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in [this Foresight paper](/publications/foresight-hts/).)
 
 The base forecasts can be generated using any method, with ETS models and ARIMA models provided as options in the `forecast.gts()` function. As ETS models do not allow for regressors, you will need to choose ARIMA models if you want to include regressors.<!-- more -->
 

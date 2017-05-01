@@ -12,9 +12,7 @@ categories:
 - LaTeX
 ---
 
-Now that there is a [way to sync a pdf file and tex file in both directions](http://robjhyndman.com/hyndsight/synchronizing-winedt-and-pdf-files/), the only remaining reason to use dvi files is when the graphics are in eps format.
-
-However, that problem has also been solved for those using MikTeX 2.8 or TeXLive 2009. In MikTeX 2.8, simply include the package `epstopdf` along with `graphicx`. (As noted in the comments below, even this step is not necessary in TeXLive 2009.) Then when you use pdflatex, the eps files will be automatically converted to pdf at compile time. (The conversion only happens the first time you process the file, and is skipped if there is already a pdf file with the same name.)
+Simply include the package `epstopdf`. Then when you use pdflatex, the eps files will be automatically converted to pdf at compile time. (The conversion only happens the first time you process the file, and is skipped if there is already a pdf file with the same name.)
 
 For example:
 

@@ -19,6 +19,6 @@ There was an R workshop on 28-29 June, just before the Australian Statistical Co
 **Building R packages for Windows**
 	
   * [handout](/research/Rpackages_notes.pdf)
-  * [slides](research/Rpackages.pdf)
+  * [slides](/research/Rpackages.pdf)
 
 

@@ -17,7 +17,7 @@ categories:
 - time series
 ---
 
-With the latest version of the [hts package for R](http://robjhyndman.com/software/hts), it is now possible to specify rather complicated grouping structures relatively easily.
+With the latest version of the [hts package for R](http://github.com/robjhyndman/hts), it is now possible to specify rather complicated grouping structures relatively easily.
 
 All aggregation structures can be represented as hierarchies or as cross-products of hierarchies. For example, a hierarchical time series may be based on geography: country, state, region, store. Often there is also a separate product hierarchy: product groups, product types, packet size. Forecasts of all the different types of aggregation are required; e.g., product type A within region X. The aggregation structure is a cross-product of the two hierarchies.
 

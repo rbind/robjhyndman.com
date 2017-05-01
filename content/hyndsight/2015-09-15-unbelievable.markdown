@@ -12,7 +12,7 @@ categories:
 - religion
 ---
 
-[![unbelievable](http://robjhyndman.com/wp-content/uploads/2015/09/unbelievable-207x300.png)](https://www.createspace.com/5694732)
+[![unbelievable](/img/unbelievable-207x300.png)](https://www.createspace.com/5694732)
 
 This is a very different book from my usual areas of forecasting and statistics. It is a personal memoir describing my journey of deconversion from Christianity.
 

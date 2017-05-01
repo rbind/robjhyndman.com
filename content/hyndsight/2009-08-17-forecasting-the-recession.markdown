@@ -25,5 +25,5 @@ When it is easy to forecast (e.g., when there is a steady increasing trend and l
   
 That said, macroeconomic forecasting has a bad name for a good reason. Far too many confident forecasts are made without discussion of the uncertainty. If only every forecaster produced prediction intervals every time they made a forecast, the users would realise that macroeconomic forecasts are little better than shooting blindfolded.   
   
-See my talk on [Forecasting and the importance of being uncertain](http://robjhyndman.com/talks/forecasting-and-the-importance-of-being-uncertain-2) where I argue for mandatory prediction intervals for every point forecast.  
+See my talk on [Forecasting and the importance of being uncertain](/seminars/forecasting-and-the-importance-of-being-uncertain-2) where I argue for mandatory prediction intervals for every point forecast.  
 

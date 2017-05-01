@@ -13,12 +13,9 @@ categories:
 - R
 ---
 
-The [2012 GEFcom competition](http://robjhyndman.com/hyndsight/gefcom2012/) was a great success with several new innovative forecasting methods introduced. These have been published in the IJF as follows:<!-- more -->
+The [2012 GEFcom competition](http://www.drhongtao.com/gefcom/2012) was a great success with several new innovative forecasting methods introduced. These have been published in the IJF as follows:<!-- more -->
 
-
-
-
-    
+   
   * [**Hong, Pinson and Fan**. Global Energy Forecasting Competition 2012](http://dx.doi.org/10.1016/j.ijforecast.2013.07.001)
 
     
@@ -51,7 +48,7 @@ These papers will appear in print in the next issue of the journal. The data and
 
 The [2014 edition of the competition](http://www.gefcom.org/) is now under way with a probabilistic focus. The great thing about these competitions and the associated papers is that they provide a serious empirical comparison of the forecast capability of different algorithms. There are lots of suggested approaches to forecasting energy, but without head-to-head comparisons like this, it is not always clear what is a good method, and what methods can be discarded.
 
-The developers of the best performing methods in the competition will be invited to submit a paper to a [special issue of the IJF on probabilistic energy forecasting](http://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/), to be edited by Tao Hong and Pierre Pinson.
+The developers of the best performing methods in the competition will be invited to submit a paper to a [special issue of the IJF on probabilistic energy forecasting](/hyndsight/probabilistic-energy-forecasting/), to be edited by Tao Hong and Pierre Pinson.
 
 In addition to the regular competition, there is also a competition for students where the best-performing classes can win a prize. See [Tao Hong's blog for further information](http://blog.drhongtao.com/2014/02/institute-prize-for-gefcom2014.html).
 

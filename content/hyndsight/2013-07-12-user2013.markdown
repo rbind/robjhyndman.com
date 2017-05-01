@@ -50,7 +50,7 @@ Their [RSNNS package](http://dicits.ugr.es/software/RSNNS/) looks good. Next tim
   8. I had my first experience of lightning talks, where each person gets 5 minutes. These were surprisingly effective and interesting. I especially enjoyed Andy South on [mapping half a million signatures](http://andysouth.co.uk/wp-content/uploads/2013/07/useR2013-Lightning-AndySouth.pdf).
 
     
-  9. I gave a talk on the hts package entitled [_R tools for hierarchical time series_](http://robjhyndman.com/talks/hts-2). I am now working actively on hierarchical time series forecasting again, after a break from it for a couple of years. So expect to see more on this topic in the coming months. It has a lot of applications, and there is a lot still to be done to develop the theory, methodology and tools for handling hierarchical time series in practice.
+  9. I gave a talk on the hts package entitled [_R tools for hierarchical time series_](/seminars/hts-2). I am now working actively on hierarchical time series forecasting again, after a break from it for a couple of years. So expect to see more on this topic in the coming months. It has a lot of applications, and there is a lot still to be done to develop the theory, methodology and tools for handling hierarchical time series in practice.
 
     
   10. RStudio demonstrated their new debugging features to a few of us during one lunch break. In fact, they allowed us to download the pre-release version for our own use, but I'm not allowed to tell you the URL! However, if you google [[rstudio preview release]](https://www.google.com/search?q=rstudio+preview+release) you might find it. The debugging features are excellent, so look out for v0.98 available soon.
