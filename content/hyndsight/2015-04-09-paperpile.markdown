@@ -18,7 +18,7 @@ categories:
 
 One of the first things I tell my new research students is to use a reference management system to help them keep track of the papers they read, and to assist in creating bib files for their bibliography. Most of them use [Mendeley](https://www.mendeley.com/), one or two use [Zotero](https://www.zotero.org/). Both do a good job and both are free.
 
-I use neither. I did use Mendeley for several years (and [blogged about it](http://robjhyndman.com/hyndsight/mendeley/) a few years ago), but it became slower and slower to sync as my reference collection grew. Eventually it simply couldn't handle the load. I have over 11,000 papers in my collection of papers, and I was spending several minutes every day waiting for Mendeley just to update the database.
+I use neither. I did use Mendeley for several years, but it became slower and slower to sync as my reference collection grew. Eventually it simply couldn't handle the load. I have over 11,000 papers in my collection of papers, and I was spending several minutes every day waiting for Mendeley just to update the database.
 
 Then I came across [**Paperpile**](https://paperpile.com/), which is not so well known as some of its competitors, but it is truly awesome. I've now been using it for over a year, and I have grown to depend on it every day to keep track of all the papers I read, and to create my bib files.<!-- more -->
 
