@@ -1,12 +1,8 @@
 ---
 author: robjhyndman
-comments: true
 date: 2014-11-21 06:40:51+00:00
-
-link: http://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/
 slug: visualization-of-probabilistic-forecasts
 title: Visualization of probabilistic forecasts
-wordpress_id: 3068
 categories:
 - forecasting
 - graphics
@@ -50,19 +46,19 @@ It is easy enough to produce forecast HDR with time series. Here is some R code 
 ```{r, cache=TRUE}
 #HDR for time series object
 # Assumes that forecasts can be computed and futures simulated from object
-forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10), 
+forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10),
                         nsim=2000, plot=TRUE, level=c(50,95), xlim=NULL, ylim=NULL, ...)
 {
   require(hdrcde)
   # Compute forecasts
   fc <- forecast(object)
   ft <- time(fc$mean)
-  
+
   # Simulate future sample paths
   sim <- matrix(0,nrow=h,ncol=nsim)
   for(i in 1:nsim)
     sim[,i] <- simulate(object, nsim=h)
-  
+
   # Compute HDRs
   nl <- length(level)
   hd <- array(0, c(h,nl,10))
@@ -78,8 +74,8 @@ forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10),
   hd <- hd[,,nz]
   dimnames(hd)[[1]] <- 1:h
   dimnames(hd)[[2]] <- level
-  
-  
+
+
   # Produce plot if required
   if(plot)
   {
@@ -98,7 +94,7 @@ forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10),
         nint <- length(hdtmp)/2
         for(l in 1:nint)
         {
-          polygon(ft[k]+c(-1,-1,1,1)/object$m/2, 
+          polygon(ft[k]+c(-1,-1,1,1)/object$m/2,
                   c(hdtmp[2*l-1],hdtmp[2*l],hdtmp[2*l],hdtmp[2*l-1]),
                 col=cols[j], border=FALSE)
         }
@@ -111,13 +107,13 @@ forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10),
   # Return HDRs
   return(list(hdr=hd,mode=mode,level=level))
 }
-```    
+```
 
 We can apply it using the example I started with:
 
 ```{r, cache=TRUE, message=FALSE}
 z <- forecasthdr(fit,xlim=c(1986,1998),nsim=5000,
                   xlab="Year",ylab="US monthly housing sales")
-```    
+```
 
 The dots are modes of the forecast distributions, and the 50% and 95% highest density regions are also shown. In this case, the distributions are unimodal, and so all the regions are intervals.
