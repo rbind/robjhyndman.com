@@ -8,28 +8,27 @@ body {
 }
 
 form, input[type="search"], select[multiple="multiple"]  {font-family:  'Carlito', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
- 
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #36454f;
-  font-weight: normal;
+  font-weight: bold;
 }
 h1 {
   font-size: 1.8em;
   padding-bottom: 1em;
-  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   border-bottom: 1px solid #b3cde0;
-} 
+}
 
 h2 a {border-bottom: none;}
 
 h3 {
   font-size: 1.2em;
-} 
+}
 
 p {
   margin-bottom: 0.9em;
@@ -180,9 +179,9 @@ hr {border-top: 1px solid #b3cde0; margin-top:5ex; margin-bottom: 5ex;}
 	padding:0px;
 	margin:0ex;
 	/* border-bottom: 3px solid #36454f; */
-}  
+}
 
-#topbar .navbar {padding-bottom:14px; font-size:120%;} 
+#topbar .navbar {padding-bottom:14px; font-size:120%;}
 #topbar li a {color: #fff; border-bottom: none;}
 #topbar li a {color: #b3cde0;}
 #topbar li span a {color: #fff;}
@@ -211,7 +210,7 @@ header h1 {	font-size: 24px;
 /*	color: #ffffff;*/ }
 
 
-#topbar form {float:right; display:inline-block; } 
+#topbar form {float:right; display:inline-block; }
 
 
 
