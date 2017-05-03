@@ -13,7 +13,7 @@ categories:
 - kaggle
 ---
 
-Recently I wrote a paper entitled ["The tourism forecasting competition"](/papers/the-tourism-forecasting-competition/) in which we (i.e., George Athanasopoulos, Haiyan Song, Doris Wu and I) compared various forecasting methods on a relatively large set of tourism-related time series. The paper has been accepted for publication in the _International Journal of Forecasting_. (When I submit a paper to the _IJF_ it is always handled by another editor. In this case, Mike Clements handled the paper and it went through several revisions before it was finally accepted. Just to show the process is unbiased, I have had a paper rejected by the journal during the period I have been Editor-in-Chief.)
+Recently I wrote a paper entitled ["The tourism forecasting competition"](/publications/the-tourism-forecasting-competition/) in which we (i.e., George Athanasopoulos, Haiyan Song, Doris Wu and I) compared various forecasting methods on a relatively large set of tourism-related time series. The paper has been accepted for publication in the _International Journal of Forecasting_. (When I submit a paper to the _IJF_ it is always handled by another editor. In this case, Mike Clements handled the paper and it went through several revisions before it was finally accepted. Just to show the process is unbiased, I have had a paper rejected by the journal during the period I have been Editor-in-Chief.)
 
 We are now opening up the competition to anyone who thinks they can do better than the best methods we implemented in the paper. Methods will be evaluated based on the smallest MASE (Mean Absolute Scaled Error) -- see [Hyndman & Koehler (2006)](/publications/another-look-at-measures-of-forecast-accuracy/) for details of this statistic.
 

@@ -2,8 +2,6 @@
 author: robjhyndman
 comments: true
 date: 2009-12-02 06:07:26+00:00
-
-link: http://robjhyndman.com/hyndsight/replications/
 slug: replications
 title: Replications and reproducible research
 wordpress_id: 666
@@ -19,7 +17,7 @@ One of the best ways to get started with research in a new area is to try to rep
 
 Unfortunately, a lot of papers are not reproducible because the data are not made available, or the description of the methods are not detailed enough. The good news is that there is a growing move amongst funding agencies and journals to make more research reproducible.  Peng, Dominici and Zeger (2006) and Koenker and Zeileis (2009) provide helpful discussions of new tools (especially Sweave) for making research easier to reproduce.
 
-The _International Journal of Forecasting_ is also encouraging researchers to make their data and computer code available in order to allow others to replicate the research. I have just written an [editorial](http://robjhyndman.com/publications/replication) on this topic which will appear in the first issue of 2010. Here is an excerpt from the article:
+The _International Journal of Forecasting_ is also encouraging researchers to make their data and computer code available in order to allow others to replicate the research. I have just written an [editorial](/publications/replication) on this topic which will appear in the first issue of 2010. Here is an excerpt from the article:
 
 
 >As the leading journal in forecasting, the IJF has a responsibility to set research standards.
@@ -54,25 +52,25 @@ The _International Journal of Forecasting_ is trying to change this culture, and
 
 
 
-    
+
   1. [Evanschitzky, H. & Armstrong, J. S. (2010). Replications of forecasting research. _International Journal of Forecasting_, **26**, to appear.](http://dx.doi.org/10.1016/j.ijforecast.2009.09.003)
 
-    
+
   2. [Fildes, R., Hibon, M., Makridakis, S., & Meade, N. (1998). Generalising about univariate forecasting methods: Further empirical evidence. _International Journal of Forecasting_, **14**, 339–358.](http://dx.doi.org/10.1016/S0169-2070(98)00009-0)
 
-    
+
   3. [Gardner, Jr., E. S. & Diaz-Saiz, J. (2008). Exponential smoothing in the telecommunications data. _International Journal of Forecasting_, **24**, 170–174.](http://dx.doi.org/10.1016/j.ijforecast.2007.05.002)
 
-    
-  4. [Hyndman, R.J. (2010) Encouraging replications and reproducible research. _International Journal of Forecasting_, **26**, to appear.](http://robjhyndman.com/editorials/replication)
 
-    
+  4. [Hyndman, R.J. (2010) Encouraging replications and reproducible research. _International Journal of Forecasting_, **26**, to appear.](/publications/replication)
+
+
   5. [Koenker, R. & Zeilis, A. (2009). On reproducible econometric research. _Journal of Applied Econometrics_, **24**(5), 833–847.](http://dx.doi.org/10.1002/jae.1083)
 
-    
+
   6. [Laine, C., Goodman, S. N., Griswold, M. E., & Sox, H. C. (2007). Reproducible research: moving toward research the public can really trust. _Annals of Internal Medicine_, 146 (6), 450–453.](http://www.annals.org/content/146/6/450)
 
-    
+
   7. [Peng, R. D., Dominici, F., & Zeger, S. L. (2006). Reproducible epidemiologic research. _American Journal of Epidemiology_, **163** (9), 783–789.](http://dx.doi.org/10.1093/aje/kwj093)
 
 
@@ -86,13 +84,13 @@ The _International Journal of Forecasting_ is trying to change this culture, and
 
 
 
-    
+
   * [Reproducibility in econometrics research](http://www.econ.uiuc.edu/~roger/repro.html)
 
-    
+
   * [Reproducible Research](http://reproducibleresearch.net)
 
-    
+
   * [Reproducible Research blog](http://www.reproducibleresearch.net/blog/)
 
 
