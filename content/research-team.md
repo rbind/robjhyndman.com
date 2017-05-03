@@ -2,14 +2,17 @@
 title: "Research team"
 ---
 
+## Research fellows
+
+  1. **<a class="vt-p" href="http://www.linkedin.com/profile/view?id=103511879">Shanika Wickramasuriya</a>**
+
 ## PhD students
 
   1. **Puwasala Gamakumara**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016)
   1. **<a href="https://au.linkedin.com/in/cameron-roach-00873b69">Cameron Roach</a>**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016).
   1. **Dilini Talagala**, *Anomaly detection in streaming time series data* (PhD, begun 2016)
   1. **Thiyanga Talagala**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016)
-  1. <a href="http://earo.me">**Earo Wang**</a>, *Visualization of large collections of time series* (PhD, begun 2016).
-  1. **<a class="vt-p" href="http://www.linkedin.com/profile/view?id=103511879">Shanika Wickramasuriya</a>**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, submitted 2016).
+  1. <a href="http://earo.me">**Earo Wang**</a>, *Visualization of large collections of time series* (PhD, begun 2016)
 
 ## Former research fellows
 
@@ -20,7 +23,7 @@ title: "Research team"
   1. **<a class="vt-p" href="http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas">Bircan Erbas</a>**
   1. **<a class="vt-p" href="http://users.monash.edu.au/~shufan/">Shu Fan</a>**
   1. **Bin Jiang**
-  1. **<a class="vt-p" href="http://users.monash.edu/~ingridas/">Ingrida Steponavičė</a>**. Working on efficient multiobjective design optimization.
+  1. **<a class="vt-p" href="http://users.monash.edu/~ingridas/">Ingrida Steponavičė</a>**
 
 ## Former postgraduate students
 
@@ -45,6 +48,7 @@ title: "Research team"
   1. **<a class="vt-p" href="http://www.flinders.edu.au/people/Shahid.Ullah">Shahid Ullah</a>**. *Demographic forecasting using functional data analysis*. (Ph.D., graduated 2007). Now a Senior Lecturer in Biostatistics at <a class="vt-p" href="http://www.flinders.edu.au/medicine/">Flinders University School of Medicine</a>.
   1. **<a href="https://monash.edu/research/people/profiles/profile.html?sid=2287996&amp;pid=12121">Laura Villanova</a>**. *Response surface optimization for high-dimensional systems with multiple responses*. (Ph.D., graduated 2010). Now a statistician at <a class="vt-p" href="http://www.cfcl.com.au/">Ceramic Fuel Cells Limited</a>.
   1. **<a href="https://www.linkedin.com/in/catherine-lopes-30aa17a6">Xiaozhe Catherine Wang (Lopes)</a>**. *Characteristic-based forecasting for time series data*, (Ph.D., graduated 2005). Winner of Mollie Holman doctoral medal in IT, 2005. Now lead data scientist at <a class="vt-p" href="http://www.anz.com.au/">ANZ Bank, Melbourne</a>.
+  1. **<a class="vt-p" href="http://www.linkedin.com/profile/view?id=103511879">Shanika Wickramasuriya</a>**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017).
   1. **<a href="https://www.researchgate.net/profile/Farah_Yasmeen">Farah Yasmeen</a>**. *Functional linear models for mortality forecasting*. (Ph.D., graduated 2011). Now a Lecturer at the <a class="vt-p" href="http://uok.edu.pk/">University of Karachi, Pakistan</a>.
   1. **<a href="https://hk.linkedin.com/in/bruce-yu-198a3a10">Bruce Yu</a>**. *Analysis of flood frequency data*. (M.Sc., graduated 1998). Now HR Consulting Manager at Gemini Personnel.
 
