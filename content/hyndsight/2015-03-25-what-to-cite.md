@@ -13,7 +13,7 @@ categories:
 - writing
 ---
 
-This question comes from [a comment on another post](http://robjhyndman.com/hyndsight/ijf-rejections/#comment-1904474465):
+This question comes from [a comment on another post](http://disq.us/p/vhvhwh):
 
 
 >I've seen authors citing as many references as possible to try to please potential referees. Many of those references are low quality papers though. Any general guidance about a typical length for the reference section?
