@@ -31,7 +31,7 @@ STL <- stlf(train, lambda=0, h=h)
 X <- cbind(ETS=ETS$mean, ARIMA=ARIMA$mean, STL=STL$mean)
 df <- cbind(co2, X)
 colnames(df) <- c("Data","ETS","ARIMA","STL")
-autoplot(df) + 
+autoplot(df) +
   xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
 ```
 
@@ -39,7 +39,7 @@ Here, ETS has done a particularly bad job at picking the trend, while the other 
 
 The mixture function from the `opera` package computes weights when combining the forecasts based on how well it has done up to that point.
 
-```{r opera2, message=FALSE, cache=TRUE}
+```{r opera2, message=FALSE, cache=TRUE,warning=FALSE}
 library(opera)
 MLpol0 <- mixture(model = "MLpol", loss.type = "square")
 weights <- predict(MLpol0, X, test, type='weights')
@@ -50,11 +50,11 @@ tail(weights)
 
 It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to ETS alone. But by the end of the test set, it is giving weight 0.23 to ETS, 0.36 to ARIMA and 0.41 to STL. Here are the resulting forecasts:
 
-```{r opera3, message=FALSE, cache=TRUE}
+```{r opera3, message=FALSE, cache=TRUE, warning=FALSE}
 z <- ts(predict(MLpol0, X, test, type='response'), start=c(1991,1), freq=12)
 df <- cbind(co2, z)
 colnames(df) <- c("Data","Mixture")
-autoplot(df) + 
+autoplot(df) +
   xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
 ```
 
@@ -67,7 +67,7 @@ The `forecastHybrid` package from David Shaub and Peter Ellis fits multiple mode
 
 Here is an example using the same `co2` data.
 
-```{r forecastHybrid, message=FALSE, cache=TRUE}
+```{r forecastHybrid, message=FALSE, cache=TRUE, warning=FALSE}
 library(forecastHybrid)
 fit1 <- hybridModel(train, weights="equal")
 fit2 <- hybridModel(train, weights="insample")
@@ -85,7 +85,7 @@ The combination point forecasts look much better:
 
 ```{r forecastHybrid2, message=FALSE, cache=TRUE}
 df <- cbind(Data=co2, Hybrid1=fc1$mean, Hybrid2=fc2$mean)
-autoplot(df) + 
+autoplot(df) +
   xlab("Year") + ylab(expression("Atmospheric concentration of CO"[2]))
 ```
 
@@ -107,5 +107,5 @@ mse2 <- c(ETS=mean((test-ETS$mean)^2),
           ARIMA=mean((test-ARIMA$mean)^2),
           STL=mean((test-STL$mean)^2))
 round(mse2,2)
-```    
+```
 
