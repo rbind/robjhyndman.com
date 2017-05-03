@@ -47,6 +47,13 @@ a:hover {text-decoration:underline;}
 a.badge.badge-red { color: #fff;}
 a.badge.badge-blue { color: #fff;}
 
+.badge-large {
+  font-size: 18px;
+  padding: 5px 5px 3px 5px;
+  text-transform: none;
+}
+
+
 /* RJH problem additions */
 
 hr {

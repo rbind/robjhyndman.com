@@ -1,65 +1,66 @@
 {{ define "main" }}
-  <div class="wrapper">
-    <div class="units-row">
-      <div class="unit-100">
+<div class="wrapper">
+  <div class="row">
+    <div style='padding: 1rem 0.9375rem 1rem;'>
 
-      <ul>
-       <li><a href="/RobHyndmanCV.pdf">Curriculum Vitae</a> <a href="/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a></li>
-       <li><a href="https://scholar.google.com/citations?user=vamErfkAAAAJ">Google Scholar<i class="fa-li ai ai-google-scholar" style="color:#03396c;padding-top:6px;"></i></a></li>
-      </ul>
+      <h3><a href="/RobHyndmanCV.pdf" class="badge badge-large">Curriculum Vitae&nbsp;&nbsp; <i class="fa fa-file-pdf-o"></i></a></h3>
+
+      <h3><a href="https://scholar.google.com/citations?user=vamErfkAAAAJ" class="badge badge-large">Google Scholar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="ai ai-google-scholar"></i></a></h3>
+
+      <div style='padding-bottom: 2rem;'></div>
 
       <h2>Books</h2>
 
       <table>
-      <tbody>
-      <tr>
-      <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="http://OTexts.org/fpp/"><img src="{{ .Site.BaseURL }}img/fppcover.jpg" height=180></a></td>
-      <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="http://exponentialsmoothing.net"><img src="{{ .Site.BaseURL }}img/expsmooth.jpg" height=180></a></td>
-      <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="/forecasting"><img src="{{ .Site.BaseURL }}img/fma.jpg" height=180></a></td>
-      <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="/unbelievable"><img src="{{ .Site.BaseURL }}img/unbelievablecover-200x300.jpg" height=180></a></td>
-      </tr>
-      </tbody>
-      </table></span>
-</div>
+        <tbody>
+          <tr>
+            <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="http://OTexts.org/fpp/"><img src="{{ .Site.BaseURL }}img/fppcover.jpg" height=180></a></td>
+            <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="http://exponentialsmoothing.net"><img src="{{ .Site.BaseURL }}img/expsmooth.jpg" height=180></a></td>
+            <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="/forecasting"><img src="{{ .Site.BaseURL }}img/fma.jpg" height=180></a></td>
+            <td style="background-color: #faf8f8; border-bottom: 0px;"><a href="/unbelievable"><img src="{{ .Site.BaseURL }}img/unbelievablecover-200x300.jpg" height=180></a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-<div class="row">
-  <div class="column small-12 medium-6">
-    <h2>Unpublished working papers</h2>
-    {{ range (where .Data.Pages "Params.kind" "==" "unpublished").GroupByDate "2006" "desc" }}
-    <div class="row">
-      <div class="column small-2 medium-2">
-        <h3>{{ .Key }}</h3>
-      </div>
-      <div class="column small-10 medium-10">
-      <span style="font-size: 90%">
-	<ul class="compact fa-ul">
-	  {{ range .Pages.ByDate.Reverse }}
-      <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
-      {{ end }}
-	</ul></span>
-      </div>
-    </div>
-    {{ end }}
-  </div>
-  <div class="column small-12 medium-6">
-    <h2>Published articles and book chapters</h2>
-    {{ range (where .Data.Pages "Params.kind" "!=" "unpublished").GroupByDate "2006" "desc" }}
-    <div class="row">
-      <div class="column small-2 medium-2">
-        <h3>{{ .Key }}</h3>
-      </div>
-      <div class="column small-10 medium-10">
-      <span style="font-size: 90%">
-	<ul class="compact fa-ul">
-	  {{ range .Pages.ByDate.Reverse }}
-	  <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
-	  {{ end }}
-	</ul></span>
-      </div>
-    </div>
-    {{ end }}
-  </div>
-</div>
-{{ end }}
+  <div class="row">
+    <div class="column small-12 medium-6">
+      <h2>Unpublished working papers</h2>
+      {{ range (where .Data.Pages "Params.kind" "==" "unpublished").GroupByDate "2006" "desc" }}
+      <div class="row">
+        <div class="column small-2 medium-2">
+          <h3>{{ .Key }}</h3>
+        </div>
+        <div class="column small-10 medium-10">
+          <span style="font-size: 90%">
+           <ul class="compact fa-ul">
+             {{ range .Pages.ByDate.Reverse }}
+             <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
+             {{ end }}
+           </ul></span>
+         </div>
+       </div>
+       {{ end }}
+     </div>
+     <div class="column small-12 medium-6">
+      <h2>Published articles and book chapters</h2>
+      {{ range (where .Data.Pages "Params.kind" "!=" "unpublished").GroupByDate "2006" "desc" }}
+      <div class="row">
+        <div class="column small-2 medium-2">
+          <h3>{{ .Key }}</h3>
+        </div>
+        <div class="column small-10 medium-10">
+          <span style="font-size: 90%">
+           <ul class="compact fa-ul">
+             {{ range .Pages.ByDate.Reverse }}
+             <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
+             {{ end }}
+           </ul></span>
+         </div>
+       </div>
+       {{ end }}
+     </div>
+   </div>
+ </div>
+ {{ end }}
