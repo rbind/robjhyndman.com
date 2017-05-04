@@ -286,3 +286,9 @@ header h1 {	font-size: 24px;
 }
 
 
+/* CODE */
+
+.hljs {
+  background-color: #e9e9e9;
+  padding: 1em;
+}
