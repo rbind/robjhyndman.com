@@ -52,35 +52,6 @@ decomp <- function(x,transform=TRUE)
   return(list(x=x,trend=trend,season=season,remainder=remainder,transform=transform,lambda=lambda))
 }
 
-# === function to find frequency from time series data ====
-find.freq <- function(x)
-{
-  n <- length(x)
-  spec <- spec.ar(c(na.contiguous(x)),plot=FALSE)
-  if(max(spec$spec)>10) # Arbitrary threshold chosen by trial and error.
-  {
-    period <- round(1/spec$freq[which.max(spec$spec)])
-    if(period==Inf) # Find next local maximum
-    {
-      j <- which(diff(spec$spec)>0)
-      if(length(j)>0)
-      {
-        nextmax <- j[1] + which.max(spec$spec[j[1]:500])
-        if(nextmax <= length(spec$freq))
-          period <- round(1/spec$freq[nextmax])
-        else
-          period <- 1
-      }
-      else
-        period <- 1
-    }
-  }
-  else
-    period <- 1
-
-  return(period)
-}
-
 # === Following function computes all measures
 
 measures <- function(x)
@@ -88,7 +59,7 @@ measures <- function(x)
   require(forecast)
 
   N <- length(x)
-  freq <- find.freq(x)
+  freq <- findfrequency(x)
   fx <- c(frequency=(exp((freq-1)/50)-1)/(1+exp((freq-1)/50)))
   x <- ts(x,f=freq)
 
@@ -138,7 +109,7 @@ measures <- function(x)
   fQ <- f2(Q,7.53,0.103)
 
   # Nonlinearity
-  p <- terasvirta.test(na.contiguous(x))$statistic
+  p <- tseries::terasvirta.test(na.contiguous(x))$statistic
   fp <- f1(p,0.069,2.304)
 
   # Skewness
@@ -150,7 +121,7 @@ measures <- function(x)
   fk <- f1(k,2.273,11567)
 
   # Hurst=d+0.5 where d is fractional difference.
-  H <- fracdiff(na.contiguous(x),0,0)$d + 0.5
+  H <- fracdiff::fracdiff(na.contiguous(x),0,0)$d + 0.5
 
   # Lyapunov Exponent
   if(freq > N-10)
@@ -179,7 +150,7 @@ measures <- function(x)
   fQ <- f2(Q,7.53,0.103)
 
   # Nonlinearity
-  p <- terasvirta.test(na.contiguous(adj.x))$statistic
+  p <- tseries::terasvirta.test(na.contiguous(adj.x))$statistic
   fp <- f1(p,0.069,2.304)
 
   # Skewness
