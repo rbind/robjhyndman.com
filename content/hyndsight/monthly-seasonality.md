@@ -10,7 +10,7 @@ categories:
 
 I regularly get asked why I don't consider monthly seasonality in my models for daily or sub-daily time series. For example, [this recent comment](http://disq.us/p/1icjljk) on my post on seasonal periods, or [this comment](http://disq.us/p/1488nf3) on my post on daily data. The fact is, I've never seen a time series with monthly seasonality, although that does not mean it does not exist.
 
-Monthly seasonality is when there is a pattern that recurs every month in data that is observed more frequently than monthly. This is different from the seasonality you frequently see in monthly observations which exhibit an annual seasonality. Monthly seasonality would occur if there is some regular activity that takes place every month and which affects the time series.
+Monthly seasonality is defined as a regular pattern that recurs every month in data that is observed more frequently than monthly. This is different from the seasonality you frequently see in monthly observations which exhibit an annual seasonality. Monthly seasonality would occur if there is some regular activity that takes place every month and which affects the time series.
 
 For example, some companies try to average their expenditure across the month and often have to spend more at the end of the month to justify the budget. So daily expenditure tends to increase at the end of each month, producing a monthly seasonal pattern.
 
