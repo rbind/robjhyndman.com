@@ -18,11 +18,11 @@ For univariate time series methods, it is not difficult. As a minimum, compariso
 
 
 
-	
+
   1. The naive method for non-seasonal data is based on a random walk --- all forecasts are equal to the last observation. For seasonal data, the best naive method is to use the last observation from the same season. That is, for monthly data, forecasts for February are all equal to the last February observation.
 
-	
-  2. Comparisons with ARIMA models used to be problematic because some authors did not have sufficient expertise to fit a good ARIMA model, and so comparisons were sometimes made, for example, against a non-seasonal AR model when the data were obviously seasonal. This should no longer be a problem as there are now good automatic ARIMA algorithms such as `auto.arima()` in the [forecast package for R](http://robjhyndman.com/software/forecast/).
+
+  2. Comparisons with ARIMA models used to be problematic because some authors did not have sufficient expertise to fit a good ARIMA model, and so comparisons were sometimes made, for example, against a non-seasonal AR model when the data were obviously seasonal. This should no longer be a problem as there are now good automatic ARIMA algorithms such as `auto.arima()` in the [forecast package for R](http://github.com/robjhyndman/forecast/).
 
 
 For multivariate time series, the same univariate benchmarks can be used.

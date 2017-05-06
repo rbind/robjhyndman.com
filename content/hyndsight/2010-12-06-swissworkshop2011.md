@@ -32,7 +32,7 @@ Examples will be drawn from my consulting experiences
 ### Prerequisites
 
 
-Workshop participants will be assumed to be familiar with basic statistical tools such as multiple regression and maximum likelihood estimation, but no knowledge of time series or forecasting will be assumed. Some prior experience in R is desirable but not essential. Please bring a laptop with preinstalled R software in its latest release (see [CRAN.R-project.org](http://cran.r-project.org)) and the [“forecast” package for R](http://robjhyndman.com/software/forecast/).
+Workshop participants will be assumed to be familiar with basic statistical tools such as multiple regression and maximum likelihood estimation, but no knowledge of time series or forecasting will be assumed. Some prior experience in R is desirable but not essential. Please bring a laptop with preinstalled R software in its latest release (see [CRAN.R-project.org](http://cran.r-project.org)) and the [“forecast” package for R](http://github.com/robjhyndman/forecast/).
 
 
 ### Registration and further information

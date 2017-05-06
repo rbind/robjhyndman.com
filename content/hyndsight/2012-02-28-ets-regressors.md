@@ -18,6 +18,6 @@ Osman has attempted to repair the problem by proposing a different formulation f
 
 So don't expect any code for fitting ETS models with regressors to appear in the forecast package for R anytime soon, and maybe never. Osman may at some stage make his own code available.
 
-Right now, if I have a forecasting problem where I want to use covariates, I tend to use regression with ARMA errors. That's easy to do using the `Arima()` or `auto.arima()` functions in the [forecast package for R](http://robjhyndman.com/software/forecast/). It is even possible to handle multiple seasonality in that way with Fourier terms (although that forces the seasonality to be unchanging over time). More flexible models are possible using the `arimax()` function in the [TSA package](http://cran.r-project.org/package=TSA).
+Right now, if I have a forecasting problem where I want to use covariates, I tend to use regression with ARMA errors. That's easy to do using the `Arima()` or `auto.arima()` functions in the [forecast package for R](http://github.com/robjhyndman/forecast/). It is even possible to handle multiple seasonality in that way with Fourier terms (although that forces the seasonality to be unchanging over time). More flexible models are possible using the `arimax()` function in the [TSA package](http://cran.r-project.org/package=TSA).
 
 Of course, there is always the dynamic linear model approach, implemented in the [dynlm package](http://cran.r-project.org/package=dynlm).

@@ -29,4 +29,4 @@ The [Centre for Forecasting at Lancaster University](http://www.lancaster.ac.uk/
 
 
 
-I often challenge my own forecasting students to try to beat the automated forecasting provided by the `ets()` and `auto.arima()` functions in the [forecast package for R](http://robjhyndman.com/software/forecast/).  So I'm interested to see the results of this research.
+I often challenge my own forecasting students to try to beat the automated forecasting provided by the `ets()` and `auto.arima()` functions in the [forecast package for R](http://github.com/robjhyndman/forecast/).  So I'm interested to see the results of this research.

@@ -13,19 +13,19 @@ categories:
 - statistics
 ---
 
-About once a week someone will tell me there is a bug in my [forecast package](http://robjhyndman.com/software/forecast/) for R because it gives forecasts that are the same for all future horizons. To save answering the same question repeatedly, here is my response.
+About once a week someone will tell me there is a bug in my [forecast package](http://github.com/robjhyndman/forecast/) for R because it gives forecasts that are the same for all future horizons. To save answering the same question repeatedly, here is my response.
 
 A point forecast is (usually) the mean of the distribution of a future observation in the time series, conditional on the past observations of the time series. It is possible, even likely in some circumstances, that the future observations will have the same mean and then the forecast function is flat.
 
 
 
-	
+
   * A random walk model will return a flat forecast function (equal to the last observed value of the series).
 
-	
+
   * An ETS(A,N,N) model will return a flat forecast function.
 
-	
+
   * An iid model will return a flat forecast function (equal to the mean of the observed data).
 
 
