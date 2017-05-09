@@ -19,7 +19,7 @@ categories:
 
 
     
-  * [Introduction to LaTeX](http://robjhyndman.com/hyndsight/latex-workshop/):  notes and other materials from a one-day workshop.
+  * [Introduction to LaTeX](/hyndsight/latex-workshop/):  notes and other materials from a one-day workshop.
 
     
   * [Getting started with LaTeX](http://www.maths.tcd.ie/%7Edwilkins/LaTeXPrimer/): an excellent online introduction from David Wilkins.
@@ -50,7 +50,7 @@ The first and best place to go is [TeX.StackExchange.com](http://tex.stackexchan
 
 
     
-  * [Recommended LaTeX reference books ](http://robjhyndman.com/hyndsight/latex-books/)
+  * [Recommended LaTeX reference books ](/hyndsight/latex-books/)
 
     
   * [Comprehensive LaTeX symbol list](http://www.ctan.org/tex-archive/info/symbols/comprehensive/symbols-a4.pdf)
