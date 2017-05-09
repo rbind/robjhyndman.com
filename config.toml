@@ -1,11 +1,12 @@
 baseurl = "http://robjhyndman.com/"
 title = "Rob J Hyndman"
 canonifyurls = true
-relativeurl = true
+relativeurls = false
 paginate = 10
 theme = "robjhyndman"
 DisqusShortname = "researchtips"
 googleAnalytics = "UA-5004894-1"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 [params]
 
@@ -18,6 +19,11 @@ posts_count = 2
 # Number of publications to show on main page.
 pubs_count = 4
 
+# options for highlight.js (version, additional languages, and theme)
+  highlightjsVersion = "9.11.0"
+  highlightjsCDN = "//cdn.bootcss.com"
+  highlightjsLang = ["r", "yaml"]
+  highlightjsTheme = "github"
 
 [[params.social]]
   icon = "university"
