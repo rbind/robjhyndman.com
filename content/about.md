@@ -37,18 +37,15 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Administrative responsibilities
 
-<ul>
-  <li>Director, <a href="http://www.buseco.monash.edu.au/units/forecasting/" target="_top">Monash University Business and Economic Forecasting Unit</a>.</li>
-  <li>Director, <a href="http://www.forecasters.org">International Institute of Forecasters</a></li>
-  <li>Editor-in-Chief, <em><a href="http://www.forecasters.org/ijf/" target="_top">International Journal of Forecasting</a></em>.</li>
-  <li>Editor, <em><a href="http://www.jstatsoft.org/">Journal of Statistical Software</a></em>.</li>
-  <li>Previously (2001-2004) Theory &amp; Methods Editor for the <em><a href="http://www.statsoc.org.au/anzjs.htm" target="_top">Australian &amp; New Zealand Journal of Statistics</a></em>.</li>
-  <li>Editor of the <a href="http://ideas.repec.org/n/nep-for/">NEP forecasting report</a>.</li>
-  <li>Member of the Scaling committee, Victorian Tertiary Admissions Centre. This committee is responsible for producing the <a href="http://en.wikipedia.org/wiki/Australian_Tertiary_Admission_Rank">ATAR for VCE students</a>.</li>
-  <li>Scientific Adviser to <a href="http://www.thrivetech.com/">Thrive Technologies</a>.</li>
-  <li>Scientific Adviser to <a href="http://www.tableausoftware.com/">Tableau Software</a>.</li>
-  <li>Scientific Adviser to <a href="http://fourworkx.com/">Fourworkx</a>.</li>
-</ul>
+  * Editor-in-Chief, *[International Journal of Forecasting]("http://www.forecasters.org/ijf/")*.
+  * Editor, *[Journal of Statistical Software](http://www.jstatsoft.org/)*.
+  * Previously (2001-2004) Theory & Methods Editor for the *[Australian & New Zealand Journal of Statistics]("http://www.statsoc.org.au/anzjs.htm")*.
+  * Director, [International Institute of Forecasters]("http://www.forecasters.org")
+  * Editor of the [NEP forecasting report]("http://ideas.repec.org/n/nep-for/").
+  * Member of the Scaling committee, [Victorian Tertiary Admissions Centre](http://www.vtac.edu.au). This committee is responsible for producing the [ATAR for VCE students]("http://en.wikipedia.org/wiki/Australian_Tertiary_Admission_Rank").
+  * Member of the Interstate Transfer Index Technical Group for the [Australasian Conference of Tertiary Admissions Centres](http://www.actac.edu.au).
+  * Member of the Aboriginal and Torres Strait Islander Statistical and Technical Advisory Group for the [Australian Institute of Health and Welfare](http://www.aihw.gov.au).
+  * Member of the Methodology Advisory Committee for the [Australian Bureau of Statistics](http://www.abs.gov.au).
 
 ## Memberships
 
