@@ -5,7 +5,7 @@ title: "About me"
 
 The following bio and photos may be used in media releases without further permission.
 
->**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://www.forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://www.forecasters.org/). Rob is the author of over 150 research papers and books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. His recent consulting work has involved forecasting electricity demand, tourism demand, the Australian government health budget and case volume at a US call centre.
+>**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. His recent consulting work has involved forecasting electricity demand, tourism demand, the Australian government health budget and case volume at a US call centre.
 
 **Photos:**
   [low-res](/pics/vintage.png)
@@ -37,12 +37,12 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Administrative responsibilities
 
-  * Editor-in-Chief, *[International Journal of Forecasting]("http://www.forecasters.org/ijf/")*.
+  * Editor-in-Chief, *[International Journal of Forecasting](http://forecasters.org/ijf/)*.
   * Editor, *[Journal of Statistical Software](http://www.jstatsoft.org/)*.
-  * Previously (2001-2004) Theory & Methods Editor for the *[Australian & New Zealand Journal of Statistics]("http://www.statsoc.org.au/anzjs.htm")*.
-  * Director, [International Institute of Forecasters]("http://www.forecasters.org")
-  * Editor of the [NEP forecasting report]("http://ideas.repec.org/n/nep-for/").
-  * Member of the Scaling committee, [Victorian Tertiary Admissions Centre](http://www.vtac.edu.au). This committee is responsible for producing the [ATAR for VCE students]("http://en.wikipedia.org/wiki/Australian_Tertiary_Admission_Rank").
+  * Previously (2001-2004) Theory & Methods Editor for the *[Australian & New Zealand Journal of Statistics](http://wileyonlinelibrary.com/journal/anzs)*.
+  * Director, [International Institute of Forecasters](http://forecasters.org)
+  * Editor of the [NEP forecasting report](http://ideas.repec.org/n/nep-for/).
+  * Member of the Scaling committee, [Victorian Tertiary Admissions Centre](http://www.vtac.edu.au). This committee is responsible for producing the [ATAR for VCE students](http://en.wikipedia.org/wiki/Australian_Tertiary_Admission_Rank).
   * Member of the Interstate Transfer Index Technical Group for the [Australasian Conference of Tertiary Admissions Centres](http://www.actac.edu.au).
   * Member of the Aboriginal and Torres Strait Islander Statistical and Technical Advisory Group for the [Australian Institute of Health and Welfare](http://www.aihw.gov.au).
   * Member of the Methodology Advisory Committee for the [Australian Bureau of Statistics](http://www.abs.gov.au).
@@ -51,7 +51,7 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 I am a member of the following organizations:
 
-  * [International Institute of Forecasters](http://www.forecasters.org) (director)
+  * [International Institute of Forecasters](http://forecasters.org) (director)
   * [International Statistical Institute](http://isi.cbs.nl)  (elected member)
   * [International Association for Statistical Computing](http://www.iasc-isi.org)
   * [Statistical Society of Australia](http://www.statsoc.org.au)
