@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2008-06-29 04:07:09+00:00
-link: http://robjhyndman.com/seminars/building-r-packages-for-windows/
+link: https://robjhyndman.com/seminars/building-r-packages-for-windows/
 slug: building-r-packages-for-windows
 title: Building R packages for Windows
 wordpress_id: 211

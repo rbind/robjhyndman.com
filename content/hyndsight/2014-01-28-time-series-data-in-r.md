@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-01-28 22:21:19+00:00
 
-link: http://robjhyndman.com/hyndsight/time-series-data-in-r/
+link: https://robjhyndman.com/hyndsight/time-series-data-in-r/
 slug: time-series-data-in-r
 title: Time series data in R
 wordpress_id: 2107
@@ -44,7 +44,7 @@ The `dmseries` function from the rdatamarket package is simpler to use. The shor
 ### TSDL
 
 
-For many years, I maintained the [Time Series Data Library](http://robjhyndman.com/TSDL/) consisting of about 800 time series including many from well-known textbooks. These were [transferred to DataMarket](http://robjhyndman.com/hyndsight/tsdl/) in June 2012 and are now [available here](http://data.is/TSDLdemo).
+For many years, I maintained the [Time Series Data Library](https://robjhyndman.com/TSDL/) consisting of about 800 time series including many from well-known textbooks. These were [transferred to DataMarket](https://robjhyndman.com/hyndsight/tsdl/) in June 2012 and are now [available here](http://data.is/TSDLdemo).
 
 
 ### R packages

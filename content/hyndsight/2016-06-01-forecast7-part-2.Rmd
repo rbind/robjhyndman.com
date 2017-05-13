@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-06-01 07:22:52+00:00
 
-link: http://robjhyndman.com/hyndsight/forecast7-part-2/
+link: https://robjhyndman.com/hyndsight/forecast7-part-2/
 slug: forecast7-part-2
 title: Forecast v7 (part 2)
 wordpress_id: 3761
@@ -14,7 +14,7 @@ categories:
 - time series
 ---
 
-As mentioned in [my previous post on the forecast package v7](http://robjhyndman.com/hyndsight/forecast7-ggplot2/), the most visible feature was the introduction of [ggplot2 graphics](http://ggplot2.org/). This post briefly summarizes the remaining new features of forecast v7.
+As mentioned in [my previous post on the forecast package v7](https://robjhyndman.com/hyndsight/forecast7-ggplot2/), the most visible feature was the introduction of [ggplot2 graphics](http://ggplot2.org/). This post briefly summarizes the remaining new features of forecast v7.
 <!-- more -->
 
 
@@ -45,7 +45,7 @@ The `lm` function has long allowed a matrix to be passed and independent linear 
 
 
 
-Almost all modelling and forecasting functions in the package allow Box-Cox transformations to be applied before the model is fitted, and for the forecasts to be back transformed. This will give median forecasts on the original scale, as [I've explained before](http://robjhyndman.com/hyndsight/backtransforming/).
+Almost all modelling and forecasting functions in the package allow Box-Cox transformations to be applied before the model is fitted, and for the forecasts to be back transformed. This will give median forecasts on the original scale, as [I've explained before](https://robjhyndman.com/hyndsight/backtransforming/).
 
 There is now an option to adjust the forecasts so they are means rather than medians, but setting `biasadj=TRUE` whenever the forecasts are computed. I will probably make this the default in some future version, but for now the default is `biasadj=FALSE` so the forecasts are actually medians.
 

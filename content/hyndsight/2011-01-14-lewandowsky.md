@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-01-14 07:48:36+00:00
 
-link: http://robjhyndman.com/hyndsight/lewandowsky/
+link: https://robjhyndman.com/hyndsight/lewandowsky/
 slug: lewandowsky
 title: Lies, damn lies and statistics
 wordpress_id: 1243

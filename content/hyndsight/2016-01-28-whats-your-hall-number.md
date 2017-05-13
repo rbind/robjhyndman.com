@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-01-28 11:48:43+00:00
 
-link: http://robjhyndman.com/hyndsight/whats-your-hall-number/
+link: https://robjhyndman.com/hyndsight/whats-your-hall-number/
 slug: whats-your-hall-number
 title: What's your Hall number?
 wordpress_id: 3663
@@ -28,7 +28,7 @@ In mathematics, people calculate [Erdős numbers](https://en.wikipedia.org/wiki/
 
 
 
-It seems appropriate that we should compute Hall numbers in statistics. Mine is 1, as I was lucky enough to have coauthored [two papers with Peter Hall](http://robjhyndman.com/?s=peter+hall). You can [compute your own Hall number here](http://www.ams.org/mathscinet/collaborationDistance.html?group_source=190188). Just put your own surname in the second author field.
+It seems appropriate that we should compute Hall numbers in statistics. Mine is 1, as I was lucky enough to have coauthored [two papers with Peter Hall](https://robjhyndman.com/?s=peter+hall). You can [compute your own Hall number here](http://www.ams.org/mathscinet/collaborationDistance.html?group_source=190188). Just put your own surname in the second author field.
 
 
 

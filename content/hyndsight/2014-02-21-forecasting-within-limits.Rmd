@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-21 10:36:14+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/forecasting-within-limits/
+link: https://robjhyndman.com/hyndsight/forecasting-within-limits/
 slug: forecasting-within-limits
 title: Forecasting within limits
 wordpress_id: 2492

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-05-20 12:10:00+00:00
 
-link: http://robjhyndman.com/hyndsight/online-mathematical-resources/
+link: https://robjhyndman.com/hyndsight/online-mathematical-resources/
 slug: online-mathematical-resources
 title: Online mathematical resources
 wordpress_id: 782

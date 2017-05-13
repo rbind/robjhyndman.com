@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-08-03 04:35:58+00:00
 
-link: http://robjhyndman.com/hyndsight/read-the-literature/
+link: https://robjhyndman.com/hyndsight/read-the-literature/
 slug: read-the-literature
 title: Read the literature
 wordpress_id: 1916

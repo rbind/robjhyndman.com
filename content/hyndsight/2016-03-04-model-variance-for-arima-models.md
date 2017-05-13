@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-03-04 11:15:19+00:00
 
-link: http://robjhyndman.com/hyndsight/model-variance-for-arima-models/
+link: https://robjhyndman.com/hyndsight/model-variance-for-arima-models/
 slug: model-variance-for-arima-models
 title: Model variance for ARIMA models
 wordpress_id: 3679
@@ -37,4 +37,4 @@ The `Arima()` and `auto.arima()` functions from the forecast package call the `a
 
 It would probably be better to use the unbiased estimator, and it would certainly improve the coverage of the prediction intervals. I might make this change in future versions of the `Arima` and `auto.arima` functions from the forecast package. I have no control over the `arima` function from the stats package.
 
-Just one other point. You mean "prediction intervals", not "confidence intervals". [There is a difference.](http://robjhyndman.com/hyndsight/intervals/)
+Just one other point. You mean "prediction intervals", not "confidence intervals". [There is a difference.](https://robjhyndman.com/hyndsight/intervals/)

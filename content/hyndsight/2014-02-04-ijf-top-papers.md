@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-04 01:06:22+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-top-papers/
+link: https://robjhyndman.com/hyndsight/ijf-top-papers/
 slug: ijf-top-papers
 title: Top papers in the International Journal of Forecasting
 wordpress_id: 2432

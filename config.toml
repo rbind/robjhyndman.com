@@ -1,4 +1,4 @@
-baseurl = "http://robjhyndman.com/"
+baseurl = "https://robjhyndman.com/"
 title = "Rob J Hyndman"
 canonifyurls = true
 relativeurls = false

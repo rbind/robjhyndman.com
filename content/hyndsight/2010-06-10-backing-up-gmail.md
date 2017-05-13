@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-06-10 00:59:03+00:00
 
-link: http://robjhyndman.com/hyndsight/backing-up-gmail/
+link: https://robjhyndman.com/hyndsight/backing-up-gmail/
 slug: backing-up-gmail
 title: Backing up Gmail
 wordpress_id: 814

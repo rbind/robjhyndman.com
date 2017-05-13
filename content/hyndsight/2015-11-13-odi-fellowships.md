@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-11-13 00:26:03+00:00
 
-link: http://robjhyndman.com/hyndsight/odi-fellowships/
+link: https://robjhyndman.com/hyndsight/odi-fellowships/
 slug: odi-fellowships
 title: ODI looking for young postgrad statisticians
 wordpress_id: 3438

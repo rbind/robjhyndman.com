@@ -19,4 +19,4 @@ We present tools to generate synthetic sequences of half-hourly temperatures wit
 **Keywords:** temperature data, time series, Fourier series, ARMA models, seasonal block-bootstrap, synthetic generation.
 
 
-**[Temperature data](http://robjhyndman.com/data/KentTown.csv)**
+**[Temperature data](https://robjhyndman.com/data/KentTown.csv)**

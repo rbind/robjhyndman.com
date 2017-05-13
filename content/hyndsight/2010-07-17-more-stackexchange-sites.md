@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-07-17 05:21:41+00:00
 
-link: http://robjhyndman.com/hyndsight/more-stackexchange-sites/
+link: https://robjhyndman.com/hyndsight/more-stackexchange-sites/
 slug: more-stackexchange-sites
 title: More StackExchange sites
 wordpress_id: 873

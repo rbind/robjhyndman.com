@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-09-18 02:15:35+00:00
 
-link: http://robjhyndman.com/hyndsight/hardforecasts/
+link: https://robjhyndman.com/hyndsight/hardforecasts/
 slug: hardforecasts
 title: Why are some things easier to forecast than others?
 wordpress_id: 1957

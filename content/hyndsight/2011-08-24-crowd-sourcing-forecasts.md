@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-08-24 04:09:22+00:00
 
-link: http://robjhyndman.com/hyndsight/crowd-sourcing-forecasts/
+link: https://robjhyndman.com/hyndsight/crowd-sourcing-forecasts/
 slug: crowd-sourcing-forecasts
 title: Crowd sourcing forecasts
 wordpress_id: 1381

@@ -16,4 +16,4 @@ We review and synthesize the wide range of non-Gaussian first order linear autor
 
 **Keywords:** autoregression, data analysis, non-Gaussian time series, Poisson time series, Gamma time series, Exponential time series.
 
-Data: [Hirnant rainfall data](http://robjhyndman.com/papers/hirnant.dat), [MCLS data](http://robjhyndman.com/papers/mcls82.dat)
+Data: [Hirnant rainfall data](https://robjhyndman.com/papers/hirnant.dat), [MCLS data](https://robjhyndman.com/papers/mcls82.dat)

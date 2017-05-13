@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-02-15 01:17:41+00:00
 
-link: http://robjhyndman.com/hyndsight/forecasting-conferences/
+link: https://robjhyndman.com/hyndsight/forecasting-conferences/
 slug: forecasting-conferences
 title: Forecasting conferences
 wordpress_id: 2096

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-01-31 03:06:24+00:00
 
-link: http://robjhyndman.com/hyndsight/granada-workshop/
+link: https://robjhyndman.com/hyndsight/granada-workshop/
 slug: granada-workshop
 title: Automatic time series forecasting in Granada
 wordpress_id: 2421

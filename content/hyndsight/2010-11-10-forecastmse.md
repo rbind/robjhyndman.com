@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-11-10 00:22:50+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/forecastmse/
+link: https://robjhyndman.com/hyndsight/forecastmse/
 slug: forecastmse
 title: Forecast estimation, evaluation and transformation
 wordpress_id: 1147

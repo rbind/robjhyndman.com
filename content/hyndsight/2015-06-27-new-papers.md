@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-06-27 05:22:17+00:00
 
-link: http://robjhyndman.com/hyndsight/new-papers/
+link: https://robjhyndman.com/hyndsight/new-papers/
 slug: new-papers
 title: Keeping up to date with my research papers
 wordpress_id: 3310

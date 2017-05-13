@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-08-31 02:07:07+00:00
 
-link: http://robjhyndman.com/hyndsight/isf2017-sponsorship/
+link: https://robjhyndman.com/hyndsight/isf2017-sponsorship/
 slug: isf2017-sponsorship
 title: Sponsorship for the Cairns forecasting conference
 wordpress_id: 3832

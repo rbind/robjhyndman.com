@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-10-07 23:07:25+00:00
 
-link: http://robjhyndman.com/hyndsight/connect-with-local-employers/
+link: https://robjhyndman.com/hyndsight/connect-with-local-employers/
 slug: connect-with-local-employers
 title: Connect with local employers
 wordpress_id: 2977

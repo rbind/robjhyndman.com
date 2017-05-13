@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-10-07 06:09:16+00:00
 
-link: http://robjhyndman.com/hyndsight/stanford-seminar/
+link: https://robjhyndman.com/hyndsight/stanford-seminar/
 slug: stanford-seminar
 title: Stanford seminar
 wordpress_id: 3397

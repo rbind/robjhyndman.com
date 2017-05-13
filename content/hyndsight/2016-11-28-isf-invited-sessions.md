@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-11-28 06:55:13+00:00
 
-link: http://robjhyndman.com/hyndsight/isf-invited-sessions/
+link: https://robjhyndman.com/hyndsight/isf-invited-sessions/
 slug: isf-invited-sessions
 title: Invited sessions at the International Symposium on Forecasting
 wordpress_id: 3918

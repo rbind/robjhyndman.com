@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-01-11 00:42:08+00:00
 
-link: http://robjhyndman.com/hyndsight/authorship/
+link: https://robjhyndman.com/hyndsight/authorship/
 slug: authorship
 title: Authorship ethics
 wordpress_id: 1238

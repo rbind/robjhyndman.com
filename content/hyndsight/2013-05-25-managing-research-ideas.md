@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-05-25 13:14:16+00:00
 
-link: http://robjhyndman.com/hyndsight/managing-research-ideas/
+link: https://robjhyndman.com/hyndsight/managing-research-ideas/
 slug: managing-research-ideas
 title: Managing research ideas
 wordpress_id: 2201

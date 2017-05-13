@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-08-26 05:23:19+00:00
 
-link: http://robjhyndman.com/hyndsight/tscvexample/
+link: https://robjhyndman.com/hyndsight/tscvexample/
 slug: tscvexample
 title: 'Time series cross-validation: an R example'
 wordpress_id: 1379
@@ -13,7 +13,7 @@ categories:
 - time series
 ---
 
-I was recently asked how to implement [time series cross-validation](http://robjhyndman.com/hyndsight/crossvalidation/) in R. Time series people would normally call this "forecast evaluation with a rolling origin" or something similar, but it is the natural and obvious analogue to leave-one-out cross-validation for cross-sectional data, so I prefer to call it "time series cross-validation".<!-- more -->
+I was recently asked how to implement [time series cross-validation](https://robjhyndman.com/hyndsight/crossvalidation/) in R. Time series people would normally call this "forecast evaluation with a rolling origin" or something similar, but it is the natural and obvious analogue to leave-one-out cross-validation for cross-sectional data, so I prefer to call it "time series cross-validation".<!-- more -->
 
 Here is some example code applying time series CV and comparing 1-step, 2-step, ..., 12-step forecasts using the Mean Absolute Error (MAE). Here I compare (1) a linear model containing trend and seasonal dummies applied to the log data; (2) an ARIMA model applied to the log data; and (3) an ETS model applied to the original data. The code is slow because I am estimating an ARIMA and ETS model for each iteration. (I'm also estimating a linear model, but that doesn't take long.)
 

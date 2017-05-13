@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-02-15 23:17:49+00:00
 
-link: http://robjhyndman.com/hyndsight/top-four-latex-mistakes/
+link: https://robjhyndman.com/hyndsight/top-four-latex-mistakes/
 slug: top-four-latex-mistakes
 title: Top four LaTeX mistakes
 wordpress_id: 707

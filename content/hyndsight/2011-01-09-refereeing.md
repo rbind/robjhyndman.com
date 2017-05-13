@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-01-09 22:56:54+00:00
 
-link: http://robjhyndman.com/hyndsight/refereeing/
+link: https://robjhyndman.com/hyndsight/refereeing/
 slug: refereeing
 title: Becoming a referee
 wordpress_id: 1236

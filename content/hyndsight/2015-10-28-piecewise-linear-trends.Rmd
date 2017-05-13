@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-10-28 02:43:47+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/piecewise-linear-trends/
+link: https://robjhyndman.com/hyndsight/piecewise-linear-trends/
 slug: piecewise-linear-trends
 title: Piecewise linear trends
 wordpress_id: 3413

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-07-01 03:28:18+00:00
 
-link: http://robjhyndman.com/hyndsight/useful-tutorials/
+link: https://robjhyndman.com/hyndsight/useful-tutorials/
 slug: useful-tutorials
 title: Useful tutorials
 wordpress_id: 3318

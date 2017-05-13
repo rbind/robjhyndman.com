@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-10-12 08:00:47+00:00
 
-link: http://robjhyndman.com/hyndsight/unimelb-prof-datascience/
+link: https://robjhyndman.com/hyndsight/unimelb-prof-datascience/
 slug: unimelb-prof-datascience
 title: Come to Melbourne, even if not to Monash
 wordpress_id: 3892

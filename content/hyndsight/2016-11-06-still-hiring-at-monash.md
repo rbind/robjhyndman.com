@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-11-06 22:16:43+00:00
 
-link: http://robjhyndman.com/hyndsight/still-hiring-at-monash/
+link: https://robjhyndman.com/hyndsight/still-hiring-at-monash/
 slug: still-hiring-at-monash
 title: We're still hiring at Monash
 wordpress_id: 3910

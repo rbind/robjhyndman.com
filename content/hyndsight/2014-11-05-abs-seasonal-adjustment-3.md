@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-11-05 04:56:58+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/abs-seasonal-adjustment-3/
+link: https://robjhyndman.com/hyndsight/abs-seasonal-adjustment-3/
 slug: abs-seasonal-adjustment-3
 title: ABS seasonal adjustment update
 wordpress_id: 3031
@@ -13,7 +13,7 @@ categories:
 - statistics
 ---
 
-Since my [last post](http://robjhyndman.com/hyndsight/abs-seasonal-adjustment-2) on the seasonal adjustment problems at the Australian Bureau of Statistics, I've been working closely with people within the ABS to help them resolve the problems in time for tomorrow's release of the October unemployment figures.
+Since my [last post](https://robjhyndman.com/hyndsight/abs-seasonal-adjustment-2) on the seasonal adjustment problems at the Australian Bureau of Statistics, I've been working closely with people within the ABS to help them resolve the problems in time for tomorrow's release of the October unemployment figures.
 
 Now that the ABS has put out [a statement about the problem](http://www.abs.gov.au/websitedbs/D3310114.nsf/Home/Statement+on+the+Labour+Force+estimates), I thought it would be useful to explain the underlying methodology for those who are interested.<!-- more -->
 

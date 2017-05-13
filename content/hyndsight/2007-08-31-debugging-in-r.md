@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2007-08-31 03:53:43+00:00
 
-link: http://robjhyndman.com/hyndsight/debugging-in-r/
+link: https://robjhyndman.com/hyndsight/debugging-in-r/
 slug: debugging-in-r
 title: Debugging in R
 wordpress_id: 11

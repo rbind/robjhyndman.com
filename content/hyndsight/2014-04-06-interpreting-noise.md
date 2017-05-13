@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-04-06 00:04:36+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/interpreting-noise/
+link: https://robjhyndman.com/hyndsight/interpreting-noise/
 slug: interpreting-noise
 title: Interpreting noise
 wordpress_id: 2640

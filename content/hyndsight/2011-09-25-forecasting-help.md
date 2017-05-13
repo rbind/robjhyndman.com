@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-09-25 13:19:27+00:00
 
-link: http://robjhyndman.com/hyndsight/forecasting-help/
+link: https://robjhyndman.com/hyndsight/forecasting-help/
 slug: forecasting-help
 title: Help for forecasting practitioners
 wordpress_id: 670

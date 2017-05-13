@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-10-31 02:13:54+00:00
 
-link: http://robjhyndman.com/hyndsight/jobs-at-amazon/
+link: https://robjhyndman.com/hyndsight/jobs-at-amazon/
 slug: jobs-at-amazon
 title: Jobs at Amazon
 wordpress_id: 3027

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-01-07 05:13:18+00:00
 
-link: http://robjhyndman.com/hyndsight/batch-forecasting/
+link: https://robjhyndman.com/hyndsight/batch-forecasting/
 slug: batch-forecasting
 title: Batch forecasting in R
 wordpress_id: 2053
@@ -38,7 +38,7 @@ In the following example, there are many columns of monthly data in a csv file w
     
     library(forecast)
     
-    retail <- read.csv("http://robjhyndman.com/data/ausretail.csv",header=FALSE)
+    retail <- read.csv("https://robjhyndman.com/data/ausretail.csv",header=FALSE)
     retail <- ts(retail[,-1],f=12,s=1982+3/12)
     
     ns <- ncol(retail)

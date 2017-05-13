@@ -17,5 +17,5 @@ We give a general formulation of a non-Gaussian conditional linear AR(1) model s
 
 **Keywords:** autoregression, data analysis, non-Gaussian time series, Poisson time series, Gamma time series, Exponential time series.
 
-**Data:** [Japanese MCLS data](http://robjhyndman.com/tsdldata/data/mcls82.dat),[Gold particle data](http://robjhyndman.com/tsdldata/data/goldparticle.dat), [Hirnant rainfall data](http://robjhyndman.com/tsdldata/data/hirnant.dat)
+**Data:** [Japanese MCLS data](https://robjhyndman.com/tsdldata/data/mcls82.dat),[Gold particle data](https://robjhyndman.com/tsdldata/data/goldparticle.dat), [Hirnant rainfall data](https://robjhyndman.com/tsdldata/data/hirnant.dat)
 

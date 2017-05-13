@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-08-16 06:12:29+00:00
 
-link: http://robjhyndman.com/hyndsight/stanford-ml/
+link: https://robjhyndman.com/hyndsight/stanford-ml/
 slug: stanford-ml
 title: Learn Machine Learning at Stanford for free
 wordpress_id: 1355

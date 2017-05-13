@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-07-10 21:58:55+00:00
 
-link: http://robjhyndman.com/hyndsight/questions/
+link: https://robjhyndman.com/hyndsight/questions/
 slug: questions
 title: Asking good questions
 wordpress_id: 2240

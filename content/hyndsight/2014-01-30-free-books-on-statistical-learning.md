@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-01-30 01:51:07+00:00
 
-link: http://robjhyndman.com/hyndsight/free-books-on-statistical-learning/
+link: https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/
 slug: free-books-on-statistical-learning
 title: Free books on statistical learning
 wordpress_id: 2417

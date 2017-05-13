@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2008-02-22 07:56:46+00:00
-link: http://robjhyndman.com/seminars/forecasting-functional-time-series/
+link: https://robjhyndman.com/seminars/forecasting-functional-time-series/
 slug: forecasting-functional-time-series
 title: Forecasting functional time series
 wordpress_id: 216

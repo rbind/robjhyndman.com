@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-10-26 08:37:31+00:00
 
-link: http://robjhyndman.com/hyndsight/estimation/
+link: https://robjhyndman.com/hyndsight/estimation/
 slug: estimation
 title: Different results from different software
 wordpress_id: 1106

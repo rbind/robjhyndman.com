@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-09-24 06:42:36+00:00
 
-link: http://robjhyndman.com/hyndsight/chinese-r-conference/
+link: https://robjhyndman.com/hyndsight/chinese-r-conference/
 slug: chinese-r-conference
 title: Chinese R conference
 wordpress_id: 3388

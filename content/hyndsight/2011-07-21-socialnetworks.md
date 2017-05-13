@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-07-21 02:39:42+00:00
 
-link: http://robjhyndman.com/hyndsight/socialnetworks/
+link: https://robjhyndman.com/hyndsight/socialnetworks/
 slug: socialnetworks
 title: Social networking for researchers
 wordpress_id: 1326

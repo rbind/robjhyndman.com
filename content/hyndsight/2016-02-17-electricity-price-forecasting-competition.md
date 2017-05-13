@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-02-17 05:51:07+00:00
 
-link: http://robjhyndman.com/hyndsight/electricity-price-forecasting-competition/
+link: https://robjhyndman.com/hyndsight/electricity-price-forecasting-competition/
 slug: electricity-price-forecasting-competition
 title: Electricity price forecasting competition
 wordpress_id: 3667

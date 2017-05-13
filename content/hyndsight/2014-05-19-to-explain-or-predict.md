@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-19 05:35:33+00:00
 
-link: http://robjhyndman.com/hyndsight/to-explain-or-predict/
+link: https://robjhyndman.com/hyndsight/to-explain-or-predict/
 slug: to-explain-or-predict
 title: To explain or predict?
 wordpress_id: 2746

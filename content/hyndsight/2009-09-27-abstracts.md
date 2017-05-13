@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-09-27 10:19:43+00:00
 
-link: http://robjhyndman.com/hyndsight/abstracts/
+link: https://robjhyndman.com/hyndsight/abstracts/
 slug: abstracts
 title: Writing an abstract
 wordpress_id: 565

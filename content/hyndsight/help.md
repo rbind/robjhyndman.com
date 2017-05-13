@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2015-04-08 22:13:31+00:00
-link: http://robjhyndman.com/hyndsight/help/
+link: https://robjhyndman.com/hyndsight/help/
 slug: help
 title: Help
 wordpress_id: 3223

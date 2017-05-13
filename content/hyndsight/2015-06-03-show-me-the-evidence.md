@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-06-03 01:04:56+00:00
 
-link: http://robjhyndman.com/hyndsight/show-me-the-evidence/
+link: https://robjhyndman.com/hyndsight/show-me-the-evidence/
 slug: show-me-the-evidence
 title: R vs Autobox vs ForecastPro vs ...
 wordpress_id: 3292
@@ -214,4 +214,4 @@ My aim with the forecast package for R is to make freely available state-of-the-
 
 The last method is a simple average of the forecasts from `ets` and `auto.arima`. If you only want point forecasts, that is the best approach available in the forecast package. It is also better than any of the commercial software (at least as far as they have been prepared to subject their algorithms to independent testing).
 
-Unlike the commercial vendors, you don't have to take my word for it. My algorithms are open source, and the [code that produced the above tables can be downloaded](http://robjhyndman.com/m3comparisons.R).
+Unlike the commercial vendors, you don't have to take my word for it. My algorithms are open source, and the [code that produced the above tables can be downloaded](https://robjhyndman.com/m3comparisons.R).

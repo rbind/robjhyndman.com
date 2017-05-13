@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-11-11 23:50:32+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-review-papers/
+link: https://robjhyndman.com/hyndsight/ijf-review-papers/
 slug: ijf-review-papers
 title: IJF review papers
 wordpress_id: 3064

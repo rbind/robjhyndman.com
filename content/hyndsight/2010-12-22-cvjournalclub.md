@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-12-22 00:01:36+00:00
 
-link: http://robjhyndman.com/hyndsight/cvjournalclub/
+link: https://robjhyndman.com/hyndsight/cvjournalclub/
 slug: cvjournalclub
 title: CrossValidated Journal Club
 wordpress_id: 1212

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-10-04 10:21:11+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/crossvalidation/
+link: https://robjhyndman.com/hyndsight/crossvalidation/
 slug: crossvalidation
 title: Why every statistician should know about cross-validation
 wordpress_id: 991

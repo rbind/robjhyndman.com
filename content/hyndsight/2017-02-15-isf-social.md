@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-02-15 10:06:20+00:00
 
-link: http://robjhyndman.com/hyndsight/isf-social/
+link: https://robjhyndman.com/hyndsight/isf-social/
 slug: isf-social
 title: 'Forecasters: bring your family to Cairns'
 wordpress_id: 4007

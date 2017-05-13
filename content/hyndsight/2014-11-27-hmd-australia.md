@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-11-27 02:33:46+00:00
 
-link: http://robjhyndman.com/hyndsight/hmd-australia/
+link: https://robjhyndman.com/hyndsight/hmd-australia/
 slug: hmd-australia
 title: New Australian data on the HMD
 wordpress_id: 3079

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2007-09-06 04:01:29+00:00
 
-link: http://robjhyndman.com/hyndsight/forecasting-in-the-news/
+link: https://robjhyndman.com/hyndsight/forecasting-in-the-news/
 slug: forecasting-in-the-news
 title: Forecasting in the news
 wordpress_id: 14

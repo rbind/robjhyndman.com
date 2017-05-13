@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-05-15 06:39:10+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/forecasting-annual-totals/
+link: https://robjhyndman.com/hyndsight/forecasting-annual-totals/
 slug: forecasting-annual-totals
 title: Forecasting annual totals from monthly data
 wordpress_id: 2186

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-13 02:27:33+00:00
 
-link: http://robjhyndman.com/hyndsight/business-analytics-jobs-questions/
+link: https://robjhyndman.com/hyndsight/business-analytics-jobs-questions/
 slug: business-analytics-jobs-questions
 title: Questions on the business analytics jobs
 wordpress_id: 2731
@@ -12,7 +12,7 @@ categories:
 - Monash University
 ---
 
-I've received a few questions on the [business analytics jobs](http://robjhyndman.com/hyndsight/monash-business-analytics/) advertised last week. I think it is best if I answer them here so other potential candidates can have the same information. I will add to this post if I receive more questions.<!-- more -->
+I've received a few questions on the [business analytics jobs](https://robjhyndman.com/hyndsight/monash-business-analytics/) advertised last week. I think it is best if I answer them here so other potential candidates can have the same information. I will add to this post if I receive more questions.<!-- more -->
 
 
 

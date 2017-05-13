@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-02-22 00:22:46+00:00
 
-link: http://robjhyndman.com/hyndsight/crop-r-figures/
+link: https://robjhyndman.com/hyndsight/crop-r-figures/
 slug: crop-r-figures
 title: Removing white space around R figures
 wordpress_id: 2102
@@ -72,6 +72,6 @@ To apply `pdfcrop` to every file in a directory (using unix), save the following
 
 Make the file executable and run it.
 
-In my [post on Makefiles](http://robjhyndman.com/hyndsight/makefiles/), I explain how to include `pdfcrop` within a Makefile.
+In my [post on Makefiles](https://robjhyndman.com/hyndsight/makefiles/), I explain how to include `pdfcrop` within a Makefile.
 
 If you just use `pdfcrop` without first reducing the white space in R, the proportions come out a little odd. So I tend to use both approaches together.

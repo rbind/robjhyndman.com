@@ -26,7 +26,7 @@ I argue that the open-source model is a much better approach both for research 
 
 
     
-  1. It leads to a far greater impact on international practice than anything else you can do to promote your new methodology or algorithms. Surely this is something we want to do as university-based researchers. My forecasting algorithms have had a big impact, not because I wrote a few papers in statistical journals, but because I also wrote [some R packages](http://robjhyndman.com/software/) that allow anyone to try out my methods on their own data.
+  1. It leads to a far greater impact on international practice than anything else you can do to promote your new methodology or algorithms. Surely this is something we want to do as university-based researchers. My forecasting algorithms have had a big impact, not because I wrote a few papers in statistical journals, but because I also wrote [some R packages](https://robjhyndman.com/software/) that allow anyone to try out my methods on their own data.
 
     
   2. As a result of other researchers being able to implement your ideas easily, your work gets cited much more frequently. Anyone who uses your open source software is obliged to cite the software product and the underlying research papers that describe the methods and algorithms. Citations are used as a crude measure of prestige within universities. If you want to get promoted, having lots of citations helps. Citations also feed into university rankings.

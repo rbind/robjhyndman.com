@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-04 02:20:22+00:00
 
-link: http://robjhyndman.com/hyndsight/short-time-series/
+link: https://robjhyndman.com/hyndsight/short-time-series/
 slug: short-time-series
 title: Fitting models to short time series
 wordpress_id: 2534

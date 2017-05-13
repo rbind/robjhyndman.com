@@ -2,7 +2,7 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2011-10-03 03:11:47+00:00
-link: http://robjhyndman.com/seminars/electricity-forecasting/
+link: https://robjhyndman.com/seminars/electricity-forecasting/
 slug: electricity-forecasting
 title: 'Forecasting electricity demand distributions using a semiparametric additive
   model '

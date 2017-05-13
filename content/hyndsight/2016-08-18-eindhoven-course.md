@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-08-18 00:09:47+00:00
 
-link: http://robjhyndman.com/hyndsight/eindhoven-course/
+link: https://robjhyndman.com/hyndsight/eindhoven-course/
 slug: eindhoven-course
 title: '"Forecasting with R" short course in Eindhoven'
 wordpress_id: 3801

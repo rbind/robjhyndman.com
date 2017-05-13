@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-12-06 08:57:06+00:00
 
-link: http://robjhyndman.com/hyndsight/swissworkshop2011/
+link: https://robjhyndman.com/hyndsight/swissworkshop2011/
 slug: swissworkshop2011
 title: 'Forecasting workshop: Switzerland, June 2011'
 wordpress_id: 1199

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-10-31 02:49:48+00:00
 
-link: http://robjhyndman.com/hyndsight/makefiles/
+link: https://robjhyndman.com/hyndsight/makefiles/
 slug: makefiles
 title: Makefiles for R/LaTeX projects
 wordpress_id: 1997
@@ -64,7 +64,7 @@ then the output is saved as `file.Rout`. Then `make` only has to check if `file.
 
 I also like to strip out all the white space from the pdf figures created in R before I put them in a LaTeX document. There is a nice command `pdfcrop` which does that. (You should already have it on a Mac or Linux, and also on Windows provided you are using MikTeX.) So I also want my `Makefile` to crop all images if they have not already been done. Once an image is cropped, an empty file of the form `file.pdfcrop` is created to indicate that `file.pdf` has already been cropped.
 
-OK, now we are ready for my marvellous [`Makefile`](http://robjhyndman.com/data/Makefile).
+OK, now we are ready for my marvellous [`Makefile`](https://robjhyndman.com/data/Makefile).
 
     
     # Usually, only these lines need changing
@@ -117,7 +117,7 @@ OK, now we are ready for my marvellous [`Makefile`](http://robjhyndman.com/data/
     
 
 
-[Download the file here.](http://robjhyndman.com/data/Makefile) For most projects I copy this file into the main directory of my project, then all I have to do is modify the first few lines. `RDIR` specifies where the R files are kept and `FIGDIR` specifies where the figures are kept. Normally I keep these together, but sometimes they might be in separate directories.
+[Download the file here.](https://robjhyndman.com/data/Makefile) For most projects I copy this file into the main directory of my project, then all I have to do is modify the first few lines. `RDIR` specifies where the R files are kept and `FIGDIR` specifies where the figures are kept. Normally I keep these together, but sometimes they might be in separate directories.
 
 Now `make` will do everything necessary --- run the R files, crop the pdf graphics, and process the latex document. But it won't do any steps that don't need doing.
 

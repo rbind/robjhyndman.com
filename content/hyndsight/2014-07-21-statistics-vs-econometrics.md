@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-07-21 03:24:09+00:00
 
-link: http://robjhyndman.com/hyndsight/statistics-vs-econometrics/
+link: https://robjhyndman.com/hyndsight/statistics-vs-econometrics/
 slug: statistics-vs-econometrics
 title: I am not an econometrician
 wordpress_id: 2797

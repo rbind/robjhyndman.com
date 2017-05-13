@@ -22,5 +22,5 @@ We consider the kernel estimator of conditional density and derive its asymptoti
 
 **[R code](http://github.com/robjhyndman/hdrcde)**
 
-**Data:** [Melbourne maximum temperatures](http://robjhyndman.com/tsdldata/data/melbmax.dat)
+**Data:** [Melbourne maximum temperatures](https://robjhyndman.com/tsdldata/data/melbmax.dat)
 

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-07-16 07:57:46+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/murphy-diagrams/
+link: https://robjhyndman.com/hyndsight/murphy-diagrams/
 slug: murphy-diagrams
 title: Murphy diagrams in R
 wordpress_id: 3322
@@ -63,7 +63,7 @@ and plot this as a function of $\theta$. This is what Ehm et al call a "Murphy d
 I have written some R code for producing these plots. Here it is applied to rolling one-step forecasts computed using ETS and ARIMA models. The data was simulated from an ARIMA model, so we would expect the ARIMA forecasts to be better:
 
 ```{r, cache=TRUE}    
-    source("http://robjhyndman.com/Rfiles/murphy.R")
+    source("https://robjhyndman.com/Rfiles/murphy.R")
     library(forecast)
     y <- arima.sim(n = 300, list(ar = c(0.8897, -0.4858), ma = c(-0.2279, 0.2488)),
                    sd = sqrt(0.1796))

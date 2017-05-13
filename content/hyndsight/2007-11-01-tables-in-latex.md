@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2007-11-01 04:25:34+00:00
 
-link: http://robjhyndman.com/hyndsight/tables-in-latex/
+link: https://robjhyndman.com/hyndsight/tables-in-latex/
 slug: tables-in-latex
 title: Tables in LaTeX
 wordpress_id: 34

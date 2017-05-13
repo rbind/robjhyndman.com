@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-08-22 03:37:16+00:00
 
-link: http://robjhyndman.com/hyndsight/biblatex-for-statisticians/
+link: https://robjhyndman.com/hyndsight/biblatex-for-statisticians/
 slug: biblatex-for-statisticians
 title: biblatex for statisticians
 wordpress_id: 2863

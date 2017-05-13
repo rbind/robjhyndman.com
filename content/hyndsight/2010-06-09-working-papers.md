@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-06-09 08:05:53+00:00
 
-link: http://robjhyndman.com/hyndsight/working-papers/
+link: https://robjhyndman.com/hyndsight/working-papers/
 slug: working-papers
 title: Should you make your working papers public?
 wordpress_id: 809

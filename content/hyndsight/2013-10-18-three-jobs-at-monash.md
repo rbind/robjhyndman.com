@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-10-18 04:02:37+00:00
 
-link: http://robjhyndman.com/hyndsight/three-jobs-at-monash/
+link: https://robjhyndman.com/hyndsight/three-jobs-at-monash/
 slug: three-jobs-at-monash
 title: Three jobs at Monash
 wordpress_id: 2318

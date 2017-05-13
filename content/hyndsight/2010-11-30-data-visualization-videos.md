@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-11-30 04:05:09+00:00
 
-link: http://robjhyndman.com/hyndsight/data-visualization-videos/
+link: https://robjhyndman.com/hyndsight/data-visualization-videos/
 slug: data-visualization-videos
 title: Data visualization videos
 wordpress_id: 1189

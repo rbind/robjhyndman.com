@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-06-23 21:32:16+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-best-paper-awards/
+link: https://robjhyndman.com/hyndsight/ijf-best-paper-awards/
 slug: ijf-best-paper-awards
 title: IJF best paper awards
 wordpress_id: 3305

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-02-02 10:01:26+00:00
 
-link: http://robjhyndman.com/hyndsight/iasc-competition-2015/
+link: https://robjhyndman.com/hyndsight/iasc-competition-2015/
 slug: iasc-competition-2015
 title: IASC Data Analysis Competition 2015
 wordpress_id: 3144

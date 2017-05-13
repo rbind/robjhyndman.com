@@ -20,7 +20,7 @@ We evaluate the performance of various methods for forecasting tourism demand. T
 
 **Keywords**: ARIMA, exponential smoothing, state space model, time varying parameter model, dynamic regression, autoregressive distributed lag model, vector autoregression.
 
-**Data:** [[Tcomp package for R](https://cran.r-project.org/package=Tcomp)] [[Zip file](http://robjhyndman.com/data/27-3-Athanasopoulos1.zip)]
+**Data:** [[Tcomp package for R](https://cran.r-project.org/package=Tcomp)] [[Zip file](https://robjhyndman.com/data/27-3-Athanasopoulos1.zip)]
 
 [Peter Ellis blog post about the data](http://ellisp.github.io/blog/2016/10/19/Tcomp)
 

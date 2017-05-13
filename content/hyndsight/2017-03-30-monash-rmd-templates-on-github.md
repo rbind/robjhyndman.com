@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-03-30 21:53:14+00:00
 
-link: http://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/
+link: https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/
 slug: monash-rmarkdown-templates-on-github
 title: Monash Rmarkdown templates on github
 wordpress_id: 4078

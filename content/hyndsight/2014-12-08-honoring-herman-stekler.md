@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-12-08 00:11:59+00:00
 
-link: http://robjhyndman.com/hyndsight/honoring-herman-stekler/
+link: https://robjhyndman.com/hyndsight/honoring-herman-stekler/
 slug: honoring-herman-stekler
 title: Honoring Herman Stekler
 wordpress_id: 3089

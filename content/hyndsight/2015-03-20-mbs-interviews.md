@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-03-20 12:20:42+00:00
 
-link: http://robjhyndman.com/hyndsight/mbs-interviews/
+link: https://robjhyndman.com/hyndsight/mbs-interviews/
 slug: mbs-interviews
 title: Two new interviews
 wordpress_id: 3192

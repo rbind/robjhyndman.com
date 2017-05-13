@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-09-03 01:59:28+00:00
 
-link: http://robjhyndman.com/hyndsight/fpp-resources/
+link: https://robjhyndman.com/hyndsight/fpp-resources/
 slug: fpp-resources
 title: Resources for the FPP book
 wordpress_id: 2885

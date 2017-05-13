@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-05-29 07:02:01+00:00
 
-link: http://robjhyndman.com/hyndsight/estimation2/
+link: https://robjhyndman.com/hyndsight/estimation2/
 slug: estimation2
 title: Comparing HoltWinters() and ets()
 wordpress_id: 1316
@@ -37,4 +37,4 @@ There are several issues involved.
 
 I have experimented with many different choices of the starting values for the initial values and smoothing parameters, and what is implemented in `ets()` seems about as good as is possible without using a much slower optimization routine. Where there is a difference between `ets()` and `HoltWinters()`, the results from `ets()` are usually more reliable.
 
-A related question on estimation of ARIMA models was discussed at [http://robjhyndman.com/hyndsight/estimation/](http://robjhyndman.com/hyndsight/estimation/).
+A related question on estimation of ARIMA models was discussed at [https://robjhyndman.com/hyndsight/estimation/](https://robjhyndman.com/hyndsight/estimation/).

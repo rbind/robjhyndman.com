@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-12 22:24:29+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/arima-trends/
+link: https://robjhyndman.com/hyndsight/arima-trends/
 slug: arima-trends
 title: Testing for trend in ARIMA models
 wordpress_id: 2590

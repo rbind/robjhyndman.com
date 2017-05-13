@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-03-18 02:25:27+00:00
 
-link: http://robjhyndman.com/hyndsight/academic-phishing/
+link: https://robjhyndman.com/hyndsight/academic-phishing/
 slug: academic-phishing
 title: Academic phishing
 wordpress_id: 4074

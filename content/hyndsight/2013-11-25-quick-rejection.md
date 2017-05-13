@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-11-25 01:20:04+00:00
 
-link: http://robjhyndman.com/hyndsight/quick-rejection/
+link: https://robjhyndman.com/hyndsight/quick-rejection/
 slug: quick-rejection
 title: How to get your paper rejected quickly
 wordpress_id: 2338
@@ -31,4 +31,4 @@ I sent this rejection letter this morning about a paper submitted to the Interna
 >(Editor-in-Chief, _International Journal of Forecasting_)
 
 
-I have written on [this issue before](http://robjhyndman.com/hyndsight/always-listen-to-reviewers/). The peer-review system requires people to donate considerable amounts of time to writing reviews. In general, they do a great job and provide helpful comments. So it really annoys me when authors treat the system as a game with the aim to get a paper accepted with minimal work, and with no interest in learning from feedback.
+I have written on [this issue before](https://robjhyndman.com/hyndsight/always-listen-to-reviewers/). The peer-review system requires people to donate considerable amounts of time to writing reviews. In general, they do a great job and provide helpful comments. So it really annoys me when authors treat the system as a game with the aim to get a paper accepted with minimal work, and with no interest in learning from feedback.

@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2016-03-28 01:45:16+00:00
-link: http://robjhyndman.com/unbelievable/bibliography/
+link: https://robjhyndman.com/unbelievable/bibliography/
 slug: bibliography
 title: Bibliography
 image: treeandsky.resized.jpg

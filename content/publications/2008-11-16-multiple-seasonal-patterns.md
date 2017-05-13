@@ -26,13 +26,13 @@ A new approach is proposed for forecasting a time series with multiple seasonal 
 
 
 	
-  * [Models spreadsheet](http://robjhyndman.com/papers/multiseasonal/model.xls)
+  * [Models spreadsheet](https://robjhyndman.com/papers/multiseasonal/model.xls)
 
 	
-  * [Ox code](http://robjhyndman.com/papers/multiseasonal/mseas.ox)
+  * [Ox code](https://robjhyndman.com/papers/multiseasonal/mseas.ox)
 
 	
-  * [Traffic data](http://robjhyndman.com/papers/multiseasonal/traffic.xls)
+  * [Traffic data](https://robjhyndman.com/papers/multiseasonal/traffic.xls)
 
 
 The supplied Ox code and Microsoft Excel spreadsheet are intended to give users working examples of the model described in our paper. Both can easily be adapted for more general use, although they are not intended to form any kind of software "package" for Ox and Excel. The supplied data are a sample of data used in the paper and are not to be used for any other purpose than as an example in running the code

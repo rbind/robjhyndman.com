@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-01-20 02:50:56+00:00
 
-link: http://robjhyndman.com/hyndsight/refereeing2/
+link: https://robjhyndman.com/hyndsight/refereeing2/
 slug: refereeing2
 title: Refereeing a journal article
 wordpress_id: 1705
@@ -12,7 +12,7 @@ categories:
 - refereeing
 ---
 
-[I've written briefly on this before](http://robjhyndman.com/hyndsight/referee-reports/). For an excellent and more detailed discussion of what is involved, there is a series of excellent posts on [Pat Thomson's blog](http://patthomson.wordpress.com/):
+[I've written briefly on this before](https://robjhyndman.com/hyndsight/referee-reports/). For an excellent and more detailed discussion of what is involved, there is a series of excellent posts on [Pat Thomson's blog](http://patthomson.wordpress.com/):
 
 
 

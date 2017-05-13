@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-09-25 07:31:05+00:00
 
-link: http://robjhyndman.com/hyndsight/reproducibility/
+link: https://robjhyndman.com/hyndsight/reproducibility/
 slug: reproducibility
 title: Reproducibility in computational research
 wordpress_id: 3391

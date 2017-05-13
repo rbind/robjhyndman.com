@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-05-06 03:34:34+00:00
 
-link: http://robjhyndman.com/hyndsight/establishing-priority/
+link: https://robjhyndman.com/hyndsight/establishing-priority/
 slug: establishing-priority
 title: Establishing priority
 wordpress_id: 2179
@@ -19,7 +19,7 @@ categories:
 
 The nature of research is that other people are probably working on similar ideas to you, and it is possible that someone will beat you to publishing them.<!-- more -->
 
-When I was working on my PhD, I discovered [another PhD thesis by Iris Yeung](https://www.researchgate.net/publication/33777328_Continuous_time_threshold_autoregressive_model) at UKC with almost exactly the same title as [mine](http://robjhyndman.com/publications/phd/), and published a year earlier. In those days, a copy of a thesis had to be printed from microfiche, and then posted by snail mail. For a few weeks I felt sick, wondering if all my work was going to have to be scrapped because someone else had already done it. Fortunately, my approach was sufficiently different from hers, and I continued with my thesis.
+When I was working on my PhD, I discovered [another PhD thesis by Iris Yeung](https://www.researchgate.net/publication/33777328_Continuous_time_threshold_autoregressive_model) at UKC with almost exactly the same title as [mine](https://robjhyndman.com/publications/phd/), and published a year earlier. In those days, a copy of a thesis had to be printed from microfiche, and then posted by snail mail. For a few weeks I felt sick, wondering if all my work was going to have to be scrapped because someone else had already done it. Fortunately, my approach was sufficiently different from hers, and I continued with my thesis.
 
 For this reason, I encourage my PhD students to put out working papers of their research as soon as it is ready for public consumption. The working papers go to [RePEc](http://ideas.repec.org/s/msh/ebswps.html), so they are easily accessible and dated, in order to be clear when the work was completed.
 

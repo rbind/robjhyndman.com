@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-05-15 10:34:39+00:00
 
-link: http://robjhyndman.com/hyndsight/blog-aggregators/
+link: https://robjhyndman.com/hyndsight/blog-aggregators/
 slug: blog-aggregators
 title: Blog aggregators
 wordpress_id: 1840

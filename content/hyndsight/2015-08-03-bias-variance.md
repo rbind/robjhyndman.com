@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-08-03 07:59:04+00:00
 
-link: http://robjhyndman.com/hyndsight/bias-variance/
+link: https://robjhyndman.com/hyndsight/bias-variance/
 slug: bias-variance
 title: The bias-variance decomposition
 wordpress_id: 3340

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-03-12 22:56:55+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/intervals/
+link: https://robjhyndman.com/hyndsight/intervals/
 slug: intervals
 title: The difference between prediction intervals and confidence intervals
 wordpress_id: 2126

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-10-24 12:00:25+00:00
 
-link: http://robjhyndman.com/hyndsight/qa-predictive-analytics/
+link: https://robjhyndman.com/hyndsight/qa-predictive-analytics/
 slug: qa-predictive-analytics
 title: 'Q&A: predictive analytics'
 wordpress_id: 3906

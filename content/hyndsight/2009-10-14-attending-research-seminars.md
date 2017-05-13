@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-10-14 06:37:20+00:00
 
-link: http://robjhyndman.com/hyndsight/attending-research-seminars/
+link: https://robjhyndman.com/hyndsight/attending-research-seminars/
 slug: attending-research-seminars
 title: Attending research seminars
 wordpress_id: 607

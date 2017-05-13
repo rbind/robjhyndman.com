@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-05-09 13:10:27+00:00
 
-link: http://robjhyndman.com/hyndsight/scheduling-meetings/
+link: https://robjhyndman.com/hyndsight/scheduling-meetings/
 slug: scheduling-meetings
 title: Scheduling meetings
 wordpress_id: 774
@@ -13,7 +13,7 @@ categories:
 
 I don't go to many meetings as I find they are largely a waste of time. In fact, I have the following poster on my office wall to remind everyone who walks in not to ask me to attend a meeting!
 
-![](http://robjhyndman.com/images/meetings.gif)
+![](https://robjhyndman.com/images/meetings.gif)
 
 But I'm now a chief investigator of an NHMRC grant and I have to meet with other members of the team from time to time. We've started using [Doodle](http://www.doodle.com) to schedule our meetings, and it is so good I thought I should share it.
 

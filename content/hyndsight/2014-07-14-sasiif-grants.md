@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-07-14 22:43:27+00:00
 
-link: http://robjhyndman.com/hyndsight/sasiif-grants/
+link: https://robjhyndman.com/hyndsight/sasiif-grants/
 slug: sasiif-grants
 title: SAS/IIF grants
 wordpress_id: 2785

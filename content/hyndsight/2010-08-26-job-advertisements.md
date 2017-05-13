@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-08-26 01:41:30+00:00
 
-link: http://robjhyndman.com/hyndsight/job-advertisements/
+link: https://robjhyndman.com/hyndsight/job-advertisements/
 slug: job-advertisements
 title: Job advertisements
 wordpress_id: 918

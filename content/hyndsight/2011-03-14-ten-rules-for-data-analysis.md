@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-03-14 23:06:53+00:00
 
-link: http://robjhyndman.com/hyndsight/ten-rules-for-data-analysis/
+link: https://robjhyndman.com/hyndsight/ten-rules-for-data-analysis/
 slug: ten-rules-for-data-analysis
 title: Ten rules for data analysis
 wordpress_id: 1292

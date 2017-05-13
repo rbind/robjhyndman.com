@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-02-16 00:25:25+00:00
 
-link: http://robjhyndman.com/hyndsight/mailing-lists/
+link: https://robjhyndman.com/hyndsight/mailing-lists/
 slug: mailing-lists
 title: Mailing lists
 wordpress_id: 1733

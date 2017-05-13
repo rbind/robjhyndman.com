@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-06-06 00:07:27+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/arimaconstants/
+link: https://robjhyndman.com/hyndsight/arimaconstants/
 slug: arimaconstants
 title: Constants and ARIMA models in R
 wordpress_id: 1850

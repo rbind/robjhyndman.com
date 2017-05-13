@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-08-10 08:12:44+00:00
 
-link: http://robjhyndman.com/hyndsight/tourism-time-series/
+link: https://robjhyndman.com/hyndsight/tourism-time-series/
 slug: tourism-time-series
 title: Tourism time series repository
 wordpress_id: 3798
@@ -20,4 +20,4 @@ So I am posting the data here in case anyone wants to use it for replicating our
 
 If you use the data in a publication, please cite the [IJF paper](http://dx.doi.org/10.1016/j.ijforecast.2010.04.009) as the source, along with a link to this blog post.
 
-**[Download the zip file](http://robjhyndman.com/data/27-3-Athanasopoulos1.zip)**
+**[Download the zip file](https://robjhyndman.com/data/27-3-Athanasopoulos1.zip)**

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-03-28 04:35:17+00:00
 
-link: http://robjhyndman.com/hyndsight/sample-quantiles-20-years-later/
+link: https://robjhyndman.com/hyndsight/sample-quantiles-20-years-later/
 slug: sample-quantiles-20-years-later
 title: Sample quantiles 20 years later
 wordpress_id: 3702

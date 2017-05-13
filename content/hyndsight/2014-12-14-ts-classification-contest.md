@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-12-14 22:17:16+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/ts-classification-contest/
+link: https://robjhyndman.com/hyndsight/ts-classification-contest/
 slug: ts-classification-contest
 title: A time series classification contest
 wordpress_id: 3105

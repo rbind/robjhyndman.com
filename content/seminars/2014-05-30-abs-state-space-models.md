@@ -3,7 +3,7 @@ author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2014-05-30 01:21:32+00:00
 excerpt: A one-day workshop for the Australian Bureau of Statistics
-link: http://robjhyndman.com/seminars/abs-state-space-models/
+link: https://robjhyndman.com/seminars/abs-state-space-models/
 slug: abs-state-space-models
 title: State space models
 wordpress_id: 2461

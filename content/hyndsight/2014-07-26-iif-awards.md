@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-07-26 03:14:48+00:00
 
-link: http://robjhyndman.com/hyndsight/iif-awards/
+link: https://robjhyndman.com/hyndsight/iif-awards/
 slug: iif-awards
 title: Student forecasting awards from the IIF
 wordpress_id: 2824

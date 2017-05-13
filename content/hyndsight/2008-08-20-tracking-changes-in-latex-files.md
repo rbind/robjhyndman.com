@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-08-20 08:13:47+00:00
 
-link: http://robjhyndman.com/hyndsight/tracking-changes-in-latex-files/
+link: https://robjhyndman.com/hyndsight/tracking-changes-in-latex-files/
 slug: tracking-changes-in-latex-files
 title: Tracking changes in LaTeX files
 wordpress_id: 80

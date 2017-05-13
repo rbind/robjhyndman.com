@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-05-08 13:23:29+00:00
 
-link: http://robjhyndman.com/hyndsight/seeking-help/
+link: https://robjhyndman.com/hyndsight/seeking-help/
 slug: seeking-help
 title: Seeking help
 wordpress_id: 1822

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-08-09 02:04:38+00:00
 
-link: http://robjhyndman.com/hyndsight/blogs-about-research/
+link: https://robjhyndman.com/hyndsight/blogs-about-research/
 slug: blogs-about-research
 title: Blogs about research
 wordpress_id: 1923

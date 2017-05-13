@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-12-09 00:06:52+00:00
 
-link: http://robjhyndman.com/hyndsight/am-i-a-data-scientist/
+link: https://robjhyndman.com/hyndsight/am-i-a-data-scientist/
 slug: am-i-a-data-scientist
 title: Am I a data scientist?
 wordpress_id: 3094

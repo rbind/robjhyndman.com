@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-08-05 02:57:40+00:00
 
-link: http://robjhyndman.com/hyndsight/songs-of-statistics/
+link: https://robjhyndman.com/hyndsight/songs-of-statistics/
 slug: songs-of-statistics
 title: Songs of Statistics
 wordpress_id: 380

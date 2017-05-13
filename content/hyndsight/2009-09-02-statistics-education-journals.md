@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-09-02 03:38:05+00:00
 
-link: http://robjhyndman.com/hyndsight/statistics-education-journals/
+link: https://robjhyndman.com/hyndsight/statistics-education-journals/
 slug: statistics-education-journals
 title: Statistics education journals
 wordpress_id: 472

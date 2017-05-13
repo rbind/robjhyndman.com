@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-09-27 08:34:26+00:00
 
-link: http://robjhyndman.com/hyndsight/eindhoven-seminar/
+link: https://robjhyndman.com/hyndsight/eindhoven-seminar/
 slug: eindhoven-seminar
 title: Eindhoven seminar on time series visualization
 wordpress_id: 3875

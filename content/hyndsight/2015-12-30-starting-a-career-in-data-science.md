@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-12-30 04:29:45+00:00
 
-link: http://robjhyndman.com/hyndsight/starting-a-career-in-data-science/
+link: https://robjhyndman.com/hyndsight/starting-a-career-in-data-science/
 slug: starting-a-career-in-data-science
 title: Starting a career in data science
 wordpress_id: 3482
@@ -35,7 +35,7 @@ Here is my reply.
 
 
 
->Hi Aran. The best thing to do is go to the data science meetups and talk to people in the industry. (See this [blog post](http://robjhyndman.com/hyndsight/connect-with-local-employers/).) The Melbourne data science meetup group has about 3000 members and they run a [job board](http://www.meetup.com/Data-Science-Melbourne/messages/boards/forum/20509896).
+>Hi Aran. The best thing to do is go to the data science meetups and talk to people in the industry. (See this [blog post](https://robjhyndman.com/hyndsight/connect-with-local-employers/).) The Melbourne data science meetup group has about 3000 members and they run a [job board](http://www.meetup.com/Data-Science-Melbourne/messages/boards/forum/20509896).
 
 >Also, just do a google search for ["Data Science Jobs in Melbourne"](https://www.google.com.au/search?q=data+science+jobs+in+melbourne). Even if the employers say they want experience, in practice there is a shortage of people available so they often have to settle for someone with less experience.
 

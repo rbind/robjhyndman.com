@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2008-06-19 03:56:04+00:00
-link: http://robjhyndman.com/seminars/bagplots-boxplots-and-outlier-detection-for-functional-data-a/
+link: https://robjhyndman.com/seminars/bagplots-boxplots-and-outlier-detection-for-functional-data-a/
 slug: bagplots-boxplots-and-outlier-detection-for-functional-data-a
 title: Bagplots, boxplots and outlier detection for functional data
 wordpress_id: 205

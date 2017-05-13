@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-05-26 06:14:39+00:00
 
-link: http://robjhyndman.com/hyndsight/google-scholar-alerts/
+link: https://robjhyndman.com/hyndsight/google-scholar-alerts/
 slug: google-scholar-alerts
 title: Google scholar alerts
 wordpress_id: 792

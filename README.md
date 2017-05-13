@@ -1,7 +1,7 @@
 Source files for robjhyndman.com
 =================================
 
-All content and theme files for http://robjhyndman.com, using [Blogdown](https://github.com/rstudio/blogdown) and [Hugo](http://gohugo.io/) to generate the site. 
+All content and theme files for https://robjhyndman.com, using [Blogdown](https://github.com/rstudio/blogdown) and [Hugo](http://gohugo.io/) to generate the site. 
 
 The design is inspired by http://kieranhealy.org and is a modification of [hugo-finite](https://github.com/lambdafu/hugo-finite). 
 

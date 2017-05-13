@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-26 02:42:44+00:00
 
-link: http://robjhyndman.com/hyndsight/marketplaces/
+link: https://robjhyndman.com/hyndsight/marketplaces/
 slug: marketplaces
 title: Data science market places
 wordpress_id: 2754

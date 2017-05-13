@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-10-07 05:51:34+00:00
 
-link: http://robjhyndman.com/hyndsight/editorialboards/
+link: https://robjhyndman.com/hyndsight/editorialboards/
 slug: editorialboards
 title: Joining an editorial board
 wordpress_id: 1042

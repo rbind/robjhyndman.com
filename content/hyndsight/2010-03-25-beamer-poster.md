@@ -11,6 +11,6 @@ This week, I made my first poster. Although I've been an academic for more than 
 
 Here is my poster (click for pdf version):
 
-[![](http://robjhyndman.com/images/PosterInterests_beamer-723x1023.png)](/research/PosterInterests_beamer.pdf)
+[![](https://robjhyndman.com/images/PosterInterests_beamer-723x1023.png)](/research/PosterInterests_beamer.pdf)
 
 It was done using beamer which turns out to be as good for posters as it is for slides. I used the [beamerposter package](http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php) which comes with a few themes. None of the themes were quite what I wanted, so I adapted one. [Here it is](/research/beamerthemeRJH.sty) in case anyone else wants to use it. I've also made a [template](/research/postertemplate.tex) based on the poster above.

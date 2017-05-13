@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: true
 date: 2017-04-04 23:00:58+00:00
-link: http://robjhyndman.com/hyndsight/software-for-honours-students/
+link: https://robjhyndman.com/hyndsight/software-for-honours-students/
 slug: software-for-honours-students
 title: Software for honours students
 wordpress_id: 3690

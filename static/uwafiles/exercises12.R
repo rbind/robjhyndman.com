@@ -8,7 +8,7 @@ plot(forecast(fit))
 
 # Question 2
 
-gas <- read.csv("http://robjhyndman.com/data/gasoline.csv")[,1]
+gas <- read.csv("https://robjhyndman.com/data/gasoline.csv")[,1]
 gas <- ts(gas, start=1991+31/365.25, frequency = 365.25/7)
 fit <- tbats(gas)
 res <- residuals(fit)

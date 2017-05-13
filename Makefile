@@ -1,4 +1,4 @@
-### Build and deploy http://robjhyndman.com
+### Build and deploy https://robjhyndman.com
 
 all: serve
 

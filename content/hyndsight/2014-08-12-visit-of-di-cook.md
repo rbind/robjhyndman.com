@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-08-12 23:28:13+00:00
 
-link: http://robjhyndman.com/hyndsight/visit-of-di-cook/
+link: https://robjhyndman.com/hyndsight/visit-of-di-cook/
 slug: visit-of-di-cook
 title: Visit of Di Cook
 wordpress_id: 2850

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-08-09 12:57:05+00:00
 
-link: http://robjhyndman.com/hyndsight/interviews/
+link: https://robjhyndman.com/hyndsight/interviews/
 slug: interviews
 title: Interviews
 wordpress_id: 1932

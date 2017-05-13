@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-03-04 22:37:45+00:00
 
-link: http://robjhyndman.com/hyndsight/data-visualization/
+link: https://robjhyndman.com/hyndsight/data-visualization/
 slug: data-visualization
 title: Data visualization
 wordpress_id: 1767

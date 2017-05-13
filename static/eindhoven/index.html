@@ -398,14 +398,14 @@ Final comments, questions and discussion
 <h1>Lab sessions</h1>
 <p>Download the following two Rmarkdown files for recording your lab session exercises:</p>
 <ul>
-<li><a href="http://robjhyndman.com/eindhoven/Retail.Rmd"><code>Retail.Rmd</code></a></li>
-<li><a href="http://robjhyndman.com/eindhoven/OtherData.Rmd"><code>OtherData.Rmd</code></a></li>
+<li><a href="https://robjhyndman.com/eindhoven/Retail.Rmd"><code>Retail.Rmd</code></a></li>
+<li><a href="https://robjhyndman.com/eindhoven/OtherData.Rmd"><code>OtherData.Rmd</code></a></li>
 </ul>
 <p>Use these to record your answers to all lab session exercises. Use <code>Retail.Rmd</code> for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.</p>
 <div id="lab-session-1" class="section level2">
 <h2>Lab Session 1</h2>
 <ol style="list-style-type: decimal">
-<li><p>Download the <a href="http://robjhyndman.com/data/retail.xlsx">monthly Australian retail data</a>. These represent retail sales in various categories for different Australian states.</p></li>
+<li><p>Download the <a href="https://robjhyndman.com/data/retail.xlsx">monthly Australian retail data</a>. These represent retail sales in various categories for different Australian states.</p></li>
 <li><p>Read the data into R and choose <em>one</em> of the series. This time series will be used throughout the short course in lab sessions.</p>
 <p>Please script this, don’t just use the Rstudio click-and-point interface. That way you can save the results for easy replication later.</p>
 <p>You will need the <code>read_excel</code> function from the <code>readxl</code> package:</p>
@@ -676,7 +676,7 @@ accuracy.gts(forecast, test)</code></pre>
 <li>Have you saved any degrees of freedom by using Fourier terms rather than seasonal differencing?</li>
 </ol></li>
 <li><p>The following code will read weekly data on US finished motor gasoline products supplied (thousands of barrels per day):</p>
-<pre class="r"><code>gas &lt;- read.csv(&quot;http://robjhyndman.com/data/gasoline.csv&quot;)[,1]
+<pre class="r"><code>gas &lt;- read.csv(&quot;https://robjhyndman.com/data/gasoline.csv&quot;)[,1]
 gas &lt;- ts(gas, start=1991+31/365.25, frequency = 365.25/7)</code></pre>
 <ol style="list-style-type: lower-alpha">
 <li>Fit a <code>tbats</code> model to these data.</li>

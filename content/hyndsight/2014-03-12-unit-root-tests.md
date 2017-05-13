@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-12 11:22:45+00:00
 
-link: http://robjhyndman.com/hyndsight/unit-root-tests/
+link: https://robjhyndman.com/hyndsight/unit-root-tests/
 slug: unit-root-tests
 title: Unit root tests and ARIMA models
 wordpress_id: 2586

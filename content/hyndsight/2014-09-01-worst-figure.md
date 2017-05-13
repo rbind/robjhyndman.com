@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-09-01 05:03:22+00:00
 
-link: http://robjhyndman.com/hyndsight/worst-figure/
+link: https://robjhyndman.com/hyndsight/worst-figure/
 slug: worst-figure
 title: A new candidate for worst figure
 wordpress_id: 2879
@@ -20,7 +20,7 @@ Today I read a paper that had been submitted to the IJF which included the follo
 
 along with several similar plots. (Click for a larger version.) I haven't seen anything this bad for a long time. In fact, I think I would find it very difficult to reproduce using R, or even Excel (which is particularly adept at bad graphics).
 
-A few years ago I produced ["Twenty rules for good graphics"](http://robjhyndman.com/hyndsight/graphics/). I think I need to add a couple of additional rules:
+A few years ago I produced ["Twenty rules for good graphics"](https://robjhyndman.com/hyndsight/graphics/). I think I need to add a couple of additional rules:
 
 
 

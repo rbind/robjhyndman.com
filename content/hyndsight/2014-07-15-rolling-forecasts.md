@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-07-15 23:49:00+00:00
 
-link: http://robjhyndman.com/hyndsight/rolling-forecasts/
+link: https://robjhyndman.com/hyndsight/rolling-forecasts/
 slug: rolling-forecasts
 title: Variations on rolling forecasts
 wordpress_id: 2791
@@ -73,7 +73,7 @@ For multi-step forecasts, a loop is required. The following example computes 5-s
 
 
 
-An alternative approach is to extend the training data and re-estimate the model at each iteration, before each forecast is computed. This is what I call ["time series cross-validation"](http://robjhyndman.com/hyndsight/crossvalidation/) because it is analogous to leave-one-out cross-validation for cross-sectional data. This time, I will store the forecasts from 1- to 5-steps ahead at each iteration.
+An alternative approach is to extend the training data and re-estimate the model at each iteration, before each forecast is computed. This is what I call ["time series cross-validation"](https://robjhyndman.com/hyndsight/crossvalidation/) because it is analogous to leave-one-out cross-validation for cross-sectional data. This time, I will store the forecasts from 1- to 5-steps ahead at each iteration.
 
 
     

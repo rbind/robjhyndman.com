@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-02-27 22:29:29+00:00
 
-link: http://robjhyndman.com/hyndsight/invited-sessions-at-isf2017/
+link: https://robjhyndman.com/hyndsight/invited-sessions-at-isf2017/
 slug: invited-sessions-at-isf2017
 title: Invited sessions at ISF2017
 wordpress_id: 4043

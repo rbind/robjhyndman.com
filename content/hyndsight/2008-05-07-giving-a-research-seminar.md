@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-05-07 07:59:29+00:00
 
-link: http://robjhyndman.com/hyndsight/giving-a-research-seminar/
+link: https://robjhyndman.com/hyndsight/giving-a-research-seminar/
 slug: giving-a-research-seminar
 title: Giving a research seminar
 wordpress_id: 63

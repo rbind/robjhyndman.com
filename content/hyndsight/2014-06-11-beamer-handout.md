@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-06-11 01:29:22+00:00
 
-link: http://robjhyndman.com/hyndsight/beamer-handout/
+link: https://robjhyndman.com/hyndsight/beamer-handout/
 slug: beamer-handout
 title: Creating a handout from beamer slides
 wordpress_id: 2763
@@ -56,4 +56,4 @@ When the file is compiled, each slide should now be printable. But I want severa
 
 
 
-To see an example, here are [some slides](http://robjhyndman.com/talks/ElectricityForecasting_Switzerland1.pdf) from a talk I am giving in Switzerland, and here is [the handout](http://robjhyndman.com/talks/handout1a.pdf).
+To see an example, here are [some slides](https://robjhyndman.com/talks/ElectricityForecasting_Switzerland1.pdf) from a talk I am giving in Switzerland, and here is [the handout](https://robjhyndman.com/talks/handout1a.pdf).

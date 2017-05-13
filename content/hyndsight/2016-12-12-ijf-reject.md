@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-12-12 02:15:50+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-reject/
+link: https://robjhyndman.com/hyndsight/ijf-reject/
 slug: ijf-reject
 title: What is going on?
 wordpress_id: 3974

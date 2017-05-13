@@ -63,9 +63,9 @@ saveMovie(makeplot(),interval = 0.1, width = 580, height = 400)
 ani.options(oopt)
 ```
 
-![](http://robjhyndman.com/Rfiles/animation/animation.gif)
+![](https://robjhyndman.com/Rfiles/animation/animation.gif)
 
-For an explanation of the colours, see my [rainbow plot paper](http://robjhyndman.com/publications/rainbow-fda/).
+For an explanation of the colours, see my [rainbow plot paper](https://robjhyndman.com/publications/rainbow-fda/).
 
 The [animation package for R](http://cran.r-project.org/web/packages/animation/) also allows graphics to be saved in other formats. See [this post](https://yihui.name/animation/) for further explanation.
 

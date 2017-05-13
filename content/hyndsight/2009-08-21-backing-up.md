@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-08-21 03:33:30+00:00
 
-link: http://robjhyndman.com/hyndsight/backing-up/
+link: https://robjhyndman.com/hyndsight/backing-up/
 slug: backing-up
 title: Backing up
 wordpress_id: 420

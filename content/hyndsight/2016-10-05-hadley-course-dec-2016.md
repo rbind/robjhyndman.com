@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-10-05 19:53:39+00:00
 
-link: http://robjhyndman.com/hyndsight/hadley-course-dec-2016/
+link: https://robjhyndman.com/hyndsight/hadley-course-dec-2016/
 slug: hadley-course-dec-2016
 title: Hadley Wickham Master R Developer course coming to Melbourne
 wordpress_id: 3887

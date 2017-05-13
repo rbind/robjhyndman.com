@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-02-01 08:20:54+00:00
 
-link: http://robjhyndman.com/hyndsight/statistician-the-dream-job/
+link: https://robjhyndman.com/hyndsight/statistician-the-dream-job/
 slug: statistician-the-dream-job
 title: 'Statistician: the dream job'
 wordpress_id: 89

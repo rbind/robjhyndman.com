@@ -17,4 +17,4 @@ Nonparametric estimators of autocovariance functions for non-stationary time ser
 
 **Keywords:** bandwidth; correlated errors; kernel smoothing; local polynomial; nonparametric regression; non-stationary model; time series.
 
-**Data:** [Melbourne maximum temperatures](http://robjhyndman.com/tsdldata/data/melbmax.dat), [Kobe earthquake seismograph](http://robjhyndman.com/tsdldata/data/kobe.dat)
+**Data:** [Melbourne maximum temperatures](https://robjhyndman.com/tsdldata/data/melbmax.dat), [Kobe earthquake seismograph](https://robjhyndman.com/tsdldata/data/kobe.dat)

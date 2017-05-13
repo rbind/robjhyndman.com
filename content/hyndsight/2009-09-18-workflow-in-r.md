@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-09-18 03:21:33+00:00
 
-link: http://robjhyndman.com/hyndsight/workflow-in-r/
+link: https://robjhyndman.com/hyndsight/workflow-in-r/
 slug: workflow-in-r
 title: Workflow in R
 wordpress_id: 546

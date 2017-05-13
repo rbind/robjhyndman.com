@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-09-17 00:26:53+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/dailydata/
+link: https://robjhyndman.com/hyndsight/dailydata/
 slug: dailydata
 title: Forecasting with daily data
 wordpress_id: 2275

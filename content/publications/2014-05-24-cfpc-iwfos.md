@@ -20,4 +20,4 @@ online: https://books.google.com.au/books?hl=en&lr=&id=ssycAwAAQBAJ&oi=fnd&pg=PA
  We explore models for forecasting groups of functional time series data that exploit common features in the data. Our models involve fitting common (or partially common) functional principal component models and forecasting the coefficients using univariate time series methods. We illustrate our approach by forecasting age-specific mortality rates for males and females in Australia.
 
 
-**[Slides for talk](http://robjhyndman.com/talks/IWFOS-Hyndman.pdf)**
+**[Slides for talk](https://robjhyndman.com/talks/IWFOS-Hyndman.pdf)**

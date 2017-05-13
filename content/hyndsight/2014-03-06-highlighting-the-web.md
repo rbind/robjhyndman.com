@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-06 01:29:06+00:00
 
-link: http://robjhyndman.com/hyndsight/highlighting-the-web/
+link: https://robjhyndman.com/hyndsight/highlighting-the-web/
 slug: highlighting-the-web
 title: Highlighting the web
 wordpress_id: 2564

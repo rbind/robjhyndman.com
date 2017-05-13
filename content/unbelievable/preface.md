@@ -3,7 +3,7 @@ author: robjhyndman
 comments: false
 date: 2016-03-26 02:40:15+00:00
 image: lilies.resized.jpg
-link: http://robjhyndman.com/unbelievable/preface/
+link: https://robjhyndman.com/unbelievable/preface/
 slug: preface
 title: Preface
 wordpress_id: 16

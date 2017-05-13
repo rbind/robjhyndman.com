@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2008-06-15 07:51:36+00:00
-link: http://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/
+link: https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/
 slug: exponential-smoothing-and-non-negative-data
 title: Exponential smoothing and non-negative data
 wordpress_id: 214

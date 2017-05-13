@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-12-22 06:21:24+00:00
 
-link: http://robjhyndman.com/hyndsight/judgmental-forecasting-experiment/
+link: https://robjhyndman.com/hyndsight/judgmental-forecasting-experiment/
 slug: judgmental-forecasting-experiment
 title: Judgmental forecasting experiment
 wordpress_id: 2341

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-01 06:08:49+00:00
 
-link: http://robjhyndman.com/hyndsight/long-time-series/
+link: https://robjhyndman.com/hyndsight/long-time-series/
 slug: long-time-series
 title: Fitting models to long time series
 wordpress_id: 2531

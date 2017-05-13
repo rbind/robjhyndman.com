@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-08-27 07:45:07+00:00
 
-link: http://robjhyndman.com/hyndsight/data-science-for-managers-2015/
+link: https://robjhyndman.com/hyndsight/data-science-for-managers-2015/
 slug: data-science-for-managers-2015
 title: Data Science for Managers (short course)
 wordpress_id: 3355

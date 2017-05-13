@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-12-11 05:36:02+00:00
 
-link: http://robjhyndman.com/hyndsight/rstudio-just-keeps-getting-better/
+link: https://robjhyndman.com/hyndsight/rstudio-just-keeps-getting-better/
 slug: rstudio-just-keeps-getting-better
 title: RStudio just keeps getting better
 wordpress_id: 3471

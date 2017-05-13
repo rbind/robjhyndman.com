@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-02-11 11:09:59+00:00
 
-link: http://robjhyndman.com/hyndsight/consulting-groups/
+link: https://robjhyndman.com/hyndsight/consulting-groups/
 slug: consulting-groups
 title: Statistical consulting in Australia
 wordpress_id: 2068

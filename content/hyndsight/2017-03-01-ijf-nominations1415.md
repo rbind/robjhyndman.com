@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-03-01 03:54:34+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-nominations1415/
+link: https://robjhyndman.com/hyndsight/ijf-nominations1415/
 slug: ijf-nominations1415
 title: IJF Best Paper Award 2014-2015
 wordpress_id: 4051

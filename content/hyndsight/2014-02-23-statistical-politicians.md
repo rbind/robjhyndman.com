@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-23 23:42:05+00:00
 
-link: http://robjhyndman.com/hyndsight/statistical-politicians/
+link: https://robjhyndman.com/hyndsight/statistical-politicians/
 slug: statistical-politicians
 title: Statistical politicians
 wordpress_id: 2503

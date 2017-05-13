@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-03-10 00:10:28+00:00
 
-link: http://robjhyndman.com/hyndsight/learning-r-by-video/
+link: https://robjhyndman.com/hyndsight/learning-r-by-video/
 slug: learning-r-by-video
 title: Learning R by video
 wordpress_id: 720

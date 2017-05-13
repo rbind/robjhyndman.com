@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-04 12:05:19+00:00
 
-link: http://robjhyndman.com/hyndsight/monash-business-analytics/
+link: https://robjhyndman.com/hyndsight/monash-business-analytics/
 slug: monash-business-analytics
 title: New jobs in business analytics at Monash
 wordpress_id: 2720
@@ -98,6 +98,6 @@ The [official advertisement](http://jobs.monash.edu.au/jobDetails.asp?sJobIDs=52
 
 
 
-I've posted [answers to some questions about these jobs](http://robjhyndman.com/hyndsight/business-analytics-jobs-questions/).
+I've posted [answers to some questions about these jobs](https://robjhyndman.com/hyndsight/business-analytics-jobs-questions/).
 
 

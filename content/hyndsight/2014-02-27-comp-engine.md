@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-27 06:34:34+00:00
 
-link: http://robjhyndman.com/hyndsight/comp-engine/
+link: https://robjhyndman.com/hyndsight/comp-engine/
 slug: comp-engine
 title: More time series data online
 wordpress_id: 2527

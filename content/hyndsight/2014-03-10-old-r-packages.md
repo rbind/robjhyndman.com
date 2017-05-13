@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-10 04:02:25+00:00
 
-link: http://robjhyndman.com/hyndsight/old-r-packages/
+link: https://robjhyndman.com/hyndsight/old-r-packages/
 slug: old-r-packages
 title: Using old versions of R packages
 wordpress_id: 2580

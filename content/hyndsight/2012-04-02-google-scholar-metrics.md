@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-04-02 02:45:30+00:00
 
-link: http://robjhyndman.com/hyndsight/google-scholar-metrics/
+link: https://robjhyndman.com/hyndsight/google-scholar-metrics/
 slug: google-scholar-metrics
 title: Google scholar metrics
 wordpress_id: 1786

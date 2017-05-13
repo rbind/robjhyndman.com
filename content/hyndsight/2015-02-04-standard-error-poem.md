@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-02-04 06:43:19+00:00
 
-link: http://robjhyndman.com/hyndsight/standard-error-poem/
+link: https://robjhyndman.com/hyndsight/standard-error-poem/
 slug: standard-error-poem
 title: 'Standard error: a poem'
 wordpress_id: 3148

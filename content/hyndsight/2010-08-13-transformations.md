@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-08-13 04:22:21+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/transformations/
+link: https://robjhyndman.com/hyndsight/transformations/
 slug: transformations
 title: Transforming data with zeros
 wordpress_id: 900

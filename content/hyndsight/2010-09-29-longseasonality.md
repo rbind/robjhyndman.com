@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-09-29 05:38:51+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/longseasonality/
+link: https://robjhyndman.com/hyndsight/longseasonality/
 slug: longseasonality
 title: Forecasting with long seasonal periods
 wordpress_id: 978

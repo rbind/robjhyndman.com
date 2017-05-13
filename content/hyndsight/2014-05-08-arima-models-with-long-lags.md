@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-08 03:43:23+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/arima-models-with-long-lags/
+link: https://robjhyndman.com/hyndsight/arima-models-with-long-lags/
 slug: arima-models-with-long-lags
 title: ARIMA models with long lags
 wordpress_id: 2725

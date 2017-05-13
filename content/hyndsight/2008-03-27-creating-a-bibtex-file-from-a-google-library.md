@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-03-27 07:54:21+00:00
 
-link: http://robjhyndman.com/hyndsight/creating-a-bibtex-file-from-a-google-library/
+link: https://robjhyndman.com/hyndsight/creating-a-bibtex-file-from-a-google-library/
 slug: creating-a-bibtex-file-from-a-google-library
 title: Creating a BibTeX file from a Google Library
 wordpress_id: 57

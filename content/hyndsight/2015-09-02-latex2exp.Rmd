@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-09-02 07:17:08+00:00
 
-link: http://robjhyndman.com/hyndsight/latex2exp/
+link: https://robjhyndman.com/hyndsight/latex2exp/
 slug: latex2exp
 title: Mathematical annotations on R plots
 wordpress_id: 3360

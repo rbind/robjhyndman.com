@@ -39,7 +39,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 #Reference
 
 <a href="http://OTexts.org/fpp" target="_new">
-![alt text](http://robjhyndman.com/eindhoven/fppcover-small.jpg)
+![alt text](https://robjhyndman.com/eindhoven/fppcover-small.jpg)
 </a>
 
 #Need help with R?
@@ -183,14 +183,14 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 Download the following two Rmarkdown files for recording your lab session exercises:
 
- * [`Retail.Rmd`](http://robjhyndman.com/eindhoven/Retail.Rmd)
- * [`OtherData.Rmd`](http://robjhyndman.com/eindhoven/OtherData.Rmd)
+ * [`Retail.Rmd`](https://robjhyndman.com/eindhoven/Retail.Rmd)
+ * [`OtherData.Rmd`](https://robjhyndman.com/eindhoven/OtherData.Rmd)
  
 Use these to record your answers to all lab session exercises. Use `Retail.Rmd` for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.
 
 ##Lab Session 1
 
-1. Download the [monthly Australian retail data](http://robjhyndman.com/data/retail.xlsx). These represent retail sales in various categories for different Australian states.
+1. Download the [monthly Australian retail data](https://robjhyndman.com/data/retail.xlsx). These represent retail sales in various categories for different Australian states.
 
 2.  Read the data into R and choose *one* of the series. This time series will be used throughout the short course in lab sessions.
 
@@ -508,7 +508,7 @@ Use `thief()` on your retail data, using ARIMA models for each aggregation. Does
 2. The following code will read weekly data on US finished motor gasoline products supplied (thousands of barrels per day):
 
     ```r
-    gas <- read.csv("http://robjhyndman.com/data/gasoline.csv")[,1]
+    gas <- read.csv("https://robjhyndman.com/data/gasoline.csv")[,1]
     gas <- ts(gas, start=1991+31/365.25, frequency = 365.25/7)
     ```
 

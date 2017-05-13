@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-03-21 09:44:12+00:00
 
-link: http://robjhyndman.com/hyndsight/latex-preamble/
+link: https://robjhyndman.com/hyndsight/latex-preamble/
 slug: latex-preamble
 title: My standard LaTeX preamble
 wordpress_id: 737

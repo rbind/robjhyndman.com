@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-10-29 01:25:06+00:00
 
-link: http://robjhyndman.com/hyndsight/ysc2013-funding-support/
+link: https://robjhyndman.com/hyndsight/ysc2013-funding-support/
 slug: ysc2013-funding-support
 title: YSC2013 funding support
 wordpress_id: 1992

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-03-25 03:27:57+00:00
 
-link: http://robjhyndman.com/hyndsight/what-to-cite/
+link: https://robjhyndman.com/hyndsight/what-to-cite/
 slug: what-to-cite
 title: What to cite?
 wordpress_id: 3202
@@ -56,4 +56,4 @@ Check if the journal you are submitting to has published any related work in the
 
 
 
-I've written on this [elsewhere on this blog](http://robjhyndman.com/hyndsight/sight-what-you-cite/), so I won't repeat myself again. But please make sure you check everything you cite, and don't just copy references from other papers.
+I've written on this [elsewhere on this blog](https://robjhyndman.com/hyndsight/sight-what-you-cite/), so I won't repeat myself again. But please make sure you check everything you cite, and don't just copy references from other papers.

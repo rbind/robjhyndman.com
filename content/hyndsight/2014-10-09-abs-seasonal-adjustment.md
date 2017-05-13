@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-10-09 05:50:51+00:00
 
-link: http://robjhyndman.com/hyndsight/abs-seasonal-adjustment/
+link: https://robjhyndman.com/hyndsight/abs-seasonal-adjustment/
 slug: abs-seasonal-adjustment
 title: Seasonal adjustment in the news
 wordpress_id: 2981

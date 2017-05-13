@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-03-07 06:37:56+00:00
 
-link: http://robjhyndman.com/hyndsight/wombat-medascin-2017/
+link: https://robjhyndman.com/hyndsight/wombat-medascin-2017/
 slug: wombat-medascin-2017
 title: WOMBAT MeDaScIn 2017
 wordpress_id: 4025
@@ -13,7 +13,7 @@ categories:
 - seminars
 ---
 
-Last year we had [WOMBAT (Workshop Organized by the Monash Business Analytics Team)](http://robjhyndman.com/hyndsight/wombat2016/) at the zoo, and [MeDaScIn (Melbourne Data Science Initiative)](http://robjhyndman.com/hyndsight/medascin2016/) in the city.
+Last year we had [WOMBAT (Workshop Organized by the Monash Business Analytics Team)](https://robjhyndman.com/hyndsight/wombat2016/) at the zoo, and [MeDaScIn (Melbourne Data Science Initiative)](https://robjhyndman.com/hyndsight/medascin2016/) in the city.
 
 This year we are combining forces to hold [WOMBAT MeDaScIn 2017](http://www.datasciencemelbourne.com/medascin2017/).
 

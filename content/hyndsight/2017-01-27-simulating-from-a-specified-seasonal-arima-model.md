@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-01-27 05:13:22+00:00
 
-link: http://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/
+link: https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/
 slug: simulating-from-a-specified-seasonal-arima-model
 title: Simulating from a specified seasonal ARIMA model
 wordpress_id: 3989

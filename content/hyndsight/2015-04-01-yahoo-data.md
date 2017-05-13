@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-04-01 02:33:44+00:00
 
-link: http://robjhyndman.com/hyndsight/yahoo-data/
+link: https://robjhyndman.com/hyndsight/yahoo-data/
 slug: yahoo-data
 title: A new open source data set for detecting time series outliers
 wordpress_id: 3207

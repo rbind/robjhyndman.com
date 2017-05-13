@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-05-17 00:35:16+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-quality-indicators/
+link: https://robjhyndman.com/hyndsight/ijf-quality-indicators/
 slug: ijf-quality-indicators
 title: IJF quality indicators
 wordpress_id: 2195

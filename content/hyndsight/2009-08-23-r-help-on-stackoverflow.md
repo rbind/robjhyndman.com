@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-08-23 22:51:37+00:00
 
-link: http://robjhyndman.com/hyndsight/r-help-on-stackoverflow/
+link: https://robjhyndman.com/hyndsight/r-help-on-stackoverflow/
 slug: r-help-on-stackoverflow
 title: R help on StackOverflow
 wordpress_id: 428

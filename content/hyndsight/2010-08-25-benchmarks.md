@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-08-25 11:03:02+00:00
 
-link: http://robjhyndman.com/hyndsight/benchmarks/
+link: https://robjhyndman.com/hyndsight/benchmarks/
 slug: benchmarks
 title: Benchmarks for forecasting
 wordpress_id: 911

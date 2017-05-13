@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2006-07-30 10:07:53+00:00
 
-link: http://robjhyndman.com/hyndsight/useful-latex-links/
+link: https://robjhyndman.com/hyndsight/useful-latex-links/
 slug: useful-latex-links
 title: Useful LaTeX links
 wordpress_id: 317

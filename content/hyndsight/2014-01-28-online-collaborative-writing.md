@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-01-28 02:18:13+00:00
 
-link: http://robjhyndman.com/hyndsight/online-collaborative-writing/
+link: https://robjhyndman.com/hyndsight/online-collaborative-writing/
 slug: online-collaborative-writing
 title: Online collaborative writing
 wordpress_id: 787

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-04-22 23:16:50+00:00
 
-link: http://robjhyndman.com/hyndsight/thinking-big-at-yahoo/
+link: https://robjhyndman.com/hyndsight/thinking-big-at-yahoo/
 slug: thinking-big-at-yahoo
 title: Thinking big at Yahoo
 wordpress_id: 3241
@@ -16,7 +16,7 @@ categories:
 
 I'm speaking in the ["Yahoo Labs Big Thinkers" series on **Friday 26 June**](https://labs.yahoo.com/events/big-thinker-rob-hyndman-yahoo). I hope I can live up to the title!
 
-My talk is on _**"Exploring the boundaries of predictability: what can we forecast, and when should we give up?"**_  Essentially I will start with some of the [ideas in this post](http://robjhyndman.com/hyndsight/hardforecasts/), and then discuss the features of hard-to-forecast time series.
+My talk is on _**"Exploring the boundaries of predictability: what can we forecast, and when should we give up?"**_  Essentially I will start with some of the [ideas in this post](https://robjhyndman.com/hyndsight/hardforecasts/), and then discuss the features of hard-to-forecast time series.
 
 So if you're in the San Francisco Bay area, please come along. Otherwise, it will be streamed live on the Yahoo Labs website.<!-- more -->
 

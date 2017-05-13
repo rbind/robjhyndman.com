@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-08-28 10:21:58+00:00
 
-link: http://robjhyndman.com/hyndsight/rmarkdown-template/
+link: https://robjhyndman.com/hyndsight/rmarkdown-template/
 slug: rmarkdown-template
 title: Rmarkdown template for a Monash working paper
 wordpress_id: 3827
@@ -80,4 +80,4 @@ The following template will do the trick. Notice the figure labeling and referen
 
 You do need to install [rmarkdown from github](https://github.com/rstudio/rmarkdown) (the template will cause an error with the current CRAN version). You also need a recent version of LaTeX.
 
-The relevant files are in [this zip archive](http://robjhyndman.com/research/MonashWPtemplate.zip).  Use "Monashwp-rmd-template.Rmd" if you want to use Rmarkdown. Use "monashwp-template.tex" if you want to use LaTeX directly.
+The relevant files are in [this zip archive](https://robjhyndman.com/research/MonashWPtemplate.zip).  Use "Monashwp-rmd-template.Rmd" if you want to use Rmarkdown. Use "monashwp-template.tex" if you want to use LaTeX directly.

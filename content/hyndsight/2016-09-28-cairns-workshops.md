@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-09-28 15:25:44+00:00
 
-link: http://robjhyndman.com/hyndsight/cairns-workshops/
+link: https://robjhyndman.com/hyndsight/cairns-workshops/
 slug: cairns-workshops
 title: Call for forecasting workshops in Cairns, Australia
 wordpress_id: 3880

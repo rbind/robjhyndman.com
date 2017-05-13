@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-08-11 04:54:39+00:00
 
-link: http://robjhyndman.com/hyndsight/minimal-reproducible-examples/
+link: https://robjhyndman.com/hyndsight/minimal-reproducible-examples/
 slug: minimal-reproducible-examples
 title: Minimal reproducible examples
 wordpress_id: 2832

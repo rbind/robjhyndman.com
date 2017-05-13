@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-08-12 02:14:05+00:00
 
-link: http://robjhyndman.com/hyndsight/junkjournals/
+link: https://robjhyndman.com/hyndsight/junkjournals/
 slug: junkjournals
 title: Beware of junk journals and publishers
 wordpress_id: 1352

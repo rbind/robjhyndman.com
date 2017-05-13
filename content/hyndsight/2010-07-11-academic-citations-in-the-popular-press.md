@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-07-11 19:31:18+00:00
 
-link: http://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/
+link: https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/
 slug: academic-citations-in-the-popular-press
 title: Academic citations in the popular press
 wordpress_id: 863

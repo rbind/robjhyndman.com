@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-11-04 23:45:25+00:00
 
-link: http://robjhyndman.com/hyndsight/crossvalidated/
+link: https://robjhyndman.com/hyndsight/crossvalidated/
 slug: crossvalidated
 title: CrossValidated launched!
 wordpress_id: 1138

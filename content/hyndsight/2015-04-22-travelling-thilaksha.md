@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-04-22 07:23:45+00:00
 
-link: http://robjhyndman.com/hyndsight/travelling-thilaksha/
+link: https://robjhyndman.com/hyndsight/travelling-thilaksha/
 slug: travelling-thilaksha
 title: Travelling Thilaksha
 wordpress_id: 3238

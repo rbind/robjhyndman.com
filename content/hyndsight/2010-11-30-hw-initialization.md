@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-11-30 03:09:46+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/hw-initialization/
+link: https://robjhyndman.com/hyndsight/hw-initialization/
 slug: hw-initialization
 title: Initializing the Holt-Winters method
 wordpress_id: 1171
@@ -44,7 +44,7 @@ s_t &= \gamma(y_t/(\ell_{t-1} + b_{t-1})) + (1-\gamma)s_{t-m}\\
 
 In many books, the seasonal equation (with $s_t$ on the LHS) is slightly different from these, but I prefer the version above because it makes it easier to write the system in state space form. In practice, the modified form makes very little difference to the forecasts.
 
-In my [1998 textbook](http://robjhyndman.com/forecasting/), the following initialization was proposed. Set
+In my [1998 textbook](https://robjhyndman.com/forecasting/), the following initialization was proposed. Set
 
 <div>
 \begin{align}

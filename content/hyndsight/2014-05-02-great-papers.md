@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-05-02 03:14:33+00:00
 
-link: http://robjhyndman.com/hyndsight/great-papers/
+link: https://robjhyndman.com/hyndsight/great-papers/
 slug: great-papers
 title: Great papers to read
 wordpress_id: 2714

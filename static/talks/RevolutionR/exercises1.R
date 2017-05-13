@@ -2,7 +2,7 @@ library(fpp)
 
 # Question 1
 
-import <- read.csv("http://robjhyndman.com/data/tute1.csv")
+import <- read.csv("https://robjhyndman.com/data/tute1.csv")
 tute1 <- ts(import[,-1], start=1981, frequency=4)
 # First column removed because it contained dates. We don't need these as 
 # R handles dates within the ts class.

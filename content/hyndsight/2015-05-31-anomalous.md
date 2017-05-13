@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-05-31 05:59:52+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/anomalous/
+link: https://robjhyndman.com/hyndsight/anomalous/
 slug: anomalous
 title: A new R package for detecting unusual time series
 wordpress_id: 3283

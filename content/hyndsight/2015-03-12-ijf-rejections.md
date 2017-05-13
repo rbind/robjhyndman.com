@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-03-12 04:45:30+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-rejections/
+link: https://robjhyndman.com/hyndsight/ijf-rejections/
 slug: ijf-rejections
 title: Common reasons for rejection
 wordpress_id: 3176
@@ -50,7 +50,7 @@ Some papers will compare a few existing forecasting methods on one data set, and
 
 
 
-It is journal policy to encourage extensive empirical evaluations of any proposed forecasting methods. But I get papers every week proposing some new forecasting algorithm, and comparing it to two other closely related algorithms, on a very small number of time series. Any new proposal should be compared against the best available alternative methods, on enough data to be able to draw some conclusions. Comparisons on three carefully selected time series prove nothing. Comparisons against some slightly different alternative methods prove nothing. You must show that your method is better than the best available alternative methods, at least in some well-defined circumstances. I've written previously about [appropriate benchmarks](http://robjhyndman.com/hyndsight/benchmarks/).
+It is journal policy to encourage extensive empirical evaluations of any proposed forecasting methods. But I get papers every week proposing some new forecasting algorithm, and comparing it to two other closely related algorithms, on a very small number of time series. Any new proposal should be compared against the best available alternative methods, on enough data to be able to draw some conclusions. Comparisons on three carefully selected time series prove nothing. Comparisons against some slightly different alternative methods prove nothing. You must show that your method is better than the best available alternative methods, at least in some well-defined circumstances. I've written previously about [appropriate benchmarks](https://robjhyndman.com/hyndsight/benchmarks/).
 
 
 

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-03-18 04:55:11+00:00
 
-link: http://robjhyndman.com/hyndsight/dark-themes-for-writing/
+link: https://robjhyndman.com/hyndsight/dark-themes-for-writing/
 slug: dark-themes-for-writing
 title: Dark themes for writing
 wordpress_id: 3182
@@ -51,4 +51,4 @@ It is possible to save the scheme in a profile file, and then load it on another
 
 [![Screenshot from 2015-03-18 13:11:22](/files/Screenshot-from-2015-03-18-131122.png)](/files/Screenshot-from-2015-03-18-131122.png)
 
-Here is [the profile file](http://robjhyndman.com/download/rjh.txsprofile) that implements the above scheme. You should be able to load it in TeXstudio (after which you will need to re-start TeXstudio to see the effect).
+Here is [the profile file](https://robjhyndman.com/download/rjh.txsprofile) that implements the above scheme. You should be able to load it in TeXstudio (after which you will need to re-start TeXstudio to see the effect).

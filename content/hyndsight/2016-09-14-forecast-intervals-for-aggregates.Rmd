@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-09-14 14:44:50+00:00
 
-link: http://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/
+link: https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/
 slug: forecast-intervals-for-aggregates
 title: Forecast intervals for aggregates
 wordpress_id: 3869
@@ -19,7 +19,7 @@ If the point forecasts are means, then adding them up will give a good estimate 
 
 <!-- more -->
 
-I’ve previously posted [a trick using seasonal ARIMA models](http://robjhyndman.com/hyndsight/forecasting-annual-totals/) to do this. There is also Section 6.6 in my [2008 Springer book](http://www.exponentialsmoothing.net), deriving the analytical results for some ETS models.
+I’ve previously posted [a trick using seasonal ARIMA models](https://robjhyndman.com/hyndsight/forecasting-annual-totals/) to do this. There is also Section 6.6 in my [2008 Springer book](http://www.exponentialsmoothing.net), deriving the analytical results for some ETS models.
 
 But a more general solution, if you only need empirical results, is to use simulations.
 

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-02-24 22:55:11+00:00
 
-link: http://robjhyndman.com/hyndsight/omitting-outliers/
+link: https://robjhyndman.com/hyndsight/omitting-outliers/
 slug: omitting-outliers
 title: Omitting outliers
 wordpress_id: 3672

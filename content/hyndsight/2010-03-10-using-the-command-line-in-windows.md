@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-03-10 02:13:59+00:00
 
-link: http://robjhyndman.com/hyndsight/using-the-command-line-in-windows/
+link: https://robjhyndman.com/hyndsight/using-the-command-line-in-windows/
 slug: using-the-command-line-in-windows
 title: Using the command line in Windows
 wordpress_id: 727

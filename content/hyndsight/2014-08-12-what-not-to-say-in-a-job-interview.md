@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-08-12 11:48:33+00:00
 
-link: http://robjhyndman.com/hyndsight/what-not-to-say-in-a-job-interview/
+link: https://robjhyndman.com/hyndsight/what-not-to-say-in-a-job-interview/
 slug: what-not-to-say-in-a-job-interview
 title: What not to say in a job interview
 wordpress_id: 2845

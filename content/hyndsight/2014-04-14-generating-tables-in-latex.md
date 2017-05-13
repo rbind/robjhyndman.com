@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-04-14 23:23:58+00:00
 
-link: http://robjhyndman.com/hyndsight/generating-tables-in-latex/
+link: https://robjhyndman.com/hyndsight/generating-tables-in-latex/
 slug: generating-tables-in-latex
 title: Generating tables in LaTeX
 wordpress_id: 2670

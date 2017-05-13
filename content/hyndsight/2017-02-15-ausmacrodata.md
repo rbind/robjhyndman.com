@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2017-02-15 00:40:19+00:00
 
-link: http://robjhyndman.com/hyndsight/ausmacrodata/
+link: https://robjhyndman.com/hyndsight/ausmacrodata/
 slug: ausmacrodata
 title: The Australian Macro Database
 wordpress_id: 4010

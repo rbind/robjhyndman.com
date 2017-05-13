@@ -22,5 +22,5 @@ We consider modelling time series using a generalized additive model with first-
 
 **Keywords:** automatic forecasting, exponential smoothing, prediction intervals, state space models.
 
-**Data:** [Melbourne daily rainfall data](http://robjhyndman.com/tsdldata/data/rainfall.dat) (units of 0.1 mm)
+**Data:** [Melbourne daily rainfall data](https://robjhyndman.com/tsdldata/data/rainfall.dat) (units of 0.1 mm)
 

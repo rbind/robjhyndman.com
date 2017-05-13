@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-04-22 00:33:17+00:00
 
-link: http://robjhyndman.com/hyndsight/seven-forecasting-blogs/
+link: https://robjhyndman.com/hyndsight/seven-forecasting-blogs/
 slug: seven-forecasting-blogs
 title: Seven forecasting blogs
 wordpress_id: 2690

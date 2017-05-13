@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-12-09 21:27:30+00:00
 
-link: http://robjhyndman.com/hyndsight/fpp-downloads/
+link: https://robjhyndman.com/hyndsight/fpp-downloads/
 slug: fpp-downloads
 title: Who's downloading the forecast package?
 wordpress_id: 3455

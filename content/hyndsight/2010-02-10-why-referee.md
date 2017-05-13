@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-02-10 04:25:16+00:00
 
-link: http://robjhyndman.com/hyndsight/why-referee/
+link: https://robjhyndman.com/hyndsight/why-referee/
 slug: why-referee
 title: Why referee?
 wordpress_id: 700

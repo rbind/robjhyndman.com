@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2008-06-29 04:00:04+00:00
-link: http://robjhyndman.com/seminars/time-series-and-forecasting-in-r/
+link: https://robjhyndman.com/seminars/time-series-and-forecasting-in-r/
 slug: time-series-and-forecasting-in-r
 title: Time series and forecasting in R
 wordpress_id: 209

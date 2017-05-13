@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-06-11 03:18:34+00:00
 
-link: http://robjhyndman.com/hyndsight/use-fake-data-and-real-data/
+link: https://robjhyndman.com/hyndsight/use-fake-data-and-real-data/
 slug: use-fake-data-and-real-data
 title: Use fake data and real data
 wordpress_id: 821

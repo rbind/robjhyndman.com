@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-08-17 22:39:27+00:00
 
-link: http://robjhyndman.com/hyndsight/forecasting-the-recession/
+link: https://robjhyndman.com/hyndsight/forecasting-the-recession/
 slug: forecasting-the-recession
 title: Forecasting the recession
 wordpress_id: 417

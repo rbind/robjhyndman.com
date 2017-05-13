@@ -2,7 +2,7 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2015-10-06 05:49:18+00:00
-link: http://robjhyndman.com/seminars/optimal-forecast-reconciliation/
+link: https://robjhyndman.com/seminars/optimal-forecast-reconciliation/
 slug: optimal-forecast-reconciliation
 title: Optimal forecast reconciliation for big time series data
 wordpress_id: 3499

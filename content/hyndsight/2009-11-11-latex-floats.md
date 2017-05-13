@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-11-11 00:01:21+00:00
 
-link: http://robjhyndman.com/hyndsight/latex-floats/
+link: https://robjhyndman.com/hyndsight/latex-floats/
 slug: latex-floats
 title: Controlling figure and table placement in LaTeX
 wordpress_id: 652

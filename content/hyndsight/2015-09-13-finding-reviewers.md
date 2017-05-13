@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-09-13 10:50:16+00:00
 
-link: http://robjhyndman.com/hyndsight/finding-reviewers/
+link: https://robjhyndman.com/hyndsight/finding-reviewers/
 slug: finding-reviewers
 title: Advice to other journal editors
 wordpress_id: 3371

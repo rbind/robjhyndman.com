@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-07-24 02:03:01+00:00
 
-link: http://robjhyndman.com/hyndsight/coherent-population-forecasting/
+link: https://robjhyndman.com/hyndsight/coherent-population-forecasting/
 slug: coherent-population-forecasting
 title: Coherent population forecasting using R
 wordpress_id: 2816
@@ -45,7 +45,7 @@ The population and mortality data can be obtained from the [Human Mortality Data
 
 
 
-The fertility data for some countries is available on the [Human Fertility Database](http://www.humanfertility.org), but not for Australia. Instead, I have obtained the data from the Australian Bureau of Statistics and made them available in an R workspace (along with `pop2010` and `aus.mort`). [Download it here](http://robjhyndman.com/Rfiles/ausdata.RData).
+The fertility data for some countries is available on the [Human Fertility Database](http://www.humanfertility.org), but not for Australia. Instead, I have obtained the data from the Australian Bureau of Statistics and made them available in an R workspace (along with `pop2010` and `aus.mort`). [Download it here](https://robjhyndman.com/Rfiles/ausdata.RData).
 
 Now we can construct the net migration data as the differences between the populations in consecutive years, taking account of any deaths or births.
 

@@ -36,4 +36,4 @@ I spoke to our new crop of honours students this morning. Here are my slides, ex
 ### RMarkdown template
 
   * [RMarkdown](http://rmarkdown.rstudio.com/)
-  * [Monash honours thesis Rmarkdown template](http://robjhyndman.com/honours/RmarkdownThesis.zip)
+  * [Monash honours thesis Rmarkdown template](https://robjhyndman.com/honours/RmarkdownThesis.zip)

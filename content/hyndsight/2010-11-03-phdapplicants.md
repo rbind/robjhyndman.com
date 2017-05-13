@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-11-03 04:42:21+00:00
 
-link: http://robjhyndman.com/hyndsight/phdapplicants/
+link: https://robjhyndman.com/hyndsight/phdapplicants/
 slug: phdapplicants
 title: Advice to PhD applicants
 wordpress_id: 1132

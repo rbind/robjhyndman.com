@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-12-16 02:30:30+00:00
 
-link: http://robjhyndman.com/hyndsight/melburntalk/
+link: https://robjhyndman.com/hyndsight/melburntalk/
 slug: melburntalk
 title: Forecasting time series using R
 wordpress_id: 1404
@@ -17,8 +17,8 @@ I gave this talk on **_[Forecasting time series using R](http://www.meetup.com/M
 
 
 
-**[Slides](http://robjhyndman.com/talks/MelbourneRUG.pdf)**
-**[Examples](http://robjhyndman.com/talks/MelbourneRUGexamples.R)**
+**[Slides](https://robjhyndman.com/talks/MelbourneRUG.pdf)**
+**[Examples](https://robjhyndman.com/talks/MelbourneRUGexamples.R)**
 
 
 **Abstract**

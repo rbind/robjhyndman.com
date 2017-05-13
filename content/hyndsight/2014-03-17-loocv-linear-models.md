@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-03-17 10:08:42+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/loocv-linear-models/
+link: https://robjhyndman.com/hyndsight/loocv-linear-models/
 slug: loocv-linear-models
 title: Fast computation of cross-validation in linear models
 wordpress_id: 2598

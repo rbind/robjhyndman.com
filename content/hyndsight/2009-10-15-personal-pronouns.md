@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-10-15 00:49:34+00:00
 
-link: http://robjhyndman.com/hyndsight/personal-pronouns/
+link: https://robjhyndman.com/hyndsight/personal-pronouns/
 slug: personal-pronouns
 title: Using personal pronouns in research writing
 wordpress_id: 614

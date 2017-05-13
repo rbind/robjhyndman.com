@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-10-16 08:19:39+00:00
 
-link: http://robjhyndman.com/hyndsight/time-series-packages-on-r/
+link: https://robjhyndman.com/hyndsight/time-series-packages-on-r/
 slug: time-series-packages-on-r
 title: Time series packages on R
 wordpress_id: 87

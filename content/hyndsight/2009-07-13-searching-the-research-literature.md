@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-07-13 22:55:56+00:00
 
-link: http://robjhyndman.com/hyndsight/searching-the-research-literature/
+link: https://robjhyndman.com/hyndsight/searching-the-research-literature/
 slug: searching-the-research-literature
 title: Searching the research literature
 wordpress_id: 208
@@ -39,7 +39,7 @@ Sometimes, a more restrictive search is needed. Try one of these:
   * Statistics papers: [Current Index to Statistics](http://www.statindex.org/CIS/psqlQuery)
 
     
-  * Statistical books: [My Google library](http://robjhyndman.com/hyndsight/searching-the-statistical-literature/)
+  * Statistical books: [My Google library](https://robjhyndman.com/hyndsight/searching-the-statistical-literature/)
 
     
   * Econometrics papers: [IDEAS/RePEc](http://ideas.repec.org/)

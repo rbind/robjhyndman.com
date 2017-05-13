@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: false
 date: 2016-04-09 06:50:51+00:00
-link: http://robjhyndman.com/unbelievable/buy-book/
+link: https://robjhyndman.com/unbelievable/buy-book/
 slug: buy-book
 title: Buy book
 wordpress_id: 241

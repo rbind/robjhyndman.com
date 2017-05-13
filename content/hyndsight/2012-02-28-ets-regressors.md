@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-02-28 10:15:03+00:00
 
-link: http://robjhyndman.com/hyndsight/ets-regressors/
+link: https://robjhyndman.com/hyndsight/ets-regressors/
 slug: ets-regressors
 title: Exponential smoothing and regressors
 wordpress_id: 1759

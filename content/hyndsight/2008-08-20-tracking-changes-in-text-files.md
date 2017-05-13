@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-08-20 08:09:38+00:00
 
-link: http://robjhyndman.com/hyndsight/tracking-changes-in-text-files/
+link: https://robjhyndman.com/hyndsight/tracking-changes-in-text-files/
 slug: tracking-changes-in-text-files
 title: Tracking changes in text files
 wordpress_id: 76
@@ -15,7 +15,7 @@ A common issue that arises with text files (e.g., R code) is to identify changes
 
 I often need to know what changes have been made between successive versions. The best solution I've found is [Compare It!](http://www.grigsoft.com/wincmp3.htm). All I need to do is highlight the two files in Windows Explorer, right click and choose "Compare 2 files". Then a screen showing the differences appears. An example is given below.
 
-[![](http://robjhyndman.com/pics/compareit.jpg)](http://robjhyndman.com/pics/compareit.jpg)
+[![](https://robjhyndman.com/pics/compareit.jpg)](https://robjhyndman.com/pics/compareit.jpg)
 
 The bar on the left shows the parts of the file that have been changed. White background denotes unchanged lines.
 

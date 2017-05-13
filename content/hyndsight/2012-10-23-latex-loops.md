@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2012-10-23 01:48:47+00:00
 
-link: http://robjhyndman.com/hyndsight/latex-loops/
+link: https://robjhyndman.com/hyndsight/latex-loops/
 slug: latex-loops
 title: LaTeX loops
 wordpress_id: 1984

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-09-22 06:41:42+00:00
 
-link: http://robjhyndman.com/hyndsight/upcoming-talks-in-california/
+link: https://robjhyndman.com/hyndsight/upcoming-talks-in-california/
 slug: upcoming-talks-in-california
 title: Upcoming talks in California
 wordpress_id: 3386

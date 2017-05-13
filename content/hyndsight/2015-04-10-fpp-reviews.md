@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-04-10 04:43:14+00:00
 
-link: http://robjhyndman.com/hyndsight/fpp-reviews/
+link: https://robjhyndman.com/hyndsight/fpp-reviews/
 slug: fpp-reviews
 title: Feeling the FPP love
 wordpress_id: 3232
@@ -14,7 +14,7 @@ categories:
 - R
 ---
 
-It is now exactly 12 months since the print version of my [forecasting textbook](http://www.otexts.org/fpp) with George Athanasopoulos was [released on Amazon.com](http://robjhyndman.com/hyndsight/fpp-amazon/). Although the book is freely available online, it seems that a lot of people still like to buy print books.<!-- more -->
+It is now exactly 12 months since the print version of my [forecasting textbook](http://www.otexts.org/fpp) with George Athanasopoulos was [released on Amazon.com](https://robjhyndman.com/hyndsight/fpp-amazon/). Although the book is freely available online, it seems that a lot of people still like to buy print books.<!-- more -->
 
 It's nice to see that it has been getting some good reviews. It is rated 4.6 stars on [Amazon.com](http://www.amazon.com/dp/0987507109/&tag=otexts-20) with 6 out of 8 reviewers giving it 5 stars (the 3 reviewers on [Amazon.co.uk](http://www.amazon.co.uk/dp/0987507109/?tag=otexts-21) all gave it 5 stars).
 

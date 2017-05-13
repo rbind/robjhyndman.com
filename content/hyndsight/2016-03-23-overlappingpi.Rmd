@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-03-23 10:19:49+00:00
 
-link: http://robjhyndman.com/hyndsight/overlappingpi/
+link: https://robjhyndman.com/hyndsight/overlappingpi/
 slug: overlappingpi
 title: Plotting overlapping prediction intervals
 wordpress_id: 3695

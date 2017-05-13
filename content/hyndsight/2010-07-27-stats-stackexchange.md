@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-07-27 02:26:39+00:00
 
-link: http://robjhyndman.com/hyndsight/stats-stackexchange/
+link: https://robjhyndman.com/hyndsight/stats-stackexchange/
 slug: stats-stackexchange
 title: Statistical Analysis StackExchange site now available
 wordpress_id: 875

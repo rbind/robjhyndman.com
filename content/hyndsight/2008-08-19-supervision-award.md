@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-08-19 09:51:00+00:00
 
-link: http://robjhyndman.com/hyndsight/supervision-award/
+link: https://robjhyndman.com/hyndsight/supervision-award/
 slug: supervision-award
 title: Supervision award
 wordpress_id: 1045
@@ -30,7 +30,7 @@ Once the number of research students I supervise grew large enough, it became ap
 #### 2  Web page
 
 
-Students often spend a lot of time on the web trying to track down information about software or research papers, and do not always know where are the best places to look. To help with this process, I have developed a very extensive website [robjhyndman.com](http://robjhyndman.com/) with a large range of resources for my students. It provides advice on the best search engines to use for different types of searches, useful freeware, how to install some research software at Monash to avoid proxy problems, and so on. On most days, the page receives between 2000 and 3000 hits and so it obviously meets a need for other researchers as well as my own research team. Largely as a result of this website, I receive many requests from potential overseas students wanting to come to Monash.
+Students often spend a lot of time on the web trying to track down information about software or research papers, and do not always know where are the best places to look. To help with this process, I have developed a very extensive website [robjhyndman.com](https://robjhyndman.com/) with a large range of resources for my students. It provides advice on the best search engines to use for different types of searches, useful freeware, how to install some research software at Monash to avoid proxy problems, and so on. On most days, the page receives between 2000 and 3000 hits and so it obviously meets a need for other researchers as well as my own research team. Largely as a result of this website, I receive many requests from potential overseas students wanting to come to Monash.
 
 
 #### 3  Getting to Monash
@@ -54,7 +54,7 @@ Two key pieces of software in my area of research are R (for computational stati
 #### 6  Research blog
 
 
-After the research team had been in existence for a year, we found that we needed to address topics again as new people had joined. To avoid a lot of replication of work, I started a "Research tips" blog containing a summary of some of the key team discussions. This has become part of my web page at [robjhyndman.com](http://robjhyndman.com/) and provides a permanent record of some of our discussions for future reference. It also makes them available to researchers elsewhere. This has become quite widely used, with several entries having received over 1000 hits each.
+After the research team had been in existence for a year, we found that we needed to address topics again as new people had joined. To avoid a lot of replication of work, I started a "Research tips" blog containing a summary of some of the key team discussions. This has become part of my web page at [robjhyndman.com](https://robjhyndman.com/) and provides a permanent record of some of our discussions for future reference. It also makes them available to researchers elsewhere. This has become quite widely used, with several entries having received over 1000 hits each.
 
 
 #### 7  Seminar preparation

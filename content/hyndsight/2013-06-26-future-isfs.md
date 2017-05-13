@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-06-26 07:12:56+00:00
 
-link: http://robjhyndman.com/hyndsight/future-isfs/
+link: https://robjhyndman.com/hyndsight/future-isfs/
 slug: future-isfs
 title: Future ISFs
 wordpress_id: 2207

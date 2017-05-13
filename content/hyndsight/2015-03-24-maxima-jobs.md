@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-03-24 05:21:08+00:00
 
-link: http://robjhyndman.com/hyndsight/maxima-jobs/
+link: https://robjhyndman.com/hyndsight/maxima-jobs/
 slug: maxima-jobs
 title: New job opportunities at Monash
 wordpress_id: 3199

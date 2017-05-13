@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-07-21 05:20:56+00:00
 
-link: http://robjhyndman.com/hyndsight/why-word-is-a-bad-choice-for-academic-writing/
+link: https://robjhyndman.com/hyndsight/why-word-is-a-bad-choice-for-academic-writing/
 slug: why-word-is-a-bad-choice-for-academic-writing
 title: Why Word is a bad choice for academic writing
 wordpress_id: 280

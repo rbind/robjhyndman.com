@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-25 03:45:52+00:00
 mathjax: true
-link: http://robjhyndman.com/hyndsight/backtransforming/
+link: https://robjhyndman.com/hyndsight/backtransforming/
 slug: backtransforming
 title: The forecast mean after back-transformation
 wordpress_id: 2519
@@ -72,7 +72,7 @@ The blue line shows the forecast medians while the red line shows the forecast m
 
 
 
-In my [previous post on transformations](http://robjhyndman.com/hyndsight/forecasting-within-limits/), I described the scaled logit transformation for bounding a forecast between specified limits $a$ and $b$. In this case,
+In my [previous post on transformations](https://robjhyndman.com/hyndsight/forecasting-within-limits/), I described the scaled logit transformation for bounding a forecast between specified limits $a$ and $b$. In this case,
 $$f^{-1}(x) = \log\left(\frac{x-a}{b-x}\right)$$
 and so
 \begin{align}\nonumber

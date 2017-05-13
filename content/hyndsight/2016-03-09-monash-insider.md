@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-03-09 07:06:16+00:00
 
-link: http://robjhyndman.com/hyndsight/monash-insider/
+link: https://robjhyndman.com/hyndsight/monash-insider/
 slug: monash-insider
 title: Monash Business Analytics Team Profile
 wordpress_id: 3682

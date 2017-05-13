@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2016-05-12 02:04:00+00:00
 
-link: http://robjhyndman.com/hyndsight/ssa-jobs-board/
+link: https://robjhyndman.com/hyndsight/ssa-jobs-board/
 slug: ssa-jobs-board
 title: SSA helping you find a job
 wordpress_id: 3753

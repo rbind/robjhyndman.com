@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-08-31 01:41:19+00:00
 
-link: http://robjhyndman.com/hyndsight/econometrics-and-r/
+link: https://robjhyndman.com/hyndsight/econometrics-and-r/
 slug: econometrics-and-r
 title: Econometrics and R
 wordpress_id: 922

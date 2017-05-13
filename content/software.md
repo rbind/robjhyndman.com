@@ -30,7 +30,7 @@ This page provides links to R packages I have written. The most recent versions 
 : Functional data sets useful for testing new methods. [[CRAN](https://cran.r-project.org/package=fds)]
 
 [**fma**](https://github.com/robjhyndman/fma)
-: Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](http://robjhyndman.com/forecasting/) [[CRAN](https://cran.r-project.org/package=fma)]
+: Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cran.r-project.org/package=fma)]
 
 [**forecast**](https://github.com/robjhyndman/forecast)
 : Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cran.r-project.org/package=forecast)]
@@ -54,19 +54,19 @@ This page provides links to R packages I have written. The most recent versions 
 : The 1001 time series from the M-competition (Makridakis et al. 1982) and the 3003 time series from the IJF-M3 competition (Makridakis and Hibon, 2000). [[CRAN](https://cran.r-project.org/package=Mcomp)]
 
 [**MEFM**](https://github.com/robjhyndman/mefm-package)
-: A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](http://robjhyndman.com/publications/peak-electricity-demand/).
+: A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
 
 [**rainbow**](https://cran.r-project.org/package=rainbow)
 : Plots for functional data: rainbow plot, functional bagplot, functional HDR boxplot. [[CRAN](https://cran.r-project.org/package=rainbow)]
 
 [**smoothAPC**](https://bitbucket.org/alexanderdokumentov/smoothapcpackage)
-: Smoothing demographic data with period and cohort effects. The method uses bivariate thin plate splines, bivariate lasso-type regularization, and allows for both period and cohort effects. Thus the mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2014) Bivariate data with ridges: two-dimensional smoothing of mortality rates](http://robjhyndman.com/publications/mortality-smoothing/). [[CRAN](https://cran.r-project.org/package=smoothAPC)]
+: Smoothing demographic data with period and cohort effects. The method uses bivariate thin plate splines, bivariate lasso-type regularization, and allows for both period and cohort effects. Thus the mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2014) Bivariate data with ridges: two-dimensional smoothing of mortality rates](https://robjhyndman.com/publications/mortality-smoothing/). [[CRAN](https://cran.r-project.org/package=smoothAPC)]
 
 [**stR**](https://bitbucket.org/alexanderdokumentov/strpackage)
-: STR time series decomposition. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](http://robjhyndman.com/publications/str/). [[CRAN](https://cran.r-project.org/package=stR)]
+: STR time series decomposition. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cran.r-project.org/package=stR)]
 
 [**thief**](https://github.com/robjhyndman/thief)
-: Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](http://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cran.r-project.org/package=thief)]
+: Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cran.r-project.org/package=thief)]
 
 
 

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-01-05 09:33:04+00:00
 
-link: http://robjhyndman.com/hyndsight/seminars-in-taiwan/
+link: https://robjhyndman.com/hyndsight/seminars-in-taiwan/
 slug: seminars-in-taiwan
 title: Seminars in Taiwan
 wordpress_id: 3126

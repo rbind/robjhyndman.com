@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2011-12-23 04:39:02+00:00
 
-link: http://robjhyndman.com/hyndsight/bostonglobe/
+link: https://robjhyndman.com/hyndsight/bostonglobe/
 slug: bostonglobe
 title: Are we getting better at forecasting?
 wordpress_id: 1688

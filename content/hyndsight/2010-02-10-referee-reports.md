@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2010-02-10 04:06:38+00:00
 
-link: http://robjhyndman.com/hyndsight/referee-reports/
+link: https://robjhyndman.com/hyndsight/referee-reports/
 slug: referee-reports
 title: Writing a referee report
 wordpress_id: 692

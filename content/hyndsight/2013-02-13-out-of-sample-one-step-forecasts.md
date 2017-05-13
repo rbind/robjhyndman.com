@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-02-13 23:30:40+00:00
 
-link: http://robjhyndman.com/hyndsight/out-of-sample-one-step-forecasts/
+link: https://robjhyndman.com/hyndsight/out-of-sample-one-step-forecasts/
 slug: out-of-sample-one-step-forecasts
 title: Out-of-sample one-step forecasts
 wordpress_id: 2074

@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-04-09 02:42:40+00:00
 
-link: http://robjhyndman.com/hyndsight/paperpile/
+link: https://robjhyndman.com/hyndsight/paperpile/
 slug: paperpile
 title: Paperpile makes me more productive
 wordpress_id: 3219

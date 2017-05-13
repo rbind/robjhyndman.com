@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-04-04 02:00:38+00:00
 
-link: http://robjhyndman.com/hyndsight/latex-setup/
+link: https://robjhyndman.com/hyndsight/latex-setup/
 slug: latex-setup
 title: Getting a LaTeX system set up
 wordpress_id: 311

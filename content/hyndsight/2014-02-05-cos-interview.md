@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-02-05 00:00:22+00:00
 
-link: http://robjhyndman.com/hyndsight/cos-interview/
+link: https://robjhyndman.com/hyndsight/cos-interview/
 slug: cos-interview
 title: Interview for the Capital of Statistics
 wordpress_id: 2382

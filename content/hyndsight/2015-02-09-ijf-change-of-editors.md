@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2015-02-09 22:45:34+00:00
 
-link: http://robjhyndman.com/hyndsight/ijf-change-of-editors/
+link: https://robjhyndman.com/hyndsight/ijf-change-of-editors/
 slug: ijf-change-of-editors
 title: Thanks Paul and welcome Dilek
 wordpress_id: 3154
@@ -28,7 +28,7 @@ Today, there is a change in editors at the _International Journal of Forecasting
 
 There are five IJF editors:
 
-  1. [Rob Hyndman](http://robjhyndman.com) (Editor-in-Chief)
+  1. [Rob Hyndman](https://robjhyndman.com) (Editor-in-Chief)
   2. [Dick van Dijk](http://people.few.eur.nl/djvandijk/)
   3. [Graham Elliott](http://econweb.ucsd.edu/~gelliott/)
   4. [Dilek Önkal](http://onkal.bilkent.edu.tr/)

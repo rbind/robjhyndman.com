@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2014-12-05 12:05:33+00:00
 
-link: http://robjhyndman.com/hyndsight/prediction-competitions/
+link: https://robjhyndman.com/hyndsight/prediction-competitions/
 slug: prediction-competitions
 title: Prediction competitions
 wordpress_id: 3082

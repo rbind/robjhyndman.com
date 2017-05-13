@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2009-05-18 08:24:16+00:00
 
-link: http://robjhyndman.com/hyndsight/prediction-markets/
+link: https://robjhyndman.com/hyndsight/prediction-markets/
 slug: prediction-markets
 title: Prediction markets
 wordpress_id: 95

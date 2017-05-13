@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2008-09-03 08:18:19+00:00
 
-link: http://robjhyndman.com/hyndsight/latex-tips/
+link: https://robjhyndman.com/hyndsight/latex-tips/
 slug: latex-tips
 title: LaTeX tips
 wordpress_id: 85

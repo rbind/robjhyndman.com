@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-02-14 00:09:37+00:00
 
-link: http://robjhyndman.com/hyndsight/hyndsight/
+link: https://robjhyndman.com/hyndsight/hyndsight/
 slug: hyndsight
 title: Hyndsight
 wordpress_id: 2078

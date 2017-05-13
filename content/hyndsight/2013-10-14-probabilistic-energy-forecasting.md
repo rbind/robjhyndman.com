@@ -3,7 +3,7 @@ author: robjhyndman
 comments: true
 date: 2013-10-14 04:07:55+00:00
 
-link: http://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/
+link: https://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/
 slug: probabilistic-energy-forecasting
 title: Probabilistic Energy Forecasting
 wordpress_id: 2316
