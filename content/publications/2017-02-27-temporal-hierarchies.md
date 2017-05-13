@@ -1,11 +1,9 @@
 ---
 author: George Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman, Nikolaos Kourentzes, Fotios Petropoulos
 Status: Published
-comments: false
-date: 2017-02-27 20:20:56+00:00
+date: 2017-05-13
 slug: temporal-hierarchies
 title: Forecasting with temporal hierarchies
-wordpress_id: 3447
 kind:
  article
 tags:
@@ -13,7 +11,7 @@ tags:
 - hierarchical time series
 - seasonality
 - time series
-citation: <em>European Journal of Operational Research</em>, to appear
+citation: <em>European Journal of Operational Research</em>, <b>262</b>(1) 60–74
 file: temporalhierarchies.pdf
 doi: 10.1016/j.ejor.2017.02.046
 ---
