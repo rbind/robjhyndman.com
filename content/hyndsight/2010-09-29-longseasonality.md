@@ -28,50 +28,26 @@ where $N_t$ is an ARIMA process. The value of $K$ can be chosen by minimizing th
 
 This is easily fitted using R. Here is an example with $m=200$, $K=4$ and $N_t$ an ARIMA(2,0,1) process:
 
-
-    
-    
     n <- 2000
     m <- 200
     y <- ts(rnorm(n) + (1:n)%%100/30, f=m)
     
     library(forecast)
     fit <- Arima(y, order=c(2,0,1), xreg=fourier(y, K=4))
-    plot(forecast(fit, h=2*m, xreg=fourierf(y, K=4, h=2*m)))
+    plot(forecast(fit, h=2*m, xreg=fourier(y, K=4, h=2*m)))
     
-
-
-
 The advantages of this approach are:
 
-
-
-
- 
-  * it allows any length seasonality;
-
- 
-  * for data with more than one seasonal period, you can include Fourier terms of different frequencies;
-
- 
-  * the seasonal pattern is smooth for small values of $K$ (but more wiggly seasonality can be handled by increasing $K$);
-
- 
-  * the short-term dynamics are easily handled with a simple ARMA error.
-
-
+ * it allows any length seasonality;
+ * for data with more than one seasonal period, you can include Fourier terms of different frequencies;
+ * the seasonal pattern is smooth for small values of $K$ (but more wiggly seasonality can be handled by increasing $K$);
+ * the short-term dynamics are easily handled with a simple ARMA error.
 
 The only real disadvantage (compared to a seasonal ARIMA model) that I can think of is that the seasonality is assumed to be fixed --- the pattern is not allowed to change over time. But in practice, seasonality is usually remarkably constant so this is not a big disadvantage except for very long time series.
 
 The order of $N_t$ can also be chosen automatically:
 
-
-    
-    
     fit <- auto.arima(y, seasonal=FALSE, xreg=fourier(y, K=4))
-    
-
-
 
 Note that the ARIMA model for $N_t$ should be non-seasonal.
 
