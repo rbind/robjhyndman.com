@@ -1,17 +1,14 @@
 ---
 author: Souhaib Ben Taieb, Rob&nbsp;J&nbsp;Hyndman
-Status: Published
-comments: false
 date: 2014-01-09 23:00:22+00:00
 slug: boostingar
 title: Boosting multi-step autoregressive forecasts
-wordpress_id: 2376
 kind: conference
 tags:
 - boosting
 - forecasting
 - time series
-citation: International Conference on Machine Learning (ICML) 2014
+citation: Proceedings of the International Conference on Machine Learning (ICML), Beijing, China
 link: http://jmlr.org/proceedings/papers/v32/taieb14.html
 ---
 
