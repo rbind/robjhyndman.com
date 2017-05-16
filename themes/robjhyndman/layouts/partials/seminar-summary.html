@@ -1,6 +1,6 @@
 {{ $pub_kind := index .Params "kind" | default "unpublished" }}
-<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i> 
-{{ .Params.title | safeHTML }}. 
+<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i>
+{{ .Params.title | safeHTML }}.
 {{ if isset .Params "citation" }}
 {{.Params.citation | safeHTML }}.
 {{ end }}

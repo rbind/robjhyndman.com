@@ -28,6 +28,12 @@
 	{{ end }}
       </div>
       <div class="pub-content">{{ .Content }}</div>
+      {{ if .Params.youtube }}
+        <div class="embed video-player" style="padding-bottom: 4ex;">
+          <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/{{ .Params.youtube }}" allowfullscreen frameborder="0">
+          </iframe>
+        </div>
+      {{ end }}
       {{ if .Params.speakerdeck }}
         <div id='speakerdeck'>
         <p><script async class="speakerdeck-embed" data-id="{{ .Params.speakerdeck }}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

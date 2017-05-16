@@ -6,7 +6,7 @@ excerpt: Talk given at the ACEMS Big data workshop, QUT.
 link: https://robjhyndman.com/seminars/big-time-series-data/
 slug: big-time-series-data
 title: Visualization and forecasting of big time series data
-wordpress_id: 2858
+youtube: F0Xt_pvXVjI
 slideshare: v76xMajDooO2UO
 tags:
 - forecasting

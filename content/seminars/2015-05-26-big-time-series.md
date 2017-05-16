@@ -1,13 +1,10 @@
 ---
 author: Rob&nbsp;J&nbsp;Hyndman
-comments: false
 date: 2015-05-26 03:51:03+00:00
 excerpt: Talk given to a joint meeting of the Statistical Society of Australia (Victorian
   branch) and the Melbourne Data Science Meetup Group.
-link: https://robjhyndman.com/seminars/big-time-series/
 slug: big-time-series
 title: Visualization of big time series data
-wordpress_id: 2918
 slideshare: G2EWjeJA9hMEUP
 tags:
 - forecasting
