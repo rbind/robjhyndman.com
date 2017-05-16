@@ -13,7 +13,7 @@ The following bio and photos may be used in media releases without further permi
   [high-res](/pics/RobHyndman-highres.jpg).
 
 
-<h4><a href="/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a> <a href="/RobHyndmanCV.pdf">Curriculum Vitae</a> &nbsp; </h4>
+<h4><a href="https://github.com/robjhyndman/CV/raw/master/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a> <a href="https://github.com/robjhyndman/CV/raw/master/RobHyndmanCV.pdf">Curriculum Vitae</a> &nbsp; </h4>
 
 
 <ul class="fa-ul">
