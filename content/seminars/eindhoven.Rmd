@@ -1,6 +1,8 @@
 ---
-title: "Forecasting Using R"
+title: "Forecasting Using R (Eindhoven)"
 slug: eindhoven
+aliases:
+  - /eindhoven/
 subtitle: "EURANDOM-SIKS Masterclass"
 author: "Rob J Hyndman"
 date: 2016-10-19
@@ -21,7 +23,7 @@ Please bring your own laptop with a recent version of R installed, along with th
   * `thief`
   * `knitr`
 
-Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed. 
+Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
 
 ##Reference
 
@@ -123,7 +125,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td><a href="/eindhoven/2-5-SeasonalARIMA.pdf" target="_new">Slides</a></td>
 </tr>
 </table>
- 
+
 
 ###Friday 21 October
 
@@ -172,7 +174,7 @@ Download the following two Rmarkdown files for recording your lab session exerci
 
  * [`Retail.Rmd`](/eindhoven/Retail.Rmd)
  * [`OtherData.Rmd`](/eindhoven/OtherData.Rmd)
- 
+
 Use these to record your answers to all lab session exercises. Use `Retail.Rmd` for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.
 
 ###Lab Session 1
@@ -258,7 +260,7 @@ For your retail time series:
 
 3. Calculate forecasts using `snaive` applied to `x1`.
 
-4. Compare the accuracy of your forecasts against the actual values stored in `x2`. 
+4. Compare the accuracy of your forecasts against the actual values stored in `x2`.
 
     ```r
     f1 <- snaive(x1)
@@ -285,7 +287,7 @@ We will use the `bricksq` data for this exercise.
   1. Use an STL decomposition to calculate the trend-cycle and seasonal indices. (Experiment with having fixed or changing seasonality.)
   2. Compute and plot the seasonally adjusted data.
   3. Use a naïve method to produce forecasts of the seasonally adjusted data.
-  4. Reseasonalize the results to give forecasts on the original scale.<br> 
+  4. Reseasonalize the results to give forecasts on the original scale.<br>
     [Hint: use the `stlf` function with `method="naive"`.]
   5. Do the residuals look uncorrelated?
   6. Repeat with a robust STL decomposition. Does it make much difference?
@@ -306,7 +308,7 @@ from 1900–1993 (data set `eggs`).
 1. Now we will apply Holt-Winters' multiplicative method to your retail time series data.
 
     * Why is multiplicative seasonality necessary here?
-    * Experiment with making the trend damped. 
+    * Experiment with making the trend damped.
     * Compare the RMSE of the one-step forecasts from the two methods. Which do you prefer?
     * Check that the residuals from the best method look like white noise.
 
@@ -314,7 +316,7 @@ from 1900–1993 (data set `eggs`).
 
 ###Lab Session 8
 
-1. Use `ets()` to find the best ETS model for your retail data. 
+1. Use `ets()` to find the best ETS model for your retail data.
 
     * How does this model compare to the Holt-Winters' method you applied in the previous lab session?
     * What do the smoothing parameters tell you about the trend and seasonality?
@@ -325,13 +327,13 @@ from 1900–1993 (data set `eggs`).
      bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose, eggs, bricksq, ausbeer
     ```
 
-    Does it always give good forecasts? 
+    Does it always give good forecasts?
 
 3. Find an example where it does not work well. Can you figure out why?
 
 ###Lab Session 9
 
-1. For the following series, find an appropriate Box-Cox transformation in order to stabilize the variance. 
+1. For the following series, find an appropriate Box-Cox transformation in order to stabilize the variance.
 
     * `usnetelec`
     * `usgdp`
@@ -354,7 +356,7 @@ from 1900–1993 (data set `eggs`).
     * `enplanements`
     * `visitors`
 
-2. For your retail data, find the appropriate order of differencing (after transformation if necessary) to obtain stationary data. 
+2. For your retail data, find the appropriate order of differencing (after transformation if necessary) to obtain stationary data.
 
 ###Lab Session 11
 
@@ -369,7 +371,7 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
 
 ###Lab Session 12
 
-1. For your retail time series, develop an appropriate seasonal ARIMA model, and compare the forecasts with those you obtained earlier. 
+1. For your retail time series, develop an appropriate seasonal ARIMA model, and compare the forecasts with those you obtained earlier.
 
 2. Obtain up-to-date retail data from the [ABS website (Cat. 8501.0, Table 11)](https://goo.gl/HdrV0G), and compare your forecasts with the actual numbers. How good were the forecasts from the various models?
 
@@ -386,8 +388,8 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
 
 1. For this exercise, we will continue to use your retail data.
 
-  * Use `ets` to find the best model for these data and record the training set RMSE. 
-  * We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the 
+  * Use `ets` to find the best model for these data and record the training set RMSE.
+  * We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the
  result, beginning with four years of data in the training set. Replace `???` with the appropriate values for your ETS model.
 
     ```r
@@ -399,14 +401,14 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
       train <- ts(mytimeseries[1:i],freq=12)
       fit <- ets(train, model=???, damped=???)
       fc <- forecast(fit,h=1)$mean
-      e[i] <- mytimeseries[i+1]-fc  
+      e[i] <- mytimeseries[i+1]-fc
     }
     sqrt(mean(e^2,na.rm=TRUE))
     ```
 
  * What would happen in the above loop if I had set `train <- mytimeseries[1:i]`?
 
- * Plot `e` using `ggtsdisplay`. Do they look uncorrelated and homoscedastic? 
+ * Plot `e` using `ggtsdisplay`. Do they look uncorrelated and homoscedastic?
 
  * In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `ets` to select a different model each time through the loop. Calculate the RMSE using this approach. (Warning: it will take a while as there are a lot of models to fit.)
 
@@ -420,7 +422,7 @@ For your retail time series:
 * Check the residuals of the fitted model. Does the residual series look like white noise?
 * Compare the forecasts with those you obtained earlier using alternative models.
 
-<!-- 
+<!--
 ##Lab Session 15
 
 * This exercise concerns the total monthly takings from accommodation and the total room nights occupied at hotels, motels, and guest houses in Victoria, Australia, between January 1980 and June 1995 (Data set `motel`). Total monthly takings are in thousands of Australian dollars; total room nights occupied are in thousands.
@@ -431,7 +433,7 @@ For your retail time series:
 
 * Produce time series plots of both variables and explain why logarithms of both variables need to be taken before fitting any models.
 
-* Fit an appropriate regression model with ARIMA errors. 
+* Fit an appropriate regression model with ARIMA errors.
 
 * Forecast the average price per room for the next twelve months using your fitted model. (Hint: You will need to produce forecasts of the CPI figures first.)
  -->
