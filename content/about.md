@@ -5,7 +5,7 @@ title: "About me"
 
 The following bio and photos may be used in media releases without further permission.
 
->**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. His recent consulting work has involved forecasting electricity demand, tourism demand, the Australian government health budget and case volume at a US call centre.
+>**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
 
 **Photos:**
   [low-res](/pics/vintage.png)
@@ -59,7 +59,7 @@ I am a member of the following organizations:
 
 ## Things I've started
 
-  * **[CrossValidated.com](http://crossvalidated.com)**: a Q&A site for questions on statistics modelling, machine learning, data analysis, data visualization, etc. (Further information in [this interview](http://magazine.amstat.org/blog/2011/12/01/qasitedec11/">this interview).
+  * **[CrossValidated.com](http://crossvalidated.com)**: a Q&A site for questions on statistics modelling, machine learning, data analysis, data visualization, etc. (Further information in [this interview](http://magazine.amstat.org/blog/2011/12/01/qasitedec11/).
   * **[Time Series Data Library](http://data.is/TSDLdemo)**: About 800 time series, including data from many time series textbooks. Now hosted on <a href="http://datamarket.com/">DataMarket</a>. (Further information in this <a href="/hyndsight/tsdl/">blog post</a>.)</li>
 </ul>
 
