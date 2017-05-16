@@ -45,7 +45,7 @@ pubs_count = 4
   site = "Twitter"
 
 [[params.social]]
-  icon = "github"
+  icon = "github-alt"
   icon_pack = "fa"
   link = "https://github.com/robjhyndman/"
   text = "robjhyndman"

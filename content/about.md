@@ -17,10 +17,10 @@ The following bio and photos may be used in media releases without further permi
 
 
 <ul class="fa-ul">
-  <li><i class="fa-li fa fa-github" style="padding-top:3px;"></i><a href="https://github.com/robjhyndman">robjhyndman on GitHub</a></li>
-  <li><i class="fa-li ai ai-google-scholar" style="padding-top:3px;"></i><a href="https://scholar.google.co.uk/citations?user=vamErfkAAAAJ">Google Scholar</a></li>
-  <li><a href="http://en.wikipedia.org/wiki/Rob_J._Hyndman">Wikipedia page</a></li>
-  <li><a href="http://ideas.repec.org/e/phy3.html">REPEC page</a></li>
+  <li><a href="https://github.com/robjhyndman"><i class="fa-li fa fa-github-alt" style="padding-top:3px;"></i>robjhyndman on GitHub</a></li>
+  <li><a href="https://scholar.google.co.uk/citations?user=vamErfkAAAAJ"><i class="fa-li ai ai-google-scholar" style="padding-top:3px;"></i>Google Scholar</a></li>
+  <li><a href="http://en.wikipedia.org/wiki/Rob_J._Hyndman"><i class="fa-li fa fa-wikipedia-w" style="padding-top:3px;"></i>Wikipedia page</a></li>
+  <li><a href="http://ideas.repec.org/e/phy3.html"><i class="fa-li fa fa-lightbulb-o" style="padding-top:3px;"></i>RePEc page</a></li>
 </ul>
 
 
