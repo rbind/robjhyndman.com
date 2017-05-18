@@ -1,16 +1,12 @@
 ---
-author: robjhyndman
-comments: true
 date: 2014-04-14 23:23:58+00:00
-
-link: https://robjhyndman.com/hyndsight/generating-tables-in-latex/
 slug: generating-tables-in-latex
 title: Generating tables in LaTeX
-wordpress_id: 2670
 categories:
 - computing
 - LaTeX
 - productivity
+- tables
 ---
 
 Typing tables in LaTeX can get messy, but there are some good tools to simplify the process. One I discovered this week is [tablesgenerator.com](http://www.tablesgenerator.com), a web-based tool for generating LaTeX tables. It also allows the table to saved in other formats including HTML and Markdown. The interface is simple, but it does most things. For complicated tables, some additional formatting may be necessary.<!-- more -->
