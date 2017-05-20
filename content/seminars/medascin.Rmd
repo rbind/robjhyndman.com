@@ -1,0 +1,143 @@
+---
+title: "Time Series in R, Forecasting and Visualisation"
+slug: medascin
+aliases:
+  - /medascin/
+subtitle: "MeDaScin 2017"
+author: "Rob J Hyndman & Earo Wang"
+date: 2017-05-29
+---
+
+
+**Date**: 29 May 2017<br>
+**Location**: KPMG, Tower Two, Collins Square, 727 Collins ST, Melbourne
+
+##Prerequisites
+
+Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:
+
+  * `fpp2`
+  * `tidyverse`, `plotly`, `stringr`, `forcats`, `lubridate`, `broom`, `zoo`, `shiny`, `devtools`
+  * `knitr`
+
+Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
+
+##Reference
+
+<a href="http://OTexts.org/fpp" target="_new">
+![alt text](/eindhoven/fppcover-small.jpg)
+</a>
+
+##Need help with R?
+
+* [Base R cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf)
+* [Datacamp: Introduction to R course](https://www.datacamp.com/courses/free-introduction-to-r)
+* [Help with Rmarkdown](http://rmarkdown.rstudio.com/lesson-2.html)
+* [Rmarkdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+##Program
+
+###29 May
+
+<table border=1 cellpadding=2 cellspacing=5 width=100%>
+<col width="15%">
+<col width="70%">
+<col width="15%">
+<tr>
+  <td>08.30 - 09.00</td>
+  <td>Registration and welcome</td>
+</tr>
+  <td>09.00 - 10.30</td>
+  <td>Time series and R, Time series graphics</td>
+  <td><a href="/eindhoven/1-1-Graphics.pdf" target="_new">Slides</a></td>
+</tr>
+<tr>
+  <td>10.30 - 11.00</td>
+  <td><em>Morning tea</em></td>
+</tr>
+<tr>
+  <td>11.00 - 12.30</td>
+  <td>Visualising temporal data</td>
+  <td><a href="http://earo.me/slides/medascin17/" target="_new">Slides</a></td>
+</tr>
+<tr>
+  <td>12.30 - 13.30</td>
+  <td><em>Lunch</em></td>
+</tr>
+<tr>
+  <td>13.30 - 15.00</td>
+  <td>Seasonality and trends</td>
+  <td><a href="/eindhoven/1-3-Seasonality.pdf" target="_new">Slides</a></td>
+</tr>
+<tr>
+  <td>15.00 - 15.30</td>
+  <td><em>Afternoon tea</em></td>
+</tr>
+<tr>
+  <td>15.30 - 17.00</td>
+  <td>Exponential smoothing</td>
+  <td><a href="/eindhoven/1-4-ExponentialSmoothing.pdf" target="_new">Slides</a></td>
+</tr>
+</table>
+
+##Lab sessions
+
+Download the following two Rmarkdown files for recording your lab session exercises:
+
+ * [`Retail.Rmd`](/eindhoven/Retail.Rmd)
+ * [`OtherData.Rmd`](/eindhoven/OtherData.Rmd)
+
+Use these to record your answers to all lab session exercises. Use `Retail.Rmd` for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.
+
+###Lab Session 1
+
+1. Download the [monthly Australian retail data](https://robjhyndman.com/data/retail.xlsx). These represent retail sales in various categories for different Australian states.
+
+2.  Read the data into R and choose *one* of the series. This time series will be used throughout the short course in lab sessions.
+
+    Please script this, don't just use the Rstudio click-and-point interface. That way you can save the results for easy replication later.
+
+    You will need the `read_excel` function from the `readxl` package:
+
+    ```r
+    retaildata <- readxl::read_excel("retail.xlsx", skip = 1)
+    mytimeseries <- ts(retaildata[["A3349873A"]], frequency=12, start=c(1982,4))
+    autoplot(mytimeseries)
+    ```
+
+    [Replace the column name with your own chosen column.]
+
+###Lab Session 2
+
+  1. The following graphics functions have been introduced:
+
+    ```r
+    autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
+    ```
+
+    Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+
+  2. Repeat for some of the following series:
+
+    ```r
+    bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose
+    ```
+
+    Use the help files to find out what the series are.
+
+###Lab Session 3
+
+Download [the `Rmd` file](http://earo.me/lab/medascin17/lab3.Rmd) for this lab session.
+
+1. Download the [billboard data](http://earo.me/data/medascin17/billboard.csv). The `billboard` dataset contains the date a song first entered the Billboard Top 100 in 2000 and its rank over 76 weeks.
+2. Read the dataset into R and take a look at the data.
+3. Transform the data to the long data form named as `billboard_long`.
+4. [Bonus] Split the `billboard_long` to two separate datasets as `song` and `rank`. The `song` data will include `artist`, `track`, `time` and a new column called `id` assigning a unique identifier for each song. The `rank` data will include the `id`, `date`, `week`, `rank` columns. The `id` column is the key variable that maintains the linking between two datasets.
+
+###Lab Session 4
+
+Download [the `Rmd` file](http://earo.me/lab/medascin17/lab4.Rmd) for this lab session.
+
+1. Download the [weather data](http://earo.me/data/medascin17/weather_2016.csv). The `weather` dataset contains the date a song first entered the Billboard Top 100 in 2000 and its rank over 75 weeks.
+2. Read the dataset into R and tidy it up for visualising with `ggplot2` later.
+3. Write some `ggplot2` code to reproduce the plot shown on the slides.
