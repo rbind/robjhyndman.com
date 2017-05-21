@@ -1,16 +1,15 @@
 ---
-title: "Time Series in R, Forecasting and Visualisation"
-slug: medascin
-aliases:
-  - /medascin/
-subtitle: "MeDaScin 2017"
+title: "Time Series in R: Forecasting and Visualisation"
+slug: forecasting-medascin
 author: "Rob J Hyndman & Earo Wang"
 date: 2017-05-29
 ---
 
+This is a one-day workshop given as part of the [Melbourne Data Science Week](http://www.datasciencemelbourne.com/medascin2017/).
 
 **Date**: 29 May 2017<br>
-**Location**: KPMG, Tower Two, Collins Square, 727 Collins ST, Melbourne
+**Presenters**: Rob J Hyndman and Earo Wang<br>
+**Location**: KPMG, Tower Two, Collins Square, 727 Collins St, Melbourne
 
 ##Prerequisites
 
@@ -24,7 +23,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 ##Reference
 
-<a href="http://OTexts.org/fpp" target="_new">
+<a href="http://OTexts.org/fpp2/" target="_new">
 ![alt text](/eindhoven/fppcover-small.jpg)
 </a>
 
@@ -37,8 +36,6 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 ##Program
 
-###29 May
-
 <table border=1 cellpadding=2 cellspacing=5 width=100%>
 <col width="15%">
 <col width="70%">
@@ -48,8 +45,9 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td>Registration and welcome</td>
 </tr>
   <td>09.00 - 10.30</td>
-  <td>Time series and R, Time series graphics</td>
-  <td><a href="/eindhoven/1-1-Graphics.pdf" target="_new">Slides</a></td>
+  <td><b>Time series and R, Time series graphics</b><br>
+  <a href="#Lab1">Lab Sessions 1-2</a></td>
+  <td><a href="" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>10.30 - 11.00</td>
@@ -57,7 +55,8 @@ Participants will be assumed to be familiar with basic statistical tools such as
 </tr>
 <tr>
   <td>11.00 - 12.30</td>
-  <td>Visualising temporal data</td>
+  <td><b>Visualising temporal data</b><br>
+  <a href="#Lab3">Lab Sessions 3-4</a></td>
   <td><a href="http://earo.me/slides/medascin17/" target="_new">Slides</a></td>
 </tr>
 <tr>
@@ -66,8 +65,8 @@ Participants will be assumed to be familiar with basic statistical tools such as
 </tr>
 <tr>
   <td>13.30 - 15.00</td>
-  <td>Seasonality and trends</td>
-  <td><a href="/eindhoven/1-3-Seasonality.pdf" target="_new">Slides</a></td>
+  <td><b>Some automatic forecasting algorithms</b></td>
+  <td><a href="" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>15.00 - 15.30</td>
@@ -75,8 +74,8 @@ Participants will be assumed to be familiar with basic statistical tools such as
 </tr>
 <tr>
   <td>15.30 - 17.00</td>
-  <td>Exponential smoothing</td>
-  <td><a href="/eindhoven/1-4-ExponentialSmoothing.pdf" target="_new">Slides</a></td>
+  <td><b>Forecast evaluation</b></td>
+  <td><a href="" target="_new">Slides</a></td>
 </tr>
 </table>
 
@@ -88,6 +87,8 @@ Download the following two Rmarkdown files for recording your lab session exerci
  * [`OtherData.Rmd`](/eindhoven/OtherData.Rmd)
 
 Use these to record your answers to all lab session exercises. Use `Retail.Rmd` for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.
+
+<a name="Lab1"></a>
 
 ###Lab Session 1
 
@@ -107,6 +108,8 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
     [Replace the column name with your own chosen column.]
 
+<a name="Lab2"></a>
+
 ###Lab Session 2
 
   1. The following graphics functions have been introduced:
@@ -125,6 +128,8 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
     Use the help files to find out what the series are.
 
+<a name="Lab3"></a>
+
 ###Lab Session 3
 
 Download [the `Rmd` file](http://earo.me/lab/medascin17/lab3.Rmd) for this lab session.
@@ -133,6 +138,8 @@ Download [the `Rmd` file](http://earo.me/lab/medascin17/lab3.Rmd) for this lab s
 2. Read the dataset into R and take a look at the data.
 3. Transform the data to the long data form named as `billboard_long`.
 4. [Bonus] Split the `billboard_long` to two separate datasets as `song` and `rank`. The `song` data will include `artist`, `track`, `time` and a new column called `id` assigning a unique identifier for each song. The `rank` data will include the `id`, `date`, `week`, `rank` columns. The `id` column is the key variable that maintains the linking between two datasets.
+
+<a name="Lab4"></a>
 
 ###Lab Session 4
 
