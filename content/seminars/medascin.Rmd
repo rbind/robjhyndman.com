@@ -15,9 +15,12 @@ This is a one-day workshop given as part of the [Melbourne Data Science Week](ht
 
 Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:
 
+  * `devtools`
   * `fpp2`
-  * `tidyverse`, `plotly`, `stringr`, `forcats`, `lubridate`, `broom`, `zoo`, `shiny`, `devtools`
   * `knitr`
+  * `plotly`
+  * `shiny`
+  * `tidyverse`
 
 Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
 
