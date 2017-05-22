@@ -8,7 +8,7 @@ categories:
 ---
 
 
-My new paper [(Studdert et al, 2017)](https://robjhyndman.com/publications/handguns/) on "Handgun acquisitions in California after two mass shootings" has been attracting some press.  Here are some of the news items I've found:
+My new paper [(Studdert et al, 2017)](https://robjhyndman.com/publications/handguns/) on "Handgun acquisitions in California after two mass shootings" has been attracting some press.  Here are some of the news items I've found:<!--more-->
 
   * [CBC](http://www.cbc.ca/news/world/gun-control-us-nra-trump-1.4095837)
   * [CNN](http://edition.cnn.com/2017/05/01/health/gun-sales-mass-shootings-study/index.html)
