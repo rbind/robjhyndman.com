@@ -1,7 +1,7 @@
 ---
 date: 2017-03-21
-title: Probabilistic energy forecasting for smart grids and building
-file: MelbUni-Energy-Forecasting-2017.pdf
+title: Probabilistic energy forecasting for smart grids and buildings
+speakerdeck: ea459bdb74964eaf977e7685c89bbb1d
 ---
 
 **Energy Systems Integration in smart buildings, communities and microgrids**
