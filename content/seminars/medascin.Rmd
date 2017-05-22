@@ -27,7 +27,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 ##Reference
 
 <a href="http://OTexts.org/fpp2/" target="_new">
-![alt text](/eindhoven/fppcover-small.jpg)
+![alt text](/medascin/fppcover-small.jpg)
 </a>
 
 ##Need help with R?
@@ -45,59 +45,56 @@ Participants will be assumed to be familiar with basic statistical tools such as
 <col width="15%">
 <tr>
   <td>08.30 - 09.00</td>
-  <td>Registration and welcome</td>
+  <td style="vertical-align: middle;">Registration and welcome</td><td></td>
 </tr>
   <td>09.00 - 10.30</td>
   <td><b>Time series and R, Time series graphics</b><br>
   <a href="#Lab1">Lab Sessions 1-2</a></td>
-  <td><a href="" target="_new">Slides</a></td>
+  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>10.30 - 11.00</td>
-  <td><em>Morning tea</em></td>
+  <td style="vertical-align: middle;"><em>Morning tea</em></td><td></td>
 </tr>
 <tr>
   <td>11.00 - 12.30</td>
   <td><b>Visualising temporal data</b><br>
   <a href="#Lab3">Lab Sessions 3-4</a></td>
-  <td><a href="http://earo.me/slides/medascin17/" target="_new">Slides</a></td>
+  <td style="vertical-align: middle;"><a href="http://earo.me/slides/medascin17/" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>12.30 - 13.30</td>
-  <td><em>Lunch</em></td>
+  <td style="vertical-align: middle;"><em>Lunch</em></td><td></td>
 </tr>
 <tr>
   <td>13.30 - 15.00</td>
-  <td><b>Some automatic forecasting algorithms</b></td>
-  <td><a href="" target="_new">Slides</a></td>
+  <td><b>Some automatic forecasting algorithms</b><br>
+  <a href="#Lab5">Lab Sessions 5-6</a></td>
+  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>15.00 - 15.30</td>
-  <td><em>Afternoon tea</em></td>
+  <td style="vertical-align: middle;"><em>Afternoon tea</em></td><td></td>
 </tr>
 <tr>
   <td>15.30 - 17.00</td>
-  <td><b>Forecast evaluation</b></td>
-  <td><a href="" target="_new">Slides</a></td>
+  <td><b>Forecast evaluation</b><br>
+  <a href="#Lab7">Lab Sessions 7-8</a></td>
+  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
 </tr>
 </table>
 
 ##Lab sessions
 
-Download the following two Rmarkdown files for recording your lab session exercises:
-
- * [`Retail.Rmd`](/eindhoven/Retail.Rmd)
- * [`OtherData.Rmd`](/eindhoven/OtherData.Rmd)
-
-Use these to record your answers to all lab session exercises. Use `Retail.Rmd` for all questions involving the retail data introduced in the first lab session, and the other file for the remaining exercises.
-
 <a name="Lab1"></a>
 
 ###Lab Session 1
 
-1. Download the [monthly Australian retail data](https://robjhyndman.com/data/retail.xlsx). These represent retail sales in various categories for different Australian states.
+1. Download the [`Retail.Rmd`](/medascin/Retail.Rmd) file. This will be used for all analysis of the retail data.
 
-2.  Read the data into R and choose *one* of the series. This time series will be used throughout the short course in lab sessions.
+2. Download the [monthly Australian retail data](https://robjhyndman.com/data/retail.xlsx). These represent retail sales in various categories for different Australian states.
+
+3.  Read the data into R and choose *one* of the series. This time series will be used throughout the workshop in lab sessions 1--2, and 5--10.
 
     Please script this, don't just use the Rstudio click-and-point interface. That way you can save the results for easy replication later.
 
@@ -115,21 +112,15 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
 ###Lab Session 2
 
-  1. The following graphics functions have been introduced:
+The following graphics functions have been introduced:
 
-    ```r
-    autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
-    ```
+```r
+autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
+```
 
-    Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
-
-  2. Repeat for some of the following series:
-
-    ```r
-    bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose
-    ```
-
-    Use the help files to find out what the series are.
+  1. Explore your chosen retail time series using these functions. 
+  2. Can you spot any seasonality, cyclicity and trend? 
+  3. What do you learn about the series?
 
 <a name="Lab3"></a>
 
@@ -151,3 +142,68 @@ Download [the `Rmd` file](http://earo.me/lab/medascin17/lab4.Rmd) for this lab s
 1. Download the [weather data](http://earo.me/data/medascin17/weather_2016.csv). The `weather` dataset contains the date a song first entered the Billboard Top 100 in 2000 and its rank over 75 weeks.
 2. Read the dataset into R and tidy it up for visualising with `ggplot2` later.
 3. Write some `ggplot2` code to reproduce the plot shown on the slides.
+
+<a name="Lab5"></a>
+
+###Lab Session 5
+
+  1. Use `ets()` to find the best ETS model for your retail data.
+
+    - What does the model choice tell you about the data?
+    - What do the smoothing parameters tell you about the trend and seasonality?
+    - Do the forecasts look reasonable?
+
+  2. Obtain up-to-date retail data from the [ABS website (Cat. 8501.0, Table 11)](https://goo.gl/HdrV0G), and compare your forecasts with the actual numbers. How good were the forecasts from the various models?
+
+<a name="Lab6"></a>
+
+###Lab Session 6
+
+We will now fit an ARIMA model for your retail data.
+
+  1. What Box-Cox transformation would you select to stabilize the variance?
+
+  2. Use `auto.arima` to obtain a seasonal ARIMA model, and compare the forecasts with those you obtained earlier, and with the latest retail data.
+
+  3. Experiment with different Box-Cox transformations to see their effect on the chosen model and forecasts.
+
+
+<a name="Lab7"></a>
+
+
+###Lab Session 7
+
+For your retail time series:
+
+  1. Use the `accuracy` function to compare the forecasts obtained from your ETS and ARIMA models. Which is giving the best forecasts?
+
+  2. Repeat with forecasts obtained using `stlf` (with the same Box-Cox transformation as you used for the ARIMA model).
+
+  3. Repeat with forecasts obtained using `snaive` (there's no need for a transformation).
+
+  4. Which approach gives the best forecasts?
+
+
+<a name="Lab8"></a>
+
+###Lab Session 8
+
+  1. Use `ets` to find the best model for your retail data and record the training set RMSE.
+  1. We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the
+ result. Replace `???` with the appropriate values for your ETS model.
+
+    ```{r, echo=TRUE, eval=FALSE}
+    fets <- function(y, h)
+    {
+      fit <- ets(y, model=???)
+      return(forecast(fit, h=1))
+    }
+    e <- tsCV(mytimeseries, fets, h=1)
+    sqrt(mean(e^2, na.rm=TRUE))
+    ```
+
+  1. Plot `e` using `autoplot` and ``ggAcf``. Do they look uncorrelated and homoskedastic?
+
+  1. In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `ets` to select a different model each time through the loop. Calculate the RMSE using this approach.  (Warning: there a lot of models to fit, so this will take a while.)
+
+  1. How do the RMSE values compare? Does the re-selection of a model at each step make much difference?
