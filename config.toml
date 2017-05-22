@@ -17,7 +17,10 @@ date_format = "2 January 2006"
 posts_count = 2
 
 # Number of publications to show on main page.
-pubs_count = 4
+pubs_count = 3
+
+# Number of posts to show on main page.
+seminars_count = 3
 
 # options for highlight.js (version, additional languages, and theme)
   highlightjsVersion = "9.11.0"
