@@ -10,6 +10,7 @@ wordpress_id: 2824
 categories:
 - forecasting
 - grants
+- prizes
 - IJF
 - Monash University
 - teaching

@@ -15,6 +15,7 @@ categories:
 - journals
 - references
 - time series
+- prizes
 ---
 
 Today at the [International Symposium on Forecasting](http://www.forecasters.org/isf), I announced the awards for the best paper published in the [International Journal of Forecasting](http://www.journals.elsevier.com/international-journal-of-forecasting) in the period 2012-2013.

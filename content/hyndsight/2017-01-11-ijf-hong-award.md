@@ -11,6 +11,7 @@ categories:
 - energy
 - forecasting
 - IJF
+- prizes
 ---
 
 Professor [Tao Hong](http://www.drhongtao.com/) has generously funded a new prize for the best IJF paper on energy forecasting, to be awarded every two years. The first award will be for papers published in the International Journal of Forecasting during the period 2013-2014. The prize will be US$1000 plus an engraved plaque. The award committee is [Rob J Hyndman](https://robjhyndman.com), [Pierre Pinson](http://pierrepinson.com/) and [James Mitchell](https://www.wbs.ac.uk/about/person/james-mitchell).

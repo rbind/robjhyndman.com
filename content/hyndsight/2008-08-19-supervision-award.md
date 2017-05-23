@@ -9,6 +9,7 @@ title: Supervision award
 wordpress_id: 1045
 categories:
 - supervision
+- prizes
 ---
 
 Last night I received the Vice-Chancellor's postgraduate supervision award at a function at Government House. I am deeply honoured that my students thought to nominate me for the award.  I think I was as surprised as anyone to win, and some people have asked me what I did to deserve it. Actually, I'm not sure that I did deserve it, but I can tell you what I told the award committee who chose me.
