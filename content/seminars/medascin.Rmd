@@ -1,6 +1,8 @@
 ---
 title: "Time Series in R: Forecasting and Visualisation"
 slug: forecasting-medascin
+aliases:
+  - /forecasting-medascin/
 author: "Rob J Hyndman & Earo Wang"
 date: 2017-05-29
 ---
@@ -118,8 +120,8 @@ The following graphics functions have been introduced:
 autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
 ```
 
-  1. Explore your chosen retail time series using these functions. 
-  2. Can you spot any seasonality, cyclicity and trend? 
+  1. Explore your chosen retail time series using these functions.
+  2. Can you spot any seasonality, cyclicity and trend?
   3. What do you learn about the series?
 
 <a name="Lab3"></a>
