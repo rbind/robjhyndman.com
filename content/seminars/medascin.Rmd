@@ -47,12 +47,13 @@ Participants will be assumed to be familiar with basic statistical tools such as
 <col width="15%">
 <tr>
   <td>08.30 - 09.00</td>
-  <td style="vertical-align: middle;">Registration and welcome</td><td></td>
+  <td style="vertical-align: middle;">Registration and welcome</td>
+  <td style="vertical-align: middle;"><a href="/medascin/0-Intro.pdf" target="_new">Slides</a></td>
 </tr>
   <td>09.00 - 10.30</td>
   <td><b>Time series and R, Time series graphics</b><br>
   <a href="#Lab1">Lab Sessions 1-2</a></td>
-  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
+  <td style="vertical-align: middle;"><a href="/medascin/1-time-series-graphics.pdf" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>10.30 - 11.00</td>
@@ -72,7 +73,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td>13.30 - 15.00</td>
   <td><b>Some automatic forecasting algorithms</b><br>
   <a href="#Lab5">Lab Sessions 5-6</a></td>
-  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
+  <td style="vertical-align: middle;"><a href="/medascin/3-automatic-forecasting.pdf" target="_new">Slides</a></td>
 </tr>
 <tr>
   <td>15.00 - 15.30</td>
@@ -82,7 +83,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td>15.30 - 17.00</td>
   <td><b>Forecast evaluation</b><br>
   <a href="#Lab7">Lab Sessions 7-8</a></td>
-  <td style="vertical-align: middle;"><a href="??" target="_new">Slides</a></td>
+  <td style="vertical-align: middle;"><a href="/medascin/4-forecast-evaluation.pdf" target="_new">Slides</a></td>
 </tr>
 </table>
 
@@ -190,22 +191,20 @@ For your retail time series:
 
 ###Lab Session 8
 
-  1. Use `ets` to find the best model for your retail data and record the training set RMSE.
-  1. We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the
- result. Replace `???` with the appropriate values for your ETS model.
+  1. Use `ets` to find the best model for your retail data and record the training set MAPE.
+  1. We will now check how much larger the MAPE is on out-of-sample data using time series cross-validation. The following code will compute the result. Replace `???` with the appropriate values for your ETS model.
 
     ```{r, echo=TRUE, eval=FALSE}
-    fets <- function(y, h)
-    {
-      fit <- ets(y, model=???)
-      return(forecast(fit, h=1))
+    fets <- function(x, h, model="ZZZ", damped=NULL, ...) {
+      forecast(ets(x, model=model, damped=damped), h=h)
     }
-    e <- tsCV(mytimeseries, fets, h=1)
-    sqrt(mean(e^2, na.rm=TRUE))
+    e <- tsCV(mytimeseries, fets, model=???, damped=???)
+    pe <- 100*e/mytimeseries
+    sqrt(mean(pe^2, na.rm=TRUE))
     ```
 
-  1. Plot `e` using `autoplot` and ``ggAcf``. Do they look uncorrelated and homoskedastic?
+  1. Plot `pe` using `autoplot` and ``ggAcf``. Do they look uncorrelated and homoskedastic?
 
-  1. In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `ets` to select a different model each time through the loop. Calculate the RMSE using this approach.  (Warning: there a lot of models to fit, so this will take a while.)
+  1. In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `ets` to select a different model each time through the loop. Calculate the MAPE using this approach.  (Warning: there a lot of models to fit, so this will take a while.)
 
-  1. How do the RMSE values compare? Does the re-selection of a model at each step make much difference?
+  1. How do the MAPE values compare? Does the re-selection of a model at each step make much difference?
