@@ -1,12 +1,7 @@
 ---
-author: robjhyndman
-comments: true
 date: 2016-09-14 14:44:50+00:00
-
-link: https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/
 slug: forecast-intervals-for-aggregates
 title: Forecast intervals for aggregates
-wordpress_id: 3869
 categories:
 - forecasting
 - R
@@ -25,7 +20,6 @@ But a more general solution, if you only need empirical results, is to use simul
 
 Here is an example using ETS models applied to Australian monthly gas production data.
 
-
 ```{r, cache=TRUE}
 library(forecast)
 library(ggplot2)
@@ -35,7 +29,6 @@ fit <- ets(gas)
 fc <- forecast(fit, h=24)
 plot(fc)
 ```
-
 
 Suppose we wish to forecast the aggregate gas demand in the next six months.
 
@@ -48,13 +41,11 @@ for(i in seq_len(nsim))
 meanagg <- mean(sim)
 ```
 
-
 The mean of the simulations is very close to the sum of the individual forecasts:
 
 ```{r, cache=TRUE}
 sum(fc$mean[1:6])
 ```
-
 
 Prediction intervals are now easy to obtain:
 
