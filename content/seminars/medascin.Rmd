@@ -80,10 +80,15 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td style="vertical-align: middle;"><em>Afternoon tea</em></td><td></td>
 </tr>
 <tr>
-  <td>15.30 - 17.00</td>
+  <td>15.30 - 16.45</td>
   <td><b>Forecast evaluation</b><br>
   <a href="#Lab7">Lab Sessions 7-8</a></td>
   <td style="vertical-align: middle;"><a href="/medascin/4-forecast-evaluation.pdf" target="_new">Slides</a></td>
+</tr>
+<tr>
+  <td>16.45 - 17:00</td>
+  <td style="vertical-align: middle;">Wrap up</td>
+  <td style="vertical-align: middle;"><a href="/medascin/WrapUp.pdf" target="_new">Slides</a></td>
 </tr>
 </table>
 
