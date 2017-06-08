@@ -38,14 +38,13 @@ Here are a few thoughts that might help.<!-- more -->
 
   3. When my students run R in the student labs, I get them to first run the following script:
 
-    
-    
+
+    ```r
     lib <- .libPaths()
     .libPaths(c(lib,"c:/users/public"))
     install.packages("fpp",lib="c:/users/public",
       repos="http://cran.ms.unimelb.edu.au/",dependencies=TRUE)
-    
-
+    ```
 
 That way, the students install the latest version of the fpp and dependent packages (including forecast) to a writable section of their local drive. That drive is re-imaged every night, so they have to run this script every time they use R in the labs, but at least they get to use the latest version of the packages.
 

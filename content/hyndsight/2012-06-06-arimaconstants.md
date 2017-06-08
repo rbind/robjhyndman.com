@@ -12,7 +12,7 @@ categories:
 - R
 ---
 
-**This post is from my new book _Forecasting: principles and practice_, available freely online at [OTexts.com/fpp/](http://otexts.com/fpp/).**
+**This post is from my new book _Forecasting: principles and practice_, available freely online at [OTexts.org/fpp/](http://otexts.org/fpp/).**
 
 
 
@@ -83,22 +83,22 @@ The constant $c$ has an important effect on the long-term forecasts obtained fro
 
 
 
-  
+
   * If $c=0$ and $d=0$, the EFF will go to zero.
 
-  
+
   * If $c=0$ and $d=1$, the EFF will go to a non-zero constant determined by the last few observations.
 
-  
+
   * If $c=0$ and $d=2$, the EFF will follow a straight line with intercept and slope determined by the last few observations.
 
-  
+
   * If $c\ne0$ and $d=0$, the EFF will go to the mean of the data.
 
-  
+
   * If $c\ne0$ and $d=1$, the EFF will follow a straight line with slope equal to the mean of the differenced data.
 
-  
+
   * If $c\ne0$ and $d=2$, the EFF will follow a quadratic trend.
 
 

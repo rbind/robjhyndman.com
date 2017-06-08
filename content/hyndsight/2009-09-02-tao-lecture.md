@@ -19,28 +19,28 @@ It was an interesting talk, with excellent slides, marred only by the poor sound
 
 
 
-    
+
   * Mathematical blogs are providing a means for recording the informal chats that are an invaluable part of research but were never previously written down. These are the sorts of things that happen at conferences, in tearooms and hallways, or over dinner. The advent of informal blogs allows these chats to be online, with interaction via commenting, and fully searchable.
 
-    
+
   * There is a list of mathematical blogs on the [Academic Blog Portal](http://academicblogs.org/index.php?title=Mathematics/Statistics#Statistics_.28math.ST.29) although the statistics list is incomplete -- it omits Chris Lloyd's excellent [Fishing in the Bay](http://blogs.mbs.edu/fishing-in-the-bay/) blog.
 
-    
+
   * The quality of mathematics on Wikipedia is slowly improving (although it has a long way to go in statistical modelling, and especially in forecasting).
 
-    
+
   * The [Tricki](http://www.tricki.org/) is a useful resource for mathematical tricks.
 
-    
+
   * The advent of pre-print repositories (notably [arXiv](http://arxiv.org/) for mathematics, but [RePEc](http://econpapers.repec.org/) for econometrics) has changed the way new results are distributed and how we stay in touch with current research.
 
-    
+
   * There are now a handful of high quality mathematical presentations on YouTube. e.g., this one on [Moebius transformations](http://www.youtube.com/watch?v=JX3VmDgiFnY).
 
-    
+
   * Single authored papers are becoming less common due to increased internet interaction and the rise of more cross-disciplinary research.
 
-    
+
   * Open online collaborative research is an emerging possibility. The first (mathematics) experiment in this direction has been [Polymath](http://polymathprojects.org/) which has been a huge success so far. The [first problem](http://michaelnielsen.org/polymath1/index.php?title=Polymath1) was solved (although the results are not yet written up). Presumably this could work for statistics too, although the number of potential participants is much smaller.
 
 

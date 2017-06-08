@@ -19,13 +19,13 @@ Clearly, some things are easier to forecast than others. The time of the sunrise
 
 
 
-	
+
   1. how well we understand the factors that contribute to it;
 
-	
+
   2. how much data are available;
 
-	
+
   3. whether the forecasts can affect the thing we are trying to forecast.
 
 
@@ -45,4 +45,4 @@ Many people wrongly assume that forecasts are not possible in a changing environ
 
 
 
-This is an edited version of Section 1­/1 from my new book [_Forecasting: principles and practice_.](http://otexts.com/fpp/1/1/)
+This is an edited version of Section 1­/1 from my new book [_Forecasting: principles and practice_.](http://otexts.org/fpp/1/1/)

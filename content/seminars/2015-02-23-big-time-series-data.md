@@ -17,7 +17,7 @@ tags:
 - tourism
 ---
 
-Talk given at the [ACEMS Big data workshop](http://acems.org.au/statistical-modelling-and-analysis-of-big-data-workshop-2015/), QUT.
+Talk given at the ACEMS Big data workshop, QUT.
 
 
 

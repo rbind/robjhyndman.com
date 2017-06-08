@@ -15,7 +15,7 @@ categories:
 
 Every year, the International Institute of Forecasters in conjunction with SAS offer some small grants to help promote research in forecasting. There are two $5000 grants per year for research on forecasting methodology and applications. This year, applications close on 30 September 2014. More details are given [here](http://forecasters.org/wp/wp-content/uploads/SAS-IIF-2014.pdf).
 
-Information about past SAS-IIF awards is given on [the IIF website](http://forecasters.org/activities/funding-awards/grants-and-research-awards/). It is interesting to see the range of topics covered. Here are the winning projects in the last two years:
+Information about past SAS-IIF awards is given on [the IIF website](https://forecasters.org/programs/funding-awards/research-awards/). It is interesting to see the range of topics covered. Here are the winning projects in the last two years:
 
 
 

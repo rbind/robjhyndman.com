@@ -32,6 +32,6 @@ There are five IJF editors:
   2. [Dick van Dijk](http://people.few.eur.nl/djvandijk/)
   3. [Graham Elliott](http://econweb.ucsd.edu/~gelliott/)
   4. [Dilek Önkal](http://onkal.bilkent.edu.tr/)
-  5. [Esther Ruiz](http://www.est.uc3m.es/ortega/)
+  5. [Esther Ruiz](https://scholar.google.com/citations?user=sDYv4aIAAAAJ)
 
 along with a team of about [40 associate editors](http://www.forecasters.org/ijf/editors).
