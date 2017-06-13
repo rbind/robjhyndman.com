@@ -46,7 +46,7 @@ for(i in seq(9))
   sim[,i] <- simulate(fit, nsim=20)
 
 library(ggplot2)
-autoplot(lynx) + autolayer(sim)
+autoplot(lynx) + forecast::autolayer(sim)
 ```
 
 If we do this a few hundred or thousand times, we can get a very good picture of the forecast distributions. This is how the `forecast.nnetar` function produces prediction intervals:
