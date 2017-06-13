@@ -16,3 +16,13 @@ This unit introduces extensions of linear regression models for handling a wide 
 
   * [Handbook entry](http://www.monash.edu.au/pubs/handbooks/units/ETC3580.html)
   * Textbook: [*Extending the Linear Model with R*, Faraway (2nd ed., 2016)](http://www.maths.bath.ac.uk/~jjf23/ELM/) [[Buy on Amazon](http://amzn.com/158488424X/?tag=otexts-20)]
+
+* * * 
+
+# [Datacamp: Forecasting Using R](https://www.datacamp.com/courses/forecasting-using-r)
+
+I also teach an online course about forecasting on [Datacamp](https://www.datacamp.com/courses/forecasting-using-r).
+
+
+[![](/img/Datacamp.png)](https://www.datacamp.com/courses/forecasting-using-r)
+
