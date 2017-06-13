@@ -1,11 +1,11 @@
 ---
 author: Rob&nbsp;J&nbsp;Hyndman and Yanan Fan
 Status: Published
-comments: false
 date: 1996-11-16 02:45:26+00:00
 slug: quantiles
 title: Sample quantiles in statistical packages
 citation: "<em>American Statistician</em> <b>50</b> 361-365"
+mathjax: true
 status: Published
 kind: article
 tag:
@@ -21,9 +21,11 @@ There are a large number of different definitions used for sample quantiles in s
 
 **Errata:**
 
-  * Table 1, p361. P2 should have lower bound equal to ⌊_np_⌋.
-  * p363, left column. P2 is satisfied if and only if α≥0 and β≤1.
+  * Table 1, p361. P2 should have lower bound equal to $\lfloor np\rfloor$.
+  * p363, left column. P2 is satisfied if and only if $\alpha\ge0$ and $\beta\le1$.
 
 Thanks to Eric Langford and Alan Dorfman for pointing out the errors. 8 May 2007.
+
+For further discussion, see [Sample quantiles 20 years later](/hyndsight/sample-quantiles-20-years-later/) on Hyndsight.
 
 
