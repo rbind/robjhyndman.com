@@ -5,7 +5,7 @@ title: "Software I've written"
 This page provides links to R packages I have written. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](http://cran.rstudio.com).
 
 
-[**addb**](http://github.com/robjhyndman/addb)
+[**addb**](http://pkg.robjhyndman.com/addb)
 :  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
 
 [**anomalous**](https://github.com/robjhyndman/anomalous)
