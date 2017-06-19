@@ -23,7 +23,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**eechidna**](https://github.com/ropenscilabs/eechidna)
 : Exploring Election and Census Highly Informative Data Nationally for Australia. Data from the 2013 and 2016 Australian Federal Elections and the 2011 and 2016 Australian Censuses for each House of Representatives electorate, along with some tools for visualizing and analysing the data. [[CRAN](https://cran.r-project.org/package=eechidna)]
 
-[**expsmooth**](https://github.com/robjhyndman/expsmooth)
+[**expsmooth**](http://pkg.robjhyndman.com/expsmooth)
 : Data sets from [Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with exponential smoothing: the state space approach*, Springer: Berlin.](http://www.exponentialsmoothing.net/) [[CRAN](https://cran.r-project.org/package=expsmooth)]
 
 [**fds**](https://cran.r-project.org/package=fds)
