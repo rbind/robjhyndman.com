@@ -32,7 +32,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**fma**](https://github.com/robjhyndman/fma)
 : Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cran.r-project.org/package=fma)]
 
-[**forecast**](https://github.com/robjhyndman/forecast)
+[**forecast**](http://pkg.robjhyndman.com/forecast)
 : Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cran.r-project.org/package=forecast)]
 
 [**fpp**](https://cran.r-project.org/package=fpp)
