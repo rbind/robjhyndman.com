@@ -8,6 +8,7 @@ categories:
 output:
   fig_height: 3
   fig_width: 6
+mathjax: true
 ---
 
 
@@ -77,9 +78,9 @@ The IJF is obviously doing very well by this measure, and I have received many e
 
 ### Impact factors are noisy and not robust
 
-The distribution of citations is extremely skewed with many zeros, and some occasionally heavily cited articles. This makes the impact factors rather noisy as shown in the above plot, and greatly influenced by outliers. In 2014, we published a wonderful [review paper by Rafal Weron on electricity price forecasting](https://doi.org/10.1016/j.ijforecast.2014.08.008), which has received over 130 citations since it appeared (108 of them in 2016). Without this one paper, the impact factor would be 1.97 --- still very high compared to similar journals, but a long way short of 2.64.
+The distribution of citations is extremely skewed with many zeros, and a few heavily cited articles. This makes the impact factors rather noisy as shown in the above plot, and greatly influenced by outliers. In 2014, we published a wonderful [review paper by Rafal Weron on electricity price forecasting](https://doi.org/10.1016/j.ijforecast.2014.08.008), which has received over 130 citations since it appeared (108 of them in 2016). Without this one paper, the impact factor would be 1.97 --- still very high compared to similar journals, but a long way short of 2.64.
 
-Next year, the IJF impact factor will probably drop back below 2.0, and I won't get so many emails of congratulation. Does that mean the journal will suddenly have become worse than this year? Deming spent years trying to convince companies not to reward people on the basis of random processes and outliers. Yes, this is exactly what happens when I get congratulated for a large impact factor.
+Next year, the IJF impact factor will probably drop back below 2.0, and I won't get so many emails of congratulation. Does that mean the journal will suddenly have become worse than this year? Deming spent years trying to convince companies not to reward people on the basis of random processes and outliers. Yet this is exactly what happens when I get congratulated for a large impact factor.
 
 ### Impact factors focus too much on recency
 
