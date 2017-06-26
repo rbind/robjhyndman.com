@@ -3,8 +3,8 @@ date: 2017-06-26
 slug: forecast-stickers
 title: "Hex stickers for the forecast package"
 categories:
-- ijf
-- journals
+- forecasting
+- R
 ---
 
 
