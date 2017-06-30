@@ -17,7 +17,7 @@ A few years ago, I was working on a project where we measured various characteri
  
   1. [Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. _Data Mining and Knowledge Discovery_, **13**(3), 335-364.](/publications/characteristic-based-clustering-for-time-series-data/)
 
-  2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputin_g, **72**, 2581-2594.](/publications/forecast-rules/)
+  2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputing_, **72**, 2581-2594.](/publications/forecast-rules/)
 
 I've since had a lot of requests for the code which one of my coauthors has been helpfully emailing to anyone who asked. But to make it easier, we thought it might be helpful if I post some updated code here. This is not the same as the R code we used in the paper, as I've improved it in several ways (so it will give different results). If you just want the code, skip to the bottom of the post.
 

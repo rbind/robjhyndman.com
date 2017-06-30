@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2015-08-03 07:59:04+00:00
-
-link: https://robjhyndman.com/hyndsight/bias-variance/
+mathjax: true
 slug: bias-variance
 title: The bias-variance decomposition
-wordpress_id: 3340
 categories:
 - data science
 - statistics
@@ -18,3 +16,4 @@ This week, I am teaching my Business Analytics class about the bias-variance tra
 
 So I wrote my own for the class. It is longer than necessary to ensure there are no jumps that might confuse students.
 
+**[Download (pdf)](/files/2-biasvardecomp.pdf)**
