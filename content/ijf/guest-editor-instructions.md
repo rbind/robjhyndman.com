@@ -1,24 +1,23 @@
 ---
 title: Handling papers as an IJF guest editor
-layout: page
 ---
 
 
-##Using ManuscriptCentral
+## Using ManuscriptCentral
 
 When you log into [ManuscriptCentral](http://mc.manuscriptcentral.com/ijf) you will see an "Associate Editor Center" along with your "Reviewer Center" and "Author Center". These are for different roles that you have with the journal. When acting as a guest editor, you will be using the "Associate Editor Center".
 
-Please log in every week or two to check on papers you are handling and to handle any new papers you have been allocated. You will receive email notifications about new papers, but you won't necessarily receive any notifications about papers where the reviewers are overdue. So you need to keep on top of this and chase the reviewers where necessary. 
+Please log in every week or two to check on papers you are handling and to handle any new papers you have been allocated. You will receive email notifications about new papers, but you won't necessarily receive any notifications about papers where the reviewers are overdue. So you need to keep on top of this and chase the reviewers where necessary.
 
 Resist the temptation to email reviewers outside the ManuscriptCentral system. It is much easier overall if all correspondence about a paper is handled via the site. That way, we can track everything and no paper will fall through the cracks. You can usually email someone about a paper by clicking on their name when viewing the paper details.
 
-##New papers to handle
+## New papers to handle
 
-I will send you new papers to handle. If you do not think the paper is worthy of review, then please just write a short report yourself explaining why. 
+I will send you new papers to handle. If you do not think the paper is worthy of review, then please just write a short report yourself explaining why.
 
 The only papers that reviewers should see are those that you think are worth a more thorough read by someone. This system both protects our reviewers (so that they are more available when we really need them) and it is good for authors -- better a quick rejection than a painfully slow one.
 
-##Choosing reviewers
+## Choosing reviewers
 
 If you decide the paper is worthy of review, you will need to find two reviewers. It is a good idea to invite three reviewers initially as usually at least one of them will decline. Check back every week until you have at least two people who have *agreed* to provide reviews.
 
@@ -32,7 +31,7 @@ If you simply cannot find two reviewers, or the reviewers you have chosen do not
 
 In general, we aim to get a first response back to the author inside 3 months.
 
-##Provide a recommendation
+## Provide a recommendation
 
 As a guest editor, you are responsible for making the final decision on each paper. Although the system asks you to submit a "recommendation", I will interpret this as your decision.
 
@@ -40,25 +39,25 @@ There are five recommendation categories:
 
 * accept: that means no further revisions are possible. Only choose this when you are completely satisfied with the paper.
 * minor revision: this is for papers where some small changes are required, which should only take the authors a few weeks at most. You would not normally send a paper back to the reviewers for the next version after a minor revision decision.
-* major revision: this is for papers which will go back to the same reviewers for another look. 
+* major revision: this is for papers which will go back to the same reviewers for another look.
 * reject and resubmit: the next version of the paper will be handled as a new submission and will not necessarily go back to the same reviewers. This is for papers where the revisions are too substantial for a "major revision" decision, but you think there is enough merit in the paper not to reject it. Because of the time constraints of a special issue, if you select this option, any resubmission will be considered for a regular issue and will not be eligible for the special issue. So if you want the paper in your issue, don't select this option.
 * reject: the paper is rejected, and no revision of it is allowed to be submitted to the IJF.
 
-You should also provide your own report, summarizing the key issues identified by the reviewers, and adding any further comments of your own. 
+You should also provide your own report, summarizing the key issues identified by the reviewers, and adding any further comments of your own.
 
 Do not feel obliged to follow the reviewers in making your recommendation. If you think they have missed something important, please say so in your own report.
 
 I will use your report as part of the letter sent to the authors. Although I will send the letter to the authors, it will appear to come from you, and I will cc you in the correspondence.
 
-Our impact factor has been around 1.6 for the last few years. That is, each paper is cited an average of about 1.6 times in the first two years after publication. If you think a paper is unlikely to receive at least one or two citations in the first couple of years, then it is probably not of sufficient quality for the IJF. 
+Our impact factor has been around 1.6 for the last few years. That is, each paper is cited an average of about 1.6 times in the first two years after publication. If you think a paper is unlikely to receive at least one or two citations in the first couple of years, then it is probably not of sufficient quality for the IJF.
 
 We publish about 80 papers per year, and receive about 500 submissions per year. So the acceptance rate is about 16%. If in doubt, recommend reject.
 
-##Things to look for in papers where you recommend acceptance or revision
+## Things to look for in papers where you recommend acceptance or revision
 
 * Make sure the figures are of good quality (high enough resolution to be reproduced in the journal), axes labelled, etc. Color figures are ok. At proof stage, we insert a comment in the caption saying "See the online version of this paper for the color figures" or something like that.
 * Don't worry about minor English problems as they are fixed by my copyeditor. However, if the English is very bad, please ask them to seek the help of an English editor before accepting the paper. Elsevier provide such a service (for a fee): [http://webshop.elsevier.com/languageservices/languageediting/](http://webshop.elsevier.com/languageservices/languageediting/)
 * Don't worry about formatting, bibliography style, etc. My copyeditor will fix this up.
-* We can have online supplements to papers that are attached to the paper on sciencedirect. So if the paper is too long, or has too many tables, figures, etc., please suggest this option to the author. The online supplements can be submitted with the paper as supplementary files. 
-* We do not have a maximum or minimum number of pages per paper, but try to keep papers as short as possible given the number of ideas they contain. I don't mind very short research notes (e.g., 2 pages) provided they say something useful and you think they are likely to be cited. 
+* We can have online supplements to papers that are attached to the paper on sciencedirect. So if the paper is too long, or has too many tables, figures, etc., please suggest this option to the author. The online supplements can be submitted with the paper as supplementary files.
+* We do not have a maximum or minimum number of pages per paper, but try to keep papers as short as possible given the number of ideas they contain. I don't mind very short research notes (e.g., 2 pages) provided they say something useful and you think they are likely to be cited.
 
