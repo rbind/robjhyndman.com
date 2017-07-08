@@ -1,5 +1,8 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://robjhyndman.com/$1 [R,L]
+RewriteRule ^working-papers/(.*) publications/$1
+RewriteRule ^researchtips/(.*) hyndsight/$1
+RewriteRule ^papers/(.*(?<!pdf)$) publications/$1
 
 ErrorDocument 404 /404.html
