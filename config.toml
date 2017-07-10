@@ -7,6 +7,7 @@ theme = "robjhyndman"
 DisqusShortname = "researchtips"
 googleAnalytics = "UA-5004894-1"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+pluralizeListTitles = false
 
 [params]
 
@@ -17,10 +18,10 @@ date_format = "2 January 2006"
 posts_count = 2
 
 # Number of publications to show on main page.
-pubs_count = 3
+pubs_count = 4
 
 # Number of posts to show on main page.
-seminars_count = 3
+seminars_count = 4
 
 # options for highlight.js (version, additional languages, and theme)
   highlightjsVersion = "9.11.0"

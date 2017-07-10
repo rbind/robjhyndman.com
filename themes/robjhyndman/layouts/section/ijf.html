@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="wrapper">
+  <div class="units-row">
+    <div class="unit-centered unit-80">
+      <div class="row">
+  <h1>Instructions for IJF Editors</h1>
+  <ul>
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+    {{ partial "post-title" . }}
+    {{ end }}
+    </ul>
+</div></div></div></div>
+{{ end }}

@@ -1,0 +1,106 @@
+---
+date: 2017-06-21
+slug: 2016-impact-factors
+title: "Why I'm not celebrating the 2016 impact factors"
+categories:
+- ijf
+- journals
+output:
+  fig_height: 3
+  fig_width: 6
+mathjax: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=FALSE, message=FALSE, warning=FALSE)
+library(forecast)
+library(ggplot2)
+```
+
+```{r}
+# Update via Journal Citations Reports
+ijf <- read.csv("IJFdata2017/JournalProfileGrid.csv",header=TRUE,stringsAsFactors = FALSE, skip=1)
+# Strip commas
+ijf[,2] <- as.numeric(sub(",","",ijf[,2]))
+# Remove redundant bottom rows
+nr <- sum(!is.na(ijf[,2]))
+ijf <- ijf[1:nr,]
+ijf <- cbind("IJF",ijf)
+colnames(ijf) <- 
+   c("Journal","Year","Total cites","2 year Impact Factor",
+     "IF without self-cites","5 year Impact Factor",
+     "Immediacy Index","Citable items","Cited Half Life",
+     "Citing Half Life","Eigenfactor","Influence","Citable articles",
+     "Normalized Eigenfactor","X","AveJIF%")
+selfciteIF <- ijf[1,5]
+if2 <- ijf[1,4]
+if5 <- ijf[1,6]
+```
+
+
+```{r}
+## Update from Journal Citations Reports
+citing <- read.csv("IJFdata2017/JournalCitingTab.csv", header=TRUE, stringsAsFactors=FALSE, skip=1)[,-c(1,14)]
+colnames(citing) <- c("Impact","Citing Journal", "All Yrs", 2016:2007, "Rest")
+citing <- citing[,-1]
+selfcites <- citing[3,2]
+totalcites <- citing[1,2]
+articles <- sum(ijf[2:3,"Citable items"])
+cites <- round(if2 * articles)
+```
+
+
+Once every year, the [journal citation reports](http://clarivate.com/?product=journal-citation-reports) are released including journal impact factors. This year, the *International Journal of Forecasting* 2-year impact factor has increased to **`r if2`** which is the highest it has been in the journal's history, and puts the journal higher than such notable titles as *Journal of the American Statistical Association* and just below *Management Science*. 
+
+The **2-year impact factor** is the average number of citations for articles published in the previous 2 years. In 2014-2015, we published `r articles` papers which received 
+`r cites` citations in 2016, giving the 2 year impact factor of $`r cites`/`r articles` = `r if2`$. 
+
+The **5-year impact factor** is the corresponding figure over the previous 5 years. 
+The IJF 5-year impact factor is `r if5`.
+
+The following time series plot shows some historical perspective.
+
+```{r}
+ijf <- ts(ijf[nrow(ijf):1,c(3,4,6,7,8)],start=min(as.numeric(ijf[,"Year"])))
+
+autoplot(ijf[,2], series="2yr") +
+  autolayer(ijf[,3], series="5yr") +
+  guides(color=FALSE) +
+  scale_color_manual(breaks=c("2yr","5yr"), values=c("#dd0000","#0000dd")) +
+  annotate('text', x=2014.9, y=2.8, label="5 year IF", colour="#0000dd") +
+  annotate('text', x=2015.6, y=1.4, label="2 year IF", colour="#dd0000") +
+  ylab("Impact Factor") +
+  xlab("Year")
+```
+
+The IJF is obviously doing very well by this measure, and I have received many emails of congratulations about the latest results. Nevertheless, I have many misgivings about the emphasis that is placed on it. Statisticians, of all people, should be aware of the limitations of simple univariate metrics as a measure of quality.
+
+### Impact factors are noisy and not robust
+
+The distribution of citations is extremely skewed with many zeros, and a few heavily cited articles. This makes the impact factors rather noisy as shown in the above plot, and greatly influenced by outliers. In 2014, we published a wonderful [review paper by Rafal Weron on electricity price forecasting](https://doi.org/10.1016/j.ijforecast.2014.08.008), which has received over 130 citations since it appeared (108 of them in 2016). Without this one paper, the impact factor would be 1.97 --- still very high compared to similar journals, but a long way short of 2.64.
+
+Next year, the IJF impact factor will probably drop back below 2.0, and I won't get so many emails of congratulation. Does that mean the journal will suddenly have become worse than this year? Deming spent years trying to convince companies not to reward people on the basis of random processes and outliers. Yet this is exactly what happens when I get congratulated for a large impact factor.
+
+### Impact factors focus too much on recency
+
+Two years is a very short time in the life of a forecasting paper, and I would prefer that greater emphasis was placed on the 5-year impact factor which is somewhat less noisy and better reflects the time it takes for forecasting work to disseminate.
+
+But even 5 years is not long. Some papers take many years before they are appreciated. My own paper with Yanan Fan on sample quantiles received 43 citations in the first ten years and 457 citations in the next ten years (see [this blog post](/hyndsight/sample-quantiles-20-years-later)). In my view, the 2-year impact factor places far too much emphasis on recency, and not enough on longevity. 
+
+### Impact factors are easy to game
+
+Every system can be gamed, and many journals game the impact factor system by forcing authors to add unnecessary citations to recent articles published in the journal (for example). About `r round(315/3917*100,1)`% of citations in the IJF are self-citations. Leaving out  self-citations, our impact factor is `r selfciteIF`. But even if we switched to a measure that omitted self-citations, it is easily gamed by cooperatives between journals.
+
+### Focus on papers rather than journals
+
+I would prefer to see emphasis on individual papers rather than journals. After all, every journal publishes some poor papers, and even lowly ranked journals occasionally publish great papers. But because of the university promotion system which pushes academics to publish in highly ranked journals (where those rankings are usually strongly correlated with 2-year impact factors), we persist with this crazy annual ritual. If we think citations provide a good measure of quality, why not promote people based on their Google scholar h-index which is at least related to the person's individual work, rather than the average quality of the journals in which it appears.
+
+### What can be done?
+
+There is considerable inertia in the current system, and most academics are stuck in a system that makes them jump through hoops which they can't control. But there are some things that can be done.
+
+ 1. If you sit on a promotions committee, or a faculty research committee, please try to stop the nonsense of having ranked lists of journals where academics are supposed to publish. Instead, look at an individual scholar's actual impact in terms of their h-index, and then read some of their papers yourself. If someone is writing good papers that get highly cited, why should we care whether they appear in a prestigious journal or on a personal website?
+ 
+ 1. One of the arguments for retaining journals is that they provide a valuable service of peer review. So put your papers online first where everyone can read them and cite them, then send them to the journal where you think you will get the best feedback from reviewers --- not to the journal with the highest ranking on some list, nor to the journal with the highest impact factor. These are correlated of course. I think one of the reasons the IJF impact factor is so high is that we have a team of great editors, associate editors and reviewers who help to provide high quality feedback to authors. So let's celebrate the quality of the product, rather than a simplistic and unhelpful proxy for it.
+ 
