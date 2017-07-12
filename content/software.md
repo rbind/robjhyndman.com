@@ -65,7 +65,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**stR**](https://bitbucket.org/alexanderdokumentov/strpackage)
 : STR time series decomposition. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cran.r-project.org/package=stR)]
 
-[**thief**](https://github.com/robjhyndman/thief)
+[**thief**](http://pkg.robjhyndman.com/thief)
 : Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cran.r-project.org/package=thief)]
 
 
