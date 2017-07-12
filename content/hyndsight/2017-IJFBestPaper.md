@@ -27,7 +27,7 @@ For 2014--2015, 14 papers nominated of which five were short-listed for the awar
 ![](/img/ISF2017-Wed-34.jpg)
 *Presenting the award to Nikos Kourentzes and Fotios Petropoulos*
 
-**The best paper award goes to [Nikos Kourentzes](http://kourentzes.com), [Fotios Petropoulos](http://fpetropoulos.eu/) and [Juan Trapero](http://blog.uclm.es/juanramontrapero/) for their [2014 paper on forecasting across multiple frequencies](http://doi.org/10.1016/j.ijforecast.2013.09.006).** The nomination of the paper included the following citation.
+**The best paper award goes to [Nikos Kourentzes](http://kourentzes.com/forecasting), [Fotios Petropoulos](http://fpetropoulos.eu/) and [Juan Trapero](http://blog.uclm.es/juanramontrapero/) for their [2014 paper on forecasting across multiple frequencies](http://doi.org/10.1016/j.ijforecast.2013.09.006).** The nomination of the paper included the following citation.
 
 >This paper tackles a very important and difficult forecasting problem, combining forecasts when data are available at different frequencies. It succeeds by finding a forecast procedure robust to model selection and parameterization while being simultaneously simple to implement. As a consequence of this simplicity, the procedure can be important not only for academics but also for practitioners.
 
