@@ -6,9 +6,10 @@ categories:
 - prizes
 - forecasting
 - energy
+- IJF
 ---
 
-A generous donation from [Professor Tao Hong](http://www.drhongtao.com/) has funded this new award for papers on energy forecasting published in the *International Journal of Forecasting*. The award for 2016 is for papers published within 2013-2014. Next year we will award a paper published in 2015-2016, and we will make the award every two years after that.
+A generous donation from [Professor Tao Hong](http://www.drhongtao.com/) has funded this new award for papers on energy forecasting published in the *International Journal of Forecasting*. The award for 2016 is for papers published within 2013--2014. Next year we will award a paper published in 2015--2016, and we will make the award every two years after that.
 
 The award decision was made by a committee consisting of Professors Pierre Pinson, James Mitchell and Rob J Hyndman.
 
@@ -21,7 +22,7 @@ Weron’s article is encyclopaedic. It covers the entirety of electricity price 
 
 The article's significance for the energy forecasting community is reflected in various rankings. In particular, it is the top downloaded open access article on Science Direct published since January 2014 in [Decision Sciences journals](http://about.elsevier.com/openaccess/2015/65.htm) and, despite its recent publication date, the second most cited article published in the International Journal of Forecasting since 2011. This paper alone is responsible for 0.7 of the current two-year impact factor of 2.642 for the *International Journal of Forecasting*.
 
-It was also decided to award an **outstanding certificate** to Stephen Haben, Jonathan Ward, Danica Vukadinovic Greetham, Colin Singleton and Peter Grindrod for their 2014 paper ["A new error measure for forecasts of household-level, high resolution electrical energy consumption", IJF 30(2), 246–256](https://doi.org/10.1016/j.ijforecast.2013.08.002).
+It was also decided to award an **outstanding certificate** to Stephen Haben, Jonathan Ward, Danica Vukadinovic Greetham, Colin Singleton and Peter Grindrod for their 2014 paper ["A new error measure for forecasts of household-level, high resolution electrical energy consumption", IJF 30(2), 246–-256](https://doi.org/10.1016/j.ijforecast.2013.08.002).
 This paper provides high-quality verification tools for load forecasts, which are essential in managing power systems. The paper is particularly helpful for work on demand profiling in the residential sector, where the temporal resolution of data has increased rapidly in recent years.  In addition, the paper is sufficiently accessible that it can be easily applied in practice.
 
 Congratulations to all award winners.

@@ -12,6 +12,7 @@ categories:
 - IJF
 - journals
 - references
+- prizes
 ---
 
 Every two years we award a [prize for the best paper](https://forecasters.org/ijf/awards/) published in the _International Journal of Forecasting_. It is now time to identify the best paper published in the IJF during 2014 and 2015. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The prize is US$1000 plus an engraved plaque. I will present the prize at the [ISF in Cairns](http://forecasters.org/isf) in late June.
