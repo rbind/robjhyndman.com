@@ -65,7 +65,7 @@ The following time series plot shows some historical perspective.
 ijf <- ts(ijf[nrow(ijf):1,c(3,4,6,7,8)],start=min(as.numeric(ijf[,"Year"])))
 
 autoplot(ijf[,2], series="2yr") +
-  autolayer(ijf[,3], series="5yr") +
+  forecast::autolayer(ijf[,3], series="5yr") +
   guides(color=FALSE) +
   scale_color_manual(breaks=c("2yr","5yr"), values=c("#dd0000","#0000dd")) +
   annotate('text', x=2014.9, y=2.8, label="5 year IF", colour="#0000dd") +

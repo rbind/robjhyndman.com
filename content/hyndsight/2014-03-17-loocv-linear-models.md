@@ -27,18 +27,9 @@ $$
 
 where ${e\_{[i]} = y\_{i} - \hat{y}\_{[i]}} $, the observations are given by $y\_{1},\dots,y\_{N}$, and  $\hat{y}\_{[i]}$ is the predicted value obtained when the model is estimated with the $i\text{th}$ case deleted. This is also sometimes known as the PRESS (Prediction Residual Sum of Squares) statistic.
 
-
-
-
-  
-
-
 It turns out that for linear models, we do not actually have to estimate the model $N$ times, once for each omitted case. Instead, CV can be computed after estimating the model once on the complete data set.<!-- more -->
 
-
-
-
-Suppose we have a linear regression model $\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{e}$. Then $\hat{\boldsymbol{\beta}} = (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{X}'\boldsymbol{Y}$ and $\boldsymbol{H} = \boldsymbol{X}(\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{X}'$ is the ``hat-matrix''. It has this name because it is used to compute $\boldsymbol{\hat{Y}} = \boldsymbol{X}\hat{\boldsymbol{\beta}} = \boldsymbol{H}\boldsymbol{Y}$. If the diagonal values of $\boldsymbol{H}$ are denoted by $h\_{1},\dots,h\_{N}$, then the leave-one-out cross-validation statistic can be computed using
+Suppose we have a linear regression model $\boldsymbol{Y} = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{e}$. Then $\hat{\boldsymbol{\beta}} = (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{X}'\boldsymbol{Y}$ and $\boldsymbol{H} = \boldsymbol{X}(\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{X}' $ is the "hat-matrix". It has this name because it is used to compute $\boldsymbol{\hat{Y}} = \boldsymbol{X}\hat{\boldsymbol{\beta}} = \boldsymbol{H}\boldsymbol{Y}$. If the diagonal values of $\boldsymbol{H}$ are denoted by $h\_{1},\dots,h\_{N}$, then the leave-one-out cross-validation statistic can be computed using
 
 <div>
 $$ \text{CV} = \frac{1}{N}\sum_{i=1}^N [e_{i}/(1-h_{i})]^2,$$
@@ -46,9 +37,7 @@ $$ \text{CV} = \frac{1}{N}\sum_{i=1}^N [e_{i}/(1-h_{i})]^2,$$
 
 where $e\_i = y\_i - \hat{y}\_i $ and $\hat{y}\_i$ is the predicted value obtained when the model is estimated with all data included. This is a remarkable result, and is given without proof in [Section 5.5 of my forecasting textbook](http://www.otexts.org/fpp/5/5/).
 
-I am teaching my second year forecasting class about this result tomorrow, and I thought my students might like to see the proof. What follows is the simplest proof I know (adapted from [Seber and Lee, 2003](http://amzn.com/0471415405/?tag=prorobjhyn-20)).
-
-
+What follows is the simplest proof I know (adapted from [Seber and Lee, 2003](http://amzn.com/0471415405/?tag=prorobjhyn-20)).
 
 ### Proof
 
