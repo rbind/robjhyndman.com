@@ -92,7 +92,7 @@ abline(h=0.05,col="gray")
 
 pv<- function(x, threshold=0.05)
 {
-  mean(x<threshold, na.rm=TRUE)
+  mean(x < threshold, na.rm=TRUE)
 }
 
 testsize <- apply(lj, c(1,3), FUN=pv)
