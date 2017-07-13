@@ -29,7 +29,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**fds**](https://cran.r-project.org/package=fds)
 : Functional data sets useful for testing new methods. [[CRAN](https://cran.r-project.org/package=fds)]
 
-[**fma**](https://github.com/robjhyndman/fma)
+[**fma**](http://pkg.robjhyndman.com/fma)
 : Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cran.r-project.org/package=fma)]
 
 [**forecast**](http://pkg.robjhyndman.com/forecast)
@@ -47,7 +47,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**hdrcde**](https://github.com/robjhyndman/hdrcde)
 : Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cran.r-project.org/package=hdrcde)]
 
-[**hts**](https://github.com/earowang/hts)
+[**hts**](http://pkg.earo.me/hts)
 : Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cran.r-project.org/package=hts)]
 
 [**Mcomp**](https://github.com/robjhyndman/Mcomp)
