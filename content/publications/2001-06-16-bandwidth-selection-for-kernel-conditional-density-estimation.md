@@ -18,7 +18,7 @@ We consider bandwidth selection for the kernel estimator of conditional density 
 
 **Keywords:** density estimation; kernel smoothing; conditioning; bandwidth selection.
 
-**[R code](http://github.com/robjhyndman/hdrcde/)**
+**[R code](http://pkg.robjhyndman.com/hdrcde/)**
 
 
 * * *

@@ -19,5 +19,5 @@ We show how cubic smoothing splines fitted to univariate time series data can be
 
 **Keywords:** ARIMA models, exponential smoothing, Holt's local linear forecasts, maximum likelihood estimation, nonparametric regression, smoothing splines, state space model, stochastic trends.
 
-**[R code](http://github.com/robjhyndman/forecast/)**
+**[R code](http://pkg.robjhyndman.com/forecast/)**
 

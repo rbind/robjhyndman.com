@@ -19,5 +19,5 @@ Many statistical methods involve summarizing a probability distribution by a reg
 
 **Keywords:** highest density regions, graphical summary, density estimation, boxplots.
 
-**[R code](http://github.com/robjhyndman/hdrcde)**
+**[R code](http://pkg.robjhyndman.com/hdrcde)**
 

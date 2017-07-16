@@ -20,7 +20,6 @@ We consider the kernel estimator of conditional density and derive its asymptoti
 
 **Keywords:** automatic forecasting, exponential smoothing, prediction intervals, state space models.
 
-**[R code](http://github.com/robjhyndman/hdrcde)**
+**[R code and data](http://pkg.robjhyndman.com/hdrcde/)**
 
-**Data:** [Melbourne maximum temperatures](https://robjhyndman.com/tsdldata/data/melbmax.dat)
 

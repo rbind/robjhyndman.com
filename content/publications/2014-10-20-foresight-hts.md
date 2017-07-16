@@ -21,5 +21,5 @@ This is an introduction to our approach to forecast reconciliation without using
   * [Hyndman, Ahmed, Athanasopoulos and Shang (CSDA, 2011)](/publications/hierarchical/)
   * [Athanasopoulos, Ahmed and Hyndman (IJF, 2009)](/publications/hierarchical-tourism/)
 
-The software is available in the [hts package for R](http://github.com/robjhyndman/hts/) with some notes on usage in [the vignette](https://cran.r-project.org/web/packages/hts/vignettes/hts.pdf). There is also a gentle introduction in our [forecasting textbook](http://www.otexts.org/fpp/9/4).
+The software is available in the [hts package for R](http://pkg.earo.me/hts/) with some notes on usage in [the vignette](https://cran.r-project.org/web/packages/hts/vignettes/hts.pdf). There is also a gentle introduction in our [forecasting textbook](http://www.otexts.org/fpp/9/4).
 

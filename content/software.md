@@ -5,7 +5,7 @@ title: "Software I've written"
 This page provides links to R packages I have written. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](http://cran.rstudio.com).
 
 
-[**addb**](http://pkg.robjhyndman.com/addb)
+[**addb**](http://pkg.robjhyndman.com/addb/)
 :  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
 
 [**anomalous**](https://github.com/robjhyndman/anomalous)
@@ -23,16 +23,16 @@ This page provides links to R packages I have written. The most recent versions 
 [**eechidna**](https://github.com/ropenscilabs/eechidna)
 : Exploring Election and Census Highly Informative Data Nationally for Australia. Data from the 2013 and 2016 Australian Federal Elections and the 2011 and 2016 Australian Censuses for each House of Representatives electorate, along with some tools for visualizing and analysing the data. [[CRAN](https://cran.r-project.org/package=eechidna)]
 
-[**expsmooth**](http://pkg.robjhyndman.com/expsmooth)
+[**expsmooth**](http://pkg.robjhyndman.com/expsmooth/)
 : Data sets from [Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with exponential smoothing: the state space approach*, Springer: Berlin.](http://www.exponentialsmoothing.net/) [[CRAN](https://cran.r-project.org/package=expsmooth)]
 
 [**fds**](https://cran.r-project.org/package=fds)
 : Functional data sets useful for testing new methods. [[CRAN](https://cran.r-project.org/package=fds)]
 
-[**fma**](http://pkg.robjhyndman.com/fma)
+[**fma**](http://pkg.robjhyndman.com/fma/)
 : Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cran.r-project.org/package=fma)]
 
-[**forecast**](http://pkg.robjhyndman.com/forecast)
+[**forecast**](http://pkg.robjhyndman.com/forecast/)
 : Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cran.r-project.org/package=forecast)]
 
 [**fpp**](https://cran.r-project.org/package=fpp)
@@ -44,10 +44,10 @@ This page provides links to R packages I have written. The most recent versions 
 [**ftsa**](https://cran.r-project.org/package=ftsa)
 : Methods and tools for modelling and forecasting functional time series. [[CRAN](https://cran.r-project.org/package=ftsa)]
 
-[**hdrcde**](https://github.com/robjhyndman/hdrcde)
+[**hdrcde**](http://pkg.robjhyndman.com/hdrcde/)
 : Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cran.r-project.org/package=hdrcde)]
 
-[**hts**](http://pkg.earo.me/hts)
+[**hts**](http://pkg.earo.me/hts/)
 : Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cran.r-project.org/package=hts)]
 
 [**Mcomp**](https://github.com/robjhyndman/Mcomp)
@@ -65,7 +65,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**stR**](https://bitbucket.org/alexanderdokumentov/strpackage)
 : STR time series decomposition. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cran.r-project.org/package=stR)]
 
-[**thief**](http://pkg.robjhyndman.com/thief)
+[**thief**](http://pkg.robjhyndman.com/thief/)
 : Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cran.r-project.org/package=thief)]
 
 

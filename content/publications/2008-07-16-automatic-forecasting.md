@@ -26,9 +26,9 @@ Automatic forecasts of large numbers of univariate time series are often needed 
 
 
 	
-  * Download the [forecast package for R](http://github.com/robjhyndman/forecast)
+  * Download the [forecast package for R](http://pkg.robjhyndman.com/forecast)
 
 		
-  * The four data sets in the paper are part of the [expsmooth package for R](http://github.com/robjhyndman/expsmooth)
+  * The four data sets in the paper are part of the [expsmooth package for R](http://pkg.robjhyndman.com/expsmooth)
 
 

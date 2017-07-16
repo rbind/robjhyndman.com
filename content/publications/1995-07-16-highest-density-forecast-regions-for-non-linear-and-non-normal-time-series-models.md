@@ -18,7 +18,7 @@ Many modern time series methods, such as those involving non-linear models or no
 
 **Keywords:** non-linear time series, non-normal time series, highest density regions, forecast intervals, threshold models.
 
-**[R code](http://github.com/robjhyndman/hdrcde)**
+**[R code](http://pkg.robjhyndman.com/hdrcde/)**
 
 
 

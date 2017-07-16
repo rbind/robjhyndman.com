@@ -17,5 +17,5 @@ The "Theta method" of forecasting performed particularly well in the M3-competit
 
 **Keywords:** exponential smoothing, forecasting competitions, state space models.
 
-**[R code](http://github.com/robjhyndman/forecast)**
+**[R code](http://pkg.robjhyndman.com/forecast)**
 

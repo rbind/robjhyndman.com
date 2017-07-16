@@ -19,5 +19,5 @@ We suggest two new methods for conditional density estimation. The first is base
 
 **Keywords:** bandwidth selection; bootstrap; conditioning; density estimation; kernel smoothing; symmetry tests.
 
-[R code](http://githbub.com/robjhyndman/hdrcde)
+**[R code](http://githbub.com/robjhyndman/hdrcde/)**
 

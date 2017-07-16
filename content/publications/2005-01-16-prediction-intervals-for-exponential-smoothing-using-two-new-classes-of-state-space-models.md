@@ -33,5 +33,5 @@ p26
 :   Replace $s\_{n-1} = 0.90,~s\_{n-1} = 1.10$ with $s\_{n-2} = 0.90,~s\_{n-3} = 1.10.$
 
 
-**[R code](http://github.com/robjhyndman/forecast)**
+**[R code](http://pkg.robjhyndman.com/forecast)**
 
