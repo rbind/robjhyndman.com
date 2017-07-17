@@ -27,7 +27,7 @@ The following bio and photos may be used in media releases without further permi
 Office: Room 762, Menzies Building, Clayton campus, [Monash University](http://monash.edu/), VIC 3800, Australia.
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6295.61554753772!2d145.1344483088544!3d-37.911555539315664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66acc1acb1d1d%3A0xeaa90f503511c077!2sRobert+Menzies+Bldg%2C+Monash+University+Clayton+Campus%2C+20+Chancellors+Walk%2C+Clayton+VIC+3800!5e0!3m2!1sen!2sau!4v1434347207102" width="600" height="450" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1847Gp4aimEir9j-C7uQiVugnuys" width="640" height="480"></iframe>
 
 &nbsp;
 
