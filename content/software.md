@@ -50,7 +50,7 @@ This page provides links to R packages I have written. The most recent versions 
 [**hts**](http://pkg.earo.me/hts/)
 : Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cran.r-project.org/package=hts)]
 
-[**Mcomp**](https://github.com/robjhyndman/Mcomp)
+[**Mcomp**](https://pkg.robjhyndman.com/Mcomp)
 : The 1001 time series from the M-competition (Makridakis et al. 1982) and the 3003 time series from the IJF-M3 competition (Makridakis and Hibon, 2000). [[CRAN](https://cran.r-project.org/package=Mcomp)]
 
 [**MEFM**](https://github.com/robjhyndman/mefm-package)
