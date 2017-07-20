@@ -10,21 +10,21 @@ title: "Research team"
 ## PhD student
 
   1. **Puwasala Gamakumara**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016)
-  1. **<a href="https://github.com/camroach87/">Cameron Roach</a>**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016).
-  1. **Dilini Talagala**, *Anomaly detection in streaming time series data* (PhD, begun 2016)
-  1. **Thiyanga Talagala**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016)
-  1. <a href="http://earo.me">**Earo Wang**</a>, *Visualization of large collections of time series* (PhD, begun 2016)
+  1. **[Cameron Roach](https://github.com/camroach87/)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016).
+  1. **[Dilini Talagala](https://github.com/pridiltal)**, *Anomaly detection in streaming time series data* (PhD, begun 2016)
+  1. **[Thiyanga Talagala](https://github.com/thiyangt)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016)
+  1. **[Earo Wang](http://earo.me)**, *Visualization of large collections of time series* (PhD, begun 2016)
 
 ## Former research fellows
 
-  1. **<a class="vt-p" href="http://www.med.monash.edu.au/epidemiology/staff/academic/akram.html">Muhammad Akram</a>**
-  1. <a class="vt-p" href="http://monash.edu/research/people/profiles/profile.html?sid=2981&amp;pid=3333">**George Athanasopoulos**</a>
-  1. <a class="vt-p" href="http://www.med.monash.edu.au/epidemiology/staff/academic/billah.html">**Baki Billah**</a>
+  1. **[Muhammad Akram](http://www.med.monash.edu.au/epidemiology/staff/academic/akram.html)**
+  1. **[George Athanasopoulos](http://monash.edu/research/people/profiles/profile.html?sid=2981&pid=3333)**</a>
+  1. **[Baki Billah](http://www.med.monash.edu.au/epidemiology/staff/academic/billah.html)**</a>
   1. **Gary Deng**
-  1. **<a class="vt-p" href="http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas">Bircan Erbas</a>**
-  1. **<a class="vt-p" href="http://users.monash.edu.au/~shufan/">Shu Fan</a>**
+  1. **[Bircan Erbas](http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas>)**
+  1. **[Shu Fan](http://users.monash.edu.au/~shufan/)**
   1. **Bin Jiang**
-  1. **<a class="vt-p" href="http://users.monash.edu/~ingridas/">Ingrida Steponavičė</a>**
+  1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)</a>**
 
 ## Former postgraduate students
 
