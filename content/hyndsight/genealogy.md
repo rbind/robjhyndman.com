@@ -142,7 +142,7 @@ D. --
 Gary spent the first part of his career working in time series analysis, particularly non-Gaussian time series. He is now a Professor in Biostatistics and Informatics at the University of Colorado.</td>
 </tr>
 <tr>
-<td><img align="top" src="/pics/population.jpg" width="200" /></td>
+<td><img align="top" src="/img/population.jpg" width="200" /></td>
 <td><strong><a class="vt-p">Rob J Hyndman</a></strong>
 <em>Ph.D. University of Melbourne, 1993</em>
 B. 2 May 1967
