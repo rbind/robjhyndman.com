@@ -20,3 +20,4 @@ This paper introduces the concept of Temporal Hierarchies for time series foreca
 
 **Keywords:** Hierarchical forecasting, temporal aggregation, reconciliation, forecast combination
 
+The [**thief package**](http://pkg.robjhyndman.com/thief/) implements the methods in this paper.
