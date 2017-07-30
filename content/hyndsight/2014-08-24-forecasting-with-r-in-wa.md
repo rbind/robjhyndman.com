@@ -2,11 +2,8 @@
 author: robjhyndman
 comments: true
 date: 2014-08-24 22:53:49+00:00
-
-link: https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/
 slug: forecasting-with-r-in-wa
 title: Forecasting with R in WA
-wordpress_id: 2871
 categories:
 - conferences
 - forecasting
@@ -22,14 +19,14 @@ Workshop participants will be assumed to be familiar with basic statistical tool
 
 **Venue**: [The University Club](http://sponsored.uwa.edu.au/club/), University of Western Australia, Nedlands WA.
 
+Day 1
+:    Forecasting tools, seasonality and trends, exponential smoothing.
 
+Day 2
+:    State space models, stationarity, transformations, differencing, ARIMA models.
 
-Day 1:
-    Forecasting tools, seasonality and trends, exponential smoothing.
-Day 2:
-    State space models, stationarity, transformations, differencing, ARIMA models.
-Day 3:
-    Time series cross-validation, dynamic regression, hierarchical forecasting, nonlinear models.
+Day 3
+:    Time series cross-validation, dynamic regression, hierarchical forecasting, nonlinear models.
 
 
 The course will involve a mixture of lectures and practical sessions using R. Each participant must bring their own laptop with R installed, along with the [fpp package](http://cran.r-project.org/package=fpp) and its dependencies.
