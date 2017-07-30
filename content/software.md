@@ -56,6 +56,9 @@ This page provides links to R packages I have written. The most recent versions 
 [**MEFM**](https://github.com/robjhyndman/mefm-package)
 : A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
 
+[**ozdata**](https://github.com/AU-BURGr/ozdata)
+: Tools to import and explore Australian data sets. Data imported from [data.gov.au](https://data.gov.au) and [ozmacrodata.org](http://ozmacrodata.org).
+
 [**rainbow**](https://cran.r-project.org/package=rainbow)
 : Plots for functional data: rainbow plot, functional bagplot, functional HDR boxplot. [[CRAN](https://cran.r-project.org/package=rainbow)]
 
@@ -64,6 +67,9 @@ This page provides links to R packages I have written. The most recent versions 
 
 [**stR**](https://bitbucket.org/alexanderdokumentov/strpackage)
 : STR time series decomposition. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cran.r-project.org/package=stR)]
+
+[**sugrrants**](http://pkg.earo.me/sugrrants/)
+: Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using  the tidyverse and grammar of graphics framework. [[CRAN](https://cran.r-project.org/package=sugrrants)]
 
 [**thief**](http://pkg.robjhyndman.com/thief/)
 : Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cran.r-project.org/package=thief)]
