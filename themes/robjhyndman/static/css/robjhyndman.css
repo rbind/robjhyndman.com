@@ -51,8 +51,12 @@ a.badge.badge-blue { color: #fff;}
   font-size: 18px;
   padding: 5px 5px 3px 5px;
   text-transform: none;
+  font-family: 'Carlito';
 }
 
+.badge {
+  font-family: 'Carlito';
+}
 
 /* RJH problem additions */
 
