@@ -30,8 +30,8 @@ h3 {
   font-size: 1.2em;
 }
 
-p {
-  margin-bottom: 0.9em;
+p, ul, ol, dl, blockquote, hr, pre, table, form, fieldset, figure, address {
+    margin-bottom: 0em;
 }
 
 .label-red {
