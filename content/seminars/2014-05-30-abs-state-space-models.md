@@ -14,28 +14,20 @@ tags:
 - state space models
 ---
 
-
-	
-  1. Exponential smoothing
-
-	
+1. Exponential smoothing
     * [Slides](/talks/ABS1.pdf)
     * [R examples](/talks/ABS1.R)
     * [Lab session](/talks/ABS-lab1.pdf)
     * [Solutions to lab session](/talks/ABS-lab1.R)
-	
-  2. Structural models
-	
+
+2. Structural models
     * [Slides](/talks/ABS2.pdf)
     * [R examples](/talks/ABS2.R)
     * [Lab session](/talks/ABS-lab2.pdf)
     * [Solutions to lab session](/talks/ABS-lab2.R)
 
-	
-  3. ARIMA and RegARMA models, and dlm
-
+3. ARIMA and RegARMA models, and dlm
     * [Slides](/talks/ABS3.pdf)
     * [R examples](/talks/ABS3.R)
-
 
 _(Updated: 2 June 2014)_
