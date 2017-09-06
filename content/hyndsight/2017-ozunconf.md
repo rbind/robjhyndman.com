@@ -1,11 +1,13 @@
 ---
 date: 2017-09-07
 slug: ozunconf2017
-title: "rOpenSci OzUnconference"
+title: "rOpenSci OzUnconference coming to Melbourne"
 categories:
-- ROpenSci
 - conferences
+- data science
 - R
+- rOpenSci
+- reproducible research
 ---
 
 ![](http://ozunconf17.ropensci.org/img/header.jpg)
