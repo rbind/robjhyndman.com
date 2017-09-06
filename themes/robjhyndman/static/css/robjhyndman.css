@@ -31,7 +31,7 @@ h3 {
 }
 
 p, ul, ol, dl, blockquote, hr, pre, table, form, fieldset, figure, address {
-    margin-bottom: 0em;
+    margin-bottom: 1em;
 }
 
 .label-red {
