@@ -1,0 +1,126 @@
+---
+date: 2017-08-31
+slug: distinct
+title: Finding distinct rows of a tibble
+categories:
+- R
+- statistics
+- computing
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+options(digits=4)
+```
+
+I've been using R or its predecessors for about 30 years, so I tend to I know a lot about R, but I don't necessarily know how to use modern R tools. Lately, I've been teaching my students the tidyverse approach to data analysis, which means that I need to unlearn some old approaches and to re-learn them using new tools. But old dogs and new tricks...
+
+Yesterday, I was teaching a class where I needed to extract some rows of a data set. The dataset contained some longitudinal data, so there were multiple measurements on each individual. I wanted to extract the demographic data on each individual.
+
+This is how I would have done it using my old tricks.
+
+```r
+k <- match(unique(psid$person), psid$person)
+demographics1 <- faraway::psid[k,c('person','sex','educ','age')]
+```
+
+This finds the first row for each unique person in the data set, then extracts those rows, and the desired columns. The `match` function is slightly opaque, but otherwise this is reasonably straightforward (at least to my eye).
+
+But because I wanted to teach my students using the `tidyverse` way of doing things, I actually used the following code in my lecture.
+
+```r
+library(tidyverse)
+
+demographics2 <-
+  faraway::psid %>%
+  as_tibble %>%
+  select(person, sex, educ, age) %>%
+  group_by(person) %>%
+  filter(row_number(sex)==1) %>%
+  ungroup
+```
+
+This converts the data frame to a tibble, extracts only the demographic variables, groups the data by person, grabs the first row for each person, then ungroups. It's a little cumbersome with the grouping and ungrouping, and using `sex` in the filter command is strange, but you need some variable name there. Also, I didn't need the `as_tibble`, but I've been teaching my students to work with tibbles, so I wanted to do that here as well.
+
+Two of my students (who've learnt R in the tidyverse era) immediately suggested that I should be using `first`. The equivalent code using `first` would be
+
+```r
+demographics3 <-
+  faraway::psid %>%
+  as_tibble %>%
+  select(person, sex, educ, age) %>%
+  group_by(person) %>%
+  summarize(sex = first(sex), educ=first(educ), age=first(age))
+```
+
+At least that avoids the ungrouping, but the summarize command needs me to specify every variable which is not ideal.
+
+Afer the class, I thought there must be a better way, and as a result of some googling I came across the `distinct` function. Why hadn't I seen this before? Perhaps it is a recent Hadley innovation? Anyway, it simplifies things considerably.
+
+```r
+demographics4 <-
+  faraway::psid %>%
+  as_tibble %>%
+  select(person, sex, educ, age) %>%
+  distinct
+```
+
+So that looks much better --- clean, short, and easy to understand. But is it fast? Rather than grabbing the first lines of each group, it has to go searching for duplicates. But avoiding grouping and ungrouping must save some time.
+
+So I ran some `microbenchmark` timings:
+
+```{r, message=FALSE}
+library(tidyverse)
+
+# The old way
+d1 <- function()
+{
+  k <- match(unique(faraway::psid$person), faraway::psid$person)
+  faraway::psid[k,c('person','sex','educ','age')]
+}
+
+# My first tidyverse attempt
+d2 <- function()
+{
+  faraway::psid %>%
+    as_tibble %>%
+    select(person, sex, educ, age) %>%
+    group_by(person) %>%
+    filter(row_number(sex)==1) %>%
+    ungroup
+}
+
+# My students' suggestion
+d3 <- function()
+{
+  faraway::psid %>%
+    as_tibble %>%
+    select(person, sex, educ, age) %>%
+    group_by(person) %>%
+    summarize(sex = first(sex), educ=first(educ), age=first(age))
+}
+
+# The best tidyverse way?
+d4 <- function()
+{
+  faraway::psid %>%
+    as_tibble %>%
+    select(person, sex, educ, age) %>%
+    distinct
+}
+
+library(microbenchmark)
+
+microbenchmark(d1(), d2(), d3(), d4(), times=100)
+```
+
+Amazing. Those old tricks are pretty fast! Of the tidyverse approaches, the last one is clearly better, which is interesting in that it has to go searching for duplicates rather than just pick off the first row of each group. Presumably the grouping and ungrouping of approach 2 is slowing things down.
+
+## Epilogue
+
+The first version of this post had an error in the benchmarks which meant the code wasn't actually executed, making all the times much too small and much too close. I should have noticed that, but we all make mistakes...
+
+Thanks to Brodie and Dirk for politely pointing out my error by message and email. Dirk commented that a `data.table` solution would also be simpler and faster than tidyverse, and further that it would be interesting to try larger sample sizes as `psid` is relatively small. I'll leave those extensions to interested readers.
+
+What was, perhaps, not clear in the original post (now clarified) is that we have chosen to teach the tidyverse approach to data analysis in our classes at the Monash Business School. We think it is an easier way for our students to learn to use R for data analysis. That's why I wanted a tidyverse way of doing this. Yes, [your favourite tool] might be faster, or better in some other way, but that wasn't the point.
