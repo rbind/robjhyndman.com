@@ -1,5 +1,5 @@
 ---
-date: 2017-09-07
+date: 2017-09-07 13:21:58+00:00
 slug:  RA-wanted
 title: Looking for a new research assistant
 categories:
