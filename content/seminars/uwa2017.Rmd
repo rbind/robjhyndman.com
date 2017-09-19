@@ -16,7 +16,7 @@ This page is for people enrolled in my [UWA 3-day workshop](http://www.cas.maths
 
 ##Prerequisites
 
-Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:
+Please bring your own laptop with a recent version of R and RStudio installed, along with the following packages and their dependencies:
 
   * `fpp2`
   * `readxl`
