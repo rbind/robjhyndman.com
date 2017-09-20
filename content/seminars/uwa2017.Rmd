@@ -11,7 +11,7 @@ date: 2017-09-26
 **Location**: [The University Club](http://www.uwa.edu.au/contact/map?id=2161), University of Western Australia
 
 
-This page is for people enrolled in my [UWA 3-day workshop](http://www.cas.maths.uwa.edu.au/courses/forecasting2). 
+This page is for people enrolled in my [UWA 3-day workshop](http://www.cas.maths.uwa.edu.au/courses/forecasting2).
 
 
 ##Prerequisites
@@ -36,7 +36,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 * [Datacamp: Introduction to R course](https://www.datacamp.com/courses/free-introduction-to-r)
 * [Help with Rmarkdown](http://rmarkdown.rstudio.com/lesson-2.html)
 * [Base R cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/base-r.pdf)
-* [Rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/rmarkdown-cheatsheet-2.0.pdf)  
+* [Rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/rmarkdown-cheatsheet-2.0.pdf)
 
 ##Program
 
@@ -189,7 +189,7 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
     ```r
     retaildata <- readxl::read_excel("retail.xlsx", skip = 1)
-    mytimeseries <- ts(retaildata[["A3349873A"]], 
+    mytimeseries <- ts(retaildata[["A3349873A"]],
       frequency=12, start=c(1982,4))
     autoplot(mytimeseries)
     ```
@@ -223,6 +223,7 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
     fc <- snaive(beer)
     autoplot(fc)
     res <- residuals(fc)
+    autoplot(res)
     ```
 
   2. Test if the residuals are white noise.
