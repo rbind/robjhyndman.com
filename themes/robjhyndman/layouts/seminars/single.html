@@ -9,7 +9,8 @@
 </div>
 <div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'>
-                  {{ .Date.Format "2&nbsp;January&nbsp;2006" | safeHTML }}
+                  {{ .Date.Format "2&nbsp;January&nbsp;2006" | safeHTML }}<br>
+                  {{ if .Params.filename }} <a href="https://speakerd.s3.amazonaws.com/presentations/{{ .Params.speakerdeck }}/{{ .Params.filename }}" class="badge badge-small badge-red">pdf</a>{{ end }}
                   {{ if .Params.citation }}
                   {{.Params.citation | safeHTML }}
                   {{ end }} </p>
