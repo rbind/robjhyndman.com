@@ -164,7 +164,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 <tr>
   <td>3.30 - 4.30</td>
   <td>Final comments, questions and discussion</td>
-   <td><a href="/uwa2017/Final-Comments.pdf" target="_new">Slides</a></td>
+   <td><a href="/uwa2017/3-5-Wrapup.pdf" target="_new">Slides</a></td>
 </tr>
 </table>
 
