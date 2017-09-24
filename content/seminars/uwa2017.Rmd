@@ -478,12 +478,7 @@ Use `thief()` on your retail data, using ARIMA models for each aggregation. Does
     (b) Does this completely automated approach work for these data?
     (c) Have you saved any degrees of freedom by using Fourier terms rather than seasonal differencing?
 
-2. The following code will read weekly data on US finished motor gasoline products supplied (thousands of barrels per day):
-
-    ```r
-    gas <- read.csv("https://robjhyndman.com/data/gasoline.csv")[,1]
-    gas <- ts(gas, start=1991+31/365.25, frequency = 365.25/7)
-    ```
+2. Consider the US finished motor gasoline products supplied (thousands of barrels per day) in the `gasoline` data set.
 
     (a) Fit a `tbats` model to these data.
     (b) Check the residuals and produce forecasts.
