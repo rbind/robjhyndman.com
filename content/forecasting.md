@@ -13,7 +13,10 @@ This book was published in 1998, and for nearly 20 years I maintained an associa
 
 The data sets from the book can be found in the [**fma** package for R](http://cran.r-project.org/package=fma).
 
+The solutions to exercises can be [downloaded here](/files/solutions.pdf).
+
 The book is now out-of-date. I recommend my new book entitled [*Forecasting: principles and practice*](http://Otexts.org/fpp/). 
+
 
 
 
