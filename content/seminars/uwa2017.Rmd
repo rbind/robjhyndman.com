@@ -201,7 +201,7 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
   1. The following graphics functions have been introduced:
 
     ```r
-    autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
+    autoplot, ggseasonplot, ggsubseriesplot, gglagplot, ggAcf, ggtsdisplay
     ```
 
     Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
@@ -314,7 +314,7 @@ from 1900–1993 (data set `eggs`).
 2. Use `ets()` on some of these series:
 
     ```r
-     bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose, eggs, bricksq, ausbeer
+     bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose, eggs, ausbeer
     ```
 
     Does it always give good forecasts?
@@ -326,9 +326,9 @@ from 1900–1993 (data set `eggs`).
 1. For the following series, find an appropriate Box-Cox transformation in order to stabilize the variance.
 
     * `usnetelec`
-    * `usgdp`
     * `mcopper`
     * `enplanements`
+    * `a10`
 
 2. Why is a Box-Cox transformation unhelpful for the `cangas` data?
 
@@ -491,3 +491,12 @@ Experiment with using `nnetar()` on your retail data and other data we have cons
 ###Lab Session 19
 
 Over this short-course, you have developed several models for your Australian retail data. The last exercise is to use cross-validation to objectively compare the models you have developed. Compute cross-validated RMSE values for each of the time series models you have considered. It will take some time to run, so perhaps leave it running overnight and check the results tomorrow.
+
+## Lab Session Notes
+
+Here are the Rmd and html files I created during the workshop
+
+ * Day 1 [[Rmd](/uwa2017/Day1.Rmd)] [[html](/uwa2017/Day1.html)]
+ * Day 2 [[Rmd](/uwa2017/Day2.Rmd)] [[html](/uwa2017/Day2.html)]
+ * Day 3
+
