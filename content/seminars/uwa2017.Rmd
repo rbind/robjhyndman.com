@@ -158,15 +158,17 @@ Participants will be assumed to be familiar with basic statistical tools such as
   <td><a href="/uwa2017/3-4-Advanced.pdf" target="_new">Slides</a></td>
 </tr>
 <tr>
-  <td>3.00 - 3.30</td>
+  <td>3.00 - 3.15</td>
   <td><em>Break</em></td><td></td>
 </tr>
 <tr>
-  <td>3.30 - 4.30</td>
+  <td>3.15 - 4.00</td>
   <td>Final comments, questions and discussion</td>
    <td><a href="/uwa2017/3-5-Wrapup.pdf" target="_new">Slides</a></td>
 </tr>
 </table>
+
+The additional slides on forecastHybrid, opera and prophet were part of [this talk](/seminars/eindhoven2017/) given in Eindhoven in April 2017.
 
 ##Lab sessions
 
@@ -498,5 +500,5 @@ Here are the Rmd and html files I created during the workshop
 
  * Day 1 [[Rmd](/uwa2017/Day1.Rmd)] [[html](/uwa2017/Day1.html)]
  * Day 2 [[Rmd](/uwa2017/Day2.Rmd)] [[html](/uwa2017/Day2.html)]
- * Day 3
+ * Day 3 [[Rmd](/uwa2017/Day3.Rmd)] [[html](/uwa2017/Day3.html)]
 
