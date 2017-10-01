@@ -1,12 +1,11 @@
 ---
 author: John L Pearce, Jason Beringer, Neville Nicholls, Rob&nbsp;J&nbsp;Hyndman, Petteri Uotila, Nigel J Tapper
 Status: Published
-comments: false
 date: 2011-07-16 06:50:54+00:00
 slug: synoptic-gams
 title: Investigating the influence of synoptic-scale circulation on air quality using
   self-organizing maps and generalized additive modelling
-wordpress_id: 1289
+doi: 10.1016/j.atmosenv.2010.09.032
 kind:
  article
 tags:
