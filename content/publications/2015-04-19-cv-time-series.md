@@ -5,13 +5,14 @@ date: 2017-07-23
 slug: cv-time-series
 title: A note on the validity of cross-validation for evaluating autoregressive time series prediction
 kind:
- unpublished
+ article
 tags:
 - accuracy
 - forecasting
 - neural networks
 - time series
 file: cv-wp.pdf
+citation: <em>Computational Statistics and Data Analysis</em>, to appear
 mathjax: true
 ---
 
