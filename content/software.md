@@ -57,7 +57,7 @@ This page provides links to R packages I have written. The most recent versions 
 : A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
 
 [**ozdata**](https://github.com/AU-BURGr/ozdata)
-: Tools to import and explore Australian data sets. Data imported from [data.gov.au](https://data.gov.au) and [ozmacrodata.org](http://ozmacrodata.org).
+: Tools to import and explore Australian data sets. Data imported from [data.gov.au](https://data.gov.au) and [ausmacrodata.org](http://ausmacrodata.org).
 
 [**rainbow**](https://CRAN.R-project.org/package=rainbow)
 : Plots for functional data: rainbow plot, functional bagplot, functional HDR boxplot. [[CRAN](https://CRAN.R-project.org/package=rainbow)]

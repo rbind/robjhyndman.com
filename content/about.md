@@ -55,7 +55,7 @@ I am a member of the following organizations:
   * [International Statistical Institute](http://isi.cbs.nl)  (elected member)
   * [International Association for Statistical Computing](http://www.iasc-isi.org)
   * [Statistical Society of Australia](http://www.statsoc.org.au)
-  * [Foundation for Open Access Statistics](http://www.foastat.org/)
+  * [Foundation for Open Access Statistics](http://foastat.org/)
 
 ## Things I've started
 

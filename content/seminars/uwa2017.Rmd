@@ -35,8 +35,8 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 * [Datacamp: Introduction to R course](https://www.datacamp.com/courses/free-introduction-to-r)
 * [Help with Rmarkdown](http://rmarkdown.rstudio.com/lesson-2.html)
-* [Base R cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/base-r.pdf)
-* [Rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/rmarkdown-cheatsheet-2.0.pdf)
+* [Base R cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
+* [Rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 ##Program
 
