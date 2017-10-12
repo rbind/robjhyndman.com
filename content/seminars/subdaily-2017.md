@@ -10,4 +10,4 @@ Talk given by me, [Earo Wang](http://earo.me) and [Mitchell O'Hara-Wild](https:/
 
   * My slides are below.
   * [Earo's slides](http://slides.earo.me/meetup17/)
-  * [Mitchell's slides](http://to.be.added)
+  * [Mitchell's slides](http://www.mitchelloharawild.com/melburn17/#1)
