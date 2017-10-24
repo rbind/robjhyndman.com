@@ -17,7 +17,7 @@ categories:
 
 Rmarkdown templates for staff and students in my department are now available on github. For a thesis, fork the repository [MonashThesis](https://github.com/robjhyndman/MonashThesis).
 
-For other templates, install the R package [Monash R package](https://github.com/robjhyndman/Monash). This provides templates for
+For other templates, install the R package [MonashEBSTemplates R package](https://github.com/robjhyndman/MonashEBSTemplates). This provides templates for
 
    - beamer slides
    - working papers
