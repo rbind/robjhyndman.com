@@ -16,7 +16,7 @@ My new paper [(Studdert et al, 2017)](https://robjhyndman.com/publications/handg
   * [EurekaAlert!](https://www.eurekalert.org/pub_releases/2017-05/acop-lsi042517.php)
   * [Guns](http://www.guns.com/2017/05/03/mass-shootings-encourage-first-time-gun-owners-in-california-study-finds/)
   * [Healio](http://www.healio.com/internal-medicine/psychiatry/news/online/%7Bc8104d06-cd82-4423-a8b4-6422c4c63d71%7D/number-of-handgun-acquisitions-increase-after-mass-shootings)
-  * [KernGoldenEmpire](http://www.kerngoldenempire.com/news/health-news/why-do-people-buy-guns-after-mass-shooting/704731397)
+  * [International Business Times](http://www.ibtimes.com/why-do-gun-sales-us-spike-after-mass-shootings-2607059)
   * [KPBS](http://www.kpbs.org/news/2017/may/01/study-california-gun-sales-spiked-after-recent-mas/)
   * [Larkspur Patch](https://patch.com/california/larkspurcortemadera/ca-handgun-sales-spiked-after-san-bernardino-sandy-hook-mass)
   * [Pantagraph](http://www.pantagraph.com/lifestyles/health-med-fit/california-handgun-sales-spiked-after-mass-shootings/article_71a755e3-fd55-505a-b097-21ec71084e25.html)
