@@ -14,6 +14,9 @@ This page provides links to R packages I have written. The most recent versions 
 [**bfast**](https://github.com/verbe039/bfast)
 : Automatic identification of breaks for additive season and trend, designed for use with remote sensing data. [[CRAN](https://CRAN.R-project.org/package=bfast)]
 
+[**cricinfo**](https://github.com/ropenscilabs/cricinfo)
+: Functions for downloading cricket data from [ESPNCricinfo](http://stats.espncricinfo.com/ci/engine/stats/index.html).
+
 [**demography**](https://github.com/robjhyndman/demography)
 : Provides a large number of functions for handling demographic statistics, modelling and forecasting. In particular, it implements lifetable calculations; Lee-Carter modelling and variants; functional data analysis of mortality rates, fertility rates, net migration numbers; and stochastic population forecasting. [[CRAN](https://CRAN.R-project.org/package=demography)]
 
