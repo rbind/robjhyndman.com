@@ -65,6 +65,12 @@ This page provides links to R packages I have written. The most recent versions 
 [**rainbow**](https://CRAN.R-project.org/package=rainbow)
 : Plots for functional data: rainbow plot, functional bagplot, functional HDR boxplot. [[CRAN](https://CRAN.R-project.org/package=rainbow)]
 
+[**rmarkdown**](https://CRAN.R-project.org/package=rmarkdown)
+: Dynamic documents for R. [[CRAN](https://CRAN.R-project.org/package=rmarkdown)]
+
+[**robets**](https://CRAN.R-project.org/package=robets)
+: Forecasting time series with robust exponential smoothing. [[CRAN](https://CRAN.R-project.org/package=robets)]
+
 [**smoothAPC**](https://CRAN.R-project.org/package=smoothAPC)
 : Smoothing demographic data with period and cohort effects. The method uses bivariate thin plate splines, bivariate lasso-type regularization, and allows for both period and cohort effects. Thus the mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. The methods are described in [Dokumentov, A., and Hyndman, R.J. (2014) Bivariate data with ridges: two-dimensional smoothing of mortality rates](https://robjhyndman.com/publications/mortality-smoothing/). [[CRAN](https://CRAN.R-project.org/package=smoothAPC)]
 
