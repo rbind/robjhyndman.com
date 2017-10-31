@@ -2,7 +2,7 @@
 title: "Software I've written"
 ---
 
-This page provides links to R packages I have written. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](http://cran.rstudio.com).
+This page provides links to R packages I have (co)authored. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](http://cran.rstudio.com).
 
 
 [**addb**](http://pkg.robjhyndman.com/addb/)
