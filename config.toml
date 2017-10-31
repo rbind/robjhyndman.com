@@ -8,6 +8,7 @@ DisqusShortname = "researchtips"
 googleAnalytics = "UA-5004894-1"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 pluralizeListTitles = false
+buildFuture = true
 
 [params]
 
