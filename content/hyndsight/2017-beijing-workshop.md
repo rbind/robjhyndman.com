@@ -1,5 +1,5 @@
 ---
-date: 2017-10-31
+date: 2017-11-01
 slug: beijing-2017
 title: "2017 Beijing Workshop on Forecasting"
 categories:
@@ -9,7 +9,7 @@ categories:
 - R
 ---
 
-Next month I'm speaking at the [**2017 Beijing Workshop on Forecasting**](https://yanfei.site/bjwf/), to be held on Saturday 18 November at the Central University of Finance and Economics.
+Later this month I'm speaking at the [**2017 Beijing Workshop on Forecasting**](https://yanfei.site/bjwf/), to be held on Saturday 18 November at the Central University of Finance and Economics.
 
 I'm giving four talks as part of the workshop. Other speakers are Junni Zhang, Lei Song, Hui Bu, [Feng Li](https://feng.li) and [Yanfei Kang](https://yanfei.site).
 
