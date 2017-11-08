@@ -5,7 +5,6 @@ excerpt: Talk given to a joint meeting of the Statistical Society of Australia (
   branch) and the Melbourne Data Science Meetup Group.
 slug: big-time-series
 title: Visualization of big time series data
-slideshare: G2EWjeJA9hMEUP
 tags:
 - forecasting
 - functional data
@@ -32,4 +31,6 @@ I will demonstrate an approach to this problem using a vector of features on eac
 
 **Slides**
 
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/G2EWjeJA9hMEUP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
