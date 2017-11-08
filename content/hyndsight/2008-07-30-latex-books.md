@@ -14,6 +14,5 @@ categories:
 
 {{< latex-books >}}
 
-
 If you cannot see any books above, please turn off your ad-blocker.
 
