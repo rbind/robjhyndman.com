@@ -16,7 +16,7 @@ categories:
 
 **For students who are interested in doing a PhD at Monash under my supervision.**
 
-First, read the [instructions](http://business.monash.edu/programs/research-degrees/how-to-apply) on how to apply.
+First, read the [instructions](http://www.monash.edu/business/future-students/research-degrees/how-to-apply) on how to apply.
 
 Second, poke around [my website](/) to see the sorts of topics I work on. There's no point asking to do a PhD with me if you want to do research on something I don't know much about. In particular, please note that I'm not really interested in finance or economics. There are some excellent researchers at Monash on both topics, but I'm not one of them.
 
