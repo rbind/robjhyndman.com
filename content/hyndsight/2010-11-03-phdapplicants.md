@@ -24,7 +24,7 @@ If you're still interested, here is what I normally expect. You should have a s
 
 Students who struggle either find they don't know enough mathematics (or didn't pay attention when they learned it), or they don't know enough computing. I don't expect students to be whiz programmers, but I do expect them to know about for loops, if statements, local variables and functions, and I assume they have some idea about nonlinear optimization.
 
-I do not expect that you have studied specific topics close to my research such as time series analysis, forecasting, nonparametric smoothing, machine learning, etc. If you have a solid background in statistics and mathematics, then you'll pick up the necessary material easily enough.
+I do not expect that you have studied specific topics close to my research such as time series analysis, forecasting, nonparametric smoothing, machine learning, etc. If you have a solid background in statistics and mathematics, then you'll pick up the necessary material.
 
 Much of the first year of a PhD is spent in reading the relevant background literature and developing some necessary research skills. Most students have not produced anything publishable after one year, but they will usually have developed good research skills, have read a lot of papers and will be ready to start doing some research of their own.
 
