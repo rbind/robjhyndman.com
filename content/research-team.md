@@ -10,7 +10,7 @@ title: "Research team"
 
 ## PhD student
 
-  1. **Puwasala Gamakumara**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016)
+  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016)
   1. **[Cameron Roach](https://github.com/camroach87/)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016).
   1. **[Dilini Talagala](https://github.com/pridiltal)**, *Anomaly detection in streaming time series data* (PhD, begun 2016)
   1. **[Thiyanga Talagala](https://github.com/thiyangt)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016)

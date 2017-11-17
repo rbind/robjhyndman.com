@@ -19,7 +19,7 @@ date: 2017-11-18
 ## Textbook
 
 <a href="http://OTexts.org/fpp2" target="_new">
-![alt text](/img/fpp2_cover.jpg)
+![alt text](/img/fpp2_cover.png)
 </a>
 
 ## Relevant papers
@@ -34,3 +34,11 @@ date: 2017-11-18
  * [Rob J Hyndman, Alan Lee, Earo Wang (2016) Fast computation of reconciled forecasts for hierarchical and grouped time series. *Computational Statistics and Data Analysis* **97**, 16-32.](/publications/hgts/)
  * [George Athanasopoulos, Rob J Hyndman, Nikolaos Kourentzes, Fotios Petropoulos (2017) Forecasting with temporal hierarchies. *European Journal of Operational Research*, **262**(1) 60–74.](/publications/temporal-hierarchies/)
  * [Souhaib Ben Taieb, James W Taylor, Rob J Hyndman (2017) Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data.](/publications/hpf-electricity/)
+
+## Additional collaborators
+
+These talks contain many ideas from my coauthors and students. Apart from the coauthors in the papers listed above, the following people have contributed ideas (and will be coauthors of future papers):
+
+ * [Anastasios Panagiotelis](https://research.monash.edu/en/persons/anastasios-panagiotelis)
+ * [Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)
+ * [Mitchell O'Hara-Wild](http://www.mitchelloharawild.com/)
