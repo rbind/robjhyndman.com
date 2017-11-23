@@ -25,6 +25,7 @@ title: "Research team"
   1. **[Bircan Erbas](http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas>)**
   1. **[Shu Fan](http://users.monash.edu.au/~shufan/)**
   1. **Bin Jiang**
+  1. **[Yanfei Kang](http://yanfei.site)**
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)</a>**
 
 ## Former postgraduate students
