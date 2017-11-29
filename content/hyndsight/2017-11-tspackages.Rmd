@@ -1,0 +1,140 @@
+---
+date: 2017-11-29
+slug: tspackages
+title: "Some new time series packages"
+categories:
+- R
+- reproducible-research
+- time-series
+- data-science
+output:
+  fig_height: 3
+  fig_width: 6
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE, message=FALSE, warning=FALSE)
+```
+
+This week I have finished preliminary versions of two new R packages for time series analysis. The first ([**tscompdata**](https://github.com/robjhyndman/tscompdata)) contains several large collections of time series that have been used in forecasting competitions; the second ([**tsfeatures**](https://github.com/robjhyndman/tsfeatures)) is designed to compute features from univariate time series data.  For now, both are only on github. I will probably submit them to CRAN after they've been tested by a few more people.
+
+
+## [tscompdata](https://github.com/robjhyndman/tscompdata)
+
+There are already two packages containing forecasting competition data: [Mcomp](http://pkg.robjhyndman.com/Mcomp/) (containing the M and M3 competition data) and [Tcomp](https://cran.r-project.org/package=Tcomp) (containing the tourism competition data). In this new package [**tscompdata**](https://github.com/robjhyndman/tscompdata), we provide data from the [NN3](http://www.neural-forecasting-competition.com/NN3/), [NN5](http://www.neural-forecasting-competition.com/NN5/), [NGC1](http://www.neural-forecasting-competition.com/) and [GEFCom2012](http://www.drhongtao.com/gefcom/2012) competitions. For convenience, the Mcomp and Tcomp packages are also loaded when you load the **tscompdata** package.
+
+For example, here is one series from the NN5 competition,   which contained daily cash money demand at various automatic teller machines (ATMs, or cash machines) at different locations in England. 
+
+```{r nn5}
+library(tscompdata)
+library(forecast)
+library(ggplot2)
+autoplot(nn5[[23]])
+```
+
+Apart from the data, there is just one function so far: `combine_training_test()` to conveniently combine the training and test data used in the M, M3 and Tourism competitions.
+
+```{r m3}
+m3combine <- combine_training_test(M3)
+autoplot(m3combine[[1500]])
+```
+
+The purpose of this package is to allow researchers to reproduce existing research results, and to test out new time series methods on large collections of data. There is no excuse for researchers to continue to use the same old tired time series in their papers.  The combined competition data represent a relatively large range of time series that can be used for examples, for student projects, or for testing new algorithms. However, note that there are not many data sets from finance, or from the physical sciences.  
+
+For finance data, see the [Empirical Finance Task View](https://cran.r-project.org/web/views/Finance.html) for many packages that assist with downloading data from online financial databases.
+
+For the physical sciences, see [Ben Fulcher's time series collection](http://www.comp-engine.org/timeseries/time-series_data/) (no R package though).
+
+
+
+## [tsfeatures](https://github.com/robjhyndman/tsfeatures)
+
+[**tsfeatures**](https://github.com/robjhyndman/tsfeatures) computes features from time series along the lines proposed in my papers on ["Large scale unusual time series detection"](/publications/icdm2015/) with Earo Wang & Nikolay Laptev, and ["Visualising forecasting algorithm performance using time series instance spaces"](/publications/ts-feature-space/) with Yanfei Kang & Kate Smith-Miles. It is designed to be easily extended to allow user-defined features to be used as well. Some examples, partly reproducing results from the above two papers follow.
+
+### [Hyndman, Wang and Laptev (ICDM 2015)](/publications/icdm2015/)
+
+Here, I compute the features used in [Hyndman, Wang & Laptev (ICDM 2015)](/publications/icdm2015/). Note that crossing_points, peak and trough are defined differently in the tsfeatures package than in the Hyndman et al (2015) paper. Other features are the same.
+
+```{r yahoo, message=FALSE}
+library(tsfeatures)
+library(tidyverse)
+library(anomalous)
+
+yahoo <- cbind(dat0, dat1, dat2, dat3)
+hwl <- bind_cols(
+         tsfeatures(yahoo,
+           c("acf1","entropy","lumpiness",
+             "flat_spots","crossing_points")),
+         tsfeatures(yahoo,"stl_features", s.window='periodic', 
+           robust=TRUE),
+         tsfeatures(yahoo, "max_kl_shift", width=48),
+         tsfeatures(yahoo,
+           c("mean","var"), scale=FALSE, na.rm=TRUE),
+         tsfeatures(yahoo,
+           c("max_level_shift","max_var_shift"), trim=TRUE)) %>%
+  select(mean, var, acf1, trend, linearity, curvature, 
+         seasonal_strength, peak, trough,
+         entropy, lumpiness, spike, max_level_shift, max_var_shift, 
+         flat_spots, crossing_points, max_kl_shift, time_kl_shift)
+```
+
+```{r yahoo2, dependson="yahoo"}
+# 2-d Feature space
+prcomp(na.omit(hwl), scale=TRUE)$x %>% 
+  as_tibble() %>%
+  ggplot(aes(x=PC1, y=PC2)) +
+    geom_point()
+```
+
+
+### [Kang, Hyndman & Smith-Miles (IJF 2017)](/publications/ts-feature-space/)
+
+In the following code, I compute the features used in [Kang, Hyndman & Smith-Miles (IJF 2017)](/publications/ts-feature-space/). Note that the trend and ACF1 are computed differently for  non-seasonal data in the tsfeatures package than in Kang et al (2017). **tsfeatures** uses `forecast::mstl()` which uses `supsmu()` for the trend calculation with non-seasonal data, whereas Kang et al used a penalized regression spline computed using mgcv instead.  Other features are the same.
+
+
+```{r ijf2017}
+library(tsfeatures)
+library(tscompdata)
+library(tidyverse)
+library(forecast)
+
+M3data <- combine_training_test(M3)
+khs_stl <- function(x,...)
+{
+  lambda <- BoxCox.lambda(x, lower=0, upper=1, method='loglik')
+  y <- BoxCox(x, lambda)
+  c(stl_features(y, s.window='periodic', robust=TRUE, ...), 
+    lambda=lambda)
+}
+khs <- bind_cols(
+  tsfeatures(M3data, c("frequency", "entropy")),
+  tsfeatures(M3data, "khs_stl", scale=FALSE)) %>% 
+  select(frequency, entropy, trend, seasonal_strength, 
+    acfremainder, lambda) %>%
+  replace_na(list(seasonal_strength=0)) %>%
+  rename(
+    Frequency = frequency,
+    Entropy = entropy,
+    Trend = trend,
+    Season = seasonal_strength,
+    ACF1 = acfremainder,
+    Lambda = lambda) %>%
+  mutate(Period = as.factor(Frequency))
+```
+
+```{r ijf2017graphs, message=FALSE, dependson="ijf2017"}
+# Fig 1 of paper
+khs %>% 
+  select(Period, Entropy, Trend, Season, ACF1, Lambda) %>%
+  GGally::ggpairs()
+
+# 2-d Feature space (Top of Fig 2)
+prcomp(select(khs, -Period), scale=TRUE)$x %>%
+  as_tibble() %>%
+  bind_cols(Period=khs$Period) %>%
+  ggplot(aes(x=PC1, y=PC2)) +
+    geom_point(aes(col=Period))
+```
+
+This package will make it easier for other researchers to replicate our papers, and to use a feature-based approach for analysing large collections of time series. If anyone has features they think are particularly useful, feel free to send me a pull-request with your feature functions to include in the package.
