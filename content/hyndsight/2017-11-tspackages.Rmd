@@ -50,7 +50,13 @@ For the physical sciences, see [Ben Fulcher's time series collection](http://www
 
 ## [tsfeatures](https://github.com/robjhyndman/tsfeatures)
 
-[**tsfeatures**](https://github.com/robjhyndman/tsfeatures) computes features from time series along the lines proposed in my papers on ["Large scale unusual time series detection"](/publications/icdm2015/) with Earo Wang & Nikolay Laptev, and ["Visualising forecasting algorithm performance using time series instance spaces"](/publications/ts-feature-space/) with Yanfei Kang & Kate Smith-Miles. It is designed to be easily extended to allow user-defined features to be used as well. Some examples, partly reproducing results from the above two papers follow.
+[**tsfeatures**](https://github.com/robjhyndman/tsfeatures) computes features from time series along the lines proposed in my papers on ["Large scale unusual time series detection"](/publications/icdm2015/) with Earo Wang & Nikolay Laptev, and ["Visualising forecasting algorithm performance using time series instance spaces"](/publications/ts-feature-space/) with Yanfei Kang & Kate Smith-Miles. It is designed to be easily extended to allow user-defined features to be used as well. 
+
+Please note that **tsfeatures** requires v8.3 of the forecast package, which is not yet on CRAN. Install it [from github](https://github.com/robjhyndman/forecast).
+
+Some examples, partly reproducing results from the above two papers follow.
+
+
 
 ### [Hyndman, Wang and Laptev (ICDM 2015)](/publications/icdm2015/)
 
