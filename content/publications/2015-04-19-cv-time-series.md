@@ -1,7 +1,7 @@
 ---
 author: Christoph Bergmeir, Rob&nbsp;J&nbsp;Hyndman, Bonsoo Koo
 comments: false
-date: 2017-07-23
+date: 2018-01-01
 slug: cv-time-series
 title: A note on the validity of cross-validation for evaluating autoregressive time series prediction
 kind:
@@ -12,8 +12,10 @@ tags:
 - neural networks
 - time series
 file: cv-wp.pdf
-citation: <em>Computational Statistics and Data Analysis</em>, to appear
+citation: <em>Computational Statistics and Data Analysis</em>, <b>120</b>, 70-83
 mathjax: true
+doi: 10.1016/j.csda.2017.11.003
+online: https://authors.elsevier.com/a/1W8-HcBz8C5Hm
 ---
 
 One of the most widely used standard procedures for model evaluation in classification and regression is $K$-fold cross-validation (CV). However, when it comes to time series forecasting, because of the inherent serial correlation and potential non-stationarity of the data, its application is not straightforward and often omitted by practitioners in favour of an out-of-sample (OOS) evaluation.
