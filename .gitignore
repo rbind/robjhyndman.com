@@ -6,3 +6,5 @@ content/seminars/*.html
 *.sublime-workspace
 static/hyndsight/*
 
+
+*.sublime-project
