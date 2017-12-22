@@ -14,7 +14,12 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache=TRUE, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	cache = TRUE
+)
 ```
 
 This week I have finished preliminary versions of two new R packages for time series analysis. The first ([**tscompdata**](https://github.com/robjhyndman/tscompdata)) contains several large collections of time series that have been used in forecasting competitions; the second ([**tsfeatures**](https://github.com/robjhyndman/tsfeatures)) is designed to compute features from univariate time series data.  For now, both are only on github. I will probably submit them to CRAN after they've been tested by a few more people.
@@ -60,7 +65,7 @@ Some examples, partly reproducing results from the above two papers follow.
 
 ### [Hyndman, Wang and Laptev (ICDM 2015)](/publications/icdm2015/)
 
-Here, I compute the features used in [Hyndman, Wang & Laptev (ICDM 2015)](/publications/icdm2015/). Note that crossing_points, peak and trough are defined differently in the tsfeatures package than in the Hyndman et al (2015) paper. Other features are the same.
+Here, I compute the features used in [Hyndman, Wang & Laptev (ICDM 2015)](/publications/icdm2015/). Note that crossing_points, peak and trough are defined differently in the **tsfeatures** package than in the Hyndman et al (2015) paper. Other features are the same.
 
 ```{r yahoo, message=FALSE}
 library(tsfeatures)
@@ -70,7 +75,7 @@ library(anomalous)
 yahoo <- cbind(dat0, dat1, dat2, dat3)
 hwl <- bind_cols(
          tsfeatures(yahoo,
-           c("acf1","entropy","lumpiness",
+           c("acf_features","entropy","lumpiness",
              "flat_spots","crossing_points")),
          tsfeatures(yahoo,"stl_features", s.window='periodic', 
            robust=TRUE),
@@ -79,7 +84,7 @@ hwl <- bind_cols(
            c("mean","var"), scale=FALSE, na.rm=TRUE),
          tsfeatures(yahoo,
            c("max_level_shift","max_var_shift"), trim=TRUE)) %>%
-  select(mean, var, acf1, trend, linearity, curvature, 
+  select(mean, var, x_acf1, trend, linearity, curvature, 
          seasonal_strength, peak, trough,
          entropy, lumpiness, spike, max_level_shift, max_var_shift, 
          flat_spots, crossing_points, max_kl_shift, time_kl_shift)
@@ -117,14 +122,14 @@ khs <- bind_cols(
   tsfeatures(M3data, c("frequency", "entropy")),
   tsfeatures(M3data, "khs_stl", scale=FALSE)) %>% 
   select(frequency, entropy, trend, seasonal_strength, 
-    acfremainder, lambda) %>%
+    e_acf1, lambda) %>%
   replace_na(list(seasonal_strength=0)) %>%
   rename(
     Frequency = frequency,
     Entropy = entropy,
     Trend = trend,
     Season = seasonal_strength,
-    ACF1 = acfremainder,
+    ACF1 = e_acf1,
     Lambda = lambda) %>%
   mutate(Period = as.factor(Frequency))
 ```
