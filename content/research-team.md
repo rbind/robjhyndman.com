@@ -19,7 +19,7 @@ title: "Research team"
 ## Former research fellows
 
   1. **[Muhammad Akram](http://www.med.monash.edu.au/epidemiology/staff/academic/akram.html)**
-  1. **[George Athanasopoulos](http://monash.edu/research/people/profiles/profile.html?sid=2981&pid=3333)**</a>
+  1. **[George Athanasopoulos](https://www.monash.edu/research/people/profiles/profile.html?sid=2981&pid=3333)**</a>
   1. **[Baki Billah](http://www.med.monash.edu.au/epidemiology/staff/academic/billah.html)**</a>
   1. **Gary Deng**
   1. **[Bircan Erbas](http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas>)**
@@ -45,13 +45,13 @@ title: "Research team"
   1. **Hugh O'Reilly**. *Analysis of trading strategies for futures markets*. (M.Com., graduated 2004).
   1. **<a class="vt-p" href="https://umexpert.um.edu.my/faridosman">Ahmad Farid Osman</a>**. *A new approach to forecasting based on exponential smoothing with independent regressors*. (Ph.D., graduate 2012). Now a Lecturer at the <a class="vt-p" href="http://um.edu.my/">University of Malaya</a>.
   1. **Ivet Pitrun**. *Smoothing splines in nonparametric regression*, (Ph.D., graduated 2002). Now a teacher at <a class="vt-p" href="http://www.monash.edu/monashcollege/" target="_top">Monash College</a>.
-  1. <a class="vt-p" href="https://sites.google.com/site/hanlinshangswebsite/">**Han Lin Shang**</a>. *Visualizing and forecasting functional time series*. (Ph.D., graduated 2010). Winner of Mollie Holman doctoral medal in Business &amp; Economics, 2010. Now a Senior Lecturer at the <a class="vt-p" href="http://www.anu.edu.au">Australian National University</a>.
+  1. <a class="vt-p" href="https://sites.google.com/site/hanlinshangswebsite/">**Han Lin Shang**</a>. *Visualizing and forecasting functional time series*. (Ph.D., graduated 2010). Winner of Mollie Holman doctoral medal in Business &amp; Economics, 2010. Now an Associate Professor at the <a class="vt-p" href="http://www.anu.edu.au">Australian National University</a>.
   1. **<a href="https://research.monash.edu/en/persons/thilaksha-silva">Thilaksha Silva</a>**. *Estimating and forecasting a time series of densities using a functional data approach*. (PhD, graduated 2015). Now an Assistant Lecturer, Monash Business School.
   1. **Leanna Tedesco**. *Non-Gaussian first order autoregressive time series models*. (M.Sc., Uni of Melbourne, graduated 1995). Now working for <a class="vt-p" href="http://aemo.com.au/">AEMO</a>.
   1. **<a class="vt-p" href="https://scholar.google.com.au/citations?user=ibwhwxgAAAAJ&hl=en">Shahid Ullah</a>**. *Demographic forecasting using functional data analysis*. (Ph.D., graduated 2007). Now a Senior Lecturer in Biostatistics at <a class="vt-p" href="http://www.flinders.edu.au/medicine/">Flinders University School of Medicine</a>.
   1. **<a href="https://scholar.google.com.au/citations?user=OeZdcD0AAAAJ&hl=en">Laura Villanova</a>**. *Response surface optimization for high-dimensional systems with multiple responses*. (Ph.D., graduated 2010). Now working at the Technische Universität Graz, Austria.
   1. **<a href="https://www.linkedin.com/in/catherine-lopes-ph-d-30aa17a6">Xiaozhe Catherine Wang (Lopes)</a>**. *Characteristic-based forecasting for time series data*, (Ph.D., graduated 2005). Winner of Mollie Holman doctoral medal in IT, 2005. Now principal data scientist at <a class="vt-p" href="http://www.anz.com.au/">ANZ Bank, Melbourne</a>.
-  1. **<a class="vt-p" href="https://www.linkedin.com/in/shanika-wickramasuriya-85b7ba2a/">Shanika Wickramasuriya</a>**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017).
+  1. **<a class="vt-p" href="https://www.linkedin.com/in/shanika-wickramasuriya-85b7ba2a/">Shanika Wickramasuriya</a>**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a lecturer at the University of Auckland.
   1. **<a href="https://www.researchgate.net/profile/Farah_Yasmeen">Farah Yasmeen</a>**. *Functional linear models for mortality forecasting*. (Ph.D., graduated 2011). Now a Lecturer at the <a class="vt-p" href="http://uok.edu.pk/">University of Karachi, Pakistan</a>.
   1. **<a href="https://www.linkedin.com/in/bruce-yu-198a3a10">Bruce Yu</a>**. *Analysis of flood frequency data*. (M.Sc., graduated 1998). Now HR Professional with Freelance Physician.
 

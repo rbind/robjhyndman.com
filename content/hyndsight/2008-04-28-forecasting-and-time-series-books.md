@@ -17,7 +17,7 @@ People often ask me for recommendations on forecasting books and time series boo
 
 {{< amazon-forecasting >}}
 
-Two are **my own books** of course (after all, I wrote them because I thought I had something to say). You can also get the first one online for free at [OTexts.org/fpp2](http://OTexts.org/fpps).
+Two are **my own books** of course (after all, I wrote them because I thought I had something to say). You can also get the first one online for free at [OTexts.org/fpp2](http://OTexts.org/fpp2).
 
 The book by **Ord, Fildes and Kourentzes** is excellent, although ridiculously expensive, and is more detailed in some areas than my book with George Athanasopoulos. It has particularly good coverage of the non-statistical parts of forecasting including judgemental forecasting and forecasting within organizations.
 

@@ -16,24 +16,15 @@ citation: "<em>European Journal of Operational Research</em> <b>191</b>(1), 207â
 doi: 10.1016/j.ejor.2007.08.024
 ---
 
-
 A new approach is proposed for forecasting a time series with multiple seasonal patterns. A state space model is developed for the series using the innovation approach which enables us to develop explicit models for both additive and multiplicative seasonality. Parameter estimates may be obtained using methods from exponential smoothing. The proposed model is used to examine hourly and daily patterns in hourly data for both utility loads and traffic flows. Our formulation provides a model for several existing seasonal methods and also provides new options, which result in superior forecasting performance over a range of prediction horizons. In particular, seasonal components can be updated more frequently than once during a seasonal cycle. The approach is likely to be useful in a wide range of applications involving both high and low frequency data, and it handles missing values in a straightforward manner.
 
 **Keywords:** forecasting; time series; exponential smoothing; seasonality; state space models
 
 **Supplements:**
 
-
-
-	
-  * [Models spreadsheet](https://robjhyndman.com/papers/multiseasonal/model.xls)
-
-	
-  * [Ox code](https://robjhyndman.com/papers/multiseasonal/mseas.ox)
-
-	
-  * [Traffic data](https://robjhyndman.com/papers/multiseasonal/traffic.xls)
-
+  * [Models spreadsheet](/files/multiseasonal/model.xls)
+  * [Ox code](/files/multiseasonal/mseas.ox)
+  * [Traffic data](/files/multiseasonal/traffic.xls)
 
 The supplied Ox code and Microsoft Excel spreadsheet are intended to give users working examples of the model described in our paper. Both can easily be adapted for more general use, although they are not intended to form any kind of software "package" for Ox and Excel. The supplied data are a sample of data used in the paper and are not to be used for any other purpose than as an example in running the code
 
@@ -44,6 +35,4 @@ For dated data, the day-of-week dummies can be generated via the "weekday()" and
 The smoothing parameter estimates should be estimated using Solver in Excel. Solver can often converge to a local maximum, so users should try a range of seed values to ensure a global maximum is found.
 
 **Ox Code:** Comments are included within the Ox file. Correct Ox packages must be installed (gnudraw).
-
-**Correspondence** about these files should be directed to  [Dr Phillip Gould](mailto:Phillip.Gould@anz.com)
 

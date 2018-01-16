@@ -27,7 +27,7 @@ We are currently advertising for [three academic positions](http://jobs.monash.e
 
 
 
-  * Five-year position with [MAXIMA](https://platforms.monash.edu/maxima/) and the [School of Mathematical Sciences](http://monash.edu/science/about/disciplines/mathematical-sciences/)
+  * Five-year position with [MAXIMA](https://platforms.monash.edu/maxima/) and the [School of Mathematical Sciences](https://www.monash.edu/science/about/disciplines/mathematical-sciences/)
 
   * Two positions available.
 

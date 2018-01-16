@@ -28,7 +28,7 @@ That won't necessarily work for every talk, but it is a good place to start. In 
 
 #### Further suggestions:
     
-  * Use Rmarkdown with this [template](http://github.com/robjhyndman/MonashBeamer/).
+  * Use Rmarkdown with this [template](https://github.com/robjhyndman/monashebstemplates).
   * Use a maximum of 20 slides for a 20 minute conference presentation.
   * Assume the audience knows about what you did at the start of your research in this area. That is, probably not much. You can assume standard material taught to undergraduates (regression, ARIMA models, etc.), but don't assume they already know what you have spent long hours learning on your own.
   * Give only the most necessary mathematical details. People do not quickly absorb mathematical equations so don't give any more than you have to. Never give proofs.

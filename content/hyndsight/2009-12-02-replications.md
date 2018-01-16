@@ -29,7 +29,7 @@ provision of code as well as data is encouraged, but not required.
 
 >This is consistent with the moves of many granting agencies which are now starting to require publicly funded research to make the data publicly available. Once the data are public, other researchers can verify (or otherwise) the conclusions drawn.
 
->Six months ago, the _International Journal of Forecasting_ website ([www.forecasters.org/ijf](http://www.forecasters.org/ijf)) was redesigned to allow supplements and comments on each published paper. Supplementary information about a paper can be provided by authors and is freely available online. This can include data, computer code, large tables, extra ﬁgures, extended footnotes, extra relevant material, etc. Authors are required to provide whatever material is needed allow their results to be replicated without excessive difﬁculty.
+>Six months ago, the _International Journal of Forecasting_ website ([ijf.forecasters.org](http://ijf.forecasters.org)) was redesigned to allow supplements and comments on each published paper. Supplementary information about a paper can be provided by authors and is freely available online. This can include data, computer code, large tables, extra ﬁgures, extended footnotes, extra relevant material, etc. Authors are required to provide whatever material is needed allow their results to be replicated without excessive difﬁculty.
 
 
 

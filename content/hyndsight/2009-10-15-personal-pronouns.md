@@ -27,7 +27,7 @@ This is easier to express using "I":
 
 In my [exponential smoothing monograph](http://www.exponentialsmoothing.net), one of the coauthors preferred to write everything in the passive voice, which led to some rather awkward phrasing. (I edited all chapters to consistently use "we" before it went to print.)
 
-There are still some journals and research supervisors who insist that research writing must be in the passive voice. However, the situation is slowly changing and now many journals accept, or even encourage, the use of personal pronouns. The [_International Journal of Forecasting_](http://www.forecasters.org/ijf) which I edit allows authors to use whichever approach they prefer.
+There are still some journals and research supervisors who insist that research writing must be in the passive voice. However, the situation is slowly changing and now many journals accept, or even encourage, the use of personal pronouns. The [_International Journal of Forecasting_](http://ijf.forecasters.org) which I edit allows authors to use whichever approach they prefer.
 
 A related issue for research students writing a thesis is whether to use "I" or "we", especially when the material has previously appeared in a co-authored paper. In general, I prefer students to use "I" when they mean the author, as it is _their_ thesis. (The [royal "we"](http://en.wikipedia.org/wiki/Majestic_plural) should only be used by monarchs.) However, it is very important to include a statement at the front of the thesis clarifying the role of co-authors involved with any parts of the thesis. If a chapter is essentially a co-authored paper, many universities require a signed statement from all authors.
 

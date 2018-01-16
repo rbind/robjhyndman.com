@@ -5,7 +5,7 @@ title: "About me"
 
 The following bio and photos may be used in media releases without further permission.
 
->**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](http://monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://forecasters.org/ijf/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
+>**Rob J Hyndman** is Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](https://www.monash.edu). He is also Editor-in-Chief of the *[International Journal of Forecasting](http://ijf.forecasters.org/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
 
 **Photos:**
   [low-res](/pics/vintage.png)
@@ -24,7 +24,7 @@ The following bio and photos may be used in media releases without further permi
 </ul>
 
 
-Office: Room 762, Menzies Building, Clayton campus, [Monash University](http://monash.edu/), VIC 3800, Australia.
+Office: Room 762, Menzies Building, Clayton campus, [Monash University](https://www.monash.edu/), VIC 3800, Australia.
 
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1847Gp4aimEir9j-C7uQiVugnuys" width="640" height="480"></iframe>
@@ -37,7 +37,7 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Administrative responsibilities
 
-  * Editor-in-Chief, *[International Journal of Forecasting](http://forecasters.org/ijf/)*.
+  * Editor-in-Chief, *[International Journal of Forecasting](http://ijf.forecasters.org/)*.
   * Editor, *[Journal of Statistical Software](http://www.jstatsoft.org/)*.
   * Previously (2001-2004) Theory & Methods Editor for the *[Australian & New Zealand Journal of Statistics](http://wileyonlinelibrary.com/journal/anzs)*.
   * Director, [International Institute of Forecasters](http://forecasters.org)

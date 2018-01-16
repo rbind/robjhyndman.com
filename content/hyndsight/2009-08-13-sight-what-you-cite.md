@@ -29,7 +29,7 @@ There seems to be a widespread practice of researchers citing papers they have n
   * Reference details are so full of errors that the paper can never have been sighted.
 
 	
-  * Some mis-spellings of an author's names are perpetuated through long series of copied citations with no-one ever checking the details. I frequently correct the list of references in papers to appear in the _[International Journal of Forecasting](http://www.forecasters.org/ijf/)_, but only where I notice an error, or where it looks suspicous. I haven't time to check them all; besides, that's the author's job.
+  * Some mis-spellings of an author's names are perpetuated through long series of copied citations with no-one ever checking the details. I frequently correct the list of references in papers to appear in the _[International Journal of Forecasting](http://ijf.forecasters.org/)_, but only where I notice an error, or where it looks suspicous. I haven't time to check them all; besides, that's the author's job.
 
 
 [William Webber points out](http://blog.codalism.com/?p=773) that there are cited papers that have never even been written! One famous paper has 215 citations on Google scholar despite the fact that it doesn't exist. And at least one of those citations is by the author of the non-existent paper!

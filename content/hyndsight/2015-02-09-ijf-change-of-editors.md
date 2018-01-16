@@ -34,4 +34,4 @@ There are five IJF editors:
   4. [Dilek Önkal](http://onkal.bilkent.edu.tr/)
   5. [Esther Ruiz](https://scholar.google.com/citations?user=sDYv4aIAAAAJ)
 
-along with a team of about [40 associate editors](http://www.forecasters.org/ijf/editors).
+along with a team of about [40 associate editors](http://ijf.forecasters.org/editors).

@@ -134,8 +134,8 @@ D. --
 His research interests include uses of stochastic models in scientific applications in hydrology, atmospheric science, geophysics, environmental science, and hematology. Currently Professor of Statistics at the University of Washington.</td>
 </tr>
 <tr>
-<td><img align="top" src="http://www.ucdenver.edu/academics/colleges/PublicHealth/Academics/departments/Biostatistics/About/Faculty/PublishingImages/Grunwald.JPG" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www.ucdenver.edu/academics/colleges/PublicHealth/Academics/departments/Biostatistics/About/Faculty/Pages/GrunwaldG.aspx">Gary Grunwald</a></strong>
+<td><img align="top" src="http://www.ucdenver.edu/academics/colleges/PublicHealth/Academics/departments/Biostatistics/About/Faculty/PublishingImages/GrunwaldGary49_1228web.jpg" width="200" /></td>
+<td><strong><a class="vt-p" href="http://www.ucdenver.edu/academics/colleges/PublicHealth/Academics/departments/Biostatistics/About/Faculty/Pages/GrunwaldGary.aspx">Gary Grunwald</a></strong>
 <em>Ph.D. University of Washington, 1987</em>
 B. 1954
 D. --

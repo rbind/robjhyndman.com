@@ -12,7 +12,7 @@ categories:
 - writing
 ---
 
-I've been spending time writing response letters lately. I've also been reading lots of response letters from authors wanting their stuff published in the [International Journal of Forecasting](http://www.forecasters.org/ijf/). I thought it might be useful to collate a few thoughts on the subject.
+I've been spending time writing response letters lately. I've also been reading lots of response letters from authors wanting their stuff published in the [International Journal of Forecasting](http://ijf.forecasters.org/). I thought it might be useful to collate a few thoughts on the subject.
 
 
 

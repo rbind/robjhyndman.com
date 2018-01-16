@@ -13,7 +13,7 @@ categories:
 - refereeing
 ---
 
-Being on the editorial board of a journal is a lot of work. I'm currently Editor-in-Chief of the _[International Journal of Forecasting](http://www.forecasters.org/ijf/)_ and previously I've been Theory & Methods Editor of the _[Australian & New Zealand Journal of Statistics](http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1467-842X)._ Although it is time-consuming and often goes un-noticed, there are some important rewards that make it worthwhile in my opinion.
+Being on the editorial board of a journal is a lot of work. I'm currently Editor-in-Chief of the _[International Journal of Forecasting](http://ijf.forecasters.org/)_ and previously I've been Theory & Methods Editor of the _[Australian & New Zealand Journal of Statistics](http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1467-842X)._ Although it is time-consuming and often goes un-noticed, there are some important rewards that make it worthwhile in my opinion.
 
 
 

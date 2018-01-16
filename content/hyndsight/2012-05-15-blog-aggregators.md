@@ -44,7 +44,7 @@ I have also set up two aggregations for new research papers:
   * **[StatisticsPapers](http://feeds.feedburner.com/StatisticsPapers)** includes all papers appearing in over 60 of the major statistics journals as well as the [statistics section of arXiv](http://arxiv.org/archive/stat).
 
 	
-  * **[Forecasting papers](http://feeds.feedburner.com/Forecasting)** includes all new papers on forecasting that have appeared on [RePEc](http://econpapers.repec.org/) or in either the [_International Journal of Forecasting_](http://www.forecasters.org/ijf/) or the [_Journal of Forecasting_](http://www3.interscience.wiley.com/journal/2966/home). The papers from RePEc constitute the weekly [NEP-FOR report](http://ideas.repec.org/n/nep-for/).
+  * **[Forecasting papers](http://feeds.feedburner.com/Forecasting)** includes all new papers on forecasting that have appeared on [RePEc](http://econpapers.repec.org/) or in either the [_International Journal of Forecasting_](http://ijf.forecasters.org/) or the [_Journal of Forecasting_](http://www3.interscience.wiley.com/journal/2966/home). The papers from RePEc constitute the weekly [NEP-FOR report](http://ideas.repec.org/n/nep-for/).
 
 
 So if all the blogs around are overwhelming, and you don't know where to start, select one or two of these aggregators and you're off and running.

@@ -269,7 +269,7 @@ measures(gas)
 ```{r, echo=FALSE, cache=TRUE}
 # Check that online code matches above code
 m1 <- measures(gas)
-source("../../static/papers/measures2.R")
+source("../../static/Rfiles/measures2.R")
 m2 <- measures(gas)
 if(!identical(m1,m2))
   stop("Problem with code")
@@ -282,4 +282,4 @@ In our papers, we took the measures obtained using R, and produced self-organizi
 
 * * *
 
-**[Download the code in a single file.](/papers/measures2.R)**
+**[Download the code in a single file.](/Rfiles/measures2.R)**

@@ -112,4 +112,4 @@ The pipe operator from the `magrittr` package is now imported. So you don’t ne
 
 There are now no packages that are loaded with `forecast` – everything required is imported. This makes the start up much cleaner (no more annoying messages from all those packages being loaded). Instead, some random tips are occasionally printed when you load the forecast package (much like `ggplot2` does).
 
-There is quite a bit more — see the [Changelog](https://github.com/robjhyndman/forecast/blob/master/ChangeLog) for a list.
+There is quite a bit more — see the [Changelog](http://pkg.robjhyndman.com/forecast/news/) for a list.

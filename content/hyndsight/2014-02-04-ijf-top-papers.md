@@ -34,6 +34,6 @@ Every year or so, Elsevier asks me to nominate five _International Journal of Fo
   5. [Davydenko and Fildes (2013) Measuring forecasting accuracy: The case of judgmental adjustments to SKU-level demand forecasts. _IJF_ 29(3), 510-522.](http://dx.doi.org/10.1016/j.ijforecast.2012.09.002)
 
 
-Last time I did this, three of the five papers I chose went on to [win awards](http://www.forecasters.org/ijf/awards). (I don't pick the award winners -- that's a matter for the whole editorial board.) On the other hand, I didn't pick the paper that got the top award for the period 2010-2011. So perhaps my selection is not such a good guide.
+Last time I did this, three of the five papers I chose went on to [win awards](http://ijf.forecasters.org/awards). (I don't pick the award winners -- that's a matter for the whole editorial board.) On the other hand, I didn't pick the paper that got the top award for the period 2010-2011. So perhaps my selection is not such a good guide.
 
 

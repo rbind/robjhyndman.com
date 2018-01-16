@@ -9,7 +9,7 @@ categories:
 - IJF
 ---
 
-At the recent [International Symposium on Forecasting](http://forecasters.org/isf), I announced the awards for the best paper published in the *[International Journal of Forecasting](http://forecasters.org/ijf)* in the period 2014--2015.
+At the recent [International Symposium on Forecasting](http://forecasters.org/isf), I announced the awards for the best paper published in the *[International Journal of Forecasting](http://ijf.forecasters.org)* in the period 2014--2015.
 
 We make an award every two years to the best paper(s) published in the journal. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The selected papers are selected by vote of the editorial board. The best paper wins an engraved bronze plaque and US$1000. Any other awards are in the form of certificates.
 

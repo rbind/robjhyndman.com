@@ -9,7 +9,7 @@ categories:
 - data science
 ---
 
-I have funding for a new post-doctoral research fellow, on a 2-year contract, to work with me and [Professor Kate Smith-Miles](http://katesmithmiles.wixsite.com/) on analysing large collections of time series data. We are particularly seeking someone with a PhD in computational statistics or statistical machine learning.
+I have funding for a new post-doctoral research fellow, on a 2-year contract, to work with me and [Professor Kate Smith-Miles](http://katesmithmiles.wixsite.com/home) on analysing large collections of time series data. We are particularly seeking someone with a PhD in computational statistics or statistical machine learning.
 
 Desirable characteristics:
 
