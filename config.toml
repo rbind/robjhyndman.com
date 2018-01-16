@@ -33,7 +33,7 @@ seminars_count = 4
 [[params.social]]
   icon = "university"
   icon_pack = "fa"
-  link = "https://business.monash.edu/econometrics-and-business-statistics"
+  link = "https://www.monash.edu/business/econometrics-and-business-statistics"
   text = "Department of Econometrics & Business Statistics, Monash University, Clayton VIC 3800, Australia."
 
 [[params.social]]
