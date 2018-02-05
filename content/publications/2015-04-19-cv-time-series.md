@@ -15,7 +15,6 @@ file: cv-wp.pdf
 citation: <em>Computational Statistics and Data Analysis</em>, <b>120</b>, 70-83
 mathjax: true
 doi: 10.1016/j.csda.2017.11.003
-online: https://authors.elsevier.com/a/1W8-HcBz8C5Hm
 ---
 
 One of the most widely used standard procedures for model evaluation in classification and regression is $K$-fold cross-validation (CV). However, when it comes to time series forecasting, because of the inherent serial correlation and potential non-stationarity of the data, its application is not straightforward and often omitted by practitioners in favour of an out-of-sample (OOS) evaluation.

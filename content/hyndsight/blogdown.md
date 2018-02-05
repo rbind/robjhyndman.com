@@ -15,7 +15,7 @@ So I've now converted the entire site to Blogdown/Hugo. Nearly 700 pages of word
 
 Blogdown is relatively new and the [documentation](https://bookdown.org/yihui/blogdown/) is rather incomplete, so there was a lot of trial and error as I figured out how it worked. Some useful resources were:
 
-  * Amber Thomas's [blog post](https://proquestionasker.github.io/blog/Making_Site/) on making a website using blogdown, hugo and github pages.
+  * Amber Thomas's [blog post](https://amber.rbind.io/blog/2016/12/19/creatingsite/) on making a website using blogdown, hugo and github pages.
   * Justin Dunham's [blog post](http://justindunham.net/migrating-from-wordpress-to-hugo/) on migrating wordpress content to hugo.
 
 Because it is all so new, the theming options are rather limited. I modified the [hugo-finite theme](https://themes.gohugo.io/hugo-finite/), and borrowed some design ideas from [Kieran Healy](https://kieranhealy.org/).

@@ -21,4 +21,4 @@ If your code has already crashed and you want to know where the offending line i
 
 Check out the help files for the above functions for the details.
 
-Duncan Murdoch also has an excellent debugging page on the web:  [Debugging in R](http://www.stats.uwo.ca/faculty/murdoch/software/debuggingR/) which contains a wealth of extremely helpful information.
+Duncan Murdoch also has an excellent debugging page on the web:  [Debugging in R](https://web.archive.org/web/20170706215053/http://www.stats.uwo.ca:80/faculty/murdoch/software/debuggingR/) which contains a wealth of extremely helpful information.

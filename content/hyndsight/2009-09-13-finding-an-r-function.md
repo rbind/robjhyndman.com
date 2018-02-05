@@ -34,6 +34,6 @@ returns 206 matches (on 13 September 2009) from over 60 packages. These are orde
 
 To look even further afield, use `RSiteSearch("neural")` which will send your search to [R site search](http://search.r-project.org/cgi-bin/namazu.cgi?query=neural&max=20&result=normal&sort=score&idxname=Rhelp08&idxname=functions&idxname=views). As well as CRAN packages, this covers the  R-help mailing list archives, help pages, vignettes and task views.
 
-Still no luck? Try [Rseek.org](http://www.rseek.org/). It's a restricted Google search covering on R-related sites.
+Still no luck? Try [Rseek.org](https://rseek.org/). It's a restricted Google search covering on R-related sites.
 
 Finally, if all else fails, try asking a question on [StackOverflow](http://stackoverflow.com/questions/tagged/r) (make sure your question is tagged with "r"),  or send your question to the [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help). Both usually solicit replies in under an hour. However, don't do this without first trying to find the function using one of the other methods.
