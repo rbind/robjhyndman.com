@@ -25,7 +25,7 @@ There is a two-parameter version of the Box-Cox transformation that allows a shi
 $$
 g(y;\lambda\_{1}, \lambda\_{2}) =
 \begin{cases}
-\frac {(y+\lambda\_{2})^{\lambda\_1} - 1} {\lambda\_{1}} & \mbox{when } \lambda\_{1} \neq 0 \\ \log (y + \lambda\_{2}) & \mbox{when } \lambda\_{1} = 0
+\frac {(y+\lambda\_{2})^{\lambda\_1} - 1} {\lambda\_{1}} & \mbox{when } \lambda\_{1} \neq 0 \\\\ \log (y + \lambda\_{2}) & \mbox{when } \lambda\_{1} = 0
 \end{cases}.
 $$
 The usual Box-Cox transformation sets $\lambda\_2=0$. One common choice with the two-parameter version is $\lambda\_1=0$ and $\lambda\_2=1$ which has the neat property of mapping zero to zero. There is even an R function for this: `log1p()`.  More generally, both parameters can be estimated. In R, the `boxcox.fit()` function in package [`geoR`](http://cran.r-project.org/web/packages/geoR/) will fit the parameters.
