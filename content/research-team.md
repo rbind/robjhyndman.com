@@ -4,7 +4,7 @@ title: "Research team"
 
 ## Research fellows
 
-  1. **[Sevvandi Kandanaarachchi](https://scholar.google.com.au/citations?user=oA9YsjkAAAAJ&hl=en)**
+  1. **[Sevvandi Kandanaarachchi](https://sites.google.com/view/sevvandik)**
   1. **[Nick Tierney](https://github.com/njtierney)**
   1. **<a class="vt-p" href="https://www.linkedin.com/in/shanika-wickramasuriya-85b7ba2a/">Shanika Wickramasuriya</a>**
 
