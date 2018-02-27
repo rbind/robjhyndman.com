@@ -5,7 +5,7 @@ title: "Research team"
 ## Research fellows
 
   1. **[Sevvandi Kandanaarachchi](https://sites.google.com/view/sevvandik)**
-  1. **[Nick Tierney](https://github.com/njtierney)**
+  1. **[Nick Tierney](https://www.njtierney.com/)** [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/njtierney)
 
 ## PhD students
 
