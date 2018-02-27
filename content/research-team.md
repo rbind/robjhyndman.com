@@ -7,14 +7,14 @@ title: "Research team"
   1. **[Sevvandi Kandanaarachchi](https://sites.google.com/view/sevvandik)**
   1. **[Nick Tierney](https://github.com/njtierney)**
 
-## PhD student
+## PhD students
 
-  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016)
-  1. **Sayani Gupta** *Statistical analysis and visualisation of spatially distributed big time series electricity usage data* (PhD, begun 2018)
-  1. **[Cameron Roach](https://github.com/camroach87/)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016).
-  1. **[Dilini Talagala](https://github.com/pridiltal)**, *Anomaly detection in streaming time series data* (PhD, begun 2016)
-  1. **[Thiyanga Talagala](https://github.com/thiyangt)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016)
-  1. **[Earo Wang](http://earo.me)**, *Visualization of large collections of time series* (PhD, begun 2016)
+  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/PuwasalaG)
+  1. **Sayani Gupta**  *Statistical analysis and visualisation of spatially distributed big time series electricity usage data* (PhD, begun 2018). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/Sayani-0711)
+  1. **Cameron Roach**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/camroach87/)
+  1. **[Dilini Talagala](https://acems.org.au/our-people/priyanga-dilini-talagala)**, *Anomaly detection in streaming time series data* (PhD, begun 2016). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/pridiltal)
+  1. **[Thiyanga Talagala](https://acems.org.au/our-people/thiyanga-talagala)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/thiyangt)
+  1. **[Earo Wang](http://earo.me)**, *Visualization of large collections of time series* (PhD, begun 2016). [<img src="/img/GitHub-Mark-32px.png" style="height:20px">](https://github.com/earowang)
 
 ## Former research fellows
 
