@@ -10,6 +10,13 @@ Reliable forecasts of business and economic variables must often be obtained aga
   * [Handbook entry](http://www.monash.edu.au/pubs/handbooks/units/ETC3550.html)
   * Textbook: [*Forecasting: Principles and Practice*, Hyndman & Athanasopoulos (2nd ed., 2017)](http://OTexts.org/fpp2/)
 
+**Slides**
+
+ * [Introduction](/etc3550/etc3550_intro.pdf)
+ * [1. Getting started](/etc3550/1-getting-started.pdf)
+
+&nbsp;
+
 ## ETC3580: Advanced statistical modelling
 
 This unit introduces extensions of linear regression models for handling a wide variety of data analysis problems. Three extensions will be considered: generalised linear models for handling counts and binary data; mixed-effect models for handling data with a grouped or hierarchical structure; and non-parametric regression for handling non-linear relationships. All computing will be conducted using R.
