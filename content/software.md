@@ -8,14 +8,11 @@ This page provides links to R packages I have (co)authored. The most recent vers
 [**addb**](http://pkg.robjhyndman.com/addb/)
 :  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
 
-[**anomalous**](https://github.com/robjhyndman/anomalous-acm)
-: Unusual Time Series Detection. ([GPL version of package](https://github.com/robjhyndman/anomalous))
-
 [**bfast**](https://github.com/verbe039/bfast)
 : Automatic identification of breaks for additive season and trend, designed for use with remote sensing data. [[CRAN](https://CRAN.R-project.org/package=bfast)]
 
-[**cricinfo**](https://github.com/ropenscilabs/cricinfo)
-: Functions for downloading cricket data from [ESPNCricinfo](http://stats.espncricinfo.com/ci/engine/stats/index.html).
+[**cricketdata**](https://github.com/ropenscilabs/cricketdata)
+: International Cricket Data.
 
 [**demography**](https://github.com/robjhyndman/demography)
 : Provides a large number of functions for handling demographic statistics, modelling and forecasting. In particular, it implements lifetable calculations; Lee-Carter modelling and variants; functional data analysis of mortality rates, fertility rates, net migration numbers; and stochastic population forecasting. [[CRAN](https://CRAN.R-project.org/package=demography)]
@@ -83,5 +80,9 @@ This page provides links to R packages I have (co)authored. The most recent vers
 [**thief**](http://pkg.robjhyndman.com/thief/)
 : Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://CRAN.R-project.org/package=thief)]
 
+[**tscompdata**](https://github.com/robjhyndman/tscompdata)
+: Time Series Competition Data 
 
+[**tsfeatures**](https://github.com/robjhyndman/tsfeatures)
+: Time Series Feature Extraction.
 
