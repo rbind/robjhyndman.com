@@ -6,7 +6,6 @@ title: "Research team"
 
   1. **[Sevvandi Kandanaarachchi](https://sites.google.com/view/sevvandik)**
   1. **[Nick Tierney](https://github.com/njtierney)**
-  1. **<a class="vt-p" href="https://www.linkedin.com/in/shanika-wickramasuriya-85b7ba2a/">Shanika Wickramasuriya</a>**
 
 ## PhD student
 
@@ -28,6 +27,7 @@ title: "Research team"
   1. **Bin Jiang**
   1. **[Yanfei Kang](http://yanfei.site)**
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)</a>**
+  1. **[Shanika Wickramasuriya](https://www.stat.auckland.ac.nz/people/swic181)**
 
 ## Former postgraduate students
 
@@ -52,7 +52,7 @@ title: "Research team"
   1. **<a class="vt-p" href="https://scholar.google.com.au/citations?user=ibwhwxgAAAAJ&hl=en">Shahid Ullah</a>**. *Demographic forecasting using functional data analysis*. (Ph.D., graduated 2007). Now a Senior Lecturer in Biostatistics at <a class="vt-p" href="http://www.flinders.edu.au/medicine/">Flinders University School of Medicine</a>.
   1. **<a href="https://scholar.google.com.au/citations?user=OeZdcD0AAAAJ&hl=en">Laura Villanova</a>**. *Response surface optimization for high-dimensional systems with multiple responses*. (Ph.D., graduated 2010). Now working at the Technische Universität Graz, Austria.
   1. **<a href="https://www.linkedin.com/in/catherine-lopes-ph-d-30aa17a6">Xiaozhe Catherine Wang (Lopes)</a>**. *Characteristic-based forecasting for time series data*, (Ph.D., graduated 2005). Winner of Mollie Holman doctoral medal in IT, 2005. Now principal data scientist at <a class="vt-p" href="http://www.anz.com.au/">ANZ Bank, Melbourne</a>.
-  1. **<a class="vt-p" href="https://www.linkedin.com/in/shanika-wickramasuriya-85b7ba2a/">Shanika Wickramasuriya</a>**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a lecturer at the University of Auckland.
+  1. **[Shanika Wickramasuriya](https://www.stat.auckland.ac.nz/people/swic181)**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a lecturer at the University of Auckland.
   1. **<a href="https://www.researchgate.net/profile/Farah_Yasmeen">Farah Yasmeen</a>**. *Functional linear models for mortality forecasting*. (Ph.D., graduated 2011). Now a Lecturer at the <a class="vt-p" href="http://uok.edu.pk/">University of Karachi, Pakistan</a>.
   1. **<a href="https://www.linkedin.com/in/bruce-yu-198a3a10">Bruce Yu</a>**. *Analysis of flood frequency data*. (M.Sc., graduated 1998). Now HR Professional with Freelance Physician.
 
