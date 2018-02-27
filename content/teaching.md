@@ -1,5 +1,5 @@
 ---
-title: "Subjects I'm teaching in 2017"
+title: "Subjects I'm teaching in 2018"
 ---
 
 
@@ -8,7 +8,7 @@ title: "Subjects I'm teaching in 2017"
 Reliable forecasts of business and economic variables must often be obtained against a backdrop of structural change in markets and the economy. This unit introduces methods suitable for forecasting in these circumstances including the decomposition of time series, exponential smoothing methods, ARIMA modelling, and regression with auto-correlated disturbances. Students can expect to enhance their computer skills with exercises using R.
 
   * [Handbook entry](http://www.monash.edu.au/pubs/handbooks/units/ETC3550.html)
-  * Textbook: [*Forecasting: Principles and Practice*, Hyndman & Athanasopoulos (2nd ed., 2017)](http://OTexts.org/fpp2/)
+  * Textbook: [*Forecasting: Principles and Practice*, Hyndman & Athanasopoulos (2nd ed., 2018)](http://OTexts.org/fpp2/)
 
 **Slides**
 
