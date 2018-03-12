@@ -15,6 +15,7 @@ Reliable forecasts of business and economic variables must often be obtained aga
  * [Introduction](/etc3550/etc3550_intro.pdf)
  * [1. Getting started](/etc3550/1-getting-started.pdf)
  * [2. Time series graphics](/etc3550/2-tsgraphics.pdf)
+ * [3. The forecasters toolbox](/etc3550/3-toolbox.pdf)
 
 &nbsp;
 
