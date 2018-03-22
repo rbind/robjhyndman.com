@@ -68,8 +68,6 @@ seasonplot(window(x,start=2005), year.labels=TRUE, col=c(sample(rainbow(9)),1), 
 text(9.5,11600,2014)
 ```
 
-
-
 The estimated total number of employed persons was 11.37 million in August 2013 and 11.55 million in September 2013. While in 2014, the corresponding figures were 11.62 million and 11.59 million. The ABS website provides 37 years of unemployment data and this was the first time that September's figure had been lower than August's figure. The graph below shows a boxplot of the differences over those 37 years. The outlier at the bottom corresponds to 2014.
 
 ```{r, echo=FALSE, cache=TRUE}
@@ -81,12 +79,9 @@ It is rather unlikely that employers behaved differently this year than in all 
 
 Before August 2014, if people in the survey said they were employed, they then had to answer a long list of additional questions. It seems likely that some employed people were wanting to avoid answering lots of questions, so they falsely claimed they were unemployed. From August 2014, the additional questions were no longer asked, and so there was no incentive for people to give a false answer. Consequently, they said they were employed, and the August numbers were much larger than expected. September surveys never had the additional questions, and so September figures were not affected by the change. So this explains that higher August figure, but not the lower September figure. Hence, it may only be a partial explanation.
 
-The ABS actually hinted at this explanation in their [own notes](http://www.abs.gov.au/AUSSTATS/abs@.nsf/Latestproducts/6202.0Main%20Features2Sep%202014?opendocument&tabname=Summary&prodno=6202.0&issue=Sep%202014&num=&view=) on the release:
-
+The ABS actually hinted at this explanation in their [own notes](http://www.abs.gov.au/ausstats/abs@.nsf/Previousproducts/6202.0Main%20Features2Sep%202014?opendocument&tabname=Summary&prodno=6202.0&issue=Sep%202014&num=&view=) on the release:
 
 >The ABS has been unable to determine a definitive cause of this change in seasonality. It could have resulted from one or more factors including changes in ‘real world’ labour market behaviour, changes in the timing and content of the supplementary survey program (run in conjunction with the Labour Force Survey), the introduction of web-forms, the introduction of the new labour force questionnaire, or refinements to collection procedures.
-
-
 
 I guess one lesson to learn from all this is neatly summarized by [Josiah Stamp](http://en.wikipedia.org/wiki/Josiah_Stamp,_1st_Baron_Stamp):
 
