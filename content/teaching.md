@@ -12,11 +12,15 @@ Reliable forecasts of business and economic variables must often be obtained aga
 
 **Slides**
 
- * [Introduction](/etc3550/etc3550_intro.pdf)
- * [1. Getting started](/etc3550/1-getting-started.pdf)
- * [2. Time series graphics](/etc3550/2-tsgraphics.pdf)
- * [3. The forecasters toolbox](/etc3550/3-toolbox.pdf)
- * [6. Time series decomposition](/etc3550/6-decomposition.pdf)
+ * [Introduction](https://github.com/robjhyndman/ETC3550Slides/raw/master/etc3550_intro.pdf)
+ * [1. Getting started](https://github.com/robjhyndman/ETC3550Slides/raw/master/1-getting-started.pdf)
+ * [2. Time series graphics](https://github.com/robjhyndman/ETC3550Slides/raw/master/2-tsgraphics.pdf)
+ * [3. The forecasters toolbox](https://github.com/robjhyndman/ETC3550Slides/raw/master/3-toolbox.pdf)
+ * [6. Time series decomposition](https://github.com/robjhyndman/ETC3550Slides/raw/master/6-decomposition.pdf)
+ * [7. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/master/7-ExponentialSmoothing.pdf)
+ * [8. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/master/8-ARIMA.pdf)
+ * [9. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/master/9-Dynamic-Regression.pdf)
+ * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/master/Revision.pdf)
 
 &nbsp;
 
@@ -27,7 +31,7 @@ This unit introduces extensions of linear regression models for handling a wide 
   * [Handbook entry](http://www.monash.edu.au/pubs/handbooks/units/ETC3580.html)
   * Textbook: [*Extending the Linear Model with R*, Faraway (2nd ed., 2016)](http://www.maths.bath.ac.uk/~jjf23/ELM/) [[Buy on Amazon](http://amzn.com/158488424X/?tag=otexts-20)]
 
-* * * 
+* * *
 
 # [Datacamp: Forecasting Using R](https://www.datacamp.com/courses/forecasting-using-r)
 

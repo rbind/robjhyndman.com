@@ -17,4 +17,4 @@ For several years I've been using the [comprehensive symbol list](http://www.cta
 
 Now there's a new tool that promises to be a great time-saver: [Detexify](http://detexify.kirelabs.org/classify.html). Just draw the symbol you want by hand and it comes up with some suggested commands and the packages that contain them. I'll be using it regularly!
 
-**Update**: There are now [iPhone](http://itunes.com/coolcherrytrees) and [Android](https://play.google.com/store/apps/details?id=coolcherrytrees.software.detexify) apps for Detexify.
+**Update**: There are now [iPhone](http://itunes.com/coolcherrytrees) and [Android](https://play.google.com/store/apps/details?id=website.marty.detexify&hl=en) apps for Detexify.
