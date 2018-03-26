@@ -1,11 +1,8 @@
 ---
-author: Alexander Dokumentov, Rob&nbsp;J&nbsp;Hyndman
-comments: false
-date: 2014-12-24 06:12:42+00:00
-excerpt: By Alexander&nbsp;Dokumentov and Rob&nbsp;J&nbsp;Hyndman
+author: Alexander Dokumentov, Rob&nbsp;J&nbsp;Hyndman, Leonie Tickle
+date: 2017-10-05
 slug: mortality-smoothing
-title: 'Bivariate data with ridges: two-dimensional smoothing of mortality rates'
-wordpress_id: 2369
+title: Two-dimensional smoothing of mortality surfaces with cohort and period ridges
 kind:
  unpublished
 tags:
@@ -15,13 +12,31 @@ file: bivariate-mortality-smoothing3.pdf
 ---
 
 
-In this article we explore some bivariate smoothing methods with partial differential regularizations designed to handle smooth bivariate surfaces with occasional ridges. We apply our technique to smoothing mortality rates.
+**BACKGROUND**
 
-Mortality rates are typically smoothed over two dimensions: age and time. Occasional ridges occur due to period effects (e.g., deaths due to wars and epidemics) and cohort effects (e.g., the effects of wars and epidemics on the survivors).
+Mortality rates typically move smoothly over age and time. Exceptions occur, due to events such as wars and epidemics, which create, among other features, ridges in the mortality surface in a particular calendar year or for cohorts born in a particular year. 
 
-We propose three new practical methods of smoothing mortality rates over age and time. The first method uses bivariate thin plate splines. The second uses a similar procedure but with lasso-type regularization. The third method also uses bivariate lasso-type regularization, but allows for both period and cohort effects. In these smoothing methods, the {logarithms of} mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. Cross validation is used to compare these new smoothing methods with existing approaches.
+**OBJECTIVES**
 
-Although our methods are designed to smooth logarithms of mortality rates, they are generic enough to be applied to any bivariate data with occasional ridges.
+We aim to develop and evaluate new methods that better model the smooth underlying age-period mortality surface and any cohort or period ridges.
+
+**METHODS**
+
+We propose two new practical methods for modelling the age-period surface of the logarithms of mortality rates. The first uses an approach similar to bivariate thin plate splines although with $L_1$ regularization. The second, which is our recommended method, also uses bivariate $L_1$ regularization but allows for smooth age-varying period and cohort effects. 
+
+**RESULTS**
+
+Cross validation is used to compare these new methods with existing approaches. Evaluations on a multi-country dataset using four different age and period ranges as well as the simulation results indicate that the recommended method consistently gives a better estimate of the ``true'' age-period mortality surface.
+
+**CONCLUSIONS**
+
+Explicit modelling of cohort and period ridges in the mortality surface, using of $L_1$ norm for regularization and measuring errors as well as using two dimensions for smoothing, all improves accuracy and provides greater insight into the underlying mortality dynamics. 
+
+**CONTRIBUTION**
+
+The new methods provide more accurate and nuanced models of the age-period mortality surface, informing mortality modelling, analysis and forecasting. Although designed for the modelling of mortality rates they can be applied to any bivariate data with occasional ridges and extend the statistical literature on quantile smoothing.
+
+&nbsp;
 
 **Keywords:** Bivariate data, nonparametric smoothing, mortality rates, graduation, cohort effects, period effects.
 
