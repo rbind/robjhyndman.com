@@ -54,6 +54,7 @@ I am a member of the following organizations:
   * [International Institute of Forecasters](http://forecasters.org) (director)
   * [International Statistical Institute](http://isi.cbs.nl)  (elected member)
   * [International Association for Statistical Computing](http://www.iasc-isi.org)
+  * [International Society for Business and Industrial Statistics](http://isbis-isi.org)
   * [Statistical Society of Australia](http://www.statsoc.org.au)
   * [Foundation for Open Access Statistics](http://foastat.org/)
 
