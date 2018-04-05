@@ -2,7 +2,6 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2013-02-06 21:30:32+00:00
-link: https://robjhyndman.com/seminars/man-vs-wild-data/
 slug: man-vs-wild-data
 title: Man vs wild data
 wordpress_id: 2215

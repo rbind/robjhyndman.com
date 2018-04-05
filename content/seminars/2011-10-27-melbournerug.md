@@ -2,7 +2,6 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2011-10-27 04:37:26+00:00
-link: https://robjhyndman.com/seminars/melbournerug/
 slug: melbournerug
 title: Forecasting time series using R
 youtube: 1Lh1HlBUf8k

@@ -2,7 +2,6 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2013-06-24 14:15:57+00:00
-link: https://robjhyndman.com/seminars/forecasting-without-forecasters/
 slug: forecasting-without-forecasters
 title: Forecasting without forecasters
 wordpress_id: 2283

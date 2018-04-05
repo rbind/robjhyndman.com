@@ -2,10 +2,8 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2012-06-19 08:58:22+00:00
-link: https://robjhyndman.com/seminars/automaticforecasting/
 slug: automaticforecasting
 title: Advances in automatic time series forecasting
-wordpress_id: 2116
 slideshare: EGBa4v2iaKN93O
 tags:
 - forecasting

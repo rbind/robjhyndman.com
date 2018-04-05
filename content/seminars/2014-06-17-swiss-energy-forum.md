@@ -2,10 +2,6 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2014-06-17 06:36:25+00:00
-excerpt: 'A two-part seminar given at the Energy Forum, Valais/Wallis, Switzerland.
-
-  '
-link: https://robjhyndman.com/seminars/swiss-energy-forum/
 slug: swiss-energy-forum
 title: Challenges in forecasting peak electricity demand
 wordpress_id: 2477

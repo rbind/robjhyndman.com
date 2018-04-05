@@ -2,10 +2,8 @@
 author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2010-09-07 11:33:30+00:00
-link: https://robjhyndman.com/seminars/demographic-forecasting/
 slug: demographic-forecasting
 title: Demographic forecasting using functional data analysis
-wordpress_id: 1410
 file: DemographicForecasting.pdf
 tags:
 - demography

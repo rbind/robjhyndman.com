@@ -3,7 +3,6 @@ author: Rob&nbsp;J&nbsp;Hyndman
 comments: false
 date: 2015-01-12 15:33:19+00:00
 excerpt: Talk given at the Institute of Statistical Science, Academia Sinica, Taipei, Taiwan.
-link: https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/
 slug: visualizing-and-forecasting-big-time-series-data
 title: Visualizing and forecasting big time series data
 wordpress_id: 2851

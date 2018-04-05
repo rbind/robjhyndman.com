@@ -2,7 +2,6 @@
 author: robjhyndman
 comments: false
 date: 2009-06-23 03:44:24+00:00
-link: https://robjhyndman.com/seminars/extreme-forecasting/
 slug: extreme-forecasting
 title: Extreme forecasting
 file: ISF2009.pdf
