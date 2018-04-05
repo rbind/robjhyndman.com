@@ -53,7 +53,11 @@
       {{ if .Params.file }}
       <iframe src="https://docs.google.com/gview?url=https://robjhyndman.com/talks/{{.Params.file}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
       {{ end }}
-  </article>
+      {{ if .Params.link }}<a href="{{.Params.link}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a>{{ end }}
+      {{ if .Params.link }}
+      <iframe src="https://docs.google.com/gview?url={{.Params.link}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+      {{ end }}
+       </article>
 
           <hr>
         <span style="font-family: Carlito;">
