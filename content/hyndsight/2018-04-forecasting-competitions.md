@@ -1,6 +1,6 @@
 ---
-date: 2018-03-26
-slug: m4comp2018
+date: 2018-04-11
+slug: forecasting-competitions
 title: "A history of forecasting competitions"
 mathjax: true
 categories:
@@ -9,73 +9,47 @@ categories:
   - time series
 ---
 
-Prediction competitions are now so widespread that it is often forgotten  how ground-breaking they were when first held, and how influential they have been over the years.
+Prediction competitions are now so widespread that it is often forgotten how ground-breaking they were when first held, and how influential they have been over the years.
 
-While [Kaggle](http://kaggle.com) and the [KDD cup](??) are well-known sponsors of prediction competitions, similar competitions were hold long before either was established. Sometimes people point to the NETFLIX million dollar prize as the beginning of such competitions, but that came about 30 years after the first one.
-
-The first 20-30 years of prediction competitions focused on time series forecasting, while most modern competitive activity looks at cross-sectional prediction and classification. To keep this history manageable, I will only consider time series forecasting competitions here.
-
+While [Kaggle](http://kaggle.com) competitions and the [KDD cup](http://www.kdd.org/kdd-cup) are well-known, similar competitions have been held for many, many years. To keep this history manageable, I will only consider time series forecasting competitions here.
 
 ### Newbold & Granger (1974)
 
-The earliest non-trrivial study of forecast accuracy was probably Newbold & Granger (JRSSA, 1974), involving 106 time series. Although they did not invite others to participate, they did start the discussion on what forecasting methods are the most accurate for different groups of time series.
+The earliest non-trivial study of time series forecast accuracy was probably Newbold & Granger (JRSSA, 1974), involving 106 time series. Although they did not invite others to participate, they did start the discussion on what forecasting methods are the most accurate for different groups of time series. They used a scaled version of MSE to compare the results. The article was published along with some discussion, which reveals some of the erroneous thinking of the time.
 
-They used a scaled version of MSE to compare the results.
+One important feature of the results was the empirical demonstration that forecast combinations improve accuracy. Yet one discussant (GJA Stern) stated
+> The combined forecasting methods seem to me to be non-starters ... Is a combined method not in danger of falling between two stools?
+
+Another (Maurice Priestley) said
+>The authors' suggestion about combining different forecasts is an interesting one, but its validity would seem to depend on the assumption that the model used in the Box-Jenkins approach is inadequate---for otherwise, the Box-Jenkins forecast alone would be optimal.
+
+This reveals a view commonly held (even today) that there is some single model that describes the data generating process, and that the job of a forecaster is to find it. This seems patently absurd to me, and George Box famously dismissed it saying ["All models are wrong but some are useful"](https://en.wikipedia.org/wiki/All_models_are_wrong).
+
+There is also a strong bias against automatic forecasting procedures. For example, Gwilym Jenkins says
+>  The fact remains that model building is best done by the human brain and is inevitably an iterative process.
+
+Subsequent history has shown that to be untrue provided enough data is available.
+
 
 ### Makridakis M-competitions
 
-The first true forecasting competition was organized by Spyros Makridakis and Michele Hibon who put together a collection of 111 time series and invited expert time series analysts to produce forecasts. The resulting JRSSA paper caused quite a stir, and the discussion published along with the paper is entertaining, and at times somewhat shocking.
+As far as I know, the first true time series forecasting competition was organized by Spyros Makridakis and Michèle Hibon who put together a collection of 111 time series and invited expert time series analysts to produce forecasts. The resulting JRSSA paper caused quite a stir, and the discussion published along with the paper is entertaining, and at times somewhat shocking.
 
+Maurice Priestley was in attendance again and was clinging to the view that there was a true model waiting to be discovered:
+>I do not believe that it is very fruitful to attempt to classify series according to which forecasting techniques perform "best". The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b) our ability to identify and fit this model correctly and (c) the criterion chosen to measure the forecasting accuracy.
 
- *  Difficulties:
+To which, Makridakis and Hibon replied
+> There is a fact that Professor Priestley must accept: empirical evidence is in *disagreement* with his theoretical arguments.
 
- * How to measure forecast accuracy?
- * How to apply methods consistently and objectively?
- * How to explain unexpected results?
+Many of the discussants seem enamoured with ARIMA models.
+> It is amazing to me, however, that after all this exercise in identifying models, transforming and so on, that the autoregressive moving averages come out so badly. I wonder whether it might be partly due to the authors not using the backwards forecasting approach to obtain the initial errors. --- *W.G. Gilchrist*
 
+> I find it hard to believe that Box-Jenkins, if properly applied, can actually be worse than so many of the simple methods --- *Chris Chatfield*
 
- *  Common thinking was that the more sophisticated mathematical models (ARIMA models at the time) were necessarily better.
+> Why do empirical studies sometimes give different answers? It may depend on the selected sample of time series, but I suspect it is more likely to depend on the skill of the analyst and on their individual interpretations of what is meant by Method $X$ ... these authors are more at home with simple procedures than with Box-Jenkins. --- *Chris Chatfield*
 
- *  If results showed ARIMA models not best, it must be because analyst was unskilled.
-
-
-
-
-### Makridakis and Hibon (1979)
-
-I do not believe that it is very fruitful to attempt to classify series according to which forecasting techniques perform ``best''. The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b)~our ability to identify and fit this model correctly and (c)~the criterion chosen to measure the forecasting accuracy. \atright{\emph{--- M.B. Priestley}}
-
-\dots\ the paper suggests the application of normal scientific experimental design to forecasting, with measures of unbiased testing of forecasts against subsequent reality, for success or failure. A long overdue reform.\\ \atright{\hbox{\textit{--- F.H. Hansford-Miller}}}
-
-
-
-
-Modern man is fascinated with the subject of forecasting \textit{--- W.G. Gilchrist}
-
-
-
-It is amazing to me, however, that after all this exercise in identifying models, transforming and so on, that the autoregressive moving averages come out so badly. I wonder whether it might be partly due to the authors not using the backwards forecasting approach to obtain the initial errors.\\\mbox{}\hfill\hbox{\textit{--- W.G. Gilchrist}}
-
-
-I find it hard to believe that Box-Jenkins, if properly applied, can actually be worse than so many of the simple methods \textit{--- C. Chatfield}
-
-Why do empirical studies sometimes give different answers? It may depend on the selected sample of time series, but I suspect it is more likely to depend on the skill of the analyst and on their individual interpretations of what is meant by Method $X$.\\\mbox{}\hfill\hbox{\textit{--- C.~Chatfield}}
-
-\dots\ these authors are more at home with simple procedures than with Box-Jenkins. 
-
-
-### Makridakis and Hibon (1979)}
-
-There is a fact that Professor Priestley must accept: empirical evidence is in \emph{disagreement} with his theoretical arguments.\hfill\hbox{\textit{--- S. Makridakis \& M. Hibon}}
-
-
-
-Dr Chatfield expresses some personal views about the first author \dots\ It might be useful for Dr Chatfield to read some of the psychological literature quoted in the main paper, and he can then learn a little more about biases and how they affect prior probabilities.\atright{\itshape --- S. Makridakis \& M. Hibon}
-
-
-
-### Consequences of M\&H (1979)}\fontsize{14}{16}\sf
-
+Again, Makridakis & Hibon responded:
+> Dr Chatfield expresses some personal views about the first author ... It might be useful for Dr Chatfield to read some of the psychological literature quoted in the main paper, and he can then learn a little more about biases and how they affect prior probabilities.
 
 As a result of this paper, researchers started to:
 
@@ -83,7 +57,6 @@ As a result of this paper, researchers started to:
  * study what methods give the best forecasts;
  * be aware of the dangers of over-fitting;
  * treat forecasting as a different problem from time series analysis.
-
 
 
 Makridakis \& Hibon followed up with a new competition in 1982:
@@ -135,7 +108,7 @@ various time series methods\dots\ The extension involves the inclusion of more m
 
 
 
- *  A commercial software package with an unknown algorithm. 
+ *  A commercial software package with an unknown algorithm.
  *  Known to fit either exponential smoothing or ARIMA models using BIC.
 
 
@@ -152,13 +125,13 @@ Twenty years after the first competition, the M3 competition was held, involving
 
 sMAPE
 
-Now, almost 20 years later again, Makridakis is organizing the M4 competition. Details are available at [https://www.m4.unic.ac.cy/](https://www.m4.unic.ac.cy/). This time there are 100,000 time series -- surely enough to ensure any differences in accuracy between methods are statistically significant. Astute readers might recall an aborted attempt at an M4 competition a few years ago. For various reasons, that never got off the ground. 
+Now, almost 20 years later again, Makridakis is organizing the M4 competition. Details are available at [https://www.m4.unic.ac.cy/](https://www.m4.unic.ac.cy/). This time there are 100,000 time series -- surely enough to ensure any differences in accuracy between methods are statistically significant. Astute readers might recall an aborted attempt at an M4 competition a few years ago. For various reasons, that never got off the ground.
 
 sMAPE/MASE
 
 MIS
 
-Since the M3 competition, I have talked to Spyros a few times about what a new competition should look like. My view is that it should not jd.ust be a repeat of old competitions with larger data sets, but should look at new features of forecasting, or new types of data. 
+Since the M3 competition, I have talked to Spyros a few times about what a new competition should look like. My view is that it should not jd.ust be a repeat of old competitions with larger data sets, but should look at new features of forecasting, or new types of data.
 
 
 
@@ -188,7 +161,7 @@ tscompdata??
 
 ### Transportation
 
-Similar idea -- Tcomp 
+Similar idea -- Tcomp
 
 Never published, but data still available
 
