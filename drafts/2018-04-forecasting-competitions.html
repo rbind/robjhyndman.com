@@ -312,7 +312,7 @@ $(document).ready(function () {
 <p>Prediction competitions are now so widespread that it is often forgotten how controversial they were when first held, and how influential they have been over the years.</p>
 <div id="nottingham-studies" class="section level3">
 <h3>Nottingham studies</h3>
-<p>The earliest non-trivial study of time series forecast accuracy was probably by David Reid as part of his PhD at the University of Nottingham (1969). Building on his work, Paul Newbold and Clive Granger conducted a study of forecast accuracy involving 106 time series (<a href="http://www.jstor.org/stable/2344546">JRSSA, 1974</a>). Although they did not invite others to participate, they did start the discussion on what forecasting methods are the most accurate for different types of time series. The article was published along with some discussion, which reveals some of the erroneous thinking of the time.</p>
+<p>The earliest non-trivial study of time series forecast accuracy was probably by David Reid as part of his PhD at the University of Nottingham (1969). Building on his work, Paul Newbold and Clive Granger conducted a study of forecast accuracy involving 106 time series (<a href="http://www.jstor.org/stable/2344546">JRSSA, 1974</a>). Although they did not invite others to participate, they did start the discussion on what forecasting methods are the most accurate for different types of time series. They presented the ideas to the Royal Statistical Society, and the subsequent discussion reveals some of the erroneous thinking of the time.</p>
 <p>One important feature of the results was the empirical demonstration that forecast combinations improve accuracy. (A similar result had been demonstrated as far back as <a href="http://dx.doi.org/10.1214/14-STS468">Galton, 1907</a>.) Yet one discussant (GJA Stern) stated</p>
 <blockquote>
 <p>The combined forecasting methods seem to me to be non-starters … Is a combined method not in danger of falling between two stools?</p>
@@ -321,8 +321,8 @@ $(document).ready(function () {
 <blockquote>
 <p>The authors’ suggestion about combining different forecasts is an interesting one, but its validity would seem to depend on the assumption that the model used in the Box-Jenkins approach is inadequate—for otherwise, the Box-Jenkins forecast alone would be optimal.</p>
 </blockquote>
-<p>This reveals a view commonly held (even today) that there is some single model that describes the data generating process, and that the job of a forecaster is to find it. This seems patently absurd to me, and George Box famously dismissed it saying <a href="https://en.wikipedia.org/wiki/All_models_are_wrong">“All models are wrong but some are useful”</a>.</p>
-<p>There is also a strong bias against automatic forecasting procedures. For example, Gwilym Jenkins said</p>
+<p>This reveals a view commonly held (even today) that there is some single model that describes the data generating process, and that the job of a forecaster is to find it. This seems patently absurd to me — real data comes from much more complicated, non-linear, non-stationary processes than any model we might dream up — and George Box famously dismissed it saying <a href="https://en.wikipedia.org/wiki/All_models_are_wrong">“All models are wrong but some are useful”</a>.</p>
+<p>There was also a strong bias against automatic forecasting procedures. For example, Gwilym Jenkins said</p>
 <blockquote>
 <p>The fact remains that model building is best done by the human brain and is inevitably an iterative process.</p>
 </blockquote>
@@ -333,9 +333,9 @@ $(document).ready(function () {
 <p>Five years later, Spyros Makridakis and Michèle Hibon put together a collection of 111 time series and compared many more forecasting methods. They also presented the results to the Royal Statistical Society. The resulting <a href="http://www.jstor.org/stable/2345077">JRSSA (1979) paper</a> seems to have caused quite a stir, and the discussion published along with the paper is entertaining, and at times somewhat shocking.</p>
 <p>Maurice Priestley was in attendance again and was clinging to the view that there was a true model waiting to be discovered:</p>
 <blockquote>
-<p>I do not believe that it is very fruitful to attempt to classify series according to which forecasting techniques perform “best”. The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b) our ability to identify and fit this model correctly and (c) the criterion chosen to measure the forecasting accuracy.</p>
+<p>The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b) our ability to identify and fit this model correctly and (c) the criterion chosen to measure the forecasting accuracy.</p>
 </blockquote>
-<p>To which, Makridakis and Hibon replied</p>
+<p>Makridakis and Hibon replied</p>
 <blockquote>
 <p>There is a fact that Professor Priestley must accept: empirical evidence is in <em>disagreement</em> with his theoretical arguments.</p>
 </blockquote>
@@ -346,6 +346,7 @@ $(document).ready(function () {
 <blockquote>
 <p>I find it hard to believe that Box-Jenkins, if properly applied, can actually be worse than so many of the simple methods — <em>Chris Chatfield</em></p>
 </blockquote>
+<p>Then Chatfield got personal:</p>
 <blockquote>
 <p>Why do empirical studies sometimes give different answers? It may depend on the selected sample of time series, but I suspect it is more likely to depend on the skill of the analyst … these authors are more at home with simple procedures than with Box-Jenkins. — <em>Chris Chatfield</em></p>
 </blockquote>
@@ -364,7 +365,7 @@ $(document).ready(function () {
 <li>The accuracy when various methods are being combined outperforms, on average, the individual methods being combined and does very well in comparison to other methods.</li>
 <li>The accuracy of the various methods depends upon the length of the forecasting horizon involved.</li>
 </ol>
-<p>The resulting paper <a href="https://doi.org/10.1002/for.3980010202">(Makridakis et al, JF, 1982)</a> had a profound effect on forecasting research. It caused researchers to:</p>
+<p>The paper describing the competition <a href="https://doi.org/10.1002/for.3980010202">(Makridakis et al, JF, 1982)</a> had a profound effect on forecasting research. It caused researchers to:</p>
 <ul>
 <li>focus attention on what models produced good forecasts, rather than on the mathematical properties of those models.</li>
 <li>consider how to automate forecasting methods;</li>
