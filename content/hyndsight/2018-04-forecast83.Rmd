@@ -1,0 +1,65 @@
+---
+date: 2018-04-14
+slug: forecast83
+title: "forecast v8.3 now on CRAN"
+mathjax: true
+categories:
+  - forecasting
+  - time series
+  - R
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+```
+
+The latest version of the [forecast package for R is now on CRAN](https://cran.r-project.org/package=forecast).  This is the version used in the [2nd edition of my forecasting textbook](https://OTexts.org/fpp2) with George Athanasopoulos. So readers should now be able to replicate all examples in the book using only CRAN packages.
+
+A few new features of the forecast package may be of interest. A more complete [Changelog](http://pkg.robjhyndman.com/forecast/news/) is also available.
+
+## `mstl()` handles multiple seasonality
+
+STL decomposition was designed to handle a single type of seasonality, but modern data often involves several seasonal periods (e.g., hourly data often has a time of day seasonality, a time of week seasonality and a time of year seasonality). So I introduced the `mstl()` function to handle this situation. Unlike `stl()` is it completely automated, so it is not necessary to specify the seasonal window.
+
+For example, here is a decomposition of some half-hourly electricity demand data from England and Wales.
+
+```{r, fig.height=8, fig.width=8}
+library(forecast)
+library(ggplot2)
+mstl(taylor) %>% autoplot(facet=TRUE)
+```
+
+The daily seasonality is shown as `Seasonal48` while the weekly seasonality is named `Seasonal336`, the names indicating the length of the seasonal period.
+
+This works by iteratively calling the `stl()` function, each time removing all seasonal components other the one being estimated.
+
+It also handles non-seasonal time series, in which case it decomposes the series into a trend and a remainder term using Friedman's super smoother (`supsmu`) to estimate the trend.
+
+`mstl()` is now also used internally by `stlf()`, `stlm()`, `tsoutliers()` and `tsclean()`.
+
+## `tsCV()` handles multiple forecast horizons and rolling windows
+
+The `tsCV()` function introduced in version 8.0 has proven popular, and it has now been extended to simplify the calculation for multiple forecast horizons. So if you specify a horizon $h>1$, the cross-validated errors are returned for all horizons up to and including $h$.
+
+For example, we can fit an AR(2) model to the lynx data, and compute cross-validation statistics up to horizon 10.
+
+```{r}
+#Fit an AR(2) model to each rolling origin subset
+far2 <- function(x, h){forecast(Arima(x, order=c(2,0,0)), h=h)}
+e <- tsCV(lynx, far2, h=10)
+# Compute the MSE values and remove missing values
+mse <- colMeans(e^2, na.rm = T)
+# Plot the MSE values against the forecast horizon
+data.frame(h = 1:10, MSE = mse) %>%
+  ggplot(aes(x = h, y = MSE/1e6)) + geom_point()
+```
+
+`tsCV()` now also has a `window` argument so the training data can be kept at a constant size.
+
+
+## `auto.arima()` changes
+
+One aspect of the automatic ARIMA algorithm that I've never been happy with is how it selects the number of seasonal differences. Originally, we used the Canova-Hansen seasonal unit root test, then in v3.0 we switched to using the OCSB test. But neither was particularly satisfactory, partly because neither was designed for this use case. So in v8.3 we have changed again and now use a measure of seasonal strength to determine if a seasonal difference is required or not. The measure is described [here](https://otexts.org/fpp2/seasonal-strength.html). A series with seasonal strength greater than 0.64 is differenced once, otherwise no seasonal differencing is used. We chose the threshold value of 0.64 as that led to the best forecast accuracy on the M3 competition data.
+
+
