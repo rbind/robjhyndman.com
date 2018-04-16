@@ -51,11 +51,11 @@ Now $\boldsymbol{X}\_{[i]}'\boldsymbol{X}\_{[i]} = (\boldsymbol{X}'\boldsymbol{X
 $$
 (\boldsymbol{X}\_{[i]}'\boldsymbol{X}\_{[i]})^{-1} = (\boldsymbol{X}'\boldsymbol{X})^{-1} + \frac{(\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{x}\_i\boldsymbol{x}\_i'(\boldsymbol{X}'\boldsymbol{X})^{-1}}{1-h\_i}.
 $$
-Also note that $\boldsymbol{X}\_{[i]}' \boldsymbol{Y}\_{[i]} = \boldsymbol{X}'\boldsymbol{Y} - \boldsymbol{x}y\_i$. Therefore
+Also note that $\boldsymbol{X}\_{[i]}' \boldsymbol{Y}\_{[i]} = \boldsymbol{X}'\boldsymbol{Y} - \boldsymbol{x}\_iy\_i$. Therefore
 
 <div>
 \begin{align}
-\boldsymbol{\hat{\beta}}_{[i]} 
+\boldsymbol{\hat{\beta}}_{[i]}
 &=  \left[ (\boldsymbol{X}'\boldsymbol{X})^{-1}  + \frac{ (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{x}_i\boldsymbol{x}_i'(\boldsymbol{X}'\boldsymbol{X})^{-1} }{1-h_i} \right] (\boldsymbol{X}'\boldsymbol{Y} - \boldsymbol{x}_i y_i)\\\\
 &=  \hat{\boldsymbol{\beta}} - \left[ \frac{ (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{x}_i}{1-h_i}\right] \left[y_i(1-h_i) -  \boldsymbol{x}_i' \hat{\boldsymbol{\beta}} +h_i y_i \right]\\\\
 &=  \hat{\boldsymbol{\beta}} - (\boldsymbol{X}'\boldsymbol{X})^{-1}\boldsymbol{x}_i e_i / (1-h_i)
@@ -64,7 +64,7 @@ Also note that $\boldsymbol{X}\_{[i]}' \boldsymbol{Y}\_{[i]} = \boldsymbol{X}'\b
 
 
 
-  
+
 
 
 
