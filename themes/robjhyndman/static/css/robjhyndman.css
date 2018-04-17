@@ -2,34 +2,43 @@
 -----------------------------------------------------------------------------*/
 body {
 	font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, Serif;
-	font-size: 1.05em;
-	line-height: 1.6em;
+	font-size: 0.9em;
+	line-height: 1.5em;
 	background-color: #faf8f8;
 }
 
 form, input[type="search"], select[multiple="multiple"]  {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #36454f;
   font-weight: bold;
 }
 h1 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding-bottom: 1em;
+  line-height: 1.6em;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   border-bottom: 1px solid #b3cde0;
 }
 
 h2 a {border-bottom: none;}
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+.post-metadata {
+  font-size: 0.8em;
 }
 
 p, ul, ol, dl, blockquote, hr, pre, table, form, fieldset, figure, address {
@@ -53,11 +62,11 @@ a.badge.badge-blue { color: #fff;}
   font-size: 18px;
   padding: 5px 5px 3px 5px;
   text-transform: none;
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .badge {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* RJH problem additions */
@@ -140,14 +149,14 @@ img,
 }
 
 nav {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .nav-bar {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
 }
 .post-metadata {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .hd {
   font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, Serif;
@@ -155,7 +164,7 @@ nav {
 
 .caps {
   text-transform: lowercase;
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -175,7 +184,7 @@ hr {border-top: 1px solid #b3cde0; margin-top:5ex; margin-bottom: 5ex;}
 	margin: auto;
 }
 .sans {
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #outer {
 	padding: 3em 0 1em 0;
@@ -267,8 +276,8 @@ header h1 {	font-size: 24px;
 /* =Footer
 -----------------------------------------------------------------------------*/
 
-.dateblock {text-align:right; font-size: 90%;
-    font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.dateblock {text-align:right; 
+    font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -289,7 +298,7 @@ header h1 {	font-size: 24px;
 #footer a { color: #fff; }
 #footer section {
 	float: none;
-  font-family: 'Carlito', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align:center;
 }
 #footer nav {
