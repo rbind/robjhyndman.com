@@ -12,7 +12,7 @@ categories:
 
 Prediction competitions are now so widespread that it is often forgotten how controversial they were when first held, and how influential they have been over the years.
 
-To keep this exercise manageable, I will restrict attention to time series forecasting competitions --- where only the history of the data is available when producing forecasts. 
+To keep this exercise manageable, I will restrict attention to time series forecasting competitions --- where only the history of the data is available when producing forecasts.
 
 ## Nottingham studies
 
@@ -40,7 +40,7 @@ Five years later, [Spyros Makridakis](https://en.wikipedia.org/wiki/Spyros_Makri
 
 Maurice Priestley was in attendance again and was clinging to the view that there was a true model waiting to be discovered:
 
->The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b) our ability to identify and fit this model correctly and (c) the criterion chosen to measure the forecasting accuracy.
+>The performance of any particular technique when applied to a particular series depends essentially on (a) the model which the series obeys; (b) our ability to identify and fit this model correctly and &#40;c) the criterion chosen to measure the forecasting accuracy.
 
 Makridakis and Hibon replied
 
@@ -153,3 +153,8 @@ A useful discussion of forecasting competitions and their history is provided by
  * [M4 competition](/hyndsight/m4comp/)
  * [M4 competition response from Spyros Makridakis](/hyndsight/m4comp-response/)
  * [M4 forecasting competition update](/hyndsight/m4competition/)
+
+***
+
+*[This post has been syndicated at [ISBIS Blog Corner](https://blogisbis.wordpress.com/2018/04/16/a-brief-history-of-time-series-forecasting-competitions/)]*
+
