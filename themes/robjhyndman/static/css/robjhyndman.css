@@ -1,18 +1,21 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-	font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, Serif;
-	font-size: 0.9em;
+	font-family: 'Merriweather', Georgia, 'Times New Roman', Times, Serif;
+	font-size: 0.85em;
 	line-height: 1.5em;
 	background-color: #faf8f8;
 }
+pre > code {
+    font-family: 'Fira Mono', 'Source Code Pro', 'Courier New', 'Courier', monospace;
+}
 
 form, input[type="search"], select[multiple="multiple"]  {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #36454f;
   font-weight: bold;
 }
@@ -23,14 +26,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   border-bottom: 1px solid #b3cde0;
 }
 
 h2 a {border-bottom: none;}
 
 h3 {
-  font-size: 1.em;
+  font-size: 1.1em;
 }
 
 h6 {
@@ -62,11 +65,11 @@ a.badge.badge-blue { color: #fff;}
   font-size: 18px;
   padding: 5px 5px 3px 5px;
   text-transform: none;
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .badge {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* RJH problem additions */
@@ -136,7 +139,7 @@ var,
 output {
   font-size: 90%;
   font-style: normal;
-  font-family: 'Source Code Pro', "Lucida Console", "Courier New", monospace;
+  font-family: 'Fira Mono', "Lucida Console", "Courier New", monospace;
 }
 
 /* =Common
@@ -149,22 +152,22 @@ img,
 }
 
 nav {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .nav-bar {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
 }
 .post-metadata {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .hd {
-  font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, Serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, Serif;
 }
 
 .caps {
   text-transform: lowercase;
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -184,7 +187,7 @@ hr {border-top: 1px solid #b3cde0; margin-top:5ex; margin-bottom: 5ex;}
 	margin: auto;
 }
 .sans {
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 #outer {
 	padding: 3em 0 1em 0;
@@ -276,8 +279,8 @@ header h1 {	font-size: 24px;
 /* =Footer
 -----------------------------------------------------------------------------*/
 
-.dateblock {text-align:right; 
-    font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.dateblock {text-align:right;
+    font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -298,7 +301,7 @@ header h1 {	font-size: 24px;
 #footer a { color: #fff; }
 #footer section {
 	float: none;
-  font-family: 'Droid Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Fira Sans', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align:center;
 }
 #footer nav {
