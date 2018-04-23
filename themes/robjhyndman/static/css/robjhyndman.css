@@ -7,7 +7,7 @@ body {
 	background-color: #faf8f8;
 }
 pre > code {
-    font-family: 'Fira Mono', 'Source Code Pro', 'Courier New', 'Courier', monospace;
+    font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
 }
 
 form, input[type="search"], select[multiple="multiple"]  {
@@ -140,7 +140,7 @@ var,
 output {
   font-size: 90%;
   font-style: normal;
-  font-family: 'Fira Mono', "Lucida Console", "Courier New", monospace;
+  font-family: 'Source Code Pro', "Lucida Console", "Courier New", monospace;
 }
 
 /* =Common
