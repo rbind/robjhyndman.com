@@ -7,7 +7,7 @@ body {
 	background-color: #faf8f8;
 }
 pre > code {
-    font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+    font-family: 'Hack', 'Source Code Pro', 'Courier New', 'Courier', monospace;
 }
 
 form, input[type="search"], select[multiple="multiple"]  {
