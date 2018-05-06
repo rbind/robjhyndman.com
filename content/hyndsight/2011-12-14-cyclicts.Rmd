@@ -3,10 +3,8 @@ author: robjhyndman
 comments: true
 date: 2011-12-14 05:22:10+00:00
 mathjax: true
-link: https://robjhyndman.com/hyndsight/cyclicts/
 slug: cyclicts
 title: Cyclic and seasonal time series
-wordpress_id: 1656
 categories:
 - forecasting
 - mathematics
@@ -16,11 +14,7 @@ categories:
 
 These terms get confused all the time (e.g., [this question on CrossValidated.com](http://stats.stackexchange.com/q/19626/159)), and so I thought it might be helpful to try to summarize the distinction and some of the associated models.<!-- more -->
 
-
-
-### Definitions
-
-
+## Definitions
 
 A **seasonal** pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week). Seasonality is always of a fixed and known period. Hence, seasonal time series are sometimes called **periodic** time series.
 
@@ -28,19 +22,22 @@ A **cyclic** pattern exists when data exhibit rises and falls that are _not of f
 
 Many people confuse cyclic behaviour with seasonal behaviour, but they are really quite different. If the fluctuations are not of fixed period then they are cyclic; if the period is unchanging and associated with some aspect of the calendar, then the pattern is seasonal. In general, the average length of cycles is longer than the length of a seasonal pattern, and the magnitude of cycles tends to be more variable than the magnitude of seasonal patterns.
 
-
-
-### Examples
-
-
+## Examples
 
 The following three examples shows different types of seasonal and cyclic patterns.
 
+```{r, message=FALSE, fig.height=3}
+library(fpp2)
+autoplot(lynx) + xlab("Year") + ylab("Number of lynx trapped")
+```
 
+```{r, message=FALSE, fig.height=3}
+autoplot(hsales) + xlab("Year") + ylab("Monthly housing sales (millions)")
+```
 
-![](/files/cyclets.png)
-
-
+```{r, message=FALSE, fig.height=3}
+autoplot(taylor) + xlab("Week") + ylab("Electricity demand (GW)")
+```
 
 The top plot shows the famous Canadian lynx data -- the number of lynx trapped each year in the McKenzie river district of northwest Canada (1821-1934). These show clear aperiodic population cycles of approximately 10 years. The cycles are not of fixed length -- some last 8 or 9 years and others last longer than 10 years.
 
@@ -48,68 +45,36 @@ The middle plot shows the monthly sales of new one-family houses sold in the USA
 
 The bottom plot shows half-hourly electricity demand in England and Wales from Monday 5 June 2000 to Sunday 27 August 2000. Here there are two types of seasonality -- a daily pattern and a weekly pattern. If we collected data over a few years, we would also see there is an annual pattern. If we collected data over a few decades, we may even see a longer cyclic pattern.
 
+## Cyclic and seasonal time series models
 
-
-### Cyclic and seasonal time series models
-
-
-
-
-
-#### ETS models
-
-
+### ETS models
 
 The class of ETS models (exponential smoothing within a state space framework) allows for seasonality but not cyclicity. For example, the ETS(A,A,A) model has an additive trend and additive seasonal pattern. However, there is no ETS model that can reproduce aperiodic cyclic behaviour. For ETS models handling multiple seasonal data (such as the electricity demand data above), see [my paper on complex seasonality](/publications/complex-seasonality/).
 
-
-
-#### Cyclic ARMA models
-
-
+### Cyclic ARMA models
 
 The class of ARMA models can handle both seasonality and cyclic behaviour. An ARIMA$(p,q)$ model can be cyclic if $p>1$ although there are some conditions on the parameters in order to obtain cyclicity. For an AR(2), where $y\_t = c + \phi\_1y\_{t-1} + \phi\_2y\_{t-2} + \varepsilon\_t$ and $\varepsilon\_t$ is white noise, cyclic behaviour is observed if ${\phi\_1^2+4\phi\_2 < 0}$. In that case, the average period of the cycles is
 $$
 \frac{2\pi}{\text{arc cos}\left(-\phi_1(1-\phi_2)/(4\phi_2)\right)}.
 $$
 For example, the lynx data can be modelled (although not very well) with
-
-<div>
 $$
 y_t = 1545 + 1.147 y_{t-1} - 0.600 y_{t-2} + \varepsilon_t,
 $$
-</div>
-
 giving an average cyclic period of 8.97. See [Jiru (2008)](http://www.math.sjsu.edu/~crunk/masters/Abera_Jiru_thesis.pdf) for derivations and further results along these lines.
-
-
 
 #### Seasonal ARMA models
 
-
-
 A seasonal ARMA model requires additional seasonal terms. For example, a seasonal ARMA(1,0)(1,0)4 for quarterly data is written as
-
-<div>
 $$
 (1 - \phi_1B)(1-\Phi_1B^4)y_t = \varepsilon_t
 $$
-</div>
-
 where $B$ is the backshift operator. The quarterly seasonality is explicitly handled with the term involving $B^4$.
 
 It is possibly to have both cyclic and seasonal behaviour in an ARMA model, but long-period cyclicity is not handled very well in the ARMA framework. Alternative (nonlinear) models are usually better.
 
-
-
 #### Periodic ARMA models
 
-
-
 There is also a class of periodic ARMA models where the parameters take different values in different seasons. For example, a periodic AR(2) for quarterly data could be written as
-
-<div>
 $$y_t = \phi_{1,s}y_{t-1} + \phi_{2,s}y_{t-2} + \varepsilon_t$$
-</div>
-
 where $s=t\mod 4$ denotes the four seasons. A model of this kind could handle data with both cyclic and seasonal patterns more easily than a seasonal ARMA model.

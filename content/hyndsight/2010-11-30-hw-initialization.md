@@ -26,10 +26,7 @@ s_t &= \gamma(y_t-\ell_{t-1} - b_{t-1}) + (1-\gamma)s_{t-m}\\
 \end{align}
 </div>
 
-
-
 and the multiplicative version is given by
-
 
 <div>
 \begin{align}
@@ -39,8 +36,6 @@ s_t &= \gamma(y_t/(\ell_{t-1} + b_{t-1})) + (1-\gamma)s_{t-m}\\
 \hat{y}_{t+h|t} &= (\ell_t + b_th)s_{t+h-m}.
 \end{align}
 </div>
-
-
 
 In many books, the seasonal equation (with $s_t$ on the LHS) is slightly different from these, but I prefer the version above because it makes it easier to write the system in state space form. In practice, the modified form makes very little difference to the forecasts.
 

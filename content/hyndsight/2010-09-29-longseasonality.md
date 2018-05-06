@@ -21,7 +21,9 @@ The `arima()` function will allow a seasonal period up to $m=350$ but in practic
 For such data I prefer a Fourier series approach where the seasonal pattern is modelled using Fourier terms with short-term time series dynamics allowed in the error. For example, consider the following model:
 
 <div>
-$$y_t = a + \sum_{k=1}^K \left[ \alpha_k\sin(2\pi kt/m) + \beta_k\cos(2\pi kt/m)\right] + N_t,$$
+$$
+  y_t = a + \sum_{k=1}^K \left[ \alpha_k\sin(2\pi kt/m) + \beta_k\cos(2\pi kt/m)\right] + N_t,
+$$
 </div>
 
 where $N_t$ is an ARIMA process. The value of $K$ can be chosen by minimizing the AIC.

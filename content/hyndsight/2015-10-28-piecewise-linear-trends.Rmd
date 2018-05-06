@@ -16,28 +16,16 @@ categories:
 I prepared the following notes for a consulting client, and I thought they might be of interest to some other people too.
 
 Let $y_t$ denote the value of the time series at time $t$, and suppose we wish to fit a trend with correlated errors of the form
-<div>
 $$ y_t = f(t) + n_t, $$
-</div>
-where $f(t)$ represents the possibly nonlinear trend and $n_t$ is an autocorrelated error process.<!-- more -->
+where $f(t)$ represents the possibly nonlinear trend and $n_t$ is an autocorrelated error process.
 
 For example, if $f(t) = \beta_0+\beta_1 t$ is a linear function, then we can simply set $x_{1,t}=t$ and define
-
-<div>
 $$ y_t = \beta_0 + \beta_1x_{1,t} + n_t. $$
-</div>
-
 In matrix form we can write
-
-<div>
 $$ \boldsymbol{y} = \beta_0 + \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{n},$$
-</div>
-
 where $\boldsymbol{y}=[y_1,\dots,y_T]'$, $\boldsymbol{n}=[n_1,\dots,n_T]'$, $\boldsymbol{\beta}=[\beta_1]$ and $\boldsymbol{X} = [x_{1,1},\dots,x_{1,T}]'$. Note that I have left the intercept $\beta\_0$ out of the vector $\boldsymbol{\beta}$ so that the $\boldsymbol{X}$ matrix matches the required `xreg` argument in `auto.arima`.
 
 This model can be estimated by setting the `xreg` argument to be a matrix with one column:
-
-<div>
 $$
 \boldsymbol{X} = \left[\begin{array}{c}
 1\\
@@ -48,9 +36,8 @@ $$
 T
 \end{array}\right]
 $$
-</div>
 
-```
+```r
 x1 <- 1:length(y)
 fit <- auto.arima(y, xreg=x1)
 ```
@@ -59,7 +46,7 @@ The associated coefficient is the slope of the trend line.
 
 Here is a simple example of a linear trend fitted to the Asian sheep data from the `fpp` package :
 
-```{r, message=FALSE, cache=TRUE}
+```{r, message=FALSE, cache=TRUE, fig.cap="*A linear trend fitted to the Asian sheep data. The automatically selected error term is an AR(1) process.*"}
 library(fpp)
 T <- length(livestock)
 x1 <- seq(T)
@@ -74,10 +61,7 @@ plot(fc, main="Linear trend with AR(1) errors")
 lines(trend, col='red')
 ```
 
-*A linear trend fitted to the Asian sheep data. The automatically selected error term is an AR(1) process.*
-
 A more flexible approach is to use a piecewise linear trend which bends at some time. If the trend bends at time $\tau$, then it can be specified by including the following predictors in the model.
-<div>
 \begin{align}
  x_{1,t}  &=  t \\
  x_{2,t} &=  \begin{cases}
@@ -102,12 +86,9 @@ T & T-\tau
 $$
 
 
-
-
-    fit <- auto.arima(y, xreg=cbind(x1, pmax(0,x1-tau))
-
-
-
+```r
+fit <- auto.arima(y, xreg=cbind(x1, pmax(0,x1-tau))
+```
 
 If the associated coefficients of $x_{1,t}$ and $x_{2,t}$ are $\beta_1$ and $\beta_2$, then $\beta_1$ gives the slope of the trend before time $\tau$, while the slope of the line after time $\tau$ is given by $\beta_1+\beta_2$.
 
@@ -115,7 +96,7 @@ This can be extended to allow any number of "bend points" known as knots. Just a
 
 Here is a piecewise linear trend fitted to the Asian sheep data with knots at years 1990 and 1992:
 
-```{r, cache=TRUE}
+```{r, cache=TRUE, fig.cap="*A piecewise-linear trend fitted to the Asian sheep data.*"}
 x2 <- pmax(0, x1-30)
 x3 <- pmax(0, x1-32)
 fit <- auto.arima(livestock, xreg=cbind(x1,x2,x3))
@@ -132,12 +113,9 @@ plot(fc, main="Piecewise linear trend with AR(1) errors")
 lines(trend, col='red')
 ```
 
-A piecewise-linear trend fitted to the Asian sheep data.
-
 If there is to be no trend before the first knot, but a piecewise linear trend thereafter,  leave out the first column of the above matrix $\boldsymbol{X}$.
 
 If there is to be a piecewise linear trend up to the last knot, but no trend thereafter, a slightly modified set up can be used. For one knot at time $\tau$, we can set
-<div>
 $$
 \boldsymbol{X} = \left[\begin{array}{r}
 1-\tau \\
@@ -151,13 +129,9 @@ $$
 0
 \end{array}\right]
 $$
-</div>
 
-
-
-    xreg <- pmin(0, x1-tau)
-
-
-
+```r
+xreg <- pmin(0, x1-tau)
+```
 
 where the first 0 in the column is in row $\tau$. Additional knots can be handled in the same way. For example, if there are two knots, then   $\beta_1+\beta_2$ will be the slope of the trend up to the first knot, and $\beta_2$ will be the  slope between the first and second knots.
