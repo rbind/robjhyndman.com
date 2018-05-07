@@ -115,13 +115,11 @@
 <!-- more -->
 <p>When we produce prediction intervals for time series models, we generally only take into account the first of these sources of uncertainty. It would be possible to account for 2 and 3 using simulations, but that is almost never done because it would take too much time to compute. As computing speeds increase, it might become a viable approach in the future.</p>
 <p>Even if we ignore the model uncertainty and the DGP uncertainty (sources 3 and 4), and just try to allow for parameter uncertainty as well as the random error term (sources 1 and 2), there are no closed form solutions apart from some simple special cases.</p>
-<p>One such special case is an ARIMA(0,1,0) model with drift, which can be written as</p>
-<div>
-<p><span class="math display">\[
+<p>One such special case is an ARIMA(0,1,0) model with drift, which can be written as
+<span class="math display">\[
 y_t = y_{t-1} + c + e_t,
-\]</span></p>
-</div>
-<p>where <span class="math inline">\(e_t\)</span> is a white noise process. In this case, it is easy to compute the uncertainty associated with the estimate of <span class="math inline">\(c\)</span>, and then allow for it in the forecasts.</p>
+\]</span>
+where <span class="math inline">\(e_t\)</span> is a white noise process. In this case, it is easy to compute the uncertainty associated with the estimate of <span class="math inline">\(c\)</span>, and then allow for it in the forecasts.</p>
 <p>This model can be fitted using either the <code>Arima</code> function or the <code>rwf</code> function from the forecast package for R. If the <code>Arima</code> function is used, the uncertainty in <span class="math inline">\(c\)</span> is ignored, but if the <code>rwf</code> function is used, the uncertainty in <span class="math inline">\(c\)</span> is included in the prediction intervals. The difference can be seen in the following simulated example.</p>
 <pre class="r"><code>library(forecast)
 

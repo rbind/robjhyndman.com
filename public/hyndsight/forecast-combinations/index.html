@@ -142,7 +142,7 @@ head(weights)</code></pre>
 ## [82,]  0  1  0
 ## [83,]  0  1  0
 ## [84,]  0  1  0</code></pre>
-<p>It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to ETS alone. But by the end of the test set, it is giving weight 0.23 to ETS, 0.36 to ARIMA and 0.41 to STL. Here are the resulting forecasts:</p>
+<p>It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to STL alone. But by the end of the test set, it is giving weight 0 to ETS, 1 to ARIMA and 0 to STL. Here are the resulting forecasts:</p>
 <pre class="r"><code>z &lt;- ts(predict(MLpol0, X, test, type=&#39;response&#39;), start=c(1991,1), freq=12)
 df &lt;- cbind(co2, z)
 colnames(df) &lt;- c(&quot;Data&quot;,&quot;Mixture&quot;)

@@ -85,7 +85,9 @@
 	
       </div>
       <div class="pub-content"><p>This is a one-day workshop given as part of the <a href="http://www.datasciencemelbourne.com/medascin2017/">Melbourne Data Science Week</a>.</p>
-<p><strong>Date</strong>: 29 May 2017<br> <strong>Presenters</strong>: Rob J Hyndman and Earo Wang<br> <strong>Location</strong>: KPMG, Tower Two, Collins Square, 727 Collins St, Melbourne</p>
+<p><strong>Date</strong>: 29 May 2017<br>
+<strong>Presenters</strong>: Rob J Hyndman and Earo Wang<br>
+<strong>Location</strong>: KPMG, Tower Two, Collins Square, 727 Collins St, Melbourne</p>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
 <p>Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:</p>
@@ -101,7 +103,9 @@
 </div>
 <div id="reference" class="section level2">
 <h2>Reference</h2>
-<p><a href="http://OTexts.org/fpp2/" target="_new"> <img src="https://robjhyndman.com/medascin/fppcover-small.jpg" alt="alt text" /> </a></p>
+<p><a href="http://OTexts.org/fpp2/" target="_new">
+<img src="https://robjhyndman.com/medascin/fppcover-small.jpg" alt="alt text" />
+</a></p>
 </div>
 <div id="need-help-with-r" class="section level2">
 <h2>Need help with R?</h2>
@@ -133,7 +137,8 @@ Registration and welcome
 09.00 - 10.30
 </td>
 <td>
-<b>Time series and R, Time series graphics</b><br> <a href="#Lab1">Lab Sessions 1-2</a>
+<b>Time series and R, Time series graphics</b><br>
+<a href="#Lab1">Lab Sessions 1-2</a>
 </td>
 <td style="vertical-align: middle;">
 <a href="https://robjhyndman.com/medascin/1-time-series-graphics.pdf" target="_new">Slides</a>
@@ -154,7 +159,8 @@ Registration and welcome
 11.00 - 12.30
 </td>
 <td>
-<b>Visualising temporal data</b><br> <a href="#Lab3">Lab Sessions 3-4</a>
+<b>Visualising temporal data</b><br>
+<a href="#Lab3">Lab Sessions 3-4</a>
 </td>
 <td style="vertical-align: middle;">
 <a href="http://earo.me/slides/medascin17/" target="_new">Slides</a>
@@ -175,7 +181,8 @@ Registration and welcome
 13.30 - 15.00
 </td>
 <td>
-<b>Some automatic forecasting algorithms</b><br> <a href="#Lab5">Lab Sessions 5-6</a>
+<b>Some automatic forecasting algorithms</b><br>
+<a href="#Lab5">Lab Sessions 5-6</a>
 </td>
 <td style="vertical-align: middle;">
 <a href="https://robjhyndman.com/medascin/3-automatic-forecasting.pdf" target="_new">Slides</a>
@@ -196,7 +203,8 @@ Registration and welcome
 15.30 - 16.45
 </td>
 <td>
-<b>Forecast evaluation</b><br> <a href="#Lab7">Lab Sessions 7-8</a>
+<b>Forecast evaluation</b><br>
+<a href="#Lab7">Lab Sessions 7-8</a>
 </td>
 <td style="vertical-align: middle;">
 <a href="https://robjhyndman.com/medascin/4-forecast-evaluation.pdf" target="_new">Slides</a>
@@ -268,13 +276,13 @@ autoplot(mytimeseries)</code></pre>
 <div id="lab-session-5" class="section level3">
 <h3>Lab Session 5</h3>
 <ol style="list-style-type: decimal">
-<li><p>Use <code>ets()</code> to find the best ETS model for your retail data.</p>
-<ul>
-<li>What does the model choice tell you about the data?</li>
-<li>What do the smoothing parameters tell you about the trend and seasonality?</li>
-<li>Do the forecasts look reasonable?</li>
-</ul></li>
-<li><p>Obtain up-to-date retail data from the <a href="https://goo.gl/HdrV0G">ABS website (Cat. 8501.0, Table 11)</a>, and compare your forecasts with the actual numbers. How good were the forecasts from the various models?</p></li>
+<li>Use <code>ets()</code> to find the best ETS model for your retail data.</li>
+</ol>
+<pre><code>- What does the model choice tell you about the data?
+- What do the smoothing parameters tell you about the trend and seasonality?
+- Do the forecasts look reasonable?</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Obtain up-to-date retail data from the <a href="https://goo.gl/HdrV0G">ABS website (Cat. 8501.0, Table 11)</a>, and compare your forecasts with the actual numbers. How good were the forecasts from the various models?</li>
 </ol>
 <p><a name="Lab6"></a></p>
 </div>
@@ -303,13 +311,17 @@ autoplot(mytimeseries)</code></pre>
 <h3>Lab Session 8</h3>
 <ol style="list-style-type: decimal">
 <li>Use <code>ets</code> to find the best model for your retail data and record the training set MAPE.</li>
-<li><p>We will now check how much larger the MAPE is on out-of-sample data using time series cross-validation. The following code will compute the result. Replace <code>???</code> with the appropriate values for your ETS model.</p>
-<pre class="r"><code>fets &lt;- function(x, h, model=&quot;ZZZ&quot;, damped=NULL, ...) {
+<li>We will now check how much larger the MAPE is on out-of-sample data using time series cross-validation. The following code will compute the result. Replace <code>???</code> with the appropriate values for your ETS model.</li>
+</ol>
+<pre><code>```r
+fets &lt;- function(x, h, model=&quot;ZZZ&quot;, damped=NULL, ...) {
   forecast(ets(x, model=model, damped=damped), h=h)
 }
 e &lt;- tsCV(mytimeseries, fets, model=???, damped=???)
 pe &lt;- 100*e/mytimeseries
-sqrt(mean(pe^2, na.rm=TRUE))</code></pre></li>
+sqrt(mean(pe^2, na.rm=TRUE))
+```</code></pre>
+<ol style="list-style-type: decimal">
 <li><p>Plot <code>pe</code> using <code>autoplot</code> and <code>ggAcf</code>. Do they look uncorrelated and homoskedastic?</p></li>
 <li><p>In practice, we will not know the best model on the whole data set until we observe all the data. So a more realistic analysis would be to allow <code>ets</code> to select a different model each time through the loop. Calculate the MAPE using this approach. (Warning: there a lot of models to fit, so this will take a while.)</p></li>
 <li><p>How do the MAPE values compare? Does the re-selection of a model at each step make much difference?</p></li>

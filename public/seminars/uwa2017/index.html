@@ -84,7 +84,8 @@
       <div class="pub-info">
 	
       </div>
-      <div class="pub-content"><p><strong>Date</strong>: 26-28 September 2017<br> <strong>Location</strong>: <a href="http://www.uwa.edu.au/contact/map?id=2161">The University Club</a>, University of Western Australia</p>
+      <div class="pub-content"><p><strong>Date</strong>: 26-28 September 2017<br>
+<strong>Location</strong>: <a href="http://www.uwa.edu.au/contact/map?id=2161">The University Club</a>, University of Western Australia</p>
 <p>This page is for people enrolled in my <a href="http://www.cas.maths.uwa.edu.au/courses/forecasting2">UWA 3-day workshop</a>.</p>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
@@ -99,7 +100,9 @@
 </div>
 <div id="reference" class="section level2">
 <h2>Reference</h2>
-<p><a href="http://OTexts.org/fpp2" target="_new"> <img src="https://robjhyndman.com/uwa2017/fppcover-small.jpg" alt="alt text" /> </a></p>
+<p><a href="http://OTexts.org/fpp2" target="_new">
+<img src="https://robjhyndman.com/uwa2017/fppcover-small.jpg" alt="alt text" />
+</a></p>
 </div>
 <div id="need-help-with-r" class="section level2">
 <h2>Need help with R?</h2>
@@ -240,7 +243,8 @@ ETS and state space models
 Transformations and differencing
 </td>
 <td>
-<a href="https://robjhyndman.com/uwa2017/2-2-Transformations.pdf" target="_new">Slides1</a> <a href="https://robjhyndman.com/uwa2017/2-3-Differencing.pdf" target="_new">Slides2</a>
+<a href="https://robjhyndman.com/uwa2017/2-2-Transformations.pdf" target="_new">Slides1</a>
+<a href="https://robjhyndman.com/uwa2017/2-3-Differencing.pdf" target="_new">Slides2</a>
 </td>
 </tr>
 <tr>
@@ -301,7 +305,8 @@ Seasonal ARIMA models
 Time series cross-validation, Dynamic regression
 </td>
 <td>
-<a href="https://robjhyndman.com/uwa2017/3-1-Cross-validation.pdf" target="_new">Slides1</a> <a href="https://robjhyndman.com/uwa2017/3-2-Dynamic-Regression.pdf" target="_new">Slides2</a>
+<a href="https://robjhyndman.com/uwa2017/3-1-Cross-validation.pdf" target="_new">Slides1</a>
+<a href="https://robjhyndman.com/uwa2017/3-2-Dynamic-Regression.pdf" target="_new">Slides2</a>
 </td>
 </tr>
 <tr>
@@ -396,13 +401,21 @@ autoplot(mytimeseries)</code></pre>
 <div id="lab-session-2" class="section level3">
 <h3>Lab Session 2</h3>
 <ol style="list-style-type: decimal">
-<li><p>The following graphics functions have been introduced:</p>
-<pre class="r"><code>autoplot, ggseasonplot, ggsubseriesplot, gglagplot, ggAcf, ggtsdisplay</code></pre>
-<p>Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?</p></li>
-<li><p>Repeat for some of the following series:</p>
-<pre class="r"><code>bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose</code></pre>
-<p>Use the help files to find out what the series are.</p></li>
+<li>The following graphics functions have been introduced:</li>
 </ol>
+<pre><code>```r
+autoplot, ggseasonplot, ggsubseriesplot, gglagplot, ggAcf, ggtsdisplay
+```
+
+Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Repeat for some of the following series:</li>
+</ol>
+<pre><code>```r
+bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose
+```
+
+Use the help files to find out what the series are.</code></pre>
 </div>
 <div id="lab-session-3" class="section level3">
 <h3>Lab Session 3</h3>
@@ -413,10 +426,13 @@ fc &lt;- snaive(beer)
 autoplot(fc)
 res &lt;- residuals(fc)
 autoplot(res)</code></pre></li>
-<li><p>Test if the residuals are white noise.</p>
-<pre class="r"><code>checkresiduals(fc)</code></pre>
-<p>What do you conclude?</p></li>
+<li><p>Test if the residuals are white noise.</p></li>
 </ol>
+<pre><code>```r
+checkresiduals(fc)
+```
+
+What do you conclude?</code></pre>
 </div>
 <div id="lab-session-4" class="section level3">
 <h3>Lab Session 4</h3>
@@ -444,7 +460,8 @@ accuracy(f1,x2)</code></pre></li>
 <li>Use an STL decomposition to calculate the trend-cycle and seasonal indices. (Experiment with having fixed or changing seasonality.)</li>
 <li>Compute and plot the seasonally adjusted data.</li>
 <li>Use a naïve method to produce forecasts of the seasonally adjusted data.</li>
-<li>Reseasonalize the results to give forecasts on the original scale.<br> [Hint: use the <code>stlf</code> function with <code>method=&quot;naive&quot;</code>.]</li>
+<li>Reseasonalize the results to give forecasts on the original scale.<br>
+[Hint: use the <code>stlf</code> function with <code>method=&quot;naive&quot;</code>.]</li>
 <li>Do the residuals look uncorrelated?</li>
 <li>Repeat with a robust STL decomposition. Does it make much difference?</li>
 </ol>
@@ -452,9 +469,11 @@ accuracy(f1,x2)</code></pre></li>
 <div id="lab-session-6" class="section level3">
 <h3>Lab Session 6</h3>
 <ol style="list-style-type: decimal">
-<li><p>For this exercise, use the price of a dozen eggs in the United States from 1900–1993 (data set <code>eggs</code>).</p>
+<li><p>For this exercise, use the price of a dozen eggs in the United States
+from 1900–1993 (data set <code>eggs</code>).</p>
 <ul>
-<li>Use SES and Holt’s method (with and without damping) to forecast “future” data.<br> [Hint: use <code>h=100</code> so you can clearly see the differences between the options when plotting the forecasts.]</li>
+<li>Use SES and Holt’s method (with and without damping) to forecast “future” data.<br>
+[Hint: use <code>h=100</code> so you can clearly see the differences between the options when plotting the forecasts.]</li>
 <li>Which method gives the best training RMSE?</li>
 <li>Are these RMSE values comparable?</li>
 <li>Do the residuals from the best fitting method look like white noise?</li>
@@ -574,7 +593,7 @@ sqrt(mean(e^2,na.rm=TRUE))</code></pre></li>
 <li>Compare the forecasts with those you obtained earlier using alternative models.</li>
 </ul>
 <!--
-##Lab Session 15
+## Lab Session 15
 
 * This exercise concerns the total monthly takings from accommodation and the total room nights occupied at hotels, motels, and guest houses in Victoria, Australia, between January 1980 and June 1995 (Data set `motel`). Total monthly takings are in thousands of Australian dollars; total room nights occupied are in thousands.
 

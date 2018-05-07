@@ -112,42 +112,32 @@
 
   <p>At the recent <a href="http://www.forecasters.org/isf"><em>International Symposium on Forecasting</em></a>, held in Riverside, California, Tillman Gneiting gave a great talk on <strong>“Evaluating forecasts: why proper scoring rules and consistent scoring functions matter”</strong>. It will be the subject of an IJF invited paper in due course.</p>
 <p>One of the things he talked about was the “Murphy diagram” for comparing forecasts, as proposed in <a href="http://arxiv.org/abs/1503.08195">Ehm et al (2015)</a>. Here’s how it works for comparing mean forecasts.<!-- more --></p>
-<p>It is well-known that the mean of the forecast distribution is obtained by minimizing the squared error loss function, <span class="math inline">\(S(x,y)=(x-y)^2\)</span> where <span class="math inline">\(x\)</span> is the point forecast and <span class="math inline">\(y\)</span> is the actual observation. That is</p>
-<div>
-<p><span class="math display">\[
+<p>It is well-known that the mean of the forecast distribution is obtained by minimizing the squared error loss function, <span class="math inline">\(S(x,y)=(x-y)^2\)</span> where <span class="math inline">\(x\)</span> is the point forecast and <span class="math inline">\(y\)</span> is the actual observation. That is
+<span class="math display">\[
 \text{E}(Y) = \text{min arg}_x S(x,y).
 \]</span></p>
-</div>
-An old result that is not so well known is that there are other loss functions which would also lead to the forecast mean. In fact, <a href="http://www.jstor.org/stable/2284229">Savage (1971)</a> showed that any scoring function is consistent for the mean if and only if it is of the form
-<div>
+<p>An old result that is not so well known is that there are other loss functions which would also lead to the forecast mean. In fact, <a href="http://www.jstor.org/stable/2284229">Savage (1971)</a> showed that any scoring function is consistent for the mean if and only if it is of the form
 <span class="math display">\[\begin{equation}\label{savage}
 S(x,y) = \phi(y) - \phi(x) - \phi&#39;(x)(y-x)
 \end{equation}\]</span>
-</div>
-<p>where the function <span class="math inline">\(\phi\)</span> is convex with subgradient <span class="math inline">\(\phi&#39;\)</span>. Setting <span class="math inline">\(\phi(u)=u^2\)</span> gives the usual squared error result. So when comparing point forecasts that are intended to be estimates of the mean, it may not be appropriate to only compare the MSE values. A different scoring function that satisfies condition (1) may give a different ranking of competing forecasts.</p>
-Ehm et al (2015) showed that any scoring function satisfying condition (1) can be written as
-<div>
-<p><span class="math display">\[
+where the function <span class="math inline">\(\phi\)</span> is convex with subgradient <span class="math inline">\(\phi&#39;\)</span>. Setting <span class="math inline">\(\phi(u)=u^2\)</span> gives the usual squared error result. So when comparing point forecasts that are intended to be estimates of the mean, it may not be appropriate to only compare the MSE values. A different scoring function that satisfies condition (1) may give a different ranking of competing forecasts.</p>
+<p>Ehm et al (2015) showed that any scoring function satisfying condition (1) can be written as
+<span class="math display">\[
 S(x,y) = \int_{-\infty}^\infty S_{\theta}(x,y) dH(\theta)
-\]</span></p>
-</div>
+\]</span>
 where <span class="math inline">\(H\)</span> is a non-negative measure and
-<div>
-<p><span class="math display">\[
+<span class="math display">\[
 S_{\theta}(x,y) = \begin{cases}
   |y-\theta| &amp; \text{if} \min(x,y)\le\theta &lt; \max(x,y) \\
   0 &amp; \text{otherwise}.
 \end{cases}
-\]</span></p>
-</div>
-<p>Different <span class="math inline">\(H\)</span> measures give different scoring functions, but <span class="math inline">\(S_{\theta}(x,y)\)</span> is the same for all such scoring functions.</p>
-So if we have point forecasts for <span class="math inline">\(n\)</span> events, we can calculate the average value of <span class="math inline">\(S_{\theta}(x,y)\)</span> for each <span class="math inline">\(\theta\)</span>:
-<div>
-<p><span class="math display">\[
+\]</span>
+Different <span class="math inline">\(H\)</span> measures give different scoring functions, but <span class="math inline">\(S_{\theta}(x,y)\)</span> is the same for all such scoring functions.</p>
+<p>So if we have point forecasts for <span class="math inline">\(n\)</span> events, we can calculate the average value of <span class="math inline">\(S_{\theta}(x,y)\)</span> for each <span class="math inline">\(\theta\)</span>:
+<span class="math display">\[
 s(\theta) = \frac{1}{n}\sum_{i=1}^n S_{\theta}(x_i,y_i)
-\]</span></p>
-</div>
-<p>and plot this as a function of <span class="math inline">\(\theta\)</span>. This is what Ehm et al call a “Murphy diagram”. A similar approach can be taken for quantile and expectile forecasts (with a different function <span class="math inline">\(S_\theta(x,y)\)</span> of course).</p>
+\]</span>
+and plot this as a function of <span class="math inline">\(\theta\)</span>. This is what Ehm et al call a “Murphy diagram”. A similar approach can be taken for quantile and expectile forecasts (with a different function <span class="math inline">\(S_\theta(x,y)\)</span> of course).</p>
 <p>I have written some R code for producing these plots. Here it is applied to rolling one-step forecasts computed using ETS and ARIMA models. The data was simulated from an ARIMA model, so we would expect the ARIMA forecasts to be better:</p>
 <pre class="r"><code>    source(&quot;https://robjhyndman.com/Rfiles/murphy.R&quot;)
     library(forecast)

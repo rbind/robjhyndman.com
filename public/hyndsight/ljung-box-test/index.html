@@ -134,92 +134,93 @@ where $T$ is the length of the time series, $r_k$ is the $k$th autocorrelation c
 
 <p>The above figure shows the proportion of Ljung-Box p-values less than 0.05 (top line) and less than 0.01 (bottom line). This demonstrates that the actual size of the test tends to be larger than the nominal size except for small values of $h$. For $h=10$, the actual size is about 0.015 larger than the nominal size when $T=50$ and about 0.01 larger when $T=100$, which is not too bad. For $T=20$, values of $h$ up to about 5 give reasonably good results. For $T=1000$, even using $h=100$ gives results that are not too far away from the nominal size of the test.</p>
 
-<p>This analysis suggests that my rule-of-thumb could be modified a little as follows:
+<p>This analysis suggests that my rule-of-thumb could be modified a little as follows:</p>
+
 <ul>
-  <li>For non-seasonal time series, use $h=\min(10, T/5)$.</li>
-  <li>For seasonal time series, use $h=\min(2m, T/5)$.</li>
+<li>For non-seasonal time series, use $h=\min(10, T/5)$.</li>
+<li>For seasonal time series, use $h=\min(2m, T/5)$.</li>
 </ul>
-<span style="line-height: 1.5em;">It also shows that you should not be too fussy about the boundary. Because the actual size is a little larger than the nominal size for these values of $h$, you should expect a few more failures of the test than 5%. Further, it is always worth remembering Box&rsquo;s own advice that &ldquo;All models are wrong, but some are useful.&rdquo; So we expect the residuals to fail this test when we have sufficient data. That just shows that the model has not perfectly captured the information in the data. The only question is whether you can come up with a better model. Sometimes that just isn&rsquo;t possible.</span></p>
 
-<p><h3>R code</h3>
-In case any reader wants to play with some more simulations, here is my R code.</p>
+<p>It also shows that you should not be too fussy about the boundary. Because the actual size is a little larger than the nominal size for these values of $h$, you should expect a few more failures of the test than 5%. Further, it is always worth remembering Box&rsquo;s own advice that &ldquo;All models are wrong, but some are useful.&rdquo; So we expect the residuals to fail this test when we have sufficient data. That just shows that the model has not perfectly captured the information in the data. The only question is whether you can come up with a better model. Sometimes that just isn&rsquo;t possible.</span></p>
 
-<div>
-<pre lang="rsplus">
-lj <- array(NA, c(4,10000,100))
-size <- c(20,50,100,1000)
+<h1 id="r-code">R code</h1>
+
+<p>In case any reader wants to play with some more simulations, here is my R code.</p>
+
+<pre><code class="language-r echo=TRUE, eval=FALSE">lj &lt;- array(NA, c(4,10000,100))
+size &lt;- c(20,50,100,1000)
 
 for(i in 1:10000)
 {
   for(k in 1:4)
   {
-    x <- rnorm(size[k])
+    x &lt;- rnorm(size[k])
     for(j in 1:min(100,size[k]))
-      lj[k,i,j] <- Box.test(x, type="Ljung-Box", lag=j)$p.value
+      lj[k,i,j] &lt;- Box.test(x, type=&quot;Ljung-Box&quot;, lag=j)$p.value
   }
 }
 
-ks.pvalue <- function(x)
+ks.pvalue &lt;- function(x)
 {
-  x <- na.omit(x)
-  if(length(x)>1)
+  x &lt;- na.omit(x)
+  if(length(x)&gt;1)
     return(ks.test(x, punif)$p.value)
   else
     return(NA)
 }
 
-testsize <- apply(lj, c(1,3), FUN=ks.pvalue)
+testsize &lt;- apply(lj, c(1,3), FUN=ks.pvalue)
 
 par(mfrow=c(2,2))
-plot(1:20,testsize[1,1:20],type="l", xlab="Number of lags", main="T=20", ylab="KS p-value", ylim=c(0,1))
-abline(h=0.05,col="gray")
+plot(1:20,testsize[1,1:20],type=&quot;l&quot;, xlab=&quot;Number of lags&quot;, main=&quot;T=20&quot;, ylab=&quot;KS p-value&quot;, ylim=c(0,1))
+abline(h=0.05,col=&quot;gray&quot;)
 
-plot(1:50,testsize[2,1:50], type="l", xlab="Number of lags", main="T=50", ylab="KS p-value", ylim=c(0,1))
-abline(h=0.05,col="gray")
+plot(1:50,testsize[2,1:50], type=&quot;l&quot;, xlab=&quot;Number of lags&quot;, main=&quot;T=50&quot;, ylab=&quot;KS p-value&quot;, ylim=c(0,1))
+abline(h=0.05,col=&quot;gray&quot;)
 
-plot(1:100,testsize[3,1:100], type="l", xlab="Number of lags", main="T=100", ylab="KS p-value", ylim=c(0,1))
-abline(h=0.05,col="gray")
+plot(1:100,testsize[3,1:100], type=&quot;l&quot;, xlab=&quot;Number of lags&quot;, main=&quot;T=100&quot;, ylab=&quot;KS p-value&quot;, ylim=c(0,1))
+abline(h=0.05,col=&quot;gray&quot;)
 
-plot(1:100,testsize[4,1:100], type="l", xlab="Number of lags", main="T=1000", ylab="KS p-value", ylim=c(0,1))
-abline(h=0.05,col="gray")
+plot(1:100,testsize[4,1:100], type=&quot;l&quot;, xlab=&quot;Number of lags&quot;, main=&quot;T=1000&quot;, ylab=&quot;KS p-value&quot;, ylim=c(0,1))
+abline(h=0.05,col=&quot;gray&quot;)
 
-pv<- function(x, threshold=0.05)
+pv&lt;- function(x, threshold=0.05)
 {
-  mean(x < threshold, na.rm=TRUE)
+  mean(x &lt; threshold, na.rm=TRUE)
 }
 
-testsize <- apply(lj, c(1,3), FUN=pv)
-testsize1 <- apply(lj, c(1,3), FUN=pv, threshold=0.01)
+testsize &lt;- apply(lj, c(1,3), FUN=pv)
+testsize1 &lt;- apply(lj, c(1,3), FUN=pv, threshold=0.01)
 
 par(mfrow=c(2,2))
-plot(1:20,testsize[1,1:20],type="n", main="T=20", xlab="Number of lags", ylab="Actual size", ylim=c(0,0.12))
+plot(1:20,testsize[1,1:20],type=&quot;n&quot;, main=&quot;T=20&quot;, xlab=&quot;Number of lags&quot;, ylab=&quot;Actual size&quot;, ylim=c(0,0.12))
 axis(2, at=seq(0,0.1,by=0.01))
 abline(h=c(0.01,0.05),col=gray(0.6))
 lines(1:20, testsize[1,1:20])
 lines(1:20, testsize1[1,1:20])
 
-plot(1:50,testsize[2,1:50], type="n", main="T=50", xlab="Number of lags", ylab="Actual size", ylim=c(0,0.12))
+plot(1:50,testsize[2,1:50], type=&quot;n&quot;, main=&quot;T=50&quot;, xlab=&quot;Number of lags&quot;, ylab=&quot;Actual size&quot;, ylim=c(0,0.12))
 axis(2, at=seq(0,0.1,by=0.01))
 abline(h=c(0.01,0.05),col=gray(0.6))
 lines(1:50, testsize[2,1:50])
 lines(1:50, testsize1[2,1:50])
 
-plot(1:100,testsize[3,1:100], type="n", main="T=100", xlab="Number of lags", ylab="Actual size", ylim=c(0,0.12))
+plot(1:100,testsize[3,1:100], type=&quot;n&quot;, main=&quot;T=100&quot;, xlab=&quot;Number of lags&quot;, ylab=&quot;Actual size&quot;, ylim=c(0,0.12))
 axis(2, at=seq(0,0.1,by=0.01))
 abline(h=c(0.01,0.05),col=gray(0.6))
 lines(1:100, testsize[3,1:100])
 lines(1:100, testsize1[3,1:100])
 
-plot(1:100,testsize[4,1:100], type="n", main="T=1000", xlab="Number of lags", ylab="Actual size", ylim=c(0,0.12))
+plot(1:100,testsize[4,1:100], type=&quot;n&quot;, main=&quot;T=1000&quot;, xlab=&quot;Number of lags&quot;, ylab=&quot;Actual size&quot;, ylim=c(0,0.12))
 axis(2, at=seq(0,0.1,by=0.01))
 abline(h=c(0.01,0.05),col=gray(0.6))
 lines(1:100, testsize[4,1:100])
 lines(1:100, testsize1[4,1:100])
-</pre>
-</div>
+</code></pre>
 
-<p><h3>Reference:</h3>
-<a href="http://dx.doi.org/10.1093/biomet/65.2.297">G. M. Ljung; G. E. P. Box (1978). &ldquo;On a Measure of a Lack of Fit in Time Series Models&rdquo;. <i>Biometrika</i> <b>65</b>(2), 297–303.</a></p>
+<h1 id="reference">Reference:</h1>
+
+<p><a href="http://dx.doi.org/10.1093/biomet/65.2.297">G. M. Ljung; G. E. P. Box (1978). &ldquo;On a Measure of a Lack of Fit in Time Series Models&rdquo;. <em>Biometrika</em>, <strong>65</strong>(2), 297–303.</a></p>
 
       <meta itemprop="wordCount" content="0">
       <meta itemprop="datePublished" content="2014-01-24">
