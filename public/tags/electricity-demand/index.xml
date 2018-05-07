@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electricity Demand on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/electricity-demand/</link>
+    <description>Recent content in Electricity Demand on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 13 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/electricity-demand/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probabilistic outlier detection and visualization of smart metre data</title>
+      <link>https://robjhyndman.com/seminars/nzsa2017/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/nzsa2017/</guid>
+      <description>Talk given at meeting of New Zealand Statistical Association and International Association for Statistical Computing (11-14 December 2017), Auckland, New Zealand.
+It is always a good idea to plot your data before fitting any models, making any predictions, or drawing any conclusions. But how do you actually plot data on thousands of smart meters, each comprising thousands of observations over time? We cannot simply produce time plots of the demand recorded at each meter, due to the sheer volume of data involved.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic outlier detection and visualization of smart metre data</title>
+      <link>https://robjhyndman.com/seminars/isea2017/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isea2017/</guid>
+      <description>Talk to be given at International Symposium on Energy Analytics (22-23 June 2017), Cairns, Australia.
+Standard time series analysis and visualization tools fail on smart metre data due to the sheer volume of available data (both in the time dimension and due to the large numbers of smart metres providing data). In addition, smart metre data is often messy, with missing observations, periods where some metres are offline, periods of relatively constant low level energy usage, occasional days of unusually high demand, and so on.</description>
+    </item>
+    
+  </channel>
+</rss>

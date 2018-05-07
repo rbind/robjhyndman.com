@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/probability/</link>
+    <description>Recent content in Probability on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Jan 2016 00:40:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probabilistic Energy Forecasting: Global Energy Forecasting Competition 2014 and Beyond</title>
+      <link>https://robjhyndman.com/publications/gefcom2014/</link>
+      <pubDate>Mon, 25 Jan 2016 00:40:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gefcom2014/</guid>
+      <description>The energy industry has been going through a significant modernization process over the last decade. Its infrastructure is being upgraded rapidly. The supply, demand and prices are becoming more volatile and less predictable than ever before. Even its business model is being challenged fundamentally. In this competitive and dynamic environment, many decision-making processes rely on probabilistic forecasts to quantify the uncertain future. Although most of the papers in the energy forecasting literature focus on point or single-valued forecasts, the research interest in probabilistic energy forecasting research has taken off rapidly in recent years.</description>
+    </item>
+    
+  </channel>
+</rss>

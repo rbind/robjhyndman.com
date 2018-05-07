@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monash University on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/monash-university/</link>
+    <description>Recent content in Monash University on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/monash-university/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science for Managers: May 2018</title>
+      <link>https://robjhyndman.com/hyndsight/data-science-for-managers/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/data-science-for-managers/</guid>
+      <description>For the last few years, I have been involved with running a 3-day short course on &amp;ldquo;Data Science for Managers&amp;rdquo;. We have run it twice each year since 2015, and it continues to prove very popular. We have some awesome presenters including Monash University professors Di Cook, Geoff Webb, and Kim Marriott, as well as several very experienced data scientists working in industry.
+The next course will be held on 8-10 May 2018.</description>
+    </item>
+    
+    <item>
+      <title>Come and work with me</title>
+      <link>https://robjhyndman.com/hyndsight/acems-postdoc/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/acems-postdoc/</guid>
+      <description>I have funding for a new post-doctoral research fellow, on a 2-year contract, to work with me and Professor Kate Smith-Miles on analysing large collections of time series data. We are particularly seeking someone with a PhD in computational statistics or statistical machine learning.
+Desirable characteristics:
+ Experience with time series data. Experience with R package development. Familiarity with reproducible research practices (e.g., git, rmarkdown, etc). A background in machine learning or computational statistics.</description>
+    </item>
+    
+    <item>
+      <title>Looking for a new research assistant</title>
+      <link>https://robjhyndman.com/hyndsight/ra-wanted/</link>
+      <pubDate>Thu, 07 Sep 2017 13:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ra-wanted/</guid>
+      <description>I&amp;rsquo;m currently looking for a new research assistant to help (primarily) with some modelling and R coding as part of a project on forecasting mobile phone sales. The position is likely to last for about 6&amp;ndash;9 months, and will be casual.
+ Requirements  Based in Melbourne. I&amp;rsquo;d rather not communicate remotely. Able to work at least 20 hours per week. Some of that can be from home if necessary, but you do need to be at Monash University (Clayton campus) at least some of the time.</description>
+    </item>
+    
+    <item>
+      <title>Academic vacancies at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/jobs-may-2017/</link>
+      <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jobs-may-2017/</guid>
+      <description>We are hiring again, at all academic levels. While all fields of specialisation within econometrics and statistics are open, expertise in any of Business Analytics, Data Science, Applied Econometrics and Actuarial Science is particularly encouraged.
+All positions are full-time and continuing (i.e., tenured after a probation period).
+Applications close at 11:55pm AEST, Friday 30 June 2017.
+Please direct initial questions to Liam Mahon.
+Lecturer  Suitable for someone just completing a PhD or a post-doc.</description>
+    </item>
+    
+    <item>
+      <title>Software for honours students</title>
+      <link>https://robjhyndman.com/hyndsight/software-for-honours-students/</link>
+      <pubDate>Tue, 04 Apr 2017 23:00:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/software-for-honours-students/</guid>
+      <description>I spoke to our new crop of honours students this morning. Here are my slides, example files and links.
+ 
+Managing References  Mendeley Zotero Paperpile  Data analysis and computation  Download R Download Rstudio Online R tutorial R packages for time series R packages for econometrics R packages for finance  Writing your thesis LaTeX  Windows: Download MikTeX Mac OSX: Download MacTeX Linux: Check your usual software source for TeXLive; otherwise install TeX Live directly.</description>
+    </item>
+    
+    <item>
+      <title>Monash Rmarkdown templates on github</title>
+      <link>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</link>
+      <pubDate>Thu, 30 Mar 2017 21:53:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</guid>
+      <description>Rmarkdown templates for staff and students in my department are now available on github. For a thesis, fork the repository MonashThesis.
+For other templates, install the R package MonashEBSTemplates R package. This provides templates for
+ beamer slides working papers exams letters  </description>
+    </item>
+    
+    <item>
+      <title>Come to Melbourne, even if not to Monash</title>
+      <link>https://robjhyndman.com/hyndsight/unimelb-prof-datascience/</link>
+      <pubDate>Wed, 12 Oct 2016 08:00:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/unimelb-prof-datascience/</guid>
+      <description>The University of Melbourne is advertising for a &amp;ldquo;Professor in Statistics (Data Science)&amp;rdquo;. Melbourne (the city) is fast becoming a vibrant centre for data science and applied statistics, with more than 4700 people signed up for the Data Science Meetup Group, a thriving start-up scene, the group at Monash Business School (including Di Cook and me), and the Monash Centre for Data Science (including Geoff Webb and Wray Buntine). Not to mention that Melbourne is a wonderful place to live, having won the &amp;ldquo;World&amp;rsquo;s most liveable city&amp;rdquo; award from the Economist for the last 6 years in a row.</description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown template for a Monash working paper</title>
+      <link>https://robjhyndman.com/hyndsight/rmarkdown-template/</link>
+      <pubDate>Sun, 28 Aug 2016 10:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rmarkdown-template/</guid>
+      <description>This is only directly relevant to my Monash students and colleagues, but the same idea might be useful for adapting to other institutions.
+Some recent changes in the rmarkdown and bookdown packages mean that it is now possible to produce working papers in exactly the same format as we previously used with LaTeX.Just install the MonashEBSTemplates package from github. You also need a recent version of LaTeX.
+Then from within RStudio, create a new document by selecting &amp;ldquo;Rmarkdown&amp;rdquo;, &amp;ldquo;From Template&amp;rdquo;, and select &amp;ldquo;Monash EBS Working Paper&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Statistics positions available at Monash University</title>
+      <link>https://robjhyndman.com/hyndsight/jobs2017/</link>
+      <pubDate>Wed, 27 Jul 2016 23:52:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jobs2017/</guid>
+      <description>We are hiring again, and looking for people in statistics, econometrics and related fields (such as actuarial science, machine learning, and business analytics). We have a strong business analytics group (with particular expertise in data visualization, machine learning, statistical computing, R, and forecasting), and it would be great to see it grow. The official advert follows.
+The Department of Econometrics and Business Statistics at Monash Business School in Melbourne, Australia, invites applications for full-time tenure-track positions at the Senior Lecturer level (equivalent to North American/European Assistant Professor with some post-doctoral academic experience) and Associate Professor level.</description>
+    </item>
+    
+    <item>
+      <title>Monash Business Analytics Team Profile</title>
+      <link>https://robjhyndman.com/hyndsight/monash-insider/</link>
+      <pubDate>Wed, 09 Mar 2016 07:06:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-insider/</guid>
+      <description>Our research group been growing lately, as you can see below! We were featured in the latest issue of the Monash newsletter The Insider. Check it out.</description>
+    </item>
+    
+    <item>
+      <title>ACEMS Business Analytics Prize 2016</title>
+      <link>https://robjhyndman.com/hyndsight/acems-prize-2016/</link>
+      <pubDate>Wed, 20 Jan 2016 05:03:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/acems-prize-2016/</guid>
+      <description>We have established a new annual prize for research students at Monash University in the general area of business analytics, funded by the Australian Centre of Excellence in Mathematical and Statistical Frontiers (ACEMS). The rules of the award are listed below.
+ The student must have submitted a paper to a high quality journal or refereed conference on some topic in the general area of business analytics, computational statistics or data visualization.</description>
+    </item>
+    
+    <item>
+      <title>Making data analysis easier</title>
+      <link>https://robjhyndman.com/hyndsight/wombat2016/</link>
+      <pubDate>Sun, 20 Dec 2015 23:46:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wombat2016/</guid>
+      <description>Di Cook and I are organizing a workshop on &amp;ldquo;Making data analysis easier&amp;rdquo; for 18-19 February 2016.
+We are calling it WOMBAT2016, which an acronym for Workshop Organized by the Monash Business Analytics Team. Appropriately, it will be held at the Melbourne Zoo. Our plan is to make these workshops an annual event.
+Some details are available on the workshop website. Key features are:
+ Hadley Wickham is our keynote speaker.</description>
+    </item>
+    
+    <item>
+      <title>Travelling Thilaksha</title>
+      <link>https://robjhyndman.com/hyndsight/travelling-thilaksha/</link>
+      <pubDate>Wed, 22 Apr 2015 07:23:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/travelling-thilaksha/</guid>
+      <description>One of my PhD students, Thilaksha Tharanganie, has been very successful in getting travel funding to attend conferences. She was the subject of a write-up in today&amp;rsquo;s Monash News.
+We encourage students to attend conferences, and provide funding for them to attend one international conference and one local conference during their PhD candidature. Thilaksha was previously funded to attend last year&amp;rsquo;s COMPSTAT in Geneva, Switzerland and IMS conference in Sydney. Having exhausted local funding, she has now convinced several other organizations to support her conference habit.</description>
+    </item>
+    
+    <item>
+      <title>New job opportunities at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/maxima-jobs/</link>
+      <pubDate>Tue, 24 Mar 2015 05:21:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/maxima-jobs/</guid>
+      <description>We are now advertising for various positions in applied statistics, operations research and applied mathematics.
+Click here for details These jobs are with MAXIMA (the Monash Academy for Cross &amp;amp; Interdisciplinary Mathematical Applications).
+Please do not send any questions to me (I won&amp;rsquo;t answer). Click above and fol­low the instructions.</description>
+    </item>
+    
+    <item>
+      <title>Two new interviews</title>
+      <link>https://robjhyndman.com/hyndsight/mbs-interviews/</link>
+      <pubDate>Fri, 20 Mar 2015 12:20:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/mbs-interviews/</guid>
+      <description> I was recently interviewed as part of a promotion for the Monash Business School. The interviews can be watched below if anyone is interested. The titles chosen weren&amp;rsquo;t my ideas.Predicting the future: pushing the boundaries of electricity forecasting How can you use data science to future-proof your business? </description>
+    </item>
+    
+    <item>
+      <title>Di Cook is moving to Monash</title>
+      <link>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</link>
+      <pubDate>Wed, 24 Dec 2014 05:29:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</guid>
+      <description>I&amp;rsquo;m delighted that Professor Dianne Cook will be joining Monash University in July 2015 as a Professor of Business Analytics. Di is an Australian who has worked in the US for the past 25 years, mostly at Iowa State University. She is moving back to Australia and joining the Department of Econometrics and Business Statistics in the Monash Business School, as part of our initiative in Business Analytics.
+Di is a world leader in data visu­al­iza­tion, and is well-​​known for her work on inter­ac­tive graph­ics.</description>
+    </item>
+    
+    <item>
+      <title>Visit of Di Cook</title>
+      <link>https://robjhyndman.com/hyndsight/visit-of-di-cook/</link>
+      <pubDate>Tue, 12 Aug 2014 23:28:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/visit-of-di-cook/</guid>
+      <description>Next week, Professor Di Cook from Iowa State University is visiting my research group at Monash University. Di is a world leader in data visualization, and is especially well-known for her work on interactive graphics and the XGobi and GGobi software. See her book with Deb Swayne for details.
+For those wanting to hear her speak, read on.Research seminar She will be giving a seminar at 2pm on Monday 18 August at the Monash Clayton campus (Rm E457, Menzies Building 11).</description>
+    </item>
+    
+    <item>
+      <title>What not to say in a job interview</title>
+      <link>https://robjhyndman.com/hyndsight/what-not-to-say-in-a-job-interview/</link>
+      <pubDate>Tue, 12 Aug 2014 11:48:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/what-not-to-say-in-a-job-interview/</guid>
+      <description>I&amp;rsquo;ve interviewed a few people for jobs at Monash University, and there&amp;rsquo;s always someone who comes out with something surprising. Here are some real examples.For a post-doctoral research position:
+ Q: What would you say were your major weaknesses?
+ A: I don&amp;rsquo;t have any.
+ Q: Really? You can&amp;rsquo;t think of anything that you could work on, new skills you could develop, anything at all that you might be able to improve?</description>
+    </item>
+    
+    <item>
+      <title>Student forecasting awards from the IIF</title>
+      <link>https://robjhyndman.com/hyndsight/iif-awards/</link>
+      <pubDate>Sat, 26 Jul 2014 03:14:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/iif-awards/</guid>
+      <description>At the IIF annual board meeting last month in Rotterdam, I suggested that we provide awards to the top students studying forecasting at university level around the world, to the tune of $100 plus IIF membership for a year. I&amp;rsquo;m delighted that the idea met with enthusiasm, and that the awards are now available. Even better, my second year forecasting subject has been approved for an award.
+The IIF have agreed to fund awards for 20 forecasting courses to start with.</description>
+    </item>
+    
+    <item>
+      <title>I am not an econometrician</title>
+      <link>https://robjhyndman.com/hyndsight/statistics-vs-econometrics/</link>
+      <pubDate>Mon, 21 Jul 2014 03:24:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/statistics-vs-econometrics/</guid>
+      <description>I am a statistician, but I have worked in a department of predominantly econometricians for the past 17 years. It is a little like an Australian visiting the United States. Initially, it seems that we talk the same language, do the same sorts of things, and have a very similar culture. But the longer you stay there, the more you realise there are differences that run deep and affect the way you see the world.</description>
+    </item>
+    
+    <item>
+      <title>Questions on the business analytics jobs</title>
+      <link>https://robjhyndman.com/hyndsight/business-analytics-jobs-questions/</link>
+      <pubDate>Tue, 13 May 2014 02:27:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/business-analytics-jobs-questions/</guid>
+      <description>I&amp;rsquo;ve received a few questions on the business analytics jobs advertised last week. I think it is best if I answer them here so other potential candidates can have the same information. I will add to this post if I receive more questions.1. What are your expectations in terms of outputs (KPIs)? Typically, a person at Level B (Lecturer) in our department would be producing at least one refereed article in a good scholarly journal per year.</description>
+    </item>
+    
+    <item>
+      <title>New jobs in business analytics at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/monash-business-analytics/</link>
+      <pubDate>Sun, 04 May 2014 12:05:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-business-analytics/</guid>
+      <description>We have an exciting new initiative at Monash University with some new positions in business analytics. This is part of a plan to strengthen our research and teaching in the data science/computational statistics area. We are hoping to make multiple appointments, at junior and senior levels. These are five-year appointments, but we hope that the positions will continue after that if we can secure suitable funding.What is business analytics? You can think of &amp;ldquo;business analytics&amp;rdquo; as the application of data analysis to business problems.</description>
+    </item>
+    
+    <item>
+      <title>Monash Econometrics in the top 10</title>
+      <link>https://robjhyndman.com/hyndsight/monash-top10/</link>
+      <pubDate>Sun, 02 Feb 2014 01:03:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-top10/</guid>
+      <description>Dave Giles pointed out on his blog yesterday that my department is currently ranked in the top 10 in the world for econometrics, according to IDEAS. We are also ranked 13th in the world in forecasting. Since IDEAS only covers the economics literature, the forecasting rank does not take account of our work in other areas such as demographic forecasting, and electricity demand forecasting.
+These rankings are only a rough indication of quality, but it is nice to see the department being recognized.</description>
+    </item>
+    
+    <item>
+      <title>Looking for a new post-doc</title>
+      <link>https://robjhyndman.com/hyndsight/postdoc/</link>
+      <pubDate>Wed, 22 Jan 2014 02:50:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/postdoc/</guid>
+      <description>We are looking for a new post-doctoral research fellow to work on the project &amp;ldquo;Macroeconomic Forecasting in a Big Data World&amp;rdquo;. Details are given at the link below
+jobs.monash.edu.au/jobDetails.asp?sJobIDs=519824
+This is a two year position, funded by the Australian Research Council, and working with me, George Athanasopoulos, Farshid Vahid and Anastasios Panagiotelis. We are looking for someone with a PhD in econometrics, statistics or machine learning, who is well-trained in computationally intensive methods, and who has a background in at least one of time series analysis, macroeconomic modelling, or Bayesian econometrics.</description>
+    </item>
+    
+    <item>
+      <title>Three jobs at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</link>
+      <pubDate>Fri, 18 Oct 2013 04:02:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</guid>
+      <description>We are currently advertising for three academic positions, suitable for recent PhD graduates.
+Lecturer (Applied Statistics or Operations Research)  Five-year position with MAXIMA and the School of Mathematical Sciences
+ Two positions available.
+ Applications close 31 October.
+ More information.
+  Lecturer (Econometrics/Business Statistics)  Continuing position with the Department of Econometrics and Business Statistics
+ Applications close 31 January 2014.
+ More information.
+  Please don&amp;rsquo;t send any questions to me.</description>
+    </item>
+    
+    <item>
+      <title>MAXIMA research centre at Monash Uni</title>
+      <link>https://robjhyndman.com/hyndsight/maxima/</link>
+      <pubDate>Wed, 11 Sep 2013 01:17:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/maxima/</guid>
+      <description>The &amp;ldquo;Monash Academy for Cross and Interdisciplinary Mathematical Applications&amp;rdquo; (MAXIMA) is a new research centre that aims to maximise the potential of mathematics to deliver impact to society. It will be led by Kate Smith-Miles. I will also be involved along with several other mathematicians at Monash. Our mission at MAXIMA is to find solutions to 21st century problems by dismantling mathematical barriers.
+MAXIMA will be launched on 25 September at a public lecture on &amp;ldquo;The Role of Embedded Optimization in Smart Systems and Products&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

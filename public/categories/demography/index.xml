@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demography on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/demography/</link>
+    <description>Recent content in Demography on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 27 Nov 2014 02:33:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/demography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Australian data on the HMD</title>
+      <link>https://robjhyndman.com/hyndsight/hmd-australia/</link>
+      <pubDate>Thu, 27 Nov 2014 02:33:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hmd-australia/</guid>
+      <description>The Human Mortality Database is a wonderful resource for anyone interested in demographic data. It is a carefully curated collection of high quality deaths and population data from 37 countries, all in a consistent format with consistent definitions. I have used it many times and never cease to be amazed at the care taken to maintain such a great resource.
+The data are continually being revised and updated. Today the Australian data has been updated to 2011.</description>
+    </item>
+    
+    <item>
+      <title>Coherent population forecasting using R</title>
+      <link>https://robjhyndman.com/hyndsight/coherent-population-forecasting/</link>
+      <pubDate>Thu, 24 Jul 2014 02:03:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/coherent-population-forecasting/</guid>
+      <description>This is an example of how to use the demography package in R for stochastic population forecasting with coherent components. It is based on the papers by Hyndman and Booth (IJF 2008) and Hyndman, Booth and Yasmeen (Demography 2013). I will use Australian data from 1950 to 2009 and forecast the next 50 years.
+In demography, &amp;ldquo;coherent&amp;rdquo; forecasts are where male and females (or other sub-groups) do not diverge over time.</description>
+    </item>
+    
+    <item>
+      <title>European talks. June-July 2014</title>
+      <link>https://robjhyndman.com/hyndsight/europe2014/</link>
+      <pubDate>Sat, 14 Jun 2014 06:44:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/europe2014/</guid>
+      <description>For the next month I am travelling in Europe and will be giving the following talks.
+17 June. Challenges in forecasting peak electricity demand. Energy Forum, Sierre, Valais/Wallis, Switzerland.
+20 June. Common functional principal component models for mortality forecasting. International Workshop on Functional and Operatorial Statistics. Stresa, Italy.
+24-25 June. Functional time series with applications in demography. Humboldt University, Berlin.
+1 July. Fast computation of reconciled forecasts in hierarchical and grouped time series.</description>
+    </item>
+    
+    <item>
+      <title>Computational Actuarial Science with R</title>
+      <link>https://robjhyndman.com/hyndsight/caswithr/</link>
+      <pubDate>Mon, 03 Feb 2014 03:00:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/caswithr/</guid>
+      <description>I recently co-authored a chapter on &amp;ldquo;Prospective Life Tables&amp;rdquo; for this book, edited by Arthur Charpentier. R code to reproduce the figures and to complete the exercises for our chapter is now available on github. Code for the other chapters should also be available soon. The book can be pre-ordered on Amazon.</description>
+    </item>
+    
+  </channel>
+</rss>

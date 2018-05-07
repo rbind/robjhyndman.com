@@ -1,0 +1,427 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Time Series in R: Forecasting and Visualisation | Rob J Hyndman</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/foundation.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/highlight.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/academicons.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/finite.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/kube.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/robjhyndman.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+	
+	  <div class="title-bar" data-responsive-toggle="site-menu" data-hide-for="medium">
+	    <button class="site-hamburger" type="button" data-toggle>
+	      <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+	    </button>
+	    <div class="title-bar-title site-title">
+	      <a href="https://robjhyndman.com/"  style="color: #b3cde0">Rob J Hyndman</a>
+	    </div>
+	    <div class="title-bar-right pull-right">
+	      
+	      
+	    </div>
+	  </div>
+
+	  
+	    <div class="top-bar" id="site-menu" >
+	      <div class="top-bar-title show-for-medium site-title">
+		<a href="https://robjhyndman.com/"  style="color: #b3cde0;">Rob J Hyndman</a>
+	      </div>
+	      <div class="top-bar-left">
+		<ul class="menu vertical medium-horizontal">
+		  
+		  
+		  <li><a href="https://robjhyndman.com/hyndsight/">Hyndsight blog</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/publications/">Publications</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/software/">Software</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/seminars/">Seminars</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/teaching/">Teaching</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/research-team/">Research team</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/about/">About</a></li>
+		  
+		</ul>
+	      </div>
+	      <div class="top-bar-right show-for-medium">
+		
+		
+	      </div>
+	    </div>
+	  
+	</nav>
+    </header>
+    <main>
+      
+<div class="wrapper">
+<div class="units-row" style='margin-bottom: 0px;'>
+<div class="unit-20">&nbsp;</div>
+<div class="unit-60"><h1>Time Series in R: Forecasting and Visualisation</h1></div>
+</div>
+<div class="units-row">
+  <div class="unit-20 dateblock" style='text-align: right;'>
+                  29&nbsp;May&nbsp;2017<br>
+                  
+                   </p>
+    </div>
+    <div class="unit-60">
+    <article class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <div class="pub-info">
+	
+      </div>
+      <div class="pub-content"><p>This is a one-day workshop given as part of the <a href="http://www.datasciencemelbourne.com/medascin2017/">Melbourne Data Science Week</a>.</p>
+<p><strong>Date</strong>: 29 May 2017<br> <strong>Presenters</strong>: Rob J Hyndman and Earo Wang<br> <strong>Location</strong>: KPMG, Tower Two, Collins Square, 727 Collins St, Melbourne</p>
+<div id="prerequisites" class="section level2">
+<h2>Prerequisites</h2>
+<p>Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:</p>
+<ul>
+<li><code>devtools</code></li>
+<li><code>fpp2</code></li>
+<li><code>knitr</code></li>
+<li><code>plotly</code></li>
+<li><code>shiny</code></li>
+<li><code>tidyverse</code></li>
+</ul>
+<p>Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</p>
+</div>
+<div id="reference" class="section level2">
+<h2>Reference</h2>
+<p><a href="http://OTexts.org/fpp2/" target="_new"> <img src="https://robjhyndman.com/medascin/fppcover-small.jpg" alt="alt text" /> </a></p>
+</div>
+<div id="need-help-with-r" class="section level2">
+<h2>Need help with R?</h2>
+<ul>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf">Base R cheatsheet</a></li>
+<li><a href="https://www.datacamp.com/courses/free-introduction-to-r">Datacamp: Introduction to R course</a></li>
+<li><a href="http://rmarkdown.rstudio.com/lesson-2.html">Help with Rmarkdown</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">Rmarkdown cheatsheet</a></li>
+</ul>
+</div>
+<div id="program" class="section level2">
+<h2>Program</h2>
+<table border=1 cellpadding=2 cellspacing=5 width=100%>
+<col width="15%">
+<col width="70%">
+<col width="15%">
+<tr>
+<td>
+08.30 - 09.00
+</td>
+<td style="vertical-align: middle;">
+Registration and welcome
+</td>
+<td style="vertical-align: middle;">
+<a href="https://robjhyndman.com/medascin/0-Intro.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<td>
+09.00 - 10.30
+</td>
+<td>
+<b>Time series and R, Time series graphics</b><br> <a href="#Lab1">Lab Sessions 1-2</a>
+</td>
+<td style="vertical-align: middle;">
+<a href="https://robjhyndman.com/medascin/1-time-series-graphics.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+10.30 - 11.00
+</td>
+<td style="vertical-align: middle;">
+<em>Morning tea</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+11.00 - 12.30
+</td>
+<td>
+<b>Visualising temporal data</b><br> <a href="#Lab3">Lab Sessions 3-4</a>
+</td>
+<td style="vertical-align: middle;">
+<a href="http://earo.me/slides/medascin17/" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+12.30 - 13.30
+</td>
+<td style="vertical-align: middle;">
+<em>Lunch</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+13.30 - 15.00
+</td>
+<td>
+<b>Some automatic forecasting algorithms</b><br> <a href="#Lab5">Lab Sessions 5-6</a>
+</td>
+<td style="vertical-align: middle;">
+<a href="https://robjhyndman.com/medascin/3-automatic-forecasting.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+15.00 - 15.30
+</td>
+<td style="vertical-align: middle;">
+<em>Afternoon tea</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+15.30 - 16.45
+</td>
+<td>
+<b>Forecast evaluation</b><br> <a href="#Lab7">Lab Sessions 7-8</a>
+</td>
+<td style="vertical-align: middle;">
+<a href="https://robjhyndman.com/medascin/4-forecast-evaluation.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+16.45 - 17:00
+</td>
+<td style="vertical-align: middle;">
+Wrap up
+</td>
+<td style="vertical-align: middle;">
+<a href="https://robjhyndman.com/medascin/WrapUp.pdf" target="_new">Slides</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="lab-sessions" class="section level2">
+<h2>Lab sessions</h2>
+<p><a name="Lab1"></a></p>
+<div id="lab-session-1" class="section level3">
+<h3>Lab Session 1</h3>
+<ol style="list-style-type: decimal">
+<li><p>Download the <a href="https://robjhyndman.com/medascin/Retail.Rmd"><code>Retail.Rmd</code></a> file. This will be used for all analysis of the retail data.</p></li>
+<li><p>Download the <a href="https://robjhyndman.com/data/retail.xlsx">monthly Australian retail data</a>. These represent retail sales in various categories for different Australian states.</p></li>
+<li><p>Read the data into R and choose <em>one</em> of the series. This time series will be used throughout the workshop in lab sessions 1–2, and 5–10.</p>
+<p>Please script this, don’t just use the Rstudio click-and-point interface. That way you can save the results for easy replication later.</p>
+<p>You will need the <code>read_excel</code> function from the <code>readxl</code> package:</p>
+<pre class="r"><code>retaildata &lt;- readxl::read_excel(&quot;retail.xlsx&quot;, skip = 1)
+mytimeseries &lt;- ts(retaildata[[&quot;A3349873A&quot;]], frequency=12, start=c(1982,4))
+autoplot(mytimeseries)</code></pre>
+<p>[Replace the column name with your own chosen column.]</p></li>
+</ol>
+<p><a name="Lab2"></a></p>
+</div>
+<div id="lab-session-2" class="section level3">
+<h3>Lab Session 2</h3>
+<p>The following graphics functions have been introduced:</p>
+<pre class="r"><code>autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay</code></pre>
+<ol style="list-style-type: decimal">
+<li>Explore your chosen retail time series using these functions.</li>
+<li>Can you spot any seasonality, cyclicity and trend?</li>
+<li>What do you learn about the series?</li>
+</ol>
+<p><a name="Lab3"></a></p>
+</div>
+<div id="lab-session-3" class="section level3">
+<h3>Lab Session 3</h3>
+<p>Download <a href="http://earo.me/lab/medascin17/lab3.Rmd">the <code>Rmd</code> file</a> for this lab session.</p>
+<ol style="list-style-type: decimal">
+<li>Download the <a href="http://earo.me/data/medascin17/billboard.csv">billboard data</a>. The <code>billboard</code> dataset contains the date a song first entered the Billboard Top 100 in 2000 and its rank over 76 weeks.</li>
+<li>Read the dataset into R and take a look at the data.</li>
+<li>Transform the data to the long data form named as <code>billboard_long</code>.</li>
+<li>[Bonus] Split the <code>billboard_long</code> to two separate datasets as <code>song</code> and <code>rank</code>. The <code>song</code> data will include <code>artist</code>, <code>track</code>, <code>time</code> and a new column called <code>id</code> assigning a unique identifier for each song. The <code>rank</code> data will include the <code>id</code>, <code>date</code>, <code>week</code>, <code>rank</code> columns. The <code>id</code> column is the key variable that maintains the linking between two datasets.</li>
+</ol>
+<p><a name="Lab4"></a></p>
+</div>
+<div id="lab-session-4" class="section level3">
+<h3>Lab Session 4</h3>
+<p>Download <a href="http://earo.me/lab/medascin17/lab4.Rmd">the <code>Rmd</code> file</a> for this lab session.</p>
+<ol style="list-style-type: decimal">
+<li>Download the <a href="http://earo.me/data/medascin17/weather_2016.csv">weather data</a>.</li>
+<li>Read the dataset into R and tidy it up for visualising with <code>ggplot2</code> later.</li>
+<li>Write some <code>ggplot2</code> code to reproduce the plot shown on the slides.</li>
+</ol>
+<p><a name="Lab5"></a></p>
+</div>
+<div id="lab-session-5" class="section level3">
+<h3>Lab Session 5</h3>
+<ol style="list-style-type: decimal">
+<li><p>Use <code>ets()</code> to find the best ETS model for your retail data.</p>
+<ul>
+<li>What does the model choice tell you about the data?</li>
+<li>What do the smoothing parameters tell you about the trend and seasonality?</li>
+<li>Do the forecasts look reasonable?</li>
+</ul></li>
+<li><p>Obtain up-to-date retail data from the <a href="https://goo.gl/HdrV0G">ABS website (Cat. 8501.0, Table 11)</a>, and compare your forecasts with the actual numbers. How good were the forecasts from the various models?</p></li>
+</ol>
+<p><a name="Lab6"></a></p>
+</div>
+<div id="lab-session-6" class="section level3">
+<h3>Lab Session 6</h3>
+<p>We will now fit an ARIMA model for your retail data.</p>
+<ol style="list-style-type: decimal">
+<li><p>What Box-Cox transformation would you select to stabilize the variance?</p></li>
+<li><p>Use <code>auto.arima</code> to obtain a seasonal ARIMA model, and compare the forecasts with those you obtained earlier, and with the latest retail data.</p></li>
+<li><p>Experiment with different Box-Cox transformations to see their effect on the chosen model and forecasts.</p></li>
+</ol>
+<p><a name="Lab7"></a></p>
+</div>
+<div id="lab-session-7" class="section level3">
+<h3>Lab Session 7</h3>
+<p>For your retail time series:</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the <code>accuracy</code> function to compare the forecasts obtained from your ETS and ARIMA models. Which is giving the best forecasts?</p></li>
+<li><p>Repeat with forecasts obtained using <code>stlf</code> (with the same Box-Cox transformation as you used for the ARIMA model).</p></li>
+<li><p>Repeat with forecasts obtained using <code>snaive</code> (there’s no need for a transformation).</p></li>
+<li><p>Which approach gives the best forecasts?</p></li>
+</ol>
+<p><a name="Lab8"></a></p>
+</div>
+<div id="lab-session-8" class="section level3">
+<h3>Lab Session 8</h3>
+<ol style="list-style-type: decimal">
+<li>Use <code>ets</code> to find the best model for your retail data and record the training set MAPE.</li>
+<li><p>We will now check how much larger the MAPE is on out-of-sample data using time series cross-validation. The following code will compute the result. Replace <code>???</code> with the appropriate values for your ETS model.</p>
+<pre class="r"><code>fets &lt;- function(x, h, model=&quot;ZZZ&quot;, damped=NULL, ...) {
+  forecast(ets(x, model=model, damped=damped), h=h)
+}
+e &lt;- tsCV(mytimeseries, fets, model=???, damped=???)
+pe &lt;- 100*e/mytimeseries
+sqrt(mean(pe^2, na.rm=TRUE))</code></pre></li>
+<li><p>Plot <code>pe</code> using <code>autoplot</code> and <code>ggAcf</code>. Do they look uncorrelated and homoskedastic?</p></li>
+<li><p>In practice, we will not know the best model on the whole data set until we observe all the data. So a more realistic analysis would be to allow <code>ets</code> to select a different model each time through the loop. Calculate the MAPE using this approach. (Warning: there a lot of models to fit, so this will take a while.)</p></li>
+<li><p>How do the MAPE values compare? Does the re-selection of a model at each step make much difference?</p></li>
+</ol>
+</div>
+</div>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+       </article>
+
+          <hr>
+        <span style="font-family: Carlito;">
+        
+        <a href="https://robjhyndman.com/seminars/eindhoven2017/"> &laquo;&nbsp;Follow-up Forecasting Forum</a>  | <a href="https://robjhyndman.com/seminars/isea2017/">Probabilistic outlier detection and visualization of smart metre data&nbsp;&raquo; </a>
+        
+        </span>
+  </div>
+  </div>
+  </div>
+
+    </main>
+    <footer class="whatisthis">
+  <hr class='separator'/>
+  <span style="font-family: Carlito, sans; font-size: 0.9em; line-height: 1.05em;">
+  <div class="row">
+    <div class="column small-12 medium-4">
+      <figure class='image-left'>
+      <a href="https://robjhyndman.com/" style="border-bottom: none;">
+      	<img src="https://robjhyndman.com/img/rjh.png" alt="Portrait of the author" class='avatar' style="max-width: 50%;">
+      </a>
+  </figure>
+  <p>
+Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash.edu>Monash University</a>, Australia, and Editor-​​in-​​Chief of the <a href=https://ijf.forecasters.org>Inter­na­tional Jour­nal of Fore­cast­ing</a>.  </p>
+    </div>
+    <div class="column small-12 medium-4">
+      
+      <h4 id="contact">Contact</h4>
+      <ul class="fa-ul">
+	
+	<li><i class="fa-li fa fa-university" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://www.monash.edu/business/econometrics-and-business-statistics">Department of Econometrics &amp; Business Statistics, Monash University, Clayton VIC 3800, Australia.</a></li>
+	
+	<li><i class="fa-li fa fa-envelope" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="mailto:Rob.Hyndman@monash.edu">Rob.Hyndman@monash.edu</a></li>
+	
+	<li><i class="fa-li fa fa-twitter" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://twitter.com/robjhyndman">@robjhyndman</a> on Twitter</li>
+	
+	<li><i class="fa-li fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://github.com/robjhyndman/">robjhyndman</a> on GitHub</li>
+	
+	<li><i class="fa-li ai ai-google-scholar" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://scholar.google.com/citations?user=vamErfkAAAAJ">Google Scholar</a></li>
+	
+      </ul>
+    </div>
+    <div class="column small-12 medium-4">
+      <h4>Subscribe</h4>
+      <p><i><i class="fa fa-rss-square" style="color:#03396c;"></i> To receive updates from this site, you can subscribe to using an <a href="http://feeds.feedburner.com/ProfessorRobJHyndman">RSS feed reader</a> or <a href="https://feedburner.google.com/fb/a/mailverify?uri=ProfessorRobJHyndman">by email</a>.</i></p>
+      <h4>Search</h4>
+      <a id="searchsite">
+	<form method="get" action="https://duckduckgo.com/">
+	  <label for="search-field" class="show-for-sr">Search the site</label>
+	  <input type="search" name="q" maxlength="255" placeholder="Search the site" id="search-field">
+	  <input type="hidden" name="sites" value="https://robjhyndman.com"/>
+	  <input type="hidden" name="k7" value="#faf8f8"/>
+	  <input type="hidden" name="kj" value="#b33"/>
+	  <input type="hidden" name="ky" value="#fafafa"/>
+	  <input type="hidden" name="kx" value="b"/>
+	  <input type="hidden" name="ko" value="-1"/>
+	  <input type="hidden" name="k1" value="-1"/>
+	  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+	</form>
+      </a>
+    </div>
+  </div>
+  </span>
+</footer>
+
+    <div class="endofpage">
+    <footer id="footer">
+    <section class="wrapper small">Powered by <a href="http://gohugo.io">Hugo</a>
+    and <a href="https://github.com/rstudio/blogdown">Blogdown</a>.
+     &copy; <a href="https://robjhyndman.com">Rob&nbsp;J&nbsp;Hyndman</a> 1993&ndash;2018.
+    </section>
+    </footer>
+    </div>
+
+    <script src="https://robjhyndman.com/js/jquery.js"></script>
+    <script src="https://robjhyndman.com/js/what-input.js"></script>
+    <script src="https://robjhyndman.com/js/foundation.min.js"></script>
+    <script src="https://robjhyndman.com/js/finite.js"></script>
+
+    
+    <script src="https://robjhyndman.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5004894-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+ </body>
+</html>

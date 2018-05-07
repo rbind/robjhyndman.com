@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atmospheric Science on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/atmospheric-science/</link>
+    <description>Recent content in Atmospheric Science on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 07 Dec 2016 00:54:33 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/atmospheric-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring the influence of short-term temperature patterns on temperature-related mortality: a case-study of Melbourne, Australia</title>
+      <link>https://robjhyndman.com/publications/temperature-mortality/</link>
+      <pubDate>Wed, 07 Dec 2016 00:54:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/temperature-mortality/</guid>
+      <description>Background Several studies have identified the association between ambient temperature and mortality; however, several features of temperature behavior and their impacts on health remain unresolved.
+We obtain daily counts of nonaccidental all-cause mortality data in the elderly (65 + years) and corresponding meteorological data for Melbourne, Australia during 1999 to 2006. We then characterize the temporal behavior of ambient temperature development by quantifying the rates of temperature change during periods designated by pre-specified windows ranging from 1 to 30 days.</description>
+    </item>
+    
+    <item>
+      <title>Do human rhinovirus infections and food allergy modify grass pollen–induced asthma hospital admissions in children?</title>
+      <link>https://robjhyndman.com/publications/jaci2015/</link>
+      <pubDate>Wed, 10 Jun 2015 01:48:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/jaci2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A case-crossover design to examine the role of aeroallergens and respiratory viruses on childhood asthma exacerbations requiring hospitalisation: The MAPCAH study</title>
+      <link>https://robjhyndman.com/publications/mapcah/</link>
+      <pubDate>Mon, 25 Jun 2012 02:26:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mapcah/</guid>
+      <description>Background: Few case-control studies of time dependent environmental exposures and respiratory outcomes have been performed. Small sample sizes pose modeling challenges for estimating interactions. In contrast, case cross-over studies are well suited where control selection and responses are low, time consuming and costly.
+Objective: To demonstrate the feasibility and validity of a case crossover study of children admitted to hospital for asthma to examine interacting effects of time varying environmental exposures.</description>
+    </item>
+    
+    <item>
+      <title>Investigating the influence of synoptic-scale circulation on air quality using self-organizing maps and generalized additive modelling</title>
+      <link>https://robjhyndman.com/publications/synoptic-gams/</link>
+      <pubDate>Sat, 16 Jul 2011 06:50:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/synoptic-gams/</guid>
+      <description>The influence of synoptic-scale circulations on air quality is an area of increasing interest to air quality management in regards to future climate change. This study presents an analysis where the dominant synoptic &amp;lsquo;types&amp;rsquo; over the region of Melbourne, Australia are determined and linked to regional air quality. First, a self-organising map (SOM) is used to generate a time series of synoptic charts that classify the annual daily circulation affecting Melbourne into 20 different synoptic types.</description>
+    </item>
+    
+    <item>
+      <title>Quantifying the influence of local meteorology on air quality using generalized additive modelling</title>
+      <link>https://robjhyndman.com/publications/local-gams/</link>
+      <pubDate>Sat, 01 Jan 2011 05:46:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/local-gams/</guid>
+      <description>Quantifying the observed relationships between local meteorology and air pollution provides air quality managers with a knowledge base that may prove useful in understanding how climate change may potentially impact air quality. This paper presents the estimated response of ozone (O3), particulate matter ≤ 10 μm (PM10), and nitrogen dioxide (NO2) to individual local meteorological variables in Melbourne, Australia over the period of 1999 to 2006. The relationships have been quantified after controlling for long-term trends, seasonality, weekly emissions, spatial variation, and temporal persistence using the framework of a generalized additive modelling (GAM).</description>
+    </item>
+    
+    <item>
+      <title>Generation of synthetic sequences of half-hourly temperatures</title>
+      <link>https://robjhyndman.com/publications/generation-of-synthetic-sequences-of-half-hourly-temperatures/</link>
+      <pubDate>Fri, 25 Jan 2008 06:37:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/generation-of-synthetic-sequences-of-half-hourly-temperatures/</guid>
+      <description>We present tools to generate synthetic sequences of half-hourly temperatures with similar statistical characteristics to observed historical data. Temperatures are generated using a combination of daily and half-hourly temperature models which account for intra-day and intra-year seasonality, as well as short- and long-term serial correlations. Details of the model estimation are given as well as a description of the synthetic generation.
+Keywords: temperature data, time series, Fourier series, ARMA models, seasonal block-bootstrap, synthetic generation.</description>
+    </item>
+    
+    <item>
+      <title>Do levels of airborne grass pollen influence asthma hospital admissions?</title>
+      <link>https://robjhyndman.com/publications/do-levels-of-airborne-grass-pollen-influence-asthma-hospital-admissions/</link>
+      <pubDate>Fri, 29 Jun 2007 05:27:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/do-levels-of-airborne-grass-pollen-influence-asthma-hospital-admissions/</guid>
+      <description>Background: The effects of environmental factors and ambient concentrations of grass pollen on allergic asthma are yet to be established.
+Objective: We sought to estimate the independent effects of grass pollen concentrations in the air over Melbourne on asthma hospital admissions, for the 1992-1993 pollen season.
+Methods: Daily grass pollen concentrations were monitored over a 24 hr period at three stations in Melbourne. The outcome variable was defined as all-age asthma hospital admissions with ICD9-493 codes.</description>
+    </item>
+    
+    <item>
+      <title>Sensitivity of the estimated air pollution-respiratory admissions relationship to statistical model</title>
+      <link>https://robjhyndman.com/publications/sensitivity-of-the-estimated-air-pollution-respiratory-admissions-relationship-to-statistical-model/</link>
+      <pubDate>Fri, 16 Dec 2005 03:49:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/sensitivity-of-the-estimated-air-pollution-respiratory-admissions-relationship-to-statistical-model/</guid>
+      <description>Abstract: Study objective: The objective of this study is to demonstrate the methodological shortcomings of currently available analytical methods for single-city time series data, one of the most commonly used ecological study designs in air pollution and respiratory disease research.
+Design and Methods: We analyse single city epidemiological time series of daily Chronic Obstructive Pulmonary Disease (COPD) (ICD codes 490-492, 494, 496) and daily asthma (ICD codes 493) hospital admissions in Melbourne, Australia from July 1989 to December 1992.</description>
+    </item>
+    
+    <item>
+      <title>Data visualization for time series in environmental epidemiology</title>
+      <link>https://robjhyndman.com/publications/data-visualization-for-time-series-in-environmental-epidemiology/</link>
+      <pubDate>Thu, 16 Aug 2001 03:09:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/data-visualization-for-time-series-in-environmental-epidemiology/</guid>
+      <description>Data visualization has become an integral part of statistical modelling. Exploratory graphical analysis allows insight into the underlying structure of observations in a data set, and graphical methods for diagnostic purposes after model fitting provide insight into the fitted model and its inadequacies. In this paper we present visualization methods for preliminary exploration of time series data and graphical diagnostic methods for modelling relationships between time series data in medicine. We will use exploratory graphical methods to better understand the relationship between a time series response and a number of potential covariates.</description>
+    </item>
+    
+    <item>
+      <title>Statistical methodological issues in studies of air pollution and respiratory disease</title>
+      <link>https://robjhyndman.com/publications/statistical-methodological-issues-in-studies-of-air-pollution-and-respiratory-disease/</link>
+      <pubDate>Mon, 02 Jul 2001 00:56:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/statistical-methodological-issues-in-studies-of-air-pollution-and-respiratory-disease/</guid>
+      <description>Epidemiological studies have consistently shown short term associations between levels of air pollution and respiratory disease in countries of diverse populations, geographical locations and varying levels of air pollution and climate. The aims of this paper are: (1) to assess the sensitivity of the observed pollution effects to model specification, with particular emphasis on the inclusion of seasonally adjusted covariates; and (2) to study the effect of air pollution on respiratory disease in Melbourne, Australia.</description>
+    </item>
+    
+    <item>
+      <title>Seasonal adjustment methods for the analysis of respiratory disease in environmental epidemiology</title>
+      <link>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</link>
+      <pubDate>Wed, 09 Aug 2000 01:46:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</guid>
+      <description>We study the relationship between daily hospital admissions for respiratory disease and various pollutant and climatic variables, looking particularly at the effect of seasonal adjustment on the estimated models. Often time series exhibit seasonal behaviour and adequate control for the presence of a seasonal component is essential before one attempts to model the complex pollution-health association. We show that if these factors are not adequately controlled for, spurious effects of pollutants and climate on morbidity/mortality can be induced.</description>
+    </item>
+    
+    <item>
+      <title>Generalized additive modelling of mixed distribution Markov models with application to Melbourne&#39;s rainfall</title>
+      <link>https://robjhyndman.com/publications/gam-rainfall/</link>
+      <pubDate>Tue, 16 May 2000 03:06:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gam-rainfall/</guid>
+      <description>We consider modelling time series using a generalized additive model with first-order Markov structure and mixed transition density having a discrete component at zero and a continuous component with positive sample space. Such models have application, for example, in modelling daily occurrence and intensity of rainfall, and in modelling the number and size of insurance claims. We show how these methods extend the usual sinusoidal seasonal assumption in standard chain-dependent models by assuming a general smooth pattern of occurrence and intensity over time.</description>
+    </item>
+    
+  </channel>
+</rss>

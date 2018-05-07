@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/software/</link>
+    <description>Recent content in Software on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 May 2016 05:00:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automatic foRecasting using R</title>
+      <link>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</link>
+      <pubDate>Fri, 06 May 2016 05:00:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</guid>
+      <description>Melbourne Data Science Initiative</description>
+    </item>
+    
+    <item>
+      <title>Large-scale unusual time series detection</title>
+      <link>https://robjhyndman.com/publications/icdm2015/</link>
+      <pubDate>Mon, 01 Jun 2015 02:08:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/icdm2015/</guid>
+      <description>It is becoming increasingly common for organizations to collect very large amounts of data over time, and to need to detect unusual or anomalous time series. For example, Yahoo has banks of mail servers that are monitored over time. Many measurements on server performance are collected every hour for each of thousands of servers. We wish to identify servers that are behaving unusually.
+We compute a vector of features on each time series, measuring characteristics of the series.</description>
+    </item>
+    
+    <item>
+      <title>Visualization of big time series data</title>
+      <link>https://robjhyndman.com/seminars/big-time-series/</link>
+      <pubDate>Tue, 26 May 2015 03:51:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/big-time-series/</guid>
+      <description>Talk given to a joint meeting of the Statistical Society of Australia (Victorian branch) and the Melbourne Data Science Meetup Group.It is becoming increasingly common for organizations to collect very large amounts of data over time. Data visualization is essential for exploring and understanding structures and patterns, and to identify unusual observations. However, the sheer quantity of data available challenges current time series visualisation methods.
+For example, Yahoo has banks of mail servers that are monitored over time.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+    <item>
+      <title>R tools for hierarchical time series</title>
+      <link>https://robjhyndman.com/seminars/hts-2/</link>
+      <pubDate>Wed, 03 Jul 2013 20:07:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/hts-2/</guid>
+      <description>Talk given at EURO/INFORMS, Rome, 1 July 2013
+And at UseR! 2013, Albacete, Spain, 10 July 2013.</description>
+    </item>
+    
+    <item>
+      <title>SimpleR: tips, tricks and tools</title>
+      <link>https://robjhyndman.com/seminars/simpler/</link>
+      <pubDate>Tue, 20 Nov 2012 07:00:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/simpler/</guid>
+      <description>Melbourne R Users&amp;rsquo; Group
+Deloitte, Level 11, 550 Bourke Street, Melbourne
+Examples</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series using R</title>
+      <link>https://robjhyndman.com/seminars/melbournerug/</link>
+      <pubDate>Thu, 27 Oct 2011 04:37:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/melbournerug/</guid>
+      <description>Melbourne R Users&amp;rsquo; Group Thursday, October 27, 2011, 6:00 PM Deloitte, Level 11 (Culture Room), 550 Bourke Street, Melbourne
+I will look at the various facilities for time series forecasting available in R, concentrating on the forecast package. This package implements several automatic methods for forecasting time series including forecasts from ARIMA models, ARFIMA models and exponential smoothing models. I will also look more generally at how to go about forecasting non-seasonal data, seasonal data, seasonal data with high frequency, and seasonal data with multiple frequencies.</description>
+    </item>
+    
+    <item>
+      <title>Free open-source forecasting using R</title>
+      <link>https://robjhyndman.com/publications/r-foresight/</link>
+      <pubDate>Sat, 20 Nov 2010 12:15:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/r-foresight/</guid>
+      <description>Summary  R is a free open source statistical computing environment which can be used for forecasting. It is available at www.r-project.org. Advantages of R include its (zero) price, the large number of user-contributed packages, its production-quality graphics and the possibility of extending it by linking fast compiled C/C++/Fortran code. Disadvantages of R include a steep learning curve and a certain slowness when dealing with truly massive amounts of data.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting: the forecast package for R</title>
+      <link>https://robjhyndman.com/publications/automatic-forecasting/</link>
+      <pubDate>Wed, 16 Jul 2008 05:29:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/automatic-forecasting/</guid>
+      <description>Automatic forecasts of large numbers of univariate time series are often needed in business and other contexts. We describe two automatic forecasting algorithms that have been implemented in the forecast package for R. The first is based on innovation state space models that underly exponential smoothing methods. The second is based on ARIMA models. The algorithms are applicable to both seasonal and non-seasonal data, and are compared and illustrated using four real time series.</description>
+    </item>
+    
+    <item>
+      <title>Building R packages for Windows</title>
+      <link>https://robjhyndman.com/seminars/building-r-packages-for-windows/</link>
+      <pubDate>Sun, 29 Jun 2008 04:07:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/building-r-packages-for-windows/</guid>
+      <description> R workshop. Melbourne, 29 June 2008. There was an R workshop on 28-29 June, just before the Australian Statistical Conference. I put in an appearance on the second day.
+Building R packages for Windows
+ handout slides  </description>
+    </item>
+    
+    <item>
+      <title>Using R to Teach Econometrics</title>
+      <link>https://robjhyndman.com/publications/using-r-to-teach-econometrics/</link>
+      <pubDate>Sat, 16 Mar 2002 03:25:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/using-r-to-teach-econometrics/</guid>
+      <description>R, an open-source programming environment for data analysis and graphics, has in only a decade grown to become a de-facto standard for statistical analysis against which many popular commercial programs may be measured. The use of R for the teaching of econometric methods is appealing. It provides cutting-edge statistical methods which are, by R&amp;rsquo;s open-source nature, available immediately. The software is stable, available at no cost, and exists for a number of platforms, including various flavors of Unix and Linux, Windows (9x/NT/2000), and the MacOS.</description>
+    </item>
+    
+  </channel>
+</rss>

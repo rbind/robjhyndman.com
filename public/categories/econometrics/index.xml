@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Econometrics on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/econometrics/</link>
+    <description>Recent content in Econometrics on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Feb 2017 00:40:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/econometrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Australian Macro Database</title>
+      <link>https://robjhyndman.com/hyndsight/ausmacrodata/</link>
+      <pubDate>Wed, 15 Feb 2017 00:40:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ausmacrodata/</guid>
+      <description>AusMacroData is a new website that encourages and facilitates the use of quantitative, publicly available Australian macroeconomic data. The Australian Macro Database hosted at ausmacrodata.org provides a user-friendly front end for searching among over 40000 economic variables and is loosely based on similar international sites such as the Federal Reserve Economic Database (FRED). In total, data on 40,304 variables are available for download from AusMacroData. The majority of variables are sourced from the Australian Bureau of Statistics (ABS) and include data on national accounts, balance of payments and trade, housing and finance, labour force consumer price indices.</description>
+    </item>
+    
+    <item>
+      <title>ODI looking for young postgrad statisticians</title>
+      <link>https://robjhyndman.com/hyndsight/odi-fellowships/</link>
+      <pubDate>Fri, 13 Nov 2015 00:26:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/odi-fellowships/</guid>
+      <description>The Overseas Development Institute Fellowship Scheme sends young postgraduate statisticians (and economists) to work in the public sectors of developing countries in Africa, the Caribbean and the Pacific on two-year contracts. This is a great way to develop skills and gain experience working within a developing country&amp;rsquo;s government. And you get to live in a fascinating place!
+The application process for the 2016-2018 Fellowship Scheme is now open. Students are advised to apply before 17 December 2015 for a chance to be part of the ODI Fellowship Scheme.</description>
+    </item>
+    
+    <item>
+      <title>IJF best paper awards</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</link>
+      <pubDate>Tue, 23 Jun 2015 21:32:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</guid>
+      <description>Today at the International Symposium on Forecasting, I announced the awards for the best paper published in the International Journal of Forecasting in the period 2012-2013.
+We make an award every two years to the best paper(s) published in the journal. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The selected papers are selected by vote of the editorial board. The best paper wins an engraved bronze plaque and US$1000.</description>
+    </item>
+    
+    <item>
+      <title>Jobs at Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/jobs-at-amazon/</link>
+      <pubDate>Fri, 31 Oct 2014 02:13:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jobs-at-amazon/</guid>
+      <description>I do not normally post job adverts, but this was very specifically targeted to &amp;ldquo;applied time series candidates&amp;rdquo; so I thought it might be of sufficient interest to readers of this blog.Here is an excerpt from an email I received from someone at Amazon:
+ Amazon is aggressively recruiting in the data sciences, and we have found that applied economists compare quite favorably with the machine learning specialists and statisticians that are sometimes recruited for such roles.</description>
+    </item>
+    
+    <item>
+      <title>I am not an econometrician</title>
+      <link>https://robjhyndman.com/hyndsight/statistics-vs-econometrics/</link>
+      <pubDate>Mon, 21 Jul 2014 03:24:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/statistics-vs-econometrics/</guid>
+      <description>I am a statistician, but I have worked in a department of predominantly econometricians for the past 17 years. It is a little like an Australian visiting the United States. Initially, it seems that we talk the same language, do the same sorts of things, and have a very similar culture. But the longer you stay there, the more you realise there are differences that run deep and affect the way you see the world.</description>
+    </item>
+    
+    <item>
+      <title>Varian on big data</title>
+      <link>https://robjhyndman.com/hyndsight/varian-2014/</link>
+      <pubDate>Sun, 15 Jun 2014 22:45:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/varian-2014/</guid>
+      <description>Last week my research group discussed Hal Varian&amp;rsquo;s interesting new paper on &amp;ldquo;Big data: new tricks for econometrics&amp;rdquo;, Journal of Economic Perspectives, 28(2): 3-28.
+It&amp;rsquo;s a nice introduction to trees, bagging and forests, plus a very brief entree to the LASSO and the elastic net, and to slab and spike regression. Not enough to be able to use them, but ok if you&amp;rsquo;ve no idea what they are. It was more disappointing on boosting (completely ignoring the fact that boosting can be applied in a regression context as well as a classification context), and his comments on causality seemed curiously naive.</description>
+    </item>
+    
+    <item>
+      <title>Structural breaks</title>
+      <link>https://robjhyndman.com/hyndsight/structural-breaks/</link>
+      <pubDate>Fri, 23 May 2014 13:32:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/structural-breaks/</guid>
+      <description>I&amp;rsquo;m tired of reading about tests for structural breaks and here&amp;rsquo;s why.
+A structural break occurs when we see a sudden change in a time series or a relationship between two time series. Econometricians love papers on structural breaks, and apparently believe in them. Personally, I tend to take a different view of the world. I think a more realistic view is that most things change slowly over time, and only occasionally with sudden discontinuous change.</description>
+    </item>
+    
+    <item>
+      <title>To explain or predict?</title>
+      <link>https://robjhyndman.com/hyndsight/to-explain-or-predict/</link>
+      <pubDate>Mon, 19 May 2014 05:35:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/to-explain-or-predict/</guid>
+      <description>Last week, my research group discussed Galit Shmueli&amp;rsquo;s paper &amp;ldquo;To explain or to predict?&amp;rdquo;, Statistical Science, 25(3), 289-310. (See her website for further materials.) This is a paper everyone doing statistics and econometrics should read as it helps to clarify a distinction that is often blurred. In the discussion, the following issues were covered amongst other things.
+ The AIC is better suited to model selection for prediction as it is asymptotically equivalent to leave-one-out cross-validation in regression, or one-step-cross-validation in time series.</description>
+    </item>
+    
+    <item>
+      <title>New jobs in business analytics at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/monash-business-analytics/</link>
+      <pubDate>Sun, 04 May 2014 12:05:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-business-analytics/</guid>
+      <description>We have an exciting new initiative at Monash University with some new positions in business analytics. This is part of a plan to strengthen our research and teaching in the data science/computational statistics area. We are hoping to make multiple appointments, at junior and senior levels. These are five-year appointments, but we hope that the positions will continue after that if we can secure suitable funding.What is business analytics? You can think of &amp;ldquo;business analytics&amp;rdquo; as the application of data analysis to business problems.</description>
+    </item>
+    
+    <item>
+      <title>Seven forecasting blogs</title>
+      <link>https://robjhyndman.com/hyndsight/seven-forecasting-blogs/</link>
+      <pubDate>Tue, 22 Apr 2014 00:33:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seven-forecasting-blogs/</guid>
+      <description>There are several other blogs on forecasting that readers might be interested in. Here are seven worth following:
+ No Hesitations by Francis Diebold (Professor of Economics, University of Pennsylvania). Diebold needs no introduction to forecasters. He primarily covers forecasting in economics and finance, but also xkcd cartoons, graphics, research issues, etc.
+ Econometrics Beat by Dave Giles. Dave is a professor of economics at the University of Victoria (Canada), formerly from my own department at Monash University (Australia), and a native New Zealander.</description>
+    </item>
+    
+  </channel>
+</rss>

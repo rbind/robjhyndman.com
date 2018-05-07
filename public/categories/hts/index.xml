@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hts on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/hts/</link>
+    <description>Recent content in Hts on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 18 Aug 2016 00:09:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/hts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#34;Forecasting with R&#34; short course in Eindhoven</title>
+      <link>https://robjhyndman.com/hyndsight/eindhoven-course/</link>
+      <pubDate>Thu, 18 Aug 2016 00:09:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eindhoven-course/</guid>
+      <description>I will be giving my 3-day short-course/workshop on &amp;ldquo;Forecasting with R&amp;rdquo; in Eindhoven (Netherlands) from 19-21 October.
+Details at https://www.win.tue.nl/~adriemel/shortcourse.html
+Register here</description>
+    </item>
+    
+    <item>
+      <title>Stanford seminar</title>
+      <link>https://robjhyndman.com/hyndsight/stanford-seminar/</link>
+      <pubDate>Wed, 07 Oct 2015 06:09:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stanford-seminar/</guid>
+      <description>I gave a seminar at Stanford today. Slides are below. It was definitely the most intimidating audience I&amp;rsquo;ve faced, with Jerome Friedman, Trevor Hastie, Brad Efron, Persi Diaconis, Susan Holmes, David Donoho and John Chambers all present (and probably other famous names I&amp;rsquo;ve missed).
+I&amp;rsquo;ll be giving essentially the same talk at UC Davis on Thursday.</description>
+    </item>
+    
+    <item>
+      <title>Upcoming talks in California</title>
+      <link>https://robjhyndman.com/hyndsight/upcoming-talks-in-california/</link>
+      <pubDate>Tue, 22 Sep 2015 06:41:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/upcoming-talks-in-california/</guid>
+      <description>I&amp;rsquo;m back in California for the next couple of weeks, and will give the following talk at Stanford and UC-Davis.
+Optimal forecast reconciliation for big time series data Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Seminars in Taiwan</title>
+      <link>https://robjhyndman.com/hyndsight/seminars-in-taiwan/</link>
+      <pubDate>Mon, 05 Jan 2015 09:33:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seminars-in-taiwan/</guid>
+      <description>I&amp;rsquo;m currently visiting Taiwan and I&amp;rsquo;m giving two seminars while I&amp;rsquo;m here &amp;mdash; one at the National Tsing Hua University in Hsinchu, and the other at Academia Sinica in Taipei. Details are below for those who might be nearby.Automatic Time Series Forecasting College of Technology Management, Institute of Service Science, National Tsing Hua University, Hsinchu 時間及地點：2015.1.7 (Wed.) 5pm @ TSMC building, 6F, room 622. 台積館6F孫運璿紀念中心 Many applications require a large number of time series to be forecast completely automatically.</description>
+    </item>
+    
+    <item>
+      <title>hts with regressors</title>
+      <link>https://robjhyndman.com/hyndsight/hts-with-regressors/</link>
+      <pubDate>Mon, 20 Oct 2014 02:08:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hts-with-regressors/</guid>
+      <description>The hts package for R allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in this Foresight paper.)
+The base forecasts can be generated using any method, with ETS models and ARIMA models provided as options in the forecast.</description>
+    </item>
+    
+    <item>
+      <title>Specifying complicated groups of time series in hts</title>
+      <link>https://robjhyndman.com/hyndsight/gts/</link>
+      <pubDate>Sun, 15 Jun 2014 03:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gts/</guid>
+      <description>With the latest version of the hts package for R, it is now possible to specify rather complicated grouping structures relatively easily.
+All aggregation structures can be represented as hierarchies or as cross-products of hierarchies. For example, a hierarchical time series may be based on geography: country, state, region, store. Often there is also a separate product hierarchy: product groups, product types, packet size. Forecasts of all the different types of aggregation are required; e.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical forecasting with hts v4.0 </title>
+      <link>https://robjhyndman.com/hyndsight/hts4/</link>
+      <pubDate>Wed, 12 Feb 2014 08:26:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hts4/</guid>
+      <description>A new version of my hts package for R is now on CRAN. It was completely re-written from scratch. Not a single line of code survived. There are some minor syntax changes, but the biggest change is speed and scope. This version is many times faster than the previous version and can handle hundreds of thousands of time series without complaining. The speed-up is due to some new research I am doing with Alan Lee (University of Auckland).</description>
+    </item>
+    
+  </channel>
+</rss>

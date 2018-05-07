@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time Series on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/time-series/</link>
+    <description>Recent content in Time Series on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Macroeconomic forecasting for Australia using a large number of predictors</title>
+      <link>https://robjhyndman.com/publications/ausmacrofcast/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ausmacrofcast/</guid>
+      <description>A popular approach to forecasting macroeconomic variables is to utilize a large number of predictors. Several regularization and shrinkage methods can be used to exploit such high-dimensional datasets, and have been shown to improve forecast accuracy for the US economy. To assess whether similar results hold for economies with different characteristics, an Australian dataset containing observations on 151 aggregate and disaggregate economic series as well as 185 international variables, is introduced.</description>
+    </item>
+    
+    <item>
+      <title>Anomaly detection in streaming nonstationary temporal data</title>
+      <link>https://robjhyndman.com/publications/oddstream/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/oddstream/</guid>
+      <description>This article proposes a framework that provides early detection of anomalous series within a large collection of non-stationary streaming time series data. We define an anomaly as an observation that is very unlikely given the recent distribution of a given system. The proposed framework first forecasts a boundary for the system&amp;rsquo;s typical behavior using extreme value theory. Then a sliding window is used to test for anomalous series within a newly arrived collection of series.</description>
+    </item>
+    
+    <item>
+      <title>Optimal forecast reconciliation for hierarchical and grouped time series through trace minimization</title>
+      <link>https://robjhyndman.com/publications/mint/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mint/</guid>
+      <description>Large collections of time series often have aggregation constraints due to product or geographical groupings. The forecasts for the most disaggregated series are usually required to add-up exactly to the forecasts of the aggregated series, a constraint we refer to as &amp;ldquo;coherence&amp;rdquo;. Forecast reconciliation is the process of adjusting forecasts to make them coherent. The reconciliation algorithm proposed by Hyndman et al. (2011) is based on a generalized least squares estimator that requires an estimate of the covariance matrix of the coherency errors (i.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the sources of uncertainty: why does bagging for time series forecasting work?</title>
+      <link>https://robjhyndman.com/publications/bagging-uncertainty/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bagging-uncertainty/</guid>
+      <description>In a recent study, Bergmeir, Hyndman and Benítez (2016) successfully employed a bootstrap aggregation (bagging) technique for improving the performance of exponential smoothing. Each series is Box-Cox transformed, and decomposed by Seasonal and Trend decomposition using Loess (STL); then bootstrapping is applied on the remainder series before the trend and seasonality are added back, and the transformation reversed to create bootstrapped versions of the series. Subsequently, they apply automatic exponential smoothing on the original series and the bootstrapped versions of the series, with the final forecast being the equal-weight combination across all forecasts.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing big energy data</title>
+      <link>https://robjhyndman.com/publications/visualizing-big-energy-data/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/visualizing-big-energy-data/</guid>
+      <description>Visualization is a crucial component of data analysis. It is always a good idea to plot the data before fitting any models, making any predictions, or drawing any conclusions. As sensors of the electric grid are collecting large volumes of data from various sources, power industry professionals are facing the challenge of visualizing such data in a timely fashion. In this article, we demonstrate several data visualization solutions for big energy data through three case studies involving smart meter data, phasor measurement unit (PMU) data, and probabilistic forecasts, respectively.</description>
+    </item>
+    
+    <item>
+      <title>A note on the validity of cross-validation for evaluating autoregressive time series prediction</title>
+      <link>https://robjhyndman.com/publications/cv-time-series/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/cv-time-series/</guid>
+      <description>One of the most widely used standard procedures for model evaluation in classification and regression is $K$-fold cross-validation (CV). However, when it comes to time series forecasting, because of the inherent serial correlation and potential non-stationarity of the data, its application is not straightforward and often omitted by practitioners in favour of an out-of-sample (OOS) evaluation. In this paper, we show that in the case of a purely autoregressive model, the use of standard $K$-fold CV is possible as long as the models considered have uncorrelated errors.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic outlier detection and visualization of smart metre data</title>
+      <link>https://robjhyndman.com/seminars/nzsa2017/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/nzsa2017/</guid>
+      <description>Talk given at meeting of New Zealand Statistical Association and International Association for Statistical Computing (11-14 December 2017), Auckland, New Zealand.
+It is always a good idea to plot your data before fitting any models, making any predictions, or drawing any conclusions. But how do you actually plot data on thousands of smart meters, each comprising thousands of observations over time? We cannot simply produce time plots of the demand recorded at each meter, due to the sheer volume of data involved.</description>
+    </item>
+    
+    <item>
+      <title>Optimal forecast reconcilation</title>
+      <link>https://robjhyndman.com/seminars/unsw2017/</link>
+      <pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/unsw2017/</guid>
+      <description>Talk given at UNSW
+Abstract
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Calendar-based graphics for visualizing people&#39;s daily schedules</title>
+      <link>https://robjhyndman.com/publications/calendar-vis/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/calendar-vis/</guid>
+      <description>This paper describes a frame_calendar function that organizes and displays temporal data, collected on sub-daily resolution, into a calendar layout. Calendars are broadly used in society to display temporal information, and events. The frame_calendar uses linear algebra on the date variable to create the layout. It utilizes the grammar of graphics to create the plots inside each cell, and thus synchronizes neatly with ggplot2 graphics. The motivating application is studying pedestrian behavior in Melbourne, Australia, based on counts which are captured at hourly intervals by sensors scattered around the city.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic outlier detection and visualization of smart metre data</title>
+      <link>https://robjhyndman.com/seminars/isea2017/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isea2017/</guid>
+      <description>Talk to be given at International Symposium on Energy Analytics (22-23 June 2017), Cairns, Australia.
+Standard time series analysis and visualization tools fail on smart metre data due to the sheer volume of available data (both in the time dimension and due to the large numbers of smart metres providing data). In addition, smart metre data is often messy, with missing observations, periods where some metres are offline, periods of relatively constant low level energy usage, occasional days of unusually high demand, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with temporal hierarchies</title>
+      <link>https://robjhyndman.com/publications/temporal-hierarchies/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/temporal-hierarchies/</guid>
+      <description>This paper introduces the concept of Temporal Hierarchies for time series forecasting. A temporal hierarchy can be constructed for any time series by means of non-overlapping temporal aggregation. Predictions constructed at all aggregation levels are combined with the proposed framework to result in temporally reconciled, accurate and robust forecasts. The implied combination mitigates modelling uncertainty, while the reconciled nature of the forecasts results in a unified prediction that supports aligned decisions at different planning horizons: from short-term operational up to long-term strategic planning.</description>
+    </item>
+    
+    <item>
+      <title>The Australian Macro Database: An online resource for macroeconomic research in Australia</title>
+      <link>https://robjhyndman.com/publications/ausmacrodata/</link>
+      <pubDate>Tue, 14 Feb 2017 05:26:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ausmacrodata/</guid>
+      <description>A website that encourages and facilities the use of quantitative, publicly available Australian macroeconomic data is introduced. The Australian Macro Database hosted at ausmacrodata.org provides a user friendly front end for searching among over 40000 economic variables, sourced from the Australian Bureau of Statistics and the Reserve Bank of Australia. The search box, tags and categories used to facilitate data retrieval, are described in detail. Known issues with the website and future plans are discussed in the conclusion.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Reconciling forecasts: the hts and thief packages</title>
+      <link>https://robjhyndman.com/seminars/erum2016/</link>
+      <pubDate>Thu, 13 Oct 2016 12:04:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/erum2016/</guid>
+      <description>eRum2016, Poznań, Poland.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting large collections of related time series</title>
+      <link>https://robjhyndman.com/seminars/augsburg2016/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/augsburg2016/</guid>
+      <description>Keynote talk given at the German Statistical Week, Augsburg.
+Abstract
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Automatic foRecasting using R</title>
+      <link>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</link>
+      <pubDate>Fri, 06 May 2016 05:00:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</guid>
+      <description>Melbourne Data Science Initiative</description>
+    </item>
+    
+    <item>
+      <title>Bagging exponential smoothing methods using STL decomposition and Box-Cox transformation</title>
+      <link>https://robjhyndman.com/publications/bagging-ets/</link>
+      <pubDate>Thu, 28 Apr 2016 23:30:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bagging-ets/</guid>
+      <description>Exponential smoothing is one of the most popular forecasting methods. We present a method for bootstrap aggregation (bagging) of exponential smoothing methods. The bagging uses a Box-Cox transformation followed by an STL decomposition to separate the time series into trend, seasonal part, and remainder. The remainder is then bootstrapped using a moving block bootstrap, and a new series is assembled using this bootstrapped remainder. On the bootstrapped series, an ensemble of exponential smoothing models is estimated.</description>
+    </item>
+    
+    <item>
+      <title>Bayesian rank selection in multivariate regression</title>
+      <link>https://robjhyndman.com/publications/bayesian-rank-selection-in-multivariate-regression/</link>
+      <pubDate>Sat, 30 Jan 2016 00:58:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bayesian-rank-selection-in-multivariate-regression/</guid>
+      <description>Estimating the rank of the coefficient matrix is a major challenge in multivariate regression, including vector autoregression (VAR). In this paper, we develop a novel fully Bayesian approach that allows for rank estimation. The key to our approach is reparameterizing the coefficient matrix using its singular value decomposition and conducting Bayesian inference on the decomposed parameters. By implementing a stochastic search variable selection on the singular values of the coefficient matrix, the ultimate selected rank can be identified as the number of nonzero singular values.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting big time series data using R</title>
+      <link>https://robjhyndman.com/seminars/china2015/</link>
+      <pubDate>Sat, 24 Oct 2015 23:46:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/china2015/</guid>
+      <description>Keynote address given at the Chinese R conference held in Nanchang, Jianxi province. 24-25 October 2015.</description>
+    </item>
+    
+    <item>
+      <title>Machine learning bootcamp</title>
+      <link>https://robjhyndman.com/seminars/machine-learning-bootcamp/</link>
+      <pubDate>Mon, 17 Aug 2015 02:22:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/machine-learning-bootcamp/</guid>
+      <description>A talk on time series forecasting for the Monash University Machine Learning Bootcamp.
+Demo R code</description>
+    </item>
+    
+    <item>
+      <title>MEFM: An R package for long-term probabilistic forecasting of electricity demand</title>
+      <link>https://robjhyndman.com/seminars/isf2015/</link>
+      <pubDate>Mon, 22 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isf2015/</guid>
+      <description>International Symposium on Forecasting Riverside, California
+I will describe and demonstrate a new open-source R package that implements the Monash Electricity Forecasting Model, a semi-parametric probabilistic approach to forecasting long-term electricity demand. The underlying model proposed in Hyndman and Fan (2010) is now widely used in practice, particularly in Australia. The model has undergone many improvements and developments since it was first proposed, and these have been incorporated in this R implementation.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic forecasting of peak electricity demand</title>
+      <link>https://robjhyndman.com/seminars/sce2015/</link>
+      <pubDate>Thu, 18 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/sce2015/</guid>
+      <description>Southern California Edison Rosemead, California
+Electricity demand forecasting plays an important role in short-term load allocation and long-term planning for future generation facilities and transmission augmentation. It is a challenging problem because of the different uncertainties including underlying population growth, changing technology, economic conditions, prevailing weather conditions (and the timing of those conditions), as well as the general randomness inherent in individual usage. It is also subject to some known calendar effects due to the time of day, day of week, time of year, and public holidays.</description>
+    </item>
+    
+    <item>
+      <title>STR: A Seasonal-Trend Decomposition Procedure Based on Regression</title>
+      <link>https://robjhyndman.com/publications/str/</link>
+      <pubDate>Sun, 07 Jun 2015 22:50:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/str/</guid>
+      <description>We propose new generic methods for decomposing seasonal data: STR (a Seasonal-Trend decomposition procedure based on Regression) and Robust STR. In some ways, STR is similar to Ridge Regression and Robust STR can be related to LASSO. Our new methods are much more general than any alternative time series decomposition methods. They allow for multiple seasonal and cyclic components, and multiple linear regressors with constant, flexible, seasonal and cyclic influence. Seasonal patterns (for both seasonal components and seasonal regressors) can be fractional and flexible over time; moreover they can be either strictly periodic or have a more complex topology.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic time series forecasting with boosted additive models: an application to smart meter data</title>
+      <link>https://robjhyndman.com/publications/kdd2015/</link>
+      <pubDate>Thu, 04 Jun 2015 11:27:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kdd2015/</guid>
+      <description>A large body of the forecasting literature so far has been focused on forecasting the conditional mean of future observations. However, there is an increasing need for generating the entire conditional distribution of future observations in order to effectively quantify the uncertainty in time series data. We present two different methods for probabilistic time series forecasting that allow the inclusion of a possibly large set of exogenous variables. One method is based on forecasting both the conditional mean and variance of the future distribution using a traditional regression approach.</description>
+    </item>
+    
+    <item>
+      <title>Large-scale unusual time series detection</title>
+      <link>https://robjhyndman.com/publications/icdm2015/</link>
+      <pubDate>Mon, 01 Jun 2015 02:08:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/icdm2015/</guid>
+      <description>It is becoming increasingly common for organizations to collect very large amounts of data over time, and to need to detect unusual or anomalous time series. For example, Yahoo has banks of mail servers that are monitored over time. Many measurements on server performance are collected every hour for each of thousands of servers. We wish to identify servers that are behaving unusually.
+We compute a vector of features on each time series, measuring characteristics of the series.</description>
+    </item>
+    
+    <item>
+      <title>Visualization of big time series data</title>
+      <link>https://robjhyndman.com/seminars/big-time-series/</link>
+      <pubDate>Tue, 26 May 2015 03:51:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/big-time-series/</guid>
+      <description>Talk given to a joint meeting of the Statistical Society of Australia (Victorian branch) and the Melbourne Data Science Meetup Group.It is becoming increasingly common for organizations to collect very large amounts of data over time. Data visualization is essential for exploring and understanding structures and patterns, and to identify unusual observations. However, the sheer quantity of data available challenges current time series visualisation methods.
+For example, Yahoo has banks of mail servers that are monitored over time.</description>
+    </item>
+    
+    <item>
+      <title>Discussion of “High-dimensional autocovariance matrices and optimal linear prediction”</title>
+      <link>https://robjhyndman.com/publications/mpcomments/</link>
+      <pubDate>Fri, 03 Apr 2015 16:43:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mpcomments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualizing and forecasting big time series data</title>
+      <link>https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/</link>
+      <pubDate>Mon, 12 Jan 2015 15:33:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/</guid>
+      <description>Institute of Statistical Science, Academia Sinica 時　間 2015/01/12 11:00 星期一 地　點 中研院-統計所 2F 交誼廳 備　註 茶 會：上午10：40統計所二樓交誼廳
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Functional time series with applications in demography</title>
+      <link>https://robjhyndman.com/seminars/fts-berlin/</link>
+      <pubDate>Tue, 24 Jun 2014 02:33:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/fts-berlin/</guid>
+      <description>This is a short course given at Humboldt University, Berlin, 24-25 June 2014.
+Venue: LvB Library, Room 401, Spandauerstr. 1, 10178 Berlin
+Time: 24 June 2014, 09:30 - 12:30 and 14:00 - 17:00 25 June 2014, 09:30 - 11:30
+Functional time series are curves that are observed sequentially in time, one curve being observed in each time period. In demography, examples include curves formed by annual death rates as a function of age, or annual fertility rates as a function of age.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting</title>
+      <link>https://robjhyndman.com/seminars/granada/</link>
+      <pubDate>Thu, 13 Feb 2014 01:56:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/granada/</guid>
+      <description>Talk presented at the conference &amp;ldquo;New Trends on Intelligent Systems and Soft Computing 2014&amp;rdquo;, University of Granada, Spain. 13-14 February 2014.Abstract Many applications require a large number of time series to be forecast completely automatically. For example, manufacturing companies often require weekly forecasts of demand for thousands of products at dozens of locations in order to plan distribution and maintain suitable inventory stocks. In these circumstances, it is not feasible for time series models to be developed for each series by an experienced analyst.</description>
+    </item>
+    
+    <item>
+      <title>Boosting multi-step autoregressive forecasts</title>
+      <link>https://robjhyndman.com/publications/boostingar/</link>
+      <pubDate>Thu, 09 Jan 2014 23:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/boostingar/</guid>
+      <description>Multi-step forecasts can be produced recursively by iterating a one-step model, or directly using a specific model for each horizon. Choosing between these two strategies is not an easy task since it involves a trade-off between bias and estimation variance over the forecast horizon. Using a nonlinear machine learning model makes the tradeoff even more difficult. To address this issue, we propose a new forecasting strategy which boosts traditional recursive linear forecasts with a direct strategy using a boosting autoregression procedure at each horizon.</description>
+    </item>
+    
+    <item>
+      <title>Coherent mortality forecasting using functional time series</title>
+      <link>https://robjhyndman.com/seminars/coherent/</link>
+      <pubDate>Fri, 11 Oct 2013 05:12:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/coherent/</guid>
+      <description>A talk given today at Macquarie University, Sydney.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting without forecasters</title>
+      <link>https://robjhyndman.com/seminars/forecasting-without-forecasters/</link>
+      <pubDate>Mon, 24 Jun 2013 14:15:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/forecasting-without-forecasters/</guid>
+      <description>A keynote talk given at the International Symposium on Forecasting, Seoul, South Korea. 25 June 2013.</description>
+    </item>
+    
+    <item>
+      <title>Coherent mortality forecasting: the product-ratio method with functional time series models</title>
+      <link>https://robjhyndman.com/publications/coherentfdm/</link>
+      <pubDate>Fri, 01 Feb 2013 07:31:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/coherentfdm/</guid>
+      <description>When independence is assumed, forecasts of mortality for subpopulations are almost always divergent in the long term. We propose a method for coherent forecasting of mortality rates for two or more subpopulations, based on functional principal components models of simple and interpretable functions of rates. The product-ratio functional forecasting method models and forecasts the geometric mean of subpopulation rates and the ratio of subpopulation rates to product rates. Coherence is imposed by constraining the forecast ratio function through stationary time series models.</description>
+    </item>
+    
+    <item>
+      <title>Recursive and direct multi-step forecasting: the best of both worlds</title>
+      <link>https://robjhyndman.com/publications/rectify/</link>
+      <pubDate>Sat, 01 Sep 2012 20:11:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/rectify/</guid>
+      <description>We propose a new forecasting strategy, called rectify, that seeks to combine the best properties of both the recursive and direct forecasting strategies. The rationale behind the rectify strategy is to begin with biased recursive forecasts and adjust them so they are unbiased and have smaller error. We use linear and nonlinear simulated time series to investigate the performance of the rectify strategy and compare the results with those from the recursive and the direct strategies.</description>
+    </item>
+    
+    <item>
+      <title>Advances in automatic time series forecasting</title>
+      <link>https://robjhyndman.com/seminars/automaticforecasting/</link>
+      <pubDate>Tue, 19 Jun 2012 08:58:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automaticforecasting/</guid>
+      <description>Invited talk, Australian Statistical Conference, Adelaide, 10 July 2012.
+ COMPSTAT 2012, Cyprus, 29 August 2012.
+ Seminar, Lancaster University, 10 September 2012.  Many applications require a large number of time series to be forecast completely automatically. For example, manufacturing companies often require weekly forecasts of demand for thousands of products at dozens of locations in order to plan distribution and maintain suitable inventory stocks. In population forecasting, there are often a few hundred time series to be forecast, representing various components that make up the population dynamics.</description>
+    </item>
+    
+    <item>
+      <title>Forecasts of COPD mortality in Australia: 2006-2025</title>
+      <link>https://robjhyndman.com/publications/copdaustralia/</link>
+      <pubDate>Sun, 29 Jan 2012 23:16:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/copdaustralia/</guid>
+      <description>Background: Chronic Obstructive Pulmonary Disease (COPD) is currently the fifth leading cause of death in Australia, and there are marked differences in mortality trends between men and women. In this study, we have sought to model and forecast age related changes in COPD mortality over time for men and women separately over the period 2006–2025.
+Methods: Annual COPD death rates in Australia from 1922 to 2005 for age groups (50–54, 55–59, 60–64, 65–69, 70–74, 75–79, 80–84, 85+) were used.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series with complex seasonal patterns using exponential smoothing</title>
+      <link>https://robjhyndman.com/publications/complex-seasonality/</link>
+      <pubDate>Sat, 31 Dec 2011 02:38:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/complex-seasonality/</guid>
+      <description>A new innovations state space modeling framework, incorporating Box-Cox transformations, Fourier series with time varying coefficients and ARMA error correction, is introduced for forecasting complex seasonal time series that cannot be handled using existing forecasting models. Such complex time series include time series with multiple seasonal periods, high frequency seasonality, non-integer seasonality and dual-calendar effects. Our new modelling framework provides an alternative to existing exponential smoothing models, and is shown to have many advantages.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series using R</title>
+      <link>https://robjhyndman.com/seminars/melbournerug/</link>
+      <pubDate>Thu, 27 Oct 2011 04:37:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/melbournerug/</guid>
+      <description>Melbourne R Users&amp;rsquo; Group Thursday, October 27, 2011, 6:00 PM Deloitte, Level 11 (Culture Room), 550 Bourke Street, Melbourne
+I will look at the various facilities for time series forecasting available in R, concentrating on the forecast package. This package implements several automatic methods for forecasting time series including forecasts from ARIMA models, ARFIMA models and exponential smoothing models. I will also look more generally at how to go about forecasting non-seasonal data, seasonal data, seasonal data with high frequency, and seasonal data with multiple frequencies.</description>
+    </item>
+    
+    <item>
+      <title>Point and interval forecasts of mortality rates and life expectancy: a comparison of ten principal component methods</title>
+      <link>https://robjhyndman.com/publications/mortality-forecast-comparison/</link>
+      <pubDate>Thu, 14 Jul 2011 23:19:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mortality-forecast-comparison/</guid>
+      <description>Abstract: Using the age- and sex-specific data of 14 developed countries, we compare the point and interval forecast accuracy and bias of ten principal component methods for forecasting mortality rates and life expectancy. The ten methods are variants and extensions of the Lee-Carter method. Based on one-step forecast errors, the weighted Hyndman-Ullah method provides the most accurate point forecasts of mortality rates and the Lee-Miller method is the least biased. For the accuracy and bias of life expectancy, the weighted Hyndman-Ullah method performs the best for female mortality and the Lee-Miller method for male mortality.</description>
+    </item>
+    
+    <item>
+      <title>The value of feedback in forecasting competitions</title>
+      <link>https://robjhyndman.com/publications/kaggle/</link>
+      <pubDate>Wed, 09 Feb 2011 05:00:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kaggle/</guid>
+      <description>In this paper we challenge the traditional design used for forecasting competitions. We implement an online competition with a public leaderboard that provides instant feedback to competitors who are allowed to revise and resubmit forecasts. The results show that feedback significantly improves forecasting accuracy.</description>
+    </item>
+    
+    <item>
+      <title>The vector innovations structural time series framework: a simple approach to multivariate forecasting</title>
+      <link>https://robjhyndman.com/publications/vists/</link>
+      <pubDate>Mon, 15 Nov 2010 23:11:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/vists/</guid>
+      <description>The vector innovations structural time series framework is proposed as a way of modelling a set of related time series. Like all multivariate approaches, the aim is to exploit potential inter-series dependencies to improve the fit and forecasts. The model is based around an unobserved vector of components representing features such as the level and slope of each time series. Equations that describe the evolution of these components through time are used to represent the inter-temporal dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Demographic forecasting using functional data analysis</title>
+      <link>https://robjhyndman.com/seminars/demographic-forecasting/</link>
+      <pubDate>Tue, 07 Sep 2010 11:33:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/demographic-forecasting/</guid>
+      <description>University of Wollongong, 8 September 2010. Statistical Society of Australia, Victorian Branch, 28 September 2010. Updated version. September 2012.  Abstract:
+Functional time series are curves that are observed sequentially in time. In demography, such data arise as the curves formed by annual death rates as a function of age or annual fertility rates as a function of age. I will discuss methods for describing, modelling and forecasting such functional time series data.</description>
+    </item>
+    
+    <item>
+      <title>Phenological change detection while accounting for abrupt and gradual trends in satellite image time series</title>
+      <link>https://robjhyndman.com/publications/bfast2/</link>
+      <pubDate>Tue, 17 Aug 2010 08:05:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bfast2/</guid>
+      <description>A challenge in phenology studies is understanding what constitutes significant phenological change amidst background variation (e.g. noise) and ecosystem disturbances (e.g. fires). The majority of phenological studies have focussed on extracting critical points in the seasonal growth cycle (e.g. Start-of-spring), without exploiting the full temporal detail. Moreover, the high degree of phenological variability between years demonstrates the necessity of distinguishing long term phenological change from temporal variability. Here, we evaluate the phenological change detection ability of a method for detecting Breaks For Additive Seasonal and Trend (BFAST).</description>
+    </item>
+    
+    <item>
+      <title>Coherent functional forecasts of mortality rates and life expectancy</title>
+      <link>https://robjhyndman.com/seminars/isf2010/</link>
+      <pubDate>Wed, 09 Jun 2010 04:20:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isf2010/</guid>
+      <description>Talk to be given at the International Symposium on Forecasting, San Diego, 20-23 June 2010.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting age-related changes in breast cancer mortality among white and black US women</title>
+      <link>https://robjhyndman.com/publications/brca-bwus/</link>
+      <pubDate>Thu, 06 May 2010 01:14:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/brca-bwus/</guid>
+      <description>The disparity in breast cancer mortality rates among white and black US women is widening, with higher mortality rates among black women. We apply functional time series models on age-specific breast cancer mortality rates for each group of women, and forecast their mortality curves using exponential smoothing state-space models with damping. The data were obtained from the Surveillance, Epidemiology and End Results (SEER) program of the US. Mortality data were obtained from the National Centre for Health Statistics (NCHS) available on the SEER*Stat database.</description>
+    </item>
+    
+    <item>
+      <title>Using functional data analysis models to estimate future time trends of age-specific breast cancer mortality for the United States and England-Wales</title>
+      <link>https://robjhyndman.com/publications/brca-usew/</link>
+      <pubDate>Fri, 05 Feb 2010 23:14:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/brca-usew/</guid>
+      <description>Background: Mortality/incidence predictions are used for planning public health resources and need to accurately reflect age-related changes through time. We present a new forecasting model to estimate future trends in age-related breast cancer mortality for the United States and England-Wales.
+Material and methods: We use functional data analysis techniques to model breast cancer mortality-age relationships in the United States from 1950 to 2001 and England-Wales from 1950 to 2003, and estimate 20-year predictions using a new forecasting method.</description>
+    </item>
+    
+    <item>
+      <title>Detecting trend and seasonal changes in satellite image time series</title>
+      <link>https://robjhyndman.com/publications/bfast1/</link>
+      <pubDate>Thu, 14 Jan 2010 23:21:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bfast1/</guid>
+      <description>A wealth of remotely sensed time series covering large areas is now available to the earth science community. Change detection methods are often not capable of detecting land cover changes within time series that are heavily influenced by seasonal climatic variations. Detecting change within the trend and seasonal components of time series enables the detection of different types of changes. Changes occurring in the trend component indicate disturbances (e.g., insect attack), while changes occurring in the seasonal component indicate phenological changes (e.</description>
+    </item>
+    
+    <item>
+      <title>Business Forecasting Methods</title>
+      <link>https://robjhyndman.com/publications/iess2/</link>
+      <pubDate>Fri, 01 Jan 2010 04:30:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/iess2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting Overview</title>
+      <link>https://robjhyndman.com/publications/iess3/</link>
+      <pubDate>Fri, 01 Jan 2010 04:30:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/iess3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moving Averages</title>
+      <link>https://robjhyndman.com/publications/iess1/</link>
+      <pubDate>Fri, 01 Jan 2010 04:30:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/iess1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing and non-negative data</title>
+      <link>https://robjhyndman.com/publications/expsmooth-nonnegative/</link>
+      <pubDate>Wed, 25 Nov 2009 23:06:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/expsmooth-nonnegative/</guid>
+      <description>The most common forecasting methods in business are based on exponential smoothing and the most common time series in business are inherently non-negative. Therefore it is of interest to consider the properties of the potential stochastic models underlying exponential smoothing when applied to non-negative data. We explore exponential smoothing state space models for non-negative data under various assumptions about the innovations, or error, process.
+We first demonstrate that prediction distributions from some commonly used state space models may have an infinite variance beyond a certain forecasting horizon.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting functional time series</title>
+      <link>https://robjhyndman.com/publications/forecasting-functional-time-series-2/</link>
+      <pubDate>Thu, 23 Jul 2009 23:12:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/forecasting-functional-time-series-2/</guid>
+      <description>We propose forecasting functional time series using weighted functional principal component regression and weighted functional partial least squares regression. These approaches allow for smooth functions, assign higher weights to more recent data, and provide a modeling scheme that is easily adapted to allow for constraints and other information. We illustrate our approaches using age-specific French female mortality rates from 1816 to 2006 and age-specific Australian fertility rates from 1921 to 2006, and show that these weighted methods improve forecast accuracy in comparison to their unweighted counterparts.</description>
+    </item>
+    
+    <item>
+      <title>Nonparametric time series forecasting with dynamic updating</title>
+      <link>https://robjhyndman.com/publications/dynamic-updating1/</link>
+      <pubDate>Sun, 12 Jul 2009 23:46:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/dynamic-updating1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring processes with changing variances</title>
+      <link>https://robjhyndman.com/publications/monitoring-processes/</link>
+      <pubDate>Sun, 05 Jul 2009 23:14:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/monitoring-processes/</guid>
+      <description>Statistical process control (SPC) has evolved beyond its classical applications in manufacturing to monitoring economic and social phenomena. This extension requires consideration of autocorrelated and possibly non-stationary time series. Less attention has been paid to the possibility that the variance of the process may also change over time. In this paper we use the innovations state space modeling framework to develop conditionally heteroscedastic models. We provide examples to show that the incorrect use of homoscedastic models may lead to erroneous decisions about the nature of the process.</description>
+    </item>
+    
+    <item>
+      <title>Rule induction for forecasting method selection: meta-learning the characteristics of univariate time series</title>
+      <link>https://robjhyndman.com/publications/forecast-rules/</link>
+      <pubDate>Fri, 16 Jan 2009 23:15:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/forecast-rules/</guid>
+      <description>For univariate forecasting, there are various statistical models and computational algorithms available. In real-world exercises, too many choices can create difficulties in selecting the most appropriate technique, especially for users lacking sufficient knowledge of forecasting. This study focuses on rule induction for forecasting method selection by understanding the nature of historical forecasting data. A novel approach for selecting a forecasting method for univariate time series based on measurable data characteristics is presented that combines elements of data mining, meta-learning, clustering, classification and statistical measurement.</description>
+    </item>
+    
+    <item>
+      <title>A multivariate innovations state space Beveridge-Nelson decomposition</title>
+      <link>https://robjhyndman.com/publications/vists-beveridge-nelson/</link>
+      <pubDate>Thu, 01 Jan 2009 23:09:55 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/vists-beveridge-nelson/</guid>
+      <description>The Beveridge-Nelson vector innovations structural time series framework is a new formulation that decomposes a set of variables into their permanent and transitory components. The proposed framework is flexible, modelling inter-series relationships and common features in a simple manner. In particular, it is shown that this new specification is simpler than conventional state space and cointegration approaches. The approach is illustrated using a trivariate data set comprising the GDP of Australia, the USA and the UK.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series with multiple seasonal patterns</title>
+      <link>https://robjhyndman.com/publications/multiple-seasonal-patterns/</link>
+      <pubDate>Sun, 16 Nov 2008 05:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/multiple-seasonal-patterns/</guid>
+      <description>A new approach is proposed for forecasting a time series with multiple seasonal patterns. A state space model is developed for the series using the innovation approach which enables us to develop explicit models for both additive and multiplicative seasonality. Parameter estimates may be obtained using methods from exponential smoothing. The proposed model is used to examine hourly and daily patterns in hourly data for both utility loads and traffic flows.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic population forecasts using functional data models for mortality, fertility and migration</title>
+      <link>https://robjhyndman.com/publications/stochastic-population-forecasts/</link>
+      <pubDate>Wed, 16 Jul 2008 05:33:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/stochastic-population-forecasts/</guid>
+      <description>Age-sex-specific population forecasts are derived through stochastic population renewal using forecasts of mortality, fertility and net migration. Functional data models with time series coefficients are used to model age-specific mortality and fertility rates. As detailed migration data are lacking, net migration by age and sex is estimated as the difference between historic annual population data and successive populations one year ahead derived from a projection using fertility and mortality data. This estimate, which includes error, is also modeled using a functional data model.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting: the forecast package for R</title>
+      <link>https://robjhyndman.com/publications/automatic-forecasting/</link>
+      <pubDate>Wed, 16 Jul 2008 05:29:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/automatic-forecasting/</guid>
+      <description>Automatic forecasts of large numbers of univariate time series are often needed in business and other contexts. We describe two automatic forecasting algorithms that have been implemented in the forecast package for R. The first is based on innovation state space models that underly exponential smoothing methods. The second is based on ARIMA models. The algorithms are applicable to both seasonal and non-seasonal data, and are compared and illustrated using four real time series.</description>
+    </item>
+    
+    <item>
+      <title>Time series and forecasting in R</title>
+      <link>https://robjhyndman.com/seminars/time-series-and-forecasting-in-r/</link>
+      <pubDate>Sun, 29 Jun 2008 04:00:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/time-series-and-forecasting-in-r/</guid>
+      <description> R workshop. Melbourne, 29 June 2008. There was an R workshop on 28-29 June, just before the Australian Statistical Conference. I put in an appearance on the second day.
+Time series and forecasting in R
+ handout slides  </description>
+    </item>
+    
+    <item>
+      <title>The admissible parameter space for exponential smoothing models</title>
+      <link>https://robjhyndman.com/publications/the-admissible-parameter-space-for-exponential-smoothing-models/</link>
+      <pubDate>Mon, 16 Jun 2008 06:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/the-admissible-parameter-space-for-exponential-smoothing-models/</guid>
+      <description>We discuss the admissible parameter space for some state space models, including the models that underly exponential smoothing methods. We find that the usual parameter restrictions (requiring all smoothing parameters to lie between 0 and 1) do not always lead to stable models. We also find that all seasonal exponential smoothing methods are unstable as the underlying state space models are neither reachable nor observable. This instability does not affect the forecasts, but does corrupt the state estimates.</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing and non-negative data</title>
+      <link>https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/</link>
+      <pubDate>Sun, 15 Jun 2008 07:51:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/</guid>
+      <description>Where: International Symposium on Forecasting, Nice, France  Abstract: The most common forecasting methods in business are based on exponential smoothing and the most common time series in business are inherently non-negative. Therefore it is of interest to consider the properties of the potential stochastic models underlying exponential smoothing when applied to non-negative data. We explore nonlinear exponential smoothing state space models for non-negative data under various assumptions about the innovations, or error, process.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting functional time series</title>
+      <link>https://robjhyndman.com/seminars/forecasting-functional-time-series/</link>
+      <pubDate>Fri, 22 Feb 2008 07:56:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/forecasting-functional-time-series/</guid>
+      <description>Where: Australian Frontiers of Science  Abstract: Functional time series are curves that are observed sequentially in time. For example, the curve of death rate as a function of age is observed annually. Yield curves in finance (essentially interest rates as a function of the term of investment) are observed each week or each day. Electricity consumption as a function of temperature is observed every month. These are all high dimensional functional data, indexed by time.</description>
+    </item>
+    
+    <item>
+      <title>Modelling and forecasting Australian domestic tourism</title>
+      <link>https://robjhyndman.com/publications/modelling-and-forecasting-australian-domestic-tourism/</link>
+      <pubDate>Fri, 01 Feb 2008 06:25:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/modelling-and-forecasting-australian-domestic-tourism/</guid>
+      <description>In this paper, we model and forecast Australian domestic tourism demand. We use a regression framework to estimate important economic relationships for domestic tourism demand. We also identify the impact of world events such as the 2000 Sydney Olympics and the 2002 Bali bombings on Australian domestic tourism. To explore the time series nature of the data, we use innovation state space models to forecast the domestic tourism demand. Combining these two frameworks, we build innovation state space models with exogenous variables.</description>
+    </item>
+    
+    <item>
+      <title>A state space model for exponential smoothing with group seasonality</title>
+      <link>https://robjhyndman.com/publications/a-state-space-model-for-exponential-smoothing-with-group-seasonality/</link>
+      <pubDate>Tue, 29 May 2007 01:54:59 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/a-state-space-model-for-exponential-smoothing-with-group-seasonality/</guid>
+      <description>We present an approach to improve forecast accuracy by simultaneously forecasting a group of products that exhibit similar seasonal demand patterns. Better seasonality estimates can be made by using information on all products in a group, and using these improved estimates when forecasting at the individual product level. This approach is called the group seasonal indices (GSI) approach, and is a generalization of the classical Holt-Winters procedure. This article describes an underlying state space model for this method and presents simulation results that show when it yields more accurate forecasts than Holt-Winters.</description>
+    </item>
+    
+    <item>
+      <title>Minimum sample size requirements for seasonal forecasting models</title>
+      <link>https://robjhyndman.com/publications/minimum-sample-size-requirements-for-seasonal-forecasting-models/</link>
+      <pubDate>Fri, 16 Mar 2007 05:17:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/minimum-sample-size-requirements-for-seasonal-forecasting-models/</guid>
+      <description>How much data do you need to forecast using a seasonal model? The answer depends on the type of model being used and the amount of random variation in the data. We discuss the mathematical limits for estimating various common seasonal forecasting models from data. These limits apply when the amount of random variation is very small. Real data often contain a lot of random variation, and then many more observations are required.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic population forecasts using functional data models</title>
+      <link>https://robjhyndman.com/seminars/stochastic-population/</link>
+      <pubDate>Thu, 22 Feb 2007 08:14:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/stochastic-population/</guid>
+      <description>When: 12.00noon, Thu 22nd February 2007 Where: Room 213, Richard Berry Building, The University of Melbourne When: 2.30pm, Fri 1 June 2007 Where: Room 457, Menzies Building, Monash University (Clayton)  Abstract: I will present a new approach to age-specific forecasting of population based on separate forecasts of mortality, fertility and net migration. Functional data models with time series coefficients will be used to model mortality and fertility rates, and net migration.</description>
+    </item>
+    
+    <item>
+      <title>Another look at measures of forecast accuracy</title>
+      <link>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/</link>
+      <pubDate>Thu, 16 Nov 2006 04:44:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/</guid>
+      <description>We discuss and compare measures of accuracy of univariate time series forecasts. The methods used in the M-competition and the M3-competition, and many of the measures recommended by previous authors on this topic, are found to be degenerate in commonly occurring situations. Instead, we propose that the mean absolute scaled error become the standard measure for comparing forecast accuracy across multiple time series.
+Keywords: forecast accuracy, forecast evaluation, forecast error measures, M-competition, mean absolute scaled error.</description>
+    </item>
+    
+    <item>
+      <title>Lee-Carter mortality forecasting: a multi-country comparison of variants and extensions</title>
+      <link>https://robjhyndman.com/publications/lee-carter-mortality-forecasting-a-multi-country-comparison-of-variants-and-extensions/</link>
+      <pubDate>Fri, 20 Oct 2006 04:24:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/lee-carter-mortality-forecasting-a-multi-country-comparison-of-variants-and-extensions/</guid>
+      <description>We compare the short- to medium- term accuracy of five variants or extensions of the Lee-Carter method for mortality forecasting. These include the original Lee-Carter, the Lee-Miller and Booth-Maindonald-Smith variants, and the more flexible Hyndman-Ullah and De Jong-Tickle extensions. These methods are compared by applying them to sex-specific populations of 10 developed countries using data for 1986-2000 for evaluation. All variants and extensions are more accurate than the original Lee-Carter method for forecasting log death rates, by up to 61%.</description>
+    </item>
+    
+    <item>
+      <title>Another look at measures of forecast accuracy for intermittent demand</title>
+      <link>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy-for-intermittent-demand/</link>
+      <pubDate>Sat, 16 Sep 2006 04:29:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy-for-intermittent-demand/</guid>
+      <description>Some of the proposed measures of forecast accuracy for intermittent demand can give infinite or undefined values. This makes them unsuitable for general use. I summarize the various measures and demonstrate what can go wrong. Then I describe a new measure (the mean absolute scaled error) which does not have these flaws. I believe it should become the standard measure for comparing forecast accuracy for multiple intermittent-demand series.
+Errata: In the series shown in Table 2, the sixth value should be 11 (not 1).</description>
+    </item>
+    
+    <item>
+      <title>A note on the categorization of demand patterns</title>
+      <link>https://robjhyndman.com/publications/a-note-on-the-categorization-of-demand-patterns/</link>
+      <pubDate>Wed, 16 Aug 2006 03:47:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/a-note-on-the-categorization-of-demand-patterns/</guid>
+      <description>We revisit the problem of categorizing demand patterns in order to select the best forecasting method. We improve the categorization scheme of Syntetos, Boylan and Croston (2004) by deriving an exact result for the boundary between type and giving a simple approximation to the boundary that is better than that previously published.
+Keywords: categorization; forecasting; inventory control; intermittent demand.</description>
+    </item>
+    
+    <item>
+      <title>25 years of time series forecasting</title>
+      <link>https://robjhyndman.com/publications/25-years-of-time-series-forecasting/</link>
+      <pubDate>Sun, 16 Jul 2006 04:27:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/25-years-of-time-series-forecasting/</guid>
+      <description>We review the past 25 years of research into time series forecasting. In this silver jubilee issue, we naturally highlight results published in journals managed by the International Institute of Forecasters (Journal of Forecasting 1982-1985; International Journal of Forecasting 1985-2005). During this period, over one third of all papers published in these journals concerned time series forecasting. We also review highly influential works on time series forecasting that have been published elsewhere during this period.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting</title>
+      <link>https://robjhyndman.com/seminars/automatic-time-series-forecasting/</link>
+      <pubDate>Mon, 26 Jun 2006 08:10:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automatic-time-series-forecasting/</guid>
+      <description>UseR! conference, Vienna, Austria</description>
+    </item>
+    
+    <item>
+      <title>Characteristic-based clustering for time series data</title>
+      <link>https://robjhyndman.com/publications/characteristic-based-clustering-for-time-series-data/</link>
+      <pubDate>Tue, 16 May 2006 05:52:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/characteristic-based-clustering-for-time-series-data/</guid>
+      <description>With the growing importance of time series clustering research, particularly for similarity searches amongst long time series such as those arising in medicine or finance, it is critical for us to find a way to resolve the outstanding problems that make most clustering methods impractical under certain circumstances. When the time series is very long, some clustering algorithms may fail because the very notation of similarity is dubious in high dimension space; many methods cannot handle missing data when the clustering is based on a distance metric.</description>
+    </item>
+    
+    <item>
+      <title>Empirical information criteria for time series forecasting model selection</title>
+      <link>https://robjhyndman.com/publications/empirical-information-criteria-for-time-series-forecasting-model-selection/</link>
+      <pubDate>Sun, 16 Oct 2005 03:44:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/empirical-information-criteria-for-time-series-forecasting-model-selection/</guid>
+      <description>In this paper, we propose a new Empirical Information Criterion (EIC) for model selection which penalizes the likelihood of the data by a function of the number of parameters in the model. It is designed to be used where there are a large number of time series to be forecast. However, a bootstrap version of the EIC can be used where there is a single time series to be forecast. The EIC provides a data-driven model selection tool that can be tuned to the particular forecasting task.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic models underlying Croston&#39;s method for intermittent demand forecasting</title>
+      <link>https://robjhyndman.com/publications/stochastic-models-underlying-crostons-method-for-intermittent-demand-forecasting/</link>
+      <pubDate>Sat, 16 Jul 2005 04:22:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/stochastic-models-underlying-crostons-method-for-intermittent-demand-forecasting/</guid>
+      <description>Intermittent demand commonly occurs with inventory data, with many time periods having no demand and small demand in the other periods. Croston&amp;rsquo;s method is a widely used procedure for intermittent demand forecasting. However, it is an ad~hoc method with no properly formulated underlying stochastic model. In this paper, we explore possible models underlying Croston&amp;rsquo;s method and three related methods, and we show that any underlying model will be inconsistent with the properties of intermittent demand data.</description>
+    </item>
+    
+    <item>
+      <title>Dimension reduction for clustering time series using global characteristics</title>
+      <link>https://robjhyndman.com/publications/dimension-reduction-for-clustering-time-series-using-global-characteristics/</link>
+      <pubDate>Sun, 22 May 2005 01:31:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/dimension-reduction-for-clustering-time-series-using-global-characteristics/</guid>
+      <description>Existing methods for time series clustering rely on the actual data values can become impractical since the methods do not easily handle dataset with high dimensionality, missing value, or different lengths. In this paper, a dimension reduction method is proposed that replaces the raw data with some global measures of time series characteristics. These measures are then clustered using a self-organizing map. The proposed approach has been tested using benchmark time series previously reported for time series clustering, and is shown to yield useful and robust clustering.</description>
+    </item>
+    
+    <item>
+      <title>Robust forecasting of mortality and fertility rates: a functional data approach</title>
+      <link>https://robjhyndman.com/publications/robust-forecasting-of-mortality-and-fertility-rates-a-functional-data-approach/</link>
+      <pubDate>Sat, 16 Apr 2005 01:35:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/robust-forecasting-of-mortality-and-fertility-rates-a-functional-data-approach/</guid>
+      <description>We propose a new method for forecasting age-specific mortality and fertility rates observed over time. We combine ideas from functional data analysis, nonparametric smoothing and robust statistics to form a methodology that is widely applicable to any functional time series data, and age-specific mortality and fertility in particular. Our approach provides a modelling framework that is easily adapted to allow for constraints and other information. The model used can be considered a generalization of the Lee-Carter model commonly used in mortality and fertility forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Time series forecasting: the case for the single source of error state space approach</title>
+      <link>https://robjhyndman.com/publications/322/</link>
+      <pubDate>Sat, 02 Apr 2005 01:48:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/322/</guid>
+      <description>The state space approach to modelling univariate time series is now widely used both in theory and in applications. However, the very richness of the framework means that quite different model formulations are possible, even when they purport to describe the same phenomena. In this paper, we examine the single source of error [SSOE] scheme, which has perfectly correlated error components. We then proceed to compare SSOE to the more common version of the state space models, for which all the error terms are independent; we refer to this as the multiple source of error [MSOE] scheme.</description>
+    </item>
+    
+    <item>
+      <title>Prediction intervals for exponential smoothing using two new classes of state space models</title>
+      <link>https://robjhyndman.com/publications/prediction-intervals-for-exponential-smoothing-using-two-new-classes-of-state-space-models/</link>
+      <pubDate>Sun, 16 Jan 2005 03:53:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/prediction-intervals-for-exponential-smoothing-using-two-new-classes-of-state-space-models/</guid>
+      <description>Three general classes of state space models are presented, based upon the single source of error formulation. The first class is the standard linear state space model with homoscedastic errors, the second retains the linear structure but incorporates a dynamic form of heteroscedasticity, and the third allows for non-linear structure in the observation equation as well as heteroscedasticity. These three classes provide stochastic models for a wide variety of exponential smoothing methods.</description>
+    </item>
+    
+    <item>
+      <title>Local linear forecasts using cubic smoothing splines</title>
+      <link>https://robjhyndman.com/publications/splinefcast/</link>
+      <pubDate>Sun, 16 Jan 2005 03:52:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/splinefcast/</guid>
+      <description>We show how cubic smoothing splines fitted to univariate time series data can be used to obtain local linear forecasts. Our approach is based on a stochastic state space model which allows the use of a likelihood approach for estimating the smoothing parameter, and which enables easy construction of prediction intervals. We show that our model is a special case of an ARIMA(0,2,2) model and we provide a simple upper bound for the smoothing parameter to ensure an invertible model.</description>
+    </item>
+    
+    <item>
+      <title>The interaction between trend and seasonality</title>
+      <link>https://robjhyndman.com/publications/the-interaction-between-trend-and-seasonality/</link>
+      <pubDate>Sat, 16 Oct 2004 03:36:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/the-interaction-between-trend-and-seasonality/</guid>
+      <description>A contribution to the discussion of Miller and Williams (2004).</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing models: Means and variances for lead-time demand</title>
+      <link>https://robjhyndman.com/publications/exponential-smoothing-models-means-and-variances-for-lead-time-demand/</link>
+      <pubDate>Sun, 16 May 2004 03:42:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/exponential-smoothing-models-means-and-variances-for-lead-time-demand/</guid>
+      <description>Exponential smoothing is often used to forecast lead-time demand for inventory control. In this paper, formulae are provided for calculating means and variances of lead-time demand for a wide variety of exponential smoothing methods. A feature of many of the formulae is that variances, as well as the means, depend on trends and seasonal effects. Thus, these formulae provide the opportunity to implement methods that ensure that safety stocks adjust to changes in trend or changes in season.</description>
+    </item>
+    
+    <item>
+      <title>A state space framework for automatic forecasting using exponential smoothing methods</title>
+      <link>https://robjhyndman.com/publications/hksg/</link>
+      <pubDate>Tue, 16 Jul 2002 03:21:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hksg/</guid>
+      <description>We provide a new approach to automatic busineswwwwws forecasting based on an extended range of exponential smoothing methods. Each method in our taxonomy of exponential smoothing methods can be shown to be equivalent to the forecasts obtained from a state space model. This allows (1) the easy calculation of the likelihood, the AIC and other model selection criteria; (2) the computation of prediction intervals for each method; and (3) random simulation from the underlying state space model.</description>
+    </item>
+    
+    <item>
+      <title>Kalman filter</title>
+      <link>https://robjhyndman.com/publications/kalman-filter/</link>
+      <pubDate>Mon, 15 Jul 2002 03:09:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kalman-filter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Box-Jenkins modelling</title>
+      <link>https://robjhyndman.com/publications/box-jenkins-modelling/</link>
+      <pubDate>Mon, 15 Jul 2002 03:02:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/box-jenkins-modelling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ARIMA processes</title>
+      <link>https://robjhyndman.com/publications/arima-processes/</link>
+      <pubDate>Mon, 15 Jul 2002 02:25:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/arima-processes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>It&#39;s time to move from &#39;what&#39; to &#39;why&#39;</title>
+      <link>https://robjhyndman.com/publications/its-time-to-move-from-what-to-why/</link>
+      <pubDate>Tue, 16 Oct 2001 03:11:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/its-time-to-move-from-what-to-why/</guid>
+      <description>(Invited commentary on M3 competition.)
+We provide a new approach to automatic business forecasting based on an extended range of exponential smoothing methods. Each method in our taxonomy of exponential smoothing methods can be shown to be equivalent to the forecasts obtained from a state space model. This allows (1) the easy calculation of the likelihood, the AIC and other model selection criteria; (2) the computation of prediction intervals for each method; and (3) random simulation from the underlying state space model.</description>
+    </item>
+    
+    <item>
+      <title>Non-Gaussian conditional linear AR(1) models</title>
+      <link>https://robjhyndman.com/publications/non-gaussian-conditional-linear-ar1-models/</link>
+      <pubDate>Thu, 16 Nov 2000 03:05:59 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/non-gaussian-conditional-linear-ar1-models/</guid>
+      <description>We give a general formulation of a non-Gaussian conditional linear AR(1) model subsuming most of the non-Gaussian AR(1) models that have appeared in the literature. We derive some general results giving properties for the stationary process mean, variance and correlation structure, and conditions for stationarity. These results highlight similarities and differences with the Gaussian AR(1) model, and unify many separate results appearing in the literature. Examples illustrate the wide range of properties that can appear under the conditional linear autoregressive assumption.</description>
+    </item>
+    
+    <item>
+      <title>Residual diagnostic plots for model mis-specification in time series regression</title>
+      <link>https://robjhyndman.com/publications/residual-diagnostic-plots-for-model-mis-specification-in-time-series-regression/</link>
+      <pubDate>Thu, 16 Nov 2000 03:01:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/residual-diagnostic-plots-for-model-mis-specification-in-time-series-regression/</guid>
+      <description>This paper considers residuals for time series regression. Despite much literature on visual diagnostics for uncorrelated data, there is little on the autocorrelated case. In order to examine various aspects of the fitted time series regression model, three residuals are considered. The fitted regression model can be checked using orthogonal residuals; the time series error model can be analysed using marginal residuals; and the white noise error component can be tested using conditional residuals.</description>
+    </item>
+    
+    <item>
+      <title>Generalized additive modelling of mixed distribution Markov models with application to Melbourne&#39;s rainfall</title>
+      <link>https://robjhyndman.com/publications/gam-rainfall/</link>
+      <pubDate>Tue, 16 May 2000 03:06:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gam-rainfall/</guid>
+      <description>We consider modelling time series using a generalized additive model with first-order Markov structure and mixed transition density having a discrete component at zero and a continuous component with positive sample space. Such models have application, for example, in modelling daily occurrence and intensity of rainfall, and in modelling the number and size of insurance claims. We show how these methods extend the usual sinusoidal seasonal assumption in standard chain-dependent models by assuming a general smooth pattern of occurrence and intensity over time.</description>
+    </item>
+    
+    <item>
+      <title>Smoothing non-Gaussian time series with autoregressive structure</title>
+      <link>https://robjhyndman.com/publications/smoothing-non-gaussian-time-series-with-autoregressive-structure/</link>
+      <pubDate>Thu, 16 Jul 1998 03:00:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/smoothing-non-gaussian-time-series-with-autoregressive-structure/</guid>
+      <description>We consider nonparametric smoothing for time series which are clearly non-Gaussian and which are subject to an autoregressive random component. This generalizes methods for smoothing Gaussian series with autoregressive errors, but in the non-Gaussian case the autoregressive structure is not always additive. The problem can be formulated in a general way to include many common non-Gaussian autoregressive models. The amount of smoothing can be chosen by penalized likelihood methods, and we give simulations and parametric bootstrap methods for studying and empirically estimating the penalty function.</description>
+    </item>
+    
+    <item>
+      <title>Nonparametric autocovariance function estimation</title>
+      <link>https://robjhyndman.com/publications/nonparametric-autocovariance-function-estimation/</link>
+      <pubDate>Tue, 16 Dec 1997 02:50:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/nonparametric-autocovariance-function-estimation/</guid>
+      <description>Nonparametric estimators of autocovariance functions for non-stationary time series are developed. The estimators are based on straightforward nonparametric mean function estimation ideas and allow use of any linear smoother (e.g. smoothing spline, local polynomial). We study the properties of the estimators and illustrate their usefulness through application to some meteorological and seismic time series.
+Keywords: bandwidth; correlated errors; kernel smoothing; local polynomial; nonparametric regression; non-stationary model; time series.
+Data: Melbourne maximum temperatures, Kobe earthquake seismograph</description>
+    </item>
+    
+    <item>
+      <title>Some properties and generalizations of non-negative Bayesian time series models</title>
+      <link>https://robjhyndman.com/publications/some-properties-and-generalizations-of-non-negative-bayesian-time-series-models/</link>
+      <pubDate>Wed, 16 Jul 1997 02:48:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/some-properties-and-generalizations-of-non-negative-bayesian-time-series-models/</guid>
+      <description>We study the most basic Bayesian forecasting model for exponential family time series, the power steady model (PSM) of Smith, in terms of observable properties of one-step forecast distributions and sample paths. The PSM implies a constraint between location and spread of the forecast distribution. Including a scale parameter in the models does not always give an exact solution free of this problem, but it does suggest how to define related models free of the constraint.</description>
+    </item>
+    
+    <item>
+      <title>Approximations and boundary conditions for continuous time threshold autoregressive processes</title>
+      <link>https://robjhyndman.com/publications/approximations-and-boundary-conditions-for-continuous-time-threshold-autoregressive-processes/</link>
+      <pubDate>Sat, 16 Jul 1994 02:10:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/approximations-and-boundary-conditions-for-continuous-time-threshold-autoregressive-processes/</guid>
+      <description>Continuous time threshold autoregressive (CTAR) processes have been developed in the past few years for modelling non-linear time series observed at irregular intervals. Several approximating processes are given here which are useful for simulation and inference. Each of the approximating processes implicitly defines conditions on the thresholds, thus providing greater understanding of the way in which boundary conditions arise.
+Keywords: continuous time autoregression, threshold autoregression, non-linear stochastic differential equations, unequally spaced time series.</description>
+    </item>
+    
+    <item>
+      <title>Yule-Walker estimates for continuous-time autoregressive models</title>
+      <link>https://robjhyndman.com/publications/yule-walker-estimates-for-continuous-time-autoregressive-models/</link>
+      <pubDate>Fri, 16 Jul 1993 02:06:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/yule-walker-estimates-for-continuous-time-autoregressive-models/</guid>
+      <description>I consider continuous time autoregressive (CAR) processes of order p and develop estimators of the model parameters based on Yule&amp;ndash;Walker type equations. For continuously recorded data, it is shown that these estimators are least squares estimators and have the same asymptotic distribution as maximum likelihood estimators. In practice, though, data can only be observed discretely. For discrete data, I consider approximations to the continuous time estimators. It is shown that some of these discrete time estimators are asymptotically biased.</description>
+    </item>
+    
+  </channel>
+</rss>

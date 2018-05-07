@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seasonality on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/seasonality/</link>
+    <description>Recent content in Seasonality on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/seasonality/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Forecasting with temporal hierarchies</title>
+      <link>https://robjhyndman.com/publications/temporal-hierarchies/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/temporal-hierarchies/</guid>
+      <description>This paper introduces the concept of Temporal Hierarchies for time series forecasting. A temporal hierarchy can be constructed for any time series by means of non-overlapping temporal aggregation. Predictions constructed at all aggregation levels are combined with the proposed framework to result in temporally reconciled, accurate and robust forecasts. The implied combination mitigates modelling uncertainty, while the reconciled nature of the forecasts results in a unified prediction that supports aligned decisions at different planning horizons: from short-term operational up to long-term strategic planning.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting large collections of related time series</title>
+      <link>https://robjhyndman.com/seminars/augsburg2016/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/augsburg2016/</guid>
+      <description>Keynote talk given at the German Statistical Week, Augsburg.
+Abstract
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Bagging exponential smoothing methods using STL decomposition and Box-Cox transformation</title>
+      <link>https://robjhyndman.com/publications/bagging-ets/</link>
+      <pubDate>Thu, 28 Apr 2016 23:30:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bagging-ets/</guid>
+      <description>Exponential smoothing is one of the most popular forecasting methods. We present a method for bootstrap aggregation (bagging) of exponential smoothing methods. The bagging uses a Box-Cox transformation followed by an STL decomposition to separate the time series into trend, seasonal part, and remainder. The remainder is then bootstrapped using a moving block bootstrap, and a new series is assembled using this bootstrapped remainder. On the bootstrapped series, an ensemble of exponential smoothing models is estimated.</description>
+    </item>
+    
+    <item>
+      <title>MEFM: An R package for long-term probabilistic forecasting of electricity demand</title>
+      <link>https://robjhyndman.com/seminars/isf2015/</link>
+      <pubDate>Mon, 22 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isf2015/</guid>
+      <description>International Symposium on Forecasting Riverside, California
+I will describe and demonstrate a new open-source R package that implements the Monash Electricity Forecasting Model, a semi-parametric probabilistic approach to forecasting long-term electricity demand. The underlying model proposed in Hyndman and Fan (2010) is now widely used in practice, particularly in Australia. The model has undergone many improvements and developments since it was first proposed, and these have been incorporated in this R implementation.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic forecasting of peak electricity demand</title>
+      <link>https://robjhyndman.com/seminars/sce2015/</link>
+      <pubDate>Thu, 18 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/sce2015/</guid>
+      <description>Southern California Edison Rosemead, California
+Electricity demand forecasting plays an important role in short-term load allocation and long-term planning for future generation facilities and transmission augmentation. It is a challenging problem because of the different uncertainties including underlying population growth, changing technology, economic conditions, prevailing weather conditions (and the timing of those conditions), as well as the general randomness inherent in individual usage. It is also subject to some known calendar effects due to the time of day, day of week, time of year, and public holidays.</description>
+    </item>
+    
+    <item>
+      <title>STR: A Seasonal-Trend Decomposition Procedure Based on Regression</title>
+      <link>https://robjhyndman.com/publications/str/</link>
+      <pubDate>Sun, 07 Jun 2015 22:50:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/str/</guid>
+      <description>We propose new generic methods for decomposing seasonal data: STR (a Seasonal-Trend decomposition procedure based on Regression) and Robust STR. In some ways, STR is similar to Ridge Regression and Robust STR can be related to LASSO. Our new methods are much more general than any alternative time series decomposition methods. They allow for multiple seasonal and cyclic components, and multiple linear regressors with constant, flexible, seasonal and cyclic influence. Seasonal patterns (for both seasonal components and seasonal regressors) can be fractional and flexible over time; moreover they can be either strictly periodic or have a more complex topology.</description>
+    </item>
+    
+    <item>
+      <title>Large-scale unusual time series detection</title>
+      <link>https://robjhyndman.com/publications/icdm2015/</link>
+      <pubDate>Mon, 01 Jun 2015 02:08:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/icdm2015/</guid>
+      <description>It is becoming increasingly common for organizations to collect very large amounts of data over time, and to need to detect unusual or anomalous time series. For example, Yahoo has banks of mail servers that are monitored over time. Many measurements on server performance are collected every hour for each of thousands of servers. We wish to identify servers that are behaving unusually.
+We compute a vector of features on each time series, measuring characteristics of the series.</description>
+    </item>
+    
+    <item>
+      <title>Visualization of big time series data</title>
+      <link>https://robjhyndman.com/seminars/big-time-series/</link>
+      <pubDate>Tue, 26 May 2015 03:51:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/big-time-series/</guid>
+      <description>Talk given to a joint meeting of the Statistical Society of Australia (Victorian branch) and the Melbourne Data Science Meetup Group.It is becoming increasingly common for organizations to collect very large amounts of data over time. Data visualization is essential for exploring and understanding structures and patterns, and to identify unusual observations. However, the sheer quantity of data available challenges current time series visualisation methods.
+For example, Yahoo has banks of mail servers that are monitored over time.</description>
+    </item>
+    
+    <item>
+      <title>Visualization and forecasting of big time series data</title>
+      <link>https://robjhyndman.com/seminars/big-time-series-data/</link>
+      <pubDate>Mon, 23 Feb 2015 01:11:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/big-time-series-data/</guid>
+      <description>Talk given at the ACEMS Big data workshop, QUT.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series with complex seasonal patterns using exponential smoothing</title>
+      <link>https://robjhyndman.com/publications/complex-seasonality/</link>
+      <pubDate>Sat, 31 Dec 2011 02:38:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/complex-seasonality/</guid>
+      <description>A new innovations state space modeling framework, incorporating Box-Cox transformations, Fourier series with time varying coefficients and ARMA error correction, is introduced for forecasting complex seasonal time series that cannot be handled using existing forecasting models. Such complex time series include time series with multiple seasonal periods, high frequency seasonality, non-integer seasonality and dual-calendar effects. Our new modelling framework provides an alternative to existing exponential smoothing models, and is shown to have many advantages.</description>
+    </item>
+    
+    <item>
+      <title>Phenological change detection while accounting for abrupt and gradual trends in satellite image time series</title>
+      <link>https://robjhyndman.com/publications/bfast2/</link>
+      <pubDate>Tue, 17 Aug 2010 08:05:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bfast2/</guid>
+      <description>A challenge in phenology studies is understanding what constitutes significant phenological change amidst background variation (e.g. noise) and ecosystem disturbances (e.g. fires). The majority of phenological studies have focussed on extracting critical points in the seasonal growth cycle (e.g. Start-of-spring), without exploiting the full temporal detail. Moreover, the high degree of phenological variability between years demonstrates the necessity of distinguishing long term phenological change from temporal variability. Here, we evaluate the phenological change detection ability of a method for detecting Breaks For Additive Seasonal and Trend (BFAST).</description>
+    </item>
+    
+    <item>
+      <title>Detecting trend and seasonal changes in satellite image time series</title>
+      <link>https://robjhyndman.com/publications/bfast1/</link>
+      <pubDate>Thu, 14 Jan 2010 23:21:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bfast1/</guid>
+      <description>A wealth of remotely sensed time series covering large areas is now available to the earth science community. Change detection methods are often not capable of detecting land cover changes within time series that are heavily influenced by seasonal climatic variations. Detecting change within the trend and seasonal components of time series enables the detection of different types of changes. Changes occurring in the trend component indicate disturbances (e.g., insect attack), while changes occurring in the seasonal component indicate phenological changes (e.</description>
+    </item>
+    
+    <item>
+      <title>The interaction between trend and seasonality</title>
+      <link>https://robjhyndman.com/publications/the-interaction-between-trend-and-seasonality/</link>
+      <pubDate>Sat, 16 Oct 2004 03:36:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/the-interaction-between-trend-and-seasonality/</guid>
+      <description>A contribution to the discussion of Miller and Williams (2004).</description>
+    </item>
+    
+    <item>
+      <title>Seasonal adjustment methods for the analysis of respiratory disease in environmental epidemiology</title>
+      <link>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</link>
+      <pubDate>Wed, 09 Aug 2000 01:46:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</guid>
+      <description>We study the relationship between daily hospital admissions for respiratory disease and various pollutant and climatic variables, looking particularly at the effect of seasonal adjustment on the estimated models. Often time series exhibit seasonal behaviour and adequate control for the presence of a seasonal component is essential before one attempts to model the complex pollution-health association. We show that if these factors are not adequately controlled for, spurious effects of pollutants and climate on morbidity/mortality can be induced.</description>
+    </item>
+    
+  </channel>
+</rss>

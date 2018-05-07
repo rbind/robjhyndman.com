@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/data-science/</link>
+    <description>Recent content in Data Science on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Macroeconomic forecasting for Australia using a large number of predictors</title>
+      <link>https://robjhyndman.com/publications/ausmacrofcast/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ausmacrofcast/</guid>
+      <description>A popular approach to forecasting macroeconomic variables is to utilize a large number of predictors. Several regularization and shrinkage methods can be used to exploit such high-dimensional datasets, and have been shown to improve forecast accuracy for the US economy. To assess whether similar results hold for economies with different characteristics, an Australian dataset containing observations on 151 aggregate and disaggregate economic series as well as 185 international variables, is introduced.</description>
+    </item>
+    
+    <item>
+      <title>Anomaly detection in streaming nonstationary temporal data</title>
+      <link>https://robjhyndman.com/publications/oddstream/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/oddstream/</guid>
+      <description>This article proposes a framework that provides early detection of anomalous series within a large collection of non-stationary streaming time series data. We define an anomaly as an observation that is very unlikely given the recent distribution of a given system. The proposed framework first forecasts a boundary for the system&amp;rsquo;s typical behavior using extreme value theory. Then a sliding window is used to test for anomalous series within a newly arrived collection of series.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the sources of uncertainty: why does bagging for time series forecasting work?</title>
+      <link>https://robjhyndman.com/publications/bagging-uncertainty/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bagging-uncertainty/</guid>
+      <description>In a recent study, Bergmeir, Hyndman and Benítez (2016) successfully employed a bootstrap aggregation (bagging) technique for improving the performance of exponential smoothing. Each series is Box-Cox transformed, and decomposed by Seasonal and Trend decomposition using Loess (STL); then bootstrapping is applied on the remainder series before the trend and seasonality are added back, and the transformation reversed to create bootstrapped versions of the series. Subsequently, they apply automatic exponential smoothing on the original series and the bootstrapped versions of the series, with the final forecast being the equal-weight combination across all forecasts.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing big energy data</title>
+      <link>https://robjhyndman.com/publications/visualizing-big-energy-data/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/visualizing-big-energy-data/</guid>
+      <description>Visualization is a crucial component of data analysis. It is always a good idea to plot the data before fitting any models, making any predictions, or drawing any conclusions. As sensors of the electric grid are collecting large volumes of data from various sources, power industry professionals are facing the challenge of visualizing such data in a timely fashion. In this article, we demonstrate several data visualization solutions for big energy data through three case studies involving smart meter data, phasor measurement unit (PMU) data, and probabilistic forecasts, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Calendar-based graphics for visualizing people&#39;s daily schedules</title>
+      <link>https://robjhyndman.com/publications/calendar-vis/</link>
+      <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/calendar-vis/</guid>
+      <description>This paper describes a frame_calendar function that organizes and displays temporal data, collected on sub-daily resolution, into a calendar layout. Calendars are broadly used in society to display temporal information, and events. The frame_calendar uses linear algebra on the date variable to create the layout. It utilizes the grammar of graphics to create the plots inside each cell, and thus synchronizes neatly with ggplot2 graphics. The motivating application is studying pedestrian behavior in Melbourne, Australia, based on counts which are captured at hourly intervals by sensors scattered around the city.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data</title>
+      <link>https://robjhyndman.com/publications/hpf-electricity/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hpf-electricity/</guid>
+      <description>Electricity smart meters record consumption, on a near real-time basis, at the level of individual commercial and residential properties. From this, a hierarchy can be constructed consisting of time series of demand at the smart meter level, and at various levels of aggregation, such as substations, cities and regions. Forecasts are needed at each level to support the efficient and reliable management of consumption. A limitation of previous research in this area is that it considered only deterministic prediction.</description>
+    </item>
+    
+    <item>
+      <title>Coherent Probabilistic Forecasts for Hierarchical Time Series</title>
+      <link>https://robjhyndman.com/publications/probhts/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/probhts/</guid>
+      <description>Many applications require forecasts for a hierarchy comprising a set of time series along with aggregates of subsets of these series. Although forecasts can be produced independently for each series in the hierarchy, typically this does not lead to coherent forecasts — the property that forecasts add up appropriately across the hierarchy. State-of-the-art hierarchical forecasting methods usually reconcile these independently generated forecasts to satisfy the aggregation constraints. A fundamental limitation of prior research is that it has looked only at the problem of forecasting the mean of each time series.</description>
+    </item>
+    
+    <item>
+      <title>The Australian Macro Database: An online resource for macroeconomic research in Australia</title>
+      <link>https://robjhyndman.com/publications/ausmacrodata/</link>
+      <pubDate>Tue, 14 Feb 2017 05:26:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ausmacrodata/</guid>
+      <description>A website that encourages and facilities the use of quantitative, publicly available Australian macroeconomic data is introduced. The Australian Macro Database hosted at ausmacrodata.org provides a user friendly front end for searching among over 40000 economic variables, sourced from the Australian Bureau of Statistics and the Reserve Bank of Australia. The search box, tags and categories used to facilitate data retrieval, are described in detail. Known issues with the website and future plans are discussed in the conclusion.</description>
+    </item>
+    
+    <item>
+      <title>Dynamic Algorithm Selection for Pareto Optimal Set Approximation</title>
+      <link>https://robjhyndman.com/publications/dynamic-pareto-approximation/</link>
+      <pubDate>Wed, 18 Jan 2017 20:35:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/dynamic-pareto-approximation/</guid>
+      <description>This paper presents a meta-algorithm for approximating the Pareto optimal set of costly black-box multiobjective optimization problems given a limited number of objective function evaluations. The key idea is to switch among different algorithms during the optimization search based on the predicted performance of each algorithm at the time. Algorithm performance is modeled using a machine learning technique based on the available information. The predicted best algorithm is then selected to run for a limited number of evaluations.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Automatic foRecasting using R</title>
+      <link>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</link>
+      <pubDate>Fri, 06 May 2016 05:00:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</guid>
+      <description>Melbourne Data Science Initiative</description>
+    </item>
+    
+    <item>
+      <title>On sampling methods for costly multi-objective black-box optimization</title>
+      <link>https://robjhyndman.com/publications/sampling-multiobjective-optimization/</link>
+      <pubDate>Sun, 28 Feb 2016 21:08:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/sampling-multiobjective-optimization/</guid>
+      <description>We investigate the impact of different sampling techniques on the performance of multi-objective optimization methods applied to costly black-box optimization problems. Such problems are often solved using an algorithm in which a surrogate model approximates the true objective function and provides predicted objective values at a lower cost. As the surrogate model is based on evaluations of a small number of points, the quality of the initial sample can have a great effect on the overall effectiveness of the optimization.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting uncertainty in electricity smart meter data by boosting additive quantile regression</title>
+      <link>https://robjhyndman.com/publications/smart-meter-quantiles/</link>
+      <pubDate>Thu, 04 Feb 2016 04:19:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/smart-meter-quantiles/</guid>
+      <description>Smart electricity meters are currently deployed in millions of households to collect detailed individual electricity consumption data. Compared to traditional electricity data based on aggregated consumption, smart meter data are much more volatile and less predictable. There is a need within the energy industry for probabilistic forecasts of household electricity consumption to quantify the uncertainty of future electricity demand, in order to undertake appropriate planning of generation and distribution. We propose a probabilistic forecasting method where a different quantile regression model is estimated for each quantile of the future distribution.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Energy Forecasting: Global Energy Forecasting Competition 2014 and Beyond</title>
+      <link>https://robjhyndman.com/publications/gefcom2014/</link>
+      <pubDate>Mon, 25 Jan 2016 00:40:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gefcom2014/</guid>
+      <description>The energy industry has been going through a significant modernization process over the last decade. Its infrastructure is being upgraded rapidly. The supply, demand and prices are becoming more volatile and less predictable than ever before. Even its business model is being challenged fundamentally. In this competitive and dynamic environment, many decision-making processes rely on probabilistic forecasts to quantify the uncertain future. Although most of the papers in the energy forecasting literature focus on point or single-valued forecasts, the research interest in probabilistic energy forecasting research has taken off rapidly in recent years.</description>
+    </item>
+    
+    <item>
+      <title>Machine learning bootcamp</title>
+      <link>https://robjhyndman.com/seminars/machine-learning-bootcamp/</link>
+      <pubDate>Mon, 17 Aug 2015 02:22:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/machine-learning-bootcamp/</guid>
+      <description>A talk on time series forecasting for the Monash University Machine Learning Bootcamp.
+Demo R code</description>
+    </item>
+    
+    <item>
+      <title>MEFM: An R package for long-term probabilistic forecasting of electricity demand</title>
+      <link>https://robjhyndman.com/seminars/isf2015/</link>
+      <pubDate>Mon, 22 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isf2015/</guid>
+      <description>International Symposium on Forecasting Riverside, California
+I will describe and demonstrate a new open-source R package that implements the Monash Electricity Forecasting Model, a semi-parametric probabilistic approach to forecasting long-term electricity demand. The underlying model proposed in Hyndman and Fan (2010) is now widely used in practice, particularly in Australia. The model has undergone many improvements and developments since it was first proposed, and these have been incorporated in this R implementation.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic forecasting of peak electricity demand</title>
+      <link>https://robjhyndman.com/seminars/sce2015/</link>
+      <pubDate>Thu, 18 Jun 2015 23:00:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/sce2015/</guid>
+      <description>Southern California Edison Rosemead, California
+Electricity demand forecasting plays an important role in short-term load allocation and long-term planning for future generation facilities and transmission augmentation. It is a challenging problem because of the different uncertainties including underlying population growth, changing technology, economic conditions, prevailing weather conditions (and the timing of those conditions), as well as the general randomness inherent in individual usage. It is also subject to some known calendar effects due to the time of day, day of week, time of year, and public holidays.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic time series forecasting with boosted additive models: an application to smart meter data</title>
+      <link>https://robjhyndman.com/publications/kdd2015/</link>
+      <pubDate>Thu, 04 Jun 2015 11:27:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kdd2015/</guid>
+      <description>A large body of the forecasting literature so far has been focused on forecasting the conditional mean of future observations. However, there is an increasing need for generating the entire conditional distribution of future observations in order to effectively quantify the uncertainty in time series data. We present two different methods for probabilistic time series forecasting that allow the inclusion of a possibly large set of exogenous variables. One method is based on forecasting both the conditional mean and variance of the future distribution using a traditional regression approach.</description>
+    </item>
+    
+    <item>
+      <title>Am I a data scientist?</title>
+      <link>https://robjhyndman.com/seminars/christmasgala2014/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/christmasgala2014/</guid>
+      <description>Talk given at the Melbourne Analytics Charity Christmas Gala, a combined event of the Statistical Society of Australia, Data Science Melbourne, Big Data Analytics and Melbourne Users of R Network.
+This is (roughly) what I said.Statisticians seem to go through regular periods of existential crisis as they worry about other groups of people who do data analysis. A common theme is: all these other people (usually computer scientists) are doing our job!</description>
+    </item>
+    
+  </channel>
+</rss>

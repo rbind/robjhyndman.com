@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boosting on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/boosting/</link>
+    <description>Recent content in Boosting on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Feb 2016 04:19:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/boosting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Forecasting uncertainty in electricity smart meter data by boosting additive quantile regression</title>
+      <link>https://robjhyndman.com/publications/smart-meter-quantiles/</link>
+      <pubDate>Thu, 04 Feb 2016 04:19:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/smart-meter-quantiles/</guid>
+      <description>Smart electricity meters are currently deployed in millions of households to collect detailed individual electricity consumption data. Compared to traditional electricity data based on aggregated consumption, smart meter data are much more volatile and less predictable. There is a need within the energy industry for probabilistic forecasts of household electricity consumption to quantify the uncertainty of future electricity demand, in order to undertake appropriate planning of generation and distribution. We propose a probabilistic forecasting method where a different quantile regression model is estimated for each quantile of the future distribution.</description>
+    </item>
+    
+    <item>
+      <title>A gradient boosting approach to the Kaggle load forecasting competition</title>
+      <link>https://robjhyndman.com/publications/kaggleloadforecasting/</link>
+      <pubDate>Tue, 01 Apr 2014 04:40:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kaggleloadforecasting/</guid>
+      <description>We describe and analyse the approach used by Team TinTin (Souhaib Ben Taieb and Rob&amp;nbsp;J&amp;nbsp;Hyndman) in the Load Forecasting track of the Kaggle Global Energy Forecasting Competition 2012. The competition involved a hierarchical load forecasting problem for a US utility with 20 geographical zones. The available data consisted of the hourly loads for the 20 zones and hourly temperatures from 11 weather stations, for four and a half years. For each zone, the hourly electricity load for nine different weeks needed to be predicted without having the location of zones or stations.</description>
+    </item>
+    
+    <item>
+      <title>Boosting multi-step autoregressive forecasts</title>
+      <link>https://robjhyndman.com/publications/boostingar/</link>
+      <pubDate>Thu, 09 Jan 2014 23:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/boostingar/</guid>
+      <description>Multi-step forecasts can be produced recursively by iterating a one-step model, or directly using a specific model for each horizon. Choosing between these two strategies is not an easy task since it involves a trade-off between bias and estimation variance over the forecast horizon. Using a nonlinear machine learning model makes the tradeoff even more difficult. To address this issue, we propose a new forecasting strategy which boosts traditional recursive linear forecasts with a direct strategy using a boosting autoregression procedure at each horizon.</description>
+    </item>
+    
+  </channel>
+</rss>

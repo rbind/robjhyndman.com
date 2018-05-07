@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ysc2013 on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/ysc2013/</link>
+    <description>Recent content in Ysc2013 on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 21 Dec 2012 00:13:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/ysc2013/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Man vs Wild Data</title>
+      <link>https://robjhyndman.com/hyndsight/ysc2013/</link>
+      <pubDate>Fri, 21 Dec 2012 00:13:15 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ysc2013/</guid>
+      <description>I&amp;rsquo;m speaking on this topic at the Young Statisticians Conference, 7-8 February 2013.
+If you&amp;rsquo;re a young statistician and live in Australia, please book in. It promises to be a great couple of days. Early registrations close on 2 January.
+Abstract for my talk:
+For 25 years I have been an intrepid statistical consultant, tackling the wild frontiers of real data, real problems and real time constraints. I have faced problems ranging from linguistics to river beds, from making paper plates to selling pies at the MCG, from tax office audits to surveys about the colour purple.</description>
+    </item>
+    
+    <item>
+      <title>YSC2013 funding support</title>
+      <link>https://robjhyndman.com/hyndsight/ysc2013-funding-support/</link>
+      <pubDate>Mon, 29 Oct 2012 01:25:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ysc2013-funding-support/</guid>
+      <description>Young Victorian statisticians should be attending the YSC conference in Melbourne in February 2013. It promises to be a great event, and the speaker line-up looks first-class (apart from one dodgy keynote speaker).
+If you think you can&amp;rsquo;t afford it, there is good news! The local SSA Branch is offering financial support to selected young statisticians. Applicants must be student members of the Victorian Branch (to join, see www.statsoc.org.au/join.htm). Successful applicants will be given free conference registration.</description>
+    </item>
+    
+    <item>
+      <title>The Young Stats Communication Challenge</title>
+      <link>https://robjhyndman.com/hyndsight/ysc2013comp/</link>
+      <pubDate>Sun, 07 Oct 2012 22:07:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ysc2013comp/</guid>
+      <description>The Australian Young Statisticians Conference (Feb 2013) is organizing a communication competition. They invite all early-career statisticians (studying, or within 5 years of graduation) to produce a short (3-5 minute) video for the ABS YSC2013 Video Competition, or a static infographic for the ABS YSC2013 Infographic Competition.
+Both competitions have a 1st prize of $500, and 2nd prize of $250.
+Entries close 16th November, and winners will be notified by mid-December.</description>
+    </item>
+    
+  </channel>
+</rss>

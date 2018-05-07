@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genealogy on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/genealogy/</link>
+    <description>Recent content in Genealogy on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Jul 2009 00:42:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/genealogy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mathematical genealogy</title>
+      <link>https://robjhyndman.com/hyndsight/mathematical-genealogy/</link>
+      <pubDate>Wed, 15 Jul 2009 00:42:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/mathematical-genealogy/</guid>
+      <description>Having a PhD student is like having a child. I have had many such &amp;ldquo;children&amp;rdquo; graduate, and have another few &amp;ldquo;on the way&amp;rdquo;. (See here for my offspring.)
+Going in the other direction, here is my family tree (or one branch of it), compiled from the Mathematical Genealogy Project. Each successive person is the doctoral student of the person before him. (No females here!)
+     Erhard Weigel Ph.</description>
+    </item>
+    
+  </channel>
+</rss>

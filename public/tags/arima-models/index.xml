@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arima Models on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/arima-models/</link>
+    <description>Recent content in Arima Models on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/arima-models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimal forecast reconciliation for hierarchical and grouped time series through trace minimization</title>
+      <link>https://robjhyndman.com/publications/mint/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mint/</guid>
+      <description>Large collections of time series often have aggregation constraints due to product or geographical groupings. The forecasts for the most disaggregated series are usually required to add-up exactly to the forecasts of the aggregated series, a constraint we refer to as &amp;ldquo;coherence&amp;rdquo;. Forecast reconciliation is the process of adjusting forecasts to make them coherent. The reconciliation algorithm proposed by Hyndman et al. (2011) is based on a generalized least squares estimator that requires an estimate of the covariance matrix of the coherency errors (i.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Bayesian rank selection in multivariate regression</title>
+      <link>https://robjhyndman.com/publications/bayesian-rank-selection-in-multivariate-regression/</link>
+      <pubDate>Sat, 30 Jan 2016 00:58:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bayesian-rank-selection-in-multivariate-regression/</guid>
+      <description>Estimating the rank of the coefficient matrix is a major challenge in multivariate regression, including vector autoregression (VAR). In this paper, we develop a novel fully Bayesian approach that allows for rank estimation. The key to our approach is reparameterizing the coefficient matrix using its singular value decomposition and conducting Bayesian inference on the decomposed parameters. By implementing a stochastic search variable selection on the singular values of the coefficient matrix, the ultimate selected rank can be identified as the number of nonzero singular values.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+  </channel>
+</rss>

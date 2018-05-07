@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publishing on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/publishing/</link>
+    <description>Recent content in Publishing on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 09 Apr 2014 00:15:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/publishing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My forecasting book now on Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-amazon/</link>
+      <pubDate>Wed, 09 Apr 2014 00:15:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-amazon/</guid>
+      <description>For all those people asking me how to obtain a print version of my book &amp;ldquo;Forecasting: principles and practice&amp;rdquo; with George Athanasopoulos, you now can.
+
+Order on Amazon.com
+Order on Amazon.co.uk
+Order on Amazon.fr
+The online book will continue to be freely available. The print version of the book is intended to help fund the development of the OTexts platform.
+The price is US$45, £27 or €35.
+Compare that to $195 for my previous forecasting textbook, $150 for Fildes and Ord, or $182 for Gonzalez-Rivera.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maxima on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/maxima/</link>
+    <description>Recent content in Maxima on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 Mar 2015 05:21:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/maxima/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New job opportunities at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/maxima-jobs/</link>
+      <pubDate>Tue, 24 Mar 2015 05:21:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/maxima-jobs/</guid>
+      <description>We are now advertising for various positions in applied statistics, operations research and applied mathematics.
+Click here for details These jobs are with MAXIMA (the Monash Academy for Cross &amp;amp; Interdisciplinary Mathematical Applications).
+Please do not send any questions to me (I won&amp;rsquo;t answer). Click above and fol­low the instructions.</description>
+    </item>
+    
+    <item>
+      <title>Three jobs at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</link>
+      <pubDate>Fri, 18 Oct 2013 04:02:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</guid>
+      <description>We are currently advertising for three academic positions, suitable for recent PhD graduates.
+Lecturer (Applied Statistics or Operations Research)  Five-year position with MAXIMA and the School of Mathematical Sciences
+ Two positions available.
+ Applications close 31 October.
+ More information.
+  Lecturer (Econometrics/Business Statistics)  Continuing position with the Department of Econometrics and Business Statistics
+ Applications close 31 January 2014.
+ More information.
+  Please don&amp;rsquo;t send any questions to me.</description>
+    </item>
+    
+    <item>
+      <title>MAXIMA research centre at Monash Uni</title>
+      <link>https://robjhyndman.com/hyndsight/maxima/</link>
+      <pubDate>Wed, 11 Sep 2013 01:17:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/maxima/</guid>
+      <description>The &amp;ldquo;Monash Academy for Cross and Interdisciplinary Mathematical Applications&amp;rdquo; (MAXIMA) is a new research centre that aims to maximise the potential of mathematics to deliver impact to society. It will be led by Kate Smith-Miles. I will also be involved along with several other mathematicians at Monash. Our mission at MAXIMA is to find solutions to 21st century problems by dismantling mathematical barriers.
+MAXIMA will be launched on 25 September at a public lecture on &amp;ldquo;The Role of Embedded Optimization in Smart Systems and Products&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

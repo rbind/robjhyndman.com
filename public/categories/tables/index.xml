@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tables on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/tables/</link>
+    <description>Recent content in Tables on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 14 Apr 2014 23:23:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/tables/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Generating tables in LaTeX</title>
+      <link>https://robjhyndman.com/hyndsight/generating-tables-in-latex/</link>
+      <pubDate>Mon, 14 Apr 2014 23:23:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/generating-tables-in-latex/</guid>
+      <description>Typing tables in LaTeX can get messy, but there are some good tools to simplify the process. One I discovered this week is tablesgenerator.com, a web-based tool for generating LaTeX tables. It also allows the table to saved in other formats including HTML and Markdown. The interface is simple, but it does most things. For complicated tables, some additional formatting may be necessary.
+Similar functionality is available via plugins in Excel, OpenOffice and Libreoffice &amp;mdash; useful if the data for the table is already stored in a spreadsheet.</description>
+    </item>
+    
+    <item>
+      <title>Table design</title>
+      <link>https://robjhyndman.com/hyndsight/tables/</link>
+      <pubDate>Mon, 13 Feb 2012 23:15:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tables/</guid>
+      <description>Almost every research paper and thesis in statistics contains at least some tables, yet students are rarely taught how to make good tables. While the principles of good graphics are slowly becoming part of a statistical education (although not an econometrics education!), the principles of good tables are often ignored. Perhaps people think they are obvious, although the results I see in papers and theses suggest otherwise.Lately the topic seems to have been getting some much-needed attention and the following resources may be useful.</description>
+    </item>
+    
+    <item>
+      <title>Tables in LaTeX</title>
+      <link>https://robjhyndman.com/hyndsight/tables-in-latex/</link>
+      <pubDate>Thu, 01 Nov 2007 04:25:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tables-in-latex/</guid>
+      <description>(Updated May 2017)
+Making tables in LaTeX is one of the few areas where LaTeX can be more difficult than a WYSIWYG editor.
+Here are some pointers to tools and packages that I have found useful.
+ tablesgenerator.com: a web-based tool for generating LaTeX tables.
+ Excel2LaTeX: this excel add-in makes it easy to copy a rectangular array of cells in a spreadsheet into a LaTeX document.
+ Calc2LaTeX: a similar extension for LibreOffice and OpenOffice.</description>
+    </item>
+    
+  </channel>
+</rss>

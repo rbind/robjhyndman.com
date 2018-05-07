@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accuracy on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/accuracy/</link>
+    <description>Recent content in Accuracy on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/accuracy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimal forecast reconciliation for hierarchical and grouped time series through trace minimization</title>
+      <link>https://robjhyndman.com/publications/mint/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mint/</guid>
+      <description>Large collections of time series often have aggregation constraints due to product or geographical groupings. The forecasts for the most disaggregated series are usually required to add-up exactly to the forecasts of the aggregated series, a constraint we refer to as &amp;ldquo;coherence&amp;rdquo;. Forecast reconciliation is the process of adjusting forecasts to make them coherent. The reconciliation algorithm proposed by Hyndman et al. (2011) is based on a generalized least squares estimator that requires an estimate of the covariance matrix of the coherency errors (i.</description>
+    </item>
+    
+    <item>
+      <title>A note on the validity of cross-validation for evaluating autoregressive time series prediction</title>
+      <link>https://robjhyndman.com/publications/cv-time-series/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/cv-time-series/</guid>
+      <description>One of the most widely used standard procedures for model evaluation in classification and regression is $K$-fold cross-validation (CV). However, when it comes to time series forecasting, because of the inherent serial correlation and potential non-stationarity of the data, its application is not straightforward and often omitted by practitioners in favour of an out-of-sample (OOS) evaluation. In this paper, we show that in the case of a purely autoregressive model, the use of standard $K$-fold CV is possible as long as the models considered have uncorrelated errors.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Energy Forecasting: Global Energy Forecasting Competition 2014 and Beyond</title>
+      <link>https://robjhyndman.com/publications/gefcom2014/</link>
+      <pubDate>Mon, 25 Jan 2016 00:40:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gefcom2014/</guid>
+      <description>The energy industry has been going through a significant modernization process over the last decade. Its infrastructure is being upgraded rapidly. The supply, demand and prices are becoming more volatile and less predictable than ever before. Even its business model is being challenged fundamentally. In this competitive and dynamic environment, many decision-making processes rely on probabilistic forecasts to quantify the uncertain future. Although most of the papers in the energy forecasting literature focus on point or single-valued forecasts, the research interest in probabilistic energy forecasting research has taken off rapidly in recent years.</description>
+    </item>
+    
+    <item>
+      <title>Another look at forecast-accuracy metrics for intermittent demand</title>
+      <link>https://robjhyndman.com/publications/accuracy-intermittent-demand/</link>
+      <pubDate>Thu, 31 Dec 2015 00:37:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/accuracy-intermittent-demand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring forecast accuracy</title>
+      <link>https://robjhyndman.com/publications/measuring-forecast-accuracy/</link>
+      <pubDate>Thu, 31 Dec 2015 00:37:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/measuring-forecast-accuracy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+    <item>
+      <title>Another look at measures of forecast accuracy</title>
+      <link>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/</link>
+      <pubDate>Thu, 16 Nov 2006 04:44:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/</guid>
+      <description>We discuss and compare measures of accuracy of univariate time series forecasts. The methods used in the M-competition and the M3-competition, and many of the measures recommended by previous authors on this topic, are found to be degenerate in commonly occurring situations. Instead, we propose that the mean absolute scaled error become the standard measure for comparing forecast accuracy across multiple time series.
+Keywords: forecast accuracy, forecast evaluation, forecast error measures, M-competition, mean absolute scaled error.</description>
+    </item>
+    
+    <item>
+      <title>Another look at measures of forecast accuracy for intermittent demand</title>
+      <link>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy-for-intermittent-demand/</link>
+      <pubDate>Sat, 16 Sep 2006 04:29:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy-for-intermittent-demand/</guid>
+      <description>Some of the proposed measures of forecast accuracy for intermittent demand can give infinite or undefined values. This makes them unsuitable for general use. I summarize the various measures and demonstrate what can go wrong. Then I describe a new measure (the mean absolute scaled error) which does not have these flaws. I believe it should become the standard measure for comparing forecast accuracy for multiple intermittent-demand series.
+Errata: In the series shown in Table 2, the sixth value should be 11 (not 1).</description>
+    </item>
+    
+  </channel>
+</rss>

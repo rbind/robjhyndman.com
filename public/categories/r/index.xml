@@ -1,0 +1,1911 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/r/</link>
+    <description>Recent content in R on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Forecasting in NYC: 25-27 June 2018</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-nyc-2018/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-nyc-2018/</guid>
+      <description>In late June, I will be in New York to teach my 3-day workshop on Forecasting using R. Tickets are available at Eventbrite.
+This is the first time I&amp;rsquo;ve taught this workshop in the US, having previously run it in the Netherlands and Australia. It will be based on the 2nd edition of my book &amp;ldquo;Forecasting: Principles and Practice&amp;rdquo; with George Athanasopoulos. All participants will get a print version of the book.</description>
+    </item>
+    
+    <item>
+      <title>forecast v8.3 now on CRAN</title>
+      <link>https://robjhyndman.com/hyndsight/forecast83/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast83/</guid>
+      <description>The latest version of the forecast package for R is now on CRAN. This is the version used in the 2nd edition of my forecasting textbook with George Athanasopoulos. So readers should now be able to replicate all examples in the book using only CRAN packages.
+A few new features of the forecast package may be of interest. A more complete Changelog is also available.
+mstl() handles multiple seasonality STL decomposition was designed to handle a single type of seasonality, but modern data often involves several seasonal periods (e.</description>
+    </item>
+    
+    <item>
+      <title>A brief history of time series forecasting competitions</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-competitions/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-competitions/</guid>
+      <description>Prediction competitions are now so widespread that it is often forgotten how controversial they were when first held, and how influential they have been over the years.
+To keep this exercise manageable, I will restrict attention to time series forecasting competitions &amp;mdash; where only the history of the data is available when producing forecasts.
+Nottingham studies The earliest non-trivial study of time series forecast accuracy was probably by David Reid as part of his PhD at the University of Nottingham (1969).</description>
+    </item>
+    
+    <item>
+      <title>R package for M4 Forecasting Competition</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp2018/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp2018/</guid>
+      <description>The M4 forecasting competition is well under-way, and a few of my PhD students have been working on submissions.
+Pablo Montero-Manso, Carla Netto, and Thiyanga Talagala have made an R package containing all of the data (100,000 time series), which should make it substantially easier for other contestants to load the data into R in order to compute forecasts.
+Grab the package from this github repository.
+For more details about the M4 competition see this post or go to the M4 website.</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition update</title>
+      <link>https://robjhyndman.com/hyndsight/m4competition/</link>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4competition/</guid>
+      <description>The official guidelines for the M4 competition have now been published, and there have been several developments since my last post on this.
+ There is now a prize for prediction interval accuracy using a scaled version of the Mean Interval Score. If the $100(1-\alpha)$% prediction interval for time $t$ is given by $[L_{t},U_{t}]$, for $t=1,\dots,h$, then the MIS is defined as $$\frac{1}{h}\sum_{t=1}^{h} \left[ (U_t-L_t) + \frac{2}{\alpha}(L_t-Y_t)1(Y_t &amp;lt; L_t) + \frac{2}{\alpha}(Y_t-U_t)1(Y_t &amp;gt; U_t) \right] $$ where $Y_t$ is the observation at time $t$.</description>
+    </item>
+    
+    <item>
+      <title>Some new time series packages</title>
+      <link>https://robjhyndman.com/hyndsight/tspackages/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tspackages/</guid>
+      <description>This week I have finished preliminary versions of two new R packages for time series analysis. The first (tscompdata) contains several large collections of time series that have been used in forecasting competitions; the second (tsfeatures) is designed to compute features from univariate time series data. For now, both are only on github. I will probably submit them to CRAN after they’ve been tested by a few more people.
+tscompdata There are already two packages containing forecasting competition data: Mcomp (containing the M and M3 competition data) and Tcomp (containing the tourism competition data).</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition: response from Spyros Makridakis</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp-response/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp-response/</guid>
+      <description>Following my post on the M4 competition yesterday, Spyros Makridakis sent me these comments for posting here.
+I would like to thank Rob, my friend and co-author, for his insightful remarks concerning the upcoming M4 competition. As Rob says, the two of us have talked a great deal about competitions and I certainly agree with him about the “ideal” forecasting competition. In this reply, I will explain why I have deviated from the “ideal”, mostly for practical reasons and to ensure higher participation.</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp/</guid>
+      <description>The &amp;ldquo;M&amp;rdquo; competitions organized by Spyros Makridakis have had an enormous influence on the field of forecasting. They focused attention on what models produced good forecasts, rather than on the mathematical properties of those models. For that, Spyros deserves congratulations for changing the landscape of forecasting research through this series of competitions.
+Makridakis &amp;amp; Hibon, (JRSSA 1979) was the first serious attempt at a large empirical evaluation of forecast methods.</description>
+    </item>
+    
+    <item>
+      <title>Come and work with me</title>
+      <link>https://robjhyndman.com/hyndsight/acems-postdoc/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/acems-postdoc/</guid>
+      <description>I have funding for a new post-doctoral research fellow, on a 2-year contract, to work with me and Professor Kate Smith-Miles on analysing large collections of time series data. We are particularly seeking someone with a PhD in computational statistics or statistical machine learning.
+Desirable characteristics:
+ Experience with time series data. Experience with R package development. Familiarity with reproducible research practices (e.g., git, rmarkdown, etc). A background in machine learning or computational statistics.</description>
+    </item>
+    
+    <item>
+      <title>2017 Beijing Workshop on Forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/beijing-2017/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/beijing-2017/</guid>
+      <description>Later this month I&amp;rsquo;m speaking at the 2017 Beijing Workshop on Forecasting, to be held on Saturday 18 November at the Central University of Finance and Economics.
+I&amp;rsquo;m giving four talks as part of the workshop. Other speakers are Junni Zhang, Lei Song, Hui Bu, Feng Li and Yanfei Kang.
+Full program details are available online.</description>
+    </item>
+    
+    <item>
+      <title>Looking for a new research assistant</title>
+      <link>https://robjhyndman.com/hyndsight/ra-wanted/</link>
+      <pubDate>Thu, 07 Sep 2017 13:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ra-wanted/</guid>
+      <description>I&amp;rsquo;m currently looking for a new research assistant to help (primarily) with some modelling and R coding as part of a project on forecasting mobile phone sales. The position is likely to last for about 6&amp;ndash;9 months, and will be casual.
+ Requirements  Based in Melbourne. I&amp;rsquo;d rather not communicate remotely. Able to work at least 20 hours per week. Some of that can be from home if necessary, but you do need to be at Monash University (Clayton campus) at least some of the time.</description>
+    </item>
+    
+    <item>
+      <title>rOpenSci OzUnconference coming to Melbourne</title>
+      <link>https://robjhyndman.com/hyndsight/ozunconf2017/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ozunconf2017/</guid>
+      <description>For a second year running, there will be another rOpenSci OzUnconference in Australia. This one will be held in Melbourne, on 26-27 October 2017.
+Unlike regular conferences, there are no talks and there is no pre-determined agenda. It brings together scientists, developers, and open data enthusiasts from academia, industry, government, and non-profit to get together for a few days to work on R-related projects. The agenda is mostly decided during the conference itself, and involves participants dividing into small groups to work on the projects of most interest to them.</description>
+    </item>
+    
+    <item>
+      <title>Finding distinct rows of a tibble</title>
+      <link>https://robjhyndman.com/hyndsight/distinct/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/distinct/</guid>
+      <description>I’ve been using R or its predecessors for about 30 years, so I tend to I know a lot about R, but I don’t necessarily know how to use modern R tools. Lately, I’ve been teaching my students the tidyverse approach to data analysis, which means that I need to unlearn some old approaches and to re-learn them using new tools. But old dogs and new tricks…
+Yesterday, I was teaching a class where I needed to extract some rows of a data set.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting workshop in Perth</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-workshop-perth/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-workshop-perth/</guid>
+      <description>On 26-28 September 2017, I will be running my 3-day workshop in Perth on &amp;ldquo;Forecasting: principles and practice&amp;rdquo; based on my book of the same name.
+Topics to be covered include seasonality and trends, exponential smoothing, ARIMA modelling, dynamic regression and state space models, as well as forecast accuracy methods and forecast evaluation techniques such as cross-validation.
+Workshop participants are expected to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</description>
+    </item>
+    
+    <item>
+      <title>Hex stickers for the forecast package</title>
+      <link>https://robjhyndman.com/hyndsight/forecast-stickers/</link>
+      <pubDate>Mon, 26 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast-stickers/</guid>
+      <description>I&amp;rsquo;ve caved in to the hex sticker craze, and produced some hex stickers for the forecast package for R. If you attend a workshop I teach, I&amp;rsquo;ll give you one.</description>
+    </item>
+    
+    <item>
+      <title>My new DataCamp course: Forecasting Using R</title>
+      <link>https://robjhyndman.com/hyndsight/datacamp/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/datacamp/</guid>
+      <description>For the past few months I’ve been working on a new DataCamp course teaching Forecasting using R. I’m delighted that it is now available for anyone to do.
+Course blurb Forecasting involves making predictions about the future. It is required in many situations such as deciding whether to build another power generation plant in the next ten years requires forecasts of future demand; scheduling staff in a call center next week requires forecasts of call volumes; stocking an inventory requires forecasts of stock requirements.</description>
+    </item>
+    
+    <item>
+      <title>Prediction intervals for NNETAR models</title>
+      <link>https://robjhyndman.com/hyndsight/nnetar-prediction-intervals/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/nnetar-prediction-intervals/</guid>
+      <description>The nnetar function in the forecast package for R fits a neural network model to a time series with lagged values of the time series as inputs (and possibly some other exogenous inputs). So it is a nonlinear autogressive model, and it is not possible to analytically derive prediction intervals. Therefore we use simulation.
+Suppose we fit a NNETAR model to the famous Canadian lynx data:
+library(forecast) (fit &amp;lt;- nnetar(lynx, lambda=0.</description>
+    </item>
+    
+    <item>
+      <title>Monthly seasonality</title>
+      <link>https://robjhyndman.com/hyndsight/monthly-seasonality/</link>
+      <pubDate>Wed, 03 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monthly-seasonality/</guid>
+      <description>I regularly get asked why I don&amp;rsquo;t consider monthly seasonality in my models for daily or sub-daily time series. For example, this recent comment on my post on seasonal periods, or this comment on my post on daily data. The fact is, I&amp;rsquo;ve never seen a time series with monthly seasonality, although that does not mean it does not exist.
+Monthly seasonality is defined as a regular pattern that recurs every month in data that is observed more frequently than monthly.</description>
+    </item>
+    
+    <item>
+      <title>Converting to blogdown</title>
+      <link>https://robjhyndman.com/hyndsight/blogdown/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/blogdown/</guid>
+      <description>This website has gone through several major updates over the years. It began in 1993 as some handcrafted html files, transitioned to Joomla and later to Wordpress. Then it slowly grew into a collection of ten connected Wordpress installations that became increasingly difficult to maintain, and rather slow.
+So I&amp;rsquo;ve now converted the entire site to Blogdown/Hugo. Nearly 700 pages of wordpress content have been translated to markdown. I decided to drop a few parts of the site, notably the pages for my 1998 forecasting textbook.</description>
+    </item>
+    
+    <item>
+      <title>Software for honours students</title>
+      <link>https://robjhyndman.com/hyndsight/software-for-honours-students/</link>
+      <pubDate>Tue, 04 Apr 2017 23:00:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/software-for-honours-students/</guid>
+      <description>I spoke to our new crop of honours students this morning. Here are my slides, example files and links.
+ 
+Managing References  Mendeley Zotero Paperpile  Data analysis and computation  Download R Download Rstudio Online R tutorial R packages for time series R packages for econometrics R packages for finance  Writing your thesis LaTeX  Windows: Download MikTeX Mac OSX: Download MacTeX Linux: Check your usual software source for TeXLive; otherwise install TeX Live directly.</description>
+    </item>
+    
+    <item>
+      <title>Follow-up forecasting forum in Eindhoven</title>
+      <link>https://robjhyndman.com/hyndsight/eindhoven2/</link>
+      <pubDate>Tue, 07 Mar 2017 22:35:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eindhoven2/</guid>
+      <description>Last October I gave a 3-day masterclass on &amp;ldquo;Forecasting with R&amp;rdquo; in Eindhoven, Netherlands. There is a follow-up event planned for Tuesday 18 April 2017. It is particularly designed for people who attended the 3-day class, but if anyone else wants to attend they would be welcome.
+Please register here if you want to attend.The preliminary schedule is as follows.
+10.00 -- 11.00  New developments in forecasting using R   forecast v8.</description>
+    </item>
+    
+    <item>
+      <title>forecast 8.0</title>
+      <link>https://robjhyndman.com/hyndsight/forecast8/</link>
+      <pubDate>Tue, 28 Feb 2017 14:00:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast8/</guid>
+      <description>In what is now a roughly annual event, the forecast package has been updated on CRAN with a new version, this time 8.0.
+A few of the more important new features are described below.
+Check residuals A common task when building forecasting models is to check that the residuals satisfy some assumptions (that they are uncorrelated, normally distributed, etc.). The new function checkresiduals makes this very easy: it produces a time plot, an ACF, a histogram with super-imposed normal curve, and does a Ljung-Box test on the residuals with appropriate number of lags and degrees of freedom.</description>
+    </item>
+    
+    <item>
+      <title>Simulating from a specified seasonal ARIMA model</title>
+      <link>https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/</link>
+      <pubDate>Fri, 27 Jan 2017 05:13:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/</guid>
+      <description>From my email today
+ You use an illustration of a seasonal arima model:
+ARIMA(1,1,1)(1,1,1)4
+I would like to simulate data from this process then fit a model… but I am unable to find any information as to how this can be conducted… if I set phi1, Phi1, theta1, and Theta1 it would be reassuring that for large n the parameters returned by Arima(foo,order=c(1,1,1),seasonal=c(1,1,1)) are in agreement…
+ My answer: Unfortunately arima.</description>
+    </item>
+    
+    <item>
+      <title>Cross-validation for time series</title>
+      <link>https://robjhyndman.com/hyndsight/tscv/</link>
+      <pubDate>Mon, 05 Dec 2016 12:43:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tscv/</guid>
+      <description>I&amp;rsquo;ve added a couple of new functions to the forecast package for R which implement two types of cross-validation for time series.K-fold cross-validation for autoregression The first is regular k-fold cross-validation for autoregressive models. Although cross-validation is sometimes not valid for time series models, it does work for autoregressions, which includes many machine learning approaches to time series. The theoretical background is provided in Bergmeir, Hyndman and Koo (2015). So cross-validation can be applied to any model where the predictors are lagged values of the response variable.</description>
+    </item>
+    
+    <item>
+      <title>Q&amp;A time</title>
+      <link>https://robjhyndman.com/hyndsight/qa-time/</link>
+      <pubDate>Sun, 23 Oct 2016 11:21:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/qa-time/</guid>
+      <description>Someone sent me some questions by email, and I decided to answer some of them here. How important is it that I know and understand the underlying mathematical framework to forecasting methods? I understand conceptually how most of them work, but I feel as if I may benefit from truly understanding the math.
+ The main benefit of understanding the mathematics behind different forecasting models is to be able to adapt the models when they don&amp;rsquo;t work well for your data.</description>
+    </item>
+    
+    <item>
+      <title>Tourism forecasting competition data as an R package</title>
+      <link>https://robjhyndman.com/hyndsight/tcomp/</link>
+      <pubDate>Sat, 22 Oct 2016 11:19:31 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tcomp/</guid>
+      <description>The data used in the tourism forecasting competition, discussed in Athanasopoulos et al (2011), have been made available in the Tcomp package for R. The objects are of the same format as for Mcomp package containing data from the M1 and M3 competitions.
+Thanks to Peter Ellis for putting the package together. He has also produced a nice blog post about it.</description>
+    </item>
+    
+    <item>
+      <title>Hadley Wickham Master R Developer course coming to Melbourne</title>
+      <link>https://robjhyndman.com/hyndsight/hadley-course-dec-2016/</link>
+      <pubDate>Wed, 05 Oct 2016 19:53:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hadley-course-dec-2016/</guid>
+      <description>Hadley Wickham&amp;rsquo;s popular R developer course is coming to Melbourne on 12-13 December 2016. Bookings can be made via Eventbrite.Hadley, of course, is the developer of the wonderful tidyverse set of R packages including ggplot2, dplyr, tidyr, readr, purrr, tibble, and many more. He is the author of several books including the new &amp;ldquo;R for Data Science&amp;rdquo;, he is the chief scientist at RStudio, and a fellow cocktail enthusiast.
+From the course blurb:</description>
+    </item>
+    
+    <item>
+      <title>Forecast intervals for aggregates</title>
+      <link>https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/</link>
+      <pubDate>Wed, 14 Sep 2016 14:44:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/</guid>
+      <description>A common problem is to forecast the aggregate of several time periods of data, using a model fitted to the disaggregated data. For example, you may have monthly data but wish to forecast the total for the next year. Or you may have weekly data, and want to forecast the total for the next four weeks.
+If the point forecasts are means, then adding them up will give a good estimate of the total.</description>
+    </item>
+    
+    <item>
+      <title>R package forecast v7.2 now on CRAN</title>
+      <link>https://robjhyndman.com/hyndsight/forecast-v7-2/</link>
+      <pubDate>Fri, 09 Sep 2016 10:01:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast-v7-2/</guid>
+      <description>I’ve pushed a minor update to the forecast package to CRAN. Some highlights are listed here.
+Plotting time series with ggplot2 You can now facet a time series plot like this:
+library(forecast) library(ggplot2) lungDeaths &amp;lt;- cbind(mdeaths, fdeaths) autoplot(lungDeaths, facets=TRUE) So autoplot.mts now behaves similarly to plot.mts
+ Multi-step fitted values The fitted function has a new argument h to allow computation of in-sample fitted values of more than one-step-ahead. In time series, fitted values are defined as the one-step-forecasts of the data used in training a model.</description>
+    </item>
+    
+    <item>
+      <title>R packages for forecast combinations</title>
+      <link>https://robjhyndman.com/hyndsight/forecast-combinations/</link>
+      <pubDate>Thu, 01 Sep 2016 09:56:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast-combinations/</guid>
+      <description>It has been well-known since at least 1969, when Bates and Granger wrote their famous paper on “The Combination of Forecasts”, that combining forecasts often leads to better forecast accuracy.
+So it is helpful to have a couple of new R packages which do just that: opera and forecastHybrid.
+opera Opera stands for “Online Prediction by ExpeRt Aggregation”. It was written by Pierre Gaillard and Yannig Goude, and Pierre provides a nice introduction in the vignette.</description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown template for a Monash working paper</title>
+      <link>https://robjhyndman.com/hyndsight/rmarkdown-template/</link>
+      <pubDate>Sun, 28 Aug 2016 10:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rmarkdown-template/</guid>
+      <description>This is only directly relevant to my Monash students and colleagues, but the same idea might be useful for adapting to other institutions.
+Some recent changes in the rmarkdown and bookdown packages mean that it is now possible to produce working papers in exactly the same format as we previously used with LaTeX.Just install the MonashEBSTemplates package from github. You also need a recent version of LaTeX.
+Then from within RStudio, create a new document by selecting &amp;ldquo;Rmarkdown&amp;rdquo;, &amp;ldquo;From Template&amp;rdquo;, and select &amp;ldquo;Monash EBS Working Paper&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>The thief package for R: Temporal HIErarchical Forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/thief/</link>
+      <pubDate>Mon, 22 Aug 2016 07:58:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/thief/</guid>
+      <description>I have a new R package available to do temporal hierarchical forecasting, based on my paper with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. (Guess the odd guy out there!)
+It is called “thief” - an acronym for Temporal HIErarchical Forecasting. The idea is to take a seasonal time series, and compute all possible temporal aggregations that result in an integer number of observations per year. For example, a quarterly time series is aggregated to biannual and annual; while a monthly time series is aggregated to 2-monthly, quarterly, 4-monthly, biannual and annual.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Forecasting with R&#34; short course in Eindhoven</title>
+      <link>https://robjhyndman.com/hyndsight/eindhoven-course/</link>
+      <pubDate>Thu, 18 Aug 2016 00:09:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eindhoven-course/</guid>
+      <description>I will be giving my 3-day short-course/workshop on &amp;ldquo;Forecasting with R&amp;rdquo; in Eindhoven (Netherlands) from 19-21 October.
+Details at https://www.win.tue.nl/~adriemel/shortcourse.html
+Register here</description>
+    </item>
+    
+    <item>
+      <title>Statistics positions available at Monash University</title>
+      <link>https://robjhyndman.com/hyndsight/jobs2017/</link>
+      <pubDate>Wed, 27 Jul 2016 23:52:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jobs2017/</guid>
+      <description>We are hiring again, and looking for people in statistics, econometrics and related fields (such as actuarial science, machine learning, and business analytics). We have a strong business analytics group (with particular expertise in data visualization, machine learning, statistical computing, R, and forecasting), and it would be great to see it grow. The official advert follows.
+The Department of Econometrics and Business Statistics at Monash Business School in Melbourne, Australia, invites applications for full-time tenure-track positions at the Senior Lecturer level (equivalent to North American/European Assistant Professor with some post-doctoral academic experience) and Associate Professor level.</description>
+    </item>
+    
+    <item>
+      <title>Forecast v7 (part 2)</title>
+      <link>https://robjhyndman.com/hyndsight/forecast7-part-2/</link>
+      <pubDate>Wed, 01 Jun 2016 07:22:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast7-part-2/</guid>
+      <description>As mentioned in my previous post on the forecast package v7, the most visible feature was the introduction of ggplot2 graphics. This post briefly summarizes the remaining new features of forecast v7. library(forecast) library(ggplot2) tslm rewritten The tslm function is designed to fit linear models to time series data. It is intended to approximately mimic lm (and calls lm to do the estimation), but to package the output to remember the ts attributes.</description>
+    </item>
+    
+    <item>
+      <title>Explore Australian Elections Data with R</title>
+      <link>https://robjhyndman.com/hyndsight/eechidna/</link>
+      <pubDate>Fri, 27 May 2016 04:07:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eechidna/</guid>
+      <description>This is a guest post by my colleague Professor Di Cook, cross-posted from her Visiphilia blog. Di and I are two of the authors of the new eechidna package for R, now on CRAN.The eechidna package has just been posted on CRAN, in time for the longest election campaign in Australia since the 1950s. The next Federal election scheduled for 2nd July was announced a few weeks ago. A little before this a handful of academics met at the first ever Australian ROpenSci Unnconference at the Microsoft headquarters in Brisbane in an event primarily organised by students at the Queensland University of Technology.</description>
+    </item>
+    
+    <item>
+      <title>forecast v7 and ggplot2 graphics</title>
+      <link>https://robjhyndman.com/hyndsight/forecast7-ggplot2/</link>
+      <pubDate>Mon, 09 May 2016 05:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast7-ggplot2/</guid>
+      <description>Version 7 of the forecast package was released on CRAN about a month ago, but I’m only just getting around to posting about the new features.
+The most visible feature was the introduction of ggplot2 graphics. I first wrote the forecast package before ggplot2 existed, and so only base graphics were available. But I figured it was time to modernize and use the nice features available from ggplot2. The following examples illustrate the main new graphical functionality.</description>
+    </item>
+    
+    <item>
+      <title>Melbourne Data Science Initiative 2016</title>
+      <link>https://robjhyndman.com/hyndsight/medascin2016/</link>
+      <pubDate>Wed, 13 Apr 2016 03:51:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/medascin2016/</guid>
+      <description>In just over three weeks, the inaugural MeDaScIn event will take place. This is an initiative to grow the talent pool of local data scientists and to promote Melbourne as a world city of excellence in Data Science.
+The main event takes place on Friday 6th May, with lots of interesting sounding titles and speakers from business and government. I&amp;rsquo;m the only academic speaker on the program, giving the closing talk on &amp;ldquo;Automatic FoRecasting&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Sample quantiles 20 years later</title>
+      <link>https://robjhyndman.com/hyndsight/sample-quantiles-20-years-later/</link>
+      <pubDate>Mon, 28 Mar 2016 04:35:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/sample-quantiles-20-years-later/</guid>
+      <description>Almost exactly 20 years ago I wrote a paper with Yanan Fan on how sample quantiles are computed in statistical software. It was cited 43 times in the first 10 years, and 457 times in the next 10 years, making it my third paper to receive 500+ citations.
+So what happened in 2006 to suddenly increase the citations? I think it was a combination of things: I wrote a new quantile() function (with Ivan Frohne) which made it into R core v2.</description>
+    </item>
+    
+    <item>
+      <title>Plotting overlapping prediction intervals</title>
+      <link>https://robjhyndman.com/hyndsight/overlappingpi/</link>
+      <pubDate>Wed, 23 Mar 2016 10:19:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/overlappingpi/</guid>
+      <description>I often see figures with two sets of prediction intervals plotted on the same graph using different line types to distinguish them. The results are almost always unreadable. A better way to do this is to use semi-transparent shaded regions. Here is an example showing two sets of forecasts for the Nile River flow.
+library(forecast) f1 = forecast(auto.arima(Nile, lambda=0), h=20, level=95) f2 = forecast(ets(Nile), h=20, level=95) plot(f1, shadecol=rgb(0,0,1,.4), flwd=1, main=&amp;quot;Forecasts of Nile River flow&amp;quot;, xlab=&amp;quot;Year&amp;quot;, ylab=&amp;quot;Billions of cubic metres&amp;quot;) polygon(c(time(f2$mean),rev(time(f2$mean))), c(f2$lower,rev(f2$upper)), col=rgb(1,0,0,.</description>
+    </item>
+    
+    <item>
+      <title>rOpenSci unconference in Brisbane, 21-22 April 2016</title>
+      <link>https://robjhyndman.com/hyndsight/ropensci2016/</link>
+      <pubDate>Mon, 21 Mar 2016 00:31:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ropensci2016/</guid>
+      <description>The first rOpenSci unconference in Australia will be held on Thursday and Friday (April 21-22) in Brisbane, at the Microsoft Innovation Centre.
+This event will bring together researchers, developers, data scientists and open data enthusiasts from industry, government and university. The aim is to conceptualise and develop R-based tools that address current challenges in data science, open science and reproducibility.
+Past examples of the projects can here, here, and here. Also here.</description>
+    </item>
+    
+    <item>
+      <title>Monash Business Analytics Team Profile</title>
+      <link>https://robjhyndman.com/hyndsight/monash-insider/</link>
+      <pubDate>Wed, 09 Mar 2016 07:06:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-insider/</guid>
+      <description>Our research group been growing lately, as you can see below! We were featured in the latest issue of the Monash newsletter The Insider. Check it out.</description>
+    </item>
+    
+    <item>
+      <title>Model variance for ARIMA models</title>
+      <link>https://robjhyndman.com/hyndsight/model-variance-for-arima-models/</link>
+      <pubDate>Fri, 04 Mar 2016 11:15:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/model-variance-for-arima-models/</guid>
+      <description>From today&amp;rsquo;s email:
+ I wanted to ask you about your R forecast package, in particular the Arima() function. We are using this function to fit an ARIMAX model and produce model estimates and standard errors, which in turn can be used to get p-values and later model forecasts. To double check our work, we are also fitting the same model in SAS using PROC ARIMA and comparing model coefficients and output.</description>
+    </item>
+    
+    <item>
+      <title>Making data analysis easier: Hadley Wickham at WOMBAT2016</title>
+      <link>https://robjhyndman.com/hyndsight/wombat2016-hadley/</link>
+      <pubDate>Wed, 24 Feb 2016 22:25:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wombat2016-hadley/</guid>
+      <description>Slides for Hadley&amp;rsquo;s talk
+The slides for all the other talks from the workshop are also now online at wombat2016.org</description>
+    </item>
+    
+    <item>
+      <title>Starting a career in data science</title>
+      <link>https://robjhyndman.com/hyndsight/starting-a-career-in-data-science/</link>
+      <pubDate>Wed, 30 Dec 2015 04:29:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/starting-a-career-in-data-science/</guid>
+      <description>I received this email from one of my undergraduate students:
+ I&amp;rsquo;m writing to you asking for advice on how to start a career in Data Science. Other professions seem a bit more straight forward, in that accountants for example simply look for Internships and ways into companies from there. From my understanding, the nature of careers in data science seem to be on a project-to-project basis. I&amp;rsquo;m not sure how to get my foot stuck in the door.</description>
+    </item>
+    
+    <item>
+      <title>Making data analysis easier</title>
+      <link>https://robjhyndman.com/hyndsight/wombat2016/</link>
+      <pubDate>Sun, 20 Dec 2015 23:46:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wombat2016/</guid>
+      <description>Di Cook and I are organizing a workshop on &amp;ldquo;Making data analysis easier&amp;rdquo; for 18-19 February 2016.
+We are calling it WOMBAT2016, which an acronym for Workshop Organized by the Monash Business Analytics Team. Appropriately, it will be held at the Melbourne Zoo. Our plan is to make these workshops an annual event.
+Some details are available on the workshop website. Key features are:
+ Hadley Wickham is our keynote speaker.</description>
+    </item>
+    
+    <item>
+      <title>RStudio just keeps getting better</title>
+      <link>https://robjhyndman.com/hyndsight/rstudio-just-keeps-getting-better/</link>
+      <pubDate>Fri, 11 Dec 2015 05:36:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rstudio-just-keeps-getting-better/</guid>
+      <description>RStudio has been a life-changer for the way I work, and for how I teach data analysis. I still have a couple of minor frustrations with it, but they are slowly disappearing as RStudio adds features.
+I use dual monitors and I like to code on one monitor and have the console and plots on the other monitor. Otherwise I see too little context, and long lines get wrapped making the code harder to read.</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s downloading the forecast package?</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-downloads/</link>
+      <pubDate>Wed, 09 Dec 2015 21:27:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-downloads/</guid>
+      <description>The github page for the forecast package currently shows the following information 
+Note the downloads figure: 264K/month. I know the package is popular, but that seems crazy. Also, the downloads figure on github only counts the downloads from the RStudio mirror, and ignores downloads from the other 125 mirrors around the world.Here are the top ten downloaded packages from the last month:
+library(cranlogs) cran_top_downloads(when=&#39;last-month&#39;) rank package count from to 1 zoo 308290 2015-11-09 2015-12-08 2 forecast 263797 2015-11-09 2015-12-08 3 Rcpp 260636 2015-11-09 2015-12-08 4 lmtest 258810 2015-11-09 2015-12-08 5 fpp 244989 2015-11-09 2015-12-08 6 expsmooth 244179 2015-11-09 2015-12-08 7 fma 243556 2015-11-09 2015-12-08 8 tseries 243172 2015-11-09 2015-12-08 9 stringi 199384 2015-11-09 2015-12-08 10 ggplot2 192072 2015-11-09 2015-12-08  OK, that is very weird.</description>
+    </item>
+    
+    <item>
+      <title>The hidden benefits of open-source software</title>
+      <link>https://robjhyndman.com/hyndsight/oss-benefits/</link>
+      <pubDate>Sun, 29 Nov 2015 23:22:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/oss-benefits/</guid>
+      <description>I&amp;rsquo;ve been having discussions with colleagues and university administration about the best way for universities to manage home-grown software.
+The traditional business model for software is that we build software and sell it to everyone willing to pay. Very often, that leads to a software company spin-off that has little or nothing to do with the university that nurtured the development. Think MATLAB, S-Plus, Minitab, SAS and SPSS, all of which grew out of universities or research institutions.</description>
+    </item>
+    
+    <item>
+      <title>Piecewise linear trends</title>
+      <link>https://robjhyndman.com/hyndsight/piecewise-linear-trends/</link>
+      <pubDate>Wed, 28 Oct 2015 02:43:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/piecewise-linear-trends/</guid>
+      <description>I prepared the following notes for a consulting client, and I thought they might be of interest to some other people too.
+Let \(y_t\) denote the value of the time series at time \(t\), and suppose we wish to fit a trend with correlated errors of the form  \[ y_t = f(t) + n_t, \]
+ where \(f(t)\) represents the possibly nonlinear trend and \(n_t\) is an autocorrelated error process.</description>
+    </item>
+    
+    <item>
+      <title>forecast package v6.2</title>
+      <link>https://robjhyndman.com/hyndsight/forecast6-2/</link>
+      <pubDate>Tue, 20 Oct 2015 06:39:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast6-2/</guid>
+      <description>It is a while since I last updated the CRAN version of the forecast package, so I uploaded the latest version (6.2) today. The github version remains the most up-to-date version and is already two commits ahead of the CRAN version.
+This update is mostly bug fixes and additional error traps. The full ChangeLog is listed below. Many unit tests added using testthat.
+ Fixed bug in ets() when very short seasonal series were passed in a data frame.</description>
+    </item>
+    
+    <item>
+      <title>Stanford seminar</title>
+      <link>https://robjhyndman.com/hyndsight/stanford-seminar/</link>
+      <pubDate>Wed, 07 Oct 2015 06:09:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stanford-seminar/</guid>
+      <description>I gave a seminar at Stanford today. Slides are below. It was definitely the most intimidating audience I&amp;rsquo;ve faced, with Jerome Friedman, Trevor Hastie, Brad Efron, Persi Diaconis, Susan Holmes, David Donoho and John Chambers all present (and probably other famous names I&amp;rsquo;ve missed).
+I&amp;rsquo;ll be giving essentially the same talk at UC Davis on Thursday.</description>
+    </item>
+    
+    <item>
+      <title>Reproducibility in computational research</title>
+      <link>https://robjhyndman.com/hyndsight/reproducibility/</link>
+      <pubDate>Fri, 25 Sep 2015 07:31:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/reproducibility/</guid>
+      <description>Jane Frazier spoke at our research team meeting today on &amp;ldquo;Reproducibility in computational research&amp;rdquo;. We had a very stimulating and lively discussion about the issues involved. One interesting idea was that reproducibility is on a scale, and we can all aim to move further along the scale towards making our own research more reproducible. For example
+ Can you reproduce your results tomorrow on the same computer with the same software installed?</description>
+    </item>
+    
+    <item>
+      <title>Chinese R conference</title>
+      <link>https://robjhyndman.com/hyndsight/chinese-r-conference/</link>
+      <pubDate>Thu, 24 Sep 2015 06:42:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/chinese-r-conference/</guid>
+      <description>I will be speaking at the Chinese R conference in Nanchang, to be held on 24-25 October, on &amp;ldquo;Forecasting Big Time Series Data using R&amp;rdquo;.
+Details (for those who can read Chinese) are at china-r.org.</description>
+    </item>
+    
+    <item>
+      <title>Upcoming talks in California</title>
+      <link>https://robjhyndman.com/hyndsight/upcoming-talks-in-california/</link>
+      <pubDate>Tue, 22 Sep 2015 06:41:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/upcoming-talks-in-california/</guid>
+      <description>I&amp;rsquo;m back in California for the next couple of weeks, and will give the following talk at Stanford and UC-Davis.
+Optimal forecast reconciliation for big time series data Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Mathematical annotations on R plots</title>
+      <link>https://robjhyndman.com/hyndsight/latex2exp/</link>
+      <pubDate>Wed, 02 Sep 2015 07:17:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/latex2exp/</guid>
+      <description>I’ve always struggled with using plotmath via the expression function in R for adding mathematical notation to axes or legends. For some reason, the most obvious way to write something never seems to work for me and I end up using trial and error in a loop with far too many iterations.
+So I am very happy to see the new latex2exp package available which translates LaTeX expressions into a form suitable for R graphs.</description>
+    </item>
+    
+    <item>
+      <title>Murphy diagrams in R</title>
+      <link>https://robjhyndman.com/hyndsight/murphy-diagrams/</link>
+      <pubDate>Thu, 16 Jul 2015 07:57:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/murphy-diagrams/</guid>
+      <description>At the recent International Symposium on Forecasting, held in Riverside, California, Tillman Gneiting gave a great talk on “Evaluating forecasts: why proper scoring rules and consistent scoring functions matter”. It will be the subject of an IJF invited paper in due course.
+One of the things he talked about was the “Murphy diagram” for comparing forecasts, as proposed in Ehm et al (2015). Here’s how it works for comparing mean forecasts.</description>
+    </item>
+    
+    <item>
+      <title>Useful tutorials</title>
+      <link>https://robjhyndman.com/hyndsight/useful-tutorials/</link>
+      <pubDate>Wed, 01 Jul 2015 03:28:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/useful-tutorials/</guid>
+      <description>There are some tools that I use regularly, and I would like my research students and post-docs to learn them too. Here are some great online tutorials that might help.
+ ggplot tutorial from Winston Chang
+ Writing an R package from Karl Broman
+ Rmarkdown from RStudio
+ Shiny from RStudio
+ git/github guide from Karl Broman
+ minimal make tutorial from Karl Broman
+  </description>
+    </item>
+    
+    <item>
+      <title>My Yahoo talk is now online</title>
+      <link>https://robjhyndman.com/hyndsight/yahoo2015/</link>
+      <pubDate>Mon, 29 Jun 2015 17:12:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/yahoo2015/</guid>
+      <description>Last week I gave a talk in the Yahoo! Big Thinkers series. The video of the talk is now online and embedded below.</description>
+    </item>
+    
+    <item>
+      <title>North American seminars: June 2015</title>
+      <link>https://robjhyndman.com/hyndsight/northamerica2015/</link>
+      <pubDate>Tue, 16 Jun 2015 03:11:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/northamerica2015/</guid>
+      <description>For the next few weeks I am travelling in North America and will be giving the following talks.
+ 19 June: Southern California Edison, Rosemead CA. &amp;ldquo;Probabilistic forecasting of peak electricity demand&amp;rdquo;.
+ 23 June: International Symposium on Forecasting, Riverside CA. &amp;ldquo;MEFM: An R package for long-term probabilistic forecasting of electricity demand&amp;rdquo;.
+ 25 June: Google, Mountain View, CA. &amp;ldquo;Automatic algorithms for time series forecasting&amp;rdquo;.
+ 26 June: Yahoo, Sunnyvale, CA.</description>
+    </item>
+    
+    <item>
+      <title>R vs Autobox vs ForecastPro vs ...</title>
+      <link>https://robjhyndman.com/hyndsight/show-me-the-evidence/</link>
+      <pubDate>Wed, 03 Jun 2015 01:04:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/show-me-the-evidence/</guid>
+      <description>Every now and then a commercial software vendor makes claims on social media about how their software is so much better than the forecast package for R, but no details are provided.
+There are lots of reasons why you might select a particular software solution, and R isn&amp;rsquo;t for everyone. But anyone claiming superiority should at least provide some evidence rather than make unsubstantiated claims.The M3 forecasting competition was organized by Spyros Makridakis and Michèle Hibon.</description>
+    </item>
+    
+    <item>
+      <title>A new R package for detecting unusual time series</title>
+      <link>https://robjhyndman.com/hyndsight/anomalous/</link>
+      <pubDate>Sun, 31 May 2015 05:59:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/anomalous/</guid>
+      <description>The anomalous package provides some tools to detect unusual time series in a large collection of time series. This is joint work with Earo Wang (an honours student at Monash) and Nikolay Laptev (from Yahoo Labs). Yahoo is interested in detecting unusual patterns in server metrics. The package is based on this paper with Earo and Nikolay.
+The basic idea is to measure a range of features of the time series (such as strength of seasonality, an index of spikiness, first order autocorrelation, etc.</description>
+    </item>
+    
+    <item>
+      <title>New in forecast 6.0</title>
+      <link>https://robjhyndman.com/hyndsight/forecast6/</link>
+      <pubDate>Fri, 15 May 2015 05:01:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast6/</guid>
+      <description>This week I uploaded a new version of the forecast package to CRAN. As there were a lot of changes, I decided to increase the version number to 6.0.
+The changes are all outlined in the ChangeLog file as usual. I will highlight some of the more important changes since v5.0 here.ETS One of the most used functions in the package is ets() and it provides a stock forecasting engine for many organizations.</description>
+    </item>
+    
+    <item>
+      <title>Feeling the FPP love</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-reviews/</link>
+      <pubDate>Fri, 10 Apr 2015 04:43:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-reviews/</guid>
+      <description>It is now exactly 12 months since the print version of my forecasting textbook with George Athanasopoulos was released on Amazon.com. Although the book is freely available online, it seems that a lot of people still like to buy print books.It&amp;rsquo;s nice to see that it has been getting some good reviews. It is rated 4.6 stars on Amazon.com with 6 out of 8 reviewers giving it 5 stars (the 3 reviewers on Amazon.</description>
+    </item>
+    
+    <item>
+      <title>A new open source data set for detecting time series outliers</title>
+      <link>https://robjhyndman.com/hyndsight/yahoo-data/</link>
+      <pubDate>Wed, 01 Apr 2015 02:33:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/yahoo-data/</guid>
+      <description>Yahoo Labs has just released an interesting new data set useful for research on detecting anomalies (or outliers) in time series data. There are many contexts in which anomaly detection is important. For Yahoo, the main use case is in detecting unusual traffic on Yahoo servers.The data set comprises real traffic to Yahoo services, along with some synthetic data. There are 367 time series in the data set, each of which contains between 741 and 1680 observations recorded at regular intervals.</description>
+    </item>
+    
+    <item>
+      <title>Dark themes for writing</title>
+      <link>https://robjhyndman.com/hyndsight/dark-themes-for-writing/</link>
+      <pubDate>Wed, 18 Mar 2015 04:55:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/dark-themes-for-writing/</guid>
+      <description>I spend much of my day sitting in front of a screen, coding or writing. To limit the strain on my eyes, I use a dark theme as much as possible. That is, I write with light colored text on a dark background. I don&amp;rsquo;t know why this is not the default in more software as it makes a big difference after a few hours of writing.
+Most of the time, I am writing using either Sublime Text, RStudio or TeXstudio.</description>
+    </item>
+    
+    <item>
+      <title>RSS feeds for statistics and related journals</title>
+      <link>https://robjhyndman.com/hyndsight/rss-feeds/</link>
+      <pubDate>Fri, 23 Jan 2015 23:48:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rss-feeds/</guid>
+      <description>I&amp;rsquo;ve now resurrected the collection of research journals that I follow, and set it up as a shared collection in feedly. So anyone can easily subscribe to all of the same journals, or select a subset of them, to follow on feedly.There are about 90 journals on the list, mostly in statistics, but some from machine learning, operations research and econometrics. I excluded probability journals, and areas of application that are well outside my research interests (such as bioinformatics, psychology and pharmacology).</description>
+    </item>
+    
+    <item>
+      <title>Seminars in Taiwan</title>
+      <link>https://robjhyndman.com/hyndsight/seminars-in-taiwan/</link>
+      <pubDate>Mon, 05 Jan 2015 09:33:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seminars-in-taiwan/</guid>
+      <description>I&amp;rsquo;m currently visiting Taiwan and I&amp;rsquo;m giving two seminars while I&amp;rsquo;m here &amp;mdash; one at the National Tsing Hua University in Hsinchu, and the other at Academia Sinica in Taipei. Details are below for those who might be nearby.Automatic Time Series Forecasting College of Technology Management, Institute of Service Science, National Tsing Hua University, Hsinchu 時間及地點：2015.1.7 (Wed.) 5pm @ TSMC building, 6F, room 622. 台積館6F孫運璿紀念中心 Many applications require a large number of time series to be forecast completely automatically.</description>
+    </item>
+    
+    <item>
+      <title>Di Cook is moving to Monash</title>
+      <link>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</link>
+      <pubDate>Wed, 24 Dec 2014 05:29:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</guid>
+      <description>I&amp;rsquo;m delighted that Professor Dianne Cook will be joining Monash University in July 2015 as a Professor of Business Analytics. Di is an Australian who has worked in the US for the past 25 years, mostly at Iowa State University. She is moving back to Australia and joining the Department of Econometrics and Business Statistics in the Monash Business School, as part of our initiative in Business Analytics.
+Di is a world leader in data visu­al­iza­tion, and is well-​​known for her work on inter­ac­tive graph­ics.</description>
+    </item>
+    
+    <item>
+      <title>New R package for electricity forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/mefm/</link>
+      <pubDate>Wed, 17 Dec 2014 06:24:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/mefm/</guid>
+      <description>Shu Fan and I have developed a model for electricity demand forecasting that is now widely used in Australia for long-term forecasting of peak electricity demand. It has become known as the &amp;ldquo;Monash Electricity Forecasting Model&amp;rdquo;. We have decided to release an R package that implements our model so that other people can easily use it. The package is called &amp;ldquo;MEFM&amp;rdquo; and is available on github. We will probably also put in on CRAN eventually.</description>
+    </item>
+    
+    <item>
+      <title>Am I a data scientist?</title>
+      <link>https://robjhyndman.com/hyndsight/am-i-a-data-scientist/</link>
+      <pubDate>Tue, 09 Dec 2014 00:06:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/am-i-a-data-scientist/</guid>
+      <description>Last night I gave a very short talk (less than 5 minutes) at the Melbourne Analytics Charity Christmas Gala, a combined event of the Statistical Society of Australia, Data Science Melbourne, Big Data Analytics and Melbourne Users of R Network.
+This is (roughly) what I said.Statisticians seem to go through regular periods of existential crisis as they worry about other groups of people who do data analysis. A common theme is: all these other people (usually computer scientists) are doing our job!</description>
+    </item>
+    
+    <item>
+      <title>New Australian data on the HMD</title>
+      <link>https://robjhyndman.com/hyndsight/hmd-australia/</link>
+      <pubDate>Thu, 27 Nov 2014 02:33:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hmd-australia/</guid>
+      <description>The Human Mortality Database is a wonderful resource for anyone interested in demographic data. It is a carefully curated collection of high quality deaths and population data from 37 countries, all in a consistent format with consistent definitions. I have used it many times and never cease to be amazed at the care taken to maintain such a great resource.
+The data are continually being revised and updated. Today the Australian data has been updated to 2011.</description>
+    </item>
+    
+    <item>
+      <title>Visualization of probabilistic forecasts</title>
+      <link>https://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/</link>
+      <pubDate>Fri, 21 Nov 2014 06:40:51 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/</guid>
+      <description>This week my research group discussed Adrian Raftery’s recent paper on “Use and Communication of Probabilistic Forecasts” which provides a fascinating but brief survey of some of his work on modelling and communicating uncertain futures. Coincidentally, today I was also sent a copy of David Spiegelhalter’s paper on “Visualizing Uncertainty About the Future”. Both are well-worth reading.
+It made me think about my own efforts to communicate future uncertainty through graphics.</description>
+    </item>
+    
+    <item>
+      <title>Seasonal periods</title>
+      <link>https://robjhyndman.com/hyndsight/seasonal-periods/</link>
+      <pubDate>Fri, 07 Nov 2014 01:43:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seasonal-periods/</guid>
+      <description>I get questions about this almost every week. Here is an example from a recent comment on this blog:
+ I have two large time series data. One is separated by seconds intervals and the other by minutes. The length of each time series is 180 days. I’m using R (3.1.1) for forecasting the data. I’d like to know the value of the “frequency” argument in the ts() function in R, for each data set.</description>
+    </item>
+    
+    <item>
+      <title>Jobs at Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/jobs-at-amazon/</link>
+      <pubDate>Fri, 31 Oct 2014 02:13:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jobs-at-amazon/</guid>
+      <description>I do not normally post job adverts, but this was very specifically targeted to &amp;ldquo;applied time series candidates&amp;rdquo; so I thought it might be of sufficient interest to readers of this blog.Here is an excerpt from an email I received from someone at Amazon:
+ Amazon is aggressively recruiting in the data sciences, and we have found that applied economists compare quite favorably with the machine learning specialists and statisticians that are sometimes recruited for such roles.</description>
+    </item>
+    
+    <item>
+      <title>Prediction intervals too narrow</title>
+      <link>https://robjhyndman.com/hyndsight/narrow-pi/</link>
+      <pubDate>Wed, 22 Oct 2014 05:25:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/narrow-pi/</guid>
+      <description>Almost all prediction intervals from time series models are too narrow. This is a well-known phenomenon and arises because they do not account for all sources of uncertainty. In my 2002 IJF paper, we measured the size of the problem by computing the actual coverage percentage of the prediction intervals on hold-out samples. We found that for ETS models, nominal 95% intervals may only provide coverage between 71% and 87%. The difference is due to missing sources of uncertainty.</description>
+    </item>
+    
+    <item>
+      <title>hts with regressors</title>
+      <link>https://robjhyndman.com/hyndsight/hts-with-regressors/</link>
+      <pubDate>Mon, 20 Oct 2014 02:08:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hts-with-regressors/</guid>
+      <description>The hts package for R allows for forecasting hierarchical and grouped time series data. The idea is to generate forecasts for all series at all levels of aggregation without imposing the aggregation constraints, and then to reconcile the forecasts so they satisfy the aggregation constraints. (An introduction to reconciling hierarchical and grouped time series is available in this Foresight paper.)
+The base forecasts can be generated using any method, with ETS models and ARIMA models provided as options in the forecast.</description>
+    </item>
+    
+    <item>
+      <title>TBATS with regressors</title>
+      <link>https://robjhyndman.com/hyndsight/tbats-with-regressors/</link>
+      <pubDate>Mon, 06 Oct 2014 00:57:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tbats-with-regressors/</guid>
+      <description>I&amp;rsquo;ve received a few emails about including regression variables (i.e., covariates) in TBATS models. As TBATS models are related to ETS models, tbats() is unlikely to ever include covariates as explained here. It won&amp;rsquo;t actually complain if you include an xreg argument, but it will ignore it.
+When I want to include covariates in a time series model, I tend to use auto.arima() with covariates included via the xreg argument. If the time series has multiple seasonal periods, I use Fourier terms as additional covariates.</description>
+    </item>
+    
+    <item>
+      <title>FPP now available as a downloadable e-book</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-e-book/</link>
+      <pubDate>Sun, 21 Sep 2014 01:25:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-e-book/</guid>
+      <description>My forecasting textbook with George Athanasopoulos is already available online (for free), and in print via Amazon (for under $40). Now we have made it available as a downloadable e-book via Google Books (for $15.55). The Google Books version is identical to the print version on Amazon (apart from a few typos that have been fixed).
+To use the e-book version on an iPad or Android tablet, you need to have the Google Books app installed [iPad, Android].</description>
+    </item>
+    
+    <item>
+      <title>Generating quantile forecasts in R</title>
+      <link>https://robjhyndman.com/hyndsight/quantile-forecasts-in-r/</link>
+      <pubDate>Mon, 08 Sep 2014 05:36:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/quantile-forecasts-in-r/</guid>
+      <description>From today’s email:
+ I have just finished reading a copy of ‘Forecasting:Principles and Practice’ and I have found the book really interesting. I have particularly enjoyed the case studies and focus on practical applications.
+After finishing the book I have joined a forecasting competition to put what I’ve learnt to the test. I do have a couple of queries about the forecasting outputs required. The output required is a quantile forecast, is this the same as prediction intervals?</description>
+    </item>
+    
+    <item>
+      <title>Resources for the FPP book</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-resources/</link>
+      <pubDate>Wed, 03 Sep 2014 01:59:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-resources/</guid>
+      <description>The FPP resources page has recently been updated with several new additions including
+ R code for all examples in the book. This was already available within each chapter, but the examples have been collected into one file per chapter to save copying and pasting the various code fragments.
+ Slides from a course on Predictive Analytics from the University of Sydney.
+ Slides from a course on Economic Forecasting from the University of Hawaii.</description>
+    </item>
+    
+    <item>
+      <title>A new candidate for worst figure</title>
+      <link>https://robjhyndman.com/hyndsight/worst-figure/</link>
+      <pubDate>Mon, 01 Sep 2014 05:03:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/worst-figure/</guid>
+      <description>Today I read a paper that had been submitted to the IJF which included the following figure
+
+along with several similar plots. (Click for a larger version.) I haven&amp;rsquo;t seen anything this bad for a long time. In fact, I think I would find it very difficult to reproduce using R, or even Excel (which is particularly adept at bad graphics).
+A few years ago I produced &amp;ldquo;Twenty rules for good graphics&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with R in WA</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/</link>
+      <pubDate>Sun, 24 Aug 2014 22:53:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/</guid>
+      <description>On 23-25 September, I will be running a 3-day workshop in Perth on &amp;ldquo;Forecasting: principles and practice&amp;rdquo; mostly based on my book of the same name.
+Workshop participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed. Some prior experience in R is highly desirable.
+Venue: The University Club, University of Western Australia, Nedlands WA.</description>
+    </item>
+    
+    <item>
+      <title>GEFCom 2014 energy forecasting competition is underway</title>
+      <link>https://robjhyndman.com/hyndsight/gefcom-2014/</link>
+      <pubDate>Mon, 18 Aug 2014 05:44:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gefcom-2014/</guid>
+      <description>GEFCom 2014 is the most advanced energy forecasting competition ever organized, both in terms of the data involved, and in terms of the way the forecasts will be evaluated.
+So everyone interested in energy forecasting should head over to the competition webpage and start forecasting: www.gefcom.org.
+This time, the competition is hosted on CrowdANALYTIX rather than Kaggle.
+Highlights of GEFCom2014:
+ An upgraded edition from GEFCom2012
+ Four tracks: electric load, electricity price, wind power and solar power forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Visit of Di Cook</title>
+      <link>https://robjhyndman.com/hyndsight/visit-of-di-cook/</link>
+      <pubDate>Tue, 12 Aug 2014 23:28:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/visit-of-di-cook/</guid>
+      <description>Next week, Professor Di Cook from Iowa State University is visiting my research group at Monash University. Di is a world leader in data visualization, and is especially well-known for her work on interactive graphics and the XGobi and GGobi software. See her book with Deb Swayne for details.
+For those wanting to hear her speak, read on.Research seminar She will be giving a seminar at 2pm on Monday 18 August at the Monash Clayton campus (Rm E457, Menzies Building 11).</description>
+    </item>
+    
+    <item>
+      <title>Minimal reproducible examples</title>
+      <link>https://robjhyndman.com/hyndsight/minimal-reproducible-examples/</link>
+      <pubDate>Mon, 11 Aug 2014 04:54:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/minimal-reproducible-examples/</guid>
+      <description>I occasionally get emails from people thinking they have found a bug in one of my R packages, and I usually have to reply asking them to provide a minimal reproducible example (MRE). This post is to provide instructions on how to create a MRE.Bug reports on github, not email First, if you think there is a bug, please don&amp;rsquo;t send me emails. Instead, use the bug-reporting facility on github.</description>
+    </item>
+    
+    <item>
+      <title>Coherent population forecasting using R</title>
+      <link>https://robjhyndman.com/hyndsight/coherent-population-forecasting/</link>
+      <pubDate>Thu, 24 Jul 2014 02:03:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/coherent-population-forecasting/</guid>
+      <description>This is an example of how to use the demography package in R for stochastic population forecasting with coherent components. It is based on the papers by Hyndman and Booth (IJF 2008) and Hyndman, Booth and Yasmeen (Demography 2013). I will use Australian data from 1950 to 2009 and forecast the next 50 years.
+In demography, &amp;ldquo;coherent&amp;rdquo; forecasts are where male and females (or other sub-groups) do not diverge over time.</description>
+    </item>
+    
+    <item>
+      <title>Plotting the characteristic roots for ARIMA models</title>
+      <link>https://robjhyndman.com/hyndsight/arma-roots/</link>
+      <pubDate>Wed, 23 Jul 2014 07:57:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/arma-roots/</guid>
+      <description>When modelling data with ARIMA models, it is sometimes useful to plot the inverse characteristic roots. The following functions will compute and plot the inverse roots for any fitted ARIMA model (including seasonal models).# Compute AR roots arroots &amp;lt;- function(object) { if(!(&amp;quot;Arima&amp;quot; %in% class(object)) &amp;amp; !(&amp;quot;ar&amp;quot; %in% class(object))) stop(&amp;quot;object must be of class Arima or ar&amp;quot;) if(&amp;quot;Arima&amp;quot; %in% class(object)) parvec &amp;lt;- object$model$phi else parvec &amp;lt;- object$ar if(length(parvec) &amp;gt; 0) { last.</description>
+    </item>
+    
+    <item>
+      <title>Variations on rolling forecasts</title>
+      <link>https://robjhyndman.com/hyndsight/rolling-forecasts/</link>
+      <pubDate>Tue, 15 Jul 2014 23:49:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rolling-forecasts/</guid>
+      <description>Rolling forecasts are commonly used to compare time series models. Here are a few of the ways they can be computed using R. I will use ARIMA models as a vehicle of illustration, but the code can easily be adapted to other univariate time series models.One-step forecasts without re-estimation The simplest approach is to estimate the model on a single set of training data, and then compute one-step forecasts on the remaining test data.</description>
+    </item>
+    
+    <item>
+      <title>Varian on big data</title>
+      <link>https://robjhyndman.com/hyndsight/varian-2014/</link>
+      <pubDate>Sun, 15 Jun 2014 22:45:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/varian-2014/</guid>
+      <description>Last week my research group discussed Hal Varian&amp;rsquo;s interesting new paper on &amp;ldquo;Big data: new tricks for econometrics&amp;rdquo;, Journal of Economic Perspectives, 28(2): 3-28.
+It&amp;rsquo;s a nice introduction to trees, bagging and forests, plus a very brief entree to the LASSO and the elastic net, and to slab and spike regression. Not enough to be able to use them, but ok if you&amp;rsquo;ve no idea what they are. It was more disappointing on boosting (completely ignoring the fact that boosting can be applied in a regression context as well as a classification context), and his comments on causality seemed curiously naive.</description>
+    </item>
+    
+    <item>
+      <title>Specifying complicated groups of time series in hts</title>
+      <link>https://robjhyndman.com/hyndsight/gts/</link>
+      <pubDate>Sun, 15 Jun 2014 03:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gts/</guid>
+      <description>With the latest version of the hts package for R, it is now possible to specify rather complicated grouping structures relatively easily.
+All aggregation structures can be represented as hierarchies or as cross-products of hierarchies. For example, a hierarchical time series may be based on geography: country, state, region, store. Often there is also a separate product hierarchy: product groups, product types, packet size. Forecasts of all the different types of aggregation are required; e.</description>
+    </item>
+    
+    <item>
+      <title>European talks. June-July 2014</title>
+      <link>https://robjhyndman.com/hyndsight/europe2014/</link>
+      <pubDate>Sat, 14 Jun 2014 06:44:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/europe2014/</guid>
+      <description>For the next month I am travelling in Europe and will be giving the following talks.
+17 June. Challenges in forecasting peak electricity demand. Energy Forum, Sierre, Valais/Wallis, Switzerland.
+20 June. Common functional principal component models for mortality forecasting. International Workshop on Functional and Operatorial Statistics. Stresa, Italy.
+24-25 June. Functional time series with applications in demography. Humboldt University, Berlin.
+1 July. Fast computation of reconciled forecasts in hierarchical and grouped time series.</description>
+    </item>
+    
+    <item>
+      <title>ARIMA models with long lags</title>
+      <link>https://robjhyndman.com/hyndsight/arima-models-with-long-lags/</link>
+      <pubDate>Thu, 08 May 2014 03:43:23 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/arima-models-with-long-lags/</guid>
+      <description>Today&amp;rsquo;s email question:
+ I work within a government budget office and sometimes have to forecast fairly simple time series several quarters into the future. Auto.arima() works great and I often get something along the lines of: ARIMA(0,0,1)(1,1,0)[12] with drift as the lowest AICc.
+However, my boss (who does not use R) takes issue with low-order AR and MA because &amp;ldquo;you&amp;rsquo;re essentially using forecasted data to make your forecast.&amp;rdquo; His models include AR(10) MA(12)s etc.</description>
+    </item>
+    
+    <item>
+      <title>New jobs in business analytics at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/monash-business-analytics/</link>
+      <pubDate>Sun, 04 May 2014 12:05:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-business-analytics/</guid>
+      <description>We have an exciting new initiative at Monash University with some new positions in business analytics. This is part of a plan to strengthen our research and teaching in the data science/computational statistics area. We are hoping to make multiple appointments, at junior and senior levels. These are five-year appointments, but we hope that the positions will continue after that if we can secure suitable funding.What is business analytics? You can think of &amp;ldquo;business analytics&amp;rdquo; as the application of data analysis to business problems.</description>
+    </item>
+    
+    <item>
+      <title>Publishing an R package in the Journal of Statistical Software</title>
+      <link>https://robjhyndman.com/hyndsight/jss-rpackages/</link>
+      <pubDate>Thu, 24 Apr 2014 05:41:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/jss-rpackages/</guid>
+      <description>I&amp;rsquo;ve been an editor of JSS for the last few years, and as a result I tend to get email from people asking me about publishing papers describing R packages in JSS. So for all those wondering, here are some general comments.JSS prefers to publish papers about packages where the package is on CRAN and has been there long enough to have matured (i.e., obvious bugs ironed out and a few active users).</description>
+    </item>
+    
+    <item>
+      <title>Seven forecasting blogs</title>
+      <link>https://robjhyndman.com/hyndsight/seven-forecasting-blogs/</link>
+      <pubDate>Tue, 22 Apr 2014 00:33:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seven-forecasting-blogs/</guid>
+      <description>There are several other blogs on forecasting that readers might be interested in. Here are seven worth following:
+ No Hesitations by Francis Diebold (Professor of Economics, University of Pennsylvania). Diebold needs no introduction to forecasters. He primarily covers forecasting in economics and finance, but also xkcd cartoons, graphics, research issues, etc.
+ Econometrics Beat by Dave Giles. Dave is a professor of economics at the University of Victoria (Canada), formerly from my own department at Monash University (Australia), and a native New Zealander.</description>
+    </item>
+    
+    <item>
+      <title>Errors on percentage errors</title>
+      <link>https://robjhyndman.com/hyndsight/smape/</link>
+      <pubDate>Wed, 16 Apr 2014 12:11:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/smape/</guid>
+      <description>The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &amp;ldquo;it has a bias favoring estimates that are below the actual values&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My forecasting book now on Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-amazon/</link>
+      <pubDate>Wed, 09 Apr 2014 00:15:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-amazon/</guid>
+      <description>For all those people asking me how to obtain a print version of my book &amp;ldquo;Forecasting: principles and practice&amp;rdquo; with George Athanasopoulos, you now can.
+
+Order on Amazon.com
+Order on Amazon.co.uk
+Order on Amazon.fr
+The online book will continue to be freely available. The print version of the book is intended to help fund the development of the OTexts platform.
+The price is US$45, £27 or €35.
+Compare that to $195 for my previous forecasting textbook, $150 for Fildes and Ord, or $182 for Gonzalez-Rivera.</description>
+    </item>
+    
+    <item>
+      <title>Job at Center for Open Science</title>
+      <link>https://robjhyndman.com/hyndsight/cos-job/</link>
+      <pubDate>Mon, 07 Apr 2014 22:36:23 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-job/</guid>
+      <description>This looks like an interesting job.
+ Dear Dr. Hyndman,
+I write from the Center for Open Science, a non-profit organization based in Charlottesville, Virginia in the United States, which is dedicated to improving the alignment between scientific values and scientific practices. We are dedicated to open source and open science.
+We are reaching out to you to find out if you know anyone who might be interested in our Statistical and Methodological Consultant position.</description>
+    </item>
+    
+    <item>
+      <title>Cover of my forecasting textbook</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-cover/</link>
+      <pubDate>Tue, 18 Mar 2014 06:17:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-cover/</guid>
+      <description>We now have a cover for the print version of my forecasting book with George Athanasopoulos.
+
+It should be on Amazon in a couple of weeks. The book is also freely available online.
+The cover was produced by Scarlett Rugers who I can happily recommend to anyone wanting a book cover designed.</description>
+    </item>
+    
+    <item>
+      <title>Fast computation of cross-validation in linear models</title>
+      <link>https://robjhyndman.com/hyndsight/loocv-linear-models/</link>
+      <pubDate>Mon, 17 Mar 2014 10:08:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/loocv-linear-models/</guid>
+      <description>The leave-one-out cross-validation statistic is given by
+ $$ \text{CV} = \frac{1}{N} \sum_{i=1}^N e_{[i]}^2, $$  where ${e_{[i]} = y_{i} - \hat{y}_{[i]}} $, the observations are given by $y_{1},\dots,y_{N}$, and $\hat{y}_{[i]}$ is the predicted value obtained when the model is estimated with the $i\text{th}$ case deleted. This is also sometimes known as the PRESS (Prediction Residual Sum of Squares) statistic.
+It turns out that for linear models, we do not actually have to estimate the model $N$ times, once for each omitted case.</description>
+    </item>
+    
+    <item>
+      <title>Testing for trend in ARIMA models</title>
+      <link>https://robjhyndman.com/hyndsight/arima-trends/</link>
+      <pubDate>Wed, 12 Mar 2014 22:24:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/arima-trends/</guid>
+      <description>Today&amp;rsquo;s email brought this one:
+ I was wondering if I could get your opinion on a particular problem that I have run into during the reviewing process of an article.
+Basically, I have an analysis where I am looking at a couple of time-series and I wanted to know if, over time there was an upward trend in the series. Inspection of the raw data suggests there is, but we want some statistical evidence for this.</description>
+    </item>
+    
+    <item>
+      <title>Unit root tests and ARIMA models</title>
+      <link>https://robjhyndman.com/hyndsight/unit-root-tests/</link>
+      <pubDate>Wed, 12 Mar 2014 11:22:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/unit-root-tests/</guid>
+      <description>An email I received today:
+ I have a small problem. I have a time series called x :
+ If I use the default values of auto.arima(x), the best model is an ARIMA(1,0,0)
+ However, I tried the function ndiffs(x, test=&amp;ldquo;adf&amp;rdquo;) and ndiffs(x, test=&amp;ldquo;kpss&amp;rdquo;) as the KPSS test seems to be the default value, and the number of difference is 0 for the kpss test (consistent with the results of auto.</description>
+    </item>
+    
+    <item>
+      <title>Using old versions of R packages</title>
+      <link>https://robjhyndman.com/hyndsight/old-r-packages/</link>
+      <pubDate>Mon, 10 Mar 2014 04:02:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/old-r-packages/</guid>
+      <description>I received this email yesterday:
+ I have been using your ‘forecast’ package for more than a year now. I was on R version 2.15 until last week, but I am having issues with lubridate package, hence decided to update R version to R 3.0.1. In our organization even getting an open source application require us to go through a whole lot of approval processes. I asked for R 3.0.1, before I get approval for 3.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting weekly data</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-weekly-data/</link>
+      <pubDate>Tue, 04 Mar 2014 23:57:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-weekly-data/</guid>
+      <description>This is another situation where Fourier terms are useful for handling the seasonality. Not only is the seasonal period rather long, it is non-integer (averaging 365.25/7 = 52.18). So ARIMA and ETS models do not tend to give good results, even with a period of 52 as an approximation.
+Regression with ARIMA errors The simplest approach is a regression with ARIMA errors. Here is an example using weekly data on US finished motor gasoline products supplied (in thousands of barrels per day) from February 1991 to May 2005.</description>
+    </item>
+    
+    <item>
+      <title>Fitting models to short time series</title>
+      <link>https://robjhyndman.com/hyndsight/short-time-series/</link>
+      <pubDate>Tue, 04 Mar 2014 02:20:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/short-time-series/</guid>
+      <description>Following my post on fitting models to long time series, I thought I&amp;rsquo;d tackle the opposite problem, which is more common in business environments.
+I often get asked how few data points can be used to fit a time series model. As with almost all sample size questions, there is no easy answer. It depends on the number of model parameters to be estimated and the amount of randomness in the data.</description>
+    </item>
+    
+    <item>
+      <title>More time series data online</title>
+      <link>https://robjhyndman.com/hyndsight/comp-engine/</link>
+      <pubDate>Thu, 27 Feb 2014 06:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/comp-engine/</guid>
+      <description>Earlier this week I had coffee with Ben Fulcher who told me about his online collection comprising about 30,000 time series, mostly medical series such as ECG measurements, meteorological series, birdsong, etc. There are some finance series, but not many other data from a business or economic context, although he does include my Time Series Data Library. In addition, he provides Matlab code to compute a large number of characteristics. Anyone wanting to test time series algorithms on a large collection of data should take a look.</description>
+    </item>
+    
+    <item>
+      <title>The forecast mean after back-transformation</title>
+      <link>https://robjhyndman.com/hyndsight/backtransforming/</link>
+      <pubDate>Tue, 25 Feb 2014 03:45:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/backtransforming/</guid>
+      <description>Many functions in the forecast package for R will allow a Box-Cox transformation. The models are fitted to the transformed data and the forecasts and prediction intervals are back-transformed. This preserves the coverage of the prediction intervals, and the back-transformed point forecast can be considered the median of the forecast densities (assuming the forecast densities on the transformed scale are symmetric). For many purposes, this is acceptable, but occasionally the mean forecast is required.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting within limits</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-within-limits/</link>
+      <pubDate>Fri, 21 Feb 2014 10:36:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-within-limits/</guid>
+      <description>It is common to want forecasts to be positive, or to require them to be within some specified range \([a,b]\). Both of these situations are relatively easy to handle using transformations.Positive forecasts To impose a positivity constraint, simply work on the log scale. With the forecast package in R, this can be handled by specifying the Box-Cox parameter \(\lambda=0\). For example, consider the real price of a dozen eggs (1900-1993; in cents):</description>
+    </item>
+    
+    <item>
+      <title>Backcasting in R</title>
+      <link>https://robjhyndman.com/hyndsight/backcasting/</link>
+      <pubDate>Thu, 20 Feb 2014 04:20:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/backcasting/</guid>
+      <description>Sometimes it is useful to “backcast” a time series — that is, forecast in reverse time. Although there are no in-built R functions to do this, it is very easy to implement. Suppose x is our time series and we want to backcast for \(h\) periods. Here is some code that should work for most univariate time series. The example is non-seasonal, but the code will also work with seasonal data.</description>
+    </item>
+    
+    <item>
+      <title>Global energy forecasting competitions</title>
+      <link>https://robjhyndman.com/hyndsight/gefcom2014/</link>
+      <pubDate>Wed, 19 Feb 2014 07:12:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gefcom2014/</guid>
+      <description>The 2012 GEFcom competition was a great success with several new innovative forecasting methods introduced. These have been published in the IJF as follows: Hong, Pinson and Fan. Global Energy Forecasting Competition 2012
+ Charleton and Singleton. A refined parametric model for short term load forecasting
+ Lloyd. GEFCom2012 hierarchical load forecasting: Gradient boosting machines and Gaussian processes
+ Nedelec, Cugliari and Goude: GEFCom2012: Electric load forecasting and backcasting with semi-parametric models</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical forecasting with hts v4.0 </title>
+      <link>https://robjhyndman.com/hyndsight/hts4/</link>
+      <pubDate>Wed, 12 Feb 2014 08:26:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hts4/</guid>
+      <description>A new version of my hts package for R is now on CRAN. It was completely re-written from scratch. Not a single line of code survived. There are some minor syntax changes, but the biggest change is speed and scope. This version is many times faster than the previous version and can handle hundreds of thousands of time series without complaining. The speed-up is due to some new research I am doing with Alan Lee (University of Auckland).</description>
+    </item>
+    
+    <item>
+      <title>Detecting seasonality</title>
+      <link>https://robjhyndman.com/hyndsight/detecting-seasonality/</link>
+      <pubDate>Sat, 08 Feb 2014 04:08:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/detecting-seasonality/</guid>
+      <description>I occasionally get email asking how to detect whether seasonality is present in a data set. Sometimes the period of the potential seasonality is known, but in other cases it is not.
+I’ve discussed before how to estimate an unknown seasonal period, and how to measure the strength of the seasonality. In this post, I want to look at testing if a series is seasonal when the potential period is known (e.</description>
+    </item>
+    
+    <item>
+      <title>Interview for the Capital of Statistics</title>
+      <link>https://robjhyndman.com/hyndsight/cos-interview/</link>
+      <pubDate>Wed, 05 Feb 2014 00:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-interview/</guid>
+      <description>Earo Wang recently interviewed me for the Chinese website Capital of Statistics. The English transcript of the intervew is on Earo&amp;rsquo;s personal website.
+This is the third interview I&amp;rsquo;ve done in the last 18 months. The others were for:
+ Data Mining Research. Republished in Amstat News.
+ DecisionStats.
+  </description>
+    </item>
+    
+    <item>
+      <title>Computational Actuarial Science with R</title>
+      <link>https://robjhyndman.com/hyndsight/caswithr/</link>
+      <pubDate>Mon, 03 Feb 2014 03:00:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/caswithr/</guid>
+      <description>I recently co-authored a chapter on &amp;ldquo;Prospective Life Tables&amp;rdquo; for this book, edited by Arthur Charpentier. R code to reproduce the figures and to complete the exercises for our chapter is now available on github. Code for the other chapters should also be available soon. The book can be pre-ordered on Amazon.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting in Granada</title>
+      <link>https://robjhyndman.com/hyndsight/granada-workshop/</link>
+      <pubDate>Fri, 31 Jan 2014 03:06:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/granada-workshop/</guid>
+      <description>In two weeks I am presenting a workshop at the University of Granada (Spain) on Automatic Time Series Forecasting.
+Unlike most of my talks, this is not intended to be primarily about my own research. Rather it is to provide a state-of-the-art overview of the topic (at a level suitable for Masters students in Computer Science). I thought I&amp;rsquo;d provide some historical perspective on the development of automatic time series forecasting, plus give some comments on the current best practices.</description>
+    </item>
+    
+    <item>
+      <title>Free books on statistical learning</title>
+      <link>https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/</link>
+      <pubDate>Thu, 30 Jan 2014 01:51:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/</guid>
+      <description>Hastie, Tibshirani and Friedman&amp;rsquo;s Elements of Statistical Learning first appeared in 2001 and is already a classic. It is my go-to book when I need a quick refresher on a machine learning algorithm. I like it because it is written using the language and perspective of statistics, and provides a very useful entry point into the literature of machine learning which has its own terminology for statistical concepts. A free downloadable pdf version is available on the website.</description>
+    </item>
+    
+    <item>
+      <title>Time series data in R</title>
+      <link>https://robjhyndman.com/hyndsight/time-series-data-in-r/</link>
+      <pubDate>Tue, 28 Jan 2014 22:21:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/time-series-data-in-r/</guid>
+      <description>There is no shortage of time series data available on the web for use in student projects, or self-learning, or to test out new forecasting algorithms. It is now relatively easy to access these data sets directly in R.M Competition data The 1001 series from the M-competition and the 3003 series from the M3-competition are available as part of the Mcomp package in R.
+DataMarket and Quandl Both DataMarket and Quandl contain many thousands of time series that can be downloaded directly into R.</description>
+    </item>
+    
+    <item>
+      <title>New in forecast 5.0</title>
+      <link>https://robjhyndman.com/hyndsight/forecast5/</link>
+      <pubDate>Mon, 27 Jan 2014 02:26:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast5/</guid>
+      <description>Last week, version 5.0 of the forecast package for R was released. There are a few new functions and changes made to the package, which is why I increased the version number to 5.0. Thanks to Earo Wang for helping with this new version.
+Handling missing values and outliers Data cleaning is often the first step that data scientists and analysts take to ensure statistical modelling is supported by good data.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on the Ljung-Box test</title>
+      <link>https://robjhyndman.com/hyndsight/ljung-box-test/</link>
+      <pubDate>Fri, 24 Jan 2014 03:54:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ljung-box-test/</guid>
+      <description>&lt;p&gt;It is common to use a Ljung-Box test to check that the residuals from a time series model resemble white noise. However, there is very little practical advice around about how to choose the number of lags for the test.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Looking for a new post-doc</title>
+      <link>https://robjhyndman.com/hyndsight/postdoc/</link>
+      <pubDate>Wed, 22 Jan 2014 02:50:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/postdoc/</guid>
+      <description>We are looking for a new post-doctoral research fellow to work on the project &amp;ldquo;Macroeconomic Forecasting in a Big Data World&amp;rdquo;. Details are given at the link below
+jobs.monash.edu.au/jobDetails.asp?sJobIDs=519824
+This is a two year position, funded by the Australian Research Council, and working with me, George Athanasopoulos, Farshid Vahid and Anastasios Panagiotelis. We are looking for someone with a PhD in econometrics, statistics or machine learning, who is well-trained in computationally intensive methods, and who has a background in at least one of time series analysis, macroeconomic modelling, or Bayesian econometrics.</description>
+    </item>
+    
+    <item>
+      <title>Estimating a nonlinear time series model in R</title>
+      <link>https://robjhyndman.com/hyndsight/nlts/</link>
+      <pubDate>Tue, 21 Jan 2014 04:24:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/nlts/</guid>
+      <description>There are quite a few R packages available for nonlinear time series analysis, but sometimes you need to code your own models. Here is a simple example to show how it can be done.
+The model is a first order threshold autoregression:
+ $$ y_t = \begin{cases} \alpha y_{t-1} + e_t &amp; \text{if $y_{t-1} \le r$}\\ \beta y_{t-1} + \gamma e_t &amp; \text{if $y_{t-1}r$} \end{cases} $$  where $e_t$ is a Gaussian white noise series with variance $\sigma^2$.</description>
+    </item>
+    
+    <item>
+      <title>Judgmental forecasting experiment</title>
+      <link>https://robjhyndman.com/hyndsight/judgmental-forecasting-experiment/</link>
+      <pubDate>Sun, 22 Dec 2013 06:21:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/judgmental-forecasting-experiment/</guid>
+      <description>The Centre for Forecasting at Lancaster University is conducting some research on judgmental forecasting and model selection. They hope to compare the performance of judgmental model selection with statistical model selection, in order to learn how to best design forecasting support systems. They would like forecasting students, practitioners and researchers to participate, and are offering £50 Amazon Gift Cards as prizes. Here is a brief description from Fotios Petropoulos: We are inviting you to participate in a web-based judgmental forecasting exercise.</description>
+    </item>
+    
+    <item>
+      <title>Three jobs at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</link>
+      <pubDate>Fri, 18 Oct 2013 04:02:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</guid>
+      <description>We are currently advertising for three academic positions, suitable for recent PhD graduates.
+Lecturer (Applied Statistics or Operations Research)  Five-year position with MAXIMA and the School of Mathematical Sciences
+ Two positions available.
+ Applications close 31 October.
+ More information.
+  Lecturer (Econometrics/Business Statistics)  Continuing position with the Department of Econometrics and Business Statistics
+ Applications close 31 January 2014.
+ More information.
+  Please don&amp;rsquo;t send any questions to me.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with daily data</title>
+      <link>https://robjhyndman.com/hyndsight/dailydata/</link>
+      <pubDate>Tue, 17 Sep 2013 00:26:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/dailydata/</guid>
+      <description>I&amp;rsquo;ve had several emails recently asking how to forecast daily data in R. Unless the time series is very long, the easiest approach is to simply set the frequency attribute to 7.
+y &amp;lt;- ts(x, frequency=7)  Then any of the usual time series forecasting methods should produce reasonable forecasts. For example
+library(forecast) fit &amp;lt;- ets(y) fc &amp;lt;- forecast(fit) plot(fc)  When the time series is long enough to take in more than a year, then it may be necessary to allow for annual seasonality as well as weekly seasonality.</description>
+    </item>
+    
+    <item>
+      <title>Reflections on UseR! 2013</title>
+      <link>https://robjhyndman.com/hyndsight/user2013/</link>
+      <pubDate>Fri, 12 Jul 2013 22:01:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/user2013/</guid>
+      <description>This week I&amp;rsquo;ve been at the R Users conference in Albacete, Spain. These conferences are a little unusual in that they are not really about research, unlike most conferences I attend. They provide a place for people to discuss and exchange ideas on how R can be used.
+Here are some thoughts and highlights of the conference, in no particular order. Håvard Rue spoke on Bayesian computing with INLA and the R-INLA package.</description>
+    </item>
+    
+    <item>
+      <title>Facts and fallacies of the AIC</title>
+      <link>https://robjhyndman.com/hyndsight/aic/</link>
+      <pubDate>Wed, 03 Jul 2013 21:19:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/aic/</guid>
+      <description>Akaike&amp;rsquo;s Information Criterion (AIC) is a very useful model selection tool, but it is not as well understood as it should be. I frequently read papers, or hear talks, which demonstrate misunderstandings or misuse of this important tool. The following points should clarify some aspects of the AIC, and hopefully reduce its misuse. The AIC is a penalized likelihood, and so it requires the likelihood to be maximized before it can be calculated.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting annual totals from monthly data</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</link>
+      <pubDate>Wed, 15 May 2013 06:39:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</guid>
+      <description>This question was posed on crossvalidated.com:
+ I have a monthly time series (for 2009-2012 non-stationary, with seasonality). I can use ARIMA (or ETS) to obtain point and interval forecasts for each month of 2013, but I am interested in forecasting the total for the whole year, including prediction intervals. Is there an easy way in R to obtain interval forecasts for the total for 2013?
+ I&amp;rsquo;ve come across this problem before in my consulting work, although I don&amp;rsquo;t think I&amp;rsquo;ve ever published my solution.</description>
+    </item>
+    
+    <item>
+      <title>My new forecasting book is finally finished</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-2/</link>
+      <pubDate>Sun, 21 Apr 2013 00:19:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-2/</guid>
+      <description>My new online forecasting book (written with George Athanasopoulos) is now completed. I previously described it on this blog nearly a year ago.
+In reality, an online book is never complete, and we plan to continually update it. But it is now at the point where it is suitable for course work, and contains exercises and references.
+We hope that users (especially other lecturers) will submit materials such as slides and exercises, that can be shared on the website.</description>
+    </item>
+    
+    <item>
+      <title>ETS models now in EViews 8</title>
+      <link>https://robjhyndman.com/hyndsight/eviews8/</link>
+      <pubDate>Thu, 28 Feb 2013 22:04:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eviews8/</guid>
+      <description>The ETS modelling framework developed in my 2002 IJF paper (with Koehler, Snyder and Grose), and in my 2008 Springer book (with Koehler, Ord and Snyder), is now available in EViews 8. I had no idea they were even working on it, so it was quite a surprise to be told that EViews now includes ETS models.Here is the blurb from the release notes:
+ EViews 8 now offers support for exponential smoothing using the dynamic nonlinear model framework of Hyndman, Koehler, et al.</description>
+    </item>
+    
+    <item>
+      <title>Removing white space around R figures</title>
+      <link>https://robjhyndman.com/hyndsight/crop-r-figures/</link>
+      <pubDate>Fri, 22 Feb 2013 00:22:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/crop-r-figures/</guid>
+      <description>When I want to insert figures generated in R into a LaTeX document, it looks better if I first remove the white space around the figure. Unfortunately, R does not make this easy as the graphs are generated to look good on a screen, not in a document.
+There are two things that can be done to fix this problem.First, you can reduce the white space generated by R. I use the following function when saving figures in R.</description>
+    </item>
+    
+    <item>
+      <title>Out-of-sample one-step forecasts</title>
+      <link>https://robjhyndman.com/hyndsight/out-of-sample-one-step-forecasts/</link>
+      <pubDate>Wed, 13 Feb 2013 23:30:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/out-of-sample-one-step-forecasts/</guid>
+      <description>It is common to fit a model using training data, and then to evaluate its performance on a test data set. When the data are time series, it is useful to compute one-step forecasts on the test data. For some reason, this is much more commonly done by people trained in machine learning rather than statistics.
+If you are using the forecast package in R, it is easily done with ETS and ARIMA models.</description>
+    </item>
+    
+    <item>
+      <title>Batch forecasting in R</title>
+      <link>https://robjhyndman.com/hyndsight/batch-forecasting/</link>
+      <pubDate>Mon, 07 Jan 2013 05:13:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/batch-forecasting/</guid>
+      <description>I sometimes get asked about forecasting many time series automatically. Here is a recent email, for example:
+ I have looked but cannot find any info on generating forecasts on multiple data sets in sequence. I have been using analysis services for sql server to generate fitted time series but it is too much of a black box (or I don’t know enough to tweak/manage the inputs). In short, what package should I research that will allow me to load data, generate a forecast (presumably best fit), export the forecast then repeat for a few thousand items.</description>
+    </item>
+    
+    <item>
+      <title>New in forecast 4.0</title>
+      <link>https://robjhyndman.com/hyndsight/forecast4/</link>
+      <pubDate>Mon, 03 Dec 2012 03:53:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast4/</guid>
+      <description>A few days ago I released version 4.0 of the forecast package for R. There were quite a few changes and new features, so I thought it deserved a new version number. I keep a list of changes in the Changelog for the package, but I doubt that many people look at it. So for the record, here are the most important changes to the forecast package made since v3.0 was released.</description>
+    </item>
+    
+    <item>
+      <title>Makefiles for R/LaTeX projects</title>
+      <link>https://robjhyndman.com/hyndsight/makefiles/</link>
+      <pubDate>Wed, 31 Oct 2012 02:49:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/makefiles/</guid>
+      <description>Updated: 21 November 2012
+Make is a marvellous tool used by programmers to build software, but it can be used for much more than that. I use make whenever I have a large project involving R files and LaTeX files, which means I use it for almost all of the papers I write, and almost of the consulting reports I produce.If you are using a Mac or Linux, you will already have make installed.</description>
+    </item>
+    
+    <item>
+      <title>Why are some things easier to forecast than others?</title>
+      <link>https://robjhyndman.com/hyndsight/hardforecasts/</link>
+      <pubDate>Tue, 18 Sep 2012 02:15:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hardforecasts/</guid>
+      <description>Forecasters are often met with skepticism. Almost every time I tell someone that I work in forecasting, they say something about forecasting the stock market, or forecasting the weather, usually suggesting that such forecasts are hopelessly inaccurate. In fact, forecasts of the weather are amazingly accurate given the complexity of the system, while anyone claiming to forecast the stock market deserves skepticism. So what is the difference between these two types of forecasts, and can we say anything about what can be reasonably be forecast and what can&amp;rsquo;t?</description>
+    </item>
+    
+    <item>
+      <title>COMPSTAT2012</title>
+      <link>https://robjhyndman.com/hyndsight/compstat2012/</link>
+      <pubDate>Tue, 28 Aug 2012 11:38:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/compstat2012/</guid>
+      <description>This week I&amp;rsquo;m in Cyprus attending the COMPSTAT2012 conference. There&amp;rsquo;s been the usual interesting collection of talks, and interactions with other researchers. But I was struck by two side comments in talks this morning that I&amp;rsquo;d like to mention.
+Stephen Pollock: Don&amp;rsquo;t imagine your model is the truth Actually, Stephen said something like &amp;ldquo;economists (or was it econometricians?) have a bad habit of imagining their models are true&amp;rdquo;. He gave the example of people asking whether GDP &amp;ldquo;has a unit root&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title>Flat forecasts</title>
+      <link>https://robjhyndman.com/hyndsight/flat-forecasts/</link>
+      <pubDate>Sun, 19 Aug 2012 23:58:23 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/flat-forecasts/</guid>
+      <description>About once a week someone will tell me there is a bug in my forecast package for R because it gives forecasts that are the same for all future horizons. To save answering the same question repeatedly, here is my response.
+A point forecast is (usually) the mean of the distribution of a future observation in the time series, conditional on the past observations of the time series. It is possible, even likely in some circumstances, that the future observations will have the same mean and then the forecast function is flat.</description>
+    </item>
+    
+    <item>
+      <title>Interviews</title>
+      <link>https://robjhyndman.com/hyndsight/interviews/</link>
+      <pubDate>Thu, 09 Aug 2012 12:57:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/interviews/</guid>
+      <description>I&amp;rsquo;ve been interviewed twice in the last year:
+ For DecisionStats, 9 August 2012.
+ For Data Mining Research, 21 October 2011. Republished in Amstat News, 1 December 2011.
+  Some readers of this blog might find them interesting. I said a few things in today&amp;rsquo;s interview that I don&amp;rsquo;t think I&amp;rsquo;ve previously said publicly.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting the Olympics</title>
+      <link>https://robjhyndman.com/hyndsight/olympics/</link>
+      <pubDate>Tue, 31 Jul 2012 00:00:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/olympics/</guid>
+      <description>Forecasting sporting events is a growing research area. The International Journal of Forecasting even had a special issue on sports forecasting a couple of years ago.
+The London 2012 Olympics has attracted a few forecasters trying to predict medal counts, world records, etc. Here are some of the articles I&amp;rsquo;ve seen.
+ Which Olympic records get shattered?, Nate Silver, New York Times. Statisticians predict the number of Olympic records that will fall at London 2012, Physics arXiv blog.</description>
+    </item>
+    
+    <item>
+      <title>Time Series Data Library now on DataMarket</title>
+      <link>https://robjhyndman.com/hyndsight/tsdl/</link>
+      <pubDate>Wed, 20 Jun 2012 00:30:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tsdl/</guid>
+      <description>The Time Series Data Library is a collection of about 800 time series that I have maintained since about 1992, and hosted on my personal website. It includes data from a lot of time series textbooks, as well as many other series that I&amp;rsquo;ve either collected for student projects or helpful people have sent to me.
+I&amp;rsquo;ve now moved the collection onto DataMarket which provides much better facilities for maintaining and using time series data.</description>
+    </item>
+    
+    <item>
+      <title>Constants and ARIMA models in R</title>
+      <link>https://robjhyndman.com/hyndsight/arimaconstants/</link>
+      <pubDate>Wed, 06 Jun 2012 00:07:27 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/arimaconstants/</guid>
+      <description>This post is from my new book Forecasting: principles and practice, available freely online at OTexts.org/fpp/.
+A non-seasonal ARIMA model can be written as \begin{equation}\label{eq:c} (1-\phi_1B - \cdots - \phi_p B^p)(1-B)^d y_t = c + (1 + \theta_1 B + \cdots + \theta_q B^q)e_t \end{equation} or equivalently as \begin{equation}\label{eq:mu} (1-\phi_1B - \cdots - \phi_p B^p)(1-B)^d (y_t - \mu t^d/d!) = (1 + \theta_1 B + \cdots + \theta_q B^q)e_t, \end{equation} where $B$ is the backshift operator, $c = \mu(1-\phi_1 - \cdots - \phi_p )$ and $\mu$ is the mean of $(1-B)^d y_t$.</description>
+    </item>
+    
+    <item>
+      <title>My new forecasting textbook</title>
+      <link>https://robjhyndman.com/hyndsight/fpp/</link>
+      <pubDate>Wed, 23 May 2012 01:34:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp/</guid>
+      <description>After years of saying that I was going to write a book to replace Makridakis, Wheelwright and Hyndman (1998), I&amp;rsquo;m finally ready to make an announcement!
+My new book is Forecasting: principles and practice, co-authored with George Athanasopoulos. It is available online and free-of-charge. We have written about 2&amp;frasl;3 of the book so far (all of which is already available online), and we plan to finish it by the end of 2012.</description>
+    </item>
+    
+    <item>
+      <title>Blog aggregators</title>
+      <link>https://robjhyndman.com/hyndsight/blog-aggregators/</link>
+      <pubDate>Tue, 15 May 2012 10:34:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/blog-aggregators/</guid>
+      <description>A very useful way of keeping up with blogs in a particular area is to subscribe to a blog aggregator. These will syndicate posts from a large number of blogs and provide links back to the original sources. So you only need to subscribe once to get all the good stuff in that area.
+There are now several blog aggregators available that might be of interest to readers here. And this blog is now syndicated on several other sites including those listed below.</description>
+    </item>
+    
+    <item>
+      <title>Measuring time series characteristics</title>
+      <link>https://robjhyndman.com/hyndsight/tscharacteristics/</link>
+      <pubDate>Wed, 02 May 2012 07:51:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tscharacteristics/</guid>
+      <description>A few years ago, I was working on a project where we measured various characteristics of a time series and used the information to determine what forecasting method to apply or how to cluster the time series into meaningful groups. The two main papers to come out of that project were:
+Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. Data Mining and Knowledge Discovery, 13(3), 335-364.
+ Wang, Smith-Miles and Hyndman (2009) “Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series”, Neurocomputing, 72, 2581-2594.</description>
+    </item>
+    
+    <item>
+      <title>Data visualization</title>
+      <link>https://robjhyndman.com/hyndsight/data-visualization/</link>
+      <pubDate>Sun, 04 Mar 2012 22:37:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/data-visualization/</guid>
+      <description>For those who have not read the seminal works of Tufte and Cleveland, please hang your heads in shame. To salvage some sense of self-worth, you can then head over to Solomon Messing&amp;rsquo;s blog where he is starting a series on data visualization based on the principles developed by Tufte and Cleveland (with R examples).
+The classics are also worth reading, and remain relevant despite the 20 or 30 years that have elapsed since they appeared.</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing and regressors</title>
+      <link>https://robjhyndman.com/hyndsight/ets-regressors/</link>
+      <pubDate>Tue, 28 Feb 2012 10:15:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ets-regressors/</guid>
+      <description>I have thought quite a lot about including regressors (i.e. covariates) in exponential smoothing (ETS) models, and I have done it a couple of times in my published work. See my 2008 exponential smoothing book (chapter 9) and my 2008 Tourism Management paper. However, there are some theoretical issues with these approaches, which have come to light through the research of Ahmad Farid Osman, one of our PhD students at Monash University.</description>
+    </item>
+    
+    <item>
+      <title>Internet surveys</title>
+      <link>https://robjhyndman.com/hyndsight/surveys/</link>
+      <pubDate>Wed, 18 Jan 2012 23:30:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/surveys/</guid>
+      <description>I received the following email today:
+ I am preparing a thesis &amp;hellip; I need to conduct the widest possible poll, and it occurred to me that perhaps you could guide me toward an internet-based way in which this can be done easily. I have a ten-question questionnaire prepared, that I wish to have an random sample of the population respond to. I have no budget for this, so I hope you can suggest a way in which a good number of responses can be harvested using blogs or sites you may be aware of.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series using R</title>
+      <link>https://robjhyndman.com/hyndsight/melburntalk/</link>
+      <pubDate>Fri, 16 Dec 2011 02:30:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/melburntalk/</guid>
+      <description>I gave this talk on Forecasting time series using R for the Melbourne Users of R Network (MelbURN) on Thursday 27 October 2011.
+Slides Examples
+Abstract I look at the various facilities for time series forecasting available in R, concentrating on the forecast package. This package implements several automatic methods for forecasting time series including forecasts from ARIMA models, ARFIMA models and exponential smoothing models. I also look more generally at how to go about forecasting non-seasonal data, seasonal data, seasonal data with high frequency, and seasonal data with multiple frequencies.</description>
+    </item>
+    
+    <item>
+      <title>The art of R programming</title>
+      <link>https://robjhyndman.com/hyndsight/matloff/</link>
+      <pubDate>Wed, 30 Nov 2011 03:52:51 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/matloff/</guid>
+      <description>This is a gem of a book. It will become the book I give PhD students when they are learning how to write good R code. That is, if I ever see it again. I had hoped to write a review of it, but I haven&amp;rsquo;t seen it since it arrived in the mail a couple of weeks ago because a research student or research assistant has always had it on loan.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle on TV</title>
+      <link>https://robjhyndman.com/hyndsight/kaggle-on-tv/</link>
+      <pubDate>Mon, 28 Nov 2011 23:08:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/kaggle-on-tv/</guid>
+      <description>It is good to see forecasting algorithms getting some mainstream exposure on ABC Catalyst.
+Update: See also this great talk by Jeremy Howard, a data scientist from Melbourne and now part of Kaggle.</description>
+    </item>
+    
+    <item>
+      <title>What you wish you knew before you started a PhD</title>
+      <link>https://robjhyndman.com/hyndsight/wishlist/</link>
+      <pubDate>Fri, 11 Nov 2011 12:34:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wishlist/</guid>
+      <description>I asked my research group recently what they wished they had learned before they started work on a PhD. Here are some of the responses. More mathematics. Particular topics they named included real analysis, functional analysis, measure theory, algebra, linear algebra. That would have been my response also. I still wish I knew more mathematics than I do. I did quite a lot of mathematics as an undergraduate, but every year I need to learn some more.</description>
+    </item>
+    
+    <item>
+      <title>Time series cross-validation: an R example</title>
+      <link>https://robjhyndman.com/hyndsight/tscvexample/</link>
+      <pubDate>Fri, 26 Aug 2011 05:23:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tscvexample/</guid>
+      <description>I was recently asked how to implement time series cross-validation in R. Time series people would normally call this &amp;ldquo;forecast evaluation with a rolling origin&amp;rdquo; or something similar, but it is the natural and obvious analogue to leave-one-out cross-validation for cross-sectional data, so I prefer to call it &amp;ldquo;time series cross-validation&amp;rdquo;.Here is some example code applying time series CV and comparing 1-step, 2-step, &amp;hellip;, 12-step forecasts using the Mean Absolute Error (MAE).</description>
+    </item>
+    
+    <item>
+      <title>Major changes to the forecast package</title>
+      <link>https://robjhyndman.com/hyndsight/forecast3/</link>
+      <pubDate>Fri, 26 Aug 2011 00:20:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecast3/</guid>
+      <description>The forecast package for R has undergone a major upgrade, and I&amp;rsquo;ve given it version number 3 as a result. Some of these changes were suggestions from the forecasting workshop I ran in Switzerland a couple of months ago, and some have been on the drawing board for a long time. Here are the main changes in version 3, plus a few earlier additions that I thought deserved a mention.</description>
+    </item>
+    
+    <item>
+      <title>Comparing HoltWinters() and ets()</title>
+      <link>https://robjhyndman.com/hyndsight/estimation2/</link>
+      <pubDate>Sun, 29 May 2011 07:02:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/estimation2/</guid>
+      <description>I received this email today:
+ I have a question about the ets() function in R, which I am trying to use for Holt-Winters exponential smoothing. My problem is that I am getting very different estimates of the alpha, beta and gamma parameters using ets() compared to HoltWinters(), and I can&amp;rsquo;t figure out why.
+ This is a common question, so I thought the answer might be of sufficient interest to post here.</description>
+    </item>
+    
+    <item>
+      <title>Statistical tests for variable selection</title>
+      <link>https://robjhyndman.com/hyndsight/tests2/</link>
+      <pubDate>Mon, 14 Mar 2011 22:28:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tests2/</guid>
+      <description>I received an email today with the following comment:
+ I’m using ARIMA with Intervention detection and was planning to use your package to identify my initial ARIMA model for later iteration, however I found that sometimes the auto.arima function returns a model where AR/MA coefficients are not significant. So my question is: Is there a way to filter the search for ARIMA models that only have significant coefficients. I can remove the non-significant coefficients but I think it would be better to search for those models that only have significant coefficients.</description>
+    </item>
+    
+    <item>
+      <title>RStudio: just what I&#39;ve been looking for</title>
+      <link>https://robjhyndman.com/hyndsight/rstudio/</link>
+      <pubDate>Tue, 01 Mar 2011 05:09:27 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rstudio/</guid>
+      <description>For many years I used RWinEdt as my text editor for R code, but when WinEdt 6.0 came out, RWinEdt stopped working. So I&amp;rsquo;ve been looking for something to replace it. I&amp;rsquo;ve tried Tinn-R, NppToR, Eclipse with StatET and a couple of other editors, but nothing was quite right.
+Then yesterday, out of the blue, RStudio was announced and it looks fantastic! A screenshot is given below.
+
+The window contains a smart editor with code completion and tabbing, console, workspace with viewable objects, plotting panel with history, etc.</description>
+    </item>
+    
+    <item>
+      <title>Six places left for the forecasting workshop</title>
+      <link>https://robjhyndman.com/hyndsight/swissworkshop2011a/</link>
+      <pubDate>Tue, 11 Jan 2011 00:55:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/swissworkshop2011a/</guid>
+      <description>There are six places left for the forecasting workshop I am giving in Switzerland in June. If you were thinking of going, book in fast!</description>
+    </item>
+    
+    <item>
+      <title>CrossValidated Journal Club</title>
+      <link>https://robjhyndman.com/hyndsight/cvjournalclub/</link>
+      <pubDate>Wed, 22 Dec 2010 00:01:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cvjournalclub/</guid>
+      <description>Journal Clubs are a great way to learn new research ideas and to keep up with the literature. The idea is that a group of people get together every week or so to discuss a paper of joint interest. This can happen within your own research group or department, or virtually online.
+There is now a virtual journal club operating in conjunction with CrossValidated.com. The first paper discussed was on text data mining.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting workshop: Switzerland, June 2011</title>
+      <link>https://robjhyndman.com/hyndsight/swissworkshop2011/</link>
+      <pubDate>Mon, 06 Dec 2010 08:57:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/swissworkshop2011/</guid>
+      <description>I will be running a workshop on Statistical Forecasting: Principles and Practice in Switzerland, 20-22 June 2011. Check out the venue: Waldhotel Doldenhorn, Kandersteg! So if you fancy a trip to the beautiful Swiss Alps next June, read on&amp;hellip;Outline Forecasting is required in many situations: deciding whether to build another power generation plant in the next five years requires forecasts of future demand; scheduling staff in a call centre next week requires forecasts of call volume; stocking an inventory requires forecasts of stock requirements.</description>
+    </item>
+    
+    <item>
+      <title>Data visualization videos</title>
+      <link>https://robjhyndman.com/hyndsight/data-visualization-videos/</link>
+      <pubDate>Tue, 30 Nov 2010 04:05:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/data-visualization-videos/</guid>
+      <description>Probably everyone has seen Hans Rosling&amp;rsquo;s famous TED talk by now. If not, here it is:
+  I recently came across a couple of other exceptional talks on data visualization:
+Hans Rosling again: &amp;rdquo;Let my dataset change your mindset&amp;rdquo;. If only all statistics lecturers were this dynamic!
+  David McCandless: &amp;ldquo;The beauty of data visualization&amp;rdquo;. Not so exciting as Hans, but some great examples.
+  And here&amp;rsquo;s an hour-length documentary hosted by Hans Rosling called &amp;ldquo;The Joy of Stats&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Initializing the Holt-Winters method</title>
+      <link>https://robjhyndman.com/hyndsight/hw-initialization/</link>
+      <pubDate>Tue, 30 Nov 2010 03:09:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hw-initialization/</guid>
+      <description>The Holt-Winters method is a popular and effective approach to forecasting seasonal time series. But different implementations will give different forecasts, depending on how the method is initialized and how the smoothing parameters are selected. In this post I will discuss various initialization methods.
+Suppose the time series is denoted by $y_1,\dots,y_n$ and the seasonal period is $m$ (e.g., $m=12$ for monthly data). Let $\hat{y}_{t+h|t}$ be the $h$-step forecast made using data to time $t$.</description>
+    </item>
+    
+    <item>
+      <title>Forecast estimation, evaluation and transformation</title>
+      <link>https://robjhyndman.com/hyndsight/forecastmse/</link>
+      <pubDate>Wed, 10 Nov 2010 00:22:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecastmse/</guid>
+      <description>I&amp;rsquo;ve had a few emails lately about forecast evaluation and estimation criteria. Here is one I received today, along with some comments.
+ I have a rather simple question regarding the use of MSE as opposed to MAD and MAPE. If the parameters of a time series model are estimated by minimizing MSE, why do we evaluate the model using some other metric, e.g., MAD and MAPE. I could see that MAPE is not scale dependent.</description>
+    </item>
+    
+    <item>
+      <title>CrossValidated launched!</title>
+      <link>https://robjhyndman.com/hyndsight/crossvalidated/</link>
+      <pubDate>Thu, 04 Nov 2010 23:45:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/crossvalidated/</guid>
+      <description>The CrossValidated Q&amp;amp;A site is now out of beta and the new design and site name is live.
+
+New design The new design looks great, thanks to Jin Yang, our designer-in-residence. Note the normal density icon for accepted answers and the site icon depicting a 5-fold cross-validation (light green for the test set and dark green for the training set). There is a faint background graphic in the header and footer from a program that tracks and plots a person&amp;rsquo;s mouse movement.</description>
+    </item>
+    
+    <item>
+      <title>Different results from different software</title>
+      <link>https://robjhyndman.com/hyndsight/estimation/</link>
+      <pubDate>Tue, 26 Oct 2010 08:37:31 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/estimation/</guid>
+      <description>I&amp;rsquo;ve had a few questions on this topic lately. Here is an email received today:
+ I use Eviews to estimate time series, but I have been checking out R recently, and your Forecast package.
+I cannot understand why 2 similar equations in Eviews and R are giving different estimated output. Your insights will be invaluable for my work.
+The equations are:
+ R: Arima(log(fee), order=c(1,1,0), seasonal=list(order=c(1,0,0), period=4), include.drift=TRUE) Eviews: dlog(fee) c ar(1) sar(1)  Even with include.</description>
+    </item>
+    
+    <item>
+      <title>How to avoid annoying a referee</title>
+      <link>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</link>
+      <pubDate>Fri, 22 Oct 2010 09:23:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</guid>
+      <description>It&amp;rsquo;s not a good idea to annoy the referees of your paper. They make recommendations to the editor about your work and it is best to keep them happy. There is an interesting discussion on stats.stackexchange.com on this subject. This inspired my own list below.
+ Explain what you&amp;rsquo;ve done clearly, avoiding unnecessary jargon. Don&amp;rsquo;t claim your paper contributes more than it actually does. (I refereed a paper this week where the author claimed to have invented principal component analysis!</description>
+    </item>
+    
+    <item>
+      <title>Happy World Statistics Day!</title>
+      <link>https://robjhyndman.com/hyndsight/wsd/</link>
+      <pubDate>Tue, 19 Oct 2010 23:18:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wsd/</guid>
+      <description>The United Nations has declared today &amp;ldquo;World Statistics Day&amp;rdquo;. I&amp;rsquo;ve no idea what that means, or why we need a WSD. Perhaps it is because the date is 20.10.2010 (except in North America where it is 10.20.2010). But then, what happens from 2013 to 2099? And do we just forget the whole idea after 3112?
+In any case, if we are going to have a WSD, let&amp;rsquo;s use it to do something useful.</description>
+    </item>
+    
+    <item>
+      <title>Animated plots in R and LaTeX</title>
+      <link>https://robjhyndman.com/hyndsight/animations/</link>
+      <pubDate>Wed, 13 Oct 2010 04:45:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/animations/</guid>
+      <description>I like to use animated plots in my talks on functional time series, partly because it is the only way to really see what is going on with changes in the shapes of curves over time, and also because audiences love them! Here is how it is done.
+For LaTeX, you need to create every frame as a separate graphics file. Here is an example. First the R code:
+library(demography) nyears &amp;lt;- length(fr.</description>
+    </item>
+    
+    <item>
+      <title>Why R is better than Excel for teaching statistics</title>
+      <link>https://robjhyndman.com/hyndsight/rvsexcel/</link>
+      <pubDate>Tue, 05 Oct 2010 05:00:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rvsexcel/</guid>
+      <description>This was the topic of a recent conversation on the Australian and New Zealand R mailing list. Here is an edited list of some of the comments made.
+ R is free.
+ R is well-documented.
+ R runs (really well) on *nix as well as Windows and Mac OS.
+ R is open-source. Trust in the R software is evident by its support among distinguished statisticians. However, the R user need not rely on trust, as the source code for R is freely available for public scrutiny.</description>
+    </item>
+    
+    <item>
+      <title>The ARIMAX model muddle</title>
+      <link>https://robjhyndman.com/hyndsight/arimax/</link>
+      <pubDate>Mon, 04 Oct 2010 12:39:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/arimax/</guid>
+      <description>There is often confusion about how to include covariates in ARIMA models, and the presentation of the subject in various textbooks and in R help files has not helped the confusion. So I thought I&amp;rsquo;d give my take on the issue. To keep it simple, I will only describe non-seasonal ARIMA models although the ideas are easily extended to include seasonal terms. I will include only one covariate in the models although it is easy to extend the results to multiple covariates.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with long seasonal periods</title>
+      <link>https://robjhyndman.com/hyndsight/longseasonality/</link>
+      <pubDate>Wed, 29 Sep 2010 05:38:51 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/longseasonality/</guid>
+      <description>I am often asked how to fit an ARIMA or ETS model with data having a long seasonal period such as 365 for daily data or 48 for half-hourly data. Generally, seasonal versions of ARIMA and ETS models are designed for shorter periods such as 12 for monthly data or 4 for quarterly data.
+The ets() function in the forecast package restricts seasonality to be a maximum period of 24 to allow hourly data but not data with a larger seasonal frequency.</description>
+    </item>
+    
+    <item>
+      <title>Econometrics and R</title>
+      <link>https://robjhyndman.com/hyndsight/econometrics-and-r/</link>
+      <pubDate>Tue, 31 Aug 2010 01:41:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/econometrics-and-r/</guid>
+      <description>Econometricians seem to be rather slow to adopt new methods and new technology (compared to other areas of statistics), but slowly the use of R is spreading. I&amp;rsquo;m now receiving requests for references showing how to use R in econometrics, and so I thought it might be helpful to post a few suggestions here.  
+A useful on-line and free resource is &amp;ldquo;Econometrics in R&amp;rdquo; by Grant Farnsworth. It covers some common econometric methods including heteroskedasticity in regression, probit and logit models, tobit regression, and quantile regression.</description>
+    </item>
+    
+    <item>
+      <title>Twenty rules for good graphics</title>
+      <link>https://robjhyndman.com/hyndsight/graphics/</link>
+      <pubDate>Fri, 06 Aug 2010 06:34:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/graphics/</guid>
+      <description>One of the things I repeatedly include in referee reports, and in my responses to authors who have submitted papers to the International Journal of Forecasting, are comments designed to include the quality of the graphics. Recently someone asked on stats.stackexchange.com aboutbest practices for producing plots. So I thought it might be helpful to collate some of the answers given there and add a few comments of my own taken from things I&amp;rsquo;ve written for authors.</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis StackExchange site now available</title>
+      <link>https://robjhyndman.com/hyndsight/stats-stackexchange/</link>
+      <pubDate>Tue, 27 Jul 2010 02:26:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stats-stackexchange/</guid>
+      <description>The Q&amp;amp;A site for statistical analysis, data mining, data visualization, and everything else to do with data analysis has finally been launched. Please head over to
+stats.StackExchange.com and start asking and answering questions.
+Also, spread the word to everyone else who may be interested &amp;mdash; work colleagues, students, etc. The more people who use the site, the better it will be. There are already 170 questions, 513 answers and 387 users.</description>
+    </item>
+    
+    <item>
+      <title>More StackExchange sites</title>
+      <link>https://robjhyndman.com/hyndsight/more-stackexchange-sites/</link>
+      <pubDate>Sat, 17 Jul 2010 05:21:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/more-stackexchange-sites/</guid>
+      <description>The StackExchange site on Statistical Analysis is about to go into private beta testing. This is your last chance to commit if you want to be part of the private beta testing. Don&amp;rsquo;t worry if you miss out &amp;mdash; it will only be a week before it is then open to the public.
+There is also a StackExchange site proposal for TeX, LaTeX and friends. Presumably that means that most of the LaTeX questions on StackOverflow will then move to this new site.</description>
+    </item>
+    
+    <item>
+      <title>Learning R by video</title>
+      <link>https://robjhyndman.com/hyndsight/learning-r-by-video/</link>
+      <pubDate>Wed, 10 Mar 2010 00:10:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/learning-r-by-video/</guid>
+      <description>For those people who prefer to be shown how to do something rather than read the instructions, there are some videos on using R available online. Here are the ones I know about. Please add links to other similar resources in the comments.
+ R tour for beginners
+ R videos 
+ What is R? from Revolution Analytics
+ R Statistics playlist on YouTube
+ Statistics with R playlist on YouTube</description>
+    </item>
+    
+    <item>
+      <title>Workflow in R</title>
+      <link>https://robjhyndman.com/hyndsight/workflow-in-r/</link>
+      <pubDate>Fri, 18 Sep 2009 03:21:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/workflow-in-r/</guid>
+      <description>This came up recently on StackOverflow. One of the answers was particularly helpful and I thought it might be worth mentioning here. The idea presented there is to break the code into four files, all stored in your project directory. These four files are to be processed in the following order.
+ load.R This file includes all code associated with loading the data. Usually, it will be a short file reading in data from files.</description>
+    </item>
+    
+    <item>
+      <title>Finding an R function</title>
+      <link>https://robjhyndman.com/hyndsight/finding-an-r-function/</link>
+      <pubDate>Sun, 13 Sep 2009 11:21:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/finding-an-r-function/</guid>
+      <description>Suppose you want a function to fit a neural network. What&amp;rsquo;s the best way to find it? Here are three steps that help to find the elusive function relatively quickly.
+First, use help.search(&amp;quot;neural&amp;quot;) or the shorthand ??neural. This will search the help files of installed packages for the word &amp;ldquo;neural&amp;rdquo;. Actually, fuzzy matching is used so it returns pages that have words similar to &amp;ldquo;neural&amp;rdquo; such as &amp;ldquo;natural&amp;rdquo;. For a stricter search, use help.</description>
+    </item>
+    
+    <item>
+      <title>R help on StackOverflow</title>
+      <link>https://robjhyndman.com/hyndsight/r-help-on-stackoverflow/</link>
+      <pubDate>Sun, 23 Aug 2009 22:51:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/r-help-on-stackoverflow/</guid>
+      <description>Ever since I began using R about ten years ago, the best place to find R help was on the R-help mailing list. But it is time-consuming searching through the archives trying to find something from a long time ago, and there is no way to sort out the good advice from the bad advice.
+But now there is a new tool and it is very neat. Head over to the R tag on StackOverflow.</description>
+    </item>
+    
+    <item>
+      <title>Time series packages on R</title>
+      <link>https://robjhyndman.com/hyndsight/time-series-packages-on-r/</link>
+      <pubDate>Thu, 16 Oct 2008 08:19:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/time-series-packages-on-r/</guid>
+      <description>There is now an official CRAN Task View for Time Series. This will replace my earlier list of time series packages for R, and provide a more visible and useful entry point for people wanting to use R for time series analysis. If I have missed anything on the list, please let me know.</description>
+    </item>
+    
+    <item>
+      <title>R workshop</title>
+      <link>https://robjhyndman.com/hyndsight/r-workshop/</link>
+      <pubDate>Fri, 28 Mar 2008 07:50:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/r-workshop/</guid>
+      <description>There was an R workshop on 28-29 June, just before the Australian Statistical Conference. I put in an appearance on the second day giving two talks.
+Time series and forecasting in R
+ handout slides  Building R packages for Windows
+ handout slides  </description>
+    </item>
+    
+    <item>
+      <title>Organization and R</title>
+      <link>https://robjhyndman.com/hyndsight/organization-and-r/</link>
+      <pubDate>Thu, 06 Sep 2007 04:04:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/organization-and-r/</guid>
+      <description>Many R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R:
+ Try to keep code strictly indented based on the code structure such as loops, if statements, etc. Every left brace { should be followed by an extra level of indentation which continues until the matching right brace }.</description>
+    </item>
+    
+    <item>
+      <title>Debugging in R</title>
+      <link>https://robjhyndman.com/hyndsight/debugging-in-r/</link>
+      <pubDate>Fri, 31 Aug 2007 03:53:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/debugging-in-r/</guid>
+      <description>Anyone who starts writing serious R code (i.e., code that involves user-written functions) soon finds the need to use debugging tools. There are a few basic tools in R that are worth knowing about.
+The function debug() allows one to step through the execution of a function, line by line. At any point, you can print out values of variables or produce a graph of the results within the function. While debugging, you can simply type &amp;ldquo;c&amp;rdquo; to continue to the end of the current section of code (e.</description>
+    </item>
+    
+  </channel>
+</rss>

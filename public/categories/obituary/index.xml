@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obituary on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/obituary/</link>
+    <description>Recent content in Obituary on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Jan 2016 11:48:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/obituary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What&#39;s your Hall number?</title>
+      <link>https://robjhyndman.com/hyndsight/whats-your-hall-number/</link>
+      <pubDate>Thu, 28 Jan 2016 11:48:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/whats-your-hall-number/</guid>
+      <description>Today I attended the funeral of Peter Hall, one of the finest mathematical statisticians ever to walk the earth and easily the best from Australia. One of the most remarkable things about Peter was his astonishing productivity, with over 600 papers. As I sat in the audience I realised that many of the people there were probably coauthors of papers with Peter, and I wondered how many statisticians in the world would have been his coauthors or second-degree co-authors.</description>
+    </item>
+    
+    <item>
+      <title>Farewell Peter Hall (1951-2016)</title>
+      <link>https://robjhyndman.com/hyndsight/farewell-peter-hall-1951-2016/</link>
+      <pubDate>Mon, 11 Jan 2016 05:12:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/farewell-peter-hall-1951-2016/</guid>
+      <description>Peter Hall passed away on Saturday after a long battle with illness over the last couple of years. No statistician will need reminding of Peter&amp;rsquo;s extensive contributions to the field. He had over 500 published papers, and had won every major award available, many of them listed on his Wikipedia page.I spent a few months visiting Peter at ANU in 2002, and we wrote a couple of papers together (here and here).</description>
+    </item>
+    
+    <item>
+      <title>Robert G Brown (1923-2013)</title>
+      <link>https://robjhyndman.com/hyndsight/rgbrown/</link>
+      <pubDate>Wed, 09 Oct 2013 11:52:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rgbrown/</guid>
+      <description>Robert Goodell Brown was the father of exponential smoothing. He died last week at the age of 90. While I never met him, I was indebted to him for exponential smoothing and his practical and insightful books.
+Today I received this email from King Harrison III advising of his death. Twenty years ago I attended the ISF 93 conference in Pittsburgh, which honored Bob Brown on his 70th birthday, and his contributions to the forecasting world.</description>
+    </item>
+    
+    <item>
+      <title>George E P Box (1919-2013)</title>
+      <link>https://robjhyndman.com/hyndsight/gepbox/</link>
+      <pubDate>Sun, 31 Mar 2013 05:21:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gepbox/</guid>
+      <description>Last Thursday (28 March 2013), George Box passed away at the age of 93. He was one of the great statisticians of the last 100 years, and leaves an astonishingly diverse legacy.
+When I teach forecasting to my second year commerce students, we cover Box-Cox transformations, Box-Pierce and Ljung-Box tests, and Box-Jenkins modelling, and my students wonder if it is the same Box in all cases. It is. And we don&amp;rsquo;t even go near his work on response surface modelling, design of experiments, quality control or random number generation.</description>
+    </item>
+    
+    <item>
+      <title>Clive Granger (1934-2009)</title>
+      <link>https://robjhyndman.com/hyndsight/granger/</link>
+      <pubDate>Mon, 01 Jun 2009 08:27:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/granger/</guid>
+      <description>Sir Clive Granger has died at the age of 74. There are some nice obituaries in the New York Times and the Daily Telegraph. Also, his Wikipedia page has some good information. I met Clive on several occasions and he was &amp;ldquo;a scholar and a gentleman&amp;rdquo;, a remarkably humble man given his outstanding achievements and someone who was always willing to help young researchers. The world of forecasting will miss him.</description>
+    </item>
+    
+  </channel>
+</rss>

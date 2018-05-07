@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecology on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/ecology/</link>
+    <description>Recent content in Ecology on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 07 Aug 2015 04:00:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/ecology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Statistical issues with using herbarium data for the estimation of invasion lag-phases</title>
+      <link>https://robjhyndman.com/publications/lagphase/</link>
+      <pubDate>Fri, 07 Aug 2015 04:00:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/lagphase/</guid>
+      <description>Current methods for using herbarium data as time series, for example to estimate the length of the invasion lag phase, often make assumptions that are both statistically and logically inappropriate. We present an alternative statistical approach, estimating the lag phase based on annual rather than cumulative data, a generalized linear model incorporating a log link for overall collection effort, and piecewise linear splines. We demonstrate the method on two species representing good and poor data quality, then apply it to two data sets comprising 448 species/region combinations.</description>
+    </item>
+    
+    <item>
+      <title>Cycles and synchrony in the Collared Lemming (Dicrostonyx groenlandicus) in Arctic North America</title>
+      <link>https://robjhyndman.com/publications/cycles-and-synchrony-in-the-collared-lemming-dicrostonyx-groenlandicus-in-arctic-north-america/</link>
+      <pubDate>Fri, 16 Nov 2001 03:12:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/cycles-and-synchrony-in-the-collared-lemming-dicrostonyx-groenlandicus-in-arctic-north-america/</guid>
+      <description>Lemming populations are generally characterised by their cyclic nature, yet empirical data to support this are lacking for most species, largely because of the time and expense necessary to collect long-term population data. In this study we use the relative frequency of yearly willow scarring by lemmings as an index of lemming abundance, allowing us to plot population changes over a 34-year period. Scars were collected from 18 sites in Arctic North America separated by 2-1,647 km to investigate local synchrony among separate populations.</description>
+    </item>
+    
+  </channel>
+</rss>

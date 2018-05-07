@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>New in forecast 5.0 | Rob J Hyndman</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/foundation.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/highlight.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/academicons.min.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/finite.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/kube.css">
+    <link rel="stylesheet" href="https://robjhyndman.com/css/robjhyndman.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+	
+	  <div class="title-bar" data-responsive-toggle="site-menu" data-hide-for="medium">
+	    <button class="site-hamburger" type="button" data-toggle>
+	      <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+	    </button>
+	    <div class="title-bar-title site-title">
+	      <a href="https://robjhyndman.com/"  style="color: #b3cde0">Rob J Hyndman</a>
+	    </div>
+	    <div class="title-bar-right pull-right">
+	      
+
+
+	    </div>
+	  </div>
+
+	  
+	    <div class="top-bar" id="site-menu" >
+	      <div class="top-bar-title show-for-medium site-title">
+		<a href="https://robjhyndman.com/"  style="color: #b3cde0;">Rob J Hyndman</a>
+	      </div>
+	      <div class="top-bar-left">
+		<ul class="menu vertical medium-horizontal">
+		  
+		  
+		  <li><a href="https://robjhyndman.com/hyndsight/">Hyndsight blog</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/publications/">Publications</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/software/">Software</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/seminars/">Seminars</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/teaching/">Teaching</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/research-team/">Research team</a></li>
+		  
+		  <li><a href="https://robjhyndman.com/about/">About</a></li>
+		  
+		</ul>
+	      </div>
+	      <div class="top-bar-right show-for-medium">
+		
+
+
+	      </div>
+	    </div>
+	  
+	</nav>
+    </header>
+    <main>
+      
+
+<div class="wrapper">
+<div class="units-row" style='margin-bottom: 0px;'>
+<div class="unit-20">&nbsp;</div>
+<div class="unit-60"><h1>New in forecast 5.0</h1></div>
+</div>
+<div class="units-row">
+  <div class="unit-20 dateblock" style='text-align: right;'><h4 style='padding: .8ex 0px .8ex 0px;'><a href="https://robjhyndman.com/hyndsight">Hyndsight</a></h4>
+      <div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2014-01-27 02:26:52 &#43;0000 &#43;0000" itemprop="datePublished">27 January 2014</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/computing">computing</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/statistics">statistics</a>
+    
+  </span>
+  
+  
+</div>
+
+    </div>
+<div class="unit-60">
+
+  
+
+<p>Last week, version 5.0 of the <code>forecast</code> package for R was released. There are a few new functions and changes made to the package, which is why I increased the version number to 5.0. Thanks to <a href="http://earo.me">Earo Wang</a> for helping with this new version.</p>
+
+<!-- more -->
+
+<h3 id="handling-missing-values-and-outliers">Handling missing values and outliers</h3>
+
+<p>Data cleaning is often the first step that data scientists and analysts take to ensure statistical modelling is supported by good data. Some new functions and extended functions have been added to the <code>forecast</code> package to make this job easier, and to automate some steps.</p>
+
+<p>The existing <code>na.interp</code> function has been upgraded to handle seasonal series much better. It now fits a seasonal model to the data, and then interpolates the seasonally adjusted series, before re-seasonalizing. I&rsquo;ve tested it on a lot of data and I think it works pretty well, although I&rsquo;m sure users will come up with some test cases that cause problems.</p>
+
+<p><code>tsoutliers</code> is a new function for the purpose of identifying outliers and suggesting reasonable replacements. Residuals are identified by fitting a loess curve for non-seasonal data and via a periodic STL decomposition for seasonal data. Residuals are labelled as outliers if they lie outside the range $\pm 2(q<em>{0.9}-q</em>{0.1})$ where $q<em>p$ is the $p$-quantile of the residuals. This is a little experimental. For a Gaussian distribution, it will identify less than 1 point in 3 million as an outlier. In comparison, when boxplots are used, an outlier is shown if it lies outside $\pm 1.5(q</em>{0.75}-q<em>{0.25})$ and extreme outliers are outside $\pm 3.0(q</em>{0.75}-q_{0.25})$. By these rules, under a Gaussian distribution, 4% of points will be identified as outliers and about 1 in 20000 as extreme outliers.</p>
+
+<p>Real data are often not as well-behaved as a Gaussian distribution, and outliers can be present. For example, the weekly air passenger traffic between Melbourne and Sydney (<code>melsyd</code> in the <code>fpp</code> package) contain seven consecutive weeks of zero traffic, and one week of partial traffic, due to a pilots&rsquo; strike. The <code>tsoutliers</code> function can replace those with estimates:</p>
+
+<pre><code>library(fpp)
+tsoutliers(melsyd[,3])
+$index
+[1] 113 114 115 116 117 118 119 120
+
+$replacements
+[1] 17.57579 16.94973 16.15192 16.12787 16.20718 14.88098 14.46360 12.56176
+</code></pre>
+
+<p>A more general function is <code>tsclean</code> which is a combination of <code>na.interp</code> and <code>tsoutliers</code>, so it handles both missing values and outliers. It will return a cleaned version of a time series with outliers and missing values replaced by estimated values.</p>
+
+<pre><code>library(fpp)
+plot(melsyd[,3], main=&quot;Economy class passengers: Melbourne-Sydney&quot;)
+lines(tsclean(melsyd[,3]), col='red')
+</code></pre>
+
+<p>These three functions have one common argument <code>lambda</code> (a Box-Cox transformation parameter). If present, the time series is transformed before the outliers are identified and replaced, or missing values are estimated.</p>
+
+<p>These functions are also now used when <code>robust=TRUE</code> in <code>forecast.ts</code>. The idea is that <code>forecast.ts</code> can take any time series and return something reasonable, even if the original series has missing values and outliers.</p>
+
+<h3 id="calendar-variables">Calendar variables</h3>
+
+<p>We&rsquo;ve added two functions, <code>bizdays</code> and <code>easter</code>, into the package; they can be used when adjusting for calendar effects. Like the function <code>monthdays</code>, both functions work for monthly and quarterly data.</p>
+
+<p><code>bizdays</code>, as its name suggests, returns the number of business days in each month or quarter of the observed time series. Along with a time series input, it has an argument <code>FinCenter</code> referring to the &ldquo;Financial Center&rdquo; (equivalent to the <code>finCenter</code> in the <code>timeDate</code> package). It is also assumed that weekdays are from Monday to Friday.</p>
+
+<p>As Easter holiday isn&rsquo;t fixed in relation to the civil calendar, which can make it challenging to forecast a time series with Easter effects. The function <code>easter</code> will return a dummy variable indicating if Easter is present in each month. Easter is defined as the days between Good Friday and Easter Sunday inclusively, plus optionally Easter Monday if <code>easter.mon = TRUE</code>. The function will return 0 for all months or quarters except those containing some of the days of Easter. A fractional result is returned if Easter spans March and April; otherwise 1 indicates that Easter falls entirely within the month or quarter.</p>
+
+<p>These two functions are intended to give output that can be used as regression variables in <code>auto.arima</code> or <code>tslm</code>.</p>
+
+<h3 id="changes-to-arima-modelling">Changes to ARIMA modelling</h3>
+
+<p>The biggest change is actually not part of the forecast package. When a regression variable is present (including when a drift term is used), the estimation was very poorly initialized in the <code>stats::arima</code> function. I <a href="https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=15396">proposed a fix</a> to the R core team, and this became part of Rv3.0.2. As <code>stats::arima</code> is the engine behind the <code>Arima</code> and <code>auto.arima</code> functions in the <code>forecast</code> package, this means that the package can now sometimes return different results to the results obtained in older versions of R.</p>
+
+<p>Changes to the <code>forecast</code> package itself include:</p>
+
+<ul>
+<li><p>Added arguments <code>max.D</code> and <code>max.d</code> to <code>auto.arima()</code>, <code>ndiffs()</code> and <code>nsdiffs()</code>.</p></li>
+
+<li><p>Removed drift term in <code>Arima()</code> when $d+D&gt;1$.</p></li>
+
+<li><p>Added bootstrap option to <code>forecast.Arima()</code></p></li>
+</ul>
+
+<p>The latter option now makes it possible to forecast from an ARIMA model without making the assumption of Gaussian errors.</p>
+
+<h3 id="minor-changes-and-bug-fixes">Minor changes and bug fixes</h3>
+
+<p>Other changes include:</p>
+
+<ul>
+<li><p>Added argument model to <code>dshw()</code> to enable an estimated model to be applied to a new time series.</p></li>
+
+<li><p>Made several functions more robust to <code>zoo</code> objects.</p></li>
+
+<li><p>Corrected an error in the calculation of AICc when using <code>CV()</code>.</p></li>
+
+<li><p>Made minimum default p in <code>nnetar</code> equal to 1 so it can no longer return a null model.</p></li>
+
+<li><p>Improved output from <code>snaive()</code> and <code>naive()</code> to better reflect user expectations</p></li>
+
+<li><p>Allowed <code>Acf()</code> to handle missing values by using <code>na.contiguous</code>. I might change this to <code>na.interp</code> in a future release.</p></li>
+
+<li><p>Changed default information criterion in <code>ets()</code> to AICc. For short time series, it may choose a different model from previous versions.</p></li>
+</ul>
+
+<h3 id="bugs">Bugs?</h3>
+
+<p>If any user thinks they have found a bug, please report it on the <a href="http://github.com/robjhyndman/forecast/issues?labels=bug&amp;state=open">github page</a> and include a minimal reproducible example. If I can&rsquo;t reproduce it, I can&rsquo;t fix it.</p>
+
+
+      <meta itemprop="wordCount" content="966">
+      <meta itemprop="datePublished" content="2014-01-27">
+      <meta itemprop="url" content="https://robjhyndman.com/hyndsight/forecast5/">
+
+<div class='sans' style="background: #dddddd; padding: 2em;">
+<div style="padding-bottom: 1em" >
+<div class="share-box">
+  <ul class="share">
+    <li>
+      <a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fforecast5%2f" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=New%20in%20forecast%205.0. https%3a%2f%2frobjhyndman.com%2fhyndsight%2fforecast5%2f from @robjhyndman" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fforecast5%2f&amp;title=New%20in%20forecast%205.0" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fforecast5%2f&amp;title=New%20in%20forecast%205.0" target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email" href="mailto:?subject=New%20in%20forecast%205.0&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fforecast5%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+</div>
+
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      
+      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/ljung-box-test/">&laquo; <em>Previous<span class="show-for-sr"> page</span></em>: Thoughts on the Ljung-Box test</a></li>
+      
+      
+      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/online-collaborative-writing/"><em>Next<span class="show-for-sr"> page</span></em>: Online collaborative writing&nbsp;&raquo;</a></li>
+      
+    </ul>
+    <a href="https://robjhyndman.com/hyndsight/">All Hyndsight posts by date</a>
+</div>
+
+<span style='font-family: Carlito'>
+ <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+              return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'researchtips';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</span>
+
+  </div>
+  </div></div>
+
+    </main>
+    <footer class="whatisthis">
+  <hr class='separator'/>
+  <span style="font-family: Carlito, sans; font-size: 0.9em; line-height: 1.05em;">
+  <div class="row">
+    <div class="column small-12 medium-4">
+      <figure class='image-left'>
+      <a href="https://robjhyndman.com/" style="border-bottom: none;">
+      	<img src="https://robjhyndman.com/img/rjh.png" alt="Portrait of the author" class='avatar' style="max-width: 50%;">
+      </a>
+  </figure>
+  <p>
+Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash.edu>Monash University</a>, Australia, and Editor-​​in-​​Chief of the <a href=https://ijf.forecasters.org>Inter­na­tional Jour­nal of Fore­cast­ing</a>.  </p>
+    </div>
+    <div class="column small-12 medium-4">
+      
+      <h4 id="contact">Contact</h4>
+      <ul class="fa-ul">
+	
+	<li><i class="fa-li fa fa-university" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://www.monash.edu/business/econometrics-and-business-statistics">Department of Econometrics &amp; Business Statistics, Monash University, Clayton VIC 3800, Australia.</a></li>
+	
+	<li><i class="fa-li fa fa-envelope" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="mailto:Rob.Hyndman@monash.edu">Rob.Hyndman@monash.edu</a></li>
+	
+	<li><i class="fa-li fa fa-twitter" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://twitter.com/robjhyndman">@robjhyndman</a> on Twitter</li>
+	
+	<li><i class="fa-li fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://github.com/robjhyndman/">robjhyndman</a> on GitHub</li>
+	
+	<li><i class="fa-li ai ai-google-scholar" style="color:#03396c;font-size:80%;padding-top:6px;"></i><a href="https://scholar.google.com/citations?user=vamErfkAAAAJ">Google Scholar</a></li>
+	
+      </ul>
+    </div>
+    <div class="column small-12 medium-4">
+      <h4>Subscribe</h4>
+      <p><i><i class="fa fa-rss-square" style="color:#03396c;"></i> To receive updates from this site, you can subscribe to using an <a href="http://feeds.feedburner.com/ProfessorRobJHyndman">RSS feed reader</a> or <a href="https://feedburner.google.com/fb/a/mailverify?uri=ProfessorRobJHyndman">by email</a>.</i></p>
+      <h4>Search</h4>
+      <a id="searchsite">
+	<form method="get" action="https://duckduckgo.com/">
+	  <label for="search-field" class="show-for-sr">Search the site</label>
+	  <input type="search" name="q" maxlength="255" placeholder="Search the site" id="search-field">
+	  <input type="hidden" name="sites" value="https://robjhyndman.com"/>
+	  <input type="hidden" name="k7" value="#faf8f8"/>
+	  <input type="hidden" name="kj" value="#b33"/>
+	  <input type="hidden" name="ky" value="#fafafa"/>
+	  <input type="hidden" name="kx" value="b"/>
+	  <input type="hidden" name="ko" value="-1"/>
+	  <input type="hidden" name="k1" value="-1"/>
+	  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+	</form>
+      </a>
+    </div>
+  </div>
+  </span>
+</footer>
+
+    <div class="endofpage">
+    <footer id="footer">
+    <section class="wrapper small">Powered by <a href="http://gohugo.io">Hugo</a>
+    and <a href="https://github.com/rstudio/blogdown">Blogdown</a>.
+     &copy; <a href="https://robjhyndman.com">Rob&nbsp;J&nbsp;Hyndman</a> 1993&ndash;2018.
+    </section>
+    </footer>
+    </div>
+
+    <script src="https://robjhyndman.com/js/jquery.js"></script>
+    <script src="https://robjhyndman.com/js/what-input.js"></script>
+    <script src="https://robjhyndman.com/js/foundation.min.js"></script>
+    <script src="https://robjhyndman.com/js/finite.js"></script>
+
+    
+    <script src="https://robjhyndman.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5004894-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+ </body>
+</html>

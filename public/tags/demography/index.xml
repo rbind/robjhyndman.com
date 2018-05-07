@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demography on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/demography/</link>
+    <description>Recent content in Demography on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/demography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Two-dimensional smoothing of mortality surfaces with cohort and period ridges</title>
+      <link>https://robjhyndman.com/publications/mortality-smoothing/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mortality-smoothing/</guid>
+      <description>BACKGROUND
+Mortality rates typically move smoothly over age and time. Exceptions occur, due to events such as wars and epidemics, which create, among other features, ridges in the mortality surface in a particular calendar year or for cohorts born in a particular year.
+OBJECTIVES
+We aim to develop and evaluate new methods that better model the smooth underlying age-period mortality surface and any cohort or period ridges.
+METHODS
+We propose two new practical methods for modelling the age-period surface of the logarithms of mortality rates.</description>
+    </item>
+    
+    <item>
+      <title>Grouped functional time series forecasting: an application to age-specific mortality rates</title>
+      <link>https://robjhyndman.com/publications/grouped-functional-time-series-forecasting-an-application-to-age-specific-mortality-rates/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/grouped-functional-time-series-forecasting-an-application-to-age-specific-mortality-rates/</guid>
+      <description>Age-specific mortality rates are often disaggregated by different attributes, such as sex, state and ethnicity. Forecasting age-specific mortality rates at the national and sub-national levels plays an important role in developing social policy. However, independent forecasts of age-specific mortality rates at the sub-national levels may not add up to the forecasts at the national level. To address this issue, we consider the problem of reconciling age-specific mortality rate forecasts from the viewpoint of grouped univariate time series forecasting methods (Hyndman et al, 2011), and extend these methods to functional time series forecasting, where age is considered as a continuum.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the influence of short-term temperature patterns on temperature-related mortality: a case-study of Melbourne, Australia</title>
+      <link>https://robjhyndman.com/publications/temperature-mortality/</link>
+      <pubDate>Wed, 07 Dec 2016 00:54:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/temperature-mortality/</guid>
+      <description>Background Several studies have identified the association between ambient temperature and mortality; however, several features of temperature behavior and their impacts on health remain unresolved.
+We obtain daily counts of nonaccidental all-cause mortality data in the elderly (65 + years) and corresponding meteorological data for Melbourne, Australia during 1999 to 2006. We then characterize the temporal behavior of ambient temperature development by quantifying the rates of temperature change during periods designated by pre-specified windows ranging from 1 to 30 days.</description>
+    </item>
+    
+    <item>
+      <title>Long-term forecasts of age-specific participation rates with functional data models</title>
+      <link>https://robjhyndman.com/publications/participation-rates/</link>
+      <pubDate>Sun, 24 Jan 2016 06:33:23 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/participation-rates/</guid>
+      <description>Many countries have implemented social programs providing long-term financial or in-kind entitlements. These programs often focus on specific age-groups and consequently their expenditure streams are subject to demographic change. Given the strains already existing on public budgets, long-term forecasts are an increasingly important instrument to monitor the budgetary consequences of social programs. The expected development of the labour force is a key input to these forecasts. We suggest combining a functional data approach to age-profiles of labour market participation rates with information on education, marital status and other exogenous variables to improve long-term forecasts of labour supply.</description>
+    </item>
+    
+    <item>
+      <title>Functional time series with applications in demography</title>
+      <link>https://robjhyndman.com/seminars/fts-berlin/</link>
+      <pubDate>Tue, 24 Jun 2014 02:33:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/fts-berlin/</guid>
+      <description>This is a short course given at Humboldt University, Berlin, 24-25 June 2014.
+Venue: LvB Library, Room 401, Spandauerstr. 1, 10178 Berlin
+Time: 24 June 2014, 09:30 - 12:30 and 14:00 - 17:00 25 June 2014, 09:30 - 11:30
+Functional time series are curves that are observed sequentially in time, one curve being observed in each time period. In demography, examples include curves formed by annual death rates as a function of age, or annual fertility rates as a function of age.</description>
+    </item>
+    
+    <item>
+      <title>Low-dimensional decomposition, smoothing and forecasting of sparse functional data</title>
+      <link>https://robjhyndman.com/publications/ropes/</link>
+      <pubDate>Thu, 05 Jun 2014 03:53:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ropes/</guid>
+      <description>We propose a new generic method ROPES (Regularized Optimization for Prediction and Estimation with Sparse data) for decomposing, smoothing and forecasting two-dimensional sparse data. In some ways, ROPES is similar to Ridge Regression, the LASSO, Principal Component Analysis (PCA) and Maximum-Margin Matrix Factorisation (MMMF). Using this new approach, we propose a practical method of forecasting mortality rates, as well as a new method for interpolating and extrapolating sparse longitudinal data. We also show how to calculate prediction intervals for the resulting estimates.</description>
+    </item>
+    
+    <item>
+      <title>Common functional principal component models for mortality forecasting</title>
+      <link>https://robjhyndman.com/publications/cfpc-iwfos/</link>
+      <pubDate>Sat, 24 May 2014 01:31:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/cfpc-iwfos/</guid>
+      <description>We explore models for forecasting groups of functional time series data that exploit common features in the data. Our models involve fitting common (or partially common) functional principal component models and forecasting the coefficients using univariate time series methods. We illustrate our approach by forecasting age-specific mortality rates for males and females in Australia.
+Slides for talk</description>
+    </item>
+    
+    <item>
+      <title>Prospective life tables</title>
+      <link>https://robjhyndman.com/publications/prospective-life-tables/</link>
+      <pubDate>Wed, 01 Jan 2014 01:00:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/prospective-life-tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coherent mortality forecasting using functional time series</title>
+      <link>https://robjhyndman.com/seminars/coherent/</link>
+      <pubDate>Fri, 11 Oct 2013 05:12:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/coherent/</guid>
+      <description>A talk given today at Macquarie University, Sydney.</description>
+    </item>
+    
+    <item>
+      <title>Coherent mortality forecasting: the product-ratio method with functional time series models</title>
+      <link>https://robjhyndman.com/publications/coherentfdm/</link>
+      <pubDate>Fri, 01 Feb 2013 07:31:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/coherentfdm/</guid>
+      <description>When independence is assumed, forecasts of mortality for subpopulations are almost always divergent in the long term. We propose a method for coherent forecasting of mortality rates for two or more subpopulations, based on functional principal components models of simple and interpretable functions of rates. The product-ratio functional forecasting method models and forecasts the geometric mean of subpopulation rates and the ratio of subpopulation rates to product rates. Coherence is imposed by constraining the forecast ratio function through stationary time series models.</description>
+    </item>
+    
+    <item>
+      <title>Forecasts of COPD mortality in Australia: 2006-2025</title>
+      <link>https://robjhyndman.com/publications/copdaustralia/</link>
+      <pubDate>Sun, 29 Jan 2012 23:16:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/copdaustralia/</guid>
+      <description>Background: Chronic Obstructive Pulmonary Disease (COPD) is currently the fifth leading cause of death in Australia, and there are marked differences in mortality trends between men and women. In this study, we have sought to model and forecast age related changes in COPD mortality over time for men and women separately over the period 2006–2025.
+Methods: Annual COPD death rates in Australia from 1922 to 2005 for age groups (50–54, 55–59, 60–64, 65–69, 70–74, 75–79, 80–84, 85+) were used.</description>
+    </item>
+    
+    <item>
+      <title>Point and interval forecasts of mortality rates and life expectancy: a comparison of ten principal component methods</title>
+      <link>https://robjhyndman.com/publications/mortality-forecast-comparison/</link>
+      <pubDate>Thu, 14 Jul 2011 23:19:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mortality-forecast-comparison/</guid>
+      <description>Abstract: Using the age- and sex-specific data of 14 developed countries, we compare the point and interval forecast accuracy and bias of ten principal component methods for forecasting mortality rates and life expectancy. The ten methods are variants and extensions of the Lee-Carter method. Based on one-step forecast errors, the weighted Hyndman-Ullah method provides the most accurate point forecasts of mortality rates and the Lee-Miller method is the least biased. For the accuracy and bias of life expectancy, the weighted Hyndman-Ullah method performs the best for female mortality and the Lee-Miller method for male mortality.</description>
+    </item>
+    
+    <item>
+      <title>Demographic forecasting using functional data analysis</title>
+      <link>https://robjhyndman.com/seminars/demographic-forecasting/</link>
+      <pubDate>Tue, 07 Sep 2010 11:33:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/demographic-forecasting/</guid>
+      <description>University of Wollongong, 8 September 2010. Statistical Society of Australia, Victorian Branch, 28 September 2010. Updated version. September 2012.  Abstract:
+Functional time series are curves that are observed sequentially in time. In demography, such data arise as the curves formed by annual death rates as a function of age or annual fertility rates as a function of age. I will discuss methods for describing, modelling and forecasting such functional time series data.</description>
+    </item>
+    
+    <item>
+      <title>Coherent functional forecasts of mortality rates and life expectancy</title>
+      <link>https://robjhyndman.com/seminars/isf2010/</link>
+      <pubDate>Wed, 09 Jun 2010 04:20:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/isf2010/</guid>
+      <description>Talk to be given at the International Symposium on Forecasting, San Diego, 20-23 June 2010.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting age-related changes in breast cancer mortality among white and black US women</title>
+      <link>https://robjhyndman.com/publications/brca-bwus/</link>
+      <pubDate>Thu, 06 May 2010 01:14:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/brca-bwus/</guid>
+      <description>The disparity in breast cancer mortality rates among white and black US women is widening, with higher mortality rates among black women. We apply functional time series models on age-specific breast cancer mortality rates for each group of women, and forecast their mortality curves using exponential smoothing state-space models with damping. The data were obtained from the Surveillance, Epidemiology and End Results (SEER) program of the US. Mortality data were obtained from the National Centre for Health Statistics (NCHS) available on the SEER*Stat database.</description>
+    </item>
+    
+    <item>
+      <title>Using functional data analysis models to estimate future time trends of age-specific breast cancer mortality for the United States and England-Wales</title>
+      <link>https://robjhyndman.com/publications/brca-usew/</link>
+      <pubDate>Fri, 05 Feb 2010 23:14:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/brca-usew/</guid>
+      <description>Background: Mortality/incidence predictions are used for planning public health resources and need to accurately reflect age-related changes through time. We present a new forecasting model to estimate future trends in age-related breast cancer mortality for the United States and England-Wales.
+Material and methods: We use functional data analysis techniques to model breast cancer mortality-age relationships in the United States from 1950 to 2001 and England-Wales from 1950 to 2003, and estimate 20-year predictions using a new forecasting method.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting functional time series</title>
+      <link>https://robjhyndman.com/publications/forecasting-functional-time-series-2/</link>
+      <pubDate>Thu, 23 Jul 2009 23:12:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/forecasting-functional-time-series-2/</guid>
+      <description>We propose forecasting functional time series using weighted functional principal component regression and weighted functional partial least squares regression. These approaches allow for smooth functions, assign higher weights to more recent data, and provide a modeling scheme that is easily adapted to allow for constraints and other information. We illustrate our approaches using age-specific French female mortality rates from 1816 to 2006 and age-specific Australian fertility rates from 1921 to 2006, and show that these weighted methods improve forecast accuracy in comparison to their unweighted counterparts.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic population forecasts using functional data models for mortality, fertility and migration</title>
+      <link>https://robjhyndman.com/publications/stochastic-population-forecasts/</link>
+      <pubDate>Wed, 16 Jul 2008 05:33:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/stochastic-population-forecasts/</guid>
+      <description>Age-sex-specific population forecasts are derived through stochastic population renewal using forecasts of mortality, fertility and net migration. Functional data models with time series coefficients are used to model age-specific mortality and fertility rates. As detailed migration data are lacking, net migration by age and sex is estimated as the difference between historic annual population data and successive populations one year ahead derived from a projection using fertility and mortality data. This estimate, which includes error, is also modeled using a functional data model.</description>
+    </item>
+    
+    <item>
+      <title>Population forecasting and the importance of being uncertain</title>
+      <link>https://robjhyndman.com/seminars/population-forecasting-and-the-importance-of-being-uncertain/</link>
+      <pubDate>Tue, 27 Nov 2007 07:58:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/population-forecasting-and-the-importance-of-being-uncertain/</guid>
+      <description>Where: Knibbs Lecture, Statistical Society of Australia  Abstract: Forecasters had an inauspicious beginning, dabbling with divination, sheep&amp;rsquo;s livers and vapour-ridden caves in the mountains of Greece. Then there was a time when forecasters could be charged with vagrancy! Their reputations are still tarnished, but their tools are rather more effective. Professor Rob Hyndman will argue for the importance of statistical modelling in forecasting, and demonstrate the dangers that occur when uncertainty is ignored.</description>
+    </item>
+    
+    <item>
+      <title>Robust forecasting of mortality and fertility rates: a functional data approach</title>
+      <link>https://robjhyndman.com/publications/funcfor/</link>
+      <pubDate>Mon, 16 Jul 2007 05:16:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/funcfor/</guid>
+      <description>Abstract: A new method is proposed for forecasting age-specific mortality and fertility rates observed over time. This approach allows for smooth functions of age, is robust for outlying years due to wars and epidemics, and provides a modelling framework that is easily adapted to allow for constraints and other information. Ideas from functional data analysis, nonparametric smoothing and robust statistics are combined to form a methodology that is widely applicable to any functional time series data observed discretely and possibly with error.</description>
+    </item>
+    
+    <item>
+      <title>Stochastic population forecasts using functional data models</title>
+      <link>https://robjhyndman.com/seminars/stochastic-population/</link>
+      <pubDate>Thu, 22 Feb 2007 08:14:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/stochastic-population/</guid>
+      <description>When: 12.00noon, Thu 22nd February 2007 Where: Room 213, Richard Berry Building, The University of Melbourne When: 2.30pm, Fri 1 June 2007 Where: Room 457, Menzies Building, Monash University (Clayton)  Abstract: I will present a new approach to age-specific forecasting of population based on separate forecasts of mortality, fertility and net migration. Functional data models with time series coefficients will be used to model mortality and fertility rates, and net migration.</description>
+    </item>
+    
+    <item>
+      <title>Lee-Carter mortality forecasting: a multi-country comparison of variants and extensions</title>
+      <link>https://robjhyndman.com/publications/lee-carter-mortality-forecasting-a-multi-country-comparison-of-variants-and-extensions/</link>
+      <pubDate>Fri, 20 Oct 2006 04:24:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/lee-carter-mortality-forecasting-a-multi-country-comparison-of-variants-and-extensions/</guid>
+      <description>We compare the short- to medium- term accuracy of five variants or extensions of the Lee-Carter method for mortality forecasting. These include the original Lee-Carter, the Lee-Miller and Booth-Maindonald-Smith variants, and the more flexible Hyndman-Ullah and De Jong-Tickle extensions. These methods are compared by applying them to sex-specific populations of 10 developed countries using data for 1986-2000 for evaluation. All variants and extensions are more accurate than the original Lee-Carter method for forecasting log death rates, by up to 61%.</description>
+    </item>
+    
+    <item>
+      <title>Robust forecasting of mortality and fertility rates: a functional data approach</title>
+      <link>https://robjhyndman.com/publications/robust-forecasting-of-mortality-and-fertility-rates-a-functional-data-approach/</link>
+      <pubDate>Sat, 16 Apr 2005 01:35:20 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/robust-forecasting-of-mortality-and-fertility-rates-a-functional-data-approach/</guid>
+      <description>We propose a new method for forecasting age-specific mortality and fertility rates observed over time. We combine ideas from functional data analysis, nonparametric smoothing and robust statistics to form a methodology that is widely applicable to any functional time series data, and age-specific mortality and fertility in particular. Our approach provides a modelling framework that is easily adapted to allow for constraints and other information. The model used can be considered a generalization of the Lee-Carter model commonly used in mortality and fertility forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Spline interpolation for demographic variables: the monotonicity problem</title>
+      <link>https://robjhyndman.com/publications/monotonic-splines-2/</link>
+      <pubDate>Fri, 16 Jan 2004 03:40:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/monotonic-splines-2/</guid>
+      <description>In demography, it is often necessary to obtain a monotonic interpolation of data. A solution to this problem is available using the Hyman filter for cubic splines. However, this does not seem to be well-known amongst demographers, and no implementation of the procedure is readily available. We remedy these problems by outlining the relevant ideas here, and providing a function for the R package.
+R code</description>
+    </item>
+    
+  </channel>
+</rss>

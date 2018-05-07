@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducible Research on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/reproducible-research/</link>
+    <description>Recent content in Reproducible Research on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A brief history of time series forecasting competitions</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-competitions/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-competitions/</guid>
+      <description>Prediction competitions are now so widespread that it is often forgotten how controversial they were when first held, and how influential they have been over the years.
+To keep this exercise manageable, I will restrict attention to time series forecasting competitions &amp;mdash; where only the history of the data is available when producing forecasts.
+Nottingham studies The earliest non-trivial study of time series forecast accuracy was probably by David Reid as part of his PhD at the University of Nottingham (1969).</description>
+    </item>
+    
+    <item>
+      <title>R package for M4 Forecasting Competition</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp2018/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp2018/</guid>
+      <description>The M4 forecasting competition is well under-way, and a few of my PhD students have been working on submissions.
+Pablo Montero-Manso, Carla Netto, and Thiyanga Talagala have made an R package containing all of the data (100,000 time series), which should make it substantially easier for other contestants to load the data into R in order to compute forecasts.
+Grab the package from this github repository.
+For more details about the M4 competition see this post or go to the M4 website.</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition update</title>
+      <link>https://robjhyndman.com/hyndsight/m4competition/</link>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4competition/</guid>
+      <description>The official guidelines for the M4 competition have now been published, and there have been several developments since my last post on this.
+ There is now a prize for prediction interval accuracy using a scaled version of the Mean Interval Score. If the $100(1-\alpha)$% prediction interval for time $t$ is given by $[L_{t},U_{t}]$, for $t=1,\dots,h$, then the MIS is defined as $$\frac{1}{h}\sum_{t=1}^{h} \left[ (U_t-L_t) + \frac{2}{\alpha}(L_t-Y_t)1(Y_t &amp;lt; L_t) + \frac{2}{\alpha}(Y_t-U_t)1(Y_t &amp;gt; U_t) \right] $$ where $Y_t$ is the observation at time $t$.</description>
+    </item>
+    
+    <item>
+      <title>Some new time series packages</title>
+      <link>https://robjhyndman.com/hyndsight/tspackages/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tspackages/</guid>
+      <description>This week I have finished preliminary versions of two new R packages for time series analysis. The first (tscompdata) contains several large collections of time series that have been used in forecasting competitions; the second (tsfeatures) is designed to compute features from univariate time series data. For now, both are only on github. I will probably submit them to CRAN after they’ve been tested by a few more people.
+tscompdata There are already two packages containing forecasting competition data: Mcomp (containing the M and M3 competition data) and Tcomp (containing the tourism competition data).</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition: response from Spyros Makridakis</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp-response/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp-response/</guid>
+      <description>Following my post on the M4 competition yesterday, Spyros Makridakis sent me these comments for posting here.
+I would like to thank Rob, my friend and co-author, for his insightful remarks concerning the upcoming M4 competition. As Rob says, the two of us have talked a great deal about competitions and I certainly agree with him about the “ideal” forecasting competition. In this reply, I will explain why I have deviated from the “ideal”, mostly for practical reasons and to ensure higher participation.</description>
+    </item>
+    
+    <item>
+      <title>M4 Forecasting Competition</title>
+      <link>https://robjhyndman.com/hyndsight/m4comp/</link>
+      <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/m4comp/</guid>
+      <description>The &amp;ldquo;M&amp;rdquo; competitions organized by Spyros Makridakis have had an enormous influence on the field of forecasting. They focused attention on what models produced good forecasts, rather than on the mathematical properties of those models. For that, Spyros deserves congratulations for changing the landscape of forecasting research through this series of competitions.
+Makridakis &amp;amp; Hibon, (JRSSA 1979) was the first serious attempt at a large empirical evaluation of forecast methods.</description>
+    </item>
+    
+    <item>
+      <title>rOpenSci OzUnconference coming to Melbourne</title>
+      <link>https://robjhyndman.com/hyndsight/ozunconf2017/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ozunconf2017/</guid>
+      <description>For a second year running, there will be another rOpenSci OzUnconference in Australia. This one will be held in Melbourne, on 26-27 October 2017.
+Unlike regular conferences, there are no talks and there is no pre-determined agenda. It brings together scientists, developers, and open data enthusiasts from academia, industry, government, and non-profit to get together for a few days to work on R-related projects. The agenda is mostly decided during the conference itself, and involves participants dividing into small groups to work on the projects of most interest to them.</description>
+    </item>
+    
+    <item>
+      <title>Monash Rmarkdown templates on github</title>
+      <link>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</link>
+      <pubDate>Thu, 30 Mar 2017 21:53:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</guid>
+      <description>Rmarkdown templates for staff and students in my department are now available on github. For a thesis, fork the repository MonashThesis.
+For other templates, install the R package MonashEBSTemplates R package. This provides templates for
+ beamer slides working papers exams letters  </description>
+    </item>
+    
+    <item>
+      <title>The Australian Macro Database</title>
+      <link>https://robjhyndman.com/hyndsight/ausmacrodata/</link>
+      <pubDate>Wed, 15 Feb 2017 00:40:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ausmacrodata/</guid>
+      <description>AusMacroData is a new website that encourages and facilitates the use of quantitative, publicly available Australian macroeconomic data. The Australian Macro Database hosted at ausmacrodata.org provides a user-friendly front end for searching among over 40000 economic variables and is loosely based on similar international sites such as the Federal Reserve Economic Database (FRED). In total, data on 40,304 variables are available for download from AusMacroData. The majority of variables are sourced from the Australian Bureau of Statistics (ABS) and include data on national accounts, balance of payments and trade, housing and finance, labour force consumer price indices.</description>
+    </item>
+    
+    <item>
+      <title>Tourism forecasting competition data as an R package</title>
+      <link>https://robjhyndman.com/hyndsight/tcomp/</link>
+      <pubDate>Sat, 22 Oct 2016 11:19:31 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tcomp/</guid>
+      <description>The data used in the tourism forecasting competition, discussed in Athanasopoulos et al (2011), have been made available in the Tcomp package for R. The objects are of the same format as for Mcomp package containing data from the M1 and M3 competitions.
+Thanks to Peter Ellis for putting the package together. He has also produced a nice blog post about it.</description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown template for a Monash working paper</title>
+      <link>https://robjhyndman.com/hyndsight/rmarkdown-template/</link>
+      <pubDate>Sun, 28 Aug 2016 10:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rmarkdown-template/</guid>
+      <description>This is only directly relevant to my Monash students and colleagues, but the same idea might be useful for adapting to other institutions.
+Some recent changes in the rmarkdown and bookdown packages mean that it is now possible to produce working papers in exactly the same format as we previously used with LaTeX.Just install the MonashEBSTemplates package from github. You also need a recent version of LaTeX.
+Then from within RStudio, create a new document by selecting &amp;ldquo;Rmarkdown&amp;rdquo;, &amp;ldquo;From Template&amp;rdquo;, and select &amp;ldquo;Monash EBS Working Paper&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Tourism time series repository</title>
+      <link>https://robjhyndman.com/hyndsight/tourism-time-series/</link>
+      <pubDate>Wed, 10 Aug 2016 08:12:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tourism-time-series/</guid>
+      <description>A few years ago, I wrote a paper with George Athanasopoulos and others about a tourism forecasting competition. We originally made the data available as an online supplement to the paper, but that has unfortunately since disappeared although the paper itself is still available.
+So I am posting the data here in case anyone wants to use it for replicating our results, or for other research purposes. The data are split into monthly, quarterly and yearly data.</description>
+    </item>
+    
+    <item>
+      <title>The latest IJF issue with GEFCom2014 results</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-gefcom2014/</link>
+      <pubDate>Fri, 10 Jun 2016 01:07:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-gefcom2014/</guid>
+      <description>The latest issue of the IJF is a bumper issue with over 500 pages of forecasting insights.
+The GEFCom2014 papers are included in a special section on probabilistic energy forecasting, guest edited by Tao Hong and Pierre Pinson. This is a major milestone in energy forecasting research with the focus on probabilistic forecasting and forecast evaluation done using a quantile scoring method. Only a few years ago I was having to explain to energy professionals why you couldn&amp;rsquo;t use a MAPE to evaluate a percentile forecast.</description>
+    </item>
+    
+    <item>
+      <title>rOpenSci unconference in Brisbane, 21-22 April 2016</title>
+      <link>https://robjhyndman.com/hyndsight/ropensci2016/</link>
+      <pubDate>Mon, 21 Mar 2016 00:31:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ropensci2016/</guid>
+      <description>The first rOpenSci unconference in Australia will be held on Thursday and Friday (April 21-22) in Brisbane, at the Microsoft Innovation Centre.
+This event will bring together researchers, developers, data scientists and open data enthusiasts from industry, government and university. The aim is to conceptualise and develop R-based tools that address current challenges in data science, open science and reproducibility.
+Past examples of the projects can here, here, and here. Also here.</description>
+    </item>
+    
+    <item>
+      <title>Reproducibility in computational research</title>
+      <link>https://robjhyndman.com/hyndsight/reproducibility/</link>
+      <pubDate>Fri, 25 Sep 2015 07:31:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/reproducibility/</guid>
+      <description>Jane Frazier spoke at our research team meeting today on &amp;ldquo;Reproducibility in computational research&amp;rdquo;. We had a very stimulating and lively discussion about the issues involved. One interesting idea was that reproducibility is on a scale, and we can all aim to move further along the scale towards making our own research more reproducible. For example
+ Can you reproduce your results tomorrow on the same computer with the same software installed?</description>
+    </item>
+    
+    <item>
+      <title>Useful tutorials</title>
+      <link>https://robjhyndman.com/hyndsight/useful-tutorials/</link>
+      <pubDate>Wed, 01 Jul 2015 03:28:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/useful-tutorials/</guid>
+      <description>There are some tools that I use regularly, and I would like my research students and post-docs to learn them too. Here are some great online tutorials that might help.
+ ggplot tutorial from Winston Chang
+ Writing an R package from Karl Broman
+ Rmarkdown from RStudio
+ Shiny from RStudio
+ git/github guide from Karl Broman
+ minimal make tutorial from Karl Broman
+  </description>
+    </item>
+    
+    <item>
+      <title>R vs Autobox vs ForecastPro vs ...</title>
+      <link>https://robjhyndman.com/hyndsight/show-me-the-evidence/</link>
+      <pubDate>Wed, 03 Jun 2015 01:04:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/show-me-the-evidence/</guid>
+      <description>Every now and then a commercial software vendor makes claims on social media about how their software is so much better than the forecast package for R, but no details are provided.
+There are lots of reasons why you might select a particular software solution, and R isn&amp;rsquo;t for everyone. But anyone claiming superiority should at least provide some evidence rather than make unsubstantiated claims.The M3 forecasting competition was organized by Spyros Makridakis and Michèle Hibon.</description>
+    </item>
+    
+    <item>
+      <title>A new open source data set for detecting time series outliers</title>
+      <link>https://robjhyndman.com/hyndsight/yahoo-data/</link>
+      <pubDate>Wed, 01 Apr 2015 02:33:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/yahoo-data/</guid>
+      <description>Yahoo Labs has just released an interesting new data set useful for research on detecting anomalies (or outliers) in time series data. There are many contexts in which anomaly detection is important. For Yahoo, the main use case is in detecting unusual traffic on Yahoo servers.The data set comprises real traffic to Yahoo services, along with some synthetic data. There are 367 time series in the data set, each of which contains between 741 and 1680 observations recorded at regular intervals.</description>
+    </item>
+    
+    <item>
+      <title>New Australian data on the HMD</title>
+      <link>https://robjhyndman.com/hyndsight/hmd-australia/</link>
+      <pubDate>Thu, 27 Nov 2014 02:33:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hmd-australia/</guid>
+      <description>The Human Mortality Database is a wonderful resource for anyone interested in demographic data. It is a carefully curated collection of high quality deaths and population data from 37 countries, all in a consistent format with consistent definitions. I have used it many times and never cease to be amazed at the care taken to maintain such a great resource.
+The data are continually being revised and updated. Today the Australian data has been updated to 2011.</description>
+    </item>
+    
+    <item>
+      <title>Errors on percentage errors</title>
+      <link>https://robjhyndman.com/hyndsight/smape/</link>
+      <pubDate>Wed, 16 Apr 2014 12:11:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/smape/</guid>
+      <description>The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &amp;ldquo;it has a bias favoring estimates that are below the actual values&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Job at Center for Open Science</title>
+      <link>https://robjhyndman.com/hyndsight/cos-job/</link>
+      <pubDate>Mon, 07 Apr 2014 22:36:23 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-job/</guid>
+      <description>This looks like an interesting job.
+ Dear Dr. Hyndman,
+I write from the Center for Open Science, a non-profit organization based in Charlottesville, Virginia in the United States, which is dedicated to improving the alignment between scientific values and scientific practices. We are dedicated to open source and open science.
+We are reaching out to you to find out if you know anyone who might be interested in our Statistical and Methodological Consultant position.</description>
+    </item>
+    
+    <item>
+      <title>More time series data online</title>
+      <link>https://robjhyndman.com/hyndsight/comp-engine/</link>
+      <pubDate>Thu, 27 Feb 2014 06:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/comp-engine/</guid>
+      <description>Earlier this week I had coffee with Ben Fulcher who told me about his online collection comprising about 30,000 time series, mostly medical series such as ECG measurements, meteorological series, birdsong, etc. There are some finance series, but not many other data from a business or economic context, although he does include my Time Series Data Library. In addition, he provides Matlab code to compute a large number of characteristics. Anyone wanting to test time series algorithms on a large collection of data should take a look.</description>
+    </item>
+    
+    <item>
+      <title>Computational Actuarial Science with R</title>
+      <link>https://robjhyndman.com/hyndsight/caswithr/</link>
+      <pubDate>Mon, 03 Feb 2014 03:00:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/caswithr/</guid>
+      <description>I recently co-authored a chapter on &amp;ldquo;Prospective Life Tables&amp;rdquo; for this book, edited by Arthur Charpentier. R code to reproduce the figures and to complete the exercises for our chapter is now available on github. Code for the other chapters should also be available soon. The book can be pre-ordered on Amazon.</description>
+    </item>
+    
+    <item>
+      <title>Reflections on UseR! 2013</title>
+      <link>https://robjhyndman.com/hyndsight/user2013/</link>
+      <pubDate>Fri, 12 Jul 2013 22:01:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/user2013/</guid>
+      <description>This week I&amp;rsquo;ve been at the R Users conference in Albacete, Spain. These conferences are a little unusual in that they are not really about research, unlike most conferences I attend. They provide a place for people to discuss and exchange ideas on how R can be used.
+Here are some thoughts and highlights of the conference, in no particular order. Håvard Rue spoke on Bayesian computing with INLA and the R-INLA package.</description>
+    </item>
+    
+    <item>
+      <title>Makefiles for R/LaTeX projects</title>
+      <link>https://robjhyndman.com/hyndsight/makefiles/</link>
+      <pubDate>Wed, 31 Oct 2012 02:49:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/makefiles/</guid>
+      <description>Updated: 21 November 2012
+Make is a marvellous tool used by programmers to build software, but it can be used for much more than that. I use make whenever I have a large project involving R files and LaTeX files, which means I use it for almost all of the papers I write, and almost of the consulting reports I produce.If you are using a Mac or Linux, you will already have make installed.</description>
+    </item>
+    
+    <item>
+      <title>COMPSTAT2012</title>
+      <link>https://robjhyndman.com/hyndsight/compstat2012/</link>
+      <pubDate>Tue, 28 Aug 2012 11:38:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/compstat2012/</guid>
+      <description>This week I&amp;rsquo;m in Cyprus attending the COMPSTAT2012 conference. There&amp;rsquo;s been the usual interesting collection of talks, and interactions with other researchers. But I was struck by two side comments in talks this morning that I&amp;rsquo;d like to mention.
+Stephen Pollock: Don&amp;rsquo;t imagine your model is the truth Actually, Stephen said something like &amp;ldquo;economists (or was it econometricians?) have a bad habit of imagining their models are true&amp;rdquo;. He gave the example of people asking whether GDP &amp;ldquo;has a unit root&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title>How to avoid annoying a referee</title>
+      <link>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</link>
+      <pubDate>Fri, 22 Oct 2010 09:23:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</guid>
+      <description>It&amp;rsquo;s not a good idea to annoy the referees of your paper. They make recommendations to the editor about your work and it is best to keep them happy. There is an interesting discussion on stats.stackexchange.com on this subject. This inspired my own list below.
+ Explain what you&amp;rsquo;ve done clearly, avoiding unnecessary jargon. Don&amp;rsquo;t claim your paper contributes more than it actually does. (I refereed a paper this week where the author claimed to have invented principal component analysis!</description>
+    </item>
+    
+    <item>
+      <title>Replications and reproducible research</title>
+      <link>https://robjhyndman.com/hyndsight/replications/</link>
+      <pubDate>Wed, 02 Dec 2009 06:07:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/replications/</guid>
+      <description>Reproducible research One of the best ways to get started with research in a new area is to try to replicate some existing research. In doing so, you will usually gain a much better understanding of the topic, and you will often discover some problems with the research, or develop ideas that will lead to a new research paper.
+Unfortunately, a lot of papers are not reproducible because the data are not made available, or the description of the methods are not detailed enough.</description>
+    </item>
+    
+  </channel>
+</rss>

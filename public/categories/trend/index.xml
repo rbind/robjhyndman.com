@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trend on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/trend/</link>
+    <description>Recent content in Trend on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Oct 2015 02:43:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/trend/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Piecewise linear trends</title>
+      <link>https://robjhyndman.com/hyndsight/piecewise-linear-trends/</link>
+      <pubDate>Wed, 28 Oct 2015 02:43:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/piecewise-linear-trends/</guid>
+      <description>I prepared the following notes for a consulting client, and I thought they might be of interest to some other people too.
+Let \(y_t\) denote the value of the time series at time \(t\), and suppose we wish to fit a trend with correlated errors of the form  \[ y_t = f(t) + n_t, \]
+ where \(f(t)\) represents the possibly nonlinear trend and \(n_t\) is an autocorrelated error process.</description>
+    </item>
+    
+  </channel>
+</rss>

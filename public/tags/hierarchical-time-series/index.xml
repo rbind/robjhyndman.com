@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hierarchical Time Series on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/hierarchical-time-series/</link>
+    <description>Recent content in Hierarchical Time Series on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/hierarchical-time-series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimal forecast reconciliation for hierarchical and grouped time series through trace minimization</title>
+      <link>https://robjhyndman.com/publications/mint/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mint/</guid>
+      <description>Large collections of time series often have aggregation constraints due to product or geographical groupings. The forecasts for the most disaggregated series are usually required to add-up exactly to the forecasts of the aggregated series, a constraint we refer to as &amp;ldquo;coherence&amp;rdquo;. Forecast reconciliation is the process of adjusting forecasts to make them coherent. The reconciliation algorithm proposed by Hyndman et al. (2011) is based on a generalized least squares estimator that requires an estimate of the covariance matrix of the coherency errors (i.</description>
+    </item>
+    
+    <item>
+      <title>Optimal forecast reconcilation</title>
+      <link>https://robjhyndman.com/seminars/unsw2017/</link>
+      <pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/unsw2017/</guid>
+      <description>Talk given at UNSW
+Abstract
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data</title>
+      <link>https://robjhyndman.com/publications/hpf-electricity/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hpf-electricity/</guid>
+      <description>Electricity smart meters record consumption, on a near real-time basis, at the level of individual commercial and residential properties. From this, a hierarchy can be constructed consisting of time series of demand at the smart meter level, and at various levels of aggregation, such as substations, cities and regions. Forecasts are needed at each level to support the efficient and reliable management of consumption. A limitation of previous research in this area is that it considered only deterministic prediction.</description>
+    </item>
+    
+    <item>
+      <title>Coherent Probabilistic Forecasts for Hierarchical Time Series</title>
+      <link>https://robjhyndman.com/publications/probhts/</link>
+      <pubDate>Fri, 02 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/probhts/</guid>
+      <description>Many applications require forecasts for a hierarchy comprising a set of time series along with aggregates of subsets of these series. Although forecasts can be produced independently for each series in the hierarchy, typically this does not lead to coherent forecasts — the property that forecasts add up appropriately across the hierarchy. State-of-the-art hierarchical forecasting methods usually reconcile these independently generated forecasts to satisfy the aggregation constraints. A fundamental limitation of prior research is that it has looked only at the problem of forecasting the mean of each time series.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with temporal hierarchies</title>
+      <link>https://robjhyndman.com/publications/temporal-hierarchies/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/temporal-hierarchies/</guid>
+      <description>This paper introduces the concept of Temporal Hierarchies for time series forecasting. A temporal hierarchy can be constructed for any time series by means of non-overlapping temporal aggregation. Predictions constructed at all aggregation levels are combined with the proposed framework to result in temporally reconciled, accurate and robust forecasts. The implied combination mitigates modelling uncertainty, while the reconciled nature of the forecasts results in a unified prediction that supports aligned decisions at different planning horizons: from short-term operational up to long-term strategic planning.</description>
+    </item>
+    
+    <item>
+      <title>Grouped functional time series forecasting: an application to age-specific mortality rates</title>
+      <link>https://robjhyndman.com/publications/grouped-functional-time-series-forecasting-an-application-to-age-specific-mortality-rates/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/grouped-functional-time-series-forecasting-an-application-to-age-specific-mortality-rates/</guid>
+      <description>Age-specific mortality rates are often disaggregated by different attributes, such as sex, state and ethnicity. Forecasting age-specific mortality rates at the national and sub-national levels plays an important role in developing social policy. However, independent forecasts of age-specific mortality rates at the sub-national levels may not add up to the forecasts at the national level. To address this issue, we consider the problem of reconciling age-specific mortality rate forecasts from the viewpoint of grouped univariate time series forecasting methods (Hyndman et al, 2011), and extend these methods to functional time series forecasting, where age is considered as a continuum.</description>
+    </item>
+    
+    <item>
+      <title>Reconciling forecasts: the hts and thief packages</title>
+      <link>https://robjhyndman.com/seminars/erum2016/</link>
+      <pubDate>Thu, 13 Oct 2016 12:04:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/erum2016/</guid>
+      <description>eRum2016, Poznań, Poland.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting large collections of related time series</title>
+      <link>https://robjhyndman.com/seminars/augsburg2016/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/augsburg2016/</guid>
+      <description>Keynote talk given at the German Statistical Week, Augsburg.
+Abstract
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Fast computation of reconciled forecasts for hierarchical and grouped time series</title>
+      <link>https://robjhyndman.com/publications/hgts/</link>
+      <pubDate>Sun, 31 Jan 2016 22:49:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hgts/</guid>
+      <description>We show that the least squares approach to reconciling hierarchical time series forecasts can be extended to much more general collections of time series with aggregation constraints. The constraints arise due to the need for forecasts of collections of time series to add up in the same way as the observed time series. We also show that the computations involved can be handled efficiently by exploiting the structure of the associated design matrix, or by using sparse matrix routines.</description>
+    </item>
+    
+    <item>
+      <title>Visualization and forecasting of big time series data</title>
+      <link>https://robjhyndman.com/seminars/big-time-series-data/</link>
+      <pubDate>Mon, 23 Feb 2015 01:11:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/big-time-series-data/</guid>
+      <description>Talk given at the ACEMS Big data workshop, QUT.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing and forecasting big time series data</title>
+      <link>https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/</link>
+      <pubDate>Mon, 12 Jan 2015 15:33:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/</guid>
+      <description>Institute of Statistical Science, Academia Sinica 時　間 2015/01/12 11:00 星期一 地　點 中研院-統計所 2F 交誼廳 備　註 茶 會：上午10：40統計所二樓交誼廳
+Time series can often be naturally disaggregated in a hierarchical or grouped structure. For example, a manufacturing company can disaggregate total demand for their products by country of sale, retail outlet, product type, package size, and so on. As a result, there can be millions of individual time series to forecast at the most disaggregated level, plus additional series to forecast at higher levels of aggregation.</description>
+    </item>
+    
+    <item>
+      <title>Optimally reconciling forecasts in a hierarchy</title>
+      <link>https://robjhyndman.com/publications/foresight-hts/</link>
+      <pubDate>Mon, 20 Oct 2014 22:00:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/foresight-hts/</guid>
+      <description>This is an introduction to our approach to forecast reconciliation without using any matrices. The original research is available here:
+ Hyndman, Ahmed, Athanasopoulos and Shang (CSDA, 2011) Athanasopoulos, Ahmed and Hyndman (IJF, 2009)  The software is available in the hts package for R with some notes on usage in the vignette. There is also a gentle introduction in our forecasting textbook.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+    <item>
+      <title>Fast computation of reconciled forecasts in hierarchical and grouped time series</title>
+      <link>https://robjhyndman.com/seminars/hgts-2/</link>
+      <pubDate>Tue, 01 Jul 2014 06:38:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/hgts-2/</guid>
+      <description>International Symposium on Forecasting, Rotterdam.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting hierarchical time series</title>
+      <link>https://robjhyndman.com/seminars/hts-3/</link>
+      <pubDate>Thu, 10 Oct 2013 05:40:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/hts-3/</guid>
+      <description>Talk given at University of Sydney today.</description>
+    </item>
+    
+    <item>
+      <title>R tools for hierarchical time series</title>
+      <link>https://robjhyndman.com/seminars/hts-2/</link>
+      <pubDate>Wed, 03 Jul 2013 20:07:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/hts-2/</guid>
+      <description>Talk given at EURO/INFORMS, Rome, 1 July 2013
+And at UseR! 2013, Albacete, Spain, 10 July 2013.</description>
+    </item>
+    
+    <item>
+      <title>Advances in automatic time series forecasting</title>
+      <link>https://robjhyndman.com/seminars/automaticforecasting/</link>
+      <pubDate>Tue, 19 Jun 2012 08:58:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/automaticforecasting/</guid>
+      <description>Invited talk, Australian Statistical Conference, Adelaide, 10 July 2012.
+ COMPSTAT 2012, Cyprus, 29 August 2012.
+ Seminar, Lancaster University, 10 September 2012.  Many applications require a large number of time series to be forecast completely automatically. For example, manufacturing companies often require weekly forecasts of demand for thousands of products at dozens of locations in order to plan distribution and maintain suitable inventory stocks. In population forecasting, there are often a few hundred time series to be forecast, representing various components that make up the population dynamics.</description>
+    </item>
+    
+    <item>
+      <title>Optimal combination forecasts for hierarchical time series</title>
+      <link>https://robjhyndman.com/publications/hierarchical/</link>
+      <pubDate>Tue, 15 Mar 2011 23:52:31 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hierarchical/</guid>
+      <description>In many applications, there are multiple time series that are hierarchically organized and can be aggregated at several different levels in groups based on products, geography or some other features. We call these &amp;ldquo;hierarchical time series&amp;rdquo;. They are commonly forecast using either a &amp;ldquo;bottom-up&amp;rdquo; or a &amp;ldquo;top-down&amp;rdquo; method.
+In this paper we propose a new approach to hierarchical forecasting which provides optimal forecasts that are better than forecasts produced by either a top-down or a bottom-up approach.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical forecasts for Australian domestic tourism</title>
+      <link>https://robjhyndman.com/publications/hierarchical-tourism/</link>
+      <pubDate>Fri, 16 Jan 2009 23:08:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hierarchical-tourism/</guid>
+      <description>In this paper we explore the hierarchical nature of tourism demand time series and produce short-term forecasts for Australian domestic tourism. The data and forecasts are organized in a hierarchy based on disaggregating the data for different geographical regions and for different purposes of travel. We consider five approaches to hierarchical forecasting: two variations of the top-down approach, the bottom-up method, a newly proposed top-down approach where top-level forecasts are disaggregated according to forecasted proportions of lower level series, and a recently proposed optimal combination approach.</description>
+    </item>
+    
+    <item>
+      <title>Optimal combination forecasts for hierarchical time series</title>
+      <link>https://robjhyndman.com/seminars/hierarchical2/</link>
+      <pubDate>Tue, 20 Jun 2006 07:08:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/hierarchical2/</guid>
+      <description>International Symposium on Forecasting, Santander, Spain
+Speakers: Rob&amp;nbsp;J&amp;nbsp;Hyndman and Roman A. Ahmed</description>
+    </item>
+    
+  </channel>
+</rss>

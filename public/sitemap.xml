@@ -1,0 +1,4140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-nyc-2018/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast83/</loc>
+    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-competitions/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/abs-hdts/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ausmacrofcast/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/m4comp2018/</loc>
+    <lastmod>2018-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/research&#43;&#43;/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-hong-nominations-2018/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/oddstream/</loc>
+    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mint/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bagging-uncertainty/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/visualizing-big-energy-data/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/cv-time-series/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/m4competition/</loc>
+    <lastmod>2017-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/nzsa2017/</loc>
+    <lastmod>2017-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/data-science-for-managers/</loc>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/aihw2017/</loc>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tspackages/</loc>
+    <lastmod>2017-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/m4comp-response/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/m4comp/</loc>
+    <lastmod>2017-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/beijing2017/</loc>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/acems-postdoc/</loc>
+    <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/beijing-2017/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/acems-hdts/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/subdaily-2017/</loc>
+    <lastmod>2017-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mortality-smoothing/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/uwa2017/</loc>
+    <lastmod>2017-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/high-dimensional-time-series/</loc>
+    <lastmod>2017-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ra-wanted/</loc>
+    <lastmod>2017-09-07T13:21:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ozunconf2017/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/distinct/</loc>
+    <lastmod>2017-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/biggish-time-series-data/</loc>
+    <lastmod>2017-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/unsw2017/</loc>
+    <lastmod>2017-08-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/calendar-vis/</loc>
+    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/icml2017/</loc>
+    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-workshop-perth/</loc>
+    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/poverty2017/</loc>
+    <lastmod>2017-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-best-paper-award-2017/</loc>
+    <lastmod>2017-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/iif-hong-award-2016/</loc>
+    <lastmod>2017-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ralph-snyder/</loc>
+    <lastmod>2017-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast-stickers/</loc>
+    <lastmod>2017-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/isea2017/</loc>
+    <lastmod>2017-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/2016-impact-factors/</loc>
+    <lastmod>2017-06-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/hpf-electricity/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/probhts/</loc>
+    <lastmod>2017-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/datacamp/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-medascin/</loc>
+    <lastmod>2017-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/nnetar-prediction-intervals/</loc>
+    <lastmod>2017-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/kpprize2017/</loc>
+    <lastmod>2017-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jobs-may-2017/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/temporal-hierarchies/</loc>
+    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/handguns/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/monthly-seasonality/</loc>
+    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/handguns/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/blogdown/</loc>
+    <lastmod>2017-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/grouped-functional-time-series-forecasting-an-application-to-age-specific-mortality-rates/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/eindhoven2017/</loc>
+    <lastmod>2017-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/software-for-honours-students/</loc>
+    <lastmod>2017-04-04T23:00:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/2017-04-04-software-for-honours-students/</loc>
+    <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</loc>
+    <lastmod>2017-03-30T21:53:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/fvanaive/</loc>
+    <lastmod>2017-03-28T08:10:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/melbuni-smartgrids/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/academic-phishing/</loc>
+    <lastmod>2017-03-18T02:25:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/eindhoven2/</loc>
+    <lastmod>2017-03-07T22:35:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/wombat-medascin-2017/</loc>
+    <lastmod>2017-03-07T06:37:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-nominations1415/</loc>
+    <lastmod>2017-03-01T03:54:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast8/</loc>
+    <lastmod>2017-02-28T14:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/invited-sessions-at-isf2017/</loc>
+    <lastmod>2017-02-27T22:29:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isf-social/</loc>
+    <lastmod>2017-02-15T10:06:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ausmacrodata/</loc>
+    <lastmod>2017-02-15T00:40:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ausmacrodata/</loc>
+    <lastmod>2017-02-14T05:26:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isf2017-practitioners/</loc>
+    <lastmod>2017-02-02T23:55:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/jaci2016/</loc>
+    <lastmod>2017-01-31T22:43:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/</loc>
+    <lastmod>2017-01-27T05:13:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/dynamic-pareto-approximation/</loc>
+    <lastmod>2017-01-18T20:35:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ts-feature-space/</loc>
+    <lastmod>2017-01-12T21:16:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-hong-award/</loc>
+    <lastmod>2017-01-11T04:38:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-reject/</loc>
+    <lastmod>2016-12-12T02:15:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/temperature-mortality/</loc>
+    <lastmod>2016-12-07T00:54:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tscv/</loc>
+    <lastmod>2016-12-05T12:43:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isf-invited-sessions/</loc>
+    <lastmod>2016-11-28T06:55:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/still-hiring-at-monash/</loc>
+    <lastmod>2016-11-06T22:16:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/qa-predictive-analytics/</loc>
+    <lastmod>2016-10-24T12:00:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/qa-time/</loc>
+    <lastmod>2016-10-23T11:21:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tcomp/</loc>
+    <lastmod>2016-10-22T11:19:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/eindhoven/</loc>
+    <lastmod>2016-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gefcom2017/</loc>
+    <lastmod>2016-10-14T14:44:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/erum2016/</loc>
+    <lastmod>2016-10-13T12:04:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/unimelb-prof-datascience/</loc>
+    <lastmod>2016-10-12T08:00:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hadley-course-dec-2016/</loc>
+    <lastmod>2016-10-05T19:53:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cairns-workshops/</loc>
+    <lastmod>2016-09-28T15:25:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/eindhoven-seminar/</loc>
+    <lastmod>2016-09-27T08:34:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/augsburg2016/</loc>
+    <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/</loc>
+    <lastmod>2016-09-14T14:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast-v7-2/</loc>
+    <lastmod>2016-09-09T10:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast-combinations/</loc>
+    <lastmod>2016-09-01T09:56:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isf2017-sponsorship/</loc>
+    <lastmod>2016-08-31T02:07:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rmarkdown-template/</loc>
+    <lastmod>2016-08-28T10:21:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/thief/</loc>
+    <lastmod>2016-08-22T07:58:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/eindhoven-course/</loc>
+    <lastmod>2016-08-18T00:09:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tourism-time-series/</loc>
+    <lastmod>2016-08-10T08:12:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jobs2017/</loc>
+    <lastmod>2016-07-27T23:52:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/isf2016/</loc>
+    <lastmod>2016-06-20T11:08:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-gefcom2014/</loc>
+    <lastmod>2016-06-10T01:07:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isea2017/</loc>
+    <lastmod>2016-06-03T02:56:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast7-part-2/</loc>
+    <lastmod>2016-06-01T07:22:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/eechidna/</loc>
+    <lastmod>2016-05-27T04:07:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ssa-jobs-board/</loc>
+    <lastmod>2016-05-12T02:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast7-ggplot2/</loc>
+    <lastmod>2016-05-09T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/automatic-forecasting-using-r/</loc>
+    <lastmod>2016-05-06T05:00:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bagging-ets/</loc>
+    <lastmod>2016-04-28T23:30:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/medascin2016/</loc>
+    <lastmod>2016-04-13T03:51:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/buy-book/</loc>
+    <lastmod>2016-04-09T06:50:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/sample-quantiles-20-years-later/</loc>
+    <lastmod>2016-03-28T04:35:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/bibliography/</loc>
+    <lastmod>2016-03-28T01:45:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch23/</loc>
+    <lastmod>2016-03-28T00:33:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch22/</loc>
+    <lastmod>2016-03-27T09:27:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch21/</loc>
+    <lastmod>2016-03-27T09:25:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch20/</loc>
+    <lastmod>2016-03-27T08:33:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch19/</loc>
+    <lastmod>2016-03-27T08:29:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch18/</loc>
+    <lastmod>2016-03-27T08:27:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch17/</loc>
+    <lastmod>2016-03-27T08:20:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch16/</loc>
+    <lastmod>2016-03-27T08:18:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch15/</loc>
+    <lastmod>2016-03-27T08:09:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch14/</loc>
+    <lastmod>2016-03-27T07:59:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch13/</loc>
+    <lastmod>2016-03-27T07:53:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch12/</loc>
+    <lastmod>2016-03-27T07:30:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch11/</loc>
+    <lastmod>2016-03-27T07:26:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch10/</loc>
+    <lastmod>2016-03-27T01:47:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch9/</loc>
+    <lastmod>2016-03-27T01:42:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch8/</loc>
+    <lastmod>2016-03-27T01:15:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch7/</loc>
+    <lastmod>2016-03-27T00:51:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch6/</loc>
+    <lastmod>2016-03-27T00:42:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch5/</loc>
+    <lastmod>2016-03-27T00:37:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch4/</loc>
+    <lastmod>2016-03-26T12:14:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch3/</loc>
+    <lastmod>2016-03-26T12:04:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch2/</loc>
+    <lastmod>2016-03-26T11:49:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/ch1/</loc>
+    <lastmod>2016-03-26T04:44:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/preface/</loc>
+    <lastmod>2016-03-26T02:40:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/overlappingpi/</loc>
+    <lastmod>2016-03-23T10:19:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ropensci2016/</loc>
+    <lastmod>2016-03-21T00:31:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/monash-insider/</loc>
+    <lastmod>2016-03-09T07:06:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/model-variance-for-arima-models/</loc>
+    <lastmod>2016-03-04T11:15:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/sampling-multiobjective-optimization/</loc>
+    <lastmod>2016-02-28T21:08:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/omitting-outliers/</loc>
+    <lastmod>2016-02-24T22:55:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/wombat2016-hadley/</loc>
+    <lastmod>2016-02-24T22:25:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/wombat-2016/</loc>
+    <lastmod>2016-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/electricity-price-forecasting-competition/</loc>
+    <lastmod>2016-02-17T05:51:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/smart-meter-quantiles/</loc>
+    <lastmod>2016-02-04T04:19:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/hgts/</loc>
+    <lastmod>2016-01-31T22:49:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bayesian-rank-selection-in-multivariate-regression/</loc>
+    <lastmod>2016-01-30T00:58:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/whats-your-hall-number/</loc>
+    <lastmod>2016-01-28T11:48:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/gefcom2014/</loc>
+    <lastmod>2016-01-25T00:40:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/participation-rates/</loc>
+    <lastmod>2016-01-24T06:33:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/acems-prize-2016/</loc>
+    <lastmod>2016-01-20T05:03:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/farewell-peter-hall-1951-2016/</loc>
+    <lastmod>2016-01-11T05:12:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/accuracy-intermittent-demand/</loc>
+    <lastmod>2015-12-31T00:37:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/measuring-forecast-accuracy/</loc>
+    <lastmod>2015-12-31T00:37:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/starting-a-career-in-data-science/</loc>
+    <lastmod>2015-12-30T04:29:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/wombat2016/</loc>
+    <lastmod>2015-12-20T23:46:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rstudio-just-keeps-getting-better/</loc>
+    <lastmod>2015-12-11T05:36:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-downloads/</loc>
+    <lastmod>2015-12-09T21:27:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/oss-benefits/</loc>
+    <lastmod>2015-11-29T23:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/odi-fellowships/</loc>
+    <lastmod>2015-11-13T00:26:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jobs2016/</loc>
+    <lastmod>2015-11-06T06:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/piecewise-linear-trends/</loc>
+    <lastmod>2015-10-28T02:43:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/china2015/</loc>
+    <lastmod>2015-10-24T23:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast6-2/</loc>
+    <lastmod>2015-10-20T06:39:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/stanford-seminar/</loc>
+    <lastmod>2015-10-07T06:09:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/optimal-forecast-reconciliation/</loc>
+    <lastmod>2015-10-06T05:49:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/google-oct-2015/</loc>
+    <lastmod>2015-10-05T06:03:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/reproducibility/</loc>
+    <lastmod>2015-09-25T07:31:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/chinese-r-conference/</loc>
+    <lastmod>2015-09-24T06:42:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/upcoming-talks-in-california/</loc>
+    <lastmod>2015-09-22T06:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/isf2016/</loc>
+    <lastmod>2015-09-21T09:55:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/unbelievable/</loc>
+    <lastmod>2015-09-15T23:36:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-vol-314/</loc>
+    <lastmod>2015-09-15T09:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/finding-reviewers/</loc>
+    <lastmod>2015-09-13T10:50:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex2exp/</loc>
+    <lastmod>2015-09-02T07:17:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/new-ijf-editors/</loc>
+    <lastmod>2015-08-24T22:53:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/machine-learning-bootcamp/</loc>
+    <lastmod>2015-08-17T02:22:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/lagphase/</loc>
+    <lastmod>2015-08-07T04:00:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/bias-variance/</loc>
+    <lastmod>2015-08-03T07:59:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/murphy-diagrams/</loc>
+    <lastmod>2015-07-16T07:57:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/useful-tutorials/</loc>
+    <lastmod>2015-07-01T03:28:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/banff2015/</loc>
+    <lastmod>2015-06-29T23:01:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/yahoo2015/</loc>
+    <lastmod>2015-06-29T17:12:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/new-papers/</loc>
+    <lastmod>2015-06-27T05:22:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/yahoo2015/</loc>
+    <lastmod>2015-06-26T23:00:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/google2015/</loc>
+    <lastmod>2015-06-24T23:00:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</loc>
+    <lastmod>2015-06-23T21:32:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/isf2015/</loc>
+    <lastmod>2015-06-22T23:00:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/sce2015/</loc>
+    <lastmod>2015-06-18T23:00:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/northamerica2015/</loc>
+    <lastmod>2015-06-16T03:11:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/jaci2015/</loc>
+    <lastmod>2015-06-10T01:48:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/str/</loc>
+    <lastmod>2015-06-07T22:50:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/kdd2015/</loc>
+    <lastmod>2015-06-04T11:27:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/show-me-the-evidence/</loc>
+    <lastmod>2015-06-03T01:04:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/icdm2015/</loc>
+    <lastmod>2015-06-01T02:08:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/anomalous/</loc>
+    <lastmod>2015-05-31T05:59:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/big-time-series/</loc>
+    <lastmod>2015-05-26T03:51:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/memsi/</loc>
+    <lastmod>2015-05-22T07:29:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/cubicsplinesiti/</loc>
+    <lastmod>2015-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast6/</loc>
+    <lastmod>2015-05-15T05:01:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-board/</loc>
+    <lastmod>2015-05-14T03:55:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-nominations2/</loc>
+    <lastmod>2015-05-07T07:46:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/thinking-big-at-yahoo/</loc>
+    <lastmod>2015-04-22T23:16:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/travelling-thilaksha/</loc>
+    <lastmod>2015-04-22T07:23:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-reviews/</loc>
+    <lastmod>2015-04-10T04:43:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/paperpile/</loc>
+    <lastmod>2015-04-09T02:42:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/help/</loc>
+    <lastmod>2015-04-08T22:13:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mpcomments/</loc>
+    <lastmod>2015-04-03T16:43:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/yahoo-data/</loc>
+    <lastmod>2015-04-01T02:33:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/change-to-the-ijf-editors/</loc>
+    <lastmod>2015-03-31T21:54:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/what-to-cite/</loc>
+    <lastmod>2015-03-25T03:27:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/maxima-jobs/</loc>
+    <lastmod>2015-03-24T05:21:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/mbs-interviews/</loc>
+    <lastmod>2015-03-20T12:20:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/dark-themes-for-writing/</loc>
+    <lastmod>2015-03-18T04:55:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-rejections/</loc>
+    <lastmod>2015-03-12T04:45:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/big-time-series-data/</loc>
+    <lastmod>2015-02-23T01:11:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/bigdata2015/</loc>
+    <lastmod>2015-02-22T23:00:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-change-of-editors/</loc>
+    <lastmod>2015-02-09T22:45:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/standard-error-poem/</loc>
+    <lastmod>2015-02-04T06:43:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/iasc-competition-2015/</loc>
+    <lastmod>2015-02-02T10:01:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rss-feeds/</loc>
+    <lastmod>2015-01-23T23:48:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/visualizing-and-forecasting-big-time-series-data/</loc>
+    <lastmod>2015-01-12T15:33:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/seminars-in-taiwan/</loc>
+    <lastmod>2015-01-05T09:33:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</loc>
+    <lastmod>2014-12-24T05:29:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/mefm/</loc>
+    <lastmod>2014-12-17T06:24:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/am-i-a-data-scientist/</loc>
+    <lastmod>2014-12-09T00:06:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/honoring-herman-stekler/</loc>
+    <lastmod>2014-12-08T00:11:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/christmasgala2014/</loc>
+    <lastmod>2014-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/prediction-competitions/</loc>
+    <lastmod>2014-12-05T12:05:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hmd-australia/</loc>
+    <lastmod>2014-11-27T02:33:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/</loc>
+    <lastmod>2014-11-21T06:40:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-review-papers/</loc>
+    <lastmod>2014-11-11T23:50:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/seasonal-periods/</loc>
+    <lastmod>2014-11-07T01:43:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/abs-seasonal-adjustment-3/</loc>
+    <lastmod>2014-11-05T04:56:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jobs-at-amazon/</loc>
+    <lastmod>2014-10-31T02:13:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/narrow-pi/</loc>
+    <lastmod>2014-10-22T05:25:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/foresight-hts/</loc>
+    <lastmod>2014-10-20T22:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hts-with-regressors/</loc>
+    <lastmod>2014-10-20T02:08:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/souhaib/</loc>
+    <lastmod>2014-10-15T01:38:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/abs-seasonal-adjustment-2/</loc>
+    <lastmod>2014-10-10T07:06:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/abs-seasonal-adjustment/</loc>
+    <lastmod>2014-10-09T05:50:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/connect-with-local-employers/</loc>
+    <lastmod>2014-10-07T23:07:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/iif-workshops/</loc>
+    <lastmod>2014-10-06T22:57:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tbats-with-regressors/</loc>
+    <lastmod>2014-10-06T00:57:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/uwa/</loc>
+    <lastmod>2014-09-23T03:03:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-e-book/</loc>
+    <lastmod>2014-09-21T01:25:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tim-harford-on-forecasting/</loc>
+    <lastmod>2014-09-08T10:15:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/quantile-forecasts-in-r/</loc>
+    <lastmod>2014-09-08T05:36:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-resources/</loc>
+    <lastmod>2014-09-03T01:59:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/worst-figure/</loc>
+    <lastmod>2014-09-01T05:03:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/fungal-asthma/</loc>
+    <lastmod>2014-09-01T01:03:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/</loc>
+    <lastmod>2014-08-24T22:53:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/biblatex-for-statisticians/</loc>
+    <lastmod>2014-08-22T03:37:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gefcom-2014/</loc>
+    <lastmod>2014-08-18T05:44:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/visit-of-di-cook/</loc>
+    <lastmod>2014-08-12T23:28:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/what-not-to-say-in-a-job-interview/</loc>
+    <lastmod>2014-08-12T11:48:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/minimal-reproducible-examples/</loc>
+    <lastmod>2014-08-11T04:54:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/epic/</loc>
+    <lastmod>2014-08-01T06:24:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/iif-awards/</loc>
+    <lastmod>2014-07-26T03:14:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/coherent-population-forecasting/</loc>
+    <lastmod>2014-07-24T02:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/arma-roots/</loc>
+    <lastmod>2014-07-23T07:57:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/statistics-vs-econometrics/</loc>
+    <lastmod>2014-07-21T03:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rolling-forecasts/</loc>
+    <lastmod>2014-07-15T23:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/sasiif-grants/</loc>
+    <lastmod>2014-07-14T22:43:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/hgts-2/</loc>
+    <lastmod>2014-07-01T06:38:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/fts-berlin/</loc>
+    <lastmod>2014-06-24T02:33:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/swiss-energy-forum/</loc>
+    <lastmod>2014-06-17T06:36:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/varian-2014/</loc>
+    <lastmod>2014-06-15T22:45:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gts/</loc>
+    <lastmod>2014-06-15T03:26:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/europe2014/</loc>
+    <lastmod>2014-06-14T06:44:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/beamer-handout/</loc>
+    <lastmod>2014-06-11T01:29:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ropes/</loc>
+    <lastmod>2014-06-05T03:53:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/abs-state-space-models/</loc>
+    <lastmod>2014-05-30T01:21:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/marketplaces/</loc>
+    <lastmod>2014-05-26T02:42:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/cfpc-iwfos/</loc>
+    <lastmod>2014-05-24T01:31:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/structural-breaks/</loc>
+    <lastmod>2014-05-23T13:32:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mefm/</loc>
+    <lastmod>2014-05-22T01:46:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/to-explain-or-predict/</loc>
+    <lastmod>2014-05-19T05:35:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/business-analytics-jobs-questions/</loc>
+    <lastmod>2014-05-13T02:27:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/arima-models-with-long-lags/</loc>
+    <lastmod>2014-05-08T03:43:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/monash-business-analytics/</loc>
+    <lastmod>2014-05-04T12:05:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/great-papers/</loc>
+    <lastmod>2014-05-02T03:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ppfss/</loc>
+    <lastmod>2014-04-28T11:36:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jss-rpackages/</loc>
+    <lastmod>2014-04-24T05:41:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/seven-forecasting-blogs/</loc>
+    <lastmod>2014-04-22T00:33:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/smape/</loc>
+    <lastmod>2014-04-16T12:11:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/generating-tables-in-latex/</loc>
+    <lastmod>2014-04-14T23:23:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-amazon/</loc>
+    <lastmod>2014-04-09T00:15:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cos-job/</loc>
+    <lastmod>2014-04-07T22:36:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/interpreting-noise/</loc>
+    <lastmod>2014-04-06T00:04:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-setup/</loc>
+    <lastmod>2014-04-04T02:00:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/kaggleloadforecasting/</loc>
+    <lastmod>2014-04-01T04:40:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-cover/</loc>
+    <lastmod>2014-03-18T06:17:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/loocv-linear-models/</loc>
+    <lastmod>2014-03-17T10:08:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gneiting/</loc>
+    <lastmod>2014-03-14T05:57:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/arima-trends/</loc>
+    <lastmod>2014-03-12T22:24:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/unit-root-tests/</loc>
+    <lastmod>2014-03-12T11:22:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/old-r-packages/</loc>
+    <lastmod>2014-03-10T04:02:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-news/</loc>
+    <lastmod>2014-03-07T03:38:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/highlighting-the-web/</loc>
+    <lastmod>2014-03-06T01:29:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-weekly-data/</loc>
+    <lastmod>2014-03-04T23:57:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/short-time-series/</loc>
+    <lastmod>2014-03-04T02:20:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/long-time-series/</loc>
+    <lastmod>2014-03-01T06:08:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/comp-engine/</loc>
+    <lastmod>2014-02-27T06:34:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/backtransforming/</loc>
+    <lastmod>2014-02-25T03:45:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/statistical-politicians/</loc>
+    <lastmod>2014-02-23T23:42:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-within-limits/</loc>
+    <lastmod>2014-02-21T10:36:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/backcasting/</loc>
+    <lastmod>2014-02-20T04:20:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gefcom2014/</loc>
+    <lastmod>2014-02-19T07:12:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/granada/</loc>
+    <lastmod>2014-02-13T01:56:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hts4/</loc>
+    <lastmod>2014-02-12T08:26:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/detecting-seasonality/</loc>
+    <lastmod>2014-02-08T04:08:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cos-interview/</loc>
+    <lastmod>2014-02-05T00:00:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-top-papers/</loc>
+    <lastmod>2014-02-04T01:06:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/caswithr/</loc>
+    <lastmod>2014-02-03T03:00:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/monash-top10/</loc>
+    <lastmod>2014-02-02T01:03:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/granada-workshop/</loc>
+    <lastmod>2014-01-31T03:06:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/</loc>
+    <lastmod>2014-01-30T01:51:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/time-series-data-in-r/</loc>
+    <lastmod>2014-01-28T22:21:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/online-collaborative-writing/</loc>
+    <lastmod>2014-01-28T02:18:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast5/</loc>
+    <lastmod>2014-01-27T02:26:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ljung-box-test/</loc>
+    <lastmod>2014-01-24T03:54:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/postdoc/</loc>
+    <lastmod>2014-01-22T02:50:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/nlts/</loc>
+    <lastmod>2014-01-21T04:24:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/boostingar/</loc>
+    <lastmod>2014-01-09T23:00:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/prospective-life-tables/</loc>
+    <lastmod>2014-01-01T01:00:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/judgmental-forecasting-experiment/</loc>
+    <lastmod>2013-12-22T06:21:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/quick-rejection/</loc>
+    <lastmod>2013-11-25T01:20:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/rsm-review/</loc>
+    <lastmod>2013-10-31T12:27:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</loc>
+    <lastmod>2013-10-18T04:02:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/</loc>
+    <lastmod>2013-10-14T04:07:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/coherent/</loc>
+    <lastmod>2013-10-11T05:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/hts-3/</loc>
+    <lastmod>2013-10-10T05:40:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rgbrown/</loc>
+    <lastmod>2013-10-09T11:52:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/dailydata/</loc>
+    <lastmod>2013-09-17T00:26:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/maxima/</loc>
+    <lastmod>2013-09-11T01:17:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/user2013/</loc>
+    <lastmod>2013-07-12T22:01:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/questions/</loc>
+    <lastmod>2013-07-10T21:58:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/aic/</loc>
+    <lastmod>2013-07-03T21:19:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/hts-2/</loc>
+    <lastmod>2013-07-03T20:07:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/feedly/</loc>
+    <lastmod>2013-06-29T08:19:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/future-isfs/</loc>
+    <lastmod>2013-06-26T07:12:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-without-forecasters/</loc>
+    <lastmod>2013-06-24T14:15:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/managing-research-ideas/</loc>
+    <lastmod>2013-05-25T13:14:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ijf-quality-indicators/</loc>
+    <lastmod>2013-05-17T00:35:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</loc>
+    <lastmod>2013-05-15T06:39:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/establishing-priority/</loc>
+    <lastmod>2013-05-06T03:34:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp-2/</loc>
+    <lastmod>2013-04-21T00:19:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/gepbox/</loc>
+    <lastmod>2013-03-31T05:21:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/intervals/</loc>
+    <lastmod>2013-03-12T22:56:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/eviews8/</loc>
+    <lastmod>2013-02-28T22:04:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/crop-r-figures/</loc>
+    <lastmod>2013-02-22T00:22:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-conferences/</loc>
+    <lastmod>2013-02-15T01:17:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hyndsight/</loc>
+    <lastmod>2013-02-14T00:09:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/out-of-sample-one-step-forecasts/</loc>
+    <lastmod>2013-02-13T23:30:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/consulting-groups/</loc>
+    <lastmod>2013-02-11T11:09:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/man-vs-wild-data/</loc>
+    <lastmod>2013-02-06T21:30:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/coherentfdm/</loc>
+    <lastmod>2013-02-01T07:31:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/batch-forecasting/</loc>
+    <lastmod>2013-01-07T05:13:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/a-change-of-editors/</loc>
+    <lastmod>2013-01-01T02:04:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ysc2013/</loc>
+    <lastmod>2012-12-21T00:13:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast4/</loc>
+    <lastmod>2012-12-03T03:53:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/simpler/</loc>
+    <lastmod>2012-11-20T07:00:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/makefiles/</loc>
+    <lastmod>2012-10-31T02:49:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ysc2013-funding-support/</loc>
+    <lastmod>2012-10-29T01:25:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-loops/</loc>
+    <lastmod>2012-10-23T01:48:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ysc2013comp/</loc>
+    <lastmod>2012-10-07T22:07:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/iifsas/</loc>
+    <lastmod>2012-10-03T00:13:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hardforecasts/</loc>
+    <lastmod>2012-09-18T02:15:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/workshop2013/</loc>
+    <lastmod>2012-09-03T06:54:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/rectify/</loc>
+    <lastmod>2012-09-01T20:11:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/compstat2012/</loc>
+    <lastmod>2012-08-28T11:38:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/flat-forecasts/</loc>
+    <lastmod>2012-08-19T23:58:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/interviews/</loc>
+    <lastmod>2012-08-09T12:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/blogs-about-research/</loc>
+    <lastmod>2012-08-09T02:04:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/read-the-literature/</loc>
+    <lastmod>2012-08-03T04:35:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/preprints/</loc>
+    <lastmod>2012-08-02T04:13:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/beamer/</loc>
+    <lastmod>2012-08-01T06:17:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/olympics/</loc>
+    <lastmod>2012-07-31T00:00:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mapcah/</loc>
+    <lastmod>2012-06-25T02:26:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tsdl/</loc>
+    <lastmod>2012-06-20T00:30:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/automaticforecasting/</loc>
+    <lastmod>2012-06-19T08:58:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/arimaconstants/</loc>
+    <lastmod>2012-06-06T00:07:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/fpp/</loc>
+    <lastmod>2012-05-23T01:34:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/blog-aggregators/</loc>
+    <lastmod>2012-05-15T10:34:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/seeking-help/</loc>
+    <lastmod>2012-05-08T13:23:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tscharacteristics/</loc>
+    <lastmod>2012-05-02T07:51:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/google-scholar-metrics/</loc>
+    <lastmod>2012-04-02T02:45:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/data-visualization/</loc>
+    <lastmod>2012-03-04T22:37:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ets-regressors/</loc>
+    <lastmod>2012-02-28T10:15:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/academia/</loc>
+    <lastmod>2012-02-22T01:04:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/mailing-lists/</loc>
+    <lastmod>2012-02-16T00:25:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tables/</loc>
+    <lastmod>2012-02-13T23:15:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/stlf/</loc>
+    <lastmod>2012-02-01T06:37:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/googlescholar2/</loc>
+    <lastmod>2012-01-31T01:22:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/copdaustralia/</loc>
+    <lastmod>2012-01-29T23:16:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/refereeing2/</loc>
+    <lastmod>2012-01-20T02:50:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/surveys/</loc>
+    <lastmod>2012-01-18T23:30:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/complex-seasonality/</loc>
+    <lastmod>2011-12-31T02:38:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/bostonglobe/</loc>
+    <lastmod>2011-12-23T04:39:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/travel/</loc>
+    <lastmod>2011-12-19T13:12:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/melburntalk/</loc>
+    <lastmod>2011-12-16T02:30:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cyclicts/</loc>
+    <lastmod>2011-12-14T05:22:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/matloff/</loc>
+    <lastmod>2011-11-30T03:52:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/kaggle-on-tv/</loc>
+    <lastmod>2011-11-28T23:08:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/portals/</loc>
+    <lastmod>2011-11-26T04:14:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/wishlist/</loc>
+    <lastmod>2011-11-11T12:34:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/melbournerug/</loc>
+    <lastmod>2011-10-27T04:37:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/electricity-forecasting/</loc>
+    <lastmod>2011-10-03T03:11:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-help/</loc>
+    <lastmod>2011-09-25T13:19:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/scourge/</loc>
+    <lastmod>2011-08-30T05:35:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tscvexample/</loc>
+    <lastmod>2011-08-26T05:23:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecast3/</loc>
+    <lastmod>2011-08-26T00:20:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/crowd-sourcing-forecasts/</loc>
+    <lastmod>2011-08-24T04:09:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/stanford-ml/</loc>
+    <lastmod>2011-08-16T06:12:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/junkjournals/</loc>
+    <lastmod>2011-08-12T02:14:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/surveypapers/</loc>
+    <lastmod>2011-07-25T12:01:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/socialnetworks/</loc>
+    <lastmod>2011-07-21T02:39:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/synoptic-gams/</loc>
+    <lastmod>2011-07-16T06:50:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mortality-forecast-comparison/</loc>
+    <lastmod>2011-07-14T23:19:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/emma/</loc>
+    <lastmod>2011-07-14T09:24:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/usertalk/</loc>
+    <lastmod>2011-06-22T03:41:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/maep/</loc>
+    <lastmod>2011-06-15T11:27:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/estimation2/</loc>
+    <lastmod>2011-05-29T07:02:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/tourism-forecasting-an-introduction/</loc>
+    <lastmod>2011-04-29T09:35:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/electricity-price-elasticity/</loc>
+    <lastmod>2011-03-31T00:56:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/texstudio/</loc>
+    <lastmod>2011-03-29T11:20:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/looking-after-your-supervisor/</loc>
+    <lastmod>2011-03-25T11:17:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/hierarchical/</loc>
+    <lastmod>2011-03-15T23:52:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/ten-rules-for-data-analysis/</loc>
+    <lastmod>2011-03-14T23:06:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tests2/</loc>
+    <lastmod>2011-03-14T22:28:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/dlm-hdr/</loc>
+    <lastmod>2011-03-10T00:53:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rstudio/</loc>
+    <lastmod>2011-03-01T05:09:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/dynamic-updating/</loc>
+    <lastmod>2011-02-17T01:12:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/kaggle/</loc>
+    <lastmod>2011-02-09T05:00:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/lewandowsky/</loc>
+    <lastmod>2011-01-14T07:48:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/swissworkshop2011a/</loc>
+    <lastmod>2011-01-11T00:55:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/authorship/</loc>
+    <lastmod>2011-01-11T00:42:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/refereeing/</loc>
+    <lastmod>2011-01-09T22:56:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/talks/</loc>
+    <lastmod>2011-01-09T22:21:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-tourism-forecasting-competition/</loc>
+    <lastmod>2011-01-01T22:00:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/local-gams/</loc>
+    <lastmod>2011-01-01T05:46:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/dropbox/</loc>
+    <lastmod>2010-12-23T01:49:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cvjournalclub/</loc>
+    <lastmod>2010-12-22T00:01:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hamming/</loc>
+    <lastmod>2010-12-10T09:14:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/swissworkshop2011/</loc>
+    <lastmod>2010-12-06T08:57:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/data-visualization-videos/</loc>
+    <lastmod>2010-11-30T04:05:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/hw-initialization/</loc>
+    <lastmod>2010-11-30T03:09:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/cv/</loc>
+    <lastmod>2010-11-27T05:00:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tfc2/</loc>
+    <lastmod>2010-11-24T12:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/r-foresight/</loc>
+    <lastmod>2010-11-20T12:15:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/vists/</loc>
+    <lastmod>2010-11-15T23:11:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecastmse/</loc>
+    <lastmod>2010-11-10T00:22:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/crossvalidated/</loc>
+    <lastmod>2010-11-04T23:45:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/phdapplicants/</loc>
+    <lastmod>2010-11-03T04:42:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/estimation/</loc>
+    <lastmod>2010-10-26T08:37:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/xelatex/</loc>
+    <lastmod>2010-10-23T13:30:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</loc>
+    <lastmod>2010-10-22T09:23:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/wsd/</loc>
+    <lastmod>2010-10-19T23:18:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/do-something-else/</loc>
+    <lastmod>2010-10-17T21:36:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/animations/</loc>
+    <lastmod>2010-10-13T04:45:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/always-listen-to-reviewers/</loc>
+    <lastmod>2010-10-13T03:39:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/editorialboards/</loc>
+    <lastmod>2010-10-07T05:51:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/rvsexcel/</loc>
+    <lastmod>2010-10-05T05:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/arimax/</loc>
+    <lastmod>2010-10-04T12:39:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/crossvalidation/</loc>
+    <lastmod>2010-10-04T10:21:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/syncing/</loc>
+    <lastmod>2010-09-30T06:18:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/longseasonality/</loc>
+    <lastmod>2010-09-29T05:38:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tfc1/</loc>
+    <lastmod>2010-09-20T09:23:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/names/</loc>
+    <lastmod>2010-09-16T01:59:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/demographic-forecasting/</loc>
+    <lastmod>2010-09-07T11:33:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/phdfail/</loc>
+    <lastmod>2010-09-02T13:16:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/econometrics-and-r/</loc>
+    <lastmod>2010-08-31T01:41:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/job-advertisements/</loc>
+    <lastmod>2010-08-26T01:41:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/benchmarks/</loc>
+    <lastmod>2010-08-25T11:03:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bfast2/</loc>
+    <lastmod>2010-08-17T08:05:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/transformations/</loc>
+    <lastmod>2010-08-13T04:22:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tourism-forecasting-competition/</loc>
+    <lastmod>2010-08-09T05:08:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/graphics/</loc>
+    <lastmod>2010-08-06T06:34:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/interface2010/</loc>
+    <lastmod>2010-08-03T08:33:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/stats-stackexchange/</loc>
+    <lastmod>2010-07-27T02:26:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/aupec2010/</loc>
+    <lastmod>2010-07-21T09:15:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/more-stackexchange-sites/</loc>
+    <lastmod>2010-07-17T05:21:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/english/</loc>
+    <lastmod>2010-07-15T00:53:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/</loc>
+    <lastmod>2010-07-11T19:31:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/forecasting/</loc>
+    <lastmod>2010-07-06T12:10:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/musings/</loc>
+    <lastmod>2010-07-06T12:10:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tsdl/</loc>
+    <lastmod>2010-07-06T12:10:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/use-fake-data-and-real-data/</loc>
+    <lastmod>2010-06-11T03:18:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/working-papers/</loc>
+    <lastmod>2010-06-09T08:05:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/isf2010/</loc>
+    <lastmod>2010-06-09T04:20:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/stackexchange2/</loc>
+    <lastmod>2010-06-02T01:53:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/google-scholar-alerts/</loc>
+    <lastmod>2010-05-26T06:14:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/online-mathematical-resources/</loc>
+    <lastmod>2010-05-20T12:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/scheduling-meetings/</loc>
+    <lastmod>2010-05-09T13:10:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/brca-bwus/</loc>
+    <lastmod>2010-05-06T01:14:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/stackexchange/</loc>
+    <lastmod>2010-04-20T08:37:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/beamer-poster/</loc>
+    <lastmod>2010-03-25T04:57:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-preamble/</loc>
+    <lastmod>2010-03-21T09:44:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/using-the-command-line-in-windows/</loc>
+    <lastmod>2010-03-10T02:13:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/learning-r-by-video/</loc>
+    <lastmod>2010-03-10T00:10:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/rainbow-fda/</loc>
+    <lastmod>2010-02-28T23:17:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/top-four-latex-mistakes/</loc>
+    <lastmod>2010-02-15T23:17:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/jobs/</loc>
+    <lastmod>2010-02-10T06:25:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/why-referee/</loc>
+    <lastmod>2010-02-10T04:25:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/referee-reports/</loc>
+    <lastmod>2010-02-10T04:06:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/microarray-optimization/</loc>
+    <lastmod>2010-02-07T23:12:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/brca-usew/</loc>
+    <lastmod>2010-02-05T23:14:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bfast1/</loc>
+    <lastmod>2010-01-14T23:21:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/peak-electricity-demand/</loc>
+    <lastmod>2010-01-02T23:10:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/iess2/</loc>
+    <lastmod>2010-01-01T04:30:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/iess3/</loc>
+    <lastmod>2010-01-01T04:30:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/iess1/</loc>
+    <lastmod>2010-01-01T04:30:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/replication/</loc>
+    <lastmod>2010-01-01T03:53:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/changing-of-the-guard/</loc>
+    <lastmod>2010-01-01T03:51:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/doi/</loc>
+    <lastmod>2009-12-27T12:35:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/replications/</loc>
+    <lastmod>2009-12-02T06:07:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/expsmooth-nonnegative/</loc>
+    <lastmod>2009-11-25T23:06:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/video/</loc>
+    <lastmod>2009-11-24T02:27:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-floats/</loc>
+    <lastmod>2009-11-11T00:01:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/value-of-p-values/</loc>
+    <lastmod>2009-11-09T23:43:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/esl2/</loc>
+    <lastmod>2009-10-15T02:51:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/personal-pronouns/</loc>
+    <lastmod>2009-10-15T00:49:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/attending-research-seminars/</loc>
+    <lastmod>2009-10-14T06:37:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/squeezing-space-with-latex/</loc>
+    <lastmod>2009-10-14T05:52:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/converting-eps-to-pdf/</loc>
+    <lastmod>2009-10-01T11:45:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/7secrets/</loc>
+    <lastmod>2009-09-28T07:04:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/abstracts/</loc>
+    <lastmod>2009-09-27T10:19:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/workflow-in-r/</loc>
+    <lastmod>2009-09-18T03:21:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/writing-mathematics/</loc>
+    <lastmod>2009-09-18T02:48:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/take-a-break/</loc>
+    <lastmod>2009-09-13T13:06:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/finding-an-r-function/</loc>
+    <lastmod>2009-09-13T11:21:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/statistics-education-journals/</loc>
+    <lastmod>2009-09-02T03:38:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tao-lecture/</loc>
+    <lastmod>2009-09-02T02:21:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/how-good-are-economic-forecasts/</loc>
+    <lastmod>2009-08-27T11:47:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/supervision-workshop/</loc>
+    <lastmod>2009-08-26T06:00:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/seek-help/</loc>
+    <lastmod>2009-08-25T02:13:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tests/</loc>
+    <lastmod>2009-08-24T00:40:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/r-help-on-stackoverflow/</loc>
+    <lastmod>2009-08-23T22:51:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/backing-up/</loc>
+    <lastmod>2009-08-21T03:33:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-the-recession/</loc>
+    <lastmod>2009-08-17T22:39:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/localtexmf/</loc>
+    <lastmod>2009-08-14T03:46:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/sight-what-you-cite/</loc>
+    <lastmod>2009-08-13T03:46:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/songs-of-statistics/</loc>
+    <lastmod>2009-08-05T02:57:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/responses/</loc>
+    <lastmod>2009-08-03T03:41:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/managing-a-bibliographic-database/</loc>
+    <lastmod>2009-08-02T05:50:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/finding-latex-symbols/</loc>
+    <lastmod>2009-07-27T05:18:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/forecasting-functional-time-series-2/</loc>
+    <lastmod>2009-07-23T23:12:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/why-word-is-a-bad-choice-for-academic-writing/</loc>
+    <lastmod>2009-07-21T05:20:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/mathematical-genealogy/</loc>
+    <lastmod>2009-07-15T00:42:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/searching-the-research-literature/</loc>
+    <lastmod>2009-07-13T22:55:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/dynamic-updating1/</loc>
+    <lastmod>2009-07-12T23:46:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/monitoring-processes/</loc>
+    <lastmod>2009-07-05T23:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/english-academic-writing/</loc>
+    <lastmod>2009-06-25T03:47:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/extreme-forecasting/</loc>
+    <lastmod>2009-06-23T03:44:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/granger/</loc>
+    <lastmod>2009-06-01T08:27:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/akrams-story/</loc>
+    <lastmod>2009-05-28T08:25:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/prediction-markets/</loc>
+    <lastmod>2009-05-18T08:24:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/statistical-support-for-hdr-students/</loc>
+    <lastmod>2009-05-01T03:52:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/neil-postman-on-technological-change/</loc>
+    <lastmod>2009-04-08T08:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/accessing-journal-articles-online/</loc>
+    <lastmod>2009-03-12T08:21:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/statistician-the-dream-job/</loc>
+    <lastmod>2009-02-01T08:20:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/forecast-rules/</loc>
+    <lastmod>2009-01-16T23:15:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/hierarchical-tourism/</loc>
+    <lastmod>2009-01-16T23:08:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/vists-beveridge-nelson/</loc>
+    <lastmod>2009-01-01T23:09:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/multiple-seasonal-patterns/</loc>
+    <lastmod>2008-11-16T05:26:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/forecasting-without-significance-tests/</loc>
+    <lastmod>2008-11-05T01:57:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/time-series-packages-on-r/</loc>
+    <lastmod>2008-10-16T08:19:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-tips/</loc>
+    <lastmod>2008-09-03T08:18:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tracking-changes-in-latex-files/</loc>
+    <lastmod>2008-08-20T08:13:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tracking-changes-in-text-files/</loc>
+    <lastmod>2008-08-20T08:09:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/supervision-award/</loc>
+    <lastmod>2008-08-19T09:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-books/</loc>
+    <lastmod>2008-07-30T10:52:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/time-management/</loc>
+    <lastmod>2008-07-25T08:04:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-and-the-importance-of-being-uncertain/</loc>
+    <lastmod>2008-07-18T03:54:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/stochastic-population-forecasts/</loc>
+    <lastmod>2008-07-16T05:33:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/automatic-forecasting/</loc>
+    <lastmod>2008-07-16T05:29:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/building-r-packages-for-windows/</loc>
+    <lastmod>2008-06-29T04:07:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/time-series-and-forecasting-in-r/</loc>
+    <lastmod>2008-06-29T04:00:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/fboxplot-talk/</loc>
+    <lastmod>2008-06-19T03:56:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-admissible-parameter-space-for-exponential-smoothing-models/</loc>
+    <lastmod>2008-06-16T06:34:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/</loc>
+    <lastmod>2008-06-15T07:51:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/latex-workshop/</loc>
+    <lastmod>2008-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/words-to-avoid/</loc>
+    <lastmod>2008-05-28T08:03:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bagplots-boxplots-and-outlier-detection-for-functional-data/</loc>
+    <lastmod>2008-05-15T03:10:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/giving-a-research-seminar/</loc>
+    <lastmod>2008-05-07T07:59:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/forecasting-and-time-series-books/</loc>
+    <lastmod>2008-04-28T07:56:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/r-workshop/</loc>
+    <lastmod>2008-03-28T07:50:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/creating-a-bibtex-file-from-a-google-library/</loc>
+    <lastmod>2008-03-27T07:54:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/the-mathsstats-crisis-in-australian-education/</loc>
+    <lastmod>2008-03-26T04:50:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/dodgy-forecasting/</loc>
+    <lastmod>2008-03-13T04:48:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/about/</loc>
+    <lastmod>2008-02-24T16:17:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-functional-time-series/</loc>
+    <lastmod>2008-02-22T07:56:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/modelling-and-forecasting-australian-domestic-tourism/</loc>
+    <lastmod>2008-02-01T06:25:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/generation-of-synthetic-sequences-of-half-hourly-temperatures/</loc>
+    <lastmod>2008-01-25T06:37:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/population-forecasting-and-the-importance-of-being-uncertain/</loc>
+    <lastmod>2007-11-27T07:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/indexing-in-latex/</loc>
+    <lastmod>2007-11-16T04:42:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/tables-in-latex/</loc>
+    <lastmod>2007-11-01T04:25:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/graduation-address/</loc>
+    <lastmod>2007-10-25T08:02:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/searching-the-statistical-literature/</loc>
+    <lastmod>2007-09-12T04:08:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/organization-and-r/</loc>
+    <lastmod>2007-09-06T04:04:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/debugging-in-r/</loc>
+    <lastmod>2007-08-31T03:53:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/measurement-of-changes-in-antihypertensive-drug-utilization-following-primary-care-educational-inte/</loc>
+    <lastmod>2007-07-16T05:20:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/funcfor/</loc>
+    <lastmod>2007-07-16T05:16:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/do-levels-of-airborne-grass-pollen-influence-asthma-hospital-admissions/</loc>
+    <lastmod>2007-06-29T05:27:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-medium-and-long-term-peak-electricity-demand/</loc>
+    <lastmod>2007-06-25T08:06:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/a-state-space-model-for-exponential-smoothing-with-group-seasonality/</loc>
+    <lastmod>2007-05-29T01:54:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/half-life-estimation-based-on-the-bias-corrected-bootstrap-a-highest-density-region-approach/</loc>
+    <lastmod>2007-04-01T06:23:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/minimum-sample-size-requirements-for-seasonal-forecasting-models/</loc>
+    <lastmod>2007-03-16T05:17:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/stochastic-population/</loc>
+    <lastmod>2007-02-22T08:14:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/forecasting-age-specific-breast-cancer-mortality-using-functional-data-models/</loc>
+    <lastmod>2007-02-16T05:24:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy/</loc>
+    <lastmod>2006-11-16T04:44:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/forecasting-and-the-importance-of-being-uncertain-2/</loc>
+    <lastmod>2006-10-26T08:11:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/lee-carter-mortality-forecasting-a-multi-country-comparison-of-variants-and-extensions/</loc>
+    <lastmod>2006-10-20T04:24:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/projection-pursuit-estimator-for-multivariate-conditional-densities/</loc>
+    <lastmod>2006-09-17T02:42:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/another-look-at-measures-of-forecast-accuracy-for-intermittent-demand/</loc>
+    <lastmod>2006-09-16T04:29:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/a-note-on-the-categorization-of-demand-patterns/</loc>
+    <lastmod>2006-08-16T03:47:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/useful-latex-links/</loc>
+    <lastmod>2006-07-30T10:07:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bandwidth-selection-for-multivariate-kernel-density-estimation-using-mcmc/</loc>
+    <lastmod>2006-07-20T06:19:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/25-years-of-time-series-forecasting/</loc>
+    <lastmod>2006-07-16T04:27:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ijf-editorial-twenty-five-years-of-forecasting/</loc>
+    <lastmod>2006-07-15T08:31:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/automatic-time-series-forecasting/</loc>
+    <lastmod>2006-06-26T08:10:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/hierarchical2/</loc>
+    <lastmod>2006-06-20T07:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/characteristic-based-clustering-for-time-series-data/</loc>
+    <lastmod>2006-05-16T05:52:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/measuring-change-in-prescription-drug-utilization-in-australia/</loc>
+    <lastmod>2006-05-16T04:57:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/local-linear-multivariate-regression-with-variable-bandwidth-in-the-presence-of-heteroscedasticity/</loc>
+    <lastmod>2006-05-01T01:50:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-accuracy-of-television-network-rating-forecasts-the-effects-of-data-aggregation-and-alternative-models/</loc>
+    <lastmod>2006-01-16T05:47:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/sensitivity-of-the-estimated-air-pollution-respiratory-admissions-relationship-to-statistical-model/</loc>
+    <lastmod>2005-12-16T03:49:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/empirical-information-criteria-for-time-series-forecasting-model-selection/</loc>
+    <lastmod>2005-10-16T03:44:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/stochastic-models-underlying-crostons-method-for-intermittent-demand-forecasting/</loc>
+    <lastmod>2005-07-16T04:22:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/maindonald-and-braun-data-analysis-and-graphics-using-r-an-example-based-approach/</loc>
+    <lastmod>2005-07-16T00:42:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/dimension-reduction-for-clustering-time-series-using-global-characteristics/</loc>
+    <lastmod>2005-05-22T01:31:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/robust-forecasting-of-mortality-and-fertility-rates-a-functional-data-approach/</loc>
+    <lastmod>2005-04-16T01:35:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/322/</loc>
+    <lastmod>2005-04-02T01:48:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/prediction-intervals-for-exponential-smoothing-using-two-new-classes-of-state-space-models/</loc>
+    <lastmod>2005-01-16T03:53:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/splinefcast/</loc>
+    <lastmod>2005-01-16T03:52:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/ijf-editorial/</loc>
+    <lastmod>2005-01-15T08:30:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-interaction-between-trend-and-seasonality/</loc>
+    <lastmod>2004-10-16T03:36:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/nonparametric-confidence-intervals-for-receiver-operating-characteristic-curves/</loc>
+    <lastmod>2004-07-16T03:34:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/exponential-smoothing-models-means-and-variances-for-lead-time-demand/</loc>
+    <lastmod>2004-05-16T03:42:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/monotonic-splines-2/</loc>
+    <lastmod>2004-01-16T03:40:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/normative-data-for-the-test-of-visual-analysis-skills-on-an-australian-population/</loc>
+    <lastmod>2003-07-16T03:31:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/statistical-jokes/</loc>
+    <lastmod>2003-07-15T01:44:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/unmasking-the-theta-method/</loc>
+    <lastmod>2003-04-16T03:29:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/improved-methods-for-bandwidth-selection-when-estimating-roc-curves/</loc>
+    <lastmod>2003-02-16T03:28:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/mixed-model-based-hazard-estimation/</loc>
+    <lastmod>2002-11-16T03:18:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/nonparametric-estimation-and-symmetry-tests-for-conditional-density-functions/</loc>
+    <lastmod>2002-07-16T03:23:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/hksg/</loc>
+    <lastmod>2002-07-16T03:21:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/kalman-filter/</loc>
+    <lastmod>2002-07-15T03:09:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/box-jenkins-modelling/</loc>
+    <lastmod>2002-07-15T03:02:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/arima-processes/</loc>
+    <lastmod>2002-07-15T02:25:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/using-r-to-teach-econometrics/</loc>
+    <lastmod>2002-03-16T03:25:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/cycles-and-synchrony-in-the-collared-lemming-dicrostonyx-groenlandicus-in-arctic-north-america/</loc>
+    <lastmod>2001-11-16T03:12:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/its-time-to-move-from-what-to-why/</loc>
+    <lastmod>2001-10-16T03:11:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/data-visualization-for-time-series-in-environmental-epidemiology/</loc>
+    <lastmod>2001-08-16T03:09:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/statistical-methodological-issues-in-studies-of-air-pollution-and-respiratory-disease/</loc>
+    <lastmod>2001-07-02T00:56:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/bandwidth-selection-for-kernel-conditional-density-estimation/</loc>
+    <lastmod>2001-06-16T03:08:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/non-gaussian-conditional-linear-ar1-models/</loc>
+    <lastmod>2000-11-16T03:05:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/residual-diagnostic-plots-for-model-mis-specification-in-time-series-regression/</loc>
+    <lastmod>2000-11-16T03:01:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</loc>
+    <lastmod>2000-08-09T01:46:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/pagan-and-ullah-nonparametric-econometrics/</loc>
+    <lastmod>2000-07-16T00:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/gam-rainfall/</loc>
+    <lastmod>2000-05-16T03:06:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/krantz-a-primer-of-mathematical-writing-higham-handbook-of-writing-for-the-mathematical-sciences/</loc>
+    <lastmod>1999-07-16T00:36:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/gaither-and-cavazos-gaither-statistically-speaking-a-dictionary-of-quotations/</loc>
+    <lastmod>1999-07-16T00:35:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/wild-c-j-and-seber-g-a-f-chance-encounters-a-first-course-in-data-analysis-and-inference/</loc>
+    <lastmod>1999-07-15T08:37:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/logitar/</loc>
+    <lastmod>1999-07-07T00:49:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/smoothing-non-gaussian-time-series-with-autoregressive-structure/</loc>
+    <lastmod>1998-07-16T03:00:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/simonoff-smoothing-methods-in-statistics/</loc>
+    <lastmod>1998-07-15T08:36:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/johnson-and-kotz-eds-leading-personalities-in-the-statistical-sciences-from-the-seventeenth-century-to-the-present/</loc>
+    <lastmod>1998-07-15T08:35:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/nonparametric-autocovariance-function-estimation/</loc>
+    <lastmod>1997-12-16T02:50:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/some-properties-and-generalizations-of-non-negative-bayesian-time-series-models/</loc>
+    <lastmod>1997-07-16T02:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-pricing-and-trading-of-options-using-a-hybrid-neural-network-model-with-historical-volatility/</loc>
+    <lastmod>1997-01-16T02:56:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/quantiles/</loc>
+    <lastmod>1996-11-16T02:45:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/estimating-and-visualizing-conditional-densities/</loc>
+    <lastmod>1996-07-16T02:43:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/computing-and-graphing-highest-density-regions/</loc>
+    <lastmod>1996-07-16T02:38:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/wand-and-jones-kernel-smoothing/</loc>
+    <lastmod>1996-07-15T08:33:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/a-unified-view-of-linear-ar1-models/</loc>
+    <lastmod>1996-06-16T01:44:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/highest-density-forecast-regions-for-non-linear-and-non-normal-time-series-models/</loc>
+    <lastmod>1995-07-16T02:12:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/the-use-of-information-technology-in-the-research-process/</loc>
+    <lastmod>1995-07-15T02:21:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/sturges/</loc>
+    <lastmod>1995-07-05T01:39:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/approximations-and-boundary-conditions-for-continuous-time-threshold-autoregressive-processes/</loc>
+    <lastmod>1994-07-16T02:10:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/yule-walker-estimates-for-continuous-time-autoregressive-models/</loc>
+    <lastmod>1993-07-16T02:06:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/phd/</loc>
+    <lastmod>1992-12-17T00:19:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/on-continuous-time-threshold-autoregression/</loc>
+    <lastmod>1992-07-16T02:04:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/continuous-time-threshold-autoregressive-models/</loc>
+    <lastmod>1991-02-16T01:01:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/calculating-the-odds/</loc>
+    <lastmod>1987-09-15T09:25:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/accuracy/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/anomaly-detection/</loc>
+    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/arima-models/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/atmospheric-science/</loc>
+    <lastmod>2016-12-07T00:54:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/beamer/</loc>
+    <lastmod>2017-03-30T21:53:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/boosting/</loc>
+    <lastmod>2016-02-04T04:19:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/</loc>
+    <lastmod>2017-03-30T21:53:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/chemistry/</loc>
+    <lastmod>2011-07-14T09:24:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/clustering/</loc>
+    <lastmod>2017-12-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/computing/</loc>
+    <lastmod>2017-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/conferences/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/consulting/</loc>
+    <lastmod>2013-02-06T21:30:32+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/consulting/</loc>
+    <lastmod>2016-10-23T11:21:35+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/data-science/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/data-science/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/demography/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/demography/</loc>
+    <lastmod>2014-11-27T02:33:46+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/density-estimation/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/ecology/</loc>
+    <lastmod>2015-08-07T04:00:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/econometrics/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/econometrics/</loc>
+    <lastmod>2017-02-15T00:40:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/education/</loc>
+    <lastmod>2015-05-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/electricity/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/electricity-demand/</loc>
+    <lastmod>2017-12-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/energy/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/energy/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/epidemiology/</loc>
+    <lastmod>2016-12-07T00:54:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/evidence/</loc>
+    <lastmod>2015-09-15T23:36:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/experimental-design/</loc>
+    <lastmod>2016-02-28T21:08:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/exponential-smoothing/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/forecasting/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/forecasting/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/fpp/</loc>
+    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/functional-data/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/gams/</loc>
+    <lastmod>2015-06-04T11:27:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/genealogy/</loc>
+    <lastmod>2009-07-15T00:42:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/grants/</loc>
+    <lastmod>2014-07-26T03:14:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/graphics/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/graphics/</loc>
+    <lastmod>2017-02-28T14:00:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/ijf/associate-editor-instructions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/ijf/editor-instructions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/ijf/guest-editor-instructions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/hierarchical-time-series/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/highest-density-regions/</loc>
+    <lastmod>2015-06-01T02:08:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/history/</loc>
+    <lastmod>1999-07-16T00:35:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/hts/</loc>
+    <lastmod>2016-08-18T00:09:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/humour/</loc>
+    <lastmod>2014-08-12T11:48:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/hyndsight/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/ijf/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/ijf/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/in-the-news/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/isf2017/</loc>
+    <lastmod>2017-02-27T22:29:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/jobs/</loc>
+    <lastmod>2017-11-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/jokes/</loc>
+    <lastmod>2003-07-15T01:44:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/journals/</loc>
+    <lastmod>2017-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/jss/</loc>
+    <lastmod>2014-04-24T05:41:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/kaggle/</loc>
+    <lastmod>2015-01-05T09:33:04+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/latex/</loc>
+    <lastmod>2017-04-04T23:00:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/mathematics/</loc>
+    <lastmod>2016-10-12T08:00:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/maxima/</loc>
+    <lastmod>2015-03-24T05:21:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/monash-university/</loc>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/neural-networks/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/nonparametric-smoothing/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/obituary/</loc>
+    <lastmod>2016-01-28T11:48:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/optimization/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/optometry/</loc>
+    <lastmod>2003-07-16T03:31:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/organization/</loc>
+    <lastmod>2015-04-09T02:42:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/otexts/</loc>
+    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/phd/</loc>
+    <lastmod>2016-01-20T05:03:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/poetry/</loc>
+    <lastmod>2015-02-04T06:43:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/prizes/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/probability/</loc>
+    <lastmod>2016-01-25T00:40:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/productivity/</loc>
+    <lastmod>2016-01-28T11:48:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/progress/</loc>
+    <lastmod>2013-05-06T03:34:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/publications/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/publishing/</loc>
+    <lastmod>2014-04-09T00:15:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/r/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/r/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/refereeing/</loc>
+    <lastmod>2015-09-13T10:50:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/references/</loc>
+    <lastmod>2017-04-04T23:00:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/religion/</loc>
+    <lastmod>2015-09-15T23:36:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/remote-sensing/</loc>
+    <lastmod>2010-08-17T08:05:10+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/reproducibility/</loc>
+    <lastmod>2010-01-01T03:53:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/reproducible-research/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/research-team/</loc>
+    <lastmod>2017-03-30T21:53:14+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/research-team/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/ropensci/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/seasonality/</loc>
+    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/seasonality/</loc>
+    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/seminars/</loc>
+    <lastmod>2018-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/seminars/</loc>
+    <lastmod>2017-03-07T22:35:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/software/</loc>
+    <lastmod>2016-05-06T05:00:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/software/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/splines/</loc>
+    <lastmod>2015-05-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/stackexchange/</loc>
+    <lastmod>2014-06-15T03:26:38+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/state-space-models/</loc>
+    <lastmod>2014-09-23T03:03:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/statistics/</loc>
+    <lastmod>2017-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/teaching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/supervision/</loc>
+    <lastmod>2014-08-12T11:48:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/tables/</loc>
+    <lastmod>2014-04-14T23:23:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/teaching/</loc>
+    <lastmod>2014-09-23T03:03:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/teaching/</loc>
+    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/technology/</loc>
+    <lastmod>2016-10-24T12:00:25+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/time-series/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/time-series/</loc>
+    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/tourism/</loc>
+    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/trend/</loc>
+    <lastmod>2015-10-28T02:43:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/unbelievable/</loc>
+    <lastmod>2016-04-09T06:50:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/video/</loc>
+    <lastmod>2015-06-29T17:12:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/volatility/</loc>
+    <lastmod>1997-01-16T02:56:45+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/welfare/</loc>
+    <lastmod>2010-10-17T21:36:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/writing/</loc>
+    <lastmod>2009-06-25T03:47:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/writing/</loc>
+    <lastmod>2016-08-28T10:21:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/categories/ysc2013/</loc>
+    <lastmod>2012-12-21T00:13:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/</link>
+    <description>Recent content in Tags on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accuracy</title>
+      <link>https://robjhyndman.com/tags/accuracy/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/accuracy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anomaly Detection</title>
+      <link>https://robjhyndman.com/tags/anomaly-detection/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/anomaly-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arima Models</title>
+      <link>https://robjhyndman.com/tags/arima-models/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/arima-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atmospheric Science</title>
+      <link>https://robjhyndman.com/tags/atmospheric-science/</link>
+      <pubDate>Wed, 07 Dec 2016 00:54:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/atmospheric-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boosting</title>
+      <link>https://robjhyndman.com/tags/boosting/</link>
+      <pubDate>Thu, 04 Feb 2016 04:19:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/boosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemistry</title>
+      <link>https://robjhyndman.com/tags/chemistry/</link>
+      <pubDate>Thu, 14 Jul 2011 09:24:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/chemistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>https://robjhyndman.com/tags/clustering/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>https://robjhyndman.com/tags/consulting/</link>
+      <pubDate>Wed, 06 Feb 2013 21:30:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://robjhyndman.com/tags/data-science/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demography</title>
+      <link>https://robjhyndman.com/tags/demography/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/demography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Density Estimation</title>
+      <link>https://robjhyndman.com/tags/density-estimation/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/density-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ecology</title>
+      <link>https://robjhyndman.com/tags/ecology/</link>
+      <pubDate>Fri, 07 Aug 2015 04:00:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/ecology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Econometrics</title>
+      <link>https://robjhyndman.com/tags/econometrics/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/econometrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://robjhyndman.com/tags/education/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electricity</title>
+      <link>https://robjhyndman.com/tags/electricity/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/electricity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electricity Demand</title>
+      <link>https://robjhyndman.com/tags/electricity-demand/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/electricity-demand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy</title>
+      <link>https://robjhyndman.com/tags/energy/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/energy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Epidemiology</title>
+      <link>https://robjhyndman.com/tags/epidemiology/</link>
+      <pubDate>Wed, 07 Dec 2016 00:54:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/epidemiology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental Design</title>
+      <link>https://robjhyndman.com/tags/experimental-design/</link>
+      <pubDate>Sun, 28 Feb 2016 21:08:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/experimental-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exponential Smoothing</title>
+      <link>https://robjhyndman.com/tags/exponential-smoothing/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/exponential-smoothing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting</title>
+      <link>https://robjhyndman.com/tags/forecasting/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/forecasting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Data</title>
+      <link>https://robjhyndman.com/tags/functional-data/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/functional-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gams</title>
+      <link>https://robjhyndman.com/tags/gams/</link>
+      <pubDate>Thu, 04 Jun 2015 11:27:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/gams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>https://robjhyndman.com/tags/graphics/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Time Series</title>
+      <link>https://robjhyndman.com/tags/hierarchical-time-series/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/hierarchical-time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Highest Density Regions</title>
+      <link>https://robjhyndman.com/tags/highest-density-regions/</link>
+      <pubDate>Mon, 01 Jun 2015 02:08:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/highest-density-regions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>https://robjhyndman.com/tags/history/</link>
+      <pubDate>Fri, 16 Jul 1999 00:35:15 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jokes</title>
+      <link>https://robjhyndman.com/tags/jokes/</link>
+      <pubDate>Tue, 15 Jul 2003 01:44:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/jokes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>https://robjhyndman.com/tags/neural-networks/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric Smoothing</title>
+      <link>https://robjhyndman.com/tags/nonparametric-smoothing/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/nonparametric-smoothing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimization</title>
+      <link>https://robjhyndman.com/tags/optimization/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optometry</title>
+      <link>https://robjhyndman.com/tags/optometry/</link>
+      <pubDate>Wed, 16 Jul 2003 03:31:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/optometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://robjhyndman.com/tags/probability/</link>
+      <pubDate>Mon, 25 Jan 2016 00:40:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://robjhyndman.com/tags/r/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remote Sensing</title>
+      <link>https://robjhyndman.com/tags/remote-sensing/</link>
+      <pubDate>Tue, 17 Aug 2010 08:05:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/remote-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducibility</title>
+      <link>https://robjhyndman.com/tags/reproducibility/</link>
+      <pubDate>Fri, 01 Jan 2010 03:53:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seasonality</title>
+      <link>https://robjhyndman.com/tags/seasonality/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/seasonality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://robjhyndman.com/tags/software/</link>
+      <pubDate>Fri, 06 May 2016 05:00:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Splines</title>
+      <link>https://robjhyndman.com/tags/splines/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/splines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>State Space Models</title>
+      <link>https://robjhyndman.com/tags/state-space-models/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/state-space-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://robjhyndman.com/tags/teaching/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Series</title>
+      <link>https://robjhyndman.com/tags/time-series/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tourism</title>
+      <link>https://robjhyndman.com/tags/tourism/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/tourism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Volatility</title>
+      <link>https://robjhyndman.com/tags/volatility/</link>
+      <pubDate>Thu, 16 Jan 1997 02:56:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/volatility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://robjhyndman.com/tags/writing/</link>
+      <pubDate>Thu, 25 Jun 2009 03:47:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

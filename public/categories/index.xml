@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/</link>
+    <description>Recent content in Categories on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Mar 2017 21:53:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beamer</title>
+      <link>https://robjhyndman.com/categories/beamer/</link>
+      <pubDate>Thu, 30 Mar 2017 21:53:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/beamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing</title>
+      <link>https://robjhyndman.com/categories/computing/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conferences</title>
+      <link>https://robjhyndman.com/categories/conferences/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consulting</title>
+      <link>https://robjhyndman.com/categories/consulting/</link>
+      <pubDate>Sun, 23 Oct 2016 11:21:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/consulting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://robjhyndman.com/categories/data-science/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demography</title>
+      <link>https://robjhyndman.com/categories/demography/</link>
+      <pubDate>Thu, 27 Nov 2014 02:33:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/demography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Econometrics</title>
+      <link>https://robjhyndman.com/categories/econometrics/</link>
+      <pubDate>Wed, 15 Feb 2017 00:40:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/econometrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy</title>
+      <link>https://robjhyndman.com/categories/energy/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/energy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evidence</title>
+      <link>https://robjhyndman.com/categories/evidence/</link>
+      <pubDate>Tue, 15 Sep 2015 23:36:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/evidence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting</title>
+      <link>https://robjhyndman.com/categories/forecasting/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/forecasting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fpp</title>
+      <link>https://robjhyndman.com/categories/fpp/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/fpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genealogy</title>
+      <link>https://robjhyndman.com/categories/genealogy/</link>
+      <pubDate>Wed, 15 Jul 2009 00:42:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/genealogy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grants</title>
+      <link>https://robjhyndman.com/categories/grants/</link>
+      <pubDate>Sat, 26 Jul 2014 03:14:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/grants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>https://robjhyndman.com/categories/graphics/</link>
+      <pubDate>Tue, 28 Feb 2017 14:00:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hts</title>
+      <link>https://robjhyndman.com/categories/hts/</link>
+      <pubDate>Thu, 18 Aug 2016 00:09:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/hts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Humour</title>
+      <link>https://robjhyndman.com/categories/humour/</link>
+      <pubDate>Tue, 12 Aug 2014 11:48:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/humour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ijf</title>
+      <link>https://robjhyndman.com/categories/ijf/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/ijf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isf2017</title>
+      <link>https://robjhyndman.com/categories/isf2017/</link>
+      <pubDate>Mon, 27 Feb 2017 22:29:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/isf2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jobs</title>
+      <link>https://robjhyndman.com/categories/jobs/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Journals</title>
+      <link>https://robjhyndman.com/categories/journals/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/journals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jss</title>
+      <link>https://robjhyndman.com/categories/jss/</link>
+      <pubDate>Thu, 24 Apr 2014 05:41:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/jss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kaggle</title>
+      <link>https://robjhyndman.com/categories/kaggle/</link>
+      <pubDate>Mon, 05 Jan 2015 09:33:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/kaggle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://robjhyndman.com/categories/latex/</link>
+      <pubDate>Tue, 04 Apr 2017 23:00:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematics</title>
+      <link>https://robjhyndman.com/categories/mathematics/</link>
+      <pubDate>Wed, 12 Oct 2016 08:00:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maxima</title>
+      <link>https://robjhyndman.com/categories/maxima/</link>
+      <pubDate>Tue, 24 Mar 2015 05:21:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/maxima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monash University</title>
+      <link>https://robjhyndman.com/categories/monash-university/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/monash-university/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Obituary</title>
+      <link>https://robjhyndman.com/categories/obituary/</link>
+      <pubDate>Thu, 28 Jan 2016 11:48:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/obituary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organization</title>
+      <link>https://robjhyndman.com/categories/organization/</link>
+      <pubDate>Thu, 09 Apr 2015 02:42:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Otexts</title>
+      <link>https://robjhyndman.com/categories/otexts/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/otexts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phd</title>
+      <link>https://robjhyndman.com/categories/phd/</link>
+      <pubDate>Wed, 20 Jan 2016 05:03:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>https://robjhyndman.com/categories/poetry/</link>
+      <pubDate>Wed, 04 Feb 2015 06:43:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prizes</title>
+      <link>https://robjhyndman.com/categories/prizes/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/prizes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://robjhyndman.com/categories/productivity/</link>
+      <pubDate>Thu, 28 Jan 2016 11:48:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Progress</title>
+      <link>https://robjhyndman.com/categories/progress/</link>
+      <pubDate>Mon, 06 May 2013 03:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/progress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publishing</title>
+      <link>https://robjhyndman.com/categories/publishing/</link>
+      <pubDate>Wed, 09 Apr 2014 00:15:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/publishing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://robjhyndman.com/categories/r/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Refereeing</title>
+      <link>https://robjhyndman.com/categories/refereeing/</link>
+      <pubDate>Sun, 13 Sep 2015 10:50:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/refereeing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://robjhyndman.com/categories/references/</link>
+      <pubDate>Tue, 04 Apr 2017 23:00:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/references/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Religion</title>
+      <link>https://robjhyndman.com/categories/religion/</link>
+      <pubDate>Tue, 15 Sep 2015 23:36:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/religion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducible Research</title>
+      <link>https://robjhyndman.com/categories/reproducible-research/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/reproducible-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research Team</title>
+      <link>https://robjhyndman.com/categories/research-team/</link>
+      <pubDate>Thu, 30 Mar 2017 21:53:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/research-team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ropensci</title>
+      <link>https://robjhyndman.com/categories/ropensci/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/ropensci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seasonality</title>
+      <link>https://robjhyndman.com/categories/seasonality/</link>
+      <pubDate>Wed, 03 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/seasonality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seminars</title>
+      <link>https://robjhyndman.com/categories/seminars/</link>
+      <pubDate>Tue, 07 Mar 2017 22:35:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/seminars/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stackexchange</title>
+      <link>https://robjhyndman.com/categories/stackexchange/</link>
+      <pubDate>Sun, 15 Jun 2014 03:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/stackexchange/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>https://robjhyndman.com/categories/statistics/</link>
+      <pubDate>Thu, 31 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supervision</title>
+      <link>https://robjhyndman.com/categories/supervision/</link>
+      <pubDate>Tue, 12 Aug 2014 11:48:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/supervision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://robjhyndman.com/categories/tables/</link>
+      <pubDate>Mon, 14 Apr 2014 23:23:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://robjhyndman.com/categories/teaching/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://robjhyndman.com/categories/technology/</link>
+      <pubDate>Mon, 24 Oct 2016 12:00:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Series</title>
+      <link>https://robjhyndman.com/categories/time-series/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trend</title>
+      <link>https://robjhyndman.com/categories/trend/</link>
+      <pubDate>Wed, 28 Oct 2015 02:43:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/trend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://robjhyndman.com/categories/video/</link>
+      <pubDate>Mon, 29 Jun 2015 17:12:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Welfare</title>
+      <link>https://robjhyndman.com/categories/welfare/</link>
+      <pubDate>Sun, 17 Oct 2010 21:36:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/welfare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://robjhyndman.com/categories/writing/</link>
+      <pubDate>Sun, 28 Aug 2016 10:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ysc2013</title>
+      <link>https://robjhyndman.com/categories/ysc2013/</link>
+      <pubDate>Fri, 21 Dec 2012 00:13:15 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/categories/ysc2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

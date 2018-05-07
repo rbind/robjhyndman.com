@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exponential Smoothing on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/exponential-smoothing/</link>
+    <description>Recent content in Exponential Smoothing on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/exponential-smoothing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimal forecast reconciliation for hierarchical and grouped time series through trace minimization</title>
+      <link>https://robjhyndman.com/publications/mint/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mint/</guid>
+      <description>Large collections of time series often have aggregation constraints due to product or geographical groupings. The forecasts for the most disaggregated series are usually required to add-up exactly to the forecasts of the aggregated series, a constraint we refer to as &amp;ldquo;coherence&amp;rdquo;. Forecast reconciliation is the process of adjusting forecasts to make them coherent. The reconciliation algorithm proposed by Hyndman et al. (2011) is based on a generalized least squares estimator that requires an estimate of the covariance matrix of the coherency errors (i.</description>
+    </item>
+    
+    <item>
+      <title>Visualising forecasting algorithm performance using time series instance spaces</title>
+      <link>https://robjhyndman.com/publications/ts-feature-space/</link>
+      <pubDate>Thu, 12 Jan 2017 21:16:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/ts-feature-space/</guid>
+      <description>It is common practice to evaluate the strength of forecasting methods using collections of well-studied time series datasets, such as the M3 data. But how diverse are these time series, how challenging, and do they enable us to study the unique strengths and weaknesses of different forecasting methods? In this paper we propose a visualisation method for a collection of time series that enables a time series to be represented as a point in a 2-dimensional instance space.</description>
+    </item>
+    
+    <item>
+      <title>Bagging exponential smoothing methods using STL decomposition and Box-Cox transformation</title>
+      <link>https://robjhyndman.com/publications/bagging-ets/</link>
+      <pubDate>Thu, 28 Apr 2016 23:30:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/bagging-ets/</guid>
+      <description>Exponential smoothing is one of the most popular forecasting methods. We present a method for bootstrap aggregation (bagging) of exponential smoothing methods. The bagging uses a Box-Cox transformation followed by an STL decomposition to separate the time series into trend, seasonal part, and remainder. The remainder is then bootstrapped using a moving block bootstrap, and a new series is assembled using this bootstrapped remainder. On the bootstrapped series, an ensemble of exponential smoothing models is estimated.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting: principles and practice (UWA course)</title>
+      <link>https://robjhyndman.com/seminars/uwa/</link>
+      <pubDate>Tue, 23 Sep 2014 03:03:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/uwa/</guid>
+      <description> Workshop to be held on 23-25 September 2014.
+Venue: The University Club, University of Western Australia, Nedlands WA.
+Requirements: a laptop with R installed, along with the fpp package and its dependencies. We will also use the hts and vars package on the third day.
+Textbook [Hyndman and Athanasopoulos (2014)
+Forecasting: principles and practice, OTexts: Melbourne, Australia](http://www.otexts.org/fpp).
+Program  Introduction to forecasting [Slides, R code, Lab solutions] Forecasting tools [Slides, R code, Lab solutions] Exponential smoothing I [Slides, R code, Lab solutions] Exponential smoothing II [Slides, R code, Lab solutions] Time series decomposition and cross-validation [Slides, R code, Lab solutions] Transformations, stationarity and differencing [Slides, R code, Lab solutions] Non-seasonal ARIMA models [Slides, R code, Lab solutions] Seasonal ARIMA models [Slides, R code, Lab solutions] State space models [Slides, R code, Lab solutions] Dynamic regression [Slides, R code, Lab solutions] Hierarchical forecasting [Slides, R code, Lab solutions] Advanced methods [Slides, R code, Lab solutions]  Course Notes </description>
+    </item>
+    
+    <item>
+      <title>State space models</title>
+      <link>https://robjhyndman.com/seminars/abs-state-space-models/</link>
+      <pubDate>Fri, 30 May 2014 01:21:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/abs-state-space-models/</guid>
+      <description>Exponential smoothing
+ Slides R examples Lab session Solutions to lab session  Structural models
+ Slides R examples Lab session Solutions to lab session  ARIMA and RegARMA models, and dlm
+ Slides R examples   (Updated: 2 June 2014)</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series with complex seasonal patterns using exponential smoothing</title>
+      <link>https://robjhyndman.com/publications/complex-seasonality/</link>
+      <pubDate>Sat, 31 Dec 2011 02:38:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/complex-seasonality/</guid>
+      <description>A new innovations state space modeling framework, incorporating Box-Cox transformations, Fourier series with time varying coefficients and ARMA error correction, is introduced for forecasting complex seasonal time series that cannot be handled using existing forecasting models. Such complex time series include time series with multiple seasonal periods, high frequency seasonality, non-integer seasonality and dual-calendar effects. Our new modelling framework provides an alternative to existing exponential smoothing models, and is shown to have many advantages.</description>
+    </item>
+    
+    <item>
+      <title>The vector innovations structural time series framework: a simple approach to multivariate forecasting</title>
+      <link>https://robjhyndman.com/publications/vists/</link>
+      <pubDate>Mon, 15 Nov 2010 23:11:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/vists/</guid>
+      <description>The vector innovations structural time series framework is proposed as a way of modelling a set of related time series. Like all multivariate approaches, the aim is to exploit potential inter-series dependencies to improve the fit and forecasts. The model is based around an unobserved vector of components representing features such as the level and slope of each time series. Equations that describe the evolution of these components through time are used to represent the inter-temporal dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing and non-negative data</title>
+      <link>https://robjhyndman.com/publications/expsmooth-nonnegative/</link>
+      <pubDate>Wed, 25 Nov 2009 23:06:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/expsmooth-nonnegative/</guid>
+      <description>The most common forecasting methods in business are based on exponential smoothing and the most common time series in business are inherently non-negative. Therefore it is of interest to consider the properties of the potential stochastic models underlying exponential smoothing when applied to non-negative data. We explore exponential smoothing state space models for non-negative data under various assumptions about the innovations, or error, process.
+We first demonstrate that prediction distributions from some commonly used state space models may have an infinite variance beyond a certain forecasting horizon.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring processes with changing variances</title>
+      <link>https://robjhyndman.com/publications/monitoring-processes/</link>
+      <pubDate>Sun, 05 Jul 2009 23:14:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/monitoring-processes/</guid>
+      <description>Statistical process control (SPC) has evolved beyond its classical applications in manufacturing to monitoring economic and social phenomena. This extension requires consideration of autocorrelated and possibly non-stationary time series. Less attention has been paid to the possibility that the variance of the process may also change over time. In this paper we use the innovations state space modeling framework to develop conditionally heteroscedastic models. We provide examples to show that the incorrect use of homoscedastic models may lead to erroneous decisions about the nature of the process.</description>
+    </item>
+    
+    <item>
+      <title>A multivariate innovations state space Beveridge-Nelson decomposition</title>
+      <link>https://robjhyndman.com/publications/vists-beveridge-nelson/</link>
+      <pubDate>Thu, 01 Jan 2009 23:09:55 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/vists-beveridge-nelson/</guid>
+      <description>The Beveridge-Nelson vector innovations structural time series framework is a new formulation that decomposes a set of variables into their permanent and transitory components. The proposed framework is flexible, modelling inter-series relationships and common features in a simple manner. In particular, it is shown that this new specification is simpler than conventional state space and cointegration approaches. The approach is illustrated using a trivariate data set comprising the GDP of Australia, the USA and the UK.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting time series with multiple seasonal patterns</title>
+      <link>https://robjhyndman.com/publications/multiple-seasonal-patterns/</link>
+      <pubDate>Sun, 16 Nov 2008 05:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/multiple-seasonal-patterns/</guid>
+      <description>A new approach is proposed for forecasting a time series with multiple seasonal patterns. A state space model is developed for the series using the innovation approach which enables us to develop explicit models for both additive and multiplicative seasonality. Parameter estimates may be obtained using methods from exponential smoothing. The proposed model is used to examine hourly and daily patterns in hourly data for both utility loads and traffic flows.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting: the forecast package for R</title>
+      <link>https://robjhyndman.com/publications/automatic-forecasting/</link>
+      <pubDate>Wed, 16 Jul 2008 05:29:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/automatic-forecasting/</guid>
+      <description>Automatic forecasts of large numbers of univariate time series are often needed in business and other contexts. We describe two automatic forecasting algorithms that have been implemented in the forecast package for R. The first is based on innovation state space models that underly exponential smoothing methods. The second is based on ARIMA models. The algorithms are applicable to both seasonal and non-seasonal data, and are compared and illustrated using four real time series.</description>
+    </item>
+    
+    <item>
+      <title>The admissible parameter space for exponential smoothing models</title>
+      <link>https://robjhyndman.com/publications/the-admissible-parameter-space-for-exponential-smoothing-models/</link>
+      <pubDate>Mon, 16 Jun 2008 06:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/the-admissible-parameter-space-for-exponential-smoothing-models/</guid>
+      <description>We discuss the admissible parameter space for some state space models, including the models that underly exponential smoothing methods. We find that the usual parameter restrictions (requiring all smoothing parameters to lie between 0 and 1) do not always lead to stable models. We also find that all seasonal exponential smoothing methods are unstable as the underlying state space models are neither reachable nor observable. This instability does not affect the forecasts, but does corrupt the state estimates.</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing and non-negative data</title>
+      <link>https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/</link>
+      <pubDate>Sun, 15 Jun 2008 07:51:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/exponential-smoothing-and-non-negative-data/</guid>
+      <description>Where: International Symposium on Forecasting, Nice, France  Abstract: The most common forecasting methods in business are based on exponential smoothing and the most common time series in business are inherently non-negative. Therefore it is of interest to consider the properties of the potential stochastic models underlying exponential smoothing when applied to non-negative data. We explore nonlinear exponential smoothing state space models for non-negative data under various assumptions about the innovations, or error, process.</description>
+    </item>
+    
+    <item>
+      <title>Modelling and forecasting Australian domestic tourism</title>
+      <link>https://robjhyndman.com/publications/modelling-and-forecasting-australian-domestic-tourism/</link>
+      <pubDate>Fri, 01 Feb 2008 06:25:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/modelling-and-forecasting-australian-domestic-tourism/</guid>
+      <description>In this paper, we model and forecast Australian domestic tourism demand. We use a regression framework to estimate important economic relationships for domestic tourism demand. We also identify the impact of world events such as the 2000 Sydney Olympics and the 2002 Bali bombings on Australian domestic tourism. To explore the time series nature of the data, we use innovation state space models to forecast the domestic tourism demand. Combining these two frameworks, we build innovation state space models with exogenous variables.</description>
+    </item>
+    
+    <item>
+      <title>A state space model for exponential smoothing with group seasonality</title>
+      <link>https://robjhyndman.com/publications/a-state-space-model-for-exponential-smoothing-with-group-seasonality/</link>
+      <pubDate>Tue, 29 May 2007 01:54:59 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/a-state-space-model-for-exponential-smoothing-with-group-seasonality/</guid>
+      <description>We present an approach to improve forecast accuracy by simultaneously forecasting a group of products that exhibit similar seasonal demand patterns. Better seasonality estimates can be made by using information on all products in a group, and using these improved estimates when forecasting at the individual product level. This approach is called the group seasonal indices (GSI) approach, and is a generalization of the classical Holt-Winters procedure. This article describes an underlying state space model for this method and presents simulation results that show when it yields more accurate forecasts than Holt-Winters.</description>
+    </item>
+    
+    <item>
+      <title>Time series forecasting: the case for the single source of error state space approach</title>
+      <link>https://robjhyndman.com/publications/322/</link>
+      <pubDate>Sat, 02 Apr 2005 01:48:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/322/</guid>
+      <description>The state space approach to modelling univariate time series is now widely used both in theory and in applications. However, the very richness of the framework means that quite different model formulations are possible, even when they purport to describe the same phenomena. In this paper, we examine the single source of error [SSOE] scheme, which has perfectly correlated error components. We then proceed to compare SSOE to the more common version of the state space models, for which all the error terms are independent; we refer to this as the multiple source of error [MSOE] scheme.</description>
+    </item>
+    
+    <item>
+      <title>Prediction intervals for exponential smoothing using two new classes of state space models</title>
+      <link>https://robjhyndman.com/publications/prediction-intervals-for-exponential-smoothing-using-two-new-classes-of-state-space-models/</link>
+      <pubDate>Sun, 16 Jan 2005 03:53:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/prediction-intervals-for-exponential-smoothing-using-two-new-classes-of-state-space-models/</guid>
+      <description>Three general classes of state space models are presented, based upon the single source of error formulation. The first class is the standard linear state space model with homoscedastic errors, the second retains the linear structure but incorporates a dynamic form of heteroscedasticity, and the third allows for non-linear structure in the observation equation as well as heteroscedasticity. These three classes provide stochastic models for a wide variety of exponential smoothing methods.</description>
+    </item>
+    
+    <item>
+      <title>Local linear forecasts using cubic smoothing splines</title>
+      <link>https://robjhyndman.com/publications/splinefcast/</link>
+      <pubDate>Sun, 16 Jan 2005 03:52:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/splinefcast/</guid>
+      <description>We show how cubic smoothing splines fitted to univariate time series data can be used to obtain local linear forecasts. Our approach is based on a stochastic state space model which allows the use of a likelihood approach for estimating the smoothing parameter, and which enables easy construction of prediction intervals. We show that our model is a special case of an ARIMA(0,2,2) model and we provide a simple upper bound for the smoothing parameter to ensure an invertible model.</description>
+    </item>
+    
+    <item>
+      <title>Exponential smoothing models: Means and variances for lead-time demand</title>
+      <link>https://robjhyndman.com/publications/exponential-smoothing-models-means-and-variances-for-lead-time-demand/</link>
+      <pubDate>Sun, 16 May 2004 03:42:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/exponential-smoothing-models-means-and-variances-for-lead-time-demand/</guid>
+      <description>Exponential smoothing is often used to forecast lead-time demand for inventory control. In this paper, formulae are provided for calculating means and variances of lead-time demand for a wide variety of exponential smoothing methods. A feature of many of the formulae is that variances, as well as the means, depend on trends and seasonal effects. Thus, these formulae provide the opportunity to implement methods that ensure that safety stocks adjust to changes in trend or changes in season.</description>
+    </item>
+    
+    <item>
+      <title>Unmasking the Theta method</title>
+      <link>https://robjhyndman.com/publications/unmasking-the-theta-method/</link>
+      <pubDate>Wed, 16 Apr 2003 03:29:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/unmasking-the-theta-method/</guid>
+      <description>The &amp;ldquo;Theta method&amp;rdquo; of forecasting performed particularly well in the M3-competition and is therefore of interest to forecast practitioners. The description of the method given by Assimakopoulos and Nikolopoulos (2000) involves several pages of algebraic manipulation and is difficult to comprehend. We show that the method can be expressed much more simply; furthermore we show that the forecasts obtained are equivalent to simple exponential smoothing with drift.
+Keywords: exponential smoothing, forecasting competitions, state space models.</description>
+    </item>
+    
+    <item>
+      <title>A state space framework for automatic forecasting using exponential smoothing methods</title>
+      <link>https://robjhyndman.com/publications/hksg/</link>
+      <pubDate>Tue, 16 Jul 2002 03:21:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/hksg/</guid>
+      <description>We provide a new approach to automatic busineswwwwws forecasting based on an extended range of exponential smoothing methods. Each method in our taxonomy of exponential smoothing methods can be shown to be equivalent to the forecasts obtained from a state space model. This allows (1) the easy calculation of the likelihood, the AIC and other model selection criteria; (2) the computation of prediction intervals for each method; and (3) random simulation from the underlying state space model.</description>
+    </item>
+    
+  </channel>
+</rss>

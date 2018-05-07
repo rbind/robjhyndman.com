@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experimental Design on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/experimental-design/</link>
+    <description>Recent content in Experimental Design on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 28 Feb 2016 21:08:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/experimental-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>On sampling methods for costly multi-objective black-box optimization</title>
+      <link>https://robjhyndman.com/publications/sampling-multiobjective-optimization/</link>
+      <pubDate>Sun, 28 Feb 2016 21:08:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/sampling-multiobjective-optimization/</guid>
+      <description>We investigate the impact of different sampling techniques on the performance of multi-objective optimization methods applied to costly black-box optimization problems. Such problems are often solved using an algorithm in which a surrogate model approximates the true objective function and provides predicted objective values at a lower cost. As the surrogate model is based on evaluations of a small number of points, the quality of the initial sample can have a great effect on the overall effectiveness of the optimization.</description>
+    </item>
+    
+    <item>
+      <title>Efficient identification of the Pareto optimal set</title>
+      <link>https://robjhyndman.com/publications/epic/</link>
+      <pubDate>Fri, 01 Aug 2014 06:24:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/epic/</guid>
+      <description>In this paper, we focus on expensive multiobjective optimization problems and propose a method to predict an approximation of the Pareto optimal set using classification of sampled decision vectors as dominated or nondominated. The performance of our method, called EPIC, is demonstrated on a set of benchmark problems used in the multiobjective optimization literature and compared with state-of-the-art methods, ParEGO and PAL. The initial results are promising and encourage further research in this direction.</description>
+    </item>
+    
+    <item>
+      <title>Nonparametric and semiparametric response surface methodology: a review of designs, models and optimization techniques</title>
+      <link>https://robjhyndman.com/publications/rsm-review/</link>
+      <pubDate>Thu, 31 Oct 2013 12:27:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/rsm-review/</guid>
+      <description>Abstract: Since the introduction of Response Surface Methodology in the 1950s, there have been many developments with the aim of expanding the range of applications of the methodology. Various new design, modeling and optimization techniques have been introduced for coping with unknown input-output relationships, costly or time-consuming experimental studies and irregular experimental regions (e.g., non-cubic or non-spherical regions induced by constraints in the input variables). Such developments may involve many different research areas simultaneously (e.</description>
+    </item>
+    
+    <item>
+      <title>A case-crossover design to examine the role of aeroallergens and respiratory viruses on childhood asthma exacerbations requiring hospitalisation: The MAPCAH study</title>
+      <link>https://robjhyndman.com/publications/mapcah/</link>
+      <pubDate>Mon, 25 Jun 2012 02:26:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mapcah/</guid>
+      <description>Background: Few case-control studies of time dependent environmental exposures and respiratory outcomes have been performed. Small sample sizes pose modeling challenges for estimating interactions. In contrast, case cross-over studies are well suited where control selection and responses are low, time consuming and costly.
+Objective: To demonstrate the feasibility and validity of a case crossover study of children admitted to hospital for asthma to examine interacting effects of time varying environmental exposures.</description>
+    </item>
+    
+    <item>
+      <title>Method for optimizing coating properties based on an evolutionary algorithm approach</title>
+      <link>https://robjhyndman.com/publications/emma/</link>
+      <pubDate>Thu, 14 Jul 2011 09:24:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/emma/</guid>
+      <description>In industry as well as many areas of scientific research, data collected often contain a number of responses of interest for a chosen set of exploratory variables. Optimization of such multivariable multiresponse systems is a challenge well suited to genetic algorithms as global optimization tools. One such example is the optimization of coating surfaces with the required absolute and relative sensitivity for detecting analytes using devices such as sensor arrays. High-throughput synthesis and screening methods can be used to accelerate materials discovery and optimization; however, an important practical consideration for successful optimization of materials for arrays and other applications is the ability to generate adequate information from a minimum number of experiments.</description>
+    </item>
+    
+    <item>
+      <title>Functionalization of microarray devices: process optimization using a multiobjective PSO and multiresponse MARS modeling</title>
+      <link>https://robjhyndman.com/publications/microarray-optimization/</link>
+      <pubDate>Sun, 07 Feb 2010 23:12:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/microarray-optimization/</guid>
+      <description>An evolutionary approach for the optimization of microarray coatings produced via sol-gel chemistry is presented. The aim of the methodology is to face the challenging aspects of the problem: high dimensional variable space, constraints on the independent variables, multiple responses, expensive or time-consuming experimental trials, expected complexity of the functional relationships between independent and response variables. The proposed approach iteratively select a set of experiments by combining a multiobjective Particle Swarm Optimization (PSO) and a multiresponse Multivariate Adaptive Regression Spines (MARS) model.</description>
+    </item>
+    
+  </channel>
+</rss>

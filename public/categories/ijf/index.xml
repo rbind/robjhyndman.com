@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ijf on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/ijf/</link>
+    <description>Recent content in Ijf on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 13 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/ijf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IJF Tao Hong Award 2018</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-hong-nominations-2018/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-hong-nominations-2018/</guid>
+      <description>Every two years, the International Journal of Forecasting awards a prize to the best paper on energy forecasting. The prize is generously funded by Professor Tao Hong. This year, we will award the prize to a paper published in the IJF during the period 2015-2016. The prize will be US$1000 plus an engraved plaque. The award committee is Rob J Hyndman, Pierre Pinson and James Mitchell.
+Nominations are invited from any reader of the IJF.</description>
+    </item>
+    
+    <item>
+      <title>IJF Best Paper Award 2017</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-best-paper-award-2017/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-best-paper-award-2017/</guid>
+      <description>At the recent International Symposium on Forecasting, I announced the awards for the best paper published in the International Journal of Forecasting in the period 2014&amp;ndash;2015.
+We make an award every two years to the best paper(s) published in the journal. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The selected papers are selected by vote of the editorial board. The best paper wins an engraved bronze plaque and US$1000.</description>
+    </item>
+    
+    <item>
+      <title>IIF Tao Hong Award 2016</title>
+      <link>https://robjhyndman.com/hyndsight/iif-hong-award-2016/</link>
+      <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/iif-hong-award-2016/</guid>
+      <description>A generous donation from Professor Tao Hong has funded this new award for papers on energy forecasting published in the International Journal of Forecasting. The award for 2016 is for papers published within 2013&amp;ndash;2014. Next year we will award a paper published in 2015&amp;ndash;2016, and we will make the award every two years after that.
+The award decision was made by a committee consisting of Professors Pierre Pinson, James Mitchell and Rob J Hyndman.</description>
+    </item>
+    
+    <item>
+      <title>Why I&#39;m not celebrating the 2016 impact factors</title>
+      <link>https://robjhyndman.com/hyndsight/2016-impact-factors/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/2016-impact-factors/</guid>
+      <description>Once every year, the journal citation reports are released including journal impact factors. This year, the International Journal of Forecasting 2-year impact factor has increased to 2.642 which is the highest it has been in the journal’s history, and puts the journal higher than such notable titles as Journal of the American Statistical Association and just below Management Science.
+The 2-year impact factor is the average number of citations for articles published in the previous 2 years.</description>
+    </item>
+    
+    <item>
+      <title>IJF Best Paper Award 2014-2015</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-nominations1415/</link>
+      <pubDate>Wed, 01 Mar 2017 03:54:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-nominations1415/</guid>
+      <description>Every two years we award a prize for the best paper published in the International Journal of Forecasting. It is now time to identify the best paper published in the IJF during 2014 and 2015. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The prize is US$1000 plus an engraved plaque. I will present the prize at the ISF in Cairns in late June.</description>
+    </item>
+    
+    <item>
+      <title>IJF Tao Hong Award for the best paper in energy forecasting 2013-2014</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-hong-award/</link>
+      <pubDate>Wed, 11 Jan 2017 04:38:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-hong-award/</guid>
+      <description>Professor Tao Hong has generously funded a new prize for the best IJF paper on energy forecasting, to be awarded every two years. The first award will be for papers published in the International Journal of Forecasting during the period 2013-2014. The prize will be US$1000 plus an engraved plaque. The award committee is Rob J Hyndman, Pierre Pinson and James Mitchell.
+Nominations are invited from any reader of the IJF.</description>
+    </item>
+    
+    <item>
+      <title>What is going on?</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-reject/</link>
+      <pubDate>Mon, 12 Dec 2016 02:15:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-reject/</guid>
+      <description>I seem to be getting an increasing number of submissions where the author has clearly not bothered to actually check that the paper was submitted correctly. Here is a rejection letter I wrote today.
+ Dear xxxxx
+I am writing concerning manuscript #INTFOR_16xxxxx entitled &amp;ldquo;xxxxxxxxxxxxxxxx&amp;rdquo; which you submitted to the International Journal of Forecasting.
+Thank you for this submission, but as it consists entirely of the IJF author guidelines, it is not suitable for publication in the IJF.</description>
+    </item>
+    
+    <item>
+      <title>Tourism time series repository</title>
+      <link>https://robjhyndman.com/hyndsight/tourism-time-series/</link>
+      <pubDate>Wed, 10 Aug 2016 08:12:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tourism-time-series/</guid>
+      <description>A few years ago, I wrote a paper with George Athanasopoulos and others about a tourism forecasting competition. We originally made the data available as an online supplement to the paper, but that has unfortunately since disappeared although the paper itself is still available.
+So I am posting the data here in case anyone wants to use it for replicating our results, or for other research purposes. The data are split into monthly, quarterly and yearly data.</description>
+    </item>
+    
+    <item>
+      <title>The latest IJF issue with GEFCom2014 results</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-gefcom2014/</link>
+      <pubDate>Fri, 10 Jun 2016 01:07:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-gefcom2014/</guid>
+      <description>The latest issue of the IJF is a bumper issue with over 500 pages of forecasting insights.
+The GEFCom2014 papers are included in a special section on probabilistic energy forecasting, guest edited by Tao Hong and Pierre Pinson. This is a major milestone in energy forecasting research with the focus on probabilistic forecasting and forecast evaluation done using a quantile scoring method. Only a few years ago I was having to explain to energy professionals why you couldn&amp;rsquo;t use a MAPE to evaluate a percentile forecast.</description>
+    </item>
+    
+    <item>
+      <title>2017 International Symposium on Energy Analytics</title>
+      <link>https://robjhyndman.com/hyndsight/isea2017/</link>
+      <pubDate>Fri, 03 Jun 2016 02:56:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/isea2017/</guid>
+      <description>Predictive Energy Analytics in the Big Data World Cairns, Australia, June 22-23, 2017 ISEA2017 
+This will be a great conference, and it is in a great location &amp;mdash; Cairns, Australia, right by the Great Barrier Reef. Even better, if you stay on you can attend the International Symposium on Forecasting which immediately follows the International Symposium on Energy Analytics.
+So block out 22-28 June 2017 on your calendars so you can enjoy a tropical paradise in one of the most beautiful parts of Australia, while attending two awesome conferences.</description>
+    </item>
+    
+    <item>
+      <title>IJF vol 31(4): Forecasting in telecommunications and ICT</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-vol-314/</link>
+      <pubDate>Tue, 15 Sep 2015 09:29:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-vol-314/</guid>
+      <description>The last issue of the International Journal of Forecasting for 2015 has been released. This one contains the usual mix of topics, plus a special section on Forecasting in telecommunications and ICT including a nice review article by Nigel Meade and Towhidul Islam. Enjoy!</description>
+    </item>
+    
+    <item>
+      <title>IJF best paper awards</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</link>
+      <pubDate>Tue, 23 Jun 2015 21:32:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</guid>
+      <description>Today at the International Symposium on Forecasting, I announced the awards for the best paper published in the International Journal of Forecasting in the period 2012-2013.
+We make an award every two years to the best paper(s) published in the journal. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The selected papers are selected by vote of the editorial board. The best paper wins an engraved bronze plaque and US$1000.</description>
+    </item>
+    
+    <item>
+      <title>R vs Autobox vs ForecastPro vs ...</title>
+      <link>https://robjhyndman.com/hyndsight/show-me-the-evidence/</link>
+      <pubDate>Wed, 03 Jun 2015 01:04:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/show-me-the-evidence/</guid>
+      <description>Every now and then a commercial software vendor makes claims on social media about how their software is so much better than the forecast package for R, but no details are provided.
+There are lots of reasons why you might select a particular software solution, and R isn&amp;rsquo;t for everyone. But anyone claiming superiority should at least provide some evidence rather than make unsubstantiated claims.The M3 forecasting competition was organized by Spyros Makridakis and Michèle Hibon.</description>
+    </item>
+    
+    <item>
+      <title>More changes to the IJF editorial board</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-board/</link>
+      <pubDate>Thu, 14 May 2015 03:55:26 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-board/</guid>
+      <description>The editorial board of the International Journal of Forecasting is going through a renewal process with several changes to the team of editors and the team of associate editors in the last few weeks.New Editors Graham Elliott has decided to step down from the IJF editorial board after many years of service. Graham is best known for his research on optimal forecast combination, and forecasting under asymmetric and flexible loss functions.</description>
+    </item>
+    
+    <item>
+      <title>Nominations for IJF Best Paper 2012-2013</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-nominations2/</link>
+      <pubDate>Thu, 07 May 2015 07:46:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-nominations2/</guid>
+      <description>The following papers have been nominated for the best paper published in the International Journal of Forecasting in 2012-2013. I have included an excerpt from the nomination in each case. The papers in bold have been short-listed for the award, and the editorial board are currently voting on them. Bellotti, T., &amp;amp; Crook, J. (2012). Loss given default models incorporating macroeconomic variables for credit cards. IJF, 28(1), 171-182.
+ The first rule for the award of best paper should be that the paper clearly reflects the value of the new method/approach when compared to established alternatives in the particular problem context chosen by the researchers.</description>
+    </item>
+    
+    <item>
+      <title>Common reasons for rejection</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-rejections/</link>
+      <pubDate>Thu, 12 Mar 2015 04:45:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-rejections/</guid>
+      <description>Every week I reject some papers submitted to the International Journal of Forecasting, without sending the papers off to associate editors or reviewers. Here are five of the most common reasons for rejection.1. Wrong Journal Submissions to the IJF should be about forecasting, obviously. But we often get papers on econometrics, or time series analysis, or something else that is not forecasting. Even if a paper has some implications for forecasting, if these are not discussed at all, the paper is not within scope for the journal.</description>
+    </item>
+    
+    <item>
+      <title>Thanks Paul and welcome Dilek</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-change-of-editors/</link>
+      <pubDate>Mon, 09 Feb 2015 22:45:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-change-of-editors/</guid>
+      <description>Today, there is a change in editors at the International Journal of Forecasting. Paul Goodwin is retiring from the editorial board, and Dilek Önkal is taking his place.Paul Goodwin was appointed as an associate editor in 1999 and as an editor in 2010. Paul is retiring from his position as Professor of Management Science at the University of Bath, UK, and has decided to also retire from the IJF editorial board.</description>
+    </item>
+    
+    <item>
+      <title>Honoring Herman Stekler</title>
+      <link>https://robjhyndman.com/hyndsight/honoring-herman-stekler/</link>
+      <pubDate>Mon, 08 Dec 2014 00:11:59 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/honoring-herman-stekler/</guid>
+      <description>The first issue of the IJF for 2015 has just been published, and I&amp;rsquo;m delighted that it includes a special section honoring Herman Stekler. It includes articles covering a range of his forecasting interests, although not all of them (sports forecasting is missing). Herman himself wrote a paper for it looking at &amp;ldquo;Forecasting—Yesterday, Today and Tomorrow&amp;rdquo;.
+He is in a unique position to write such a paper as he has been doing forecasting research longer than anyone else on the planet &amp;mdash; his first published paper on forecasting appeared in 1959.</description>
+    </item>
+    
+    <item>
+      <title>Prediction competitions</title>
+      <link>https://robjhyndman.com/hyndsight/prediction-competitions/</link>
+      <pubDate>Fri, 05 Dec 2014 12:05:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/prediction-competitions/</guid>
+      <description>Competitions have a long history in forecasting and prediction, and have been instrumental in forcing research attention on methods that work well in practice. In the forecasting community, the M competition and M3 competition have been particularly influential. The data mining community have the annual KDD cup which has generated attention on a wide range of prediction problems and associated methods. Recent KDD cups are hosted on kaggle.
+In my research group meeting today, we discussed our (limited) experiences in competing in some Kaggle competitions, and we reviewed the following two papers which describe two prediction competitions:</description>
+    </item>
+    
+    <item>
+      <title>IJF review papers</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-review-papers/</link>
+      <pubDate>Tue, 11 Nov 2014 23:50:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-review-papers/</guid>
+      <description>Review papers are extremely useful for new researchers such as PhD students, or when you want to learn about a new research field. The International Journal of Forecasting produced a whole review issue in 2006, and it contains some of the most highly cited papers we have ever published. Now, beginning with the latest issue of the journal, we have started publishing occasional review articles on selected areas of forecasting. The first two articles are:</description>
+    </item>
+    
+    <item>
+      <title>IIF Sponsored Workshops</title>
+      <link>https://robjhyndman.com/hyndsight/iif-workshops/</link>
+      <pubDate>Mon, 06 Oct 2014 22:57:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/iif-workshops/</guid>
+      <description>The International Institute of Forecasters sponsors workshops every year, each of which focuses on a specific theme. The purpose of these workshops is to facilitate small, informal meetings where experts in a particular field of forecasting can discuss forecasting problems, research, and solutions. Over the years, our workshops have covered topics from Predicting Rare Events, ICT Forecasting, and, most recently, Singular Spectrum Analysis. Often these workshops are associated with a special issue of the International Journal of Forecasting.</description>
+    </item>
+    
+    <item>
+      <title>A new candidate for worst figure</title>
+      <link>https://robjhyndman.com/hyndsight/worst-figure/</link>
+      <pubDate>Mon, 01 Sep 2014 05:03:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/worst-figure/</guid>
+      <description>Today I read a paper that had been submitted to the IJF which included the following figure
+
+along with several similar plots. (Click for a larger version.) I haven&amp;rsquo;t seen anything this bad for a long time. In fact, I think I would find it very difficult to reproduce using R, or even Excel (which is particularly adept at bad graphics).
+A few years ago I produced &amp;ldquo;Twenty rules for good graphics&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>GEFCom 2014 energy forecasting competition is underway</title>
+      <link>https://robjhyndman.com/hyndsight/gefcom-2014/</link>
+      <pubDate>Mon, 18 Aug 2014 05:44:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gefcom-2014/</guid>
+      <description>GEFCom 2014 is the most advanced energy forecasting competition ever organized, both in terms of the data involved, and in terms of the way the forecasts will be evaluated.
+So everyone interested in energy forecasting should head over to the competition webpage and start forecasting: www.gefcom.org.
+This time, the competition is hosted on CrowdANALYTIX rather than Kaggle.
+Highlights of GEFCom2014:
+ An upgraded edition from GEFCom2012
+ Four tracks: electric load, electricity price, wind power and solar power forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Student forecasting awards from the IIF</title>
+      <link>https://robjhyndman.com/hyndsight/iif-awards/</link>
+      <pubDate>Sat, 26 Jul 2014 03:14:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/iif-awards/</guid>
+      <description>At the IIF annual board meeting last month in Rotterdam, I suggested that we provide awards to the top students studying forecasting at university level around the world, to the tune of $100 plus IIF membership for a year. I&amp;rsquo;m delighted that the idea met with enthusiasm, and that the awards are now available. Even better, my second year forecasting subject has been approved for an award.
+The IIF have agreed to fund awards for 20 forecasting courses to start with.</description>
+    </item>
+    
+    <item>
+      <title>SAS/IIF grants</title>
+      <link>https://robjhyndman.com/hyndsight/sasiif-grants/</link>
+      <pubDate>Mon, 14 Jul 2014 22:43:27 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/sasiif-grants/</guid>
+      <description>Every year, the International Institute of Forecasters in conjunction with SAS offer some small grants to help promote research in forecasting. There are two $5000 grants per year for research on forecasting methodology and applications. This year, applications close on 30 September 2014. More details are given here.
+Information about past SAS-IIF awards is given on the IIF website. It is interesting to see the range of topics covered. Here are the winning projects in the last two years:</description>
+    </item>
+    
+    <item>
+      <title>Errors on percentage errors</title>
+      <link>https://robjhyndman.com/hyndsight/smape/</link>
+      <pubDate>Wed, 16 Apr 2014 12:11:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/smape/</guid>
+      <description>The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &amp;ldquo;it has a bias favoring estimates that are below the actual values&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic forecasting by Gneiting and Katzfuss (2014)</title>
+      <link>https://robjhyndman.com/hyndsight/gneiting/</link>
+      <pubDate>Fri, 14 Mar 2014 05:57:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gneiting/</guid>
+      <description>The IJF is introducing occasional review papers on areas of forecasting. We did a whole issue in 2006 reviewing 25 years of research since the International Institute of Forecasters was established. Since then, there has been a lot of new work in application areas such as call center forecasting and electricity price forecasting. In addition, there are areas we did not cover in 2006 including new product forecasting and forecasting in finance.</description>
+    </item>
+    
+    <item>
+      <title>IJF news</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-news/</link>
+      <pubDate>Fri, 07 Mar 2014 03:38:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-news/</guid>
+      <description>This is a short piece I wrote for the next issue of the Oracle newsletter produced by the International Institute of Forecasters.Special section topics We continue to publish special sections on selected topics. Because of the change in the way regular papers are now handled, we do not publish whole special issues any more. Rather, each issue has regular papers at the front, and if there are any special sections they appear at the back.</description>
+    </item>
+    
+    <item>
+      <title>Global energy forecasting competitions</title>
+      <link>https://robjhyndman.com/hyndsight/gefcom2014/</link>
+      <pubDate>Wed, 19 Feb 2014 07:12:50 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gefcom2014/</guid>
+      <description>The 2012 GEFcom competition was a great success with several new innovative forecasting methods introduced. These have been published in the IJF as follows: Hong, Pinson and Fan. Global Energy Forecasting Competition 2012
+ Charleton and Singleton. A refined parametric model for short term load forecasting
+ Lloyd. GEFCom2012 hierarchical load forecasting: Gradient boosting machines and Gaussian processes
+ Nedelec, Cugliari and Goude: GEFCom2012: Electric load forecasting and backcasting with semi-parametric models</description>
+    </item>
+    
+    <item>
+      <title>Top papers in the International Journal of Forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-top-papers/</link>
+      <pubDate>Tue, 04 Feb 2014 01:06:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-top-papers/</guid>
+      <description>Every year or so, Elsevier asks me to nominate five _International Journal of Forecasting_ papers from the last two years to highlight in their marketing materials as &amp;ldquo;Editor&amp;rsquo;s Choice&amp;rdquo;. I try to select papers across a broad range of subjects, and I take into account citations and downloads as well as my own impression of the paper. That tends to bias my selection a little towards older papers as they have had more time to accumulate citations.</description>
+    </item>
+    
+    <item>
+      <title>How to get your paper rejected quickly</title>
+      <link>https://robjhyndman.com/hyndsight/quick-rejection/</link>
+      <pubDate>Mon, 25 Nov 2013 01:20:04 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/quick-rejection/</guid>
+      <description>I sent this rejection letter this morning about a paper submitted to the International Journal of Forecasting.
+ Dear XXXXX.
+I am writing to you regarding manuscript ????? entitled &amp;ldquo;xxxxxxxxxxxx&amp;rdquo; which you submitted to the International Journal of Forecasting.
+It so happens that I am aware that this paper was previously reviewed for the YYYYYYY journal. It seems that you have not bothered to make any of the changes recommended by the reviewers of your submission to YYYYYYY.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Energy Forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/</link>
+      <pubDate>Mon, 14 Oct 2013 04:07:55 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/probabilistic-energy-forecasting/</guid>
+      <description>The International Journal of Forecasting is calling for papers on probabilistic energy forecasting. Here are the details (taken from Tao Hong&amp;rsquo;s blog).In today&amp;rsquo;s competitive and dynamic environment, more and more decision making processes in the energy industry are relying on probabilistic forecasts. The applications of probabilistic energy forecasts spread across planning and operations of the entire energy value chain. We are seeking papers from researchers working on the areas of probabilistic energy forecasting.</description>
+    </item>
+    
+    <item>
+      <title>IJF quality indicators</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-quality-indicators/</link>
+      <pubDate>Fri, 17 May 2013 00:35:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-quality-indicators/</guid>
+      <description>I often receive email asking about IJF quality indicators. Here is one I received today.
+ Dear Professor Hyndman,
+I recently had a paper published in IJF entitled, &amp;ldquo;xxxxxxxxxxxx&amp;rdquo;. I am very pleased with the publication and consider IJF to be an excellent outlet for my work in time-series econometrics.
+I have an unusual request, but I hope you will consider responding. My research is judged by non-economists and IJF is not on their list of &amp;ldquo;quality&amp;rdquo; journals.</description>
+    </item>
+    
+    <item>
+      <title>Becoming a referee</title>
+      <link>https://robjhyndman.com/hyndsight/refereeing/</link>
+      <pubDate>Sun, 09 Jan 2011 22:56:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/refereeing/</guid>
+      <description>I regularly get emails from people wanting to be referees for the International Journal of Forecasting, usually with an accompanying CV. This is not how the process works.
+Referees are almost always selected because they have previously written papers on a similar topic to the manuscript under review. If you want to be a referee, then write good papers and get them published in scholarly journals. Very quickly you will be invited to referee papers in the same journals.</description>
+    </item>
+    
+    <item>
+      <title>Tourism forecasting competition ends</title>
+      <link>https://robjhyndman.com/hyndsight/tfc2/</link>
+      <pubDate>Wed, 24 Nov 2010 12:52:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tfc2/</guid>
+      <description>And the winners are &amp;hellip; Jeremy Howard and Lee C Baker. (See my earlier post for information about the competition.)
+Jeremy describes his approach to seasonal time series in a blog post on Kaggle.com. Lee described his approach to annual time series in an earlier post.
+A few lessons that come out of this:
+ For data from a single industry, using a global trend (i.e., estimated across all series) can be useful.</description>
+    </item>
+    
+    <item>
+      <title>Joining an editorial board</title>
+      <link>https://robjhyndman.com/hyndsight/editorialboards/</link>
+      <pubDate>Thu, 07 Oct 2010 05:51:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/editorialboards/</guid>
+      <description>Being on the editorial board of a journal is a lot of work. I&amp;rsquo;m currently Editor-in-Chief of the International Journal of Forecasting and previously I&amp;rsquo;ve been Theory &amp;amp; Methods Editor of the Australian &amp;amp; New Zealand Journal of Statistics. Although it is time-consuming and often goes un-noticed, there are some important rewards that make it worthwhile in my opinion.
+ You are forced to read carefully a lot of papers in your area of interest.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarks for forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/benchmarks/</link>
+      <pubDate>Wed, 25 Aug 2010 11:03:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/benchmarks/</guid>
+      <description>Every week I reject papers submitted to the International Journal of Forecasting because they present new methods without ever attempting to demonstrate that the new methods are better than existing methods. It is a policy of the journal that every new method must be compared to standard benchmarks and existing methods before the paper will even be considered for publication.
+For univariate time series methods, it is not difficult. As a minimum, comparisons should be made against a naive method and a standard method such as an ARIMA model.</description>
+    </item>
+    
+    <item>
+      <title>The tourism forecasting competition</title>
+      <link>https://robjhyndman.com/hyndsight/tourism-forecasting-competition/</link>
+      <pubDate>Mon, 09 Aug 2010 05:08:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tourism-forecasting-competition/</guid>
+      <description>Recently I wrote a paper entitled &amp;ldquo;The tourism forecasting competition&amp;rdquo; in which we (i.e., George Athanasopoulos, Haiyan Song, Doris Wu and I) compared various forecasting methods on a relatively large set of tourism-related time series. The paper has been accepted for publication in the International Journal of Forecasting. (When I submit a paper to the IJF it is always handled by another editor. In this case, Mike Clements handled the paper and it went through several revisions before it was finally accepted.</description>
+    </item>
+    
+    <item>
+      <title>Academic citations in the popular press</title>
+      <link>https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/</link>
+      <pubDate>Sun, 11 Jul 2010 19:31:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/</guid>
+      <description>It is very unusual for a newspaper article to cite an academic paper, unless it is in Nature, Science or the Lancet. Mostly, what we write is too technical and assumes too much background knowledge for it to be accessible to anyone but specialists. So I was pleasantly surprised to find a reference to the International Journal of Forecastingin a recent Wall Street Journalarticle. It is a citation of a 1996 article, so in terms of scientific research it is a bit like quoting the Magna Carta, but a citation nevertheless.</description>
+    </item>
+    
+    <item>
+      <title>Use fake data and real data</title>
+      <link>https://robjhyndman.com/hyndsight/use-fake-data-and-real-data/</link>
+      <pubDate>Fri, 11 Jun 2010 03:18:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/use-fake-data-and-real-data/</guid>
+      <description>When developing new statistical methods, it is very useful to test them on both fake data (i.e., simulations) and real data.
+Testing on fake data is useful because then you know the &amp;ldquo;true&amp;rdquo; answer and can check the procedure under ideal conditions. If your method doesn&amp;rsquo;t work when the data are designed for the task, it is unlikely to work in real conditions. Fake data also enables you to test the robustness of your method when the conditions aren&amp;rsquo;t perfect &amp;ndash; for example, try adding some nasty outliers and see if the method still works.</description>
+    </item>
+    
+    <item>
+      <title>Writing a referee report</title>
+      <link>https://robjhyndman.com/hyndsight/referee-reports/</link>
+      <pubDate>Wed, 10 Feb 2010 04:06:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/referee-reports/</guid>
+      <description>As an editor, I like to see referee reports comprising three sections:
+ A general summary of the paper and the contribution it makes. You need to highlight here what is new and interesting about the paper, as well as give a summary in a few sentences.
+ The major problems that need addressing. This is probably the most important section of your report where you explain the main problems. The editor will read this very carefully when deciding whether to accept, reject or invite a revision, so you need to make sure that any problems are clearly explained here.</description>
+    </item>
+    
+  </channel>
+</rss>

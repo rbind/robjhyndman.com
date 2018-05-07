@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consulting on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/consulting/</link>
+    <description>Recent content in Consulting on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 23 Oct 2016 11:21:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/consulting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Q&amp;A time</title>
+      <link>https://robjhyndman.com/hyndsight/qa-time/</link>
+      <pubDate>Sun, 23 Oct 2016 11:21:35 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/qa-time/</guid>
+      <description>Someone sent me some questions by email, and I decided to answer some of them here. How important is it that I know and understand the underlying mathematical framework to forecasting methods? I understand conceptually how most of them work, but I feel as if I may benefit from truly understanding the math.
+ The main benefit of understanding the mathematics behind different forecasting models is to be able to adapt the models when they don&amp;rsquo;t work well for your data.</description>
+    </item>
+    
+    <item>
+      <title>The hidden benefits of open-source software</title>
+      <link>https://robjhyndman.com/hyndsight/oss-benefits/</link>
+      <pubDate>Sun, 29 Nov 2015 23:22:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/oss-benefits/</guid>
+      <description>I&amp;rsquo;ve been having discussions with colleagues and university administration about the best way for universities to manage home-grown software.
+The traditional business model for software is that we build software and sell it to everyone willing to pay. Very often, that leads to a software company spin-off that has little or nothing to do with the university that nurtured the development. Think MATLAB, S-Plus, Minitab, SAS and SPSS, all of which grew out of universities or research institutions.</description>
+    </item>
+    
+    <item>
+      <title>New R package for electricity forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/mefm/</link>
+      <pubDate>Wed, 17 Dec 2014 06:24:53 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/mefm/</guid>
+      <description>Shu Fan and I have developed a model for electricity demand forecasting that is now widely used in Australia for long-term forecasting of peak electricity demand. It has become known as the &amp;ldquo;Monash Electricity Forecasting Model&amp;rdquo;. We have decided to release an R package that implements our model so that other people can easily use it. The package is called &amp;ldquo;MEFM&amp;rdquo; and is available on github. We will probably also put in on CRAN eventually.</description>
+    </item>
+    
+    <item>
+      <title>Data science market places</title>
+      <link>https://robjhyndman.com/hyndsight/marketplaces/</link>
+      <pubDate>Mon, 26 May 2014 02:42:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/marketplaces/</guid>
+      <description>Some new websites are being established offering &amp;ldquo;market places&amp;rdquo; for data science. Two I&amp;rsquo;ve come across recently are Experfy and SnapAnalytx.Experfy provides a way for companies to find statisticians and other data scientists, either for short-term consultancies, or to fill full-time positions. They describe their &amp;ldquo;providers&amp;rdquo; as &amp;ldquo;Data Engineers, Data Scientists, Data Mining Experts, Data Analyst/Modelers, Big Data Solutions Architects, Visualization Designers, Statisticians, Applied Physicists, Mathematicians, Econometricians and Bioinformaticians.&amp;rdquo; Data scientists can sign up as &amp;ldquo;Providers&amp;rdquo;, companies can sign up as &amp;ldquo;Clients&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Interview for the Capital of Statistics</title>
+      <link>https://robjhyndman.com/hyndsight/cos-interview/</link>
+      <pubDate>Wed, 05 Feb 2014 00:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-interview/</guid>
+      <description>Earo Wang recently interviewed me for the Chinese website Capital of Statistics. The English transcript of the intervew is on Earo&amp;rsquo;s personal website.
+This is the third interview I&amp;rsquo;ve done in the last 18 months. The others were for:
+ Data Mining Research. Republished in Amstat News.
+ DecisionStats.
+  </description>
+    </item>
+    
+    <item>
+      <title>Forecasting annual totals from monthly data</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</link>
+      <pubDate>Wed, 15 May 2013 06:39:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</guid>
+      <description>This question was posed on crossvalidated.com:
+ I have a monthly time series (for 2009-2012 non-stationary, with seasonality). I can use ARIMA (or ETS) to obtain point and interval forecasts for each month of 2013, but I am interested in forecasting the total for the whole year, including prediction intervals. Is there an easy way in R to obtain interval forecasts for the total for 2013?
+ I&amp;rsquo;ve come across this problem before in my consulting work, although I don&amp;rsquo;t think I&amp;rsquo;ve ever published my solution.</description>
+    </item>
+    
+    <item>
+      <title>George E P Box (1919-2013)</title>
+      <link>https://robjhyndman.com/hyndsight/gepbox/</link>
+      <pubDate>Sun, 31 Mar 2013 05:21:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gepbox/</guid>
+      <description>Last Thursday (28 March 2013), George Box passed away at the age of 93. He was one of the great statisticians of the last 100 years, and leaves an astonishingly diverse legacy.
+When I teach forecasting to my second year commerce students, we cover Box-Cox transformations, Box-Pierce and Ljung-Box tests, and Box-Jenkins modelling, and my students wonder if it is the same Box in all cases. It is. And we don&amp;rsquo;t even go near his work on response surface modelling, design of experiments, quality control or random number generation.</description>
+    </item>
+    
+    <item>
+      <title>Statistical consulting in Australia</title>
+      <link>https://robjhyndman.com/hyndsight/consulting-groups/</link>
+      <pubDate>Mon, 11 Feb 2013 11:09:59 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/consulting-groups/</guid>
+      <description>There must be dozens of statistical consulting businesses and organizations in Australia, each specializing in different areas.
+I do some consulting work myself, mostly in the forecasting area, but sometimes in other areas of applied statistics including expert witness work in court cases. Email me if you have a project you would like me to take on. However, I often refer potential clients to other statistical consulting groups, as I only have a limited amount of time I can spend on consulting projects.</description>
+    </item>
+    
+  </channel>
+</rss>

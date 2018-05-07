@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fpp on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/fpp/</link>
+    <description>Recent content in Fpp on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 30 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/fpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Forecasting workshop in Perth</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-workshop-perth/</link>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-workshop-perth/</guid>
+      <description>On 26-28 September 2017, I will be running my 3-day workshop in Perth on &amp;ldquo;Forecasting: principles and practice&amp;rdquo; based on my book of the same name.
+Topics to be covered include seasonality and trends, exponential smoothing, ARIMA modelling, dynamic regression and state space models, as well as forecast accuracy methods and forecast evaluation techniques such as cross-validation.
+Workshop participants are expected to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</description>
+    </item>
+    
+    <item>
+      <title>Follow-up forecasting forum in Eindhoven</title>
+      <link>https://robjhyndman.com/hyndsight/eindhoven2/</link>
+      <pubDate>Tue, 07 Mar 2017 22:35:08 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eindhoven2/</guid>
+      <description>Last October I gave a 3-day masterclass on &amp;ldquo;Forecasting with R&amp;rdquo; in Eindhoven, Netherlands. There is a follow-up event planned for Tuesday 18 April 2017. It is particularly designed for people who attended the 3-day class, but if anyone else wants to attend they would be welcome.
+Please register here if you want to attend.The preliminary schedule is as follows.
+10.00 -- 11.00  New developments in forecasting using R   forecast v8.</description>
+    </item>
+    
+    <item>
+      <title>Simulating from a specified seasonal ARIMA model</title>
+      <link>https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/</link>
+      <pubDate>Fri, 27 Jan 2017 05:13:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/simulating-from-a-specified-seasonal-arima-model/</guid>
+      <description>From my email today
+ You use an illustration of a seasonal arima model:
+ARIMA(1,1,1)(1,1,1)4
+I would like to simulate data from this process then fit a model… but I am unable to find any information as to how this can be conducted… if I set phi1, Phi1, theta1, and Theta1 it would be reassuring that for large n the parameters returned by Arima(foo,order=c(1,1,1),seasonal=c(1,1,1)) are in agreement…
+ My answer: Unfortunately arima.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Forecasting with R&#34; short course in Eindhoven</title>
+      <link>https://robjhyndman.com/hyndsight/eindhoven-course/</link>
+      <pubDate>Thu, 18 Aug 2016 00:09:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/eindhoven-course/</guid>
+      <description>I will be giving my 3-day short-course/workshop on &amp;ldquo;Forecasting with R&amp;rdquo; in Eindhoven (Netherlands) from 19-21 October.
+Details at https://www.win.tue.nl/~adriemel/shortcourse.html
+Register here</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s downloading the forecast package?</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-downloads/</link>
+      <pubDate>Wed, 09 Dec 2015 21:27:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-downloads/</guid>
+      <description>The github page for the forecast package currently shows the following information 
+Note the downloads figure: 264K/month. I know the package is popular, but that seems crazy. Also, the downloads figure on github only counts the downloads from the RStudio mirror, and ignores downloads from the other 125 mirrors around the world.Here are the top ten downloaded packages from the last month:
+library(cranlogs) cran_top_downloads(when=&#39;last-month&#39;) rank package count from to 1 zoo 308290 2015-11-09 2015-12-08 2 forecast 263797 2015-11-09 2015-12-08 3 Rcpp 260636 2015-11-09 2015-12-08 4 lmtest 258810 2015-11-09 2015-12-08 5 fpp 244989 2015-11-09 2015-12-08 6 expsmooth 244179 2015-11-09 2015-12-08 7 fma 243556 2015-11-09 2015-12-08 8 tseries 243172 2015-11-09 2015-12-08 9 stringi 199384 2015-11-09 2015-12-08 10 ggplot2 192072 2015-11-09 2015-12-08  OK, that is very weird.</description>
+    </item>
+    
+    <item>
+      <title>Feeling the FPP love</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-reviews/</link>
+      <pubDate>Fri, 10 Apr 2015 04:43:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-reviews/</guid>
+      <description>It is now exactly 12 months since the print version of my forecasting textbook with George Athanasopoulos was released on Amazon.com. Although the book is freely available online, it seems that a lot of people still like to buy print books.It&amp;rsquo;s nice to see that it has been getting some good reviews. It is rated 4.6 stars on Amazon.com with 6 out of 8 reviewers giving it 5 stars (the 3 reviewers on Amazon.</description>
+    </item>
+    
+    <item>
+      <title>FPP now available as a downloadable e-book</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-e-book/</link>
+      <pubDate>Sun, 21 Sep 2014 01:25:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-e-book/</guid>
+      <description>My forecasting textbook with George Athanasopoulos is already available online (for free), and in print via Amazon (for under $40). Now we have made it available as a downloadable e-book via Google Books (for $15.55). The Google Books version is identical to the print version on Amazon (apart from a few typos that have been fixed).
+To use the e-book version on an iPad or Android tablet, you need to have the Google Books app installed [iPad, Android].</description>
+    </item>
+    
+    <item>
+      <title>Resources for the FPP book</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-resources/</link>
+      <pubDate>Wed, 03 Sep 2014 01:59:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-resources/</guid>
+      <description>The FPP resources page has recently been updated with several new additions including
+ R code for all examples in the book. This was already available within each chapter, but the examples have been collected into one file per chapter to save copying and pasting the various code fragments.
+ Slides from a course on Predictive Analytics from the University of Sydney.
+ Slides from a course on Economic Forecasting from the University of Hawaii.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting with R in WA</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/</link>
+      <pubDate>Sun, 24 Aug 2014 22:53:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-with-r-in-wa/</guid>
+      <description>On 23-25 September, I will be running a 3-day workshop in Perth on &amp;ldquo;Forecasting: principles and practice&amp;rdquo; mostly based on my book of the same name.
+Workshop participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed. Some prior experience in R is highly desirable.
+Venue: The University Club, University of Western Australia, Nedlands WA.</description>
+    </item>
+    
+    <item>
+      <title>Errors on percentage errors</title>
+      <link>https://robjhyndman.com/hyndsight/smape/</link>
+      <pubDate>Wed, 16 Apr 2014 12:11:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/smape/</guid>
+      <description>The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &amp;ldquo;it has a bias favoring estimates that are below the actual values&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My forecasting book now on Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-amazon/</link>
+      <pubDate>Wed, 09 Apr 2014 00:15:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-amazon/</guid>
+      <description>For all those people asking me how to obtain a print version of my book &amp;ldquo;Forecasting: principles and practice&amp;rdquo; with George Athanasopoulos, you now can.
+
+Order on Amazon.com
+Order on Amazon.co.uk
+Order on Amazon.fr
+The online book will continue to be freely available. The print version of the book is intended to help fund the development of the OTexts platform.
+The price is US$45, £27 or €35.
+Compare that to $195 for my previous forecasting textbook, $150 for Fildes and Ord, or $182 for Gonzalez-Rivera.</description>
+    </item>
+    
+    <item>
+      <title>Interpreting noise</title>
+      <link>https://robjhyndman.com/hyndsight/interpreting-noise/</link>
+      <pubDate>Sun, 06 Apr 2014 00:04:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/interpreting-noise/</guid>
+      <description>When watching the TV news, or reading newspaper commentary, I am frequently amazed at the attempts people make to interpret random noise.
+For example, the latest tiny fluctuation in the share price of a major company is attributed to the CEO being ill. When the exchange rate goes up, the TV finance commentator confidently announces that it is a reaction to Chinese building contracts. No one ever says &amp;ldquo;The unemployment rate has dropped by 0.</description>
+    </item>
+    
+    <item>
+      <title>Cover of my forecasting textbook</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-cover/</link>
+      <pubDate>Tue, 18 Mar 2014 06:17:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-cover/</guid>
+      <description>We now have a cover for the print version of my forecasting book with George Athanasopoulos.
+
+It should be on Amazon in a couple of weeks. The book is also freely available online.
+The cover was produced by Scarlett Rugers who I can happily recommend to anyone wanting a book cover designed.</description>
+    </item>
+    
+    <item>
+      <title>Fast computation of cross-validation in linear models</title>
+      <link>https://robjhyndman.com/hyndsight/loocv-linear-models/</link>
+      <pubDate>Mon, 17 Mar 2014 10:08:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/loocv-linear-models/</guid>
+      <description>The leave-one-out cross-validation statistic is given by
+ $$ \text{CV} = \frac{1}{N} \sum_{i=1}^N e_{[i]}^2, $$  where ${e_{[i]} = y_{i} - \hat{y}_{[i]}} $, the observations are given by $y_{1},\dots,y_{N}$, and $\hat{y}_{[i]}$ is the predicted value obtained when the model is estimated with the $i\text{th}$ case deleted. This is also sometimes known as the PRESS (Prediction Residual Sum of Squares) statistic.
+It turns out that for linear models, we do not actually have to estimate the model $N$ times, once for each omitted case.</description>
+    </item>
+    
+    <item>
+      <title>Highlighting the web</title>
+      <link>https://robjhyndman.com/hyndsight/highlighting-the-web/</link>
+      <pubDate>Thu, 06 Mar 2014 01:29:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/highlighting-the-web/</guid>
+      <description>Users of my new online forecasting book have asked about having a facility for personal highlighting of selected sections, as students often do with print books. We have plans to make this a built-in part of the platform, but for now it is possible to do it using a simple browser extension. This approach allows any website to be highlighted, so is even more useful than if we only had the facility on OTexts.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical forecasting with hts v4.0 </title>
+      <link>https://robjhyndman.com/hyndsight/hts4/</link>
+      <pubDate>Wed, 12 Feb 2014 08:26:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/hts4/</guid>
+      <description>A new version of my hts package for R is now on CRAN. It was completely re-written from scratch. Not a single line of code survived. There are some minor syntax changes, but the biggest change is speed and scope. This version is many times faster than the previous version and can handle hundreds of thousands of time series without complaining. The speed-up is due to some new research I am doing with Alan Lee (University of Auckland).</description>
+    </item>
+    
+    <item>
+      <title>Interview for the Capital of Statistics</title>
+      <link>https://robjhyndman.com/hyndsight/cos-interview/</link>
+      <pubDate>Wed, 05 Feb 2014 00:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-interview/</guid>
+      <description>Earo Wang recently interviewed me for the Chinese website Capital of Statistics. The English transcript of the intervew is on Earo&amp;rsquo;s personal website.
+This is the third interview I&amp;rsquo;ve done in the last 18 months. The others were for:
+ Data Mining Research. Republished in Amstat News.
+ DecisionStats.
+  </description>
+    </item>
+    
+    <item>
+      <title>Thoughts on the Ljung-Box test</title>
+      <link>https://robjhyndman.com/hyndsight/ljung-box-test/</link>
+      <pubDate>Fri, 24 Jan 2014 03:54:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ljung-box-test/</guid>
+      <description>&lt;p&gt;It is common to use a Ljung-Box test to check that the residuals from a time series model resemble white noise. However, there is very little practical advice around about how to choose the number of lags for the test.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My new forecasting book is finally finished</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-2/</link>
+      <pubDate>Sun, 21 Apr 2013 00:19:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-2/</guid>
+      <description>My new online forecasting book (written with George Athanasopoulos) is now completed. I previously described it on this blog nearly a year ago.
+In reality, an online book is never complete, and we plan to continually update it. But it is now at the point where it is suitable for course work, and contains exercises and references.
+We hope that users (especially other lecturers) will submit materials such as slides and exercises, that can be shared on the website.</description>
+    </item>
+    
+    <item>
+      <title>My new forecasting textbook</title>
+      <link>https://robjhyndman.com/hyndsight/fpp/</link>
+      <pubDate>Wed, 23 May 2012 01:34:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp/</guid>
+      <description>After years of saying that I was going to write a book to replace Makridakis, Wheelwright and Hyndman (1998), I&amp;rsquo;m finally ready to make an announcement!
+My new book is Forecasting: principles and practice, co-authored with George Athanasopoulos. It is available online and free-of-charge. We have written about 2&amp;frasl;3 of the book so far (all of which is already available online), and we plan to finish it by the end of 2012.</description>
+    </item>
+    
+  </channel>
+</rss>

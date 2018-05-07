@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Team on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/research-team/</link>
+    <description>Recent content in Research Team on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Mar 2017 21:53:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/research-team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monash Rmarkdown templates on github</title>
+      <link>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</link>
+      <pubDate>Thu, 30 Mar 2017 21:53:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/monash-rmarkdown-templates-on-github/</guid>
+      <description>Rmarkdown templates for staff and students in my department are now available on github. For a thesis, fork the repository MonashThesis.
+For other templates, install the R package MonashEBSTemplates R package. This provides templates for
+ beamer slides working papers exams letters  </description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown template for a Monash working paper</title>
+      <link>https://robjhyndman.com/hyndsight/rmarkdown-template/</link>
+      <pubDate>Sun, 28 Aug 2016 10:21:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rmarkdown-template/</guid>
+      <description>This is only directly relevant to my Monash students and colleagues, but the same idea might be useful for adapting to other institutions.
+Some recent changes in the rmarkdown and bookdown packages mean that it is now possible to produce working papers in exactly the same format as we previously used with LaTeX.Just install the MonashEBSTemplates package from github. You also need a recent version of LaTeX.
+Then from within RStudio, create a new document by selecting &amp;ldquo;Rmarkdown&amp;rdquo;, &amp;ldquo;From Template&amp;rdquo;, and select &amp;ldquo;Monash EBS Working Paper&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>The hidden benefits of open-source software</title>
+      <link>https://robjhyndman.com/hyndsight/oss-benefits/</link>
+      <pubDate>Sun, 29 Nov 2015 23:22:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/oss-benefits/</guid>
+      <description>I&amp;rsquo;ve been having discussions with colleagues and university administration about the best way for universities to manage home-grown software.
+The traditional business model for software is that we build software and sell it to everyone willing to pay. Very often, that leads to a software company spin-off that has little or nothing to do with the university that nurtured the development. Think MATLAB, S-Plus, Minitab, SAS and SPSS, all of which grew out of universities or research institutions.</description>
+    </item>
+    
+    <item>
+      <title>Travelling Thilaksha</title>
+      <link>https://robjhyndman.com/hyndsight/travelling-thilaksha/</link>
+      <pubDate>Wed, 22 Apr 2015 07:23:45 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/travelling-thilaksha/</guid>
+      <description>One of my PhD students, Thilaksha Tharanganie, has been very successful in getting travel funding to attend conferences. She was the subject of a write-up in today&amp;rsquo;s Monash News.
+We encourage students to attend conferences, and provide funding for them to attend one international conference and one local conference during their PhD candidature. Thilaksha was previously funded to attend last year&amp;rsquo;s COMPSTAT in Geneva, Switzerland and IMS conference in Sydney. Having exhausted local funding, she has now convinced several other organizations to support her conference habit.</description>
+    </item>
+    
+    <item>
+      <title>Paperpile makes me more productive</title>
+      <link>https://robjhyndman.com/hyndsight/paperpile/</link>
+      <pubDate>Thu, 09 Apr 2015 02:42:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/paperpile/</guid>
+      <description>One of the first things I tell my new research students is to use a reference management system to help them keep track of the papers they read, and to assist in creating bib files for their bibliography. Most of them use Mendeley, one or two use Zotero. Both do a good job and both are free.
+I use neither. I did use Mendeley for several years, but it became slower and slower to sync as my reference collection grew.</description>
+    </item>
+    
+    <item>
+      <title>Di Cook is moving to Monash</title>
+      <link>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</link>
+      <pubDate>Wed, 24 Dec 2014 05:29:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/di-cook-is-moving-to-monash/</guid>
+      <description>I&amp;rsquo;m delighted that Professor Dianne Cook will be joining Monash University in July 2015 as a Professor of Business Analytics. Di is an Australian who has worked in the US for the past 25 years, mostly at Iowa State University. She is moving back to Australia and joining the Department of Econometrics and Business Statistics in the Monash Business School, as part of our initiative in Business Analytics.
+Di is a world leader in data visu­al­iza­tion, and is well-​​known for her work on inter­ac­tive graph­ics.</description>
+    </item>
+    
+    <item>
+      <title>Congratulations to Dr Souhaib Ben Taieb</title>
+      <link>https://robjhyndman.com/hyndsight/souhaib/</link>
+      <pubDate>Wed, 15 Oct 2014 01:38:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/souhaib/</guid>
+      <description>Souhaib Ben Taieb has been awarded his doctorate at the Université libre de Bruxelles and so he is now officially Dr Ben Taieb! Although Souhaib lives in Brussels, and was a student at the Université libre de Bruxelles, I co-supervised his doctorate (along with Professor Gianluca Bontempi). Souhaib is the 19th PhD student of mine to graduate.
+His thesis was on &amp;ldquo;Machine learning strategies for multi-step-ahead time series forecasting&amp;rdquo; and is now available online.</description>
+    </item>
+    
+    <item>
+      <title>Visit of Di Cook</title>
+      <link>https://robjhyndman.com/hyndsight/visit-of-di-cook/</link>
+      <pubDate>Tue, 12 Aug 2014 23:28:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/visit-of-di-cook/</guid>
+      <description>Next week, Professor Di Cook from Iowa State University is visiting my research group at Monash University. Di is a world leader in data visualization, and is especially well-known for her work on interactive graphics and the XGobi and GGobi software. See her book with Deb Swayne for details.
+For those wanting to hear her speak, read on.Research seminar She will be giving a seminar at 2pm on Monday 18 August at the Monash Clayton campus (Rm E457, Menzies Building 11).</description>
+    </item>
+    
+    <item>
+      <title>Varian on big data</title>
+      <link>https://robjhyndman.com/hyndsight/varian-2014/</link>
+      <pubDate>Sun, 15 Jun 2014 22:45:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/varian-2014/</guid>
+      <description>Last week my research group discussed Hal Varian&amp;rsquo;s interesting new paper on &amp;ldquo;Big data: new tricks for econometrics&amp;rdquo;, Journal of Economic Perspectives, 28(2): 3-28.
+It&amp;rsquo;s a nice introduction to trees, bagging and forests, plus a very brief entree to the LASSO and the elastic net, and to slab and spike regression. Not enough to be able to use them, but ok if you&amp;rsquo;ve no idea what they are. It was more disappointing on boosting (completely ignoring the fact that boosting can be applied in a regression context as well as a classification context), and his comments on causality seemed curiously naive.</description>
+    </item>
+    
+    <item>
+      <title>To explain or predict?</title>
+      <link>https://robjhyndman.com/hyndsight/to-explain-or-predict/</link>
+      <pubDate>Mon, 19 May 2014 05:35:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/to-explain-or-predict/</guid>
+      <description>Last week, my research group discussed Galit Shmueli&amp;rsquo;s paper &amp;ldquo;To explain or to predict?&amp;rdquo;, Statistical Science, 25(3), 289-310. (See her website for further materials.) This is a paper everyone doing statistics and econometrics should read as it helps to clarify a distinction that is often blurred. In the discussion, the following issues were covered amongst other things.
+ The AIC is better suited to model selection for prediction as it is asymptotically equivalent to leave-one-out cross-validation in regression, or one-step-cross-validation in time series.</description>
+    </item>
+    
+    <item>
+      <title>Great papers to read</title>
+      <link>https://robjhyndman.com/hyndsight/great-papers/</link>
+      <pubDate>Fri, 02 May 2014 03:14:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/great-papers/</guid>
+      <description>My research group meets every two weeks. It is always fun to talk about general research issues and new tools and tips we have discovered. We also use some of the time to discuss a paper that I choose for them. Today we discussed Breiman&amp;rsquo;s classic (2001) two cultures paper &amp;mdash; something every statistician should read, including the discussion.
+I select papers that I want every member of research team to be familiar with.</description>
+    </item>
+    
+    <item>
+      <title>Looking for a new post-doc</title>
+      <link>https://robjhyndman.com/hyndsight/postdoc/</link>
+      <pubDate>Wed, 22 Jan 2014 02:50:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/postdoc/</guid>
+      <description>We are looking for a new post-doctoral research fellow to work on the project &amp;ldquo;Macroeconomic Forecasting in a Big Data World&amp;rdquo;. Details are given at the link below
+jobs.monash.edu.au/jobDetails.asp?sJobIDs=519824
+This is a two year position, funded by the Australian Research Council, and working with me, George Athanasopoulos, Farshid Vahid and Anastasios Panagiotelis. We are looking for someone with a PhD in econometrics, statistics or machine learning, who is well-trained in computationally intensive methods, and who has a background in at least one of time series analysis, macroeconomic modelling, or Bayesian econometrics.</description>
+    </item>
+    
+    <item>
+      <title>Blogs about research</title>
+      <link>https://robjhyndman.com/hyndsight/blogs-about-research/</link>
+      <pubDate>Thu, 09 Aug 2012 02:04:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/blogs-about-research/</guid>
+      <description>If you find this blog helpful (or even if you don&amp;rsquo;t but you&amp;rsquo;re interested in blogs on research issues and tools), there are a few other blogs about doing research that you might find useful. Here are a few that I read.
+ Patter &amp;ndash; Pat Thomson.
+ The Thesis Whisperer &amp;ndash; Inger Mewburn.
+ The Research Whisperer &amp;ndash; several RMIT researchers.
+ the (research) supervisor&amp;rsquo;s friend &amp;ndash; Geof Hill.</description>
+    </item>
+    
+    <item>
+      <title>CrossValidated Journal Club</title>
+      <link>https://robjhyndman.com/hyndsight/cvjournalclub/</link>
+      <pubDate>Wed, 22 Dec 2010 00:01:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cvjournalclub/</guid>
+      <description>Journal Clubs are a great way to learn new research ideas and to keep up with the literature. The idea is that a group of people get together every week or so to discuss a paper of joint interest. This can happen within your own research group or department, or virtually online.
+There is now a virtual journal club operating in conjunction with CrossValidated.com. The first paper discussed was on text data mining.</description>
+    </item>
+    
+    <item>
+      <title>Research supervision workshop</title>
+      <link>https://robjhyndman.com/hyndsight/supervision-workshop/</link>
+      <pubDate>Wed, 26 Aug 2009 06:00:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/supervision-workshop/</guid>
+      <description>Today I gave a workshop for supervisors of postgraduate students. Mostly I talked about creating a team environment for postgraduate students rather than the traditional model (at least in statistics and econometrics) of each student working in isolation.
+The slides are available here in presentation form or in handout form. Actually, these are an edited version of the slides as I accidentally left out a couple of the photographs in the workshop, and I&amp;rsquo;ve omitted slides that I didn&amp;rsquo;t end up covering in the workshop.</description>
+    </item>
+    
+    <item>
+      <title>Akram&#39;s story</title>
+      <link>https://robjhyndman.com/hyndsight/akrams-story/</link>
+      <pubDate>Thu, 28 May 2009 08:25:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/akrams-story/</guid>
+      <description>Muhammad Akram was my PhD student a few years ago, and has remained a good friend since he moved on. Here is an interview he recently gave about moving to Australia. Thanks, Akram, for the kind words about me!</description>
+    </item>
+    
+  </channel>
+</rss>

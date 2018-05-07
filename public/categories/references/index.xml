@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>References on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/references/</link>
+    <description>Recent content in References on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Apr 2017 23:00:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/references/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software for honours students</title>
+      <link>https://robjhyndman.com/hyndsight/software-for-honours-students/</link>
+      <pubDate>Tue, 04 Apr 2017 23:00:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/software-for-honours-students/</guid>
+      <description>I spoke to our new crop of honours students this morning. Here are my slides, example files and links.
+ 
+Managing References  Mendeley Zotero Paperpile  Data analysis and computation  Download R Download Rstudio Online R tutorial R packages for time series R packages for econometrics R packages for finance  Writing your thesis LaTeX  Windows: Download MikTeX Mac OSX: Download MacTeX Linux: Check your usual software source for TeXLive; otherwise install TeX Live directly.</description>
+    </item>
+    
+    <item>
+      <title>IJF Best Paper Award 2014-2015</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-nominations1415/</link>
+      <pubDate>Wed, 01 Mar 2017 03:54:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-nominations1415/</guid>
+      <description>Every two years we award a prize for the best paper published in the International Journal of Forecasting. It is now time to identify the best paper published in the IJF during 2014 and 2015. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The prize is US$1000 plus an engraved plaque. I will present the prize at the ISF in Cairns in late June.</description>
+    </item>
+    
+    <item>
+      <title>Keeping up to date with my research papers</title>
+      <link>https://robjhyndman.com/hyndsight/new-papers/</link>
+      <pubDate>Sat, 27 Jun 2015 05:22:17 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/new-papers/</guid>
+      <description>Many people ask me to let them know when I write a new research paper. I can&amp;rsquo;t do that as there are too many people involved, and it is not scalable.
+The solution is simple. Take your pick from the following options. Each is automatic and will let you know whenever I produce a new paper.
+ Subscribe to the rss feed on my website using feedly or some other rss reader.</description>
+    </item>
+    
+    <item>
+      <title>IJF best paper awards</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</link>
+      <pubDate>Tue, 23 Jun 2015 21:32:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-best-paper-awards/</guid>
+      <description>Today at the International Symposium on Forecasting, I announced the awards for the best paper published in the International Journal of Forecasting in the period 2012-2013.
+We make an award every two years to the best paper(s) published in the journal. There is always about 18 months delay after the publication period to allow time for reflection, citations, etc. The selected papers are selected by vote of the editorial board. The best paper wins an engraved bronze plaque and US$1000.</description>
+    </item>
+    
+    <item>
+      <title>Nominations for IJF Best Paper 2012-2013</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-nominations2/</link>
+      <pubDate>Thu, 07 May 2015 07:46:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-nominations2/</guid>
+      <description>The following papers have been nominated for the best paper published in the International Journal of Forecasting in 2012-2013. I have included an excerpt from the nomination in each case. The papers in bold have been short-listed for the award, and the editorial board are currently voting on them. Bellotti, T., &amp;amp; Crook, J. (2012). Loss given default models incorporating macroeconomic variables for credit cards. IJF, 28(1), 171-182.
+ The first rule for the award of best paper should be that the paper clearly reflects the value of the new method/approach when compared to established alternatives in the particular problem context chosen by the researchers.</description>
+    </item>
+    
+    <item>
+      <title>Paperpile makes me more productive</title>
+      <link>https://robjhyndman.com/hyndsight/paperpile/</link>
+      <pubDate>Thu, 09 Apr 2015 02:42:40 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/paperpile/</guid>
+      <description>One of the first things I tell my new research students is to use a reference management system to help them keep track of the papers they read, and to assist in creating bib files for their bibliography. Most of them use Mendeley, one or two use Zotero. Both do a good job and both are free.
+I use neither. I did use Mendeley for several years, but it became slower and slower to sync as my reference collection grew.</description>
+    </item>
+    
+    <item>
+      <title>What to cite?</title>
+      <link>https://robjhyndman.com/hyndsight/what-to-cite/</link>
+      <pubDate>Wed, 25 Mar 2015 03:27:57 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/what-to-cite/</guid>
+      <description>This question comes from a comment on another post:
+ I&amp;rsquo;ve seen authors citing as many references as possible to try to please potential referees. Many of those references are low quality papers though. Any general guidance about a typical length for the reference section?
+ It depends on the subject and style of the paper. I&amp;rsquo;ve written a paper with over 900 citations, but that was a review of time series forecasting over a 25 year period, and so it had to include a lot of references.</description>
+    </item>
+    
+    <item>
+      <title>RSS feeds for statistics and related journals</title>
+      <link>https://robjhyndman.com/hyndsight/rss-feeds/</link>
+      <pubDate>Fri, 23 Jan 2015 23:48:49 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/rss-feeds/</guid>
+      <description>I&amp;rsquo;ve now resurrected the collection of research journals that I follow, and set it up as a shared collection in feedly. So anyone can easily subscribe to all of the same journals, or select a subset of them, to follow on feedly.There are about 90 journals on the list, mostly in statistics, but some from machine learning, operations research and econometrics. I excluded probability journals, and areas of application that are well outside my research interests (such as bioinformatics, psychology and pharmacology).</description>
+    </item>
+    
+    <item>
+      <title>IJF review papers</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-review-papers/</link>
+      <pubDate>Tue, 11 Nov 2014 23:50:32 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-review-papers/</guid>
+      <description>Review papers are extremely useful for new researchers such as PhD students, or when you want to learn about a new research field. The International Journal of Forecasting produced a whole review issue in 2006, and it contains some of the most highly cited papers we have ever published. Now, beginning with the latest issue of the journal, we have started publishing occasional review articles on selected areas of forecasting. The first two articles are:</description>
+    </item>
+    
+    <item>
+      <title>biblatex for statisticians</title>
+      <link>https://robjhyndman.com/hyndsight/biblatex-for-statisticians/</link>
+      <pubDate>Fri, 22 Aug 2014 03:37:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/biblatex-for-statisticians/</guid>
+      <description>I am now using biblatex for all my bibliographic work as it seems to have developed enough to be stable and reliable. The big advantage of biblatex is that it is easy to format the bibliography to conform to specific journal or publisher styles. It is also possible to have structured bibliographies (e.g., divided into sections: books, papers, R packages, etc.) Here is my default setting which should be suitable for almost all statistics and econometrics journals.</description>
+    </item>
+    
+    <item>
+      <title>Varian on big data</title>
+      <link>https://robjhyndman.com/hyndsight/varian-2014/</link>
+      <pubDate>Sun, 15 Jun 2014 22:45:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/varian-2014/</guid>
+      <description>Last week my research group discussed Hal Varian&amp;rsquo;s interesting new paper on &amp;ldquo;Big data: new tricks for econometrics&amp;rdquo;, Journal of Economic Perspectives, 28(2): 3-28.
+It&amp;rsquo;s a nice introduction to trees, bagging and forests, plus a very brief entree to the LASSO and the elastic net, and to slab and spike regression. Not enough to be able to use them, but ok if you&amp;rsquo;ve no idea what they are. It was more disappointing on boosting (completely ignoring the fact that boosting can be applied in a regression context as well as a classification context), and his comments on causality seemed curiously naive.</description>
+    </item>
+    
+    <item>
+      <title>To explain or predict?</title>
+      <link>https://robjhyndman.com/hyndsight/to-explain-or-predict/</link>
+      <pubDate>Mon, 19 May 2014 05:35:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/to-explain-or-predict/</guid>
+      <description>Last week, my research group discussed Galit Shmueli&amp;rsquo;s paper &amp;ldquo;To explain or to predict?&amp;rdquo;, Statistical Science, 25(3), 289-310. (See her website for further materials.) This is a paper everyone doing statistics and econometrics should read as it helps to clarify a distinction that is often blurred. In the discussion, the following issues were covered amongst other things.
+ The AIC is better suited to model selection for prediction as it is asymptotically equivalent to leave-one-out cross-validation in regression, or one-step-cross-validation in time series.</description>
+    </item>
+    
+    <item>
+      <title>Great papers to read</title>
+      <link>https://robjhyndman.com/hyndsight/great-papers/</link>
+      <pubDate>Fri, 02 May 2014 03:14:33 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/great-papers/</guid>
+      <description>My research group meets every two weeks. It is always fun to talk about general research issues and new tools and tips we have discovered. We also use some of the time to discuss a paper that I choose for them. Today we discussed Breiman&amp;rsquo;s classic (2001) two cultures paper &amp;mdash; something every statistician should read, including the discussion.
+I select papers that I want every member of research team to be familiar with.</description>
+    </item>
+    
+    <item>
+      <title>Past, present, and future of statistical science</title>
+      <link>https://robjhyndman.com/hyndsight/ppfss/</link>
+      <pubDate>Mon, 28 Apr 2014 11:36:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ppfss/</guid>
+      <description>This is the title of a wonderful new book that has just been released, courtesy of the Committee of Presidents of Statistical Societies.
+It can be freely downloaded from the COPSS website or a hard copy can be purchased on Amazon (for only a little over 10c per page which is not bad compared to other statistics books).
+The book consists of 52 chapters spanning 622 pages. The full table of contents below shows its scope and the list of authors (a veritable who&amp;rsquo;s who in statistics).</description>
+    </item>
+    
+    <item>
+      <title>Errors on percentage errors</title>
+      <link>https://robjhyndman.com/hyndsight/smape/</link>
+      <pubDate>Wed, 16 Apr 2014 12:11:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/smape/</guid>
+      <description>The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &amp;ldquo;it has a bias favoring estimates that are below the actual values&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My forecasting book now on Amazon</title>
+      <link>https://robjhyndman.com/hyndsight/fpp-amazon/</link>
+      <pubDate>Wed, 09 Apr 2014 00:15:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp-amazon/</guid>
+      <description>For all those people asking me how to obtain a print version of my book &amp;ldquo;Forecasting: principles and practice&amp;rdquo; with George Athanasopoulos, you now can.
+
+Order on Amazon.com
+Order on Amazon.co.uk
+Order on Amazon.fr
+The online book will continue to be freely available. The print version of the book is intended to help fund the development of the OTexts platform.
+The price is US$45, £27 or €35.
+Compare that to $195 for my previous forecasting textbook, $150 for Fildes and Ord, or $182 for Gonzalez-Rivera.</description>
+    </item>
+    
+    <item>
+      <title>Top papers in the International Journal of Forecasting</title>
+      <link>https://robjhyndman.com/hyndsight/ijf-top-papers/</link>
+      <pubDate>Tue, 04 Feb 2014 01:06:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ijf-top-papers/</guid>
+      <description>Every year or so, Elsevier asks me to nominate five _International Journal of Forecasting_ papers from the last two years to highlight in their marketing materials as &amp;ldquo;Editor&amp;rsquo;s Choice&amp;rdquo;. I try to select papers across a broad range of subjects, and I take into account citations and downloads as well as my own impression of the paper. That tends to bias my selection a little towards older papers as they have had more time to accumulate citations.</description>
+    </item>
+    
+    <item>
+      <title>Automatic time series forecasting in Granada</title>
+      <link>https://robjhyndman.com/hyndsight/granada-workshop/</link>
+      <pubDate>Fri, 31 Jan 2014 03:06:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/granada-workshop/</guid>
+      <description>In two weeks I am presenting a workshop at the University of Granada (Spain) on Automatic Time Series Forecasting.
+Unlike most of my talks, this is not intended to be primarily about my own research. Rather it is to provide a state-of-the-art overview of the topic (at a level suitable for Masters students in Computer Science). I thought I&amp;rsquo;d provide some historical perspective on the development of automatic time series forecasting, plus give some comments on the current best practices.</description>
+    </item>
+    
+    <item>
+      <title>Free books on statistical learning</title>
+      <link>https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/</link>
+      <pubDate>Thu, 30 Jan 2014 01:51:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/free-books-on-statistical-learning/</guid>
+      <description>Hastie, Tibshirani and Friedman&amp;rsquo;s Elements of Statistical Learning first appeared in 2001 and is already a classic. It is my go-to book when I need a quick refresher on a machine learning algorithm. I like it because it is written using the language and perspective of statistics, and provides a very useful entry point into the literature of machine learning which has its own terminology for statistical concepts. A free downloadable pdf version is available on the website.</description>
+    </item>
+    
+    <item>
+      <title>Managing research ideas</title>
+      <link>https://robjhyndman.com/hyndsight/managing-research-ideas/</link>
+      <pubDate>Sat, 25 May 2013 13:14:16 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/managing-research-ideas/</guid>
+      <description>I received this email today:
+ Dear Professor Hyndman, I was wondering if you could maybe give me some advice on how to organize your research process. I am able to search the literature on a certain topic and identify where there is a question to work with. My main difficult is to organize my paper annotations in order to help me to guide my research process, i.e, how to manage the information gathered in those papers to compose and structure a document which can represent the research developed so far.</description>
+    </item>
+    
+    <item>
+      <title>Establishing priority</title>
+      <link>https://robjhyndman.com/hyndsight/establishing-priority/</link>
+      <pubDate>Mon, 06 May 2013 03:34:34 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/establishing-priority/</guid>
+      <description>The nature of research is that other people are probably working on similar ideas to you, and it is possible that someone will beat you to publishing them.When I was working on my PhD, I discovered another PhD thesis by Iris Yeung at UKC with almost exactly the same title as mine, and published a year earlier. In those days, a copy of a thesis had to be printed from microfiche, and then posted by snail mail.</description>
+    </item>
+    
+    <item>
+      <title>Blogs about research</title>
+      <link>https://robjhyndman.com/hyndsight/blogs-about-research/</link>
+      <pubDate>Thu, 09 Aug 2012 02:04:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/blogs-about-research/</guid>
+      <description>If you find this blog helpful (or even if you don&amp;rsquo;t but you&amp;rsquo;re interested in blogs on research issues and tools), there are a few other blogs about doing research that you might find useful. Here are a few that I read.
+ Patter &amp;ndash; Pat Thomson.
+ The Thesis Whisperer &amp;ndash; Inger Mewburn.
+ The Research Whisperer &amp;ndash; several RMIT researchers.
+ the (research) supervisor&amp;rsquo;s friend &amp;ndash; Geof Hill.</description>
+    </item>
+    
+    <item>
+      <title>Read the literature</title>
+      <link>https://robjhyndman.com/hyndsight/read-the-literature/</link>
+      <pubDate>Fri, 03 Aug 2012 04:35:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/read-the-literature/</guid>
+      <description>I&amp;rsquo;ve just finished another reviewer report for a journal, and yet again I&amp;rsquo;ve had to make comments about reading the literature. It&amp;rsquo;s not difficult. Before you write a paper, read what other people have done. A simple search on Google scholar will usually do the trick. And before you submit a paper, check again that you haven&amp;rsquo;t missed anything important.
+The paper I reviewed today did not cite a single reference from either of the two most active research groups in the area in the last ten years.</description>
+    </item>
+    
+    <item>
+      <title>Time Series Data Library now on DataMarket</title>
+      <link>https://robjhyndman.com/hyndsight/tsdl/</link>
+      <pubDate>Wed, 20 Jun 2012 00:30:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tsdl/</guid>
+      <description>The Time Series Data Library is a collection of about 800 time series that I have maintained since about 1992, and hosted on my personal website. It includes data from a lot of time series textbooks, as well as many other series that I&amp;rsquo;ve either collected for student projects or helpful people have sent to me.
+I&amp;rsquo;ve now moved the collection onto DataMarket which provides much better facilities for maintaining and using time series data.</description>
+    </item>
+    
+    <item>
+      <title>My new forecasting textbook</title>
+      <link>https://robjhyndman.com/hyndsight/fpp/</link>
+      <pubDate>Wed, 23 May 2012 01:34:03 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/fpp/</guid>
+      <description>After years of saying that I was going to write a book to replace Makridakis, Wheelwright and Hyndman (1998), I&amp;rsquo;m finally ready to make an announcement!
+My new book is Forecasting: principles and practice, co-authored with George Athanasopoulos. It is available online and free-of-charge. We have written about 2&amp;frasl;3 of the book so far (all of which is already available online), and we plan to finish it by the end of 2012.</description>
+    </item>
+    
+    <item>
+      <title>Following authors on Google Scholar</title>
+      <link>https://robjhyndman.com/hyndsight/googlescholar2/</link>
+      <pubDate>Tue, 31 Jan 2012 01:22:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/googlescholar2/</guid>
+      <description>A great new feature has been added to Google Scholar Citations. For those authors who have set up a citations page, it is now possible to get email alerts for any new articles they publish, or for any new citations of their articles. So you can track citations to your own work this way, and stay up-to-date with key authors in your field.
+Setting up a Google Citations page is super-easy and was already worth doing.</description>
+    </item>
+    
+    <item>
+      <title>The art of R programming</title>
+      <link>https://robjhyndman.com/hyndsight/matloff/</link>
+      <pubDate>Wed, 30 Nov 2011 03:52:51 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/matloff/</guid>
+      <description>This is a gem of a book. It will become the book I give PhD students when they are learning how to write good R code. That is, if I ever see it again. I had hoped to write a review of it, but I haven&amp;rsquo;t seen it since it arrived in the mail a couple of weeks ago because a research student or research assistant has always had it on loan.</description>
+    </item>
+    
+    <item>
+      <title>Researcher portals</title>
+      <link>https://robjhyndman.com/hyndsight/portals/</link>
+      <pubDate>Sat, 26 Nov 2011 04:14:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/portals/</guid>
+      <description>A researcher portal is a website that attempts to list all the publications of a given researcher. Some portals also allow sharing papers, interacting with other researchers, calculating citation statistics, etc. Every researcher wants their work read and cited, so these websites can be useful tools for getting your work noticed. They can also function as a de facto home page if you don&amp;rsquo;t already have a personal website. Conversely, they can be a good way to find new work by researchers in your field.</description>
+    </item>
+    
+    <item>
+      <title>Recommended survey papers</title>
+      <link>https://robjhyndman.com/hyndsight/surveypapers/</link>
+      <pubDate>Mon, 25 Jul 2011 12:01:06 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/surveypapers/</guid>
+      <description>Survey articles are particularly helpful in getting a foothold in a new research area, or in looking for important papers that you may have overlooked. Whatever area of research you are in, look out for survey papers and journals dedicated to publishing survey papers.The journal Statistics Surveys is relatively new (volume 1 in 2007) and provides very helpful survey articles of areas of statistical research. It is sponsored by the American Statistical Association, the Bernoulli Society, the Institute of Mathematical Statistics, and by the Statistical Society of Canada.</description>
+    </item>
+    
+    <item>
+      <title>How to avoid annoying a referee</title>
+      <link>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</link>
+      <pubDate>Fri, 22 Oct 2010 09:23:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</guid>
+      <description>It&amp;rsquo;s not a good idea to annoy the referees of your paper. They make recommendations to the editor about your work and it is best to keep them happy. There is an interesting discussion on stats.stackexchange.com on this subject. This inspired my own list below.
+ Explain what you&amp;rsquo;ve done clearly, avoiding unnecessary jargon. Don&amp;rsquo;t claim your paper contributes more than it actually does. (I refereed a paper this week where the author claimed to have invented principal component analysis!</description>
+    </item>
+    
+    <item>
+      <title>Your name is your brand</title>
+      <link>https://robjhyndman.com/hyndsight/names/</link>
+      <pubDate>Thu, 16 Sep 2010 01:59:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/names/</guid>
+      <description>As a researcher, you want to become known as an expert in your field. You need people to recognize your name and associate it with your research. Consequently, it is important to be consistent in the name you use on publications.
+For example, I could write under &amp;ldquo;R Hyndman&amp;rdquo;, &amp;ldquo;R J Hyndman&amp;rdquo;, &amp;ldquo;Rob Hyndman&amp;rdquo;, &amp;ldquo;Rob J Hyndman&amp;rdquo;, etc. I&amp;rsquo;ve chosen the last of these and I try to use it on all publications.</description>
+    </item>
+    
+    <item>
+      <title>Econometrics and R</title>
+      <link>https://robjhyndman.com/hyndsight/econometrics-and-r/</link>
+      <pubDate>Tue, 31 Aug 2010 01:41:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/econometrics-and-r/</guid>
+      <description>Econometricians seem to be rather slow to adopt new methods and new technology (compared to other areas of statistics), but slowly the use of R is spreading. I&amp;rsquo;m now receiving requests for references showing how to use R in econometrics, and so I thought it might be helpful to post a few suggestions here.  
+A useful on-line and free resource is &amp;ldquo;Econometrics in R&amp;rdquo; by Grant Farnsworth. It covers some common econometric methods including heteroskedasticity in regression, probit and logit models, tobit regression, and quantile regression.</description>
+    </item>
+    
+    <item>
+      <title>Academic citations in the popular press</title>
+      <link>https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/</link>
+      <pubDate>Sun, 11 Jul 2010 19:31:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/academic-citations-in-the-popular-press/</guid>
+      <description>It is very unusual for a newspaper article to cite an academic paper, unless it is in Nature, Science or the Lancet. Mostly, what we write is too technical and assumes too much background knowledge for it to be accessible to anyone but specialists. So I was pleasantly surprised to find a reference to the International Journal of Forecastingin a recent Wall Street Journalarticle. It is a citation of a 1996 article, so in terms of scientific research it is a bit like quoting the Magna Carta, but a citation nevertheless.</description>
+    </item>
+    
+    <item>
+      <title>Google scholar alerts</title>
+      <link>https://robjhyndman.com/hyndsight/google-scholar-alerts/</link>
+      <pubDate>Wed, 26 May 2010 06:14:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/google-scholar-alerts/</guid>
+      <description>A couple of weeks ago, Google scholar added a facility to provide email alerts on new articles associated with specific search queries. First do the search, then click the envelope at top left of screen. For example, here is a search on &amp;ldquo;exponential smoothing&amp;rdquo; since 2000.
+
+Note the envelope at the top marked New! Click it to get the following screen.
+
+Those results show some of the flaws in Google Scholar &amp;ndash; the dates are not always correct (the first paper listed above appeared in 2004) and there are unresolved duplicates.</description>
+    </item>
+    
+    <item>
+      <title>Using DOIs</title>
+      <link>https://robjhyndman.com/hyndsight/doi/</link>
+      <pubDate>Sun, 27 Dec 2009 12:35:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/doi/</guid>
+      <description>Almost all papers these days have a DOI and it is worth knowing how to use them.
+At the top or bottom of the first page of a paper, you will see something like this:
+doi:10.1016/j.csda.2006.07.028  This is a unique and permanent identifier for the paper known as a &amp;ldquo;Digital Object Identifier&amp;rdquo;. The part before the forward slash (10.1016 in the example above) identifies the naming authority (in this case Elsevier) and the part after the forward slash (j.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Elements of Statistical Learning&#34; now online</title>
+      <link>https://robjhyndman.com/hyndsight/esl2/</link>
+      <pubDate>Thu, 15 Oct 2009 02:51:18 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/esl2/</guid>
+      <description>In the past couple of days, the authors of several blogs have noted that the wonderful book The Elements of Statistical Learning: Data Mining, Inference, and Prediction by Hastie, Tibshirani and Friedman (2nd ed., 2009) is now available for free download in pdf format.
+Of course, it is also nice to have a hard copy. Click the image to purchase from Amazon.</description>
+    </item>
+    
+    <item>
+      <title>Sight what you cite</title>
+      <link>https://robjhyndman.com/hyndsight/sight-what-you-cite/</link>
+      <pubDate>Thu, 13 Aug 2009 03:46:51 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/sight-what-you-cite/</guid>
+      <description>There seems to be a widespread practice of researchers citing papers they have never even seen, let alone read. For example
+ Some papers claim to do something new when it has already been done in one of the papers cited.
+ Some articles are cited that apparently have little to do with the reason given for the citation, or which argue the opposite point of view to what is claimed.</description>
+    </item>
+    
+    <item>
+      <title>Managing a bibliographic database</title>
+      <link>https://robjhyndman.com/hyndsight/managing-a-bibliographic-database/</link>
+      <pubDate>Sun, 02 Aug 2009 05:50:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/managing-a-bibliographic-database/</guid>
+      <description>All researchers need to maintain a database of papers they have read, cited, or simply noted for later reference. For those of us using LaTeX, the database is in the BibTeX format and is stored as a simple text file (a bib file) that can be edited using a text editor such as WinEdt.
+But it is often easier to edit the file using specialist software. My current favourite tool is JabRef.</description>
+    </item>
+    
+    <item>
+      <title>Searching the research literature</title>
+      <link>https://robjhyndman.com/hyndsight/searching-the-research-literature/</link>
+      <pubDate>Mon, 13 Jul 2009 22:55:56 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/searching-the-research-literature/</guid>
+      <description>Most students seem to go to Google first. This is not a good strategy. Google Scholar is much better as it filters out all the junk. Scopus is another engine that aims to do a similar thing. It is better organized but not so complete. ISI WOK is also not as complete as Google Scholar but is particularly good at tracking citations.
+ Google scholar
+ Scopus
+ ISI Web of Knowledge</description>
+    </item>
+    
+    <item>
+      <title>Accessing journal articles online</title>
+      <link>https://robjhyndman.com/hyndsight/accessing-journal-articles-online/</link>
+      <pubDate>Thu, 12 Mar 2009 08:21:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/accessing-journal-articles-online/</guid>
+      <description>When searching for research articles online, I often find that the article is unavailable unless I go through the Monash library website, especially when working from home. Here are two solutions to the problem
+ Within Google scholar, go to &amp;ldquo;Scholar preferences&amp;rdquo; and under library links search for &amp;ldquo;Monash&amp;rdquo;. Tick the entry &amp;ldquo;Monash University - Check for full text&amp;rdquo;. Then save your preferences (button at bottom of page). Next time you do a Google scholar search, a link labelled &amp;ldquo;Check for full text&amp;rdquo; will appear beside each entry.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX books</title>
+      <link>https://robjhyndman.com/hyndsight/latex-books/</link>
+      <pubDate>Wed, 30 Jul 2008 10:52:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/latex-books/</guid>
+      <description>amzn_assoc_placement = &#34;adunit0&#34;; amzn_assoc_tracking_id = &#34;otexts-20&#34;; amzn_assoc_ad_mode = &#34;manual&#34;; amzn_assoc_ad_type = &#34;smart&#34;; amzn_assoc_marketplace = &#34;amazon&#34;; amzn_assoc_region = &#34;US&#34;; amzn_assoc_title = &#34;LaTeX books&#34;; amzn_assoc_rows = &#34;6&#34;; amzn_assoc_linkid = &#34;837c44f97120fac94a76c36f9781f970&#34;; amzn_assoc_asins = &#34;1847199860,3642238157,0321173856,0201362996,1784395145,0817641319,3319237950,0201529831&#34;;   If you cannot see any books above, please turn off your ad-blocker.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting and time series books</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-and-time-series-books/</link>
+      <pubDate>Mon, 28 Apr 2008 07:56:46 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-and-time-series-books/</guid>
+      <description>People often ask me for recommendations on forecasting books and time series books. So here is list of eight good books to which I often refer.
+(Updated 8 November 2017)
+amzn_assoc_placement = &#34;adunit0&#34;; amzn_assoc_tracking_id = &#34;otexts-20&#34;; amzn_assoc_ad_mode = &#34;manual&#34;; amzn_assoc_ad_type = &#34;smart&#34;; amzn_assoc_marketplace = &#34;amazon&#34;; amzn_assoc_region = &#34;US&#34;; amzn_assoc_title = &#34;Forecasting and time series books&#34;; amzn_assoc_rows = &#34;6&#34;; amzn_assoc_linkid = &#34;837c44f97120fac94a76c36f9781f970&#34;; amzn_assoc_asins = &#34;0987507109,3540719164,0999064908,B004UW0PA4,047136164X,1118675029,0792374010,144197864X&#34;;   Two are my own books of course (after all, I wrote them because I thought I had something to say).</description>
+    </item>
+    
+    <item>
+      <title>Creating a BibTeX file from a Google Library</title>
+      <link>https://robjhyndman.com/hyndsight/creating-a-bibtex-file-from-a-google-library/</link>
+      <pubDate>Thu, 27 Mar 2008 07:54:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/creating-a-bibtex-file-from-a-google-library/</guid>
+      <description>As you will have seen if you poke around these pages, I have a Google Library of books in statistics and forecasting. This is intended to be a complete copy of what is on the shelves in my office (about 400 books), plus books that I would like on my shelves if I had more space.
+I find the library useful for keeping track of books that my students and colleagues borrow (I just add a tag containing their name to the book).</description>
+    </item>
+    
+    <item>
+      <title>Searching the statistical literature</title>
+      <link>https://robjhyndman.com/hyndsight/searching-the-statistical-literature/</link>
+      <pubDate>Wed, 12 Sep 2007 04:08:55 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/searching-the-statistical-literature/</guid>
+      <description>Last week, Google books introduced a facility whereby users can create their own &amp;ldquo;library&amp;rdquo; containing a subset of books to search. I have set up a library of statistical books to aid in searching the statistical literature.
+My Google library is intended to include all the books on my office shelves, plus a whole lot more that I would like to buy if I had more money (and more shelf space).</description>
+    </item>
+    
+  </channel>
+</rss>

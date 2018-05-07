@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/video/</link>
+    <description>Recent content in Video on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 Jun 2015 17:12:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Yahoo talk is now online</title>
+      <link>https://robjhyndman.com/hyndsight/yahoo2015/</link>
+      <pubDate>Mon, 29 Jun 2015 17:12:19 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/yahoo2015/</guid>
+      <description>Last week I gave a talk in the Yahoo! Big Thinkers series. The video of the talk is now online and embedded below.</description>
+    </item>
+    
+    <item>
+      <title>The Young Stats Communication Challenge</title>
+      <link>https://robjhyndman.com/hyndsight/ysc2013comp/</link>
+      <pubDate>Sun, 07 Oct 2012 22:07:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ysc2013comp/</guid>
+      <description>The Australian Young Statisticians Conference (Feb 2013) is organizing a communication competition. They invite all early-career statisticians (studying, or within 5 years of graduation) to produce a short (3-5 minute) video for the ABS YSC2013 Video Competition, or a static infographic for the ABS YSC2013 Infographic Competition.
+Both competitions have a 1st prize of $500, and 2nd prize of $250.
+Entries close 16th November, and winners will be notified by mid-December.</description>
+    </item>
+    
+    <item>
+      <title>Data visualization videos</title>
+      <link>https://robjhyndman.com/hyndsight/data-visualization-videos/</link>
+      <pubDate>Tue, 30 Nov 2010 04:05:09 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/data-visualization-videos/</guid>
+      <description>Probably everyone has seen Hans Rosling&amp;rsquo;s famous TED talk by now. If not, here it is:
+  I recently came across a couple of other exceptional talks on data visualization:
+Hans Rosling again: &amp;rdquo;Let my dataset change your mindset&amp;rdquo;. If only all statistics lecturers were this dynamic!
+  David McCandless: &amp;ldquo;The beauty of data visualization&amp;rdquo;. Not so exciting as Hans, but some great examples.
+  And here&amp;rsquo;s an hour-length documentary hosted by Hans Rosling called &amp;ldquo;The Joy of Stats&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Learning R by video</title>
+      <link>https://robjhyndman.com/hyndsight/learning-r-by-video/</link>
+      <pubDate>Wed, 10 Mar 2010 00:10:28 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/learning-r-by-video/</guid>
+      <description>For those people who prefer to be shown how to do something rather than read the instructions, there are some videos on using R available online. Here are the ones I know about. Please add links to other similar resources in the comments.
+ R tour for beginners
+ R videos 
+ What is R? from Revolution Analytics
+ R Statistics playlist on YouTube
+ Statistics with R playlist on YouTube</description>
+    </item>
+    
+    <item>
+      <title>Learning by video</title>
+      <link>https://robjhyndman.com/hyndsight/video/</link>
+      <pubDate>Tue, 24 Nov 2009 02:27:27 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/video/</guid>
+      <description>There are some nice online videos available on various aspects of statistics and mathematics that might be helpful to students trying to learn about new areas.
+A search on YouTube will lead to a few fairly basic videos.
+ Statistics playlists Mathematics playlists  A better place to go is YouTube EDU which contains material from universities.
+Something similar is offered at iTunesU
+But the best stuff is on Academic Earth.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stackexchange on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/stackexchange/</link>
+    <description>Recent content in Stackexchange on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 15 Jun 2014 03:26:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/stackexchange/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Specifying complicated groups of time series in hts</title>
+      <link>https://robjhyndman.com/hyndsight/gts/</link>
+      <pubDate>Sun, 15 Jun 2014 03:26:38 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/gts/</guid>
+      <description>With the latest version of the hts package for R, it is now possible to specify rather complicated grouping structures relatively easily.
+All aggregation structures can be represented as hierarchies or as cross-products of hierarchies. For example, a hierarchical time series may be based on geography: country, state, region, store. Often there is also a separate product hierarchy: product groups, product types, packet size. Forecasts of all the different types of aggregation are required; e.</description>
+    </item>
+    
+    <item>
+      <title>Interview for the Capital of Statistics</title>
+      <link>https://robjhyndman.com/hyndsight/cos-interview/</link>
+      <pubDate>Wed, 05 Feb 2014 00:00:22 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cos-interview/</guid>
+      <description>Earo Wang recently interviewed me for the Chinese website Capital of Statistics. The English transcript of the intervew is on Earo&amp;rsquo;s personal website.
+This is the third interview I&amp;rsquo;ve done in the last 18 months. The others were for:
+ Data Mining Research. Republished in Amstat News.
+ DecisionStats.
+  </description>
+    </item>
+    
+    <item>
+      <title>Forecasting annual totals from monthly data</title>
+      <link>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</link>
+      <pubDate>Wed, 15 May 2013 06:39:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/forecasting-annual-totals/</guid>
+      <description>This question was posed on crossvalidated.com:
+ I have a monthly time series (for 2009-2012 non-stationary, with seasonality). I can use ARIMA (or ETS) to obtain point and interval forecasts for each month of 2013, but I am interested in forecasting the total for the whole year, including prediction intervals. Is there an easy way in R to obtain interval forecasts for the total for 2013?
+ I&amp;rsquo;ve come across this problem before in my consulting work, although I don&amp;rsquo;t think I&amp;rsquo;ve ever published my solution.</description>
+    </item>
+    
+    <item>
+      <title>Seeking help</title>
+      <link>https://robjhyndman.com/hyndsight/seeking-help/</link>
+      <pubDate>Tue, 08 May 2012 13:23:29 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/seeking-help/</guid>
+      <description>Every day I receive emails, or comments on this blog, asking for help with R, forecasting, LaTeX, possible research topics, how to install software, or some other thing I&amp;rsquo;m supposed to know something about. Unfortunately, I cannot provide a one-man help service to the rest of the world. I used to reply to all the requests explaining where to go for help, but I stopped replying a while ago as it took too much time to do even that.</description>
+    </item>
+    
+    <item>
+      <title>Academia StackExchange</title>
+      <link>https://robjhyndman.com/hyndsight/academia/</link>
+      <pubDate>Wed, 22 Feb 2012 01:04:44 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/academia/</guid>
+      <description>There&amp;rsquo;s a new StackExchange site that might be useful to readers: Academia. It is a Q&amp;amp;A site for academics and those enrolled in higher education.
+The draft FAQ says it will cover:
+ Life as a graduate student, postdoctoral researcher, university professor
+ Transitioning from undergraduate to graduate researcher
+ Inner workings of research departments
+ Requirements and expectations of academicians
+  Judging from the first 89 questions, this is going to be extremely helpful, especially for PhD students.</description>
+    </item>
+    
+    <item>
+      <title>Social networking for researchers</title>
+      <link>https://robjhyndman.com/hyndsight/socialnetworks/</link>
+      <pubDate>Thu, 21 Jul 2011 02:39:42 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/socialnetworks/</guid>
+      <description>It would be nice to have a place to share ideas, links, comments in a very informal way with others involved in research in statistical methodology and data science. CrossValidated.com is great for specific questions, but is not suitable for commenting on papers or sharing ideas and links.Although I have a facebook account, this seems the wrong place to carry out a research discussion because my family and friends are generally not interested, and it is messy to restrict posts to groups of friends.</description>
+    </item>
+    
+    <item>
+      <title>CrossValidated Journal Club</title>
+      <link>https://robjhyndman.com/hyndsight/cvjournalclub/</link>
+      <pubDate>Wed, 22 Dec 2010 00:01:36 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cvjournalclub/</guid>
+      <description>Journal Clubs are a great way to learn new research ideas and to keep up with the literature. The idea is that a group of people get together every week or so to discuss a paper of joint interest. This can happen within your own research group or department, or virtually online.
+There is now a virtual journal club operating in conjunction with CrossValidated.com. The first paper discussed was on text data mining.</description>
+    </item>
+    
+    <item>
+      <title>CrossValidated launched!</title>
+      <link>https://robjhyndman.com/hyndsight/crossvalidated/</link>
+      <pubDate>Thu, 04 Nov 2010 23:45:25 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/crossvalidated/</guid>
+      <description>The CrossValidated Q&amp;amp;A site is now out of beta and the new design and site name is live.
+
+New design The new design looks great, thanks to Jin Yang, our designer-in-residence. Note the normal density icon for accepted answers and the site icon depicting a 5-fold cross-validation (light green for the test set and dark green for the training set). There is a faint background graphic in the header and footer from a program that tracks and plots a person&amp;rsquo;s mouse movement.</description>
+    </item>
+    
+    <item>
+      <title>How to avoid annoying a referee</title>
+      <link>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</link>
+      <pubDate>Fri, 22 Oct 2010 09:23:52 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/how-to-avoid-annoying-a-referee/</guid>
+      <description>It&amp;rsquo;s not a good idea to annoy the referees of your paper. They make recommendations to the editor about your work and it is best to keep them happy. There is an interesting discussion on stats.stackexchange.com on this subject. This inspired my own list below.
+ Explain what you&amp;rsquo;ve done clearly, avoiding unnecessary jargon. Don&amp;rsquo;t claim your paper contributes more than it actually does. (I refereed a paper this week where the author claimed to have invented principal component analysis!</description>
+    </item>
+    
+    <item>
+      <title>Happy World Statistics Day!</title>
+      <link>https://robjhyndman.com/hyndsight/wsd/</link>
+      <pubDate>Tue, 19 Oct 2010 23:18:14 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/wsd/</guid>
+      <description>The United Nations has declared today &amp;ldquo;World Statistics Day&amp;rdquo;. I&amp;rsquo;ve no idea what that means, or why we need a WSD. Perhaps it is because the date is 20.10.2010 (except in North America where it is 10.20.2010). But then, what happens from 2013 to 2099? And do we just forget the whole idea after 3112?
+In any case, if we are going to have a WSD, let&amp;rsquo;s use it to do something useful.</description>
+    </item>
+    
+    <item>
+      <title>Why every statistician should know about cross-validation</title>
+      <link>https://robjhyndman.com/hyndsight/crossvalidation/</link>
+      <pubDate>Mon, 04 Oct 2010 10:21:11 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/crossvalidation/</guid>
+      <description>Surprisingly, many statisticians see cross-validation as something data miners do, but not a core statistical technique. I thought it might be helpful to summarize the role of cross-validation in statistics, especially as it is proposed that the Q&amp;amp;A site at stats.stackexchange.com should be renamed CrossValidated.com.
+Cross-validation is primarily a way of measuring the predictive performance of a statistical model. Every statistician knows that the model fit statistics are not a good guide to how well a model will predict: high $R^2$ does not necessarily mean a good model.</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis StackExchange site now available</title>
+      <link>https://robjhyndman.com/hyndsight/stats-stackexchange/</link>
+      <pubDate>Tue, 27 Jul 2010 02:26:39 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stats-stackexchange/</guid>
+      <description>The Q&amp;amp;A site for statistical analysis, data mining, data visualization, and everything else to do with data analysis has finally been launched. Please head over to
+stats.StackExchange.com and start asking and answering questions.
+Also, spread the word to everyone else who may be interested &amp;mdash; work colleagues, students, etc. The more people who use the site, the better it will be. There are already 170 questions, 513 answers and 387 users.</description>
+    </item>
+    
+    <item>
+      <title>More StackExchange sites</title>
+      <link>https://robjhyndman.com/hyndsight/more-stackexchange-sites/</link>
+      <pubDate>Sat, 17 Jul 2010 05:21:41 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/more-stackexchange-sites/</guid>
+      <description>The StackExchange site on Statistical Analysis is about to go into private beta testing. This is your last chance to commit if you want to be part of the private beta testing. Don&amp;rsquo;t worry if you miss out &amp;mdash; it will only be a week before it is then open to the public.
+There is also a StackExchange site proposal for TeX, LaTeX and friends. Presumably that means that most of the LaTeX questions on StackOverflow will then move to this new site.</description>
+    </item>
+    
+    <item>
+      <title>Update on a StackExchange site for statistical analysis</title>
+      <link>https://robjhyndman.com/hyndsight/stackexchange2/</link>
+      <pubDate>Wed, 02 Jun 2010 01:53:24 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stackexchange2/</guid>
+      <description>About six weeks ago, I proposed that there should be a Stack Exchange site for questions on data analysis, statistics, data mining, machine learning, etc. I can finally report that there has been substantial progress on this.
+The formal proposal is now at Area 51 where the scope of the new site is being developed and voted on in a democratic way. The site has been in a private beta state for a week or so, but is now open for anyone to join in.</description>
+    </item>
+    
+    <item>
+      <title>A StackExchange site for statistical analysis?</title>
+      <link>https://robjhyndman.com/hyndsight/stackexchange/</link>
+      <pubDate>Tue, 20 Apr 2010 08:37:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/stackexchange/</guid>
+      <description>Regular readers of this site will know I&amp;rsquo;m a fan of using Stack Overflow for questions about LaTeX, R and other areas of programming. Now the people who produce Stack Overflow are planning on setting up several new sites for asking questions about other topics, and are seeking proposals. I have proposed that there should be a site for questions on data analysis, statistics, data mining, machine learning, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

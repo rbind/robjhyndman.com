@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ropensci on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/ropensci/</link>
+    <description>Recent content in Ropensci on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/ropensci/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rOpenSci OzUnconference coming to Melbourne</title>
+      <link>https://robjhyndman.com/hyndsight/ozunconf2017/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ozunconf2017/</guid>
+      <description>For a second year running, there will be another rOpenSci OzUnconference in Australia. This one will be held in Melbourne, on 26-27 October 2017.
+Unlike regular conferences, there are no talks and there is no pre-determined agenda. It brings together scientists, developers, and open data enthusiasts from academia, industry, government, and non-profit to get together for a few days to work on R-related projects. The agenda is mostly decided during the conference itself, and involves participants dividing into small groups to work on the projects of most interest to them.</description>
+    </item>
+    
+    <item>
+      <title>rOpenSci unconference in Brisbane, 21-22 April 2016</title>
+      <link>https://robjhyndman.com/hyndsight/ropensci2016/</link>
+      <pubDate>Mon, 21 Mar 2016 00:31:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ropensci2016/</guid>
+      <description>The first rOpenSci unconference in Australia will be held on Thursday and Friday (April 21-22) in Brisbane, at the Microsoft Innovation Centre.
+This event will bring together researchers, developers, data scientists and open data enthusiasts from industry, government and university. The aim is to conceptualise and develop R-based tools that address current challenges in data science, open science and reproducibility.
+Past examples of the projects can here, here, and here. Also here.</description>
+    </item>
+    
+  </channel>
+</rss>

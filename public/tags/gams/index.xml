@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gams on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/tags/gams/</link>
+    <description>Recent content in Gams on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jun 2015 11:27:01 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/tags/gams/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probabilistic time series forecasting with boosted additive models: an application to smart meter data</title>
+      <link>https://robjhyndman.com/publications/kdd2015/</link>
+      <pubDate>Thu, 04 Jun 2015 11:27:01 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/kdd2015/</guid>
+      <description>A large body of the forecasting literature so far has been focused on forecasting the conditional mean of future observations. However, there is an increasing need for generating the entire conditional distribution of future observations in order to effectively quantify the uncertainty in time series data. We present two different methods for probabilistic time series forecasting that allow the inclusion of a possibly large set of exogenous variables. One method is based on forecasting both the conditional mean and variance of the future distribution using a traditional regression approach.</description>
+    </item>
+    
+    <item>
+      <title>Short-term load forecasting based on a semi-parametric additive model</title>
+      <link>https://robjhyndman.com/publications/stlf/</link>
+      <pubDate>Wed, 01 Feb 2012 06:37:48 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/stlf/</guid>
+      <description>Short-term load forecasting is an essential instrument in power system planning, operation and control. Many operating decisions are based on load forecasts, such as dispatch scheduling of generating capacity, reliability analysis, and maintenance planning for the generators. Overestimation of electricity demand will cause a conservative operation, which leads to the start-up of too many units or excessive energy purchase, thereby supplying an unnecessary level of reserve. On the contrary, underestimation may result in a risky operation, with insufficient preparation of spinning reserve, causing the system to operate in a vulnerable region to the disturbance.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting electricity demand distributions using a semiparametric additive model </title>
+      <link>https://robjhyndman.com/seminars/electricity-forecasting/</link>
+      <pubDate>Mon, 03 Oct 2011 03:11:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/electricity-forecasting/</guid>
+      <description>Talk given at
+ University of Melbourne, 11 October 2011. University of Adelaide, 16 March 2012 Monash University, 16 May 2012 La Trobe University, 24 May 2012 EDF, Paris. 4 September 2012 University of New South Wales, 1 November 2012  Abstract: Electricity demand forecasting plays an important role in short-term load allocation and long-term planning for future generation facilities and transmission augmentation. Planners must adopt a probabilistic view of potential peak demand levels, therefore density forecasts (providing estimates of the full probability distributions of the possible future values of the demand) are more helpful than point forecasts, and are necessary for utilities to evaluate and hedge the financial risk accrued by demand variability and forecasting uncertainty.</description>
+    </item>
+    
+    <item>
+      <title>Investigating the influence of synoptic-scale circulation on air quality using self-organizing maps and generalized additive modelling</title>
+      <link>https://robjhyndman.com/publications/synoptic-gams/</link>
+      <pubDate>Sat, 16 Jul 2011 06:50:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/synoptic-gams/</guid>
+      <description>The influence of synoptic-scale circulations on air quality is an area of increasing interest to air quality management in regards to future climate change. This study presents an analysis where the dominant synoptic &amp;lsquo;types&amp;rsquo; over the region of Melbourne, Australia are determined and linked to regional air quality. First, a self-organising map (SOM) is used to generate a time series of synoptic charts that classify the annual daily circulation affecting Melbourne into 20 different synoptic types.</description>
+    </item>
+    
+    <item>
+      <title>Quantifying the influence of local meteorology on air quality using generalized additive modelling</title>
+      <link>https://robjhyndman.com/publications/local-gams/</link>
+      <pubDate>Sat, 01 Jan 2011 05:46:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/local-gams/</guid>
+      <description>Quantifying the observed relationships between local meteorology and air pollution provides air quality managers with a knowledge base that may prove useful in understanding how climate change may potentially impact air quality. This paper presents the estimated response of ozone (O3), particulate matter ≤ 10 μm (PM10), and nitrogen dioxide (NO2) to individual local meteorological variables in Melbourne, Australia over the period of 1999 to 2006. The relationships have been quantified after controlling for long-term trends, seasonality, weekly emissions, spatial variation, and temporal persistence using the framework of a generalized additive modelling (GAM).</description>
+    </item>
+    
+    <item>
+      <title>Short-term load forecasting based on a semi-parametric additive model</title>
+      <link>https://robjhyndman.com/publications/aupec2010/</link>
+      <pubDate>Wed, 21 Jul 2010 09:15:13 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/aupec2010/</guid>
+      <description>Short-term load forecasting is an essential instrument in power system planning, operation and control. Many operating decisions are based on load forecasts, such as dispatch scheduling of generating capacity, reliability analysis, and maintenance planning for the generators. Overestimation of electricity demand will cause a conservative operation, which leads to the start-up of too many units or excessive energy purchase, thereby supplying an unnecessary level of reserve. On the contrary, underestimation may result in a risky operation, with insufficient preparation of spinning reserve, causing the system to operate in a vulnerable region to the disturbance.</description>
+    </item>
+    
+    <item>
+      <title>Density forecasting for long-term peak electricity demand</title>
+      <link>https://robjhyndman.com/publications/peak-electricity-demand/</link>
+      <pubDate>Sat, 02 Jan 2010 23:10:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/peak-electricity-demand/</guid>
+      <description>Abstract: Long-term electricity demand forecasting plays an important role in planning for future generation facilities and transmission augmentation. In a long term context, planners must adopt a probabilistic view of potential peak demand levels, therefore density forecasts (providing estimates of the full probability distributions of the possible future values of the demand) are more helpful than point forecasts, and are necessary for utilities to evaluate and hedge the financial risk accrued by demand variability and forecasting uncertainty.</description>
+    </item>
+    
+    <item>
+      <title>Sensitivity of the estimated air pollution-respiratory admissions relationship to statistical model</title>
+      <link>https://robjhyndman.com/publications/sensitivity-of-the-estimated-air-pollution-respiratory-admissions-relationship-to-statistical-model/</link>
+      <pubDate>Fri, 16 Dec 2005 03:49:12 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/sensitivity-of-the-estimated-air-pollution-respiratory-admissions-relationship-to-statistical-model/</guid>
+      <description>Abstract: Study objective: The objective of this study is to demonstrate the methodological shortcomings of currently available analytical methods for single-city time series data, one of the most commonly used ecological study designs in air pollution and respiratory disease research.
+Design and Methods: We analyse single city epidemiological time series of daily Chronic Obstructive Pulmonary Disease (COPD) (ICD codes 490-492, 494, 496) and daily asthma (ICD codes 493) hospital admissions in Melbourne, Australia from July 1989 to December 1992.</description>
+    </item>
+    
+    <item>
+      <title>Statistical methodological issues in studies of air pollution and respiratory disease</title>
+      <link>https://robjhyndman.com/publications/statistical-methodological-issues-in-studies-of-air-pollution-and-respiratory-disease/</link>
+      <pubDate>Mon, 02 Jul 2001 00:56:54 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/statistical-methodological-issues-in-studies-of-air-pollution-and-respiratory-disease/</guid>
+      <description>Epidemiological studies have consistently shown short term associations between levels of air pollution and respiratory disease in countries of diverse populations, geographical locations and varying levels of air pollution and climate. The aims of this paper are: (1) to assess the sensitivity of the observed pollution effects to model specification, with particular emphasis on the inclusion of seasonally adjusted covariates; and (2) to study the effect of air pollution on respiratory disease in Melbourne, Australia.</description>
+    </item>
+    
+    <item>
+      <title>Seasonal adjustment methods for the analysis of respiratory disease in environmental epidemiology</title>
+      <link>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</link>
+      <pubDate>Wed, 09 Aug 2000 01:46:58 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/seasonal-adjustment-methods-for-the-analysis-of-respiratory-disease-in-environmental-epidemiology/</guid>
+      <description>We study the relationship between daily hospital admissions for respiratory disease and various pollutant and climatic variables, looking particularly at the effect of seasonal adjustment on the estimated models. Often time series exhibit seasonal behaviour and adequate control for the presence of a seasonal component is essential before one attempts to model the complex pollution-health association. We show that if these factors are not adequately controlled for, spurious effects of pollutants and climate on morbidity/mortality can be induced.</description>
+    </item>
+    
+    <item>
+      <title>Generalized additive modelling of mixed distribution Markov models with application to Melbourne&#39;s rainfall</title>
+      <link>https://robjhyndman.com/publications/gam-rainfall/</link>
+      <pubDate>Tue, 16 May 2000 03:06:43 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/gam-rainfall/</guid>
+      <description>We consider modelling time series using a generalized additive model with first-order Markov structure and mixed transition density having a discrete component at zero and a continuous component with positive sample space. Such models have application, for example, in modelling daily occurrence and intensity of rainfall, and in modelling the number and size of insurance claims. We show how these methods extend the usual sinusoidal seasonal assumption in standard chain-dependent models by assuming a general smooth pattern of occurrence and intensity over time.</description>
+    </item>
+    
+    <item>
+      <title>Nonparametric additive regression models for binary time series</title>
+      <link>https://robjhyndman.com/publications/logitar/</link>
+      <pubDate>Wed, 07 Jul 1999 00:49:30 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/logitar/</guid>
+      <description>I consider models for binary time series, starting with autoregression models and then developing generalizations of them which allow nonparametric additive covariates. I show that several apparently different binary AR(1) models are equivalent. Three possible nonparametric additive regression models which allow for autocorrelation are considered; one is a generalization of an ARX model, the other two are generalizations of a regression model with AR errors. One of the models is applied to two data sets: IBM stock transactions and Melbourne&amp;rsquo;s rainfall.</description>
+    </item>
+    
+  </channel>
+</rss>

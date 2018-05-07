@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematics on Rob J Hyndman</title>
+    <link>https://robjhyndman.com/categories/mathematics/</link>
+    <description>Recent content in Mathematics on Rob J Hyndman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Oct 2016 08:00:47 +0000</lastBuildDate>
+    
+	<atom:link href="https://robjhyndman.com/categories/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Come to Melbourne, even if not to Monash</title>
+      <link>https://robjhyndman.com/hyndsight/unimelb-prof-datascience/</link>
+      <pubDate>Wed, 12 Oct 2016 08:00:47 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/unimelb-prof-datascience/</guid>
+      <description>The University of Melbourne is advertising for a &amp;ldquo;Professor in Statistics (Data Science)&amp;rdquo;. Melbourne (the city) is fast becoming a vibrant centre for data science and applied statistics, with more than 4700 people signed up for the Data Science Meetup Group, a thriving start-up scene, the group at Monash Business School (including Di Cook and me), and the Monash Centre for Data Science (including Geoff Webb and Wray Buntine). Not to mention that Melbourne is a wonderful place to live, having won the &amp;ldquo;World&amp;rsquo;s most liveable city&amp;rdquo; award from the Economist for the last 6 years in a row.</description>
+    </item>
+    
+    <item>
+      <title>Statistical politicians</title>
+      <link>https://robjhyndman.com/hyndsight/statistical-politicians/</link>
+      <pubDate>Sun, 23 Feb 2014 23:42:05 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/statistical-politicians/</guid>
+      <description>Last week we had the pleasure of Professor Stephen Pollock (University of Leicester) visiting our Department, best known in academic circles for his work on time series filtering (see his papers, and his excellent book). But he has another career as a member of the UK House of Lords (under the name Viscount Hanworth &amp;ndash; he is a hereditary peer).
+It made me wonder how many other politicians have PhDs (or equivalent) in statistics, or at least in mathematics.</description>
+    </item>
+    
+    <item>
+      <title>Three jobs at Monash</title>
+      <link>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</link>
+      <pubDate>Fri, 18 Oct 2013 04:02:37 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/three-jobs-at-monash/</guid>
+      <description>We are currently advertising for three academic positions, suitable for recent PhD graduates.
+Lecturer (Applied Statistics or Operations Research)  Five-year position with MAXIMA and the School of Mathematical Sciences
+ Two positions available.
+ Applications close 31 October.
+ More information.
+  Lecturer (Econometrics/Business Statistics)  Continuing position with the Department of Econometrics and Business Statistics
+ Applications close 31 January 2014.
+ More information.
+  Please don&amp;rsquo;t send any questions to me.</description>
+    </item>
+    
+    <item>
+      <title>MAXIMA research centre at Monash Uni</title>
+      <link>https://robjhyndman.com/hyndsight/maxima/</link>
+      <pubDate>Wed, 11 Sep 2013 01:17:02 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/maxima/</guid>
+      <description>The &amp;ldquo;Monash Academy for Cross and Interdisciplinary Mathematical Applications&amp;rdquo; (MAXIMA) is a new research centre that aims to maximise the potential of mathematics to deliver impact to society. It will be led by Kate Smith-Miles. I will also be involved along with several other mathematicians at Monash. Our mission at MAXIMA is to find solutions to 21st century problems by dismantling mathematical barriers.
+MAXIMA will be launched on 25 September at a public lecture on &amp;ldquo;The Role of Embedded Optimization in Smart Systems and Products&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Cyclic and seasonal time series</title>
+      <link>https://robjhyndman.com/hyndsight/cyclicts/</link>
+      <pubDate>Wed, 14 Dec 2011 05:22:10 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/cyclicts/</guid>
+      <description>These terms get confused all the time (e.g., this question on CrossValidated.com), and so I thought it might be helpful to try to summarize the distinction and some of the associated models.Definitions A seasonal pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week). Seasonality is always of a fixed and known period. Hence, seasonal time series are sometimes called periodic time series.</description>
+    </item>
+    
+    <item>
+      <title>Advice to PhD applicants</title>
+      <link>https://robjhyndman.com/hyndsight/phdapplicants/</link>
+      <pubDate>Wed, 03 Nov 2010 04:42:21 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/phdapplicants/</guid>
+      <description>For students who are interested in doing a PhD at Monash under my supervision.
+First, read the instructions on how to apply.
+Second, poke around my website to see the sorts of topics I work on. There&amp;rsquo;s no point asking to do a PhD with me if you want to do research on something I don&amp;rsquo;t know much about. In particular, please note that I&amp;rsquo;m not really interested in finance or economics.</description>
+    </item>
+    
+    <item>
+      <title>Online mathematical resources</title>
+      <link>https://robjhyndman.com/hyndsight/online-mathematical-resources/</link>
+      <pubDate>Thu, 20 May 2010 12:10:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/online-mathematical-resources/</guid>
+      <description>DLMF For nearly 50 years, a standard reference in mathematical work has been Abramowitz and Stegun&amp;rsquo;s (1964) Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables. It has provided a marvellous collection of results and tables that have been indispensable for a generation of mathematicians. I&amp;rsquo;ve used it to look up computationally efficient methods for calculating Bessel functions or gamma functions, or to find one of those trigonometric identities I learned in high school and no longer remember.</description>
+    </item>
+    
+    <item>
+      <title>Mathematical genealogy</title>
+      <link>https://robjhyndman.com/hyndsight/mathematical-genealogy/</link>
+      <pubDate>Wed, 15 Jul 2009 00:42:07 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/mathematical-genealogy/</guid>
+      <description>Having a PhD student is like having a child. I have had many such &amp;ldquo;children&amp;rdquo; graduate, and have another few &amp;ldquo;on the way&amp;rdquo;. (See here for my offspring.)
+Going in the other direction, here is my family tree (or one branch of it), compiled from the Mathematical Genealogy Project. Each successive person is the doctoral student of the person before him. (No females here!)
+     Erhard Weigel Ph.</description>
+    </item>
+    
+  </channel>
+</rss>
