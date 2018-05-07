@@ -10,7 +10,7 @@ tags:
 - graphics
 - energy
 doi: 10.1109/MPE.2018.2801441
-citation: <em>IEEE Power and Energy Magazine</em>, to appear
+citation: <em>IEEE Power and Energy Magazine</em>, <b>16</b>(3), 18-25.
 ---
 
 ![](/img/laplacian.png)

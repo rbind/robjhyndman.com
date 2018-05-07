@@ -52,7 +52,6 @@ Prediction intervals are now easy to obtain:
 ```{r, cache=TRUE}
 #80% interval:
 quantile(sim, prob=c(0.1, 0.9))
-
 #95% interval:
 quantile(sim, prob=c(0.025, 0.975))
 ```

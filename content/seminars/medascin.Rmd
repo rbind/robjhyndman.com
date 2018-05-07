@@ -13,7 +13,7 @@ This is a one-day workshop given as part of the [Melbourne Data Science Week](ht
 **Presenters**: Rob J Hyndman and Earo Wang<br>
 **Location**: KPMG, Tower Two, Collins Square, 727 Collins St, Melbourne
 
-##Prerequisites
+## Prerequisites
 
 Please bring your own laptop with a recent version of R installed, along with the following packages and their dependencies:
 
@@ -26,20 +26,20 @@ Please bring your own laptop with a recent version of R installed, along with th
 
 Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
 
-##Reference
+## Reference
 
 <a href="http://OTexts.org/fpp2/" target="_new">
 ![alt text](/medascin/fppcover-small.jpg)
 </a>
 
-##Need help with R?
+## Need help with R?
 
 * [Base R cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf)
 * [Datacamp: Introduction to R course](https://www.datacamp.com/courses/free-introduction-to-r)
 * [Help with Rmarkdown](http://rmarkdown.rstudio.com/lesson-2.html)
 * [Rmarkdown cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
 
-##Program
+## Program
 
 <table border=1 cellpadding=2 cellspacing=5 width=100%>
 <col width="15%">
@@ -92,11 +92,11 @@ Participants will be assumed to be familiar with basic statistical tools such as
 </tr>
 </table>
 
-##Lab sessions
+## Lab sessions
 
 <a name="Lab1"></a>
 
-###Lab Session 1
+### Lab Session 1
 
 1. Download the [`Retail.Rmd`](/medascin/Retail.Rmd) file. This will be used for all analysis of the retail data.
 
@@ -118,7 +118,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 <a name="Lab2"></a>
 
-###Lab Session 2
+### Lab Session 2
 
 The following graphics functions have been introduced:
 
@@ -132,7 +132,7 @@ autoplot, ggseasonplot, ggmonthplot, gglagplot, ggAcf, ggtsdisplay
 
 <a name="Lab3"></a>
 
-###Lab Session 3
+### Lab Session 3
 
 Download [the `Rmd` file](http://earo.me/lab/medascin17/lab3.Rmd) for this lab session.
 
@@ -143,7 +143,7 @@ Download [the `Rmd` file](http://earo.me/lab/medascin17/lab3.Rmd) for this lab s
 
 <a name="Lab4"></a>
 
-###Lab Session 4
+### Lab Session 4
 
 Download [the `Rmd` file](http://earo.me/lab/medascin17/lab4.Rmd) for this lab session.
 
@@ -153,7 +153,7 @@ Download [the `Rmd` file](http://earo.me/lab/medascin17/lab4.Rmd) for this lab s
 
 <a name="Lab5"></a>
 
-###Lab Session 5
+### Lab Session 5
 
   1. Use `ets()` to find the best ETS model for your retail data.
 
@@ -165,7 +165,7 @@ Download [the `Rmd` file](http://earo.me/lab/medascin17/lab4.Rmd) for this lab s
 
 <a name="Lab6"></a>
 
-###Lab Session 6
+### Lab Session 6
 
 We will now fit an ARIMA model for your retail data.
 
@@ -179,7 +179,7 @@ We will now fit an ARIMA model for your retail data.
 <a name="Lab7"></a>
 
 
-###Lab Session 7
+### Lab Session 7
 
 For your retail time series:
 
@@ -194,7 +194,7 @@ For your retail time series:
 
 <a name="Lab8"></a>
 
-###Lab Session 8
+### Lab Session 8
 
   1. Use `ets` to find the best model for your retail data and record the training set MAPE.
   1. We will now check how much larger the MAPE is on out-of-sample data using time series cross-validation. The following code will compute the result. Replace `???` with the appropriate values for your ETS model.

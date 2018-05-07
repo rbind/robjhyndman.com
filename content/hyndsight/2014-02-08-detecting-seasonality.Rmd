@@ -21,9 +21,9 @@ One simple approach is to fit a model with allows for seasonality if it is prese
 
 This is not a formal test of seasonality, as the model selection is based on the AIC rather than any hypothesis test. However, there is a related log-likelihood test based on the difference between the selected model, and the equivalent model with an additional seasonal term added. Twice the difference between the two log-likelihoods will have a chi-squared distribution according to Wilks' theorem. The degrees of freedom will be the difference in the number of parameters being estimated in the two models.
 
-```{r, message=FALSE, cache=TRUE}
-library(fma)
-plot(pigs)
+```{r, message=FALSE, cache=TRUE, fig.height=3}
+library(fpp2)
+autoplot(pigs)
 ets(pigs)
 ```
 
@@ -31,9 +31,8 @@ For example, the `pigs` data (Monthly number of pigs slaughted in Victoria) does
 
 
 ```{r, message=FALSE, cache=TRUE}
-library(fma)
 fit1 <- ets(pigs)
-fit2 <- ets(pigs,model="ANN")
+fit2 <- ets(pigs, model="ANN")
 
 deviance <- 2*c(logLik(fit1) - logLik(fit2))
 df <- attributes(logLik(fit1))$df - attributes(logLik(fit2))$df 

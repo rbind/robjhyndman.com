@@ -21,13 +21,9 @@ A confidence interval is an interval associated with a parameter and is a freque
 A Bayesian confidence interval, also known as a "credible interval", is an interval associated with the posterior distribution of the parameter. In the Bayesian perspective, parameters are treated as random variables, and so have probability distributions. Thus a Bayesian confidence interval is like a prediction interval, but associated with a parameter rather than an observation.
 
 I think the distinction between prediction and confidence intervals is worth preserving because sometimes you want to use both. For example, consider the regression
-
-<div>
-\[
+$$
 y_i = \alpha + \beta x_i + e_i
-\]
-</div>
-
+$$
 where $y_i$ is the change in GDP from quarter $i-1$ to quarter $i$, $x_i$ is the change in the unemployment rate from quarter $i-1$ to quarter $i$, and $e\_i\sim\text{N}(0,\sigma^2)$. (This regression model is known as [Okun's law](http://en.wikipedia.org/wiki/Okun's_law) in macroeconomics.) In this case, both confidence intervals and prediction intervals are interesting. You might be interested in the confidence interval associated with the mean value of $y$ when $x=0$; that is, the mean growth in GDP when the unemployment rate does not change. You might also be interested in the prediction interval for $y$ when $x=0$; that is, the likely range of future values of GDP growth when the unemployment rate does not change.
 
 The distinction is mostly retained in the statistics literature. However, in econometrics it is common to use "confidence intervals" for both types of interval (e.g., [Granger & Newbold, 1986](http://www.amazon.com/gp/product/0122951840/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0122951840&linkCode=as2&tag=prorobjhyn-20)). I once asked Clive Granger why he confused the two concepts, and he dismissed my objection as fussing about trivialities. I disagreed with him then, and I still do.

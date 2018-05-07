@@ -32,13 +32,9 @@ plot(fc)
 ```
 
 The fitted model has 12 pairs of Fourier terms and can be written as
-
-<div>
 $$
 y_t = bt + \sum_{j=1}^{12} \left[ \alpha_j\sin\left(\frac{2\pi j t}{52.18}\right) + \beta_j\cos\left(\frac{2\pi j t}{52.18}\right) \right] + n_t
 $$
-</div>
-
 where $n_t$ is an ARIMA(3,1,3) process. Because $n_t$ is non-stationary, the model is actually estimated on the differences of the variables on both sides of this equation. That is why there is no need for an intercept term. There are 24 parameters to capture the seasonality which is rather a lot, but apparently required according to the AIC selection. (BIC would have given fewer.) The total number of degrees of freedom is 31 (the other seven coming from the 6 ARMA parameters and the drift parameter).
 
 ## TBATS
@@ -52,8 +48,6 @@ plot(fc2, ylab="thousands of barrels per day")
 ```
 
 Here the fitted model is given at the top of the plot as TBATS(0.999, {2,2}, 1, {<52.18,8>}). That is, a Box-Cox transformation of 0.999 (essentially doing nothing), ARMA(2,2) errors, a damping parameter of 1 (doing nothing) and 8 Fourier pairs with period $m=52.18$. This model can be written as
-
-<div>
 \begin{align}
 y_t &= \ell_{t-1} + b_{t-1} + s_{t-1} + \alpha d_t\\
 b_t &= b_{t-1} + \beta d_t\\
@@ -61,8 +55,6 @@ s_t &= \sum_{j=1}^{8} s_{j,t}\\
 s_{j,t} &= s_{j,t-1}\cos \left(\frac{2\pi j t}{52.18}\right) +s_{j,t-1}^{\ast}\sin \left(\frac{2\pi j t}{52.18}\right) + \gamma_1d_t \\
 s_{j,t}^{\ast} &= -s_{j,t-1}\sin\left(\frac{2\pi j t}{52.18}\right) + s_{j,t-1}^{\ast}\cos\left(\frac{2\pi j t}{52.18}\right)+\gamma_2d_t,
 \end{align}
-</div>
-
 where $d_t$ is an ARMA(2,2) process and  $\alpha$, $\beta$, $\gamma_1$ and $\gamma_2$ are smoothing parameters. Here the seasonality has been handled with 18 parameters (the sixteen initial values for $s_{j,0}$ and $s_{j,0}^{\ast}$ and the two smoothing parameters $\gamma_1$ and $\gamma_2$). The total number of degrees of freedom is 26 (the other 8 coming from the two smoothing parameters $\alpha$ and $\beta$, the four ARMA parameters, and the initial level and slope values $\ell_0$ and $b_0$).
 
 

@@ -48,7 +48,7 @@ tail(weights)
 ```
 
 
-It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to ETS alone. But by the end of the test set, it is giving weight 0.23 to ETS, 0.36 to ARIMA and 0.41 to STL. Here are the resulting forecasts:
+It begins with weighting each forecast method equally, quickly drops the ARIMA method, and then switches to STL alone. But by the end of the test set, it is giving weight `r tail(weights,1)[1]` to ETS, `r tail(weights,1)[2]` to ARIMA and `r tail(weights,1)[3]` to STL. Here are the resulting forecasts:
 
 ```{r opera3, message=FALSE, cache=TRUE, warning=FALSE}
 z <- ts(predict(MLpol0, X, test, type='response'), start=c(1991,1), freq=12)
