@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Mortality and population data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for data {addb}"><tr><td>data {addb}</td><td align="right">R Documentation</td></tr></table>
+<h2>Mortality and population data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Mortality rates and populations for Australia and Australian states.
+The data can be plotted and
+modelled using the functions in the demography package such as
+<code><a href="../../demography/html/plot.demogdata.html">plot.demogdata</a></code> and
+<code><a href="../../demography/html/fdm.html">fdm</a></code>.
+</p>
+
+
+<h3>Format</h3>
+
+<p>
+All data are <code>demogdata</code> objects containing the following components:
+<dl>
+<dt>year</dt><dd>Years for which data available</dd>
+<dt>age</dt><dd>Ages for which data available</dd>
+<dt>rates</dt><dd>A list with matrix components <code>female</code>, <code>male</code> and <code>total</code>
+with one age group per row and one column per year.</dd>
+<dt>pop</dt><dd>A list of the same form as <code>rates</code> but containing population
+numbers instead of mortality rates.</dd>
+<dt>type</dt><dd>A character string equal to <code>"mortality"</code> in each case.</dd>
+<dt>label</dt><dd>A character string giving the geographical region.</dd>
+</dl>
+
+<h3>Details</h3>
+
+<p>
+The following data sets are included:
+<table summary="Rd table">
+<tr>
+  <td align="left"><code>australia</code> </td>  <td align="left"> Australia </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>nsw</code>   </td>  <td align="left"> New South Wales </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>vic</code>   </td>  <td align="left"> Victoria </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>qld</code>   </td>  <td align="left"> Queensland </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>sa</code>    </td>  <td align="left"> South Australia </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>wa</code>    </td>  <td align="left"> Western Australia </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>nt</code>    </td>  <td align="left"> Northern Territory </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>actot</code> </td>  <td align="left"> Australian Capital Territory and overseas territories </td>  <td align="left"> (1901-2003)</td>
+</tr>
+<tr>
+  <td align="left"> <code>tas</code>   </td>  <td align="left"> Tasmania </td>  <td align="left"> (1901-2003) </td>
+</tr>
+</table>
+<p>
+All data are from v3.2b of the Australian Demographic Data Bank released 10 February 2005.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>Source</h3>
+
+<p>
+The Australian Demographic Data Bank (courtesy of Len Smith).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(vic,years=1950:1997)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>addb</em> version 3.222 <a href="00Index.html">Index]</a></div>
+
+</body></html>

@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^working-papers/(.*) https://robjhyndman.com/publications/$1 [R=301,L,NC]
+RewriteRule ^researchtips/(.*) https://robjhyndman.com/hyndsight/$1 [R=301,L,NC]
+RewriteRule ^papers/(.*(?<!pdf)$) https://robjhyndman.com/publications/$1 [R=301,L,NC]
+RewriteRule ^robjhyndman.com/fpp/(.*) https://fpp.robjhyndman.com/$1 [R=301,L,NC]
+
+
+ErrorDocument 404 /404.html

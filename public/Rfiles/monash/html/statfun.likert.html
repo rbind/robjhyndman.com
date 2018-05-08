@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Descriptive statistics for Likert-scale data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for statfun.likert {monash}"><tr><td>statfun.likert {monash}</td><td align="right">R Documentation</td></tr></table>
+<h2>Descriptive statistics for Likert-scale data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Functions to calculate descriptive statistics of Likert-scale data including mean, median, quantile,
+standard deviation, variance and semi-interquartile-range.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+## S3 method for class 'likert':
+mean(x, na.rm=FALSE, ...)
+## S3 method for class 'likert':
+median(x, na.rm=FALSE, ...)
+## S3 method for class 'likert':
+quantile(x, probs=seq(0, 1, 0.25), truncate=FALSE, ...)
+## S3 method for class 'likert':
+sd(x, na.rm=FALSE, ...)
+## S3 method for class 'likert':
+var(x, na.rm=FALSE, ...)
+sir(x)</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+An object of class likert.</td></tr>
+<tr valign="top"><td><code>probs</code></td>
+<td>
+numeric vector of probabilities with values in [0,1].</td></tr>
+<tr valign="top"><td><code>truncate</code></td>
+<td>
+A logical value, if TRUE, the quantile can not be outside the range [1,5].</td></tr>
+<tr valign="top"><td><code>na.rm</code></td>
+<td>
+A logical value indicating whether NA values should be stripped before the computation proceeds.</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+Other arguments</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+Because Likert-scale data consist of discrete values, quantiles calculated in the usual 
+way can be misleading.
+One solution to this problem is to compute pseudo-quantiles based on the distribution function. We assume that 
+there is an underlying continuous variable which is observed to the nearest integer. 
+Then the mid point quantile estimator from grouped data (e.g., Schmeiser and Deutsch, 1977) can be used.
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+Corresponding measure of likert-scale data</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Schmeiser, B.W., and Deutsch, S.J. (1977). Quantile estimation from grouped data: the cell mid point.
+Comm. Stat.-sim.comp., B6(3), 221-234.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+See Also <code><a href="likert.html">likert</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+x &lt;- c(rep(3,9),rep(4,7),rep(5,14))
+y &lt;- likert(x)
+mean(y)
+median(y)
+quantile(y)
+sd(y)
+var(y)
+sir(y)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>monash</em> version 1.02 <a href="00Index.html">Index]</a></div>
+
+</body></html>

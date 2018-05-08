@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Likert-scale data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for likert {monash}"><tr><td>likert {monash}</td><td align="right">R Documentation</td></tr></table>
+<h2>Likert-scale data</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Create Likert-scale data object suitable for plotting using plot.likert
+and calculating descriptive measures and quantiles from grouped data
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>likert(x, upper = max(x), labels)</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+The observed response (number of observations in each category of likert-scale response)</td></tr>
+<tr valign="top"><td><code>upper</code></td>
+<td>
+Number of permissible categories (number of categories for each likert-scale question)</td></tr>
+<tr valign="top"><td><code>labels</code></td>
+<td>
+Labels of likert-scale respose. By default, labels of 5-point likert-scale question are 
+SD=Strongly Disagree, D=Disagree, N=Neutral, A=Agree, SA=Strongly Agree</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+Because Likert-scale data consist of discrete values, quantiles calculated in the usual 
+way can be misleading.
+One solution to this problem is to compute pseudo-quantiles based on the distribution function. We assume that 
+there is an underlying continuous variable which is observed to the nearest integer. 
+Then the mid point quantile estimator from grouped data (e.g., Schmeiser and Deutsch, 1977) can be used.
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+An object of class "likert" is a list containing the following elements
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>Number</code></td>
+<td>
+Frequency in each category</td></tr>
+<tr valign="top"><td><code>Percent</code></td>
+<td>
+Percentage in each category</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+Observed response</td></tr>
+<tr valign="top"><td><code>upper</code></td>
+<td>
+Maximum number of categories</td></tr>
+<tr valign="top"><td><code>labels</code></td>
+<td>
+Labels of categories</td></tr>
+</table>
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>References</h3>
+
+<p>
+Schmeiser, B.W., and Deutsch, S.J. (1977). Quantile estimation from grouped data: the cell mid point.
+Comm. Stat.-sim.comp., B6(3), 221-234.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+See Also <code><a href="statfun.likert.html">mean.likert</a></code>, <code><a href="statfun.likert.html">median.likert</a></code>, <code><a href="plot.likert.html">plot.likert</a></code>, 
+<code><a href="statfun.likert.html">quantile.likert</a></code>, <code><a href="statfun.likert.html">sd.likert</a></code>, <code><a href="summary.likert.html">summary.likert</a></code>, <code><a href="table.likert.html">table.likert</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Let x be a set of responses to 5-point Likert scale questions
+x &lt;- c(rep(3,9),rep(4,7),rep(5,14))
+y &lt;- likert(x)
+quantile(y)
+plot(y)
+</pre>
+
+
+
+<hr><div align="center">[Package <em>monash</em> version 1.02 <a href="00Index.html">Index]</a></div>
+
+</body></html>

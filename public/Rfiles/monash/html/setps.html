@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Save figure to file</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for savefig {monash}"><tr><td>savefig {monash}</td><td align="right">R Documentation</td></tr></table>
+<h2>Save figure to file</h2>
+
+
+<h3>Description</h3>
+
+<p>
+<code>savefig</code> saves figures to files with minimal
+surrounding white space, suitable for inclusion in books and reports.
+<code>savefig</code> is especially good for including plots in LaTeX. File formats supported are eps, pdf and jpg.
+Default file format for <code>savefig</code> is eps. The other functions are wrappers for saving specific file formats.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+savefig(filename, height = 10, width = (1 + sqrt(5))/2*height, 
+    type=c("eps","pdf","jpg"), pointsize = 10, family = "Helvetica", 
+    sublines = 0, toplines = 0, leftlines = 0) 
+saveeps(...)
+savepdf(...)
+savejpg(...)
+savepng(...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>filename</code></td>
+<td>
+File in which to store the figure. Adds ".eps" ".pdf" or ".jpg" to the argument</td></tr>
+<tr valign="top"><td><code>width</code></td>
+<td>
+Width of figure in centimetres. Default 15cm.</td></tr>
+<tr valign="top"><td><code>height</code></td>
+<td>
+Height of figure in centimetres. Default 1.618*height.</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+File format. Either "eps", "pdf" or "jpg". Default is "eps".</td></tr>
+<tr valign="top"><td><code>pointsize</code></td>
+<td>
+The default point size to be used.</td></tr>
+<tr valign="top"><td><code>family</code></td>
+<td>
+Font family. See <code><a href="../../grDevices/html/postscript.html">postscript</a></code> for details.</td></tr>
+<tr valign="top"><td><code>sublines</code></td>
+<td>
+Number of lines to reserve for subtitles.</td></tr>
+<tr valign="top"><td><code>toplines</code></td>
+<td>
+Number of lines to reserve for main title.</td></tr>
+<tr valign="top"><td><code>leftlines</code></td>
+<td>
+Number of lines to reserve for left margin.</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+All arguments passed to <code>savefig</code>.</td></tr>
+</table>
+
+<h3>Author(s)</h3>
+
+<p>
+Rob J Hyndman
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="../../grDevices/html/postscript.html">postscript</a></code>, <code><a href="../../grDevices/html/pdf.html">pdf</a></code>, <code><a href="../../grDevices/html/jpeg.html">jpeg</a></code>
+</p>
+
+
+
+<hr><div align="center">[Package <em>monash</em> version 1.02 <a href="00Index.html">Index]</a></div>
+
+</body></html>

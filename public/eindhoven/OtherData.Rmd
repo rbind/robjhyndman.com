@@ -1,0 +1,20 @@
+---
+title: "Practice time series analysis"
+author: "Your name"
+date: "19 October 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, cache=TRUE, messages=FALSE, warnings=FALSE)
+library(fpp)
+library(ggplot2)
+library(magrittr)
+```
+
+# Lab Session 2
+
+```{r}
+autoplot(chicken)
+```
+

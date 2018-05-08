@@ -1,0 +1,336 @@
+/* color:#101730; color:#03396c; */
+
+/* Prevent flashing of responsive sandwich button on page load.  */
+.no-js .top-bar { display: none; }
+@media screen and (min-width: 40em) {
+    .no-js .top-bar { display: block; }
+    .no-js .title-bar { display: none; }
+}
+
+/* Basic colors and fonts.  */
+body {
+    background-color: #faf8f8;
+    color: #101730;
+    font-family: 'Droid Serif', serif;
+}
+
+/* Title and top bar navigation.  */
+.site-hamburger {
+    position: relative;
+    top: 1px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-bar {
+    font-family: 'Carlito', sans;
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+
+.top-bar,
+.title-bar,
+.nav-bar button,
+.nav-bar a,
+.nav-bar ul {
+    background-color: #536878;
+    color: #ffffff;
+    border: none;
+}
+
+.top-bar {
+    padding-left: 1.5rem;
+}
+
+.site-title {
+    padding: 0.7rem 0.8rem;
+    line-height: 1;
+    color: #b3cde0;
+}
+
+
+/* Last footer.  */
+.endofpage { 
+    /* background-image: url("/img/wave.png"); */
+    background-color: #536878;
+    height: 50px;
+    background-repeat: repeat-x;
+    margin-top: 3ex;
+}
+
+
+/* Main content.  */
+main {
+    margin-top: 2ex;
+}
+
+a
+{
+    border-bottom: 1px dotted #101730;
+    border-radius: 3px;
+    color: #101730;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Carlito', sans;
+}
+
+@media screen and (min-width: 40em) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; }
+    h3 { font-size: 1.1875rem; }
+    h4 { font-size: 1.125rem; }
+    h5 { font-size: 1.0625rem; }
+    h6 { font-size: 1rem; }
+}
+
+/* Code highlighting: Inline code.  */
+code
+{
+    /* For non-JS users we repeat color here.  */
+    color: #101730;
+    background-color: #ece8e8;
+    border: none;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+/* Code highlighting: Code block.  */
+pre > code {
+    font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+    background-color: transparent;
+    border: none;
+    overflow: auto;
+    padding: 0px;
+    /* font-size: 90%; */
+    border-radius: 2px;
+    white-space:pre-wrap;
+}
+
+pre {
+    margin: 0 0 16px 0;
+    border-left: 1px dashed #2199e8;
+    padding-left: 1em;
+}
+
+.hljs
+{
+    /* background-color: #f2f0f0; */
+    background-color: transparent;
+    color: #101730;
+    padding: 0;
+}
+
+.button {
+    border-radius: 3px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.full-figure {
+    margin: 0;
+}
+
+/* Default footer.  */
+.whatisthis hr {
+    border-style: solid;
+    border-color: #536878;
+}
+
+/* Taxonomy terms page.  */
+ul.taxonomy-terms {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.taxonomy-terms li {
+    display: inline;
+}
+
+.taxonomy-terms li::after {
+    content: ",";
+}
+.taxonomy-terms li:last-child::after {
+    content: "";
+}
+
+.taxonomy-terms a
+{
+    border: none;
+}
+
+/* Support for other pages.  */
+.pagination {
+    font-size: small;
+}
+
+.pagination a {
+    border: none;
+    /* Mh. Is this correct? */
+    padding-bottom: 1px;
+}
+
+.pagination a:hover {
+    background-color: transparent;
+    border-bottom: 1px dotted #2199e8;
+    /* Mh. Is this correct? */
+    padding-bottom: 0px;
+}
+
+
+
+/* Publication links on front page and on publication pages. */
+
+.button.primary {
+    background-color: #536878;
+    color: #fefefe; 
+}
+
+.button.hollow.pub-link {
+    font-family: 'Carlito', sans;
+    color: #536878;
+    border: 1px dotted #101730;
+    transition: none;
+    padding: 0.35em 0.4em;
+    margin: 0 0 0.5rem 0;
+}
+
+.button.hollow.pub-link:hover {
+    border-color: #1299e8;
+    color: #2199e8;
+    transition: none;
+}
+
+.button.hollow.primary {
+    font-family: 'Carlito', sans;
+    border: 1px solid #101730;
+    color: #536878;
+    transition: none;
+}
+
+.button.hollow.primary:hover {
+    color: #2199e8;
+    border-color: #2199e8;
+    transition: none;
+}
+
+
+/**************************************************
+ *  Publications
+ **************************************************/
+
+.pub-icon {
+    color: #101730;
+    font-size: 0.81em;
+    padding-top: 6px;
+}
+
+.pub-banner {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pub .pub-info {
+    padding-left: 0.5rem;
+    border-left: 3px solid #2199e8;
+}
+
+.pub .pub-authors {
+    font-style: italic;
+    line-height: 30px; /* Match share bar line height. */
+}
+
+.pub .pub-row-heading {
+    font-weight: bold;
+}
+
+/* Publication links */
+.pub .button.hollow.primary {
+    padding: 0.35em 0.4em;
+    margin: 0.5rem 0;
+}
+
+/*************************************************
+ *  Sharing
+ **************************************************/
+
+.share-box {
+    margin-top: 3px;
+    padding-right: 1rem;
+}
+
+.share-box ul.share {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.share-box ul.share li {
+    display: inline-flex;
+    margin-right: 5px;
+}
+
+.share-box ul.share li:last-of-type {
+    margin-right: 0;
+}
+
+.share-box ul.share li .fa {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+    color: #faf8f8;
+}
+
+.share-box ul.share li a {
+    display: block;
+    border: 1px solid #536878;
+    border-radius: 10%;
+    background-color: #536878;
+    text-decoration: none !important;
+    margin: 0;
+}
+
+.share-box ul.share li:hover .fa {
+    transform: scale(1.4);
+    color: #1585cf;
+}
+
+
+/*************************************************
+ *  Blog Posts
+ **************************************************/
+
+.post-metadata {
+    color: #536878;
+    margin-bottom: 1rem;
+    margin-top: -1em;
+    font-size: small;
+    font-family: 'Carlito', sans;
+ }
+
+.post-date {
+    font-style: italic;
+    font-family: 'Carlito', sans;
+}
+
+.post-metadata a {
+    color: #536878;
+    border: none;
+}
+
