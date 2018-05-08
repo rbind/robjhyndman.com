@@ -186,7 +186,7 @@ autoplot(df) +
           Hybrid2=mean((test - fc2$mean)^2))
 round(mse,2)</code></pre>
 <pre><code>##   Opera Hybrid1 Hybrid2 
-##    0.68    0.66    1.15</code></pre>
+##    0.68    0.66    1.18</code></pre>
 <p>It should be noted, however, that the opera weights are updated using the past test data, while the forecastHybrid weights are based only on the training data. So this comparison is not entirely “fair”.</p>
 <p>Also, all of these results are much better than any of the individual forecasting methods:</p>
 <pre class="r"><code>mse2 &lt;- c(ETS=mean((test-ETS$mean)^2),

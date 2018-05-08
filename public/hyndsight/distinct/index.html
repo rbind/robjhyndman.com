@@ -181,10 +181,10 @@ library(microbenchmark)
 microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 <pre><code>## Unit: microseconds
 ##  expr    min     lq   mean median     uq    max neval
-##  d1()  115.7  141.2  179.9  148.2  159.2   3296   100
-##  d2() 2556.4 2607.5 9201.5 2649.4 2700.1 638019   100
-##  d3() 1524.2 1538.7 1886.0 1571.0 1601.5  23726   100
-##  d4() 1095.0 1113.8 1215.9 1127.4 1163.2   3554   100</code></pre>
+##  d1()  118.3  150.6  193.9  163.6  170.6   3399   100
+##  d2() 2474.8 2548.6 2934.3 2590.1 2663.3  21475   100
+##  d3() 1378.4 1444.4 1753.3 1485.5 1532.8  17779   100
+##  d4()  933.2  968.4 7416.3  981.6 1024.7 638212   100</code></pre>
 <p>Amazing. Those old tricks are pretty fast! Of the tidyverse approaches, the last one is clearly better, which is interesting in that it has to go searching for duplicates rather than just pick off the first row of each group. Presumably the grouping and ungrouping of approach 2 is slowing things down.</p>
 <div id="epilogue" class="section level2">
 <h2>Epilogue</h2>
