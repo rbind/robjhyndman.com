@@ -130,6 +130,7 @@ forecasthdr &lt;- function(object, h = ifelse(object$m &gt; 1, 2 * object$m, 10)
                         nsim=2000, plot=TRUE, level=c(50,95), xlim=NULL, ylim=NULL, ...)
 {
   require(hdrcde)
+  set.seed(2014)
   # Compute forecasts
   fc &lt;- forecast(object)
   ft &lt;- time(fc$mean)
@@ -194,7 +195,7 @@ forecasthdr &lt;- function(object, h = ifelse(object$m &gt; 1, 2 * object$m, 10)
 <p>The dots are modes of the forecast distributions, and the 50% and 95% highest density regions are also shown. In this case, the distributions are unimodal, and so all the regions are intervals.</p>
 
 
-      <meta itemprop="wordCount" content="518">
+      <meta itemprop="wordCount" content="519">
       <meta itemprop="datePublished" content="2014-11-21">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/visualization-of-probabilistic-forecasts/">
 

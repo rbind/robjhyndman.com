@@ -50,6 +50,7 @@ forecasthdr <- function(object, h = ifelse(object$m > 1, 2 * object$m, 10),
                         nsim=2000, plot=TRUE, level=c(50,95), xlim=NULL, ylim=NULL, ...)
 {
   require(hdrcde)
+  set.seed(2014)
   # Compute forecasts
   fc <- forecast(object)
   ft <- time(fc$mean)

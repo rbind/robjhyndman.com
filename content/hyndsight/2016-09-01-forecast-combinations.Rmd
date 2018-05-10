@@ -9,6 +9,13 @@ categories:
 - R
 ---
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+options(digits=4)
+set.seed(2016)
+```
+
 It has been well-known since at least 1969, when Bates and Granger wrote their famous paper on [“The Combination of Forecasts”](https://www.jstor.org/stable/3008764), that combining forecasts often leads to better forecast accuracy.
 
 So it is helpful to have a couple of new R packages which do just that: **opera** and **forecastHybrid**.

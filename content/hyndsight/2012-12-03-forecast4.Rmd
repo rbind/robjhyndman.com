@@ -11,6 +11,7 @@ categories:
 
 ```{r setup, include=FALSE}
 library(forecast)
+set.seed(2012)
 ```
 
 A few days ago I released version 4.0 of the [forecast package for R](http://cran.r-project.org/web/packages/forecast/). There were quite a few changes and new features, so I thought it deserved a new version number. I keep a list of changes in the [Changelog](https://cran.r-project.org/web/packages/forecast/news.html) for the package, but I doubt that many people look at it. So for the record, here are the most important changes to the forecast package made since [v3.0 was released](https://robjhyndman.com/hyndsight/forecast3/).<!-- more -->

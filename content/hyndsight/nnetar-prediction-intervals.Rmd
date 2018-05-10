@@ -15,6 +15,7 @@ Suppose we fit a NNETAR model to the famous Canadian `lynx` data:
 
 ```{r}
 library(forecast)
+set.seed(2015)
 (fit <- nnetar(lynx, lambda=0.5))
 ```
 
@@ -32,7 +33,7 @@ We can simulate future sample paths of this model iteratively, by randomly gener
 $$
   y^*_{T+1} = f(\boldsymbol{y}_{T}) + \varepsilon^*_{T+1}
 $$
-is one possible draw from the forecast distribution for $y_{T+1}$. Setting 
+is one possible draw from the forecast distribution for $y_{T+1}$. Setting
 $\boldsymbol{y}_{T+1}^* = (y^*_{T+1}, y_{T}, \dots, y_{T-6})'$, we can then repeat the process to get
 $$
   y^*_{T+2} = f(\boldsymbol{y}^*_{T+1}) + \varepsilon^*_{T+2}.
@@ -56,5 +57,5 @@ fcast <- forecast(fit, PI=TRUE, h=20)
 autoplot(fcast)
 ```
 
-Because it is a little slow, `PI=FALSE` is the default, so prediction intervals are not computed unless requested. The `npaths` argument in `forecast.nnetar` controls how many simulations are done (default 1000). By default, the errors are drawn from a normal distribution. The `bootstrap` argument allows the errors to be "bootstrapped" (i.e., randomly drawn from the historical errors). 
+Because it is a little slow, `PI=FALSE` is the default, so prediction intervals are not computed unless requested. The `npaths` argument in `forecast.nnetar` controls how many simulations are done (default 1000). By default, the errors are drawn from a normal distribution. The `bootstrap` argument allows the errors to be "bootstrapped" (i.e., randomly drawn from the historical errors).
 

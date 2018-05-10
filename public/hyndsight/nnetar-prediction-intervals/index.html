@@ -107,6 +107,7 @@
   <p>The <code>nnetar</code> function in the <a href="http://github.com/robjhyndman/forecast"><strong>forecast</strong> package for R</a> fits a neural network model to a time series with lagged values of the time series as inputs (and possibly some other exogenous inputs). So it is a nonlinear autogressive model, and it is not possible to analytically derive prediction intervals. Therefore we use simulation.</p>
 <p>Suppose we fit a NNETAR model to the famous Canadian <code>lynx</code> data:</p>
 <pre class="r"><code>library(forecast)
+set.seed(2015)
 (fit &lt;- nnetar(lynx, lambda=0.5))</code></pre>
 <pre><code>## Series: lynx 
 ## Model:  NNAR(8,4) 
@@ -116,7 +117,7 @@
 ## a 8-4-1 network with 41 weights
 ## options were - linear output units 
 ## 
-## sigma^2 estimated as 104.5</code></pre>
+## sigma^2 estimated as 95.77</code></pre>
 <p>I’ve used a Box-Cox transformation with <span class="math inline">\(\lambda=0.5\)</span> to ensure the residuals will be roughly homoscedastic.</p>
 <p>The model can be written as
 <span class="math display">\[
@@ -148,7 +149,7 @@ autoplot(fcast)</code></pre>
 <p>Because it is a little slow, <code>PI=FALSE</code> is the default, so prediction intervals are not computed unless requested. The <code>npaths</code> argument in <code>forecast.nnetar</code> controls how many simulations are done (default 1000). By default, the errors are drawn from a normal distribution. The <code>bootstrap</code> argument allows the errors to be “bootstrapped” (i.e., randomly drawn from the historical errors).</p>
 
 
-      <meta itemprop="wordCount" content="437">
+      <meta itemprop="wordCount" content="438">
       <meta itemprop="datePublished" content="2017-05-25">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/nnetar-prediction-intervals/">
 

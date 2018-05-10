@@ -31,8 +31,8 @@ where the function $\phi$ is convex with subgradient $\phi'$. Setting $\phi(u)=u
 Ehm et al (2015) showed that any scoring function satisfying condition (1) can be written as
 $$
 S(x,y) = \int_{-\infty}^\infty S_{\theta}(x,y) dH(\theta)
-$$ 
-where $H$ is a non-negative measure and 
+$$
+where $H$ is a non-negative measure and
 $$
 S_{\theta}(x,y) = \begin{cases}
   |y-\theta| & \text{if} \min(x,y)\le\theta < \max(x,y) \\
@@ -49,12 +49,13 @@ and plot this as a function of $\theta$. This is what Ehm et al call a "Murphy d
 
 I have written some R code for producing these plots. Here it is applied to rolling one-step forecasts computed using ETS and ARIMA models. The data was simulated from an ARIMA model, so we would expect the ARIMA forecasts to be better:
 
-```{r, cache=TRUE}    
+```{r, cache=TRUE}
     source("https://robjhyndman.com/Rfiles/murphy.R")
     library(forecast)
+    set.seed(2015)
     y <- arima.sim(n = 300, list(ar = c(0.8897, -0.4858), ma = c(-0.2279, 0.2488)),
                    sd = sqrt(0.1796))
-    
+
     # Rolling one-step forecasts
     f1 <- f2 <- ts(numeric(300)*NA)
     for(i in 30:299)
@@ -63,11 +64,11 @@ I have written some R code for producing these plots. Here it is applied to roll
       fit2 <- auto.arima(window(y,end=i))
       f1[i+1] <- forecast(fit1, PI=FALSE, h=1)$mean
       f2[i+1] <- forecast(fit2, h=1)$mean
-    } 
-    
+    }
+
     murphydiagram(y, f1, f2)
     legend("topleft", lty=1, col=c("blue","red"), legend=c("ETS","ARIMA"))
-    
+
     murphydiagram(y, f1, f2, type='diff', main="ETS - ARIMA")
 ```
 

@@ -12,6 +12,7 @@ categories:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
 options(digits=4)
+set.seed(2017)
 ```
 
 I've been using R or its predecessors for about 30 years, so I tend to I know a lot about R, but I don't necessarily know how to use modern R tools. Lately, I've been teaching my students the tidyverse approach to data analysis, which means that I need to unlearn some old approaches and to re-learn them using new tools. But old dogs and new tricks...

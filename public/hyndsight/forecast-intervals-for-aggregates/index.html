@@ -119,8 +119,9 @@ fc &lt;- forecast(fit, h=24)
 plot(fc)</code></pre>
 <p><img src="https://robjhyndman.com/hyndsight/2016-09-14-forecast-intervals-for-aggregates_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Suppose we wish to forecast the aggregate gas demand in the next six months.</p>
-<pre class="r"><code>nsim &lt;- 10000
-h &lt;- 6 
+<pre class="r"><code>set.seed(2015)
+nsim &lt;- 10000
+h &lt;- 6
 sim &lt;- numeric(nsim)
 for(i in seq_len(nsim))
   sim[i] &lt;- sum(simulate(fit, future=TRUE, nsim=h))
@@ -132,14 +133,14 @@ meanagg &lt;- mean(sim)</code></pre>
 <pre class="r"><code>#80% interval:
 quantile(sim, prob=c(0.1, 0.9))</code></pre>
 <pre><code>##      10%      90% 
-## 254142.8 298378.9</code></pre>
+## 254775.8 298686.6</code></pre>
 <pre class="r"><code>#95% interval:
 quantile(sim, prob=c(0.025, 0.975))</code></pre>
 <pre><code>##     2.5%    97.5% 
-## 243288.5 310468.1</code></pre>
+## 243385.0 311470.3</code></pre>
 
 
-      <meta itemprop="wordCount" content="243">
+      <meta itemprop="wordCount" content="244">
       <meta itemprop="datePublished" content="2016-09-14">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/forecast-intervals-for-aggregates/">
 

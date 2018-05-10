@@ -141,9 +141,10 @@ and plot this as a function of <span class="math inline">\(\theta\)</span>. This
 <p>I have written some R code for producing these plots. Here it is applied to rolling one-step forecasts computed using ETS and ARIMA models. The data was simulated from an ARIMA model, so we would expect the ARIMA forecasts to be better:</p>
 <pre class="r"><code>    source(&quot;https://robjhyndman.com/Rfiles/murphy.R&quot;)
     library(forecast)
+    set.seed(2015)
     y &lt;- arima.sim(n = 300, list(ar = c(0.8897, -0.4858), ma = c(-0.2279, 0.2488)),
                    sd = sqrt(0.1796))
-    
+
     # Rolling one-step forecasts
     f1 &lt;- f2 &lt;- ts(numeric(300)*NA)
     for(i in 30:299)
@@ -152,8 +153,8 @@ and plot this as a function of <span class="math inline">\(\theta\)</span>. This
       fit2 &lt;- auto.arima(window(y,end=i))
       f1[i+1] &lt;- forecast(fit1, PI=FALSE, h=1)$mean
       f2[i+1] &lt;- forecast(fit2, h=1)$mean
-    } 
-    
+    }
+
     murphydiagram(y, f1, f2)
     legend(&quot;topleft&quot;, lty=1, col=c(&quot;blue&quot;,&quot;red&quot;), legend=c(&quot;ETS&quot;,&quot;ARIMA&quot;))</code></pre>
 <p><img src="https://robjhyndman.com/hyndsight/2015-07-16-murphy-diagrams_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
@@ -163,7 +164,7 @@ and plot this as a function of <span class="math inline">\(\theta\)</span>. This
 <p>Currently my R code only works for the mean function, but it would be easy enough to modify the function to handle quantiles and expectiles as well.</p>
 
 
-      <meta itemprop="wordCount" content="495">
+      <meta itemprop="wordCount" content="496">
       <meta itemprop="datePublished" content="2015-07-16">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/murphy-diagrams/">
 

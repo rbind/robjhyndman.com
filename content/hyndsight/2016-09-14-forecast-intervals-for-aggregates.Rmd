@@ -33,8 +33,9 @@ plot(fc)
 Suppose we wish to forecast the aggregate gas demand in the next six months.
 
 ```{r, cache=TRUE}
+set.seed(2015)
 nsim <- 10000
-h <- 6 
+h <- 6
 sim <- numeric(nsim)
 for(i in seq_len(nsim))
   sim[i] <- sum(simulate(fit, future=TRUE, nsim=h))

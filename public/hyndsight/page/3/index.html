@@ -649,7 +649,7 @@ Course blurb Forecasting involves making predictions about the future. It is req
 
 The nnetar function in the forecast package for R fits a neural network model to a time series with lagged values of the time series as inputs (and possibly some other exogenous inputs). So it is a nonlinear autogressive model, and it is not possible to analytically derive prediction intervals. Therefore we use simulation.
 Suppose we fit a NNETAR model to the famous Canadian lynx data:
-library(forecast) (fit &lt;- nnetar(lynx, lambda=0.
+library(forecast) set.seed(2015) (fit &lt;- nnetar(lynx, lambda=0.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/nnetar-prediction-intervals/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
