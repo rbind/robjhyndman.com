@@ -10,7 +10,7 @@ title: "Research team"
 ## PhD students
 
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
-  1. **Sayani Gupta**  *Statistical analysis and visualisation of spatially distributed big time series electricity usage data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani-0711)
+  1. **[Sayani Gupta](https://www.researchgate.net/profile/Sayani_Gupta3)**  *Statistical analysis and visualisation of spatially distributed big time series electricity usage data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **Cameron Roach**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Dilini Talagala](https://acems.org.au/our-people/priyanga-dilini-talagala)**, *Anomaly detection in streaming time series data* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pridiltal)
   1. **[Thiyanga Talagala](https://acems.org.au/our-people/thiyanga-talagala)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/thiyangt)
