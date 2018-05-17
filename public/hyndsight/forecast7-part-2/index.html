@@ -107,8 +107,7 @@
     </div>
 <div class="unit-60">
 
-  <p>As mentioned in <a href="https://robjhyndman.com/hyndsight/forecast7-ggplot2/">my previous post on the forecast package v7</a>, the most visible feature was the introduction of <a href="http://ggplot2.org/">ggplot2 graphics</a>. This post briefly summarizes the remaining new features of forecast v7.
-<!-- more --></p>
+  <p>As mentioned in <a href="https://robjhyndman.com/hyndsight/forecast7-ggplot2/">my previous post on the forecast package v7</a>, the most visible feature was the introduction of <a href="http://ggplot2.org/">ggplot2 graphics</a>. This post briefly summarizes the remaining new features of forecast v7.</p>
 <pre class="r"><code>library(forecast)
 library(ggplot2)</code></pre>
 <div id="tslm-rewritten" class="section level3">
@@ -132,8 +131,8 @@ fc1 &lt;- forecast(fit, biasadj=TRUE, h=20, level=95)
 fc2 &lt;- forecast(fit, biasadj=FALSE, h=20)
 cols &lt;- c(&quot;Mean&quot;=&quot;#0000ee&quot;,&quot;Median&quot;=&quot;#ee0000&quot;)
 autoplot(fc1) + ylab(&quot;Price&quot;) + xlab(&quot;Year&quot;) +
-  geom_line(aes(x=time(fc2$mean),y=fc2$mean, colour=&quot;Median&quot;)) +
-  geom_line(aes(x=time(fc1$mean),y=fc1$mean, colour=&quot;Mean&quot;)) +
+  autolayer(fc2, PI=FALSE, series=&quot;Median&quot;) +
+  autolayer(fc1, PI=FALSE, series=&quot;Mean&quot;) +
   guides(fill=FALSE) +
   scale_colour_manual(name=&quot;Forecasts&quot;,values=cols)</code></pre>
 <p><img src="https://robjhyndman.com/hyndsight/2016-06-01-forecast7-part-2_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
@@ -174,7 +173,7 @@ autoplot(fc1) + ylab(&quot;Price&quot;) + xlab(&quot;Year&quot;) +
 </div>
 
 
-      <meta itemprop="wordCount" content="721">
+      <meta itemprop="wordCount" content="723">
       <meta itemprop="datePublished" content="2016-06-01">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/forecast7-part-2/">
 
