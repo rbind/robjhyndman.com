@@ -21,6 +21,16 @@ This is the first time I&amp;rsquo;ve taught this workshop in the US, having pre
     </item>
     
     <item>
+      <title>Upcoming talks: May-July 2018</title>
+      <link>https://robjhyndman.com/hyndsight/upcoming-talks-2018/</link>
+      <pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/upcoming-talks-2018/</guid>
+      <description>First semester teaching is nearly finished, and that means conference season for me. Here are some talks I&amp;rsquo;m giving in the next two months. Click the links for more details.
+ Melbourne, Australia. 28 May: Panel discussion: Forecasting models, the uncertainties and associated risk Boulder, Colorado, USA. 17-20 June: International Symposium on Forecasting. I&amp;rsquo;ll be talking about &amp;ldquo;Tidy forecasting in R&amp;rdquo;. New York, USA. 21 June: Feature-based time series analysis. Time and venue yet to be announced.</description>
+    </item>
+    
+    <item>
       <title>forecast v8.3 now on CRAN</title>
       <link>https://robjhyndman.com/hyndsight/forecast83/</link>
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
@@ -2179,17 +2189,6 @@ If you think you have found a bug in one of my R packages, report it on github a
       <description>This question comes from a comment on another post:
  I&amp;rsquo;ve seen authors citing as many references as possible to try to please potential referees. Many of those references are low quality papers though. Any general guidance about a typical length for the reference section?
  It depends on the subject and style of the paper. I&amp;rsquo;ve written a paper with over 900 citations, but that was a review of time series forecasting over a 25 year period, and so it had to include a lot of references.</description>
-    </item>
-    
-    <item>
-      <title>New job opportunities at Monash</title>
-      <link>https://robjhyndman.com/hyndsight/maxima-jobs/</link>
-      <pubDate>Tue, 24 Mar 2015 05:21:08 +0000</pubDate>
-      
-      <guid>https://robjhyndman.com/hyndsight/maxima-jobs/</guid>
-      <description>We are now advertising for various positions in applied statistics, operations research and applied mathematics.
-Click here for details These jobs are with MAXIMA (the Monash Academy for Cross &amp;amp; Interdisciplinary Mathematical Applications).
-Please do not send any questions to me (I won&amp;rsquo;t answer). Click above and fol­low the instructions.</description>
     </item>
     
     <item>

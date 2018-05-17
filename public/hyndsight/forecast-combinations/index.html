@@ -127,13 +127,13 @@ autoplot(df) +
 MLpol0 &lt;- mixture(model = &quot;MLpol&quot;, loss.type = &quot;square&quot;)
 weights &lt;- predict(MLpol0, X, test, type=&#39;weights&#39;)
 head(weights)</code></pre>
-<pre><code>##             X1        X2        X3
-## [1,] 0.3333333 0.3333333 0.3333333
-## [2,] 0.5403809 0.0000000 0.4596191
-## [3,] 0.6531038 0.0000000 0.3468962
-## [4,] 0.4637675 0.0000000 0.5362325
-## [5,] 0.0000000 0.0000000 1.0000000
-## [6,] 0.0000000 0.0000000 1.0000000</code></pre>
+<pre><code>##          X1     X2     X3
+## [1,] 0.3333 0.3333 0.3333
+## [2,] 0.5404 0.0000 0.4596
+## [3,] 0.6531 0.0000 0.3469
+## [4,] 0.4638 0.0000 0.5362
+## [5,] 0.0000 0.0000 1.0000
+## [6,] 0.0000 0.0000 1.0000</code></pre>
 <pre class="r"><code>tail(weights)</code></pre>
 <pre><code>##       X1 X2 X3
 ## [79,]  0  1  0
@@ -186,7 +186,7 @@ autoplot(df) +
           Hybrid2=mean((test - fc2$mean)^2))
 round(mse,2)</code></pre>
 <pre><code>##   Opera Hybrid1 Hybrid2 
-##    0.68    0.66    1.15</code></pre>
+##    0.68    0.66    1.17</code></pre>
 <p>It should be noted, however, that the opera weights are updated using the past test data, while the forecastHybrid weights are based only on the training data. So this comparison is not entirely “fair”.</p>
 <p>Also, all of these results are much better than any of the individual forecasting methods:</p>
 <pre class="r"><code>mse2 &lt;- c(ETS=mean((test-ETS$mean)^2),
