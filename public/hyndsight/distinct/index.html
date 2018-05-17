@@ -180,11 +180,11 @@ library(microbenchmark)
 
 microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 <pre><code>## Unit: microseconds
-##  expr    min     lq   mean median     uq    max neval cld
-##  d1()  119.4  130.6  183.9  150.9  159.4   3475   100   a
-##  d2() 2563.2 2616.9 9455.4 2655.8 2758.9 662595   100   a
-##  d3() 1516.2 1546.9 1715.5 1573.8 1634.4   5307   100   a
-##  d4() 1089.7 1109.9 1368.9 1130.8 1158.3  17465   100   a</code></pre>
+##  expr    min     lq   mean median     uq    max neval
+##  d1()  115.7  141.2  179.9  148.2  159.2   3296   100
+##  d2() 2556.4 2607.5 9201.5 2649.4 2700.1 638019   100
+##  d3() 1524.2 1538.7 1886.0 1571.0 1601.5  23726   100
+##  d4() 1095.0 1113.8 1215.9 1127.4 1163.2   3554   100</code></pre>
 <p>Amazing. Those old tricks are pretty fast! Of the tidyverse approaches, the last one is clearly better, which is interesting in that it has to go searching for duplicates rather than just pick off the first row of each group. Presumably the grouping and ungrouping of approach 2 is slowing things down.</p>
 <div id="epilogue" class="section level2">
 <h2>Epilogue</h2>
@@ -194,7 +194,7 @@ microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 </div>
 
 
-      <meta itemprop="wordCount" content="815">
+      <meta itemprop="wordCount" content="810">
       <meta itemprop="datePublished" content="2017-08-31">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/distinct/">
 
