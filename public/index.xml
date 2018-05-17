@@ -1108,7 +1108,8 @@ So block out 22-28 June 2017 on your calendars so you can enjoy a tropical parad
       <pubDate>Wed, 01 Jun 2016 07:22:52 +0000</pubDate>
       
       <guid>https://robjhyndman.com/hyndsight/forecast7-part-2/</guid>
-      <description>As mentioned in my previous post on the forecast package v7, the most visible feature was the introduction of ggplot2 graphics. This post briefly summarizes the remaining new features of forecast v7. library(forecast) library(ggplot2) tslm rewritten The tslm function is designed to fit linear models to time series data. It is intended to approximately mimic lm (and calls lm to do the estimation), but to package the output to remember the ts attributes.</description>
+      <description>As mentioned in my previous post on the forecast package v7, the most visible feature was the introduction of ggplot2 graphics. This post briefly summarizes the remaining new features of forecast v7.
+library(forecast) library(ggplot2) tslm rewritten The tslm function is designed to fit linear models to time series data. It is intended to approximately mimic lm (and calls lm to do the estimation), but to package the output to remember the ts attributes.</description>
     </item>
     
     <item>

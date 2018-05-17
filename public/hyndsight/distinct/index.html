@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://robjhyndman.com/css/finite.css">
     <link rel="stylesheet" href="https://robjhyndman.com/css/kube.css">
     <link rel="stylesheet" href="https://robjhyndman.com/css/robjhyndman.css">
-  </head>
+</head>
   <body>
     <header>
       <nav class="nav-bar">
@@ -181,10 +181,10 @@ library(microbenchmark)
 microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 <pre><code>## Unit: microseconds
 ##  expr    min     lq   mean median     uq    max neval
-##  d1()  115.7  141.2  179.9  148.2  159.2   3296   100
-##  d2() 2556.4 2607.5 9201.5 2649.4 2700.1 638019   100
-##  d3() 1524.2 1538.7 1886.0 1571.0 1601.5  23726   100
-##  d4() 1095.0 1113.8 1215.9 1127.4 1163.2   3554   100</code></pre>
+##  d1()  120.6  137.6  181.6    150  157.1   3380   100
+##  d2() 2538.8 2615.0 9536.5   2650 2689.0 654359   100
+##  d3() 1483.4 1546.0 1631.0   1556 1575.5   5334   100
+##  d4() 1030.3 1052.3 1187.0   1069 1084.7   3643   100</code></pre>
 <p>Amazing. Those old tricks are pretty fast! Of the tidyverse approaches, the last one is clearly better, which is interesting in that it has to go searching for duplicates rather than just pick off the first row of each group. Presumably the grouping and ungrouping of approach 2 is slowing things down.</p>
 <div id="epilogue" class="section level2">
 <h2>Epilogue</h2>
@@ -337,8 +337,13 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
     <script src="https://robjhyndman.com/js/finite.js"></script>
 
     
-    <script src="https://robjhyndman.com/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+
+    <script>
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+    </script>
 
     
     

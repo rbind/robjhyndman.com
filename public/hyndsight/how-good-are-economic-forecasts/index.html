@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://robjhyndman.com/css/finite.css">
     <link rel="stylesheet" href="https://robjhyndman.com/css/kube.css">
     <link rel="stylesheet" href="https://robjhyndman.com/css/robjhyndman.css">
-  </head>
+</head>
   <body>
     <header>
       <nav class="nav-bar">
@@ -249,8 +249,13 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
     <script src="https://robjhyndman.com/js/finite.js"></script>
 
     
-    <script src="https://robjhyndman.com/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+
+    <script>
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+    </script>
 
     
     

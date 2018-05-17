@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/finite.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/kube.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/robjhyndman.css">
-  </head>
+</head>
   <body>
     <header>
       <nav class="nav-bar">
@@ -74,8 +74,13 @@
     <script src="/js/finite.js"></script>
 
     <!-- Code highlighting -->
-    <script src="/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+
+    <script>
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+    </script>
 
     <!-- LaTeX math rendering -->
     {{ if and (isset .Params "mathjax") (eq .Params.mathjax true) }}
@@ -84,7 +89,7 @@
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
       });
     </script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
     </script>
     {{ end }}
 
