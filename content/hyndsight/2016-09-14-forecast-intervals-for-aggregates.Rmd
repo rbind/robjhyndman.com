@@ -32,7 +32,7 @@ plot(fc)
 
 Suppose we wish to forecast the aggregate gas demand in the next six months.
 
-```{r, cache=TRUE}
+```{r sim1, cache=TRUE}
 set.seed(2015)
 nsim <- 10000
 h <- 6
@@ -44,13 +44,13 @@ meanagg <- mean(sim)
 
 The mean of the simulations is very close to the sum of the individual forecasts:
 
-```{r, cache=TRUE}
+```{r sim2, cache=TRUE, dependson='sim1'}
 sum(fc$mean[1:6])
 ```
 
 Prediction intervals are now easy to obtain:
 
-```{r, cache=TRUE}
+```{r sim3, cache=TRUE, dependson='sim1'}
 #80% interval:
 quantile(sim, prob=c(0.1, 0.9))
 #95% interval:
