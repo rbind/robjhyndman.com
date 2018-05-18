@@ -107,94 +107,66 @@
     </div>
 <div class="unit-60">
 
-  
-
-<p>Last week, version 5.0 of the <code>forecast</code> package for R was released. There are a few new functions and changes made to the package, which is why I increased the version number to 5.0. Thanks to <a href="http://earo.me">Earo Wang</a> for helping with this new version.</p>
-
+  <p>Last week, version 5.0 of the <code>forecast</code> package for R was released. There are a few new functions and changes made to the package, which is why I increased the version number to 5.0. Thanks to <a href="http://earo.me">Earo Wang</a> for helping with this new version.</p>
 <!-- more -->
-
-<h3 id="handling-missing-values-and-outliers">Handling missing values and outliers</h3>
-
+<div id="handling-missing-values-and-outliers" class="section level3">
+<h3>Handling missing values and outliers</h3>
 <p>Data cleaning is often the first step that data scientists and analysts take to ensure statistical modelling is supported by good data. Some new functions and extended functions have been added to the <code>forecast</code> package to make this job easier, and to automate some steps.</p>
-
-<p>The existing <code>na.interp</code> function has been upgraded to handle seasonal series much better. It now fits a seasonal model to the data, and then interpolates the seasonally adjusted series, before re-seasonalizing. I&rsquo;ve tested it on a lot of data and I think it works pretty well, although I&rsquo;m sure users will come up with some test cases that cause problems.</p>
-
-<p><code>tsoutliers</code> is a new function for the purpose of identifying outliers and suggesting reasonable replacements. Residuals are identified by fitting a loess curve for non-seasonal data and via a periodic STL decomposition for seasonal data. Residuals are labelled as outliers if they lie outside the range $\pm 2(q<em>{0.9}-q</em>{0.1})$ where $q<em>p$ is the $p$-quantile of the residuals. This is a little experimental. For a Gaussian distribution, it will identify less than 1 point in 3 million as an outlier. In comparison, when boxplots are used, an outlier is shown if it lies outside $\pm 1.5(q</em>{0.75}-q<em>{0.25})$ and extreme outliers are outside $\pm 3.0(q</em>{0.75}-q_{0.25})$. By these rules, under a Gaussian distribution, 4% of points will be identified as outliers and about 1 in 20000 as extreme outliers.</p>
-
-<p>Real data are often not as well-behaved as a Gaussian distribution, and outliers can be present. For example, the weekly air passenger traffic between Melbourne and Sydney (<code>melsyd</code> in the <code>fpp</code> package) contain seven consecutive weeks of zero traffic, and one week of partial traffic, due to a pilots&rsquo; strike. The <code>tsoutliers</code> function can replace those with estimates:</p>
-
-<pre><code>library(fpp)
-tsoutliers(melsyd[,3])
-$index
-[1] 113 114 115 116 117 118 119 120
-
-$replacements
-[1] 17.57579 16.94973 16.15192 16.12787 16.20718 14.88098 14.46360 12.56176
-</code></pre>
-
+<p>The existing <code>na.interp</code> function has been upgraded to handle seasonal series much better. It now fits a seasonal model to the data, and then interpolates the seasonally adjusted series, before re-seasonalizing. I’ve tested it on a lot of data and I think it works pretty well, although I’m sure users will come up with some test cases that cause problems.</p>
+<p><code>tsoutliers</code> is a new function for the purpose of identifying outliers and suggesting reasonable replacements. Residuals are identified by fitting a loess curve for non-seasonal data and via a periodic STL decomposition for seasonal data. Residuals are labelled as outliers if they lie outside the range <span class="math inline">\(\pm{2}(q_{0.9}-q_{0.1})\)</span> where <span class="math inline">\(q_{p}\)</span> is the <span class="math inline">\(p\)</span>-quantile of the residuals. This is a little experimental. For a Gaussian distribution, it will identify less than 1 point in 3 million as an outlier. In comparison, when boxplots are used, an outlier is shown if it lies outside <span class="math inline">\(\pm{1.5}(q_{0.75}-q_{0.25})\)</span> and extreme outliers are outside <span class="math inline">\(\pm{3.0}(q_{0.75}-q_{0.25})\)</span>. By these rules, under a Gaussian distribution, 4% of points will be identified as outliers and about 1 in 20000 as extreme outliers.</p>
+<p>Real data are often not as well-behaved as a Gaussian distribution, and outliers can be present. For example, the weekly air passenger traffic between Melbourne and Sydney (<code>melsyd</code> in the <code>fpp</code> package) contain seven consecutive weeks of zero traffic, and one week of partial traffic, due to a pilots’ strike. The <code>tsoutliers</code> function can replace those with estimates:</p>
+<pre class="r"><code>library(fpp)
+tsoutliers(melsyd[,3])</code></pre>
+<pre><code>## $index
+## [1] 114 115 116 117 118 119 120
+## 
+## $replacements
+## [1]  7.529476  8.129252  9.493871 10.869695 10.726863 11.540066 10.902935</code></pre>
 <p>A more general function is <code>tsclean</code> which is a combination of <code>na.interp</code> and <code>tsoutliers</code>, so it handles both missing values and outliers. It will return a cleaned version of a time series with outliers and missing values replaced by estimated values.</p>
-
-<pre><code>library(fpp)
-plot(melsyd[,3], main=&quot;Economy class passengers: Melbourne-Sydney&quot;)
-lines(tsclean(melsyd[,3]), col='red')
-</code></pre>
-
+<pre class="r"><code>plot(melsyd[,3], main=&quot;Economy class passengers: Melbourne-Sydney&quot;)
+lines(tsclean(melsyd[,3]), col=&#39;red&#39;)</code></pre>
+<p><img src="https://robjhyndman.com/hyndsight/2014-01-27-forecast5_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>These three functions have one common argument <code>lambda</code> (a Box-Cox transformation parameter). If present, the time series is transformed before the outliers are identified and replaced, or missing values are estimated.</p>
-
 <p>These functions are also now used when <code>robust=TRUE</code> in <code>forecast.ts</code>. The idea is that <code>forecast.ts</code> can take any time series and return something reasonable, even if the original series has missing values and outliers.</p>
-
-<h3 id="calendar-variables">Calendar variables</h3>
-
-<p>We&rsquo;ve added two functions, <code>bizdays</code> and <code>easter</code>, into the package; they can be used when adjusting for calendar effects. Like the function <code>monthdays</code>, both functions work for monthly and quarterly data.</p>
-
-<p><code>bizdays</code>, as its name suggests, returns the number of business days in each month or quarter of the observed time series. Along with a time series input, it has an argument <code>FinCenter</code> referring to the &ldquo;Financial Center&rdquo; (equivalent to the <code>finCenter</code> in the <code>timeDate</code> package). It is also assumed that weekdays are from Monday to Friday.</p>
-
-<p>As Easter holiday isn&rsquo;t fixed in relation to the civil calendar, which can make it challenging to forecast a time series with Easter effects. The function <code>easter</code> will return a dummy variable indicating if Easter is present in each month. Easter is defined as the days between Good Friday and Easter Sunday inclusively, plus optionally Easter Monday if <code>easter.mon = TRUE</code>. The function will return 0 for all months or quarters except those containing some of the days of Easter. A fractional result is returned if Easter spans March and April; otherwise 1 indicates that Easter falls entirely within the month or quarter.</p>
-
+</div>
+<div id="calendar-variables" class="section level3">
+<h3>Calendar variables</h3>
+<p>We’ve added two functions, <code>bizdays</code> and <code>easter</code>, into the package; they can be used when adjusting for calendar effects. Like the function <code>monthdays</code>, both functions work for monthly and quarterly data.</p>
+<p><code>bizdays</code>, as its name suggests, returns the number of business days in each month or quarter of the observed time series. Along with a time series input, it has an argument <code>FinCenter</code> referring to the “Financial Center” (equivalent to the <code>finCenter</code> in the <code>timeDate</code> package). It is also assumed that weekdays are from Monday to Friday.</p>
+<p>As Easter holiday isn’t fixed in relation to the civil calendar, which can make it challenging to forecast a time series with Easter effects. The function <code>easter</code> will return a dummy variable indicating if Easter is present in each month. Easter is defined as the days between Good Friday and Easter Sunday inclusively, plus optionally Easter Monday if <code>easter.mon = TRUE</code>. The function will return 0 for all months or quarters except those containing some of the days of Easter. A fractional result is returned if Easter spans March and April; otherwise 1 indicates that Easter falls entirely within the month or quarter.</p>
 <p>These two functions are intended to give output that can be used as regression variables in <code>auto.arima</code> or <code>tslm</code>.</p>
-
-<h3 id="changes-to-arima-modelling">Changes to ARIMA modelling</h3>
-
+</div>
+<div id="changes-to-arima-modelling" class="section level3">
+<h3>Changes to ARIMA modelling</h3>
 <p>The biggest change is actually not part of the forecast package. When a regression variable is present (including when a drift term is used), the estimation was very poorly initialized in the <code>stats::arima</code> function. I <a href="https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=15396">proposed a fix</a> to the R core team, and this became part of Rv3.0.2. As <code>stats::arima</code> is the engine behind the <code>Arima</code> and <code>auto.arima</code> functions in the <code>forecast</code> package, this means that the package can now sometimes return different results to the results obtained in older versions of R.</p>
-
 <p>Changes to the <code>forecast</code> package itself include:</p>
-
 <ul>
-<li><p>Added arguments <code>max.D</code> and <code>max.d</code> to <code>auto.arima()</code>, <code>ndiffs()</code> and <code>nsdiffs()</code>.</p></li>
-
-<li><p>Removed drift term in <code>Arima()</code> when $d+D&gt;1$.</p></li>
-
-<li><p>Added bootstrap option to <code>forecast.Arima()</code></p></li>
+<li>Added arguments <code>max.D</code> and <code>max.d</code> to <code>auto.arima()</code>, <code>ndiffs()</code> and <code>nsdiffs()</code>.</li>
+<li>Removed drift term in <code>Arima()</code> when <span class="math inline">\(d+D&gt;1\)</span>.</li>
+<li>Added bootstrap option to <code>forecast.Arima()</code></li>
 </ul>
-
 <p>The latter option now makes it possible to forecast from an ARIMA model without making the assumption of Gaussian errors.</p>
-
-<h3 id="minor-changes-and-bug-fixes">Minor changes and bug fixes</h3>
-
+</div>
+<div id="minor-changes-and-bug-fixes" class="section level3">
+<h3>Minor changes and bug fixes</h3>
 <p>Other changes include:</p>
-
 <ul>
-<li><p>Added argument model to <code>dshw()</code> to enable an estimated model to be applied to a new time series.</p></li>
-
-<li><p>Made several functions more robust to <code>zoo</code> objects.</p></li>
-
-<li><p>Corrected an error in the calculation of AICc when using <code>CV()</code>.</p></li>
-
-<li><p>Made minimum default p in <code>nnetar</code> equal to 1 so it can no longer return a null model.</p></li>
-
-<li><p>Improved output from <code>snaive()</code> and <code>naive()</code> to better reflect user expectations</p></li>
-
-<li><p>Allowed <code>Acf()</code> to handle missing values by using <code>na.contiguous</code>. I might change this to <code>na.interp</code> in a future release.</p></li>
-
-<li><p>Changed default information criterion in <code>ets()</code> to AICc. For short time series, it may choose a different model from previous versions.</p></li>
+<li>Added argument model to <code>dshw()</code> to enable an estimated model to be applied to a new time series.</li>
+<li>Made several functions more robust to <code>zoo</code> objects.</li>
+<li>Corrected an error in the calculation of AICc when using <code>CV()</code>.</li>
+<li>Made minimum default p in <code>nnetar</code> equal to 1 so it can no longer return a null model.</li>
+<li>Improved output from <code>snaive()</code> and <code>naive()</code> to better reflect user expectations</li>
+<li>Allowed <code>Acf()</code> to handle missing values by using <code>na.contiguous</code>. I might change this to <code>na.interp</code> in a future release.</li>
+<li>Changed default information criterion in <code>ets()</code> to AICc. For short time series, it may choose a different model from previous versions.</li>
 </ul>
+</div>
+<div id="bugs" class="section level3">
+<h3>Bugs?</h3>
+<p>If any user thinks they have found a bug, please report it on the <a href="http://github.com/robjhyndman/forecast/issues?labels=bug&amp;state=open">github page</a> and include a minimal reproducible example. If I can’t reproduce it, I can’t fix it.</p>
+</div>
 
-<h3 id="bugs">Bugs?</h3>
 
-<p>If any user thinks they have found a bug, please report it on the <a href="http://github.com/robjhyndman/forecast/issues?labels=bug&amp;state=open">github page</a> and include a minimal reproducible example. If I can&rsquo;t reproduce it, I can&rsquo;t fix it.</p>
-
-
-      <meta itemprop="wordCount" content="966">
+      <meta itemprop="wordCount" content="965">
       <meta itemprop="datePublished" content="2014-01-27">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/forecast5/">
 
@@ -346,6 +318,14 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
     </script>
 
     
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
     
 
 

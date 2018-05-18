@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2014-01-27 02:26:52+00:00
-
-link: https://robjhyndman.com/hyndsight/forecast5/
 slug: forecast5
 title: New in forecast 5.0
-wordpress_id: 2379
+mathjax: true
 categories:
 - computing
 - forecasting
@@ -18,51 +16,33 @@ Last week, version 5.0 of the `forecast` package for R was released. There are a
 
 <!-- more -->
 
-
-
 ### Handling missing values and outliers
-
-
 
 Data cleaning is often the first step that data scientists and analysts take to ensure statistical modelling is supported by good data. Some new functions and extended functions have been added to the `forecast` package to make this job easier, and to automate some steps.
 
 The existing `na.interp` function has been upgraded to handle seasonal series much better. It now fits a seasonal model to the data, and then interpolates the seasonally adjusted series, before re-seasonalizing. I've tested it on a lot of data and I think it works pretty well, although I'm sure users will come up with some test cases that cause problems.
 
-`tsoutliers` is a new function for the purpose of identifying outliers and suggesting reasonable replacements. Residuals are identified by fitting a loess curve for non-seasonal data and via a periodic STL decomposition for seasonal data. Residuals are labelled as outliers if they lie outside the range $\pm 2(q_{0.9}-q_{0.1})$ where $q_p$ is the $p$-quantile of the residuals. This is a little experimental. For a Gaussian distribution, it will identify less than 1 point in 3 million as an outlier. In comparison, when boxplots are used, an outlier is shown if it lies outside $\pm 1.5(q_{0.75}-q_{0.25})$ and extreme outliers are outside $\pm 3.0(q_{0.75}-q_{0.25})$. By these rules, under a Gaussian distribution, 4% of points will be identified as outliers and about 1 in 20000 as extreme outliers.
+`tsoutliers` is a new function for the purpose of identifying outliers and suggesting reasonable replacements. Residuals are identified by fitting a loess curve for non-seasonal data and via a periodic STL decomposition for seasonal data. Residuals are labelled as outliers if they lie outside the range $\pm{2}(q_{0.9}-q_{0.1})$ where $q_{p}$ is the $p$-quantile of the residuals. This is a little experimental. For a Gaussian distribution, it will identify less than 1 point in 3 million as an outlier. In comparison, when boxplots are used, an outlier is shown if it lies outside $\pm{1.5}(q_{0.75}-q_{0.25})$ and extreme outliers are outside $\pm{3.0}(q_{0.75}-q_{0.25})$. By these rules, under a Gaussian distribution, 4% of points will be identified as outliers and about 1 in 20000 as extreme outliers.
 
 Real data are often not as well-behaved as a Gaussian distribution, and outliers can be present. For example, the weekly air passenger traffic between Melbourne and Sydney (`melsyd` in the `fpp` package) contain seven consecutive weeks of zero traffic, and one week of partial traffic, due to a pilots' strike. The `tsoutliers` function can replace those with estimates:
 
-
-    
-    library(fpp)
-    tsoutliers(melsyd[,3])
-    $index
-    [1] 113 114 115 116 117 118 119 120
-    
-    $replacements
-    [1] 17.57579 16.94973 16.15192 16.12787 16.20718 14.88098 14.46360 12.56176
-
-
+```{r, warning=FALSE, message=FALSE}
+library(fpp)
+tsoutliers(melsyd[,3])
+```
 
 A more general function is `tsclean` which is a combination of `na.interp` and `tsoutliers`, so it handles both missing values and outliers. It will return a cleaned version of a time series with outliers and missing values replaced by estimated values.
 
-
-    
-    library(fpp)
-    plot(melsyd[,3], main="Economy class passengers: Melbourne-Sydney")
-    lines(tsclean(melsyd[,3]), col='red')
-
-
+```{r}
+plot(melsyd[,3], main="Economy class passengers: Melbourne-Sydney")
+lines(tsclean(melsyd[,3]), col='red')
+```
 
 These three functions have one common argument `lambda` (a Box-Cox transformation parameter). If present, the time series is transformed before the outliers are identified and replaced, or missing values are estimated.
 
 These functions are also now used when `robust=TRUE` in `forecast.ts`. The idea is that `forecast.ts` can take any time series and return something reasonable, even if the original series has missing values and outliers.
 
-
-
 ### Calendar variables
-
-
 
 We've added two functions, `bizdays` and `easter`, into the package; they can be used when adjusting for calendar effects. Like the function `monthdays`, both functions work for monthly and quarterly data.
 
@@ -72,70 +52,30 @@ As Easter holiday isn't fixed in relation to the civil calendar, which can make 
 
 These two functions are intended to give output that can be used as regression variables in `auto.arima` or `tslm`.
 
-
-
 ### Changes to ARIMA modelling
-
-
 
 The biggest change is actually not part of the forecast package. When a regression variable is present (including when a drift term is used), the estimation was very poorly initialized in the `stats::arima` function. I [proposed a fix](https://bugs.r-project.org/bugzilla3/show_bug.cgi?id=15396) to the R core team, and this became part of Rv3.0.2. As `stats::arima` is the engine behind the `Arima` and `auto.arima` functions in the `forecast` package, this means that the package can now sometimes return different results to the results obtained in older versions of R.
 
 Changes to the `forecast` package itself include:
 
-
-
-
-  
   * Added arguments `max.D` and `max.d` to `auto.arima()`, `ndiffs()` and `nsdiffs()`.
-
-  
   * Removed drift term in `Arima()` when $d+D>1$.
-
-  
   * Added bootstrap option to `forecast.Arima()`
-
-
 
 The latter option now makes it possible to forecast from an ARIMA model without making the assumption of Gaussian errors.
 
-
-
 ### Minor changes and bug fixes
 
-
-
 Other changes include:
-
-
-
-
   
   * Added argument model to `dshw()` to enable an estimated model to be applied to a new time series.
-
-  
   * Made several functions more robust to `zoo` objects.
-
-  
   * Corrected an error in the calculation of AICc when using `CV()`.
-
-  
   * Made minimum default p in `nnetar` equal to 1 so it can no longer return a null model.
-
-  
   * Improved output from `snaive()` and `naive()` to better reflect user expectations
-
-  
   * Allowed `Acf()` to handle missing values by using `na.contiguous`. I might change this to `na.interp` in a future release.
-
-  
   * Changed default information criterion in `ets()` to AICc. For short time series, it may choose a different model from previous versions.
 
-
-
-
-
 ### Bugs?
-
-
 
 If any user thinks they have found a bug, please report it on the [github page](http://github.com/robjhyndman/forecast/issues?labels=bug&state=open) and include a minimal reproducible example. If I can't reproduce it, I can't fix it.
