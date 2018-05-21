@@ -21,6 +21,8 @@ Reliable forecasts of business and economic variables must often be obtained aga
  * [7. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/master/7-exponentialsmoothing.pdf)
  * [8. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/master/8-arima.pdf)
  * [9. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/master/9-dynamic-regression.pdf)
+ * [11. Advanced forecasting methods](https://github.com/robjhyndman/ETC3550Slides/raw/master/11-advanced.pdf)
+ * [12. Some practical forecasting issues](https://github.com/robjhyndman/ETC3550Slides/raw/master/12-practical.pdf)
  * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/master/revision.pdf)
 
 &nbsp;
