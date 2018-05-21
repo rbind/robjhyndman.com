@@ -16,12 +16,12 @@ Reliable forecasts of business and economic variables must often be obtained aga
  * [1. Getting started](https://github.com/robjhyndman/ETC3550Slides/raw/master/1-getting-started.pdf)
  * [2. Time series graphics](https://github.com/robjhyndman/ETC3550Slides/raw/master/2-tsgraphics.pdf)
  * [3. The forecasters toolbox](https://github.com/robjhyndman/ETC3550Slides/raw/master/3-toolbox.pdf)
- * [5. Time series regression](https://github.com/robjhyndman/ETC3550Slides/raw/master/5-Regression.pdf)
+ * [5. Time series regression](https://github.com/robjhyndman/ETC3550Slides/raw/master/5-regression.pdf)
  * [6. Time series decomposition](https://github.com/robjhyndman/ETC3550Slides/raw/master/6-decomposition.pdf)
- * [7. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/master/7-ExponentialSmoothing.pdf)
- * [8. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/master/8-ARIMA.pdf)
- * [9. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/master/9-Dynamic-Regression.pdf)
- * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/master/Revision.pdf)
+ * [7. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/master/7-exponentialsmoothing.pdf)
+ * [8. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/master/8-arima.pdf)
+ * [9. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/master/9-dynamic-regression.pdf)
+ * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/master/revision.pdf)
 
 &nbsp;
 
