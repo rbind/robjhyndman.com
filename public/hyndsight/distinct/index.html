@@ -180,11 +180,11 @@ library(microbenchmark)
 
 microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 <pre><code>## Unit: microseconds
-##  expr    min     lq   mean median     uq    max neval cld
-##  d1()  119.4  130.6  183.9  150.9  159.4   3475   100   a
-##  d2() 2563.2 2616.9 9455.4 2655.8 2758.9 662595   100   a
-##  d3() 1516.2 1546.9 1715.5 1573.8 1634.4   5307   100   a
-##  d4() 1089.7 1109.9 1368.9 1130.8 1158.3  17465   100   a</code></pre>
+##  expr    min     lq   mean median     uq    max neval
+##  d1()  120.6  137.6  181.6    150  157.1   3380   100
+##  d2() 2538.8 2615.0 9536.5   2650 2689.0 654359   100
+##  d3() 1483.4 1546.0 1631.0   1556 1575.5   5334   100
+##  d4() 1030.3 1052.3 1187.0   1069 1084.7   3643   100</code></pre>
 <p>Amazing. Those old tricks are pretty fast! Of the tidyverse approaches, the last one is clearly better, which is interesting in that it has to go searching for duplicates rather than just pick off the first row of each group. Presumably the grouping and ungrouping of approach 2 is slowing things down.</p>
 <div id="epilogue" class="section level2">
 <h2>Epilogue</h2>
@@ -194,7 +194,7 @@ microbenchmark(d1(), d2(), d3(), d4(), times=100)</code></pre>
 </div>
 
 
-      <meta itemprop="wordCount" content="815">
+      <meta itemprop="wordCount" content="810">
       <meta itemprop="datePublished" content="2017-08-31">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/distinct/">
 
@@ -350,13 +350,16 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
 
 
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-5004894-1', 'auto');
-ga('send', 'pageview');
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5004894-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
 
  </body>
