@@ -22,10 +22,4 @@ The position will be based with me at Monash University's Clayton campus, in Mel
 
 Ask questions in the comments below (preferred), or email me at [Rob.Hyndman@monash.edu](mailto:Rob.Hyndman@monash.edu?Subject=ACEMS postdoc).
 
-
-[Official job ad](http://careers.pageuppeople.com/513/cw/en/job/569926/research-fellow-econometrics-and-business-statistics)
-
-[Position description](https://secure.dc2.pageuppeople.com/apply/TransferRichTextFile.ashx?sData=Fwg6i4Eli-A2k3CzyxNWFAE5h0093nP7GTyCn9fc4L5Qxfcg38-6LfNWZeB667BNnxVAjYz8noQ%7e)
-
-
-**Closing date:** 3 January
+**Closing date:** Open until filled.
