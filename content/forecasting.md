@@ -15,7 +15,7 @@ The data sets from the book can be found in the [**fma** package for R](http://c
 
 The solutions to exercises can be [downloaded here](/files/solutions.pdf).
 
-The book is now out-of-date. I recommend my new book entitled [*Forecasting: principles and practice*](http://Otexts.org/fpp/). 
+The book is now out-of-date. I recommend my new book entitled [*Forecasting: principles and practice*](http://Otexts.org/fpp2/).
 
 
 
