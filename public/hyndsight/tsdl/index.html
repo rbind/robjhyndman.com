@@ -113,14 +113,14 @@
     </div>
 <div class="unit-60">
 
-  <p>The <a href="http://data.is/TSDLdemo"><em><strong>Time Series Data Library</strong></em></a> is a collection of about 800 time series that I have maintained since about 1992, and hosted on my personal website. It includes data from a lot of time series textbooks, as well as many other series that I&rsquo;ve either collected for student projects or helpful people have sent to me.</p>
+  <p>The <a href="https://datamarket.com/data/list/?q=provider:tsdl"><em><strong>Time Series Data Library</strong></em></a> is a collection of about 800 time series that I have maintained since about 1992, and hosted on my personal website. It includes data from a lot of time series textbooks, as well as many other series that I&rsquo;ve either collected for student projects or helpful people have sent to me.</p>
 
-<p>I&rsquo;ve now moved the collection onto <strong><a href="http://data.is/TSDLdemo">DataMarket</a></strong> which provides much better facilities for maintaining and using time series data. You can easily search the collection, graph any series, filter by seasonal period, and so on. You can also export data in many formats. Each data set has its own short link; for example, the famous Canadian lynx data is at <a href="http://data.is/Ky69xY">http://data.is/Ky69xY</a>.</p>
+<p>I&rsquo;ve now moved the collection onto <strong><a href="https://datamarket.com/data/list/?q=provider:tsdl">DataMarket</a></strong> which provides much better facilities for maintaining and using time series data. You can easily search the collection, graph any series, filter by seasonal period, and so on. You can also export data in many formats. Each data set has its own short link; for example, the famous Canadian lynx data is at <a href="http://bit.ly/10Scgaz">http://bit.ly/10Scgaz</a>.</p>
 
 <p>One particularly useful feature is the ability to read directly into R using the <a href="http://cran.r-project.org/web/packages/rdatamarket/">rdatamarket package</a>. All you need to know is the short link. For example, to download &ldquo;Deaths from gun-related homicides in Australia, 1915-2004&rdquo;, use the following R code</p>
 
 <pre><code>library(rdatamarket)
-deaths &lt;- dmseries(&quot;http://data.is/Ky6vVf&quot;)
+deaths &lt;- dmseries(&quot;http://bit.ly/1NLKgXB&quot;)
 </code></pre>
 
 <p>The data is set to <code>zoo</code> class. To make it of <code>ts</code> class, use</p>
@@ -137,7 +137,7 @@ deaths &lt;- dmseries(&quot;http://data.is/Ky6vVf&quot;)
 <p>If you use any data from the TSDL in a publication, please use the following citation:</p>
 
 <blockquote>
-<p>Hyndman, R.J. <em>Time Series Data Library</em>, <a href="http://data.is/TSDLdemo">http://data.is/TSDLdemo</a>. Accessed on <insert date here>.</p>
+<p>Hyndman, R.J. <em>Time Series Data Library</em>, <a href="https://datamarket.com/data/list/?q=provider:tsdl">https://datamarket.com/data/list/?q=provider:tsdl</a>. Accessed on <insert date here>.</p>
 </blockquote>
 
 <p>The data files will remain on my website so that existing links will not be broken.</p>
