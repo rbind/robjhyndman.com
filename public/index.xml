@@ -5,10 +5,19 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Meta-learning how to forecast time series</title>
+      <link>https://robjhyndman.com/publications/fforms/</link>
+      <pubDate>Wed, 06 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/fforms/</guid>
+      <description>A crucial task in time series forecasting is the identification of the most suitable forecasting method. We present a general framework for forecast-model selection using meta-learning. A random forest is used to identify the best forecasting method using only time series features. The framework is evaluated using time series from the M1 and M3 competitions and is shown to yield accurate forecasts comparable to several benchmarks and other commonly used automated approaches of time series forecasting.</description>
+    </item>
     
     <item>
       <title>Forecasting in NYC: 25-27 June 2018</title>
