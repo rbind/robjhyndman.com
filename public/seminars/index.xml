@@ -5,10 +5,23 @@
     <link>https://robjhyndman.com/seminars/</link>
     <description>Recent content in Seminars on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/seminars/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forecasting: principles and practice (NYC)</title>
+      <link>https://robjhyndman.com/seminars/nyc2018/</link>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/nyc2018/</guid>
+      <description>Date: 25-27 June 2018
+Location: eBay, 625 6th Ave, New York, NY 10011, USA.
+This page is for people enrolled in my NYC 3-day workshop.
+Prerequisites Please bring your own laptop with a recent version of R and RStudio installed, along with the following packages and their dependencies:
+ fpp2 readxl thief knitr  Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</description>
+    </item>
     
     <item>
       <title>High dimensional time series analysis</title>
