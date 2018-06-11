@@ -202,19 +202,19 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
   1. The following graphics functions have been introduced:
 
-    ```r
-    autoplot, ggseasonplot, ggsubseriesplot, gglagplot, ggAcf, ggtsdisplay
-    ```
+     ```r
+     autoplot, ggseasonplot, ggsubseriesplot, gglagplot, ggAcf, ggtsdisplay
+     ```
 
-    Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+     Explore your chosen retail time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
 
   2. Repeat for some of the following series:
 
-    ```r
-    bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose
-    ```
+     ```r
+     bicoal, chicken, dole, usdeaths, bricksq, lynx, ibmclose
+     ```
 
-    Use the help files to find out what the series are.
+     Use the help files to find out what the series are.
 
 ### Lab Session 3
 
@@ -230,11 +230,11 @@ Use these to record your answers to all lab session exercises. Use `Retail.Rmd` 
 
   2. Test if the residuals are white noise.
 
-    ```r
-    checkresiduals(fc)
-    ```
+     ```r
+     checkresiduals(fc)
+     ```
 
-    What do you conclude?
+     What do you conclude?
 
 ### Lab Session 4
 
