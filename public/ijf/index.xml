@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ijf on Rob J Hyndman</title>
-    <link>/ijf/</link>
+    <link>https://robjhyndman.com/ijf/</link>
     <description>Recent content in Ijf on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="/ijf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robjhyndman.com/ijf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Handling papers as an IJF associate editor</title>
-      <link>/ijf/associate-editor-instructions/</link>
+      <link>https://robjhyndman.com/ijf/associate-editor-instructions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/ijf/associate-editor-instructions/</guid>
+      <guid>https://robjhyndman.com/ijf/associate-editor-instructions/</guid>
       <description>Using ManuscriptCentral When you log into ManuscriptCentral you will see an &amp;ldquo;Associate Editor Center&amp;rdquo; along with your &amp;ldquo;Reviewer Center&amp;rdquo; and &amp;ldquo;Author Center&amp;rdquo;. These are for different roles that you have with the journal. You will mostly be using the &amp;ldquo;Associate Editor Center&amp;rdquo;.
 Please log in every week or two to check on papers you are handling and to handle any new papers you have been allocated. You will receive email notifications about new papers, but you won&amp;rsquo;t necessarily receive any notifications about papers where the reviewers are overdue.</description>
     </item>
     
     <item>
       <title>Handling papers as an IJF editor</title>
-      <link>/ijf/editor-instructions/</link>
+      <link>https://robjhyndman.com/ijf/editor-instructions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/ijf/editor-instructions/</guid>
+      <guid>https://robjhyndman.com/ijf/editor-instructions/</guid>
       <description>Using ManuscriptCentral When you log into https://mc.manuscriptcentral.com/ijf you will see an &amp;ldquo;Associate Editor Center&amp;rdquo; and a &amp;ldquo;Handling Editor Center&amp;rdquo;, along with your &amp;ldquo;Reviewer Center&amp;rdquo; and &amp;ldquo;Author Center&amp;rdquo;. These are for different roles that you have with the journal. You will mostly be using the &amp;ldquo;Handling Editor Center&amp;rdquo;.
 Please log in every week to check on papers you are handling and to handle any new papers you have been allocated. You will receive email notifications about new papers, but you won&amp;rsquo;t necessarily receive any notifications about papers where the associate editors are overdue.</description>
     </item>
     
     <item>
       <title>Handling papers as an IJF guest editor</title>
-      <link>/ijf/guest-editor-instructions/</link>
+      <link>https://robjhyndman.com/ijf/guest-editor-instructions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/ijf/guest-editor-instructions/</guid>
+      <guid>https://robjhyndman.com/ijf/guest-editor-instructions/</guid>
       <description>Using ManuscriptCentral When you log into ManuscriptCentral you will see an &amp;ldquo;Associate Editor Center&amp;rdquo; along with your &amp;ldquo;Reviewer Center&amp;rdquo; and &amp;ldquo;Author Center&amp;rdquo;. These are for different roles that you have with the journal. When acting as a guest editor, you will be using the &amp;ldquo;Associate Editor Center&amp;rdquo;.
 Please log in every week or two to check on papers you are handling and to handle any new papers you have been allocated.</description>
     </item>
