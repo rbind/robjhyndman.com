@@ -159,7 +159,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 </tr>
 <tr>
   <td>3.30 - 4.15</td>
-  <td>Some practical issues</td>
+  <td>Extras</td>
    <td><a href="/nyc2018/3-4-Extras.pdf" target="_new">Slides 3-4</a></td>
 </tr>
 <tr>
