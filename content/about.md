@@ -61,7 +61,7 @@ I am a member of the following organizations:
 ## Things I've started
 
   * **[CrossValidated.com](http://crossvalidated.com)**: a Q&A site for questions on statistics modelling, machine learning, data analysis, data visualization, etc. (Further information in [this interview](http://magazine.amstat.org/blog/2011/12/01/qasitedec11/).
-  * **[Time Series Data Library](http://data.is/TSDLdemo)**: About 800 time series, including data from many time series textbooks. Now hosted on <a href="http://datamarket.com/">DataMarket</a>. (Further information in this <a href="/hyndsight/tsdl/">blog post</a>.)</li>
+  * **[Time Series Data Library](https://datamarket.com/data/list/?q=provider:tsdl)**: About 800 time series, including data from many time series textbooks. Now hosted on <a href="http://datamarket.com/">DataMarket</a>. (Further information in this <a href="/hyndsight/tsdl/">blog post</a>.)</li>
 </ul>
 
 ## Trivia
