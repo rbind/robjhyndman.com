@@ -1,14 +1,12 @@
 ---
 date: 2018-06-24
 slug: benchmark-combination
-title: "A useful forecast combination benchmark"
+title: "A forecast ensemble benchmark"
 mathjax: true
 categories:
   - forecasting
   - time series
   - R
-  - conferences
-  - data science
 ---
 
 
@@ -19,13 +17,13 @@ options(digits=3)
 
 [Forecasting benchmarks](/hyndsight/benchmarks) are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review. 
 
-[Typical benchmarks](https://otexts.org/fpp2/simple-methods.html) include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected [ETS model](https://otexts.org/fpp2/ets.html), and an automatically selected [ARIMA model](https://otexts.org/fpp2/arima.html). These are easily obtained using the `naive()`, `snaive()`, `ets()` and `auto.arima()` functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1). 
+[Typical benchmarks](https://otexts.org/fpp2/simple-methods.html) include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected [ETS model](https://otexts.org/fpp2/ets.html), and an automatically selected [ARIMA model](https://otexts.org/fpp2/arima.html). These are easily calculated using the `naive()`, `snaive()`, `ets()` and `auto.arima()` functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1). 
 
 Another benchmark worth considering is the Theta method which did very well in the M3 forecasting competition. The `thetaf()` function provides a convenient implementation.
 
-At the [International Symposium on Forecasting](http://isf.forecasters.org) held in Boulder last week, [Srihari Jaganathan](https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/) proposed that a simple average of these forecasts should be used as a standard forecast combination benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) package might be useful.)
+At the [International Symposium on Forecasting](http://isf.forecasters.org) held in Boulder last week, [Srihari Jaganathan](https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/) proposed that a simple average of these forecasts should be used as a standard forecast combination (or ensemble) benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) package might be useful.)
 
-In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset combinations from these four benchmarks. That gives 15 ($=2^4-1$) possible combinations. 
+In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset ensembles from these four benchmarks. That gives 15 ($=2^4-1$) possible combinations. 
 
 The code is general enough that it is easy to add additional methods if anyone wants to include other possible benchmark methods. Just name them with a unique letter in the following function; no other code in this post needs to be changed.
 
@@ -120,7 +118,7 @@ accuracy_table <- accuracy_table %>%
 knitr::kable(accuracy_table)
 ```
 
-The best performing benchmark method is EAT -- a combination of an ETS model, an ARIMA model and the Theta method.
+The best performing ensemble method is EAT -- a combination of an ETS model, an ARIMA model and the Theta method.
 
 Next, we can plot the accuracy statistics against the forecast horizon. The legend has been ordered to correspond roughly to the order of the series in the MASE plots.
 
@@ -138,10 +136,10 @@ accuracy %>%
     xlab("Forecast horizon") + ylab("Forecast accuracy")
 ```
 
-From the graph we can see that the EAT combination works well for all periods and almost all horizons. To finish, here is a function which produces the EAT combination benchmark as a forecast object.
+From the graph we can see that the EAT ensemble works well for all periods and almost all horizons. To finish, here is a function which produces the EAT ensemble as a forecast object.
 
 ```{r eat}
-eat_combination <- function(y, h = ifelse(frequency(y) > 1, 2*frequency(y), 10)) {
+eat_ensemble <- function(y, h = ifelse(frequency(y) > 1, 2*frequency(y), 10)) {
   require(forecast)
   fets <- forecast(ets(y), h)
   farima <- forecast(auto.arima(y), h)
@@ -151,7 +149,7 @@ eat_combination <- function(y, h = ifelse(frequency(y) > 1, 2*frequency(y), 10))
   comb$method <- "ETS-ARIMA-Theta Combination"
   return(comb)
 }
-USAccDeaths %>% eat_combination() %>% autoplot()
+USAccDeaths %>% eat_ensemble() %>% autoplot()
 ```
 
 The prediction intervals shown are simply those from the ETS model. Combining prediction intervals is more difficult, and I'll leave that to another post.
