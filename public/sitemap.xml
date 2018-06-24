@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://robjhyndman.com/hyndsight/benchmark-combination/</loc>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://robjhyndman.com/seminars/nyc-fbtsa/</loc>
     <lastmod>2018-06-21T00:00:00+00:00</lastmod>
   </url>
@@ -3550,7 +3555,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/conferences/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3574,7 +3579,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/data-science/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3682,7 +3687,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/forecasting/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3772,7 +3777,7 @@
   
   <url>
     <loc>https://robjhyndman.com/hyndsight/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3949,7 +3954,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/r/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4117,7 +4122,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/time-series/</loc>
-    <lastmod>2018-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

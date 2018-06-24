@@ -24,6 +24,16 @@ Prerequisites Please bring your own laptop with a recent version of R and RStudi
     </item>
     
     <item>
+      <title>A useful forecast combination benchmark</title>
+      <link>https://robjhyndman.com/hyndsight/benchmark-combination/</link>
+      <pubDate>Sun, 24 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/benchmark-combination/</guid>
+      <description>Forecasting benchmarks are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review.
+Typical benchmarks include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected ETS model, and an automatically selected ARIMA model.</description>
+    </item>
+    
+    <item>
       <title>Feature-based time series analysis</title>
       <link>https://robjhyndman.com/seminars/nyc-fbtsa/</link>
       <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
