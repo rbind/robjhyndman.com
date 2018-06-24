@@ -2,7 +2,7 @@
 <html class="no-js" lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>A useful forecast combination benchmark | Rob J Hyndman</title>
+    <title>A forecast ensemble benchmark | Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
@@ -73,7 +73,7 @@
 <div class="wrapper">
 <div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
-<div class="unit-60"><h1>A useful forecast combination benchmark</h1></div>
+<div class="unit-60"><h1>A forecast ensemble benchmark</h1></div>
 </div>
 <div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'><h4 style='padding: .8ex 0px .8ex 0px;'><a href="https://robjhyndman.com/hyndsight">Hyndsight</a></h4>
@@ -94,13 +94,7 @@
     <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>, 
     
     
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/conferences">conferences</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/data-science">data science</a>
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
     
   </span>
   
@@ -111,10 +105,10 @@
 <div class="unit-60">
 
   <p><a href="https://robjhyndman.com/hyndsight/benchmarks">Forecasting benchmarks</a> are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review.</p>
-<p><a href="https://otexts.org/fpp2/simple-methods.html">Typical benchmarks</a> include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected <a href="https://otexts.org/fpp2/ets.html">ETS model</a>, and an automatically selected <a href="https://otexts.org/fpp2/arima.html">ARIMA model</a>. These are easily obtained using the <code>naive()</code>, <code>snaive()</code>, <code>ets()</code> and <code>auto.arima()</code> functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1).</p>
+<p><a href="https://otexts.org/fpp2/simple-methods.html">Typical benchmarks</a> include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected <a href="https://otexts.org/fpp2/ets.html">ETS model</a>, and an automatically selected <a href="https://otexts.org/fpp2/arima.html">ARIMA model</a>. These are easily calculated using the <code>naive()</code>, <code>snaive()</code>, <code>ets()</code> and <code>auto.arima()</code> functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1).</p>
 <p>Another benchmark worth considering is the Theta method which did very well in the M3 forecasting competition. The <code>thetaf()</code> function provides a convenient implementation.</p>
-<p>At the <a href="http://isf.forecasters.org">International Symposium on Forecasting</a> held in Boulder last week, <a href="https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/">Srihari Jaganathan</a> proposed that a simple average of these forecasts should be used as a standard forecast combination benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the <a href="https://cran.r-project.org/package=forecastHybrid">forecastHybrid</a> package might be useful.)</p>
-<p>In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset combinations from these four benchmarks. That gives 15 (<span class="math inline">\(=2^4-1\)</span>) possible combinations.</p>
+<p>At the <a href="http://isf.forecasters.org">International Symposium on Forecasting</a> held in Boulder last week, <a href="https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/">Srihari Jaganathan</a> proposed that a simple average of these forecasts should be used as a standard forecast combination (or ensemble) benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the <a href="https://cran.r-project.org/package=forecastHybrid">forecastHybrid</a> package might be useful.)</p>
+<p>In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset ensembles from these four benchmarks. That gives 15 (<span class="math inline">\(=2^4-1\)</span>) possible combinations.</p>
 <p>The code is general enough that it is easy to add additional methods if anyone wants to include other possible benchmark methods. Just name them with a unique letter in the following function; no other code in this post needs to be changed.</p>
 <pre class="r"><code>benchmarks &lt;- function(y, h) {
   require(forecast)
@@ -324,7 +318,7 @@ knitr::kable(accuracy_table)</code></pre>
 </tr>
 </tbody>
 </table>
-<p>The best performing benchmark method is EAT – a combination of an ETS model, an ARIMA model and the Theta method.</p>
+<p>The best performing ensemble method is EAT – a combination of an ETS model, an ARIMA model and the Theta method.</p>
 <p>Next, we can plot the accuracy statistics against the forecast horizon. The legend has been ordered to correspond roughly to the order of the series in the MASE plots.</p>
 <pre class="r"><code>order &lt;- accuracy_table %&gt;% group_by(Method) %&gt;% 
   summarise(MASE = mean(MASE)) %&gt;% arrange(MASE) %&gt;%
@@ -338,8 +332,8 @@ accuracy %&gt;%
     facet_grid(rows = vars(Measure), cols=vars(Period), scale = &quot;free&quot;) +
     xlab(&quot;Forecast horizon&quot;) + ylab(&quot;Forecast accuracy&quot;)</code></pre>
 <p><img src="https://robjhyndman.com/hyndsight/2018-06-combination-benchmark_files/figure-html/plots-1.png" width="960" /></p>
-<p>From the graph we can see that the EAT combination works well for all periods and almost all horizons. To finish, here is a function which produces the EAT combination benchmark as a forecast object.</p>
-<pre class="r"><code>eat_combination &lt;- function(y, h = ifelse(frequency(y) &gt; 1, 2*frequency(y), 10)) {
+<p>From the graph we can see that the EAT ensemble works well for all periods and almost all horizons. To finish, here is a function which produces the EAT ensemble as a forecast object.</p>
+<pre class="r"><code>eat_ensemble &lt;- function(y, h = ifelse(frequency(y) &gt; 1, 2*frequency(y), 10)) {
   require(forecast)
   fets &lt;- forecast(ets(y), h)
   farima &lt;- forecast(auto.arima(y), h)
@@ -349,12 +343,12 @@ accuracy %&gt;%
   comb$method &lt;- &quot;ETS-ARIMA-Theta Combination&quot;
   return(comb)
 }
-USAccDeaths %&gt;% eat_combination() %&gt;% autoplot()</code></pre>
+USAccDeaths %&gt;% eat_ensemble() %&gt;% autoplot()</code></pre>
 <p><img src="https://robjhyndman.com/hyndsight/2018-06-combination-benchmark_files/figure-html/eat-1.png" width="672" /></p>
 <p>The prediction intervals shown are simply those from the ETS model. Combining prediction intervals is more difficult, and I’ll leave that to another post.</p>
 
 
-      <meta itemprop="wordCount" content="953">
+      <meta itemprop="wordCount" content="954">
       <meta itemprop="datePublished" content="2018-06-24">
       <meta itemprop="url" content="https://robjhyndman.com/hyndsight/benchmark-combination/">
 
@@ -368,22 +362,22 @@ USAccDeaths %&gt;% eat_combination() %&gt;% autoplot()</code></pre>
       </a>
     </li>
     <li>
-      <a class="twitter" href="https://twitter.com/intent/tweet?text=A%20useful%20forecast%20combination%20benchmark. https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f from @robjhyndman" target="_blank">
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=A%20forecast%20ensemble%20benchmark. https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f from @robjhyndman" target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
-      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f&amp;title=A%20useful%20forecast%20combination%20benchmark" target="_blank">
+      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f&amp;title=A%20forecast%20ensemble%20benchmark" target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f&amp;title=A%20useful%20forecast%20combination%20benchmark" target="_blank">
+      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f&amp;title=A%20forecast%20ensemble%20benchmark" target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
-      <a class="email" href="mailto:?subject=A%20useful%20forecast%20combination%20benchmark&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f">
+      <a class="email" href="mailto:?subject=A%20forecast%20ensemble%20benchmark&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fbenchmark-combination%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>

@@ -436,14 +436,14 @@ autoplot(res)</code></pre></li>
 <p>For your retail time series:</p>
 <ol style="list-style-type: decimal">
 <li><p>Split the data into two parts using</p>
-<pre class="r"><code>x1 &lt;- window(mytimeseries, end=c(2010,12))
-x2 &lt;- window(mytimeseries, start=2011)</code></pre></li>
+<pre class="r"><code>train &lt;- window(mytimeseries, end=c(2010,12))
+test &lt;- window(mytimeseries, start=2011)</code></pre></li>
 <li><p>Check that your data have been split appropriately by producing the following plot.</p>
-<pre class="r"><code>autoplot(cbind(Training=x1,Test=x2))</code></pre></li>
-<li><p>Calculate forecasts using <code>snaive</code> applied to <code>x1</code>.</p></li>
-<li><p>Compare the accuracy of your forecasts against the actual values stored in <code>x2</code>.</p>
-<pre class="r"><code>f1 &lt;- snaive(x1)
-accuracy(f1,x2)</code></pre></li>
+<pre class="r"><code>autoplot(cbind(Training=train,Test=test))</code></pre></li>
+<li><p>Calculate forecasts using <code>snaive</code> applied to <code>train</code>.</p></li>
+<li><p>Compare the accuracy of your forecasts against the actual values stored in <code>test</code>.</p>
+<pre class="r"><code>f1 &lt;- snaive(train)
+accuracy(f1, test)</code></pre></li>
 <li><p>Check the residuals</p>
 <pre class="r"><code>checkresiduals(f1)</code></pre>
 <p>Do the residuals appear to be uncorrelated and normally distributed?</p></li>
