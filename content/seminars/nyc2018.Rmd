@@ -248,23 +248,23 @@ For your retail time series:
 1. Split the data into two parts using
 
     ```r
-    x1 <- window(mytimeseries, end=c(2010,12))
-    x2 <- window(mytimeseries, start=2011)
+    train <- window(mytimeseries, end=c(2010,12))
+    test <- window(mytimeseries, start=2011)
     ```
 
 2. Check that your data have been split appropriately by producing the following plot.
 
     ```r
-    autoplot(cbind(Training=x1,Test=x2))
+    autoplot(cbind(Training=train,Test=test))
     ```
 
-3. Calculate forecasts using `snaive` applied to `x1`.
+3. Calculate forecasts using `snaive` applied to `train`.
 
-4. Compare the accuracy of your forecasts against the actual values stored in `x2`.
+4. Compare the accuracy of your forecasts against the actual values stored in `test`.
 
     ```r
-    f1 <- snaive(x1)
-    accuracy(f1,x2)
+    f1 <- snaive(train)
+    accuracy(f1, test)
     ```
 
 5. Check the residuals
