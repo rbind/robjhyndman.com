@@ -495,7 +495,7 @@ accuracy.gts(forecast, test)
 
 1. How would you measure overall forecast accuracy across the whole collection of time series?
 2. Repeat the training/test set analysis using "bottom-up" forecasts (set `method="bu"` in the `forecast` function).
-3. Does the ``optimal'' reconciliation method work best here?
+3. Does the "optimal" reconciliation method work best here?
 
 ## Lab Session 22
 
