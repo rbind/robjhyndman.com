@@ -322,6 +322,35 @@ from 1900–1993 (data set `eggs`).
 
 ## Lab Session 10
 
+To finish Day 1, we will compare the various models we have fitted to your retail data. First we will use the training/test split for the comparison. Second, we will use time series cross-validation.
+
+ 1. The code for the forecasts for the training/test split you have already written in previous labs. Copy and paste it to do the full comparison. Which method did best?
+
+ 2. For the time series cross-validation, use `h=12`. For example,
+
+     ```r
+     e1 <- tsCV(mytimeseries, meanf, h=12)
+     ```
+
+       A similar approach can be used for all the benchmark functions: `meanf()`, `naive()`, `rwf()`, `hw()`. But for `ets()`, we first we need to write a new function that combines `ets()` with `forecast()`.
+
+       * First, use `ets()` to find the best model for these data.
+       * Then, use the following code to fit an ETS model and return forecasts. Replace ??? with the relevant details of your model.
+
+          ```r
+          etsfc <- function(y,h,...)
+          {
+            ets(y,...) %>% forecast(h=h)
+          }
+          e6 <- tsCV(mytimeseries, etsfc, h=12, model="???", damped=???)
+          ```
+
+       * Note that we are "cheating" a little bit here by fixing the model based on the entire time series, even though we are estimating the parameters of that model on every training set.
+
+ 3. A more realistic version would be to allow `etsfc` to select a different model every time. Just remove the `model` and `damped` arguments when you call `tsCV()`. This will take much longer, of course. Try it, and see what difference it makes to the results.
+
+## Lab Session 11
+
 1. For the following series, find an appropriate Box-Cox transformation in order to stabilize the variance.
 
     * `usnetelec`
@@ -333,7 +362,7 @@ from 1900–1993 (data set `eggs`).
 
 3. What Box-Cox transformation would you select for your retail data?
 
-## Lab Session 11
+## Lab Session 12
 
 We will use the `bricksq` data for this exercise.
 
@@ -341,7 +370,7 @@ We will use the `bricksq` data for this exercise.
   2. Compute and plot the seasonally adjusted data.
   3. Repeat with a robust STL decomposition. Does it make much difference?
 
-## Lab Session 12
+## Lab Session 13
 
 Continuing with the `bricksq` data:
 
@@ -350,11 +379,11 @@ Continuing with the `bricksq` data:
     [Hint: use the `stlf` function with `method="naive"`.]
   3. Do the residuals look uncorrelated?
 
-## Lab Session 13
+## Lab Session 14
 
   1. For your retail data, try an STL decomposition applied to the Box-Cox transformed series, followed by ETS on the seasonally adjusted data. How does that compare with your best previous forecasts on the test set?
 
-## Lab Session 14
+## Lab Session 15
 
 1. For the following series, find an appropriate differencing (after transformation if necessary) to obtain stationary data.
 
@@ -366,7 +395,7 @@ Continuing with the `bricksq` data:
 
 2. For your retail data, find the appropriate order of differencing (after transformation if necessary) to obtain stationary data.
 
-## Lab Session 15
+## Lab Session 16
 
 Select a time series from `wmurders`, `usgdp` and `mcopper`.
 
@@ -377,7 +406,7 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
   * produce forecasts of your fitted model. Do the forecasts look reasonable?
   * compare the results with what you would obtain using `ets()` (with no transformation).
 
-## Lab Session 16
+## Lab Session 17
 
 1. For your retail time series, develop an appropriate seasonal ARIMA model, and compare the forecasts with those you obtained earlier.
 
@@ -390,7 +419,7 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
     * Forecast   the  next  24  months  of  data using your preferred model.
     * Compare the forecasts obtained using `ets()`.
 
-## Lab Session 17
+## Lab Session 18
 
 For this exercise, we will continue to use your retail data and use time series cross-validation to compare ETS and ARIMA models.
 
@@ -433,7 +462,7 @@ For this exercise, we will continue to use your retail data and use time series 
      * Calculate the RMSE values using this approach. (Warning: it will take a while as there are a lot of models to fit.)
      * How do the RMSE values compare? Does the re-selection of a model at each step make much difference?
 
-## Lab Session 18
+## Lab Session 19
 
 This exercise concerns `motel`: the total monthly takings from accommodation and the total room nights occupied at hotels, motels, and guest houses in Victoria, Australia, between January 1980 and June 1995. Total monthly takings are in thousands of Australian dollars; total room nights occupied are in thousands.
 
@@ -443,7 +472,7 @@ This exercise concerns `motel`: the total monthly takings from accommodation and
   1. Fit an appropriate regression model with ARIMA errors. Explain your reasoning in arriving at the final model.
   1. Forecast the average price per room for the next twelve months using your fitted model. (Hint: You will need to produce forecasts of the CPI figures first.)
 
-## Lab Session 19
+## Lab Session 20
 
 For your retail time series:
 
@@ -451,7 +480,7 @@ For your retail time series:
 * Check the residuals of the fitted model. Does the residual series look like white noise?
 * Compare the forecasts with those you obtained earlier using alternative models.
 
-## Lab Session 20
+## Lab Session 21
 
 1. Use the `tbats` function to model your retail time series.
 
@@ -467,7 +496,7 @@ For your retail time series:
     (d) Compute the accuracy of the forecasts using the test set.
     (e) Compare the results to those obtained using STL and dynamic harmonic regression. Which method does best for this series?
 
-## Lab Session 21
+## Lab Session 22
 
 We will reconcile the forecasts for the infant deaths data. The following code can be used. Check that you understand what each step is doing.
 
@@ -497,16 +526,13 @@ accuracy.gts(forecast, test)
 2. Repeat the training/test set analysis using "bottom-up" forecasts (set `method="bu"` in the `forecast` function).
 3. Does the "optimal" reconciliation method work best here?
 
-## Lab Session 22
+## Lab Session 23
 
 Use `thief()` on your retail data, using ARIMA models for each aggregation. Does the temporal reconciliation lead to improved forecasts on your test set?
 
-<!-- ## Lab Session Notes
+# Lab Session Notes
 
 Here are the Rmd and html files I created during the workshop
 
  * Day 1 [[Rmd](/nyc2018/Day1.Rmd)] [[html](/nyc2018/Day1.html)]
- * Day 2 [[Rmd](/nyc2018/Day2.Rmd)] [[html](/nyc2018/Day2.html)]
- * Day 3 [[Rmd](/nyc2018/Day3.Rmd)] [[html](/nyc2018/Day3.html)]
 
- -->

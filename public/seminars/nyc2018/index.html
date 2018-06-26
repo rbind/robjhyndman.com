@@ -497,6 +497,27 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 </div>
 <div id="lab-session-10" class="section level2">
 <h2>Lab Session 10</h2>
+<p>To finish Day 1, we will compare the various models we have fitted to your retail data. First we will use the training/test split for the comparison. Second, we will use time series cross-validation.</p>
+<ol style="list-style-type: decimal">
+<li><p>The code for the forecasts for the training/test split you have already written in previous labs. Copy and paste it to do the full comparison. Which method did best?</p></li>
+<li><p>For the time series cross-validation, use <code>h=12</code>. For example,</p>
+<pre class="r"><code>e1 &lt;- tsCV(mytimeseries, meanf, h=12)</code></pre>
+<p>A similar approach can be used for all the benchmark functions: <code>meanf()</code>, <code>naive()</code>, <code>rwf()</code>, <code>hw()</code>. But for <code>ets()</code>, we first we need to write a new function that combines <code>ets()</code> with <code>forecast()</code>.</p>
+<ul>
+<li>First, use <code>ets()</code> to find the best model for these data.</li>
+<li><p>Then, use the following code to fit an ETS model and return forecasts. Replace ??? with the relevant details of your model.</p>
+<pre class="r"><code>etsfc &lt;- function(y,h,...)
+{
+  ets(y,...) %&gt;% forecast(h=h)
+}
+e6 &lt;- tsCV(mytimeseries, etsfc, h=12, model=&quot;???&quot;, damped=???)</code></pre></li>
+<li><p>Note that we are “cheating” a little bit here by fixing the model based on the entire time series, even though we are estimating the parameters of that model on every training set.</p></li>
+</ul></li>
+<li><p>A more realistic version would be to allow <code>etsfc</code> to select a different model every time. Just remove the <code>model</code> and <code>damped</code> arguments when you call <code>tsCV()</code>. This will take much longer, of course. Try it, and see what difference it makes to the results.</p></li>
+</ol>
+</div>
+<div id="lab-session-11" class="section level2">
+<h2>Lab Session 11</h2>
 <ol style="list-style-type: decimal">
 <li><p>For the following series, find an appropriate Box-Cox transformation in order to stabilize the variance.</p>
 <ul>
@@ -509,8 +530,8 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 <li><p>What Box-Cox transformation would you select for your retail data?</p></li>
 </ol>
 </div>
-<div id="lab-session-11" class="section level2">
-<h2>Lab Session 11</h2>
+<div id="lab-session-12" class="section level2">
+<h2>Lab Session 12</h2>
 <p>We will use the <code>bricksq</code> data for this exercise.</p>
 <ol style="list-style-type: decimal">
 <li>Use an STL decomposition to calculate the trend-cycle and seasonal indices. (Experiment with having fixed or changing seasonality.)</li>
@@ -518,8 +539,8 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 <li>Repeat with a robust STL decomposition. Does it make much difference?</li>
 </ol>
 </div>
-<div id="lab-session-12" class="section level2">
-<h2>Lab Session 12</h2>
+<div id="lab-session-13" class="section level2">
+<h2>Lab Session 13</h2>
 <p>Continuing with the <code>bricksq</code> data:</p>
 <ol style="list-style-type: decimal">
 <li>Use a naïve method to produce forecasts of the seasonally adjusted data obtained in the last lab session.</li>
@@ -528,14 +549,14 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 <li>Do the residuals look uncorrelated?</li>
 </ol>
 </div>
-<div id="lab-session-13" class="section level2">
-<h2>Lab Session 13</h2>
+<div id="lab-session-14" class="section level2">
+<h2>Lab Session 14</h2>
 <ol style="list-style-type: decimal">
 <li>For your retail data, try an STL decomposition applied to the Box-Cox transformed series, followed by ETS on the seasonally adjusted data. How does that compare with your best previous forecasts on the test set?</li>
 </ol>
 </div>
-<div id="lab-session-14" class="section level2">
-<h2>Lab Session 14</h2>
+<div id="lab-session-15" class="section level2">
+<h2>Lab Session 15</h2>
 <ol style="list-style-type: decimal">
 <li><p>For the following series, find an appropriate differencing (after transformation if necessary) to obtain stationary data.</p>
 <ul>
@@ -548,8 +569,8 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 <li><p>For your retail data, find the appropriate order of differencing (after transformation if necessary) to obtain stationary data.</p></li>
 </ol>
 </div>
-<div id="lab-session-15" class="section level2">
-<h2>Lab Session 15</h2>
+<div id="lab-session-16" class="section level2">
+<h2>Lab Session 16</h2>
 <p>Select a time series from <code>wmurders</code>, <code>usgdp</code> and <code>mcopper</code>.</p>
 <ul>
 <li>if necessary, find a suitable Box-Cox transformation for the data;</li>
@@ -560,8 +581,8 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 <li>compare the results with what you would obtain using <code>ets()</code> (with no transformation).</li>
 </ul>
 </div>
-<div id="lab-session-16" class="section level2">
-<h2>Lab Session 16</h2>
+<div id="lab-session-17" class="section level2">
+<h2>Lab Session 17</h2>
 <ol style="list-style-type: decimal">
 <li><p>For your retail time series, develop an appropriate seasonal ARIMA model, and compare the forecasts with those you obtained earlier.</p></li>
 <li><p>Choose one of the following seasonal time series: <code>condmilk</code>, <code>hsales</code>, <code>uselec</code></p>
@@ -575,8 +596,8 @@ from 1900–1993 (data set <code>eggs</code>).</p>
 </ul></li>
 </ol>
 </div>
-<div id="lab-session-17" class="section level2">
-<h2>Lab Session 17</h2>
+<div id="lab-session-18" class="section level2">
+<h2>Lab Session 18</h2>
 <p>For this exercise, we will continue to use your retail data and use time series cross-validation to compare ETS and ARIMA models.</p>
 <ol style="list-style-type: decimal">
 <li><p>First we will fit an ETS model.</p>
@@ -612,8 +633,8 @@ sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
 </ul></li>
 </ol>
 </div>
-<div id="lab-session-18" class="section level2">
-<h2>Lab Session 18</h2>
+<div id="lab-session-19" class="section level2">
+<h2>Lab Session 19</h2>
 <p>This exercise concerns <code>motel</code>: the total monthly takings from accommodation and the total room nights occupied at hotels, motels, and guest houses in Victoria, Australia, between January 1980 and June 1995. Total monthly takings are in thousands of Australian dollars; total room nights occupied are in thousands.</p>
 <ol style="list-style-type: decimal">
 <li>Use the data to calculate the average cost of a night’s accommodation in Victoria each month.</li>
@@ -623,8 +644,8 @@ sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
 <li>Forecast the average price per room for the next twelve months using your fitted model. (Hint: You will need to produce forecasts of the CPI figures first.)</li>
 </ol>
 </div>
-<div id="lab-session-19" class="section level2">
-<h2>Lab Session 19</h2>
+<div id="lab-session-20" class="section level2">
+<h2>Lab Session 20</h2>
 <p>For your retail time series:</p>
 <ul>
 <li>Develop an appropriate dynamic regression model with Fourier terms for the seasonality. Use the AIC to select the number of Fourier terms to include in the model. (You will probably need to use the same Box-Cox transformation you identified previously.)</li>
@@ -632,8 +653,8 @@ sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
 <li>Compare the forecasts with those you obtained earlier using alternative models.</li>
 </ul>
 </div>
-<div id="lab-session-20" class="section level2">
-<h2>Lab Session 20</h2>
+<div id="lab-session-21" class="section level2">
+<h2>Lab Session 21</h2>
 <ol style="list-style-type: decimal">
 <li><p>Use the <code>tbats</code> function to model your retail time series.</p>
 <ol style="list-style-type: lower-alpha">
@@ -651,8 +672,8 @@ sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
 </ol></li>
 </ol>
 </div>
-<div id="lab-session-21" class="section level2">
-<h2>Lab Session 21</h2>
+<div id="lab-session-22" class="section level2">
+<h2>Lab Session 22</h2>
 <p>We will reconcile the forecasts for the infant deaths data. The following code can be used. Check that you understand what each step is doing.</p>
 <pre class="r"><code>library(hts)
 plot(infantgts)
@@ -679,19 +700,17 @@ accuracy.gts(forecast, test)</code></pre>
 <li>Does the “optimal” reconciliation method work best here?</li>
 </ol>
 </div>
-<div id="lab-session-22" class="section level2">
-<h2>Lab Session 22</h2>
+<div id="lab-session-23" class="section level2">
+<h2>Lab Session 23</h2>
 <p>Use <code>thief()</code> on your retail data, using ARIMA models for each aggregation. Does the temporal reconciliation lead to improved forecasts on your test set?</p>
-<!-- ## Lab Session Notes
-
-Here are the Rmd and html files I created during the workshop
-
- * Day 1 [[Rmd](/nyc2018/Day1.Rmd)] [[html](/nyc2018/Day1.html)]
- * Day 2 [[Rmd](/nyc2018/Day2.Rmd)] [[html](/nyc2018/Day2.html)]
- * Day 3 [[Rmd](/nyc2018/Day3.Rmd)] [[html](/nyc2018/Day3.html)]
-
- -->
 </div>
+</div>
+<div id="lab-session-notes" class="section level1">
+<h1>Lab Session Notes</h1>
+<p>Here are the Rmd and html files I created during the workshop</p>
+<ul>
+<li>Day 1 [<a href="https://robjhyndman.com/nyc2018/Day1.Rmd">Rmd</a>] [<a href="https://robjhyndman.com/nyc2018/Day1.html">html</a>]</li>
+</ul>
 </div>
 </div>
       
