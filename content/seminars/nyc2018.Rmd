@@ -5,6 +5,7 @@ aliases:
   - /nyc2018/
 author: "Rob J Hyndman"
 date: 2018-06-25
+draft: no
 ---
 
 **Date**: 25-27 June 2018<br>
@@ -423,22 +424,7 @@ Select a time series from `wmurders`, `usgdp` and `mcopper`.
 
 For this exercise, we will continue to use your retail data and use time series cross-validation to compare ETS and ARIMA models.
 
-  1. First we will fit an ETS model.
-
-     * Use `ets()` to find the best model for these data and record the training set RMSE.
-     * We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the result, beginning with four years of data in the training set. Replace `???` with the appropriate values for your ETS model.
-
-        ```r
-        etsfc <- function(y,h)
-        {
-          y %>% ets(model="???", damped=???) %>% forecast(h=h)
-        }
-        e <- tsCV(mytimeseries, etsfc)
-        sqrt(mean(e^2, na.rm=TRUE))
-        ```
-
-     * Plot the errors. Do they look uncorrelated and homoscedastic?
-     * If the first few values have high variance, repeat the RMSE calculation after omitting them. (The `tail` function might be useful.)
+  1. The calculations for ETS were done in Lab Session 10.
 
   2. Now we will repeat the exercise using an ARIMA model.
 
@@ -457,7 +443,7 @@ For this exercise, we will continue to use your retail data and use time series 
      * Plot the errors. Do they look uncorrelated and homoscedastic?
      * If the first few values have high variance, repeat the RMSE calculation after omitting them.
 
-  3. In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `ets()` and `auto.arima()` to select a different model each time through the loop. 
+  3. In practice, we will not know the best model on the whole data set  until we observe all the data. So a more realistic analysis would be to allow `auto.arima()` to select a different model each time through the loop. 
    
      * Calculate the RMSE values using this approach. (Warning: it will take a while as there are a lot of models to fit.)
      * How do the RMSE values compare? Does the re-selection of a model at each step make much difference?

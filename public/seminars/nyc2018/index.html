@@ -600,19 +600,7 @@ e6 &lt;- tsCV(mytimeseries, etsfc, h=12, model=&quot;???&quot;, damped=???)</cod
 <h2>Lab Session 18</h2>
 <p>For this exercise, we will continue to use your retail data and use time series cross-validation to compare ETS and ARIMA models.</p>
 <ol style="list-style-type: decimal">
-<li><p>First we will fit an ETS model.</p>
-<ul>
-<li>Use <code>ets()</code> to find the best model for these data and record the training set RMSE.</li>
-<li><p>We will now check how much larger the one-step RMSE is on out-of-sample data using time series cross-validation. The following code will compute the result, beginning with four years of data in the training set. Replace <code>???</code> with the appropriate values for your ETS model.</p>
-<pre class="r"><code>etsfc &lt;- function(y,h)
-{
-  y %&gt;% ets(model=&quot;???&quot;, damped=???) %&gt;% forecast(h=h)
-}
-e &lt;- tsCV(mytimeseries, etsfc)
-sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
-<li>Plot the errors. Do they look uncorrelated and homoscedastic?</li>
-<li><p>If the first few values have high variance, repeat the RMSE calculation after omitting them. (The <code>tail</code> function might be useful.)</p></li>
-</ul></li>
+<li><p>The calculations for ETS were done in Lab Session 10.</p></li>
 <li><p>Now we will repeat the exercise using an ARIMA model.</p>
 <ul>
 <li>Use <code>auto.arima()</code> to find the best model for these data and record the training set RMSE.</li>
@@ -626,7 +614,7 @@ sqrt(mean(e^2, na.rm=TRUE))</code></pre></li>
 <li>Plot the errors. Do they look uncorrelated and homoscedastic?</li>
 <li><p>If the first few values have high variance, repeat the RMSE calculation after omitting them.</p></li>
 </ul></li>
-<li><p>In practice, we will not know the best model on the whole data set until we observe all the data. So a more realistic analysis would be to allow <code>ets()</code> and <code>auto.arima()</code> to select a different model each time through the loop.</p>
+<li><p>In practice, we will not know the best model on the whole data set until we observe all the data. So a more realistic analysis would be to allow <code>auto.arima()</code> to select a different model each time through the loop.</p>
 <ul>
 <li>Calculate the RMSE values using this approach. (Warning: it will take a while as there are a lot of models to fit.)</li>
 <li>How do the RMSE values compare? Does the re-selection of a model at each step make much difference?</li>
