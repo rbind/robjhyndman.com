@@ -522,3 +522,4 @@ Here are the Rmd and html files I created during the workshop
 
  * Day 1 [[Rmd](/nyc2018/Day1.Rmd)] [[html](/nyc2018/Day1.html)]
 
+ * Day 2 [[Rmd](/nyc2018/Day2.Rmd)] [[html](/nyc2018/Day2.html)]

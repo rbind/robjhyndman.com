@@ -3560,20 +3560,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/consulting/</loc>
-    <lastmod>2013-02-06T21:30:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://robjhyndman.com/categories/consulting/</loc>
     <lastmod>2016-10-23T11:21:35+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/data-science/</loc>
-    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/consulting/</loc>
+    <lastmod>2013-02-06T21:30:32+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3584,14 +3578,20 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/demography/</loc>
-    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/data-science/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://robjhyndman.com/categories/demography/</loc>
     <lastmod>2014-11-27T02:33:46+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://robjhyndman.com/tags/demography/</loc>
+    <lastmod>2017-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3608,14 +3608,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/econometrics/</loc>
-    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/econometrics/</loc>
+    <lastmod>2017-02-15T00:40:19+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/econometrics/</loc>
-    <lastmod>2017-02-15T00:40:19+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/econometrics/</loc>
+    <lastmod>2018-04-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3638,14 +3638,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/energy/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/energy/</loc>
+    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/energy/</loc>
-    <lastmod>2018-03-13T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/energy/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3680,14 +3680,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/forecasting/</loc>
-    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/forecasting/</loc>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/forecasting/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/forecasting/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3722,14 +3722,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/graphics/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/graphics/</loc>
+    <lastmod>2017-02-28T14:00:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/graphics/</loc>
-    <lastmod>2017-02-28T14:00:53+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/graphics/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3947,14 +3947,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/r/</loc>
-    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/r/</loc>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/r/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/r/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4017,14 +4017,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/seasonality/</loc>
-    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/seasonality/</loc>
+    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/seasonality/</loc>
-    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/seasonality/</loc>
+    <lastmod>2017-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4097,14 +4097,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/teaching/</loc>
-    <lastmod>2014-09-23T03:03:08+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/teaching/</loc>
+    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/teaching/</loc>
-    <lastmod>2017-07-30T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/teaching/</loc>
+    <lastmod>2014-09-23T03:03:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4115,14 +4115,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/time-series/</loc>
-    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/time-series/</loc>
+    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/time-series/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/time-series/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4163,14 +4163,14 @@
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/tags/writing/</loc>
-    <lastmod>2009-06-25T03:47:43+00:00</lastmod>
+    <loc>https://robjhyndman.com/categories/writing/</loc>
+    <lastmod>2016-08-28T10:21:58+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://robjhyndman.com/categories/writing/</loc>
-    <lastmod>2016-08-28T10:21:58+00:00</lastmod>
+    <loc>https://robjhyndman.com/tags/writing/</loc>
+    <lastmod>2009-06-25T03:47:43+00:00</lastmod>
     <priority>0</priority>
   </url>
   
