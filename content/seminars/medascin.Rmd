@@ -5,6 +5,7 @@ aliases:
   - /forecasting-medascin/
 author: "Rob J Hyndman & Earo Wang"
 date: 2017-05-29
+draft: no
 ---
 
 This is a one-day workshop given as part of the [Melbourne Data Science Week](http://www.datasciencemelbourne.com/medascin2017/).

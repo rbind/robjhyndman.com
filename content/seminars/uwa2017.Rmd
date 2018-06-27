@@ -4,6 +4,7 @@ slug: uwa2017
 aliases:
   - /uwa2017/
 author: "Rob J Hyndman"
+draft: no
 date: 2017-09-26
 ---
 

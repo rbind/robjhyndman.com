@@ -15,6 +15,5 @@ clean:
 	rm -rf public
 	rm -rf blogdown
 	rm -f content/hyndsight/*.html
-
-
+	rm -f content/seminars/*.html
 

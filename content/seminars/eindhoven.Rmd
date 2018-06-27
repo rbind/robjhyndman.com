@@ -6,6 +6,7 @@ aliases:
 subtitle: "EURANDOM-SIKS Masterclass"
 author: "Rob J Hyndman"
 date: 2016-10-19
+draft: no
 ---
 
 
