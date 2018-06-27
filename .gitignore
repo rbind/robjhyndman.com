@@ -1,3 +1,5 @@
+.RData
+.Rhistory
 .Rproj.user
 blogdown
 content/hyndsight/*.html
