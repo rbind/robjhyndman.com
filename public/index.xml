@@ -5,10 +5,19 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bivariate smoothing of mortality surfaces with cohort and period ridges</title>
+      <link>https://robjhyndman.com/publications/mortality-smoothing/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/publications/mortality-smoothing/</guid>
+      <description>Mortality rates typically vary smoothly over age and time. Exceptions occur due to events such as wars and epidemics which create ridges in the age-period surface of mortality rates in a particular year or for cohorts born in a particular year. We propose a new practical method for modelling the age-period surface of mortality rates. Our approach uses $L_1$ regularization with bivariate smoothing, and allows for age-varying period and cohort ridges in the otherwise smooth surface.</description>
+    </item>
     
     <item>
       <title>Forecasting: principles and practice (NYC)</title>
@@ -324,20 +333,6 @@ Slides
 
 &amp;nbsp;&amp;nbsp;&amp;nbsp;
 Packages</description>
-    </item>
-    
-    <item>
-      <title>Two-dimensional smoothing of mortality surfaces with cohort and period ridges</title>
-      <link>https://robjhyndman.com/publications/mortality-smoothing/</link>
-      <pubDate>Thu, 05 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://robjhyndman.com/publications/mortality-smoothing/</guid>
-      <description>BACKGROUND
-Mortality rates typically move smoothly over age and time. Exceptions occur, due to events such as wars and epidemics, which create, among other features, ridges in the mortality surface in a particular calendar year or for cohorts born in a particular year.
-OBJECTIVES
-We aim to develop and evaluate new methods that better model the smooth underlying age-period mortality surface and any cohort or period ridges.
-METHODS
-We propose two new practical methods for modelling the age-period surface of the logarithms of mortality rates.</description>
     </item>
     
     <item>
