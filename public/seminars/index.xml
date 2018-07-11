@@ -5,10 +5,20 @@
     <link>https://robjhyndman.com/seminars/</link>
     <description>Recent content in Seminars on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/seminars/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy forecasting in R</title>
+      <link>https://robjhyndman.com/seminars/user-fable/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/user-fable/</guid>
+      <description>Presentation at the useR 2018 conference in Brisbane, Australia The forecast package in R is widely used and provides good tools for monthly, quarterly and annual time series. But it is not so well-developed for daily and sub-daily data, and it does not interact easily with modern tidy packages such as dplyr, purrr and tidyr.
+I will describe our plans and progress in developing a collection of packages to provide tidy tools for time series and forecasting, which will interact seamlessly with tidyverse packages, and provide functions to handle time series at any frequency.</description>
+    </item>
     
     <item>
       <title>Forecasting: principles and practice (NYC)</title>
