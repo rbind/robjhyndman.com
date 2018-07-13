@@ -13,8 +13,8 @@ I will describe our plans and progress in developing a collection of packages to
 
 This talk is part of a series of three:
 
-1. [Earo Wang](https://earo.me/). *tsibble: The 15th time series standard*
+1. [Earo Wang](https://earo.me/). [*tsibble: The 15th time series standard*](http://slides.earo.me/useR18/)
 2. [Rob J Hyndman](https://robjhyndman.com). *Tidy forecasting in R*
-3. [Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/). *fasster: Forecasting multiple seasonality with state switching*
+3. [Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/). [*fasster: Forecasting multiple seasonality with state switching*](https://www.mitchelloharawild.com/user2018/)
 
 To download the packages: [tidyverts.org](http://tidyverts.org)
