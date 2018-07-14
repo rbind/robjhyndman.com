@@ -385,7 +385,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7893266510497483rem">r</a>
+            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7914842135037317rem">r</a>
         
             
             
@@ -441,7 +441,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/seasonality" style="font-size:1.478805520389686rem">seasonality</a>
+            <a href="https://robjhyndman.com/categories/seasonality" style="font-size:1.5322483711666282rem">seasonality</a>
         
             
             
@@ -505,7 +505,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3250983805066623rem">time-series</a>
+            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3319400319953605rem">time-series</a>
         
             
             
@@ -557,6 +557,43 @@
   <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
   <h1>All Hyndsight posts by date</h1>
     
+    
+    <h2><a href="https://robjhyndman.com/hyndsight/piecewise-linear-trends/">Piecewise linear trends</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2015-10-28 02:43:47 &#43;0000 &#43;0000" itemprop="datePublished">28 October 2015</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/trend">trend</a>
+    
+  </span>
+  
+  
+</div>
+
+
+I prepared the following notes for a consulting client, and I thought they might be of interest to some other people too.
+Let \(y_t\) denote the value of the time series at time \(t\), and suppose we wish to fit a trend with correlated errors of the form \[ y_t = f(t) + n_t, \] where \(f(t)\) represents the possibly nonlinear trend and \(n_t\) is an autocorrelated error process.
+For example, if \(f(t) = \beta_0+\beta_1 t\) is a linear function, then we can simply set \(x_{1,t}=t\) and define \[ y_t = \beta_0 + \beta_1x_{1,t} + n_t.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/piecewise-linear-trends/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
     
     <h2><a href="https://robjhyndman.com/hyndsight/forecast6-2/">forecast package v6.2</a></h2>
 <div class="post-metadata">
@@ -888,42 +925,6 @@ Until a few years ago, I was regularly speaking at church conferences internatio
 I get asked to review journal papers almost every day, and I have to say no to almost all of them. I know it is hard to find reviewers, but many of these requests indicate very lazy editors. So to all the editors out there looking for reviewers, here is some advice.
  Never ask someone who is an editor for another journal. I am handling about 500 submissions per year for the International Journal of Forecasting, and about 10 per year for the Journal of Statistical Software.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/finding-reviewers/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/latex2exp/">Mathematical annotations on R plots</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2015-09-02 07:17:08 &#43;0000 &#43;0000" itemprop="datePublished">2 September 2015</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/computing">computing</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/graphics">graphics</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/latex">LaTeX</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
-    
-  </span>
-  
-  
-</div>
-
-
-I’ve always struggled with using plotmath via the expression function in R for adding mathematical notation to axes or legends. For some reason, the most obvious way to write something never seems to work for me and I end up using trial and error in a loop with far too many iterations.
-So I am very happy to see the new latex2exp package available which translates LaTeX expressions into a form suitable for R graphs.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/latex2exp/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 

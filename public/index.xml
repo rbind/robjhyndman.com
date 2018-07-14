@@ -5,10 +5,20 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Seasonal decomposition of short time series</title>
+      <link>https://robjhyndman.com/hyndsight/tslm-decomposition/</link>
+      <pubDate>Sat, 14 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/tslm-decomposition/</guid>
+      <description>Many users have tried to do a seasonal decomposition with a short time series, and hit the error “Series has less than two periods”.
+The problem is that the usual methods of decomposition (e.g., decompose and stl) estimate seasonality using at least as many degrees of freedom as there are seasonal periods. So you need at least two observations per seasonal period to be able to distinguish seasonality from noise.</description>
+    </item>
     
     <item>
       <title>Tidy forecasting in R</title>

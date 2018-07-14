@@ -1,9 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.44" />
     <meta charset="utf-8">
-    <title>Rob J Hyndman</title>
+    <title>Seasonal decomposition of short time series | Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
@@ -29,7 +28,8 @@
 	    </div>
 	    <div class="title-bar-right pull-right">
 	      
-	      
+
+
 	    </div>
 	  </div>
 
@@ -60,7 +60,8 @@
 	      </div>
 	      <div class="top-bar-right show-for-medium">
 		
-		
+
+
 	      </div>
 	    </div>
 	  
@@ -69,16 +70,14 @@
     <main>
       
 
-
-
-
-
-
-<div class="row">
-  <div class="column small-12 medium-7 large-6">
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/">Seasonal decomposition of short time series</a></h2>
-<div class="post-metadata">
+<div class="wrapper">
+<div class="units-row" style='margin-bottom: 0px;'>
+<div class="unit-20">&nbsp;</div>
+<div class="unit-60"><h1>Seasonal decomposition of short time series</h1></div>
+</div>
+<div class="units-row">
+  <div class="unit-20 dateblock" style='text-align: right;'><h4 style='padding: .8ex 0px .8ex 0px;'><a href="https://robjhyndman.com/hyndsight">Hyndsight</a></h4>
+      <div class="post-metadata">
   <span class="post-date">
     <time datetime="2018-07-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">14 July 2018</time>
   </span>
@@ -102,183 +101,117 @@
   
 </div>
 
+    </div>
+<div class="unit-60">
 
-Many users have tried to do a seasonal decomposition with a short time series, and hit the error “Series has less than two periods”.
-The problem is that the usual methods of decomposition (e.g., decompose and stl) estimate seasonality using at least as many degrees of freedom as there are seasonal periods. So you need at least two observations per seasonal period to be able to distinguish seasonality from noise.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
+  <p>Many users have tried to do a seasonal decomposition with a short time series, and hit the error “Series has less than two periods”.</p>
+<p>The problem is that the usual methods of decomposition (e.g., <code>decompose</code> and <code>stl</code>) estimate seasonality using at least as many degrees of freedom as there are seasonal periods. So you need at least two observations per seasonal period to be able to distinguish seasonality from noise.</p>
+<p>However, it is possible to use a linear regression model to decompose a time series into trend and seasonal components, and then some smoothness assumptions on the seasonal component allow a decomposition with fewer than two full years of data.</p>
+<p>This problem <a href="https://stackoverflow.com/q/51329598/144157">came up on crossvalidated.com</a> recently, with the following data set.</p>
+<pre class="r"><code>df &lt;- ts(c(2735.869,2857.105,2725.971,2734.809,2761.314,2828.224,2830.284,
+  2758.149,2774.943,2782.801,2861.970,2878.688,3049.229,3029.340,3099.041,
+  3071.151,3075.576,3146.372,3005.671,3149.381), start=c(2016,8), frequency=12)</code></pre>
+<p>We can approximate the seasonal pattern using <a href="https://otexts.org/fpp2/useful-predictors.html#fourier-series">Fourier terms</a> with a few parameters.</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+decompose_df &lt;- tslm(df ~ trend + fourier(df, 2))</code></pre>
+<p>Then the usual decomposition plot can be constructed.</p>
+<pre class="r"><code>trend &lt;- coef(decompose_df)[1] + coef(decompose_df)[&#39;trend&#39;]*seq_along(df)
+components &lt;- cbind(
+  data = df,
+  trend = trend,
+  season = df - trend - residuals(decompose_df),
+  remainder = residuals(decompose_df)
+)
+autoplot(components, facet=TRUE)</code></pre>
+<p><img src="https://robjhyndman.com/hyndsight/2018-07-tslmdecomp_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Here the model is
+<span class="math display">\[
+  y_t = \alpha + \beta t + \sum_{k=1}^K \left[
+    \gamma_k \sin\left(\textstyle\frac{2\pi t k}{m}\right) +
+    \psi_k \cos\left(\textstyle\frac{2\pi t k}{m}\right)
+    \right] + \varepsilon_t,
+\]</span>
+where <span class="math inline">\(1 \le K \le m/2\)</span>. The larger the value of <span class="math inline">\(K\)</span>, the more complicated the seasonal pattern that can be estimated. If <span class="math inline">\(K=m/2\)</span>, then we are using <span class="math inline">\(m-1\)</span> degrees of freedom for the seasonal component. (The last sin term will be dropped as <span class="math inline">\(\sin(\pi t)=0\)</span> for all <span class="math inline">\(t\)</span>.) For a short time series, we can use a small value for <span class="math inline">\(K\)</span>, which can be selected by minimizing the AICc or leave-one-out CV statistic (both computed using <code>CV()</code>). In the above example, the AICc is minimized with <span class="math inline">\(K=1\)</span> and CV is minimized with <span class="math inline">\(K=2\)</span>.</p>
+<p>The trend could also be made nonlinear, by replacing <code>trend</code> with a polynomial or spline (although both will use up more degrees of freedom, and may not be justified with short time series).</p>
+<p>As with other methods of decomposition, it is easy enough to remove the seasonal component to get the seasonally adjusted data.</p>
+<pre class="r"><code>adjust_df &lt;- df - components[,&#39;season&#39;]
+autoplot(df, series=&quot;Data&quot;) +
+  autolayer(adjust_df, series=&quot;Seasonally adjusted&quot;)</code></pre>
+<p><img src="https://robjhyndman.com/hyndsight/2018-07-tslmdecomp_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/benchmark-combination/">A forecast ensemble benchmark</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2018-06-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">24 June 2018</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
-    
-  </span>
-  
-  
+
+      <meta itemprop="wordCount" content="373">
+      <meta itemprop="datePublished" content="2018-07-14">
+      <meta itemprop="url" content="https://robjhyndman.com/hyndsight/tslm-decomposition/">
+
+<div class='sans' style="background: #dddddd; padding: 2em;">
+<div style="padding-bottom: 1em" >
+<div class="share-box">
+  <ul class="share">
+    <li>
+      <a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frobjhyndman.com%2fhyndsight%2ftslm-decomposition%2f" target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=Seasonal%20decomposition%20of%20short%20time%20series. https%3a%2f%2frobjhyndman.com%2fhyndsight%2ftslm-decomposition%2f from @robjhyndman" target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2ftslm-decomposition%2f&amp;title=Seasonal%20decomposition%20of%20short%20time%20series" target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2ftslm-decomposition%2f&amp;title=Seasonal%20decomposition%20of%20short%20time%20series" target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email" href="mailto:?subject=Seasonal%20decomposition%20of%20short%20time%20series&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2ftslm-decomposition%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 
-Forecasting benchmarks are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review.
-Typical benchmarks include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected ETS model, and an automatically selected ARIMA model.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/benchmark-combination/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-  </div>
-  <div class="column small-12 medium-5 large-offset-1">
-    <h2><a href="https://robjhyndman.com/publications/">Recent publications</a></h2>
-    <ul class="compact fa-ul">
-      
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-file  fa-fw" style="color:#03396c;font-size:80%;padding-top:6px;"></i> 
-
-Alexander Dokumentov, Rob&nbsp;J&nbsp;Hyndman, Leonie Tickle
-
-
-(2018)
-Bivariate smoothing of mortality surfaces with cohort and period ridges. 
-
-<em>Stat</em>, to appear.
-
-<a href="https://robjhyndman.com/publications/mortality-smoothing/" class="badge badge-small">Abstract</a>
-
-
-
-
-
-<a href="https://robjhyndman.com/papers/twodimensionalsmoothing.pdf" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>
-
-</li>
-      
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-file-o   fa-fw" style="color:#03396c;font-size:80%;padding-top:6px;"></i> 
-
-Thiyanga S Talagala, Rob&nbsp;J&nbsp;Hyndman, George Athanasopoulos
-
-
-(2018)
-Meta-learning how to forecast time series. 
-
-<a href="https://robjhyndman.com/publications/fforms/" class="badge badge-small">Abstract</a>
-
-
-
-<a href=https://www.monash.edu/business/econometrics-and-business-statistics/research/publications/ebs/wp06-2018.pdf class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>
-
-
-
-
-
-</li>
-      
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-file-o   fa-fw" style="color:#03396c;font-size:80%;padding-top:6px;"></i> 
-
-Bin Jiang, George Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman, Anastasios Panagiotelis, Farshid Vahid
-
-
-(2018)
-Macroeconomic forecasting for Australia using a large number of predictors. 
-
-<a href="https://robjhyndman.com/publications/ausmacrofcast/" class="badge badge-small">Abstract</a>
-
-
-
-
-
-<a href="https://robjhyndman.com/papers/ausmacrofcastR1.pdf" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>
-
-</li>
-      
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-file-o   fa-fw" style="color:#03396c;font-size:80%;padding-top:6px;"></i> 
-
-Priyanga Dilini Talagala, Rob J Hyndman, Kate Smith-Miles, Sevvandi Kandanaarachchi and Mario A Muñoz
-
-
-(2018)
-Anomaly detection in streaming nonstationary temporal data. 
-
-<a href="https://robjhyndman.com/publications/oddstream/" class="badge badge-small">Abstract</a>
-
-
-
-
-
-<a href="https://robjhyndman.com/papers/oddstream.pdf" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;pdf</a>
-
-</li>
-      
-    </ul>
-    <div style="padding-top: 5ex;"></div>
-    <h2><a href="https://robjhyndman.com/seminars/">Recent and upcoming seminars</a></h2>
-    <ul class="compact fa-ul">
-    
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i>
-Tidy forecasting in R.
-
-(13&nbsp;July&nbsp;2018)
-<a href="https://robjhyndman.com/seminars/user-fable/" class="badge badge-small">More info...</a>
-</li>
-    
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i>
-Forecasting: principles and practice (NYC).
-
-(25&nbsp;June&nbsp;2018)
-<a href="https://robjhyndman.com/seminars/nyc2018/" class="badge badge-small">More info...</a>
-</li>
-    
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i>
-Feature-based time series analysis.
-
-(21&nbsp;June&nbsp;2018)
-<a href="https://robjhyndman.com/seminars/nyc-fbtsa/" class="badge badge-small">More info...</a>
-</li>
-    
-      <li style="margin-bottom: 9px;">
-<i class="fa-li fa  fa-line-chart fa fw"  style="color:#03396c;font-size:80%;padding-top:6px;"></i>
-Tidy forecasting in R.
-
-(19&nbsp;June&nbsp;2018)
-<a href="https://robjhyndman.com/seminars/isf-fable/" class="badge badge-small">More info...</a>
-</li>
-    
-    </ul>
-  </div>
-
-  </div>
 </div>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
-</script>
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      
+      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/benchmark-combination/">&laquo; <em>Previous<span class="show-for-sr"> page</span></em>: A forecast ensemble benchmark</a></li>
+      
+      
+    </ul>
+    <a href="https://robjhyndman.com/hyndsight/">All Hyndsight posts by date</a>
+</div>
 
+<span style='font-family: Carlito'>
+ <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+              return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'researchtips';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</span>
+
+  </div>
+  </div></div>
 
     </main>
     <footer class="whatisthis">
@@ -358,6 +291,14 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
     </script>
 
     
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
     
 
 

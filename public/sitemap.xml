@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://robjhyndman.com/hyndsight/tslm-decomposition/</loc>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://robjhyndman.com/seminars/user-fable/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
   </url>
@@ -3782,7 +3787,7 @@
   
   <url>
     <loc>https://robjhyndman.com/hyndsight/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3959,7 +3964,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/r/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4011,7 +4016,7 @@
   
   <url>
     <loc>https://robjhyndman.com/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4029,7 +4034,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/seasonality/</loc>
-    <lastmod>2017-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4127,7 +4132,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/time-series/</loc>
-    <lastmod>2018-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

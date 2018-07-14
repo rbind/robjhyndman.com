@@ -385,7 +385,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7893266510497483rem">r</a>
+            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7914842135037317rem">r</a>
         
             
             
@@ -441,7 +441,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/seasonality" style="font-size:1.478805520389686rem">seasonality</a>
+            <a href="https://robjhyndman.com/categories/seasonality" style="font-size:1.5322483711666282rem">seasonality</a>
         
             
             
@@ -505,7 +505,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3250983805066623rem">time-series</a>
+            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3319400319953605rem">time-series</a>
         
             
             
@@ -557,6 +557,39 @@
   <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
   <h1>All Hyndsight posts by date</h1>
     
+    
+    <h2><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/">Seasonal decomposition of short time series</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2018-07-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">14 July 2018</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/seasonality">seasonality</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
+    
+  </span>
+  
+  
+</div>
+
+
+Many users have tried to do a seasonal decomposition with a short time series, and hit the error “Series has less than two periods”.
+The problem is that the usual methods of decomposition (e.g., decompose and stl) estimate seasonality using at least as many degrees of freedom as there are seasonal periods. So you need at least two observations per seasonal period to be able to distinguish seasonality from noise.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
     
     <h2><a href="https://robjhyndman.com/hyndsight/benchmark-combination/">A forecast ensemble benchmark</a></h2>
 <div class="post-metadata">
@@ -879,42 +912,6 @@ The official guidelines for the M4 competition have now been published, and ther
 For the last few years, I have been involved with running a 3-day short course on &ldquo;Data Science for Managers&rdquo;. We have run it twice each year since 2015, and it continues to prove very popular. We have some awesome presenters including Monash University professors Di Cook, Geoff Webb, and Kim Marriott, as well as several very experienced data scientists working in industry.
 The next course will be held on 8-10 May 2018.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/data-science-for-managers/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/tspackages/">Some new time series packages</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2017-11-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">29 November 2017</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/reproducible-research">reproducible-research</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time-series</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/data-science">data-science</a>
-    
-  </span>
-  
-  
-</div>
-
-
-This week I have finished preliminary versions of two new R packages for time series analysis. The first (tscompdata) contains several large collections of time series that have been used in forecasting competitions; the second (tsfeatures) is designed to compute features from univariate time series data. For now, both are only on github. I will probably submit them to CRAN after they’ve been tested by a few more people.
-tscompdata There are already two packages containing forecasting competition data: Mcomp (containing the M and M3 competition data) and Tcomp (containing the tourism competition data).
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/tspackages/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 
