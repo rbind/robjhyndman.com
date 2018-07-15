@@ -5,10 +5,21 @@
     <link>https://robjhyndman.com/hyndsight/</link>
     <description>Recent content in Hyndsight on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/hyndsight/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UseR!2018 talks</title>
+      <link>https://robjhyndman.com/hyndsight/user2018-talks/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/user2018-talks/</guid>
+      <description>&lt;p&gt;All talks from &lt;a href=&#34;https://user2018.r-project.org/&#34;&gt;useR!2018&lt;/a&gt;, held in Brisbane last week, are now available &lt;a href=&#34;https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg/videos?flow=grid&amp;amp;view=0&amp;amp;sort=dd&#34;&gt;on YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Links to talks from members of my research team are given below. &lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Seasonal decomposition of short time series</title>

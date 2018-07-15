@@ -558,6 +558,41 @@
   <h1>All Hyndsight posts by date</h1>
     
     
+    <h2><a href="https://robjhyndman.com/hyndsight/unit-root-tests/">Unit root tests and ARIMA models</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2014-03-12 11:22:45 &#43;0000 &#43;0000" itemprop="datePublished">12 March 2014</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/statistics">statistics</a>
+    
+  </span>
+  
+  
+</div>
+
+
+An email I received today:
+ I have a small problem. I have a time series called x :
+ If I use the default values of auto.arima(x), the best model is an ARIMA(1,0,0)
+ However, I tried the function ndiffs(x, test=&ldquo;adf&rdquo;) and ndiffs(x, test=&ldquo;kpss&rdquo;) as the KPSS test seems to be the default value, and the number of difference is 0 for the kpss test (consistent with the results of auto.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/unit-root-tests/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
+    
     <h2><a href="https://robjhyndman.com/hyndsight/old-r-packages/">Using old versions of R packages</a></h2>
 <div class="post-metadata">
   <span class="post-date">
@@ -865,38 +900,6 @@ Many functions in the forecast package for R will allow a Box-Cox transformation
 Last week we had the pleasure of Professor Stephen Pollock (University of Leicester) visiting our Department, best known in academic circles for his work on time series filtering (see his papers, and his excellent book). But he has another career as a member of the UK House of Lords (under the name Viscount Hanworth &ndash; he is a hereditary peer).
 It made me wonder how many other politicians have PhDs (or equivalent) in statistics, or at least in mathematics.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/statistical-politicians/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/forecasting-within-limits/">Forecasting within limits</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2014-02-21 10:36:14 &#43;0000 &#43;0000" itemprop="datePublished">21 February 2014</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/statistics">statistics</a>
-    
-  </span>
-  
-  
-</div>
-
-
-It is common to want forecasts to be positive, or to require them to be within some specified range \([a,b]\). Both of these situations are relatively easy to handle using transformations.Positive forecasts To impose a positivity constraint, simply work on the log scale. With the forecast package in R, this can be handled by specifying the Box-Cox parameter \(\lambda=0\). For example, consider the real price of a dozen eggs (1900-1993; in cents):
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/forecasting-within-limits/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 

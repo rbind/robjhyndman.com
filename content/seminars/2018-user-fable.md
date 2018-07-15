@@ -3,6 +3,7 @@ date: 2018-07-13
 title: Tidy forecasting in R
 slug: user-fable
 link: https://github.com/robjhyndman/fable-talk-2018/raw/master/fable_useR2018.pdf
+youtube: MemnYSGeJ34
 ---
 
 ## Presentation at the useR 2018 conference in Brisbane, Australia
@@ -13,8 +14,8 @@ I will describe our plans and progress in developing a collection of packages to
 
 This talk is part of a series of three:
 
-1. [Earo Wang](https://earo.me/). [*tsibble: The 15th time series standard*](http://slides.earo.me/useR18/)
-2. [Rob J Hyndman](https://robjhyndman.com). *Tidy forecasting in R*
-3. [Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/). [*fasster: Forecasting multiple seasonality with state switching*](https://www.mitchelloharawild.com/user2018/)
+1. [Earo Wang](https://earo.me/). *tsibble: The 15th time series standard* [Slides](http://slides.earo.me/useR18/) [Video](https://youtu.be/v6yRmbulxUM)
+2. [Rob J Hyndman](https://robjhyndman.com). *Tidy forecasting in R* [Slides](https://github.com/robjhyndman/fable-talk-2018/raw/master/fable_useR2018.pdf) [Video](https://youtu.be/MemnYSGeJ34)
+3. [Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/). *fasster: Forecasting multiple seasonality with state switching* [Slides](https://www.mitchelloharawild.com/user2018/) [Video](https://youtu.be/6YlboftSalY)
 
 To download the packages: [tidyverts.org](http://tidyverts.org)

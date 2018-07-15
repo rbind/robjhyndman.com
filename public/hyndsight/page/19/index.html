@@ -558,6 +558,51 @@
   <h1>All Hyndsight posts by date</h1>
     
     
+    <h2><a href="https://robjhyndman.com/hyndsight/smape/">Errors on percentage errors</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2014-04-16 12:11:06 &#43;0000 &#43;0000" itemprop="datePublished">16 April 2014</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/fpp">fpp</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/ijf">IJF</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/references">references</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/reproducible-research">reproducible research</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/statistics">statistics</a>
+    
+  </span>
+  
+  
+</div>
+
+
+The MAPE (mean absolute percentage error) is a popular measure for forecast accuracy and is defined as $$ \text{MAPE} = 100\text{mean}(|y_t - \hat{y}_t|/|y_t|) $$ where $y_t$ denotes an observation and $\hat{y}_t$ denotes its forecast, and the mean is taken over $t$.
+Armstrong (1985, p.348) was the first (to my knowledge) to point out the asymmetry of the MAPE saying that &ldquo;it has a bias favoring estimates that are below the actual values&rdquo;.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/smape/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
+    
     <h2><a href="https://robjhyndman.com/hyndsight/generating-tables-in-latex/">Generating tables in LaTeX</a></h2>
 <div class="post-metadata">
   <span class="post-date">
@@ -895,41 +940,6 @@ Today&rsquo;s email brought this one:
  I was wondering if I could get your opinion on a particular problem that I have run into during the reviewing process of an article.
 Basically, I have an analysis where I am looking at a couple of time-series and I wanted to know if, over time there was an upward trend in the series. Inspection of the raw data suggests there is, but we want some statistical evidence for this.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/arima-trends/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/unit-root-tests/">Unit root tests and ARIMA models</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2014-03-12 11:22:45 &#43;0000 &#43;0000" itemprop="datePublished">12 March 2014</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/statistics">statistics</a>
-    
-  </span>
-  
-  
-</div>
-
-
-An email I received today:
- I have a small problem. I have a time series called x :
- If I use the default values of auto.arima(x), the best model is an ARIMA(1,0,0)
- However, I tried the function ndiffs(x, test=&ldquo;adf&rdquo;) and ndiffs(x, test=&ldquo;kpss&rdquo;) as the KPSS test seems to be the default value, and the number of difference is 0 for the kpss test (consistent with the results of auto.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/unit-root-tests/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 
