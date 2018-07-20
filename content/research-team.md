@@ -25,7 +25,7 @@ title: "Research team"
   1. **[George Athanasopoulos](https://www.monash.edu/research/people/profiles/profile.html?sid=2981&pid=3333)**</a>
   1. **[Baki Billah](http://www.med.monash.edu.au/epidemiology/staff/academic/billah.html)**</a>
   1. **Gary Deng**
-  1. **[Bircan Erbas](http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas>)**
+  1. **[Bircan Erbas](https://www.latrobe.edu.au/public-health/staff/profile?uname=BErbas)**
   1. **[Shu Fan](http://users.monash.edu.au/~shufan/)**
   1. **Bin Jiang**
   1. **[Yanfei Kang](http://yanfei.site)**
@@ -41,7 +41,7 @@ title: "Research team"
   1. **<a class="vt-p" href="http://souhaib-bentaieb.com/">Souhaib Ben Taieb</a>**, *Machine-learning strategies for multi-step time series forecasting* (PhD, graduated 2014). Winner of a Solvay Award for his PhD thesis. Now a lecturer at Monash University, Australia.
   1. **<a class="vt-p" href="http://www.rmit.edu.au/contact/staff-contacts/academic-staff/d/de-silva-dr-ashton">Ashton de Silva</a>**. *Vector innovations structural time series framework*. (Ph.D., graduated 2007). Now an Associate Professor in the School of Economics, Finance and Marketing at RMIT.
   1. **<a href="https://sites.google.com/site/alexanderdokumentov/">Alexander Dokumentov</a>**, <em>Smoothing, decomposition and forecasting of multidimensional and functional time series using regularisation</em> (PhD, graduated 2016). Now a data scientist at Monash Business Behavioral Laboratory.
-  1. **<a class="vt-p" href="http://www.latrobe.edu.au/she/staff/profile?uname=berbas">Bircan Erbas</a>**. <em>Statistical methodological issues in studies of respiratory disease and air pollution</em>, (Ph.D., Uni of Melbourne, graduated 2001). Now an Associate Professor in the <a class="vt-p" href="http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas" target="_top">School of Public Health </a> at La Trobe University.
+  1. **<a class="vt-p" href="https://www.latrobe.edu.au/public-health/staff/profile?uname=BErbas">Bircan Erbas</a>**. <em>Statistical methodological issues in studies of respiratory disease and air pollution</em>, (Ph.D., Uni of Melbourne, graduated 2001). Now an Associate Professor in the <a class="vt-p" href="http://www.latrobe.edu.au/health/about/staff/profile?uname=BErbas" target="_top">School of Public Health </a> at La Trobe University.
   1. **<a class="vt-p" href="http://www.deakin.edu.au/about-deakin/people/abdul-hayat-muhammad">Abdul Aziz Hayat</a>**. *Identifying GDP volatility and modeling changing seasonality*. (Ph.D., graduated 2007). Now a Senior Lecturer in the <a class="vt-p" href="http://www.deakin.edu.au/business/department-of-finance">Department of Finance, Deakin Business School</a>.
   1. **<a href="https://scholar.google.com.au/citations?user=CEc-I_cAAAAJ&amp;hl=en">Atikur Khan</a>**. *Singular spectrum analysis.* (Ph.D., graduated 2013). Now a researcher at CSIRO.
   1. **<a class="vt-p" href="https://www.linkedin.com/in/yeasminkhandakar/">Yeasmin Khandakar</a>**. *Automatic ARIMA forecasting*. (Ph.D., graduated 2010). Now a data scientist at Optalert.
