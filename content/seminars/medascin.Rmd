@@ -8,7 +8,7 @@ date: 2017-05-29
 draft: no
 ---
 
-This is a one-day workshop given as part of the [Melbourne Data Science Week](http://www.datasciencemelbourne.com/medascin2017/).
+This is a one-day workshop given as part of the [Melbourne Data Science Week](http://www.datasciencemelbourne.com/medascin/).
 
 **Date**: 29 May 2017<br>
 **Presenters**: Rob J Hyndman and Earo Wang<br>
