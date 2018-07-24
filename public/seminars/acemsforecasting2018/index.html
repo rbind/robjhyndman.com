@@ -2,7 +2,7 @@
 <html class="no-js" lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Tidy forecasting in R | Rob J Hyndman</title>
+    <title>ACEMS Forecasting Worskhop | Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
@@ -70,11 +70,11 @@
 <div class="wrapper">
 <div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
-<div class="unit-60"><h1>Tidy forecasting in R</h1></div>
+<div class="unit-60"><h1>ACEMS Forecasting Worskhop</h1></div>
 </div>
 <div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'>
-                  13&nbsp;July&nbsp;2018<br>
+                  26&nbsp;July&nbsp;2018<br>
                   
                    </p>
     </div>
@@ -84,46 +84,181 @@
       <div class="pub-info">
 	
       </div>
-      <div class="pub-content">
-
-<h2 id="presentation-at-the-user-2018-conference-in-brisbane-australia">Presentation at the useR 2018 conference in Brisbane, Australia</h2>
-
-<p>The <a href="http://pkg.robjhyndman.com/forecast/">forecast package</a> in R is widely used and provides good tools for monthly, quarterly and annual time series. But it is not so well-developed for daily and sub-daily data, and it does not interact easily with modern <a href="https://www.tidyverse.org/">tidy packages</a> such as dplyr, purrr and tidyr.</p>
-
-<p>I will describe our plans and progress in developing a collection of packages to provide tidy tools for time series and forecasting, which will interact seamlessly with tidyverse packages, and provide functions to handle time series at any frequency.</p>
-
-<p>This talk is part of a series of three:</p>
-
-<ol>
-<li><strong><a href="https://earo.me/">Earo Wang</a></strong>. <em>tsibble: The 15th time series standard</em> &nbsp;&nbsp; [<a href="http://slides.earo.me/useR18/">Slides</a>] [<a href="https://youtu.be/v6yRmbulxUM">Video</a>]</li>
-<li><strong><a href="https://robjhyndman.com">Rob J Hyndman</a></strong>. <em>Tidy forecasting in R</em> &nbsp;&nbsp;  [<a href="https://github.com/robjhyndman/fable-talk-2018/raw/master/fable_useR2018.pdf">Slides</a>] [<a href="https://youtu.be/MemnYSGeJ34">Video</a>]</li>
-<li><strong><a href="https://www.mitchelloharawild.com/">Mitchell O&rsquo;Hara-Wild</a></strong>. <em>fasster: Forecasting multiple seasonality with state switching</em>  &nbsp;&nbsp; [<a href="https://www.mitchelloharawild.com/user2018/">Slides</a>] [<a href="https://youtu.be/6YlboftSalY">Video</a>]</li>
+      <div class="pub-content"><p><strong>Date</strong>: 26 July 2018<br>
+<strong>Location</strong>: University of Melbourne</p>
+<p>This page is for people enrolled in my <a href="https://acems.org.au/events/acems-ecr-retreat-mid-year-2018">ACEMS half-day workshop</a>.</p>
+<div id="prerequisites" class="section level2">
+<h2>Prerequisites</h2>
+<p>Please bring your own laptop with a recent version of R and RStudio installed, along with the <code>fpp2</code> package and its dependencies.</p>
+<p>Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</p>
+</div>
+<div id="reference" class="section level2">
+<h2>Reference</h2>
+<p><a href="http://OTexts.org/fpp2" target="_new">
+<img src="https://otexts.org/fpp2/fpp2_cover.jpg" alt="Online textbook on forecasting" />
+</a></p>
+</div>
+<div id="need-help-with-r" class="section level2">
+<h2>Need help with R?</h2>
+<ul>
+<li><a href="https://www.datacamp.com/courses/free-introduction-to-r">Datacamp: Introduction to R course</a></li>
+</ul>
+</div>
+<div id="program" class="section level2">
+<h2>Program</h2>
+<table border=1 cellpadding=2 cellspacing=5 width=100%>
+<col width="20%">
+<col width="65%">
+<col width="15%">
+<tr>
+<td>
+1:00 - 1:45
+</td>
+<td>
+Forecast evaluation
+</td>
+<td>
+<a href="https://robjhyndman.com/acemsforecasting2018/1-Forecast-Evaluation.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+1:45 - 2:30
+</td>
+<td>
+ARIMA models
+</td>
+<td>
+<a href="https://robjhyndman.com/acemsforecasting2018/2-ARIMA.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+2:30 - 3:00
+</td>
+<td>
+<em>Break</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+3:00 - 4:00
+</td>
+<td>
+Dynamic regression
+</td>
+<td>
+<a href="https://robjhyndman.com/acemsforecasting2018/3-Dynamic-Regression.pdf" target="_new">Slides</a>
+</td>
+</tr>
+<tr>
+<td>
+4:00 - 5:00
+</td>
+<td>
+Hierarchical forecasting
+</td>
+<td>
+<a href="https://robjhyndman.com/acemsforecasting2018/4-Hierarchical.pdf" target="_new">Slides</a>
+</td>
+</tr>
+</table>
+<p> </p>
+</div>
+<div id="lab-session-1" class="section level2">
+<h2>Lab Session 1</h2>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the residuals from a seasonal naïve forecast applied to the logged <code>qcement</code> data (Quarterly Australian Portand Cement production, 1956–2014).</p>
+<pre class="r"><code>fc &lt;- snaive(log(qcement))
+autoplot(fc)</code></pre></li>
+<li><p>Test if the residuals are white noise.</p>
+<pre class="r"><code>checkresiduals(fc)</code></pre>
+<p>What do you conclude?</p></li>
 </ol>
+</div>
+<div id="lab-session-2" class="section level2">
+<h2>Lab Session 2</h2>
+<ol style="list-style-type: decimal">
+<li>Use time series cross-validation to compare the four benchmark methods on the <code>qcement</code> retail data.</li>
+<li>What do you conclude?</li>
+</ol>
+</div>
+<div id="lab-session-3" class="section level2">
+<h2>Lab Session 3</h2>
+<ol style="list-style-type: decimal">
+<li>For the <code>qcement</code> data, fit a suitable ARIMA model to the logged data using <code>auto.arima()</code>.</li>
+<li>Does this model pass the residuals check?
+3.How does it compare to the benchmark models using time series cross-validation?</li>
+</ol>
+</div>
+<div id="lab-session-4" class="section level2">
+<h2>Lab Session 4</h2>
+<ol style="list-style-type: decimal">
+<li><p>Download quarterly GDP data from the <a href="http://ausmacrodata.org/series.php?id=gdpcknaaoq">Australian Macro Database</a>. To make this a time series:</p>
+<pre class="r"><code>ausgdp &lt;- ts(read.csv(&quot;gdpcknaaoq.csv&quot;)[,1],
+  start=c(1959,3), frequency=4)</code></pre></li>
+<li>Fit a dynamic regression model to the <code>qcement</code> data with GDP as a predictor variable. Make sure you use the same time periods for both variables.</li>
+<li><p>How do the results compare with the ARIMA model fitted earlier? (You won’t be able to compare the <code>tsCV</code> results unless you’re using v8.5 of the forecast package, currently only on github.)</p></li>
+</ol>
+</div>
+<div id="lab-session-5" class="section level2">
+<h2>Lab Session 5</h2>
+<ol style="list-style-type: decimal">
+<li><p>The <code>visnights</code> data set contains quarterly visitor nights for various regions of Australia. To turn this into an <code>hts</code> object:</p>
+<pre class="r"><code>library(hts)
+tourism.hts &lt;- hts(visnights, characters = c(3, 5))</code></pre></li>
+<li><p>Generate forecasts of the bottom level series using ARIMA models, and sum them for “bottom-up” forecasts:</p>
+<pre class="r"><code>visnightsfc &lt;- forecast(tourism.hts, method=&#39;bu&#39;, fmethod=&#39;arima&#39;, h=8)
 
-<p>To download the packages: <a href="http://tidyverts.org">tidyverts.org</a></p>
+autoplot(aggts(tourism.hts, level=0)) +
+  autolayer(aggts(visnightsfc, level=0), lty=2)
+autoplot(aggts(tourism.hts, level=1)) +
+  autolayer(aggts(visnightsfc, level=1), lty=2)
+autoplot(aggts(tourism.hts, level=2)) +
+  autolayer(aggts(visnightsfc, level=2), lty=2)</code></pre>
+<p>Do the forecasts look reasonable?</p></li>
+<li><p>Now use optimally reconciled forecasts:</p>
+<pre class="r"><code>visnightsfc2 &lt;- forecast(tourism.hts, fmethod=&#39;arima&#39;, h=8)
+
+autoplot(aggts(tourism.hts, level=0)) +
+  autolayer(aggts(visnightsfc2, level=0), lty=2)
+autoplot(aggts(tourism.hts, level=1)) +
+  autolayer(aggts(visnightsfc2, level=1), lty=2)
+autoplot(aggts(tourism.hts, level=2)) +
+  autolayer(aggts(visnightsfc2, level=2), lty=2)
+
+autoplot(aggts(visnightsfc2, level=0)) +
+  autolayer(aggts(visnightsfc, level=0), lty=2)
+autoplot(aggts(visnightsfc2, level=1)) +
+  autolayer(aggts(visnightsfc, level=1), lty=2)
+autoplot(aggts(visnightsfc2, level=2)) +
+  autolayer(aggts(visnightsfc, level=2), lty=2)</code></pre>
+<p>What difference has the reconciliation step made?</p></li>
+</ol>
+</div>
+<div id="further-resources-for-learning-forecasting" class="section level2">
+<h2>Further resources for learning forecasting</h2>
+<ul>
+<li><a href="https://www.datacamp.com/courses/forecasting-using-r">Datacamp: Forecasting using R course</a></li>
+</ul>
+</div>
 </div>
       
-        <div class="embed video-player" style="padding-bottom: 4ex;">
-          <iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/MemnYSGeJ34" allowfullscreen frameborder="0">
-          </iframe>
-        </div>
       
       
       
       
       
       
-      <a href="https://github.com/robjhyndman/fable-talk-2018/raw/master/fable_useR2018.pdf" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a>
-      
-      <iframe src="https://docs.google.com/gview?url=https%3a%2f%2fgithub.com%2frobjhyndman%2ffable-talk-2018%2fraw%2fmaster%2ffable_useR2018.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
       
        </article>
 
           <hr>
         <span style="font-family: Carlito;">
         
-        <a href="https://robjhyndman.com/seminars/nyc2018/"> &laquo;&nbsp;Forecasting: principles and practice (NYC)</a>  | <a href="https://robjhyndman.com/seminars/acemsforecasting2018/">ACEMS Forecasting Worskhop&nbsp;&raquo; </a>
-        
+        <a href="https://robjhyndman.com/seminars/user-fable/"> &laquo;&nbsp;Tidy forecasting in R</a> 
         </span>
   </div>
   </div>

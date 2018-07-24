@@ -5,10 +5,24 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ACEMS Forecasting Worskhop</title>
+      <link>https://robjhyndman.com/seminars/acemsforecasting2018/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/acemsforecasting2018/</guid>
+      <description>Date: 26 July 2018
+Location: University of Melbourne
+This page is for people enrolled in my ACEMS half-day workshop.
+Prerequisites Please bring your own laptop with a recent version of R and RStudio installed, along with the fpp2 package and its dependencies.
+Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
+ Reference</description>
+    </item>
     
     <item>
       <title>UseR!2018 talks</title>
