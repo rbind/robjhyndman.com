@@ -66,31 +66,21 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 ## Lab Session 1
 
- 1. Calculate the residuals from a seasonal naïve forecast applied to the logged `qcement` data (Quarterly Australian Portand Cement production, 1956--2014).
-
-    ```r
-    fc <- snaive(log(qcement))
-    autoplot(fc)
-    ```
-
-  2. Test if the residuals are white noise.
-
-     ```r
-     checkresiduals(fc)
-     ```
-
-     What do you conclude?
+ 1. For the first four lab sessions, we will use the `qcement` data (Quarterly Australian Portand Cement production, 1956--2014). Plot the data using `autoplot()`.
+ 2. Split the data into a training set and a test set of 4 years. We will apply models to the training set, and compare the forecasts on the test set. Use `window()` to split the data.
+ 3. Compute a seasonal naïve forecast applied to the training data, and plot the results. Use `snaive()` to produce the forecasts.
+ 4. Test if the residuals are white noise using the `checkresiduals()` function. What do you conclude?
 
 ## Lab Session 2
 
-  1. Use time series cross-validation to compare the four benchmark methods on the `qcement` retail data.
+  1. Compare the forecasts of the four benchmark methods to the test data using the `accuracy()` command.
   2. What do you conclude?
 
 ## Lab Session 3
 
-  1. For the `qcement` data, fit a suitable ARIMA model to the logged data using `auto.arima()`.
+  1. For the `qcement` data, fit a suitable ARIMA model for the logged data using `auto.arima()`. You can use the argument `lambda=0` in the `auto.arima()` function to take the logs. That way, the forecasts will be on the original scale.
   2. Does this model pass the residuals check?
-  3.How does it compare to the benchmark models using time series cross-validation?
+  3. How does it compare to the benchmark models on the test data?
 
 ## Lab Session 4
 
@@ -101,8 +91,8 @@ Participants will be assumed to be familiar with basic statistical tools such as
        start=c(1959,3), frequency=4)
      ```
 
-  2. Fit a dynamic regression model to the `qcement` data with GDP as a predictor variable. Make sure you use the same time periods for both variables.
-  3. How do the results compare with the ARIMA model fitted earlier? (You won't be able to compare the `tsCV` results unless you're using v8.5 of the forecast package, currently only on github.)
+  2. Fit a dynamic regression model to the logged `qcement` data with GDP as a predictor variable. Make sure you use the same time periods for both variables.
+  3. How do the results compare with the ARIMA model fitted earlier? 
 
 ## Lab Session 5
 
@@ -151,6 +141,12 @@ Participants will be assumed to be familiar with basic statistical tools such as
       What difference has the reconciliation step made?
 
 
-## Further resources for learning forecasting
+## Further resources for forecasting
 
 * [Datacamp: Forecasting using R course](https://www.datacamp.com/courses/forecasting-using-r)
+* [International Institute of Forecasters](https://forecasters.org)
+* [International Journal of Forecasting](https://ijf.forecasters.org/)
+* [International Symposium on Forecasting](https://isf.forecasters.org/)
+* [First Port of Call](https://fpc.forecasters.org/)
+
+

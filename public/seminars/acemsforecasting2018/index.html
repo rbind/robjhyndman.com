@@ -170,27 +170,25 @@ Hierarchical forecasting
 <div id="lab-session-1" class="section level2">
 <h2>Lab Session 1</h2>
 <ol style="list-style-type: decimal">
-<li><p>Calculate the residuals from a seasonal naïve forecast applied to the logged <code>qcement</code> data (Quarterly Australian Portand Cement production, 1956–2014).</p>
-<pre class="r"><code>fc &lt;- snaive(log(qcement))
-autoplot(fc)</code></pre></li>
-<li><p>Test if the residuals are white noise.</p>
-<pre class="r"><code>checkresiduals(fc)</code></pre>
-<p>What do you conclude?</p></li>
+<li>For the first four lab sessions, we will use the <code>qcement</code> data (Quarterly Australian Portand Cement production, 1956–2014). Plot the data using <code>autoplot()</code>.</li>
+<li>Split the data into a training set and a test set of 4 years. We will apply models to the training set, and compare the forecasts on the test set. Use <code>window()</code> to split the data.</li>
+<li>Compute a seasonal naïve forecast applied to the training data, and plot the results. Use <code>snaive()</code> to produce the forecasts.</li>
+<li>Test if the residuals are white noise using the <code>checkresiduals()</code> function. What do you conclude?</li>
 </ol>
 </div>
 <div id="lab-session-2" class="section level2">
 <h2>Lab Session 2</h2>
 <ol style="list-style-type: decimal">
-<li>Use time series cross-validation to compare the four benchmark methods on the <code>qcement</code> retail data.</li>
+<li>Compare the forecasts of the four benchmark methods to the test data using the <code>accuracy()</code> command.</li>
 <li>What do you conclude?</li>
 </ol>
 </div>
 <div id="lab-session-3" class="section level2">
 <h2>Lab Session 3</h2>
 <ol style="list-style-type: decimal">
-<li>For the <code>qcement</code> data, fit a suitable ARIMA model to the logged data using <code>auto.arima()</code>.</li>
-<li>Does this model pass the residuals check?
-3.How does it compare to the benchmark models using time series cross-validation?</li>
+<li>For the <code>qcement</code> data, fit a suitable ARIMA model for the logged data using <code>auto.arima()</code>. You can use the argument <code>lambda=0</code> in the <code>auto.arima()</code> function to take the logs. That way, the forecasts will be on the original scale.</li>
+<li>Does this model pass the residuals check?</li>
+<li>How does it compare to the benchmark models on the test data?</li>
 </ol>
 </div>
 <div id="lab-session-4" class="section level2">
@@ -199,8 +197,8 @@ autoplot(fc)</code></pre></li>
 <li><p>Download quarterly GDP data from the <a href="http://ausmacrodata.org/series.php?id=gdpcknaaoq">Australian Macro Database</a>. To make this a time series:</p>
 <pre class="r"><code>ausgdp &lt;- ts(read.csv(&quot;gdpcknaaoq.csv&quot;)[,1],
   start=c(1959,3), frequency=4)</code></pre></li>
-<li>Fit a dynamic regression model to the <code>qcement</code> data with GDP as a predictor variable. Make sure you use the same time periods for both variables.</li>
-<li><p>How do the results compare with the ARIMA model fitted earlier? (You won’t be able to compare the <code>tsCV</code> results unless you’re using v8.5 of the forecast package, currently only on github.)</p></li>
+<li>Fit a dynamic regression model to the logged <code>qcement</code> data with GDP as a predictor variable. Make sure you use the same time periods for both variables.</li>
+<li><p>How do the results compare with the ARIMA model fitted earlier?</p></li>
 </ol>
 </div>
 <div id="lab-session-5" class="section level2">
@@ -238,10 +236,14 @@ autoplot(aggts(visnightsfc2, level=2)) +
 <p>What difference has the reconciliation step made?</p></li>
 </ol>
 </div>
-<div id="further-resources-for-learning-forecasting" class="section level2">
-<h2>Further resources for learning forecasting</h2>
+<div id="further-resources-for-forecasting" class="section level2">
+<h2>Further resources for forecasting</h2>
 <ul>
 <li><a href="https://www.datacamp.com/courses/forecasting-using-r">Datacamp: Forecasting using R course</a></li>
+<li><a href="https://forecasters.org">International Institute of Forecasters</a></li>
+<li><a href="https://ijf.forecasters.org/">International Journal of Forecasting</a></li>
+<li><a href="https://isf.forecasters.org/">International Symposium on Forecasting</a></li>
+<li><a href="https://fpc.forecasters.org/">First Port of Call</a></li>
 </ul>
 </div>
 </div>
