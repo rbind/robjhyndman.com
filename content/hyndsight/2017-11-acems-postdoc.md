@@ -20,6 +20,4 @@ Desirable characteristics:
 
 The position will be based with me at Monash University's Clayton campus, in Melbourne Australia. We have a fantastic group of researchers involved with data science, statistics and econometrics in various ways, and all doing cool things with modern data analysis methods. Plus Melbourne is a wonderful place to live, with great food and superb facilities.
 
-Ask questions in the comments below (preferred), or email me at [Rob.Hyndman@monash.edu](mailto:Rob.Hyndman@monash.edu?Subject=ACEMS postdoc).
-
-**Closing date:** Open until filled.
+**Position now filled.**

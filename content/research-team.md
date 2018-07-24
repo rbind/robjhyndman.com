@@ -3,7 +3,6 @@ title: "Research team"
 ---
 
 * Potential PhD students: please read [**Advice to PhD Applicants**](/hyndsight/phdapplicants/).
-* Potential post-doctoral research fellows: please read [**Come and work with me**](/hyndsight/acems-postdoc/). 
 
 ## Research fellows
 
