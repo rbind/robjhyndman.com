@@ -63,7 +63,6 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 &nbsp;
 
-
 ## Lab Session 1
 
  1. For the first four lab sessions, we will use the `qcement` data (Quarterly Australian Portand Cement production, 1956--2014). Plot the data using `autoplot()`.
@@ -92,7 +91,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
      ```
 
   2. Fit a dynamic regression model to the logged `qcement` data with GDP as a predictor variable. Make sure you use the same time periods for both variables.
-  3. How do the results compare with the ARIMA model fitted earlier? 
+  3. How do the results compare with the ARIMA model fitted earlier?
 
 ## Lab Session 5
 
@@ -140,13 +139,14 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
       What difference has the reconciliation step made?
 
-
 ## Further resources for forecasting
 
 * [Datacamp: Forecasting using R course](https://www.datacamp.com/courses/forecasting-using-r)
 * [International Institute of Forecasters](https://forecasters.org)
 * [International Journal of Forecasting](https://ijf.forecasters.org/)
 * [International Symposium on Forecasting](https://isf.forecasters.org/)
+* [Hyndsight blog](https://robjhyndman.com/hyndsight/)
 * [First Port of Call](https://fpc.forecasters.org/)
-
+* [Questions on R](https://stackoverflow.com/questions/tagged/forecasting)
+* [Questions on statistics](https://stats.stackexchange.com/questions/tagged/forecasting)
 
