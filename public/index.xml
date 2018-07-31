@@ -5,10 +5,21 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 26 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forecasting the future of the power industry: What can you learn from smart meter data?</title>
+      <link>https://robjhyndman.com/seminars/monash-masterclass-2018/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/seminars/monash-masterclass-2018/</guid>
+      <description>Monash Masterclass Smart electricity meters are providing very rich data in their third year of deployment in Victoria. We can now see how millions of households and businesses consume high-frequency electricity. But what does this data tell us? And how should we use it?
+I will discuss how to:
+ visualise data from smart electricity meters; identify common household consumption patterns and anomalies; consider the methods for forecasting demand for household electricity; use information from smart electricity meters to monitor changes in the power industry and anticipate consumption trends.</description>
+    </item>
     
     <item>
       <title>ACEMS Forecasting Worskhop</title>
