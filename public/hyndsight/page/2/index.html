@@ -385,7 +385,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7914842135037317rem">r</a>
+            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7936302072026455rem">r</a>
         
             
             
@@ -505,7 +505,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3319400319953605rem">time-series</a>
+            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3386666922848884rem">time-series</a>
         
             
             
@@ -557,6 +557,42 @@
   <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
   <h1>All Hyndsight posts by date</h1>
     
+    
+    <h2><a href="https://robjhyndman.com/hyndsight/m4competition/">M4 Forecasting Competition update</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2017-12-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">22 December 2017</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/reproducible-research">reproducible research</a>, 
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>
+    
+  </span>
+  
+  
+</div>
+
+
+The official guidelines for the M4 competition have now been published, and there have been several developments since my last post on this.
+ There is now a prize for prediction interval accuracy using a scaled version of the Mean Interval Score. If the $100(1-\alpha)$% prediction interval for time $t$ is given by $[L_{t},U_{t}]$, for $t=1,\dots,h$, then the MIS is defined as $$\frac{1}{h}\sum_{t=1}^{h} \left[ (U_t-L_t) + \frac{2}{\alpha}(L_t-Y_t)1(Y_t &lt; L_t) + \frac{2}{\alpha}(Y_t-U_t)1(Y_t &gt; U_t) \right] $$ where $Y_t$ is the observation at time $t$.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/m4competition/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
     
     <h2><a href="https://robjhyndman.com/hyndsight/data-science-for-managers/">Data Science for Managers: May 2018</a></h2>
 <div class="post-metadata">
@@ -879,49 +915,6 @@ Unlike regular conferences, there are no talks and there is no pre-determined ag
 I’ve been using R or its predecessors for about 30 years, so I tend to I know a lot about R, but I don’t necessarily know how to use modern R tools. Lately, I’ve been teaching my students the tidyverse approach to data analysis, which means that I need to unlearn some old approaches and to re-learn them using new tools. But old dogs and new tricks…
 Yesterday, I was teaching a class where I needed to extract some rows of a data set.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/distinct/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/forecasting-workshop-perth/">Forecasting workshop in Perth</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2017-07-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">30 July 2017</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/conferences">conferences</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/fpp">fpp</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/otexts">otexts</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/teaching">teaching</a>
-    
-  </span>
-  
-  
-</div>
-
-
-On 26-28 September 2017, I will be running my 3-day workshop in Perth on &ldquo;Forecasting: principles and practice&rdquo; based on my book of the same name.
-Topics to be covered include seasonality and trends, exponential smoothing, ARIMA modelling, dynamic regression and state space models, as well as forecast accuracy methods and forecast evaluation techniques such as cross-validation.
-Workshop participants are expected to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/forecasting-workshop-perth/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 

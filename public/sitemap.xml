@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://robjhyndman.com/hyndsight/ts2csv/</loc>
+    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://robjhyndman.com/seminars/acemsforecasting2018/</loc>
     <lastmod>2018-07-26T00:00:00+00:00</lastmod>
   </url>
@@ -3797,7 +3802,7 @@
   
   <url>
     <loc>https://robjhyndman.com/hyndsight/</loc>
-    <lastmod>2018-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3974,7 +3979,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/r/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4026,7 +4031,7 @@
   
   <url>
     <loc>https://robjhyndman.com/</loc>
-    <lastmod>2018-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4142,7 +4147,7 @@
   
   <url>
     <loc>https://robjhyndman.com/categories/time-series/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

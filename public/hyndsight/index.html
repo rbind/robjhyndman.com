@@ -385,7 +385,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7914842135037317rem">r</a>
+            <a href="https://robjhyndman.com/categories/r" style="font-size:2.7936302072026455rem">r</a>
         
             
             
@@ -505,7 +505,7 @@
             
             
             
-            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3319400319953605rem">time-series</a>
+            <a href="https://robjhyndman.com/categories/time-series" style="font-size:2.3386666922848884rem">time-series</a>
         
             
             
@@ -557,6 +557,35 @@
   <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
   <h1>All Hyndsight posts by date</h1>
     
+    
+    <h2><a href="https://robjhyndman.com/hyndsight/ts2csv/">Saving ts objects as csv files</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2018-08-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">3 August 2018</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
+    
+  </span>
+  
+  
+</div>
+
+
+Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a ts object, the time index can easily get lost. So I wrote a little function to make this easier, using the tsibble package to do most of the work in looking after the time index.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/ts2csv/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
     
     <h2><a href="https://robjhyndman.com/hyndsight/user2018-talks/">UseR!2018 talks</a></h2>
 <div class="post-metadata">
@@ -860,42 +889,6 @@ For more details about the M4 competition see this post or go to the M4 website.
 Every two years, the International Journal of Forecasting awards a prize to the best paper on energy forecasting. The prize is generously funded by Professor Tao Hong. This year, we will award the prize to a paper published in the IJF during the period 2015-2016. The prize will be US$1000 plus an engraved plaque. The award committee is Rob J Hyndman, Pierre Pinson and James Mitchell.
 Nominations are invited from any reader of the IJF.
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/ijf-hong-nominations-2018/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/m4competition/">M4 Forecasting Competition update</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2017-12-22 00:00:00 &#43;0000 UTC" itemprop="datePublished">22 December 2017</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/forecasting">forecasting</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/reproducible-research">reproducible research</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>
-    
-  </span>
-  
-  
-</div>
-
-
-The official guidelines for the M4 competition have now been published, and there have been several developments since my last post on this.
- There is now a prize for prediction interval accuracy using a scaled version of the Mean Interval Score. If the $100(1-\alpha)$% prediction interval for time $t$ is given by $[L_{t},U_{t}]$, for $t=1,\dots,h$, then the MIS is defined as $$\frac{1}{h}\sum_{t=1}^{h} \left[ (U_t-L_t) + \frac{2}{\alpha}(L_t-Y_t)1(Y_t &lt; L_t) + \frac{2}{\alpha}(Y_t-U_t)1(Y_t &gt; U_t) \right] $$ where $Y_t$ is the observation at time $t$.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/m4competition/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 

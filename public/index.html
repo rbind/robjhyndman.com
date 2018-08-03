@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.45.1" />
+	<meta name="generator" content="Hugo 0.46" />
     <meta charset="utf-8">
     <title>Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -77,6 +77,35 @@
 <div class="row">
   <div class="column small-12 medium-7 large-6">
     
+    <h2><a href="https://robjhyndman.com/hyndsight/ts2csv/">Saving ts objects as csv files</a></h2>
+<div class="post-metadata">
+  <span class="post-date">
+    <time datetime="2018-08-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">3 August 2018</time>
+  </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
+    
+  </span>
+  
+  
+</div>
+
+
+Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a ts object, the time index can easily get lost. So I wrote a little function to make this easier, using the tsibble package to do most of the work in looking after the time index.
+<p class="text-right"><a href="https://robjhyndman.com/hyndsight/ts2csv/" class="badge badge-small">Read More…</a></p>
+	
+<div style="padding-bottom: 2ex;"></div>
+
+    
     <h2><a href="https://robjhyndman.com/hyndsight/user2018-talks/">UseR!2018 talks</a></h2>
 <div class="post-metadata">
   <span class="post-date">
@@ -90,39 +119,6 @@
 
 <p>Links to talks from members of my research team are given below. </p>
 <p class="text-right"><a href="https://robjhyndman.com/hyndsight/user2018-talks/" class="badge badge-small">Read More…</a></p>
-	
-<div style="padding-bottom: 2ex;"></div>
-
-    
-    <h2><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/">Seasonal decomposition of short time series</a></h2>
-<div class="post-metadata">
-  <span class="post-date">
-    <time datetime="2018-07-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">14 July 2018</time>
-  </span>
-  
-  
-  
-  <span class="post-tags">
-    <p><i class="fa fa-tags"></i>
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/seasonality">seasonality</a>,
-     
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>, 
-    
-    
-    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
-    
-  </span>
-  
-  
-</div>
-
-
-Many users have tried to do a seasonal decomposition with a short time series, and hit the error “Series has less than two periods”.
-The problem is that the usual methods of decomposition (e.g., decompose and stl) estimate seasonality using at least as many degrees of freedom as there are seasonal periods. So you need at least two observations per seasonal period to be able to distinguish seasonality from noise.
-<p class="text-right"><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/" class="badge badge-small">Read More…</a></p>
 	
 <div style="padding-bottom: 2ex;"></div>
 

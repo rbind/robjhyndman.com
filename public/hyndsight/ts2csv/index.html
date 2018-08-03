@@ -2,7 +2,7 @@
 <html class="no-js" lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>UseR!2018 talks | Rob J Hyndman</title>
+    <title>Saving ts objects as csv files | Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
@@ -73,65 +73,87 @@
 <div class="wrapper">
 <div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
-<div class="unit-60"><h1>UseR!2018 talks</h1></div>
+<div class="unit-60"><h1>Saving ts objects as csv files</h1></div>
 </div>
 <div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'><h4 style='padding: .8ex 0px .8ex 0px;'><a href="https://robjhyndman.com/hyndsight">Hyndsight</a></h4>
       <div class="post-metadata">
   <span class="post-date">
-    <time datetime="2018-07-15 00:00:00 &#43;0000 UTC" itemprop="datePublished">15 July 2018</time>
+    <time datetime="2018-08-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">3 August 2018</time>
   </span>
+  
+  
+  
+  <span class="post-tags">
+    <p><i class="fa fa-tags"></i>
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/time-series">time series</a>,
+     
+    
+    
+    <a class="post-tag" href="https://robjhyndman.com/categories/r">R</a>
+    
+  </span>
+  
   
 </div>
 
     </div>
 <div class="unit-60">
 
-  <p>All talks from <a href="https://user2018.r-project.org/">useR!2018</a>, held in Brisbane last week, are now available <a href="https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg/videos?flow=grid&amp;view=0&amp;sort=dd">on YouTube</a>.</p>
+  <p>Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a <code>ts</code> object, the time index can easily get lost. So I wrote a little function to make this easier, using the <code>tsibble</code> package to do most of the work in looking after the time index.</p>
+<pre class="r"><code># Convert time series data to csv
+ts2csv &lt;- function(x) {
+  fname &lt;- paste0(deparse(substitute(x)), &quot;.csv&quot;)
+  if (NCOL(x) == 1L) {
+    # Univariate time series
+    readr::write_csv(
+      as.data.frame(tsibble::as_tsibble(x)),
+      fname)
+  } else {
+    # Multivariate time series
+    readr::write_csv(
+      as.data.frame(tsibble::spread(tsibble::as_tsibble(x), key, value)),
+      fname)
+  }
+}
 
-<p>Links to talks from members of my research team are given below. </p>
+library(fpp2)
+ts2csv(auscafe)    # Univariate monthly data
+ts2csv(visnights)  # Multivariate quarterly data
+ts2csv(elecdemand) # Multivariate half-hourly data</code></pre>
 
-<ul>
-<li><a href="https://www.njtierney.com/"><strong>Nick Tierney</strong></a>. <a href="https://youtu.be/sA8ItKmdwjM"><em>Maxcovr: Find the best locations for facilities using the maximal covering location problem</em></a></li>
-<li><a href="https://sites.google.com/view/sevvandik"><strong>Sevvandi Kandanaarachchi</strong></a>. <a href="https://youtu.be/KGIPh_DFb8U"><em>Does normalizing your data affect outlier detection?</em></a></li>
-<li><strong>Dilini Talagala</strong>. <a href="https://youtu.be/JVO7NT1zLd4"><em>oddstream and stray: Anomaly Detection in Streaming Temporal Data with R</em></a></li>
-<li><a href="https://earo.me/"><strong>Earo Wang</strong></a>. <a href="https://youtu.be/v6yRmbulxUM"><em>tsibble: The 15th time series standard</em></a></li>
-<li><strong>Rob J Hyndman</strong>. <a href="https://youtu.be/MemnYSGeJ34"><em>Tidy forecasting in R</em></a></li>
-<li><a href="https://www.mitchelloharawild.com/"><strong>Mitchell O&rsquo;Hara-Wild</strong></a> <a href="https://youtu.be/6YlboftSalY"><em>fasster: Forecasting multiple seasonality with state switching</em></a></li>
-<li><strong>Thiyanga Talagala</strong>. <a href="https://youtu.be/_pKMIvdt5NU"><em>seer: R package for feature-based forecast-model selection</em></a></li>
-<li><a href="https://www.researchgate.net/profile/Sayani_Gupta3"><strong>Sayani Gupta</strong></a>. <a href="https://youtu.be/VdFo1W8j1tU"><em>CricketData: An R package for international cricket data</em></a></li>
-</ul>
 
-      <meta itemprop="wordCount" content="106">
-      <meta itemprop="datePublished" content="2018-07-15">
-      <meta itemprop="url" content="https://robjhyndman.com/hyndsight/user2018-talks/">
+      <meta itemprop="wordCount" content="131">
+      <meta itemprop="datePublished" content="2018-08-03">
+      <meta itemprop="url" content="https://robjhyndman.com/hyndsight/ts2csv/">
 
 <div class='sans' style="background: #dddddd; padding: 2em;">
 <div style="padding-bottom: 1em" >
 <div class="share-box">
   <ul class="share">
     <li>
-      <a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fuser2018-talks%2f" target="_blank">
+      <a class="facebook" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fts2csv%2f" target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
-      <a class="twitter" href="https://twitter.com/intent/tweet?text=UseR%212018%20talks. https%3a%2f%2frobjhyndman.com%2fhyndsight%2fuser2018-talks%2f from @robjhyndman" target="_blank">
+      <a class="twitter" href="https://twitter.com/intent/tweet?text=Saving%20ts%20objects%20as%20csv%20files. https%3a%2f%2frobjhyndman.com%2fhyndsight%2fts2csv%2f from @robjhyndman" target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
-      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fuser2018-talks%2f&amp;title=UseR%212018%20talks" target="_blank">
+      <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fts2csv%2f&amp;title=Saving%20ts%20objects%20as%20csv%20files" target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
-      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fuser2018-talks%2f&amp;title=UseR%212018%20talks" target="_blank">
+      <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fts2csv%2f&amp;title=Saving%20ts%20objects%20as%20csv%20files" target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
-      <a class="email" href="mailto:?subject=UseR%212018%20talks&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fuser2018-talks%2f">
+      <a class="email" href="mailto:?subject=Saving%20ts%20objects%20as%20csv%20files&amp;body=https%3a%2f%2frobjhyndman.com%2fhyndsight%2fts2csv%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -143,10 +165,8 @@
 
     <ul class="pagination" role="navigation" aria-label="Pagination">
       
-      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/tslm-decomposition/">&laquo; <em>Previous<span class="show-for-sr"> page</span></em>: Seasonal decomposition of short time series</a></li>
+      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/user2018-talks/">&laquo; <em>Previous<span class="show-for-sr"> page</span></em>: UseR!2018 talks</a></li>
       
-      
-      <li class="arrow" aria-disabled="true"><a href="https://robjhyndman.com/hyndsight/ts2csv/"><em>Next<span class="show-for-sr"> page</span></em>: Saving ts objects as csv files&nbsp;&raquo;</a></li>
       
     </ul>
     <a href="https://robjhyndman.com/hyndsight/">All Hyndsight posts by date</a>
@@ -254,6 +274,14 @@ Rob&nbsp;J&nbsp;Hyndman is Professor of Statistics at <a href=https://www.monash
     </script>
 
     
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
     
 
 
