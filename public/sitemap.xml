@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>https://robjhyndman.com/hyndsight/ts2csv/</loc>
     <lastmod>2018-08-03T00:00:00+00:00</lastmod>
+=======
+    <loc>https://robjhyndman.com/seminars/monash-masterclass-2018/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+>>>>>>> fc9c67555b15c80f251fe75354be1fbd6bf928e2
   </url>
   
   <url>
@@ -4031,7 +4036,11 @@
   
   <url>
     <loc>https://robjhyndman.com/</loc>
+<<<<<<< HEAD
     <lastmod>2018-08-03T00:00:00+00:00</lastmod>
+=======
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+>>>>>>> fc9c67555b15c80f251fe75354be1fbd6bf928e2
     <priority>0</priority>
   </url>
   
@@ -4055,7 +4064,7 @@
   
   <url>
     <loc>https://robjhyndman.com/seminars/</loc>
-    <lastmod>2018-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>ACEMS Forecasting Worskhop | Rob J Hyndman</title>
+    <title>Forecasting the future of the power industry: What can you learn from smart meter data? | Rob J Hyndman</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
@@ -70,11 +70,11 @@
 <div class="wrapper">
 <div class="units-row" style='margin-bottom: 0px;'>
 <div class="unit-20">&nbsp;</div>
-<div class="unit-60"><h1>ACEMS Forecasting Worskhop</h1></div>
+<div class="unit-60"><h1>Forecasting the future of the power industry: What can you learn from smart meter data?</h1></div>
 </div>
 <div class="units-row">
   <div class="unit-20 dateblock" style='text-align: right;'>
-                  26&nbsp;July&nbsp;2018<br>
+                  18&nbsp;September&nbsp;2018<br>
                   
                    </p>
     </div>
@@ -84,170 +84,22 @@
       <div class="pub-info">
 	
       </div>
-      <div class="pub-content"><p><strong>Date</strong>: 26 July 2018<br>
-<strong>Location</strong>: University of Melbourne</p>
-<p>This page is for people enrolled in my <a href="https://acems.org.au/events/acems-ecr-retreat-mid-year-2018">ACEMS half-day workshop</a>.</p>
-<div id="prerequisites" class="section level2">
-<h2>Prerequisites</h2>
-<p>Please bring your own laptop with a recent version of R and RStudio installed, along with the <code>fpp2</code> package and its dependencies.</p>
-<p>Participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed.</p>
-</div>
-<div id="reference" class="section level2">
-<h2>Reference</h2>
-<p><a href="http://OTexts.org/fpp2" target="_new">
-<img src="https://otexts.org/fpp2/fpp2_cover.jpg" alt="Online textbook on forecasting" />
-</a></p>
-</div>
-<div id="need-help-with-r" class="section level2">
-<h2>Need help with R?</h2>
+      <div class="pub-content"><div id="monash-masterclass" class="section level2">
+<h2>Monash Masterclass</h2>
+<p><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F45424329%2F208794207656%2F1%2Foriginal.jpg?w=800&amp;auto=compress&amp;rect=0%2C52%2C2346%2C1173&amp;s=cab3adc4fdc12d60f5b3cf647c08e84c" /></p>
+<p>Smart electricity meters are providing very rich data in their third year of deployment in Victoria. We can now see how millions of households and businesses consume high-frequency electricity. But what does this data tell us? And how should we use it?</p>
+<p>I will discuss how to:</p>
 <ul>
-<li><a href="https://www.datacamp.com/courses/free-introduction-to-r">Datacamp: Introduction to R course</a></li>
+<li>visualise data from smart electricity meters;</li>
+<li>identify common household consumption patterns and anomalies;</li>
+<li>consider the methods for forecasting demand for household electricity;</li>
+<li>use information from smart electricity meters to monitor changes in the power industry and anticipate consumption trends.</li>
 </ul>
-</div>
-<div id="program" class="section level2">
-<h2>Program</h2>
-<table border=1 cellpadding=2 cellspacing=5 width=100%>
-<col width="20%">
-<col width="65%">
-<col width="15%">
-<tr>
-<td>
-1:00 - 1:45
-</td>
-<td>
-Forecast evaluation
-</td>
-<td>
-<a href="https://robjhyndman.com/acemsforecasting2018/1-Forecast-Evaluation.pdf" target="_new">Slides</a>
-</td>
-</tr>
-<tr>
-<td>
-1:45 - 2:30
-</td>
-<td>
-ARIMA models
-</td>
-<td>
-<a href="https://robjhyndman.com/acemsforecasting2018/2-ARIMA.pdf" target="_new">Slides</a>
-</td>
-</tr>
-<tr>
-<td>
-2:30 - 3:00
-</td>
-<td>
-<em>Break</em>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>
-3:00 - 4:00
-</td>
-<td>
-Dynamic regression
-</td>
-<td>
-<a href="https://robjhyndman.com/acemsforecasting2018/3-Dynamic-Regression.pdf" target="_new">Slides</a>
-</td>
-</tr>
-<tr>
-<td>
-4:00 - 5:00
-</td>
-<td>
-Hierarchical forecasting
-</td>
-<td>
-<a href="https://robjhyndman.com/acemsforecasting2018/4-Hierarchical.pdf" target="_new">Slides</a>
-</td>
-</tr>
-</table>
-<p> </p>
-</div>
-<div id="lab-session-1" class="section level2">
-<h2>Lab Session 1</h2>
-<ol style="list-style-type: decimal">
-<li>For the first four lab sessions, we will use the <code>qcement</code> data (Quarterly Australian Portand Cement production, 1956–2014). Plot the data using <code>autoplot()</code>.</li>
-<li>Split the data into a training set and a test set of 4 years. We will apply models to the training set, and compare the forecasts on the test set. Use <code>window()</code> to split the data.</li>
-<li>Compute a seasonal naïve forecast applied to the training data, and plot the results. Use <code>snaive()</code> to produce the forecasts.</li>
-<li>Test if the residuals are white noise using the <code>checkresiduals()</code> function. What do you conclude?</li>
-</ol>
-</div>
-<div id="lab-session-2" class="section level2">
-<h2>Lab Session 2</h2>
-<ol style="list-style-type: decimal">
-<li>Compare the forecasts of the four benchmark methods to the test data using the <code>accuracy()</code> command.</li>
-<li>What do you conclude?</li>
-</ol>
-</div>
-<div id="lab-session-3" class="section level2">
-<h2>Lab Session 3</h2>
-<ol style="list-style-type: decimal">
-<li>For the <code>qcement</code> data, fit a suitable ARIMA model for the logged data using <code>auto.arima()</code>. You can use the argument <code>lambda=0</code> in the <code>auto.arima()</code> function to take the logs. That way, the forecasts will be on the original scale.</li>
-<li>Does this model pass the residuals check?</li>
-<li>How does it compare to the benchmark models on the test data?</li>
-</ol>
-</div>
-<div id="lab-session-4" class="section level2">
-<h2>Lab Session 4</h2>
-<ol style="list-style-type: decimal">
-<li><p>Download quarterly GDP data from the <a href="http://ausmacrodata.org/series.php?id=gdpcknaaoq">Australian Macro Database</a>. To make this a time series:</p>
-<pre class="r"><code>ausgdp &lt;- ts(read.csv(&quot;gdpcknaaoq.csv&quot;)[,1],
-  start=c(1959,3), frequency=4)</code></pre></li>
-<li>Fit a dynamic regression model to the logged <code>qcement</code> data with GDP as a predictor variable. Make sure you use the same time periods for both variables.</li>
-<li><p>How do the results compare with the ARIMA model fitted earlier?</p></li>
-</ol>
-</div>
-<div id="lab-session-5" class="section level2">
-<h2>Lab Session 5</h2>
-<ol style="list-style-type: decimal">
-<li><p>The <code>visnights</code> data set contains quarterly visitor nights for various regions of Australia. To turn this into an <code>hts</code> object:</p>
-<pre class="r"><code>library(hts)
-tourism.hts &lt;- hts(visnights, characters = c(3, 5))</code></pre></li>
-<li><p>Generate forecasts of the bottom level series using ARIMA models, and sum them for “bottom-up” forecasts:</p>
-<pre class="r"><code>visnightsfc &lt;- forecast(tourism.hts, method=&#39;bu&#39;, fmethod=&#39;arima&#39;, h=8)
-
-autoplot(aggts(tourism.hts, level=0)) +
-  autolayer(aggts(visnightsfc, level=0), lty=2)
-autoplot(aggts(tourism.hts, level=1)) +
-  autolayer(aggts(visnightsfc, level=1), lty=2)
-autoplot(aggts(tourism.hts, level=2)) +
-  autolayer(aggts(visnightsfc, level=2), lty=2)</code></pre>
-<p>Do the forecasts look reasonable?</p></li>
-<li><p>Now use optimally reconciled forecasts:</p>
-<pre class="r"><code>visnightsfc2 &lt;- forecast(tourism.hts, fmethod=&#39;arima&#39;, h=8)
-
-autoplot(aggts(tourism.hts, level=0)) +
-  autolayer(aggts(visnightsfc2, level=0), lty=2)
-autoplot(aggts(tourism.hts, level=1)) +
-  autolayer(aggts(visnightsfc2, level=1), lty=2)
-autoplot(aggts(tourism.hts, level=2)) +
-  autolayer(aggts(visnightsfc2, level=2), lty=2)
-
-autoplot(aggts(visnightsfc2, level=0)) +
-  autolayer(aggts(visnightsfc, level=0), lty=2)
-autoplot(aggts(visnightsfc2, level=1)) +
-  autolayer(aggts(visnightsfc, level=1), lty=2)
-autoplot(aggts(visnightsfc2, level=2)) +
-  autolayer(aggts(visnightsfc, level=2), lty=2)</code></pre>
-<p>What difference has the reconciliation step made?</p></li>
-</ol>
-</div>
-<div id="further-resources-for-forecasting" class="section level2">
-<h2>Further resources for forecasting</h2>
-<ul>
-<li><a href="https://www.datacamp.com/courses/forecasting-using-r">Datacamp: Forecasting using R course</a></li>
-<li><a href="https://forecasters.org">International Institute of Forecasters</a></li>
-<li><a href="https://ijf.forecasters.org/">International Journal of Forecasting</a></li>
-<li><a href="https://isf.forecasters.org/">International Symposium on Forecasting</a></li>
-<li><a href="https://robjhyndman.com/hyndsight/">Hyndsight blog</a></li>
-<li><a href="https://fpc.forecasters.org/">First Port of Call</a></li>
-<li><a href="https://stackoverflow.com/questions/tagged/forecasting">Questions on R</a></li>
-<li><a href="https://stats.stackexchange.com/questions/tagged/forecasting">Questions on statistics</a></li>
-</ul>
+<p>6.00pm, Tuesday, 18 September 2018<br>
+Monash Law Chambers<br>
+555 Lonsdale Street<br>
+Melbourne<br></p>
+<p><a href="https://www.eventbrite.com.au/e/monash-masterclass-forecasting-the-future-of-the-power-industrywhat-can-you-learn-from-smart-meter-registration-46394364794"><strong>Register at Eventbrite</strong></a></p>
 </div>
 </div>
       
@@ -263,8 +115,7 @@ autoplot(aggts(visnightsfc2, level=2)) +
           <hr>
         <span style="font-family: Carlito;">
         
-        <a href="https://robjhyndman.com/seminars/user-fable/"> &laquo;&nbsp;Tidy forecasting in R</a>  | <a href="https://robjhyndman.com/seminars/monash-masterclass-2018/">Forecasting the future of the power industry: What can you learn from smart meter data?&nbsp;&raquo; </a>
-        
+        <a href="https://robjhyndman.com/seminars/acemsforecasting2018/"> &laquo;&nbsp;ACEMS Forecasting Worskhop</a> 
         </span>
   </div>
   </div>
