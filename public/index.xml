@@ -5,24 +5,12 @@
     <link>https://robjhyndman.com/</link>
     <description>Recent content on Rob J Hyndman</description>
     <generator>Hugo -- gohugo.io</generator>
-<<<<<<< HEAD
-    <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
-=======
     <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
->>>>>>> fc9c67555b15c80f251fe75354be1fbd6bf928e2
     
 	<atom:link href="https://robjhyndman.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-<<<<<<< HEAD
-      <title>Saving ts objects as csv files</title>
-      <link>https://robjhyndman.com/hyndsight/ts2csv/</link>
-      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://robjhyndman.com/hyndsight/ts2csv/</guid>
-      <description>Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a ts object, the time index can easily get lost. So I wrote a little function to make this easier, using the tsibble package to do most of the work in looking after the time index.</description>
-=======
       <title>Forecasting the future of the power industry: What can you learn from smart meter data?</title>
       <link>https://robjhyndman.com/seminars/monash-masterclass-2018/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
@@ -31,7 +19,15 @@
       <description>Monash Masterclass Smart electricity meters are providing very rich data in their third year of deployment in Victoria. We can now see how millions of households and businesses consume high-frequency electricity. But what does this data tell us? And how should we use it?
 I will discuss how to:
  visualise data from smart electricity meters; identify common household consumption patterns and anomalies; consider the methods for forecasting demand for household electricity; use information from smart electricity meters to monitor changes in the power industry and anticipate consumption trends.</description>
->>>>>>> fc9c67555b15c80f251fe75354be1fbd6bf928e2
+    </item>
+    
+    <item>
+      <title>Saving ts objects as csv files</title>
+      <link>https://robjhyndman.com/hyndsight/ts2csv/</link>
+      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://robjhyndman.com/hyndsight/ts2csv/</guid>
+      <description>Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a ts object, the time index can easily get lost. So I wrote a little function to make this easier, using the tsibble package to do most of the work in looking after the time index.</description>
     </item>
     
     <item>
