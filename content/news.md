@@ -4,7 +4,8 @@ slug: "in-the-news"
 ---
 
 <ul>
-  <li><a href="https://phys.org/news/2017-02-smart-meter-efficiency-national-power-grids.html">Smart-meter data could improve the performance and efficiency of national power grids</a>, <em>Phys.org<em>, 7 February 2017.</em></em></li>
+  <li><a href="https://www.qut.edu.au/news?news-id=133908">QUT works with ABS to boost use of big data</a>, <em>QUT News</em>, 3 August 2018.</li>
+  <li><a href="https://phys.org/news/2017-02-smart-meter-efficiency-national-power-grids.html">Smart-meter data could improve the performance and efficiency of national power grids</a>, <em>Phys.org</em>, 7 February 2017.</li>
   <li><a href="http://www.afr.com/news/politics/treasury-to-seek-outside-advice-for-economic-forecasts-20160221-gmzhc2">Treasury to seek outside advice for economic forecasts</a>, <em>Australian Financial Review</em>, 21 February 2016.</li>
   <li><a href="http://www.monash.edu/news/articles/getting-to-know-rob-hyndman">Getting to know Rob Hyndman</a>, <em>Monash News</em>, 19 August 2015</li>
   <li><a class="vt-p" href="https://www.monash.edu/news/show/monash-business-school-forecaster-a-big-thinker">Monash Business School forecaster a big thinker</a>, <em>Monash News</em>, 30 June 2015</li>

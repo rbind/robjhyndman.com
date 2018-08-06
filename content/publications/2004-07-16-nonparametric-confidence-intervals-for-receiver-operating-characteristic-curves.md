@@ -18,4 +18,4 @@ We study methods for constructing confidence intervals, and confidence bands, fo
 
 **Keywords:** bandwidth selection; binary classification; kernel estimator; receiver operating characteristic curve.
 
-
+[**Download R code**](http://robjhyndman.com/Rfiles/ROC.R)

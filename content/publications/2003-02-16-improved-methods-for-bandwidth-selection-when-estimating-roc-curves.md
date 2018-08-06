@@ -16,4 +16,4 @@ The receiver operating characteristic (ROC) curve is used to describe the perfor
 
 **Keywords:** bandwidth selection; binary classification; kernel estimator; ROC curve.
 
-
+[**Download R code**](http://robjhyndman.com/Rfiles/ROC.R)
