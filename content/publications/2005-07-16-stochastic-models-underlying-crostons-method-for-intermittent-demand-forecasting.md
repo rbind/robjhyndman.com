@@ -3,7 +3,7 @@ author: Lydia Shenstone, Rob&nbsp;J&nbsp;Hyndman
 Status: Published
 comments: false
 date: 2005-07-16 04:22:44+00:00
-slug: stochastic-models-underlying-crostons-method-for-intermittent-demand-forecasting
+slug: croston
 title: Stochastic models underlying Croston's method for intermittent demand forecasting
 kind: article
 tags:

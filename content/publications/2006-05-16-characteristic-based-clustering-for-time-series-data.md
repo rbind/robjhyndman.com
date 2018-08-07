@@ -3,7 +3,9 @@ author: Xiaozhe Wang, Kate A Smith, Rob&nbsp;J&nbsp;Hyndman
 Status: Published
 comments: false
 date: 2006-05-16 05:52:34+00:00
-slug: characteristic-based-clustering-for-time-series-data
+slug: ts-clustering
+aliases:
+  - /publications/characteristic-based-clustering-for-time-series-data
 title: Characteristic-based clustering for time series data
 kind: article
 tags:

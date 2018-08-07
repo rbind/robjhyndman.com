@@ -5,7 +5,6 @@ comments: false
 date: 2008-02-01 06:25:02+00:00
 slug: aus-domestic-tourism
 title: Modelling and forecasting Australian domestic tourism
-wordpress_id: 495
 kind: article
 tags:
 - exponential smoothing
