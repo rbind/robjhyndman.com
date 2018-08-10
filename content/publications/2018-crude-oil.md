@@ -1,5 +1,5 @@
 ---
-author: Jue Wang; George Athanasopoulos; Rob&nbsp;J&nbsp;Hyndman, Shouyang Wang
+author: Jue Wang, George Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman and Shouyang Wang
 date: 2018-08-09
 slug: crude-oil-price
 title: Crude oil price forecasting based on internet concern using an extreme learning machine
