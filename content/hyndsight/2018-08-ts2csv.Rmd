@@ -13,23 +13,13 @@ knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
 options(digits=3)
 ```
 
-Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a `ts` object, the time index can easily get lost. So I wrote a little function to make this easier, using the `tsibble` package to do most of the work in looking after the time index.
+Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a `ts` object, the time index can easily get lost. So I wrote a little function to make this easier, using the `tsibble` package to do almost all of the work in looking after the time index. (Thanks to Earo in the comments for greatly simplifying my original code.)
 
 ```r
 # Convert time series data to csv
 ts2csv <- function(x) {
   fname <- paste0(deparse(substitute(x)), ".csv")
-  if (NCOL(x) == 1L) {
-    # Univariate time series
-    readr::write_csv(
-      as.data.frame(tsibble::as_tsibble(x)),
-      fname)
-  } else {
-    # Multivariate time series
-    readr::write_csv(
-      as.data.frame(tsibble::spread(tsibble::as_tsibble(x), key, value)),
-      fname)
-  }
+  readr::write_csv(tsibble::as_tsibble(x, gather = FALSE), fname)
 }
 
 library(fpp2)
