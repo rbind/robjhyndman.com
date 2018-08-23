@@ -32,6 +32,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**tsfeatures**](https://github.com/robjhyndman/tsfeatures): Time Series Feature Extraction.
 
+* [**tsgeneration**](https://github.com/ykang/tsgeneration): Efficient generation of time series with diverse and controllable characteristics
+
 ## Time series data packages
 
 * [**expsmooth**](https://pkg.robjhyndman.com/expsmooth/): Data sets from [Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with exponential smoothing: the state space approach*, Springer: Berlin.](http://www.exponentialsmoothing.net/) [[CRAN](https://cloud.r-project.org/package=expsmooth)]
