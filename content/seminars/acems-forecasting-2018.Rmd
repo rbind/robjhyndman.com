@@ -1,5 +1,5 @@
 ---
-title: "ACEMS Forecasting Worskhop"
+title: "ACEMS Forecasting Workshop"
 slug: acemsforecasting2018
 aliases:
   - /acemsforecasting2018/
