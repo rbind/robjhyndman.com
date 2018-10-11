@@ -1,3 +1,4 @@
+
 ---
 title: "Software I've written"
 ---
@@ -23,6 +24,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**forecast**](https://pkg.robjhyndman.com/forecast/): Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cloud.r-project.org/package=forecast)]
 
 * [**hts**](https://pkg.earo.me/hts/): Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cloud.r-project.org/package=hts)]
+
+* [**MEFM**](https://github.com/robjhyndman/mefm-package): A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
 
 * [**robets**](https://cloud.r-project.org/package=robets): Forecasting time series with robust exponential smoothing. [[CRAN](https://cloud.r-project.org/package=robets)]
 
@@ -64,6 +67,14 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**smoothAPC**](https://cloud.r-project.org/package=smoothAPC): Smoothing demographic data with period and cohort effects. The method uses bivariate thin plate splines, bivariate lasso-type regularization, and allows for both period and cohort effects. Thus the mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. The methods are described in [Dokumentov & Hyndman (2014) Bivariate data with ridges: two-dimensional smoothing of mortality rates](https://robjhyndman.com/publications/mortality-smoothing/). [[CRAN](https://cloud.r-project.org/package=smoothAPC)]
 
+## Rmarkdown packages
+
+* [**binb**](https://github.com/eddelbuettel/binb): "binb" is not Beamer. Rmarkdown template for Monash slides.
+
+* [**MonashEBSTemplates**](https://github.com/robjhyndman/MonashEBSTemplates): Rmarkdown templates for use at Monash University, Department of Econometrics & Business Statistics. It contains templates for working papers, letters, exams, reports and memos. Monash beamer templates are in the [binb](https://github.com/eddelbuettel/binb) package.
+
+* [**rmarkdown**](https://cloud.r-project.org/package=rmarkdown): Dynamic documents for R. [[CRAN](https://cloud.r-project.org/package=rmarkdown)]
+
 ## Other packages
 
 * [**cricketdata**](https://github.com/ropenscilabs/cricketdata): International Cricket Data.
@@ -74,6 +85,3 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**hdrcde**](https://pkg.robjhyndman.com/hdrcde/): Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cloud.r-project.org/package=hdrcde)]
 
-* [**MEFM**](https://github.com/robjhyndman/mefm-package): A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
-
-* [**rmarkdown**](https://cloud.r-project.org/package=rmarkdown): Dynamic documents for R. [[CRAN](https://cloud.r-project.org/package=rmarkdown)]
