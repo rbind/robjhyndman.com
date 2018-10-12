@@ -1,9 +1,13 @@
 ---
 date: 2018-10-16
-title: "Writing"
+title: "Writing for Researchers"
+slug: writing
 ---
 
-ACEMS Mentoring Seminar
+**ACEMS Mentoring Seminar**
+
+Researchers need to write a lot: theses, papers, reviewer reports, responses to reviewer reports, grant applications, industry reports, media releases, blog posts, and more. We will look at some of the tools available to help researchers with these writing tasks, and how to structure different types of writing depending on the audience and purpose.
+
 
 ## Slides
 

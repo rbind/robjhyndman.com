@@ -6,7 +6,7 @@ title: Bivariate smoothing of mortality surfaces with cohort and period ridges
 mathjax: true
 kind:
  article
-citation: "<em>Stat</em>, to appear"
+citation: "<em>Stat</em>, <b>7</b>: e199"
 tags:
 - demography
 - nonparametric smoothing
