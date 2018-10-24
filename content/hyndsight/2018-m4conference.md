@@ -1,0 +1,23 @@
+---
+date: 2018-10-24
+slug: m4conference
+title: "M4 Forecasting Conference"
+categories:
+  - forecasting
+  - R
+  - reproducible research
+  - time series
+  - conferences
+---
+
+[![](/img/m4.png)](https://www.mcompetitions.ac.cy)
+
+Following the highly successful [M4 Forecasting Competition](https://www.m4.unic.ac.cy/), there will be a conference held on 10-11 December at Tribeca Rooftop, New York, to discuss the results. The conference will elaborate on the findings of the M4 Competition, with prominent speakers from leading business firms and top universities.
+
+Nassim Nicholas Taleb will deliver a keynote address about uncertainty in forecasting and Spyros Makridakis will discuss how organizations can benefit by improving the accuracy of their predictions and assessing uncertainty realistically.
+
+There will be a presentation of the three most accurate methods of the M4 Competition by their developers explaining the reasons for their success. Unfortunately I cannot attend myself due to a clash with another speaking engagement. However, [Pablo Montero-Manso](https://www.mcompetitions.unic.ac.cy/speakers-2018/) and George Athanasopoulos will attend to discuss our 2nd place entry in the competition.
+
+For information about the conference and registration visit:
+[www.mcompetitions.unic.ac.cy/](https://www.mcompetitions.unic.ac.cy/)
+
