@@ -1,0 +1,22 @@
+---
+date: 2018-12-18
+title: Avoiding bad ARIMA models
+slug: badarima
+---
+
+This question seems to come up frequently on [crossvalidated.com](http://crossvalidated.com) or in my inbox.
+
+> I have this time series, however it yields different results when I use the `auto.arima` and `Arima` functions.
+
+```{r badarima}
+library(forecast)
+xd <- ts(c(23786, 25955, 54373, 21561, 14552, 13284, 12714, 11821, 15445, 21307, 17228, 20007, 23065, 32811, 43147, 15127, 13497, 12224, 11412, 11888, 14210,18978, 15782, 17216, 16417, 22861, 42616, 17057,  9741, 10503,  7170, 10686,  9762, 15773, 15280, 13212, 14784, 26104, 29947), frequency = 12, start=c(2014,1), end=c(2017,3))
+
+fit.model <- auto.arima(xd, trace=TRUE, approximation=FALSE, allowmean=FALSE, allowdrift = FALSE, max.p=1, max.q=0, max.P=1, max.Q=0, xreg=seq_along(xd))
+
+Arima(xd, order=c(1,0,0), seasonal=list(order=c(1,0,0)),
+  xreg=seq_along(xd))
+```
+
+> however, for fit.model it shows inf for Aicc value for ARIMA(1,0,0)(1,0,0) while it yields a finite value using `arima`.
+
