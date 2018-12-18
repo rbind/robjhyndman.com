@@ -1,6 +1,6 @@
 ---
 date: 2018-12-18
-title: Avoiding bad ARIMA models
+title: Why doesn't auto.arima() return the model with the lowest AICc value?
 slug: badarima
 ---
 
@@ -12,22 +12,27 @@ This question seems to come up frequently on [crossvalidated.com](http://crossva
 library(forecast)
 xd <- ts(c(23786, 25955, 54373, 21561, 14552, 13284, 12714, 11821, 15445, 21307, 17228, 20007, 23065, 32811, 43147, 15127, 13497, 12224, 11412, 11888, 14210,18978, 15782, 17216, 16417, 22861, 42616, 17057,  9741, 10503,  7170, 10686,  9762, 15773, 15280, 13212, 14784, 26104, 29947), frequency = 12, start=c(2014,1), end=c(2017,3))
 
-fit.model <- auto.arima(xd, trace=TRUE, approximation=FALSE, allowmean=FALSE, allowdrift = FALSE, max.p=1, max.q=0, max.P=1, max.Q=0, xreg=seq_along(xd))
+fit1 <- auto.arima(xd, trace=TRUE, allowmean=FALSE, allowdrift = FALSE, max.p=1, max.q=0, max.P=1, max.Q=0, xreg=seq_along(xd))
 
-(fit2 <- Arima(xd, order=c(1,0,0), seasonal=list(order=c(1,0,0)),
-  xreg=seq_along(xd)))
+(fit2 <- Arima(xd, order=c(1,0,0), seasonal=c(1,0,0), xreg=seq_along(xd)))
 ```
 
-> however, for fit.model it shows `Inf` for Aicc value for ARIMA(1,0,0)(1,0,0) while it yields a finite value using `Arima`.
+> `auto.arima()` shows an AICc value of `Inf` for an ARIMA(1,0,0)(1,0,0) model, while the same model has a finite value using `Arima()`.
 
+The issue here is to do with the checks carried out by `auto.arima()` in an effort to return a good model. The `auto.arima()` function does not simply find the model with the lowest AICc value. It also carries out several checks to ensure the model is numerically well-behaved.
 
-The issue here is to do with the checks carried out by `auto.arima()` in an effort to return a good model. While the `Arima()` function will never return a model with roots inside the unit circle, the `auto.arima()` function is even stricter and will not select a model with roots close to the unit circle either. The ARIMA(1,0,0)(1,0,0)$_12$ model fitted above has roots almost on the unit circle. This is easily seen by plotting them.
+While the `Arima()` function will never return a model with roots inside the unit circle, the `auto.arima()` function is even stricter and will not select a model with roots close to the unit circle either. The ARIMA(1,0,0)(1,0,0)$_{12}$ model fitted above has roots almost on the unit circle. This is easily seen by plotting them.
 
 ```{r plotroots}
-Arima(xd, order=c(1,0,0), seasonal=list(order=c(1,0,0)),
-    xreg=seq_along(xd)) %>%
+Arima(xd, order=c(1,0,0), seasonal=c(1,0,0), xreg=seq_along(xd)) %>%
   autoplot()
 ```
 
-In fact, there are 12 roots with value `r abs(forecast:::arroots(fit2)$roots)[1]`, just outside the unit circle. So this model is rejected by `auto.arima()` and the AICc value is set to `Inf` to prevent it being selected.
+In fact, there are 12 roots with absolute value `r sprintf("%4.3f", abs(forecast:::arroots(fit2)$roots)[1])`, just outside the unit circle (so the inverse roots that are plotted are just inside the circle). Consequently, this model is rejected by `auto.arima()` because the forecasts will be numerically unstable, and the AICc value is set to `Inf` to prevent it being selected.
 
+In general, unless you know exactly what you're doing, it is better to leave `auto.arima()` to select a model for you. In this case, it comes up with the following model which should forecast well.
+
+```{r bestmodel}
+(fit <- auto.arima(xd))
+fit %>% forecast() %>% autoplot()
+```
