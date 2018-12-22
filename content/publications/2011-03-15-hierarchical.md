@@ -23,3 +23,5 @@ In this paper we propose a new approach to hierarchical forecasting which provid
 We show in a simulation study that our method performs well compared to the top-down approach and the bottom-up method. We demonstrate our proposed method by forecasting Australian tourism demand where the data are disaggregated by purpose of travel and geographical region.
 
 **Keywords:** bottom-up forecasting, combining forecasts, GLS regression, hierarchical forecasting, Moore-Penrose inverse, reconciling forecasts, top-down forecasting.
+
+[**Tourism data**](/data/hier1_with_names.csv)

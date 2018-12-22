@@ -19,3 +19,5 @@ In this paper we explore the hierarchical nature of tourism demand time series a
 
 **Keywords:** Australia, exponential smoothing, hierarchical forecasting, innovations state space models, optimal combination forecasts, top-down method, tourism demand.
 
+[**Tourism data**](/data/hier1_with_names.csv)
+
