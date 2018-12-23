@@ -11,7 +11,7 @@ The [International Institute of Forecasters](http://forecasters.org) has establi
 
 So if you are a PhD student, post-doc, or otherwise a relatively junior researcher working in forecasting, this is for you! The first events will be during the [ISF in Thessaloniki](http://isf.forecasters.org) in June 2019, including the following:
 
-  * **ECR welcoming event**. A meet and great event prior to the ISF welcome reception. Refreshments will be provided.
+  * **ECR welcoming event**. A meet and greet event prior to the ISF welcome reception. Refreshments will be provided.
   * **Panel Session 1**: *Life after PhD in academia*. Panellists: Tanya Garcia (Texas A&M), Rob Hyndman (Monash), Nikolaos Kourentzes (Lancaster), Haiyan Song (Hong Kong Polytechnic).
   * **Panel Session 2**: *Life after PhD in industry*. Panellists: Diane Berry (Bain & Company), Carla Di Cairano-Gilfedder (British Telecom), Mike Gilliland (SAS), Stephan Kolassa (SAP).
   * **Drinks in Thessaloniki**: A fun evening event.
