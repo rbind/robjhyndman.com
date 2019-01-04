@@ -53,6 +53,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**tscompdata**](https://github.com/robjhyndman/tscompdata): Time Series Competition Data
 
+* [**tsdl**](https://pkg.yangzhuoranyang.com/tsdl/): Time Series Data Library
+
 ## Functional data and demography packages
 
 * [**addb**](https://pkg.robjhyndman.com/addb/):  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
