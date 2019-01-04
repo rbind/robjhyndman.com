@@ -90,6 +90,7 @@ blockquote {
 
 blockquote p {
   color: #36454f;
+  display: inline;
 }
 
 blockquote:before {
