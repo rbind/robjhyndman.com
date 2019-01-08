@@ -77,7 +77,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**rmarkdown**](https://cloud.r-project.org/package=rmarkdown): Dynamic documents for R. [[CRAN](https://cloud.r-project.org/package=rmarkdown)]
 
-* [**vitae**](https://github.com/ropenscilabs/vitae): Provides templates and functions to simplify the production and maintenance of curriculum vitae. [[CRAN](https://cloud.r-project.org/package=vitae)]
+* [**vitae**](https://ropenscilabs.github.io/vitae/): Provides templates and functions to simplify the production and maintenance of curriculum vitae. [[CRAN](https://cloud.r-project.org/package=vitae)]
 
 ## Other packages
 
