@@ -2,7 +2,7 @@
 author: Anastasios Panagiotelis, George Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman, Bin Jiang, Farshid Vahid
 Status: Published
 comments: false
-date: 2018-12-09
+date: 2019-01-01
 slug: ausmacrofcast
 title: Macroeconomic forecasting for Australia using a large number of predictors
 kind: article
