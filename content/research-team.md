@@ -22,7 +22,7 @@ title: "Research team"
   1. **[Sayani Gupta](https://www.researchgate.net/profile/Sayani_Gupta3)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **Cameron Roach**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Dilini Talagala](http://prital.netlify.com/)**, *Anomaly detection in streaming time series data* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pridiltal)
-  1. **[Thiyanga Talagala](https://acems.org.au/our-people/thiyanga-talagala)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/thiyangt)
+  1. **[Thiyanga Talagala](https://thiyanga.netlify.com/)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/thiyangt)
   1. **[Earo Wang](http://earo.me)**, *Tidy data structures and visualisation to support exploration and modeling of temporal-context data* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/earowang)
 
 ## Former research fellows
