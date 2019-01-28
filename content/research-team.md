@@ -17,10 +17,10 @@ title: "Research team"
 
 ## PhD students
 
-  1. **Fan Cheng**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019).
+  1. **Fan Cheng**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
-  1. **[Sayani Gupta](https://www.researchgate.net/profile/Sayani_Gupta3)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
-  1. **Cameron Roach**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
+  1. **[Sayani Gupta](https://acems.org.au/our-people/sayani-gupta-gupta)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
+  1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Dilini Talagala](http://prital.netlify.com/)**, *Anomaly detection in streaming time series data* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pridiltal)
   1. **[Thiyanga Talagala](https://thiyanga.netlify.com/)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/thiyangt)
   1. **[Earo Wang](http://earo.me)**, *Tidy data structures and visualisation to support exploration and modeling of temporal-context data* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/earowang)
