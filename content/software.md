@@ -33,7 +33,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**thief**](https://pkg.robjhyndman.com/thief/): Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cloud.r-project.org/package=thief)]
 
-* [**tsfeatures**](https://github.com/robjhyndman/tsfeatures): Time Series Feature Extraction.
+* [**tsfeatures**](https://pkg.robjhyndman.com/tsfeatures): Time Series Feature Extraction. [[CRAN](https://cloud.r-project.org/package=tsfeatures)]
 
 * [**tsgeneration**](https://github.com/ykang/tsgeneration): Efficient generation of time series with diverse and controllable characteristics
 
