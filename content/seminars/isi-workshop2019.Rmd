@@ -7,10 +7,6 @@ author: "Rob J Hyndman"
 date: 2019-08-17
 ---
 
-## Date
-
-17 August 2019
-
 ## Venue
 
 [Sasana Kijang, Bank Negara Malaysia, Kuala Lumpur](http://bit.ly/2DJ3Wit)
@@ -41,6 +37,4 @@ Participants should be familiar with the use of R, at least to the point where t
 
 Please bring your own laptop with a recent version of R and RStudio installed
 
-## Registration
-
-[Register](http://www.isi2019.org/short-courses/)
+### [Register](http://www.isi2019.org/short-courses/)
