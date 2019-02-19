@@ -6,7 +6,7 @@ date: 2019-01-01
 slug: ausmacrofcast
 title: Macroeconomic forecasting for Australia using a large number of predictors
 kind: article
-citation: <em>International Journal of Forecasting</em>, <b>35</b>, to appear
+citation: <em>International Journal of Forecasting</em>, <b>35</b>(2), 616-633
 tags:
 - data science
 - econometrics
