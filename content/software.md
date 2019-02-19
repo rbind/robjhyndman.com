@@ -7,13 +7,13 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 ## Tidy time series analysis and forecasting packages
 
-* [**tsibble**](https://pkg.earo.me/tsibble/): Tidy Temporal Data Frames and Tools [[CRAN](https://cloud.r-project.org/package=tsibble)]
+* [**tsibble**](https://tsibble.tidyverts.org): Tidy Temporal Data Frames and Tools [[CRAN](https://cloud.r-project.org/package=tsibble)]
 
 * [**tsibbledata**](https://github.com/tidyverts/tsibbledata): Example datasets for tsibble
 
-* [**tsibblestats**](https://github.com/tidyverts/tsibblestats): Analysis of tidy time series
+* [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series
 
-* [**fable**](https://github.com/tidyverts/fable): Forecasting tidy time series
+* [**fable**](https://fable.tidyverts.org): Forecasting tidy time series
 
 * [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
 
