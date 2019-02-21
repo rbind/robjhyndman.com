@@ -3,6 +3,7 @@ date: 2019-01-25
 title: "Feature-based forecasting algorithms for large collections of time series"
 slug: acems-fforma
 link: https://github.com/robjhyndman/fforma-talk/raw/master/fforma.pdf
+youtube: https://www.youtube.com/playlist?list=PL12D676032C3A6B70
 ---
 
 
