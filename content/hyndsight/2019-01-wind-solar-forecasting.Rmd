@@ -1,0 +1,36 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-02-21
+slug: wind-solar-jobs
+title: Post-docs in wind and solar power forecasting
+categories:
+- forecasting
+- energy
+- R
+- time series
+---
+
+We currently have two postdoc opportunities together with an industry partner in the field of wind and solar power forecasting (full time, Level B). They are suitable for recently graduated PhD students that can start between now and June-July.
+
+The opportunities are as follows:
+
+## Wind power forecasting:
+
+- 1 year contract
+- Good programming skills in R and/or Python
+- Solid background in Machine Learning and/or Statistics
+- Background in time series forecasting desirable
+
+## Solar power forecasting:
+
+- 6 months contract
+- Good programming skills in R and/or Python
+- Solid background in Machine Learning and/or Statistics
+- Data will be cloud coverage data from sky cams, so some image processing background is necessary
+- Background in time series forecasting desirable
+
+Please contact [Christoph Bergmeir](mailto:Christoph.Bergmeir@monash.edu) if you are interested.
+
+
+
