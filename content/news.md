@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [Announcing the winners of the Facebook Statistics for Improving Insights and Decisions research awards](https://research.fb.com/announcing-the-winners-of-the-statistics-for-improving-insights-and-decisions-research-awards/), *Facebook Research*, 25 January 2019.
   * [QUT works with ABS to boost use of big data](https://www.qut.edu.au/news?news-id=133908), *QUT News*, 3 August 2018.
   * [A big-hearted optimist': Hans Rosling tributes pour in on social media](https://www.theguardian.com/global-development/2017/feb/08/hans-rosling-tributes-melinda-gates-big-hearted-optimist). 8 February 2017
   * [Smart-meter data could improve the performance and efficiency of national power grids](https://phys.org/news/2017-02-smart-meter-efficiency-national-power-grids.html),  *Phys.org*, 7 February 2017.
