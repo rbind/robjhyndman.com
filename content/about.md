@@ -3,14 +3,11 @@ title: "About me"
 ---
 
 
-The following bio and photos may be used in media releases without further permission.
+The following bio and [**this photo**](/img/RJH_Monash_headshot.jpg) may be used in media releases without further permission.
 
 >**Rob J Hyndman** is Professor of Statistics and Head of the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](https://www.monash.edu). From 2005 to 2018 he was Editor-in-Chief of the *[International Journal of Forecasting](http://ijf.forecasters.org/)* and a Director of the [International Institute of Forecasters](http://forecasters.org/). Rob is the author of over 150 research papers and 5 books in statistical science. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
 
-**Photos:**
-  [low-res](/pics/vintage.png)
-  [medium-res](/pics/RobHyndman-medres.jpg)
-  [high-res](/pics/RobHyndman-highres.jpg).
+
 
 <h4><a href="https://github.com/robjhyndman/CV/raw/master/RobHyndmanCV.pdf" class="badge badge-small"><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;pdf</a> <a href="https://github.com/robjhyndman/CV/raw/master/RobHyndmanCV.pdf">Curriculum Vitae</a> &nbsp; </h4>
 
