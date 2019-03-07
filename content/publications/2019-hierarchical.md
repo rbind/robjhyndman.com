@@ -16,7 +16,7 @@ tags:
 - optimization
 - time series
 - economics
-link: https://www.monash.edu/__data/assets/pdf_file/0011/1648505/wp02-2019.pdf
+link: https://www.monash.edu/business/ebs/research/publications/ebs/wp02-2019.pdf
 ---
 
 
