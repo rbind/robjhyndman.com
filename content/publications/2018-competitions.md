@@ -1,13 +1,13 @@
 ---
 author: Rob&nbsp;J&nbsp;Hyndman
-date: 2018-12-21
+date: 2019-03-08
 slug: forecasting-competitions
 title: A brief history of forecasting competitions
-kind:
- unpublished
+kind: article
 tags:
 - time series
 - forecasting
+citation: <em>International Journal of Forecasting</em>, to appear
 link: https://github.com/robjhyndman/history_forecasting_competitions/raw/master/forecasting-competitions.pdf
 ---
 
