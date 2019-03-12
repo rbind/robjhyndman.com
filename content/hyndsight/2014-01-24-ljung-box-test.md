@@ -25,7 +25,7 @@ where $T$ is the length of the time series, $r_k$ is the $k$th autocorrelation c
 
 In [my forecasting textbook](https://www.otexts.org/fpp/2/6) with George Athanasopoulos, we recommended using $h=10$ for non-seasonal data and $h=2m$ for seasonal data, where $m$ is the period of seasonality. These suggestions were based on power considerations. We want to ensure that $h$ is large enough to capture any meaningful and troublesome correlations. For seasonal data, it is common to have correlations at multiples of the seasonal lag remaining in the residuals, so we wanted to include at least two seasonal lags.
 
-I have not seen similar advice in other time series textbooks; most authors seem to ignore such practical considerations. Patrick Burns in a short [online paper](http://lib.stat.cmu.edu/S/Spoetry/Working/ljungbox.pdf) suggests the rule $h\le 0.05T$ based on a simulation study in which he tests the uniform distribution of $p$-values from the test under the null hypothesis of Gaussian white noise.
+I have not seen similar advice in other time series textbooks; most authors seem to ignore such practical considerations. Patrick Burns in a short [online paper](https://www.burns-stat.com/pages/Working/ljungbox.pdf) suggests the rule $h\le 0.05T$ based on a simulation study in which he tests the uniform distribution of $p$-values from the test under the null hypothesis of Gaussian white noise.
 
 I think the latter test is unnecessarily restrictive. In practice, we don't really need the $p$-values to be uniform. What we want is the probability of a p-value being less than the chosen level (say 5%) being equal to that level. That is, the distribution needs to be uniform around the chosen level, but it does not need to be uniform elsewhere.
 
