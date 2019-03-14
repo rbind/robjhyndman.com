@@ -2,12 +2,9 @@
 .Rhistory
 .Rproj.user
 blogdown
+public
 content/hyndsight/*.html
 content/seminars/*.html
-*.sublime-workspace
 static/hyndsight/*
-public/*/*/*/*.png
-public/categories
-public/tags
+*.sublime-workspace
 *.sublime-project
-public
