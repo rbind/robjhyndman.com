@@ -83,7 +83,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**cricketdata**](https://github.com/ropenscilabs/cricketdata): International Cricket Data.
 
-* [**eechidna**](https://github.com/ropenscilabs/eechidna): Exploring Election and Census Highly Informative Data Nationally for Australia. Data from the 2013 and 2016 Australian Federal Elections and the 2011 and 2016 Australian Censuses for each House of Representatives electorate, along with some tools for visualizing and analysing the data. [[CRAN](https://cloud.r-project.org/package=eechidna)]
+* [**eechidna**](https://ropenscilabs.github.io/eechidna/): Exploring Election and Census Highly Informative Data Nationally for Australia. Data from the 2013 and 2016 Australian Federal Elections and the 2011 and 2016 Australian Censuses for each House of Representatives electorate, along with some tools for visualizing and analysing the data. [[CRAN](https://cloud.r-project.org/package=eechidna)]
 
 * [**emma**](https://cloud.r-project.org/package=emma/): The evolutionary model-based multiresponse approach (EMMA) is a novel methodology to process optimisation and product improvement. The approach is suitable to contexts in which the experimental cost and/or time limit the number of implementable trials. [[CRAN](https://cloud.r-project.org/package=emma)]
 
