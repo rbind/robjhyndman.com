@@ -5,10 +5,13 @@ link: https://github.com/robjhyndman/ResearchHabits/raw/master/ResearchHabits.pd
 slug: research_habits
 ---
 
-Presentation for the 2019 honours and masters students
+## Presentation for the 2019 honours and masters students
 
+### Magic button for library access to papers
 
-## Links
+ * Drag this <a href='javascript:void(location.href="http://ezproxy.lib.monash.edu.au/login?url="+location.href)'><b>Monash</b></a> proxy link to your bookmarks.
+
+### Links
 
  * [Mendeley](http://www.mendeley.com)
  * [Zotero](http://www.zotero.org)
