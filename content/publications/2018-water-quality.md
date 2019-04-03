@@ -2,7 +2,7 @@
 author: Catherine&nbsp;Leigh, Sevvandi&nbsp;Kandanaarachchi, James&nbsp;M&nbsp;McGree, Rob&nbsp;J&nbsp;Hyndman, Omar&nbsp;Alsibai, Kerrie&nbsp;Mengersen, Erin&nbsp;E&nbsp;Peterson
 date: 2018-10-30
 slug: water-quality
-title: Predicting Sediment and Nutrient Concentrations in Rivers Using High Frequency Water Quality Surrogates
+title: Predicting sediment and nutrient concentrations in rivers using high-frequency water quality surrogates
 kind: unpublished
 tags:
 - data science
