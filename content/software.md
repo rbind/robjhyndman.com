@@ -39,6 +39,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 ## Time series data packages
 
+* [**compenginets**](https://pkg.robjhyndman.com/compenginets/): Time series data from [www.comp-engine.org/](http://www.comp-engine.org/)
+
 * [**expsmooth**](https://pkg.robjhyndman.com/expsmooth/): Data sets from [Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with exponential smoothing: the state space approach*, Springer: Berlin.](http://www.exponentialsmoothing.net/) [[CRAN](https://cloud.r-project.org/package=expsmooth)]
 
 * [**fma**](https://pkg.robjhyndman.com/fma/): Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cloud.r-project.org/package=fma)]
