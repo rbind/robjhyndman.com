@@ -1,0 +1,23 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-04-23
+slug: fpptranslations
+title: 'Translations of "Forecasting: principles and practice"'
+categories:
+- forecasting
+- fpp
+- otexts
+- references
+- writing
+---
+
+There are now translations of my forecasting textbook (coauthored with George Athanasopoulos) into Chinese and Korean.
+
+The [**Chinese translation**](https://otexts.com/fppcn/) was produced by a team led by [Professor Yanfei Kang](https://yanfei.site/) (Beihang University) and [Professor Feng Li](https://feng.li/) (Central University of Finance and Economics). The following students were also involved: Cheng Fan, Liu Yu, Long Xiaoyu, Wang Xiaoqian, Zeng Jiayue, Zhang Bohan, and Zhu Shuaidong.
+
+The [**Korean translation**](https://otexts.com/fppkr/) was produced by [Dr Daniel Young Ho Kim](http://danielykim.me/).
+
+I am very thankful to the hard work and language skills of these people, making the book more accessible to many more people.
+
+If anyone else is interested in creating an online translation of the book into their own language, please let me know.
