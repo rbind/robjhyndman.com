@@ -17,7 +17,7 @@ title: "Research team"
 
 ## PhD students
 
-  1. **Fan Cheng**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
+  1. **[Fan Cheng](https://fancheng.me/)**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecasts for hierarchical time series* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
   1. **[Sayani Gupta](https://acems.org.au/our-people/sayani-gupta-gupta)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
