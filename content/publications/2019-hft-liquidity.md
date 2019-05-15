@@ -8,7 +8,7 @@ tags:
 - finance
 - time series
 - data visualization
-link: papers/p157-Hirsch.pdf
+link: /papers/p157-Hirsch.pdf
 citation: "In: <em>Proceedings of the 2nd International Conference on Software Engineering and Information Management</em>. Bali, Indonesia. 10-13 January 2019. pp. 157-165. ACM"
 ---
 
