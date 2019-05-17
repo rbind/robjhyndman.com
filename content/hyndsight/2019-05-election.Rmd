@@ -1,0 +1,14 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-05-17
+slug: election-conversation
+title: 'You are what you vote'
+categories:
+- politics
+- statistics
+- R
+---
+
+I've tried my hand at writing for the wider public with an [**article for The Conversation**](https://theconversation.com/you-are-what-you-vote-the-social-and-demographic-factors-that-influence-your-vote-116591) based on my paper with Di Cook and Jeremy Forbes on ["Spatial modelling of the two-party preferred vote in Australian federal elections: 2001-2016"](https://robjhyndman.com/publications/elections/). With the next Australian election taking place tomorrow, we thought it was timely to put out a publicly accessible version of our analysis.
+
