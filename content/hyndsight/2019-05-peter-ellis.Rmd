@@ -1,0 +1,22 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-05-26
+slug: peter-ellis
+title: 'Poll position: statistics and the Australian federal election'
+categories:
+- politics
+- statistics
+- R
+---
+
+One of the few people in Australia who did not write off a possible Coalition win at the recent federal election was Peter Ellis. We've invited him to come and give a talk about making sense of opinion polls and the Australian federal election on Friday 31st May at Monash University. Here are the details.
+
+
+**Abstract:** The result of the Australian federal election in May 2019 stunned many in the politics-observing class because it diverged from a long chain of published survey results of voting intention. How surprising was the outcome? Not actually a complete outlier; about a one in six chance, according to Peter Ellis's forecasting model for Free Range Statistics. This seminar will walk through that model from its data management (the R package ozfedelect, built specifically to support it), the state-space model written in Stan and R that produces the forecasts; and its eventual visualisation and communication to the public. There are several interesting statistical issues relating to how we translate crude survey data into actual predicted seats, and some even more interesting communication issues about how all this is understood by the public. This talk is aimed at those with an interest in one or more of R, Stan, Bayesian modelling and forecasts, and Australian voting behaviour.
+
+**Bio:** Peter Ellis is a Director at the management consulting firm Nous Group, and an Accredited Statistician. He has extensive experience in the public sector in Australia and New Zealand, where his roles have included Director of Evaluation for the Australian aid program; Counsellor Development Cooperation at the Australian Embassy in Dili, Timor Leste; and Manager of a number of policy-related analytics teams in New Zealand in areas such as tourism, regional economic development, sector trends, and social investment.  His has special interests in time series, complex surveys for official statistics, and integrated administrative data to improve our understanding of public policy issues. He is a keen advocate of reproducible research and has spent much of the past eight years helping to improve teams' data management and visualisation as a necessary preliminary to the "stats stuff".
+
+In his spare time Peter writes a blog on various data and statistical things that interest him, http://freerangestats.info, which was once rated the 13th best statistics blog on the web. He started forecasting elections in New Zealand as a way to learn how to use Stan, and the hobby has stuck with him since he moved back to Australia in late 2018.
+
+Peter has a Master of Applied Statistics from the ANU, a Master of Development Studies from Murdoch, and a Bachelor of Music Performance (classical guitar) from Edith Cowan.
