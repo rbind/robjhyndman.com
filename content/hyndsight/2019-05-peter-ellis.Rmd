@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: true
 date: 2019-05-26
-slug: peter-ellis
+slug: poll-position
 title: 'Poll position: statistics and the Australian federal election'
 categories:
 - politics
@@ -10,8 +10,9 @@ categories:
 - R
 ---
 
-One of the few people in Australia who did not write off a possible Coalition win at the recent federal election was Peter Ellis. We've invited him to come and give a talk about making sense of opinion polls and the Australian federal election on Friday 31st May at Monash University. Here are the details.
+One of the few people in Australia who did not write off a possible Coalition win at the recent federal election was Peter Ellis. We've invited him to come and give a talk about making sense of opinion polls and the Australian federal election on Friday this week at Monash University. Visitors are welcome. Here are the details.
 
+**11am, 31 May 2019. Room G03, Learning and Teaching Building, [19 Ancora Imparo Way, Clayton Campus, Monash University](https://www.monash.edu/__data/assets/pdf_file/0010/71686/3-Claytoncolour.pdf)**
 
 **Abstract:** The result of the Australian federal election in May 2019 stunned many in the politics-observing class because it diverged from a long chain of published survey results of voting intention. How surprising was the outcome? Not actually a complete outlier; about a one in six chance, according to Peter Ellis's forecasting model for Free Range Statistics. This seminar will walk through that model from its data management (the R package ozfedelect, built specifically to support it), the state-space model written in Stan and R that produces the forecasts; and its eventual visualisation and communication to the public. There are several interesting statistical issues relating to how we translate crude survey data into actual predicted seats, and some even more interesting communication issues about how all this is understood by the public. This talk is aimed at those with an interest in one or more of R, Stan, Bayesian modelling and forecasts, and Australian voting behaviour.
 
