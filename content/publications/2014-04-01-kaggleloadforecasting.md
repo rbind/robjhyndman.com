@@ -21,6 +21,3 @@ We describe and analyse the approach used by Team TinTin (Souhaib Ben Taieb and 
 
 **Keywords:** Short-term load forecasting; multi-step forecasting; additive models; gradient boosting; machine learning; Kaggle competition
 
-
-
-[
