@@ -21,6 +21,6 @@ We discuss and compare measures of accuracy of univariate time series forecasts.
 
 **Keywords:** forecast accuracy, forecast evaluation, forecast error measures, M-competition, mean absolute scaled error.
 
-**Sample calculations:** [Excel spreadsheet showing MASE calculation for the "product C" series.](https://robjhyndman.com/papers/MASE.xls)
+**Sample calculations:** [Excel spreadsheet showing MASE calculation for the "product C" series.](https://robjhyndman.com/files/MASE.xls)
 
-**Data:** [Data used in examples.](https://robjhyndman.com/papers/HKdata.xls)
+**Data:** [Data used in examples.](https://robjhyndman.com/files/HKdata.xls)

@@ -19,7 +19,7 @@ Some of the proposed measures of forecast accuracy for intermittent demand can g
 
 **Errata:** In the series shown in Table 2, the sixth value should be 11 (not 1). Similarly, the fifth error value should be 11 (not 1).
 
-**Sample calculations:** [Excel spreadsheet showing MASE calculation for the example series.](https://robjhyndman.com/papers/MASE.xls)
+**Sample calculations:** [Excel spreadsheet showing MASE calculation for the example series.](https://robjhyndman.com/files/MASE.xls)
 
-**Data:** [Data used in examples.](https://robjhyndman.com/papers/HKdata.xls)
+**Data:** [Data used in examples.](https://robjhyndman.com/files/HKdata.xls)
 
