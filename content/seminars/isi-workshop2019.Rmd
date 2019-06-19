@@ -14,7 +14,7 @@ date: 2019-08-17
 ## Presenters
 
  * Rob J Hyndman
- * [Earo Wang](http://earo.me)
+ * [Mitchell O'Hara-Wild](https://mitchelloharawild.com)
 
 ## Course description
 
