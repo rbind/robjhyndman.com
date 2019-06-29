@@ -9,7 +9,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**tsibble**](https://tsibble.tidyverts.org): Tidy Temporal Data Frames and Tools [[CRAN](https://cloud.r-project.org/package=tsibble)]
 
-* [**tsibbledata**](https://github.com/tidyverts/tsibbledata): Example datasets for tsibble
+* [**tsibbledata**](https://github.com/tidyverts/tsibbledata): Example datasets for tsibble [[CRAN](https://cloud.r-project.org/package=tsibbledata)]
 
 * [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series
 
