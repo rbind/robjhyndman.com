@@ -8,3 +8,4 @@ content/seminars/*.html
 static/hyndsight/*
 *.sublime-workspace
 *.sublime-project
+.directory
