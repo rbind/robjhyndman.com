@@ -24,11 +24,11 @@ We will explore feature-based visualizations and interactive visualizations, in 
 
 ## Syllabus
 
-1. Tidy time series analysis using tsibbles.
-2. Interactive visualization of high-dimensional time series.
-3. A feature-based approach to time series analysis
-4. Automatic forecasting algorithms
-5. Optimal forecast reconciliation
+1. Tidy time series analysis using tsibbles. [1 hour]
+2. Visualization of high-dimensional time series. [1 hour]
+3. A feature-based approach to time series analysis [1 hour]
+4. Automatic forecasting algorithms [2 hours]
+5. Optimal forecast reconciliation [1 hour]
 
 
 ## Prerequisites
@@ -37,4 +37,3 @@ Participants should be familiar with the use of R, at least to the point where t
 
 Please bring your own laptop with a recent version of R and RStudio installed
 
-### [Register](http://www.isi2019.org/short-courses/)
