@@ -43,8 +43,11 @@ Please bring your own laptop with a recent version of R and RStudio installed. W
 
 ```r
 install.packages("tidyverse")
-install.packages("remotes")
-remotes::install_github("robjhyndman/fpp3-package", upgrade=TRUE)
+install.packages("tsibble")
+install.packages("tsibbledata")
+install.packages("fabletools")
+install.packages("feasts", repos = "tidyverts.org")
+install.packages("fable", repos = "tidyverts.org")
 ```
 
 ## Lab Sessions
@@ -122,10 +125,9 @@ For the Australian tourism data (from `tourism`):
 
 ### Lab Session 10
 
-* Create a new tsibble for PBS data using only ATC1 groups (combining over ATC2 groups).
-* Use forecast reconciliation with this data, using both ETS and SNAIVE models.
+* Use forecast reconciliation with the PBS data, using ETS, ARIMA and SNAIVE models, applied to all but the last 3 years of data.
 * Which type of model works best?
 * Does the reconciliation improve the forecast accuracy?
-* Why doesn't reconciliation make any difference to SNAIVE forecasts?
+* Why doesn't the reconcililation make any difference to the SNAIVE forecasts?
 
 
