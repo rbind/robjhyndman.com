@@ -46,8 +46,8 @@ install.packages("tidyverse")
 install.packages("tsibble")
 install.packages("tsibbledata")
 install.packages("fabletools")
-install.packages("feasts", repos = "tidyverts.org")
-install.packages("fable", repos = "tidyverts.org")
+install.packages("feasts", repos = "https://tidyverts.org")
+install.packages("fable", repos = "https://tidyverts.org")
 ```
 
 ## Lab Sessions
