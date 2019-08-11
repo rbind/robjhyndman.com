@@ -16,7 +16,7 @@ options(digits=3)
 
 This week I've been attending the [Functional Data and Beyond workshop](https://www.matrix-inst.org.au/events/functional-data-analysis-and-beyond/) at the Matrix centre in Creswick.
 
-I spoke yesterday about using `ggplot2` for functional data graphics, rather than the custom-built plotting functionality available in the many functional data packages, including my own [rainbow package](https://cran.r-project.org/package=rainbow) written with Hanlin Shang. 
+I spoke yesterday about using `ggplot2` for functional data graphics, rather than the custom-built plotting functionality available in the many functional data packages, including my own [rainbow package](https://cran.r-project.org/package=rainbow) written with Hanlin Shang.
 
 It is a much more powerful and flexible way to work, so I thought it would be useful to share some examples.
 
@@ -53,13 +53,10 @@ frmort %>%
     scale_color_gradientn(colours = rainbow(10))
 ```
 
-Another plot that has proved popular is to animate this rainbow plot by mapping year to animation time. With the new [`gganimate`](https://github.com/thomasp85/gganimate) package (still only on github), that is as easy as adding a few more lines to the end of the above code.
+Another plot that has proved popular is to animate this rainbow plot by mapping year to animation time. With the new [`gganimate`](https://github.com/thomasp85/gganimate) package, that is as easy as adding a few more lines to the end of the above code.
 
 ```{r frenchanimation, message=FALSE, warning=FALSE, fig.width=7}
-# This requires the transformr package on CRAN and the gganimate package on github
-# Run the following two lines if you don't already have them.
-#install.packages(c("transformr", "devtools"))
-#devtools::install_github("thomasp85/gganimate")
+# This requires the transformr package to be installed as well.
 library(gganimate)
 
 frmort %>%
