@@ -73,7 +73,7 @@ frmort %>%
     labs(title = 'Year: {frame_time}')
 ```
 
-Another way of looking at the data is using an image map. Again, this is extremly easy using ggplot2.
+Another way of looking at the data is using an image map. Again, this is extremely easy using ggplot2.
 
 
 ```{r imageplot}
