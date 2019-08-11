@@ -113,7 +113,7 @@ facf <- function(df, xvar, yvar, time, lag.max=20) {
         acf = c(x$acf[i,,])
     ))
   }
-  colnames(output)[2:3] <- paste0(as.character(key)[[2]],1:2)
+  colnames(output)[2:3] <- paste0(rlang::as_name(key),1:2)
   return(output)
 }
 # Compute FACF for the French mortality data
