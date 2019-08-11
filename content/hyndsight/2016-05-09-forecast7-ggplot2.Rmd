@@ -66,8 +66,8 @@ For plotting functions that do not use an S3 plot() method, there is now a ggplo
 
 ```{r, message=FALSE, cache=TRUE}
     ggtsdisplay(mdeaths)
-    ggAcf(mdeaths, main="")
-    ggPacf(mdeaths, main="")
+    ggAcf(mdeaths)
+    ggPacf(mdeaths)
     ggCcf(mdeaths, fdeaths)
 ```
 
