@@ -39,7 +39,7 @@ We will explore feature-based visualizations and interactive visualizations, in 
 
 Participants should be familiar with the use of R, at least to the point where they can fit a linear regression model, and work with data frames.
 
-Please bring your own laptop with a recent version of R and RStudio installed. We do hope to have the main packages available on CRAN before the course. In the meantime, the following code will install the relevant packages.
+Please bring your own laptop with a recent version of R and RStudio installed. The following code will install the main packages needed for the workshop.
 
 ```r
 install.packages("tidyverse")
