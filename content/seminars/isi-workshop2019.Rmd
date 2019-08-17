@@ -125,9 +125,9 @@ For the Australian tourism data (from `tourism`):
 
 ### Lab Session 10
 
+* Prepare aggregations of the PBS data by Concession, Type, and ATC1.
 * Use forecast reconciliation with the PBS data, using ETS, ARIMA and SNAIVE models, applied to all but the last 3 years of data.
 * Which type of model works best?
 * Does the reconciliation improve the forecast accuracy?
 * Why doesn't the reconcililation make any difference to the SNAIVE forecasts?
-
 
