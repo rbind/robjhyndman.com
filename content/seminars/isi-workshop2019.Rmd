@@ -130,3 +130,7 @@ For the Australian tourism data (from `tourism`):
 * Which type of model works best?
 * Does the reconciliation improve the forecast accuracy?
 * Why doesn't the reconcililation make any difference to the SNAIVE forecasts?
+
+### Lab solutions
+
+[Here is my code produced during the workshop.](https://robjhyndman.com/files/labs.R)
