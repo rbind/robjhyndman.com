@@ -1,13 +1,14 @@
 ---
 author: Catherine&nbsp;Leigh, Sevvandi&nbsp;Kandanaarachchi, James&nbsp;M&nbsp;McGree, Rob&nbsp;J&nbsp;Hyndman, Omar&nbsp;Alsibai, Kerrie&nbsp;Mengersen, Erin&nbsp;E&nbsp;Peterson
-date: 2018-10-30
+date: 2019-08-23
 slug: water-quality
 title: Predicting sediment and nutrient concentrations in rivers using high-frequency water quality surrogates
-kind: unpublished
+kind: article
+citation: <em>PLOS ONE</em>, to appear
 tags:
 - data science
 - time series
-- anomaly detection
+- environment
 link: https://arxiv.org/abs/1810.12499
 ---
 
