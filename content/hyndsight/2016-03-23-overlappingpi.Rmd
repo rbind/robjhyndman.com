@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2016-03-23 10:19:49+00:00
-
 link: https://robjhyndman.com/hyndsight/overlappingpi/
 slug: overlappingpi
 title: Plotting overlapping prediction intervals
-wordpress_id: 3695
 categories:
 - forecasting
 - graphics
@@ -30,7 +28,7 @@ polygon(c(time(f2$mean),rev(time(f2$mean))),
         col=rgb(1,0,0,.4),
         border=FALSE)
 lines(f2$mean, col=rgb(.7,0,0))
-legend("bottomleft", 
+legend("bottomleft",
        fill=c(rgb(0,0,1,.4),rgb(1,0,0,.4)),
        col=c("blue","red"), lty=1,
        legend=c("ARIMA","ETS"))

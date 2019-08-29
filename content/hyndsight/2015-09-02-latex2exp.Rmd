@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2015-09-02 07:17:08+00:00
-
 link: https://robjhyndman.com/hyndsight/latex2exp/
 slug: latex2exp
 title: Mathematical annotations on R plots
-wordpress_id: 3360
 categories:
 - computing
 - graphics
@@ -48,7 +46,7 @@ fit <- lca(fr.mort)
 
 tikz("tikz-test.tex",width=15/2.54,height=12/2.54)
 par(mfrow=c(2,2),mar=c(4,5,2,1),family="serif")
-plot(fit[["age"]],fit$ax,type="l", 
+plot(fit[["age"]],fit$ax,type="l",
      ylab="$a_x$", xlab="Age: $x$")
 plot(fit[["age"]],fit$bx,type="l",
      ylab="$b_x$", xlab="Age: $x$")
@@ -56,7 +54,7 @@ plot(0,type="n",axes=FALSE,xlab="",ylab="")
 text(1,0,"$m_{x,t} = a_x + k_tb_x + e_{x,t}$")
 plot(fit$kt,ylab="$k_t$", xlab="Year: $t$")
 dev.off()
-```    
+```
 
 [![Screenshot from 2015-09-02 17:12:50](/files/Screenshot-from-2015-09-02-171250.png)](/files/Screenshot-from-2015-09-02-171250.png)
 

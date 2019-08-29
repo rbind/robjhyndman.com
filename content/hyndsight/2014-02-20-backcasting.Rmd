@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2014-02-20 04:20:29+00:00
-
 link: https://robjhyndman.com/hyndsight/backcasting/
 slug: backcasting
 title: Backcasting in R
-wordpress_id: 2488
 categories:
 - forecasting
 - R

@@ -6,7 +6,6 @@ mathjax: true
 link: https://robjhyndman.com/hyndsight/forecast-v7-2/
 slug: forecast-v7-2
 title: R package forecast v7.2 now on CRAN
-wordpress_id: 3861
 categories:
 - forecasting
 - graphics
@@ -23,7 +22,7 @@ I’ve pushed a minor update to the forecast package to CRAN. Some highlights ar
 
 You can now facet a time series plot like this:
 
-```{r, cache=TRUE}
+```{r, cache=TRUE, message=FALSE}
 library(forecast)
 library(ggplot2)
 lungDeaths <- cbind(mdeaths, fdeaths)

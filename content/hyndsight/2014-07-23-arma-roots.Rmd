@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2014-07-23 07:57:28+00:00
-
 link: https://robjhyndman.com/hyndsight/arma-roots/
 slug: arma-roots
 title: Plotting the characteristic roots for ARIMA models
-wordpress_id: 2804
 categories:
 - computing
 - forecasting
@@ -16,12 +14,12 @@ categories:
 
 When modelling data with ARIMA models, it is sometimes useful to plot the inverse characteristic roots. The following functions will compute and plot the inverse roots for any fitted ARIMA model (including seasonal models).<!-- more -->
 
-    
+
 ```{r, cache=TRUE}
 # Compute AR roots
 arroots <- function(object)
 {
-  if(!("Arima" %in% class(object)) & 
+  if(!("Arima" %in% class(object)) &
      !("ar" %in% class(object)))
     stop("object must be of class Arima or ar")
   if("Arima" %in% class(object))
@@ -34,7 +32,7 @@ arroots <- function(object)
     if (last.nonzero > 0)
       return(structure(list(
           roots=polyroot(c(1,-parvec[1:last.nonzero])),
-          type="AR"), 
+          type="AR"),
         class='armaroots'))
   }
   return(structure(list(roots=numeric(0), type="AR"),
@@ -53,7 +51,7 @@ maroots <- function(object)
     if (last.nonzero > 0)
       return(structure(list(
           roots=polyroot(c(1,parvec[1:last.nonzero])),
-          type="MA"), 
+          type="MA"),
         class='armaroots'))
   }
   return(structure(list(roots=numeric(0), type="MA"),
@@ -70,14 +68,14 @@ plot.armaroots <- function(x, xlab="Real", ylab="Imaginary",
   plot(c(-1,1), c(-1,1), xlab=xlab, ylab=ylab,
        type="n", bty="n", xaxt="n", yaxt="n", main=main, ...)
   axis(1, at=c(-1,0,1), line=0.5, tck=-0.025)
-  axis(2, at=c(-1,0,1), label=c("-i","0","i"), 
+  axis(2, at=c(-1,0,1), label=c("-i","0","i"),
     line=0.5, tck=-0.025)
   circx <- seq(-1,1,l=501)
   circy <- sqrt(1-circx^2)
   lines(c(circx,circx), c(circy,-circy), col='gray')
-  lines(c(-2,2), c(0,0), col='gray') 
+  lines(c(-2,2), c(0,0), col='gray')
   lines(c(0,0), c(-2,2), col='gray')
-  if(length(x$roots) > 0) 
+  if(length(x$roots) > 0)
   {
     inside <- abs(x$roots) > 1
     points(1/x$roots[inside], pch=19, col='black')

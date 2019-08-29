@@ -30,7 +30,7 @@ df <- ts(c(2735.869,2857.105,2725.971,2734.809,2761.314,2828.224,2830.284,
 
 We can approximate the seasonal pattern using [Fourier terms](https://otexts.org/fpp2/useful-predictors.html#fourier-series) with a few parameters.
 
-```{r}
+```{r, message=FALSE}
 library(forecast)
 library(ggplot2)
 decompose_df <- tslm(df ~ trend + fourier(df, 2))

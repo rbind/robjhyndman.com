@@ -24,10 +24,10 @@ STL decomposition was designed to handle a single type of seasonality, but moder
 
 For example, here is a decomposition of some half-hourly electricity demand data from England and Wales.
 
-```{r, fig.height=8, fig.width=8}
+```{r, fig.height=8, fig.width=8, message=FALSE}
 library(forecast)
 library(ggplot2)
-mstl(taylor) %>% autoplot(facet=TRUE)
+mstl(taylor) %>% autoplot()
 ```
 
 The daily seasonality is shown as `Seasonal48` while the weekly seasonality is named `Seasonal336`, the names indicating the length of the seasonal period.

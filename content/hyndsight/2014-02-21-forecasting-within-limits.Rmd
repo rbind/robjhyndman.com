@@ -6,7 +6,6 @@ mathjax: true
 link: https://robjhyndman.com/hyndsight/forecasting-within-limits/
 slug: forecasting-within-limits
 title: Forecasting within limits
-wordpress_id: 2492
 categories:
 - forecasting
 - R
@@ -27,7 +26,7 @@ To impose a positivity constraint, simply work on the log scale. With the foreca
     library(fpp)
     fit <- ets(eggs, lambda=0)
     plot(forecast(fit, h=50))
-```    
+```
 
 
 ### Forecasts constrained to an interval
@@ -56,7 +55,7 @@ where $x$ is on the original scale and $y$ is the transformed data.
     fc$x <- eggs
     # Plot result on original scale
     plot(fc)
-```    
+```
 
 
 The prediction intervals from these transformations have the same coverage probability as on the transformed scale, because quantiles are preserved under monotonically increasing transformations.

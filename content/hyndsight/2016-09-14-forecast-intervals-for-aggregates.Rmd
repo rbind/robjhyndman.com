@@ -20,7 +20,7 @@ But a more general solution, if you only need empirical results, is to use simul
 
 Here is an example using ETS models applied to Australian monthly gas production data.
 
-```{r, cache=TRUE}
+```{r, cache=TRUE, message=FALSE}
 library(forecast)
 library(ggplot2)
 

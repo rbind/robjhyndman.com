@@ -5,7 +5,6 @@ date: 2016-08-22 07:58:42+00:00
 link: https://robjhyndman.com/hyndsight/thief/
 slug: thief
 title: 'The thief package for R: Temporal HIErarchical Forecasting'
-wordpress_id: 3804
 categories:
 - forecasting
 - R
@@ -30,7 +29,7 @@ The main function is `thief` which can be used like any of the forecast function
 library(methods)
 ```
 
-```{r thief, cache=TRUE}
+```{r thief, cache=TRUE, message=FALSE}
 library(thief)
 library(ggplot2)
 fc <- thief(USAccDeaths)

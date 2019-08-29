@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2014-09-08 05:36:56+00:00
-
 link: https://robjhyndman.com/hyndsight/quantile-forecasts-in-r/
 slug: quantile-forecasts-in-r
 title: Generating quantile forecasts in R
-wordpress_id: 2921
 categories:
 - computing
 - energy
@@ -53,7 +51,7 @@ where `mu` and `sigma` are the estimated mean and standard deviation of the fore
     s <- (fc$upper-fc$lower)/1.96/2
     for(h in 1:20)
       qf[,h] <- qnorm((1:99)/100, m[h], s[h])
-    
+
     plot(fc)
     matlines(101:120, t(qf), col=rainbow(120), lty=1)
 ```

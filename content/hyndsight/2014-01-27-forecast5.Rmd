@@ -67,7 +67,7 @@ The latter option now makes it possible to forecast from an ARIMA model without 
 ### Minor changes and bug fixes
 
 Other changes include:
-  
+
   * Added argument model to `dshw()` to enable an estimated model to be applied to a new time series.
   * Made several functions more robust to `zoo` objects.
   * Corrected an error in the calculation of AICc when using `CV()`.

@@ -6,8 +6,9 @@ categories:
 - ijf
 - journals
 output:
-  fig_height: 3
-  fig_width: 6
+  blogdown::html_page:
+    fig_height: 3
+    fig_width: 6
 mathjax: true
 ---
 
@@ -27,7 +28,7 @@ ijf[,2] <- as.numeric(sub(",","",ijf[,2]))
 nr <- sum(!is.na(ijf[,2]))
 ijf <- ijf[1:nr,]
 ijf <- cbind("IJF",ijf)
-colnames(ijf) <- 
+colnames(ijf) <-
    c("Journal","Year","Total cites","2 year Impact Factor",
      "IF without self-cites","5 year Impact Factor",
      "Immediacy Index","Citable items","Cited Half Life",
@@ -51,12 +52,12 @@ cites <- round(if2 * articles)
 ```
 
 
-Once every year, the [journal citation reports](http://clarivate.com/?product=journal-citation-reports) are released including journal impact factors. This year, the *International Journal of Forecasting* 2-year impact factor has increased to **`r if2`** which is the highest it has been in the journal's history, and puts the journal higher than such notable titles as *Journal of the American Statistical Association* and just below *Management Science*. 
+Once every year, the [journal citation reports](http://clarivate.com/?product=journal-citation-reports) are released including journal impact factors. This year, the *International Journal of Forecasting* 2-year impact factor has increased to **`r if2`** which is the highest it has been in the journal's history, and puts the journal higher than such notable titles as *Journal of the American Statistical Association* and just below *Management Science*.
 
-The **2-year impact factor** is the average number of citations for articles published in the previous 2 years. In 2014-2015, we published `r articles` papers which received 
-`r cites` citations in 2016, giving the 2 year impact factor of $`r cites`/`r articles` = `r if2`$. 
+The **2-year impact factor** is the average number of citations for articles published in the previous 2 years. In 2014-2015, we published `r articles` papers which received
+`r cites` citations in 2016, giving the 2 year impact factor of $`r cites`/`r articles` = `r if2`$.
 
-The **5-year impact factor** is the corresponding figure over the previous 5 years. 
+The **5-year impact factor** is the corresponding figure over the previous 5 years.
 The IJF 5-year impact factor is `r if5`.
 
 The following time series plot shows some historical perspective.
@@ -86,7 +87,7 @@ Next year, the IJF impact factor will probably drop back below 2.0, and I won't 
 
 Two years is a very short time in the life of a forecasting paper, and I would prefer that greater emphasis was placed on the 5-year impact factor which is somewhat less noisy and better reflects the time it takes for forecasting work to disseminate.
 
-But even 5 years is not long. Some papers take many years before they are appreciated. My own paper with Yanan Fan on sample quantiles received 43 citations in the first ten years and 457 citations in the next ten years (see [this blog post](/hyndsight/sample-quantiles-20-years-later)). In my view, the 2-year impact factor places far too much emphasis on recency, and not enough on longevity. 
+But even 5 years is not long. Some papers take many years before they are appreciated. My own paper with Yanan Fan on sample quantiles received 43 citations in the first ten years and 457 citations in the next ten years (see [this blog post](/hyndsight/sample-quantiles-20-years-later)). In my view, the 2-year impact factor places far too much emphasis on recency, and not enough on longevity.
 
 ### Impact factors are easy to game
 
@@ -101,6 +102,5 @@ I would prefer to see emphasis on individual papers rather than journals. After 
 There is considerable inertia in the current system, and most academics are stuck in a system that makes them jump through hoops which they can't control. But there are some things that can be done.
 
  1. If you sit on a promotions committee, or a faculty research committee, please try to stop the nonsense of having ranked lists of journals where academics are supposed to publish. Instead, look at an individual scholar's actual impact in terms of their h-index, and then read some of their papers yourself. If someone is writing good papers that get highly cited, why should we care whether they appear in a prestigious journal or on a personal website?
- 
+
  1. One of the arguments for retaining journals is that they provide a valuable service of peer review. So put your papers online first where everyone can read them and cite them, then send them to the journal where you think you will get the best feedback from reviewers --- not to the journal with the highest ranking on some list, nor to the journal with the highest impact factor. These are correlated of course. I think one of the reasons the IJF impact factor is so high is that we have a team of great editors, associate editors and reviewers who help to provide high quality feedback to authors. So let's celebrate the quality of the product, rather than a simplistic and unhelpful proxy for it.
- 

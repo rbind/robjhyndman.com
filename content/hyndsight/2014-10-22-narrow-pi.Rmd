@@ -6,7 +6,6 @@ mathjax: true
 link: https://robjhyndman.com/hyndsight/narrow-pi/
 slug: narrow-pi
 title: Prediction intervals too narrow
-wordpress_id: 3017
 categories:
 - forecasting
 - R
@@ -28,7 +27,7 @@ When we produce prediction intervals for time series models, we generally only t
 
 Even if we ignore the model uncertainty and the DGP uncertainty (sources 3 and 4), and just try to allow for parameter uncertainty as well as the random error term (sources 1 and 2), there are no closed form solutions apart from some simple special cases.
 
-One such special case is an ARIMA(0,1,0) model with drift, which can be written as 
+One such special case is an ARIMA(0,1,0) model with drift, which can be written as
 $$
 y_t = y_{t-1} + c + e_t,
 $$

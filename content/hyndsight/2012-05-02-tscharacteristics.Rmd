@@ -14,7 +14,7 @@ options(digits=2)
 ```
 
 A few years ago, I was working on a project where we measured various characteristics of a time series and used the information to determine what forecasting method to apply or how to cluster the time series into meaningful groups. The two main papers to come out of that project were:
- 
+
   1. [Wang, Smith and Hyndman (2006) Characteristic-​​based clustering for time series data. _Data Mining and Knowledge Discovery_, **13**(3), 335-364.](/publications/characteristic-based-clustering-for-time-series-data/)
 
   2. [Wang, Smith-Miles and Hyndman (2009) "Rule induction for forecasting method selection: meta-​​learning the characteristics of univariate time series", _Neurocomputing_, **72**, 2581-2594.](/publications/forecast-rules/)
@@ -24,7 +24,7 @@ I've since had a lot of requests for the code which one of my coauthors has been
 ## Finding the period of the data
 
 Usually in time series work, we know the period of the data (if the observations are monthly, the period is 12, for example). But in this project, some of our data was of unknown period and we wanted a method to automatically determine the appropriate period. The method we used was based on local peaks and troughs in the ACF. But I've since devised a better approach ([prompted on crossvalidated.com](http://stats.stackexchange.com/a/1214/159)) using an estimate of the spectral density:
-  
+
 ```{r, cache=TRUE}
 findfrequency <- function(x)
 {
@@ -174,7 +174,7 @@ measures <- function(x)
   {
     detrend <- decomp.x[["x"]] - decomp.x[["trend"]]
     deseason <- decomp.x[["x"]] - decomp.x[["season"]]
-    trend <- ifelse(var(deseason,na.rm=TRUE) < 1e-10, 0, 
+    trend <- ifelse(var(deseason,na.rm=TRUE) < 1e-10, 0,
       max(0,min(1,1-v.adj/var(deseason,na.rm=TRUE))))
     season <- ifelse(var(detrend,na.rm=TRUE) < 1e-10, 0,
       max(0,min(1,1-v.adj/var(detrend,na.rm=TRUE))))
@@ -191,7 +191,7 @@ measures <- function(x)
   # Measures on original data
   xbar <- mean(x,na.rm=TRUE)
   s <- sd(x,na.rm=TRUE)
-  
+
   # Serial correlation
   Q <- Box.test(x,lag=10)[["statistic"]]/(N*10)
   fQ <- f2(Q,7.53,0.103)
@@ -228,7 +228,7 @@ measures <- function(x)
   fLyap <- exp(Lyap)/(1+exp(Lyap))
 
   m <- c(m,fQ,fp,fs,fk,H,fLyap)
-  
+
   # Measures on adjusted data
   xbar <- mean(tadj.x, na.rm=TRUE)
   s <- sd(tadj.x, na.rm=TRUE)

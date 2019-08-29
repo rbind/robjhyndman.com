@@ -15,15 +15,15 @@ knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
 options(digits=3)
 ```
 
-[Forecasting benchmarks](/hyndsight/benchmarks) are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review. 
+[Forecasting benchmarks](/hyndsight/benchmarks) are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review.
 
-[Typical benchmarks](https://otexts.org/fpp2/simple-methods.html) include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected [ETS model](https://otexts.org/fpp2/ets.html), and an automatically selected [ARIMA model](https://otexts.org/fpp2/arima.html). These are easily calculated using the `naive()`, `snaive()`, `ets()` and `auto.arima()` functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1). 
+[Typical benchmarks](https://otexts.org/fpp2/simple-methods.html) include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected [ETS model](https://otexts.org/fpp2/ets.html), and an automatically selected [ARIMA model](https://otexts.org/fpp2/arima.html). These are easily calculated using the `naive()`, `snaive()`, `ets()` and `auto.arima()` functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1).
 
 Another benchmark worth considering is the Theta method which did very well in the M3 forecasting competition. The `thetaf()` function provides a convenient implementation.
 
 At the [International Symposium on Forecasting](http://isf.forecasters.org) held in Boulder last week, [Srihari Jaganathan](https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/) proposed that a simple average of these forecasts should be used as a standard forecast combination (or ensemble) benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the [forecastHybrid](https://cran.r-project.org/package=forecastHybrid) package might be useful.)
 
-In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset ensembles from these four benchmarks. That gives 15 ($=2^4-1$) possible combinations. 
+In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset ensembles from these four benchmarks. That gives 15 ($=2^4-1$) possible combinations.
 
 The code is general enough that it is easy to add additional methods if anyone wants to include other possible benchmark methods. Just name them with a unique letter in the following function; no other code in this post needs to be changed.
 
@@ -44,7 +44,7 @@ benchmarks <- function(y, h) {
   combinations <- expand.grid(method_choice) %>% tail(-1) %>% as.matrix()
   # Construct names for all combinations
   for (i in seq(NROW(combinations))) {
-    rownames(combinations)[i] <- paste0(method_names[which(combinations[i, ] > 0)], 
+    rownames(combinations)[i] <- paste0(method_names[which(combinations[i, ] > 0)],
       collapse = "")
   }
   # Compute combination weights
@@ -83,8 +83,8 @@ M3errors <- tibble(
     pce = map(errors, "pcerror")) %>%
   unnest() %>%
   select(-h1, -Method1) %>%
-  mutate(h = as.integer(h), 
-         Period = factor(str_to_title(Period), 
+  mutate(h = as.integer(h),
+         Period = factor(str_to_title(Period),
                          levels = c("Monthly","Quarterly","Yearly","Other")))
 ```
 
@@ -123,7 +123,7 @@ The best performing ensemble method is EAT -- a combination of an ETS model, an 
 Next, we can plot the accuracy statistics against the forecast horizon. The legend has been ordered to correspond roughly to the order of the series in the MASE plots.
 
 ```{r plots, message=FALSE, warning=FALSE, dependson='table',fig.width=10, fig.height=5}
-order <- accuracy_table %>% group_by(Method) %>% 
+order <- accuracy_table %>% group_by(Method) %>%
   summarise(MASE = mean(MASE)) %>% arrange(MASE) %>%
   pull("Method") %>% rev()
 accuracy %>%
@@ -131,7 +131,7 @@ accuracy %>%
   filter(Method %in% unique(accuracy_table$Method)) %>%
   mutate(Method = factor(Method, levels=order)) %>%
   ggplot(aes(x = h, y = accuracy), group = Method) +
-    geom_line(aes(col = Method)) + 
+    geom_line(aes(col = Method)) +
     facet_grid(rows = vars(Measure), cols=vars(Period), scale = "free") +
     xlab("Forecast horizon") + ylab("Forecast accuracy")
 ```

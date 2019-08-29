@@ -6,7 +6,6 @@ mathjax: true
 link: https://robjhyndman.com/hyndsight/backtransforming/
 slug: backtransforming
 title: The forecast mean after back-transformation
-wordpress_id: 2519
 categories:
 - forecasting
 - R

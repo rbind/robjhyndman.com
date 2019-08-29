@@ -13,7 +13,7 @@ The `nnetar` function in the [**forecast** package for R](http://github.com/robj
 
 Suppose we fit a NNETAR model to the famous Canadian `lynx` data:
 
-```{r}
+```{r, message=FALSE}
 library(forecast)
 set.seed(2015)
 (fit <- nnetar(lynx, lambda=0.5))

@@ -2,11 +2,9 @@
 author: robjhyndman
 comments: true
 date: 2014-10-20 02:08:07+00:00
-
 link: https://robjhyndman.com/hyndsight/hts-with-regressors/
 slug: hts-with-regressors
 title: hts with regressors
-wordpress_id: 3005
 categories:
 - forecasting
 - hts
@@ -34,7 +32,7 @@ That will fit a regression with ARIMA errors to each of the original series (at 
 
 
 
-I will illustrate using infant death numbers for Australia. These are disaggregated by state and sex as shown below. 
+I will illustrate using infant death numbers for Australia. These are disaggregated by state and sex as shown below.
 
 ```{r, echo=TRUE, message=FALSE, cache=TRUE}
 library(hts)

@@ -96,7 +96,7 @@ This can be extended to allow any number of "bend points" known as knots. Just a
 
 Here is a piecewise linear trend fitted to the Asian sheep data with knots at years 1990 and 1992:
 
-```{r, cache=TRUE, fig.cap="*A piecewise-linear trend fitted to the Asian sheep data.*"}
+```{r, cache=TRUE, fig.cap="*A piecewise-linear trend fitted to the Asian sheep data.*", warning=FALSE}
 x2 <- pmax(0, x1-30)
 x3 <- pmax(0, x1-32)
 fit <- auto.arima(livestock, xreg=cbind(x1,x2,x3))
