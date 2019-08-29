@@ -1,0 +1,89 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-08-29
+slug: tsibbles
+title: Tidy time series data using tsibbles
+categories:
+- time series
+- graphics
+- statistics
+- R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3)
+```
+
+There is a new suite of packages for tidy time series analysis, that integrates easily into the tidyverse way of working. We call these the `tidyverts` packages, and they are available at [tidyverts.org](https://tidyverts.org). Much of the work on these packages has been done by [Earo Wang](https://earo.me) and [Mitchell O'Hara-Wild](https://mitchelloharawild.com).
+
+The first of the packages to make it to CRAN was [tsibble](https://tsibble.tidyverts.org/), providing the data infrastructure for tidy temporal data with wrangling tools.  A *tsibble* (where "ts" is pronounced as in cats) is a time series object that is much easier to work with than existing classes such as `ts`, `xts` and others. Existing `ts` objects can be easily converted to `tsibble` objects using `as_tsibble()`. For example
+
+```{r as_tsibble, message=FALSE}
+library(tidyverse)
+library(tsibble)
+USAccDeaths %>% as_tsibble()
+```
+
+This creates an Index column which species the time or date index. These are always explicit in tsibbles, and can take a rich variety of time and date classes to handle any sort of temporal data. The second column is a measurement variable. Note the `[1M]` in the header, indicating this is monthly data.
+
+It is also easy to create tsibbles from csv files, by first reading them in using `readr::read_csv()` and then using the `as_tsibble()` function.
+
+A more interesting `tsibble` object is `tourism`, containing quarterly overnight trips across Australia.
+
+```{r tourism}
+tourism
+```
+
+Here we have some additional columns called Keys. There should be one row for each unique combination of the keys and index. Columns which are not the index or key variables are measurement variables. In this example, there are three keys (`Region`, `State` and `Purpose`) and one Measurement (`Trips`)
+
+All the usual tidyverse wrangling verbs apply. For example, to get the total visitor nights spent on Holiday by State for each quarter (ignoring Regions):
+
+```{r holidays}
+tourism %>%
+  filter(Purpose == "Holiday") %>%
+  group_by(State) %>%
+  summarise(Trips = sum(Trips))
+```
+
+Note that we do not have to explicitly group by the time index as this is assumed in a `tsibble`.
+
+To switch to annual data, we can re-index the tsibble:
+
+```{r annual}
+tourism %>%
+  mutate(Year = lubridate::year(Quarter)) %>%
+  index_by(Year) %>%
+  group_by(Region, State, Purpose) %>%
+  summarise(Trips = sum(Trips)) %>%
+  ungroup()
+```
+
+The `index_by()` function is the counterpart of `group_by()` when dealing with the index.
+
+I often get questions about dealing with daily and sub-daily data, for which the `ts` class is particularly ill-suited. The `tsibble` class handles such data with no problem. For example, here are some hourly pedestrian counts at four sites around Melbourne, Australia.
+
+```{r pedestrian}
+pedestrian
+```
+
+The `Date` and `Time` variables split the index into two components, representing the date and the hour of day. This makes it easy to produce some interesting plots.
+
+```{r ggplot, fig.height=10}
+pedestrian %>%
+  mutate(
+    Day = lubridate::wday(Date, label = TRUE),
+    Weekend = (Day %in% c("Sun", "Sat"))
+  ) %>%
+  ggplot(aes(x = Time, y = Count, group = Date)) +
+    geom_line(aes(col = Weekend)) +
+    facet_grid(Sensor ~ .)
+```
+
+The volume and pattern of pedestrian traffic at these four locations is clearly very different. See [Wang et al](https://robjhyndman.com/publications/calendar-vis/) for a more complete analysis with a cool calendar plot.
+
+In summary, I hope `tsibbles` will become the standard for handling temporal data in R (including multivariate time series, panel data, ets). I've been using them for about a year, and I'm still amazed at how much easier it is to do things than using other structures.
+
+We also have [a paper describing tsibbles and the package](https://robjhyndman.com/publications/tsibble/) for those who want more of the detailed thinking behind the design.
+
