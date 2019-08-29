@@ -1,0 +1,137 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-08-30
+slug: feasts
+title: Time series graphics using feasts
+categories:
+- time series
+- graphics
+- statistics
+- R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3)
+library(tidyverse)
+```
+
+This is the second post on the new [tidyverts](https://tidyverts.org) packages for tidy time series analysis.
+
+For users migrating from the `forecast` package, it might be useful to see how to get similar graphics to those they are used to. The `forecast` package is built for `ts` objects, while the `feasts` package provides features, statistics and graphics for `tsibbles`. (See my [first post](https://robjhyndman.com/hyndsight/tsibbles) for a description of tsibbles.)
+
+## Exploratory graphics
+
+The `forecast` package provided facilities for plotting time series in various ways. All of these have a counterpart in the `feasts` package.
+
+```{r translation, echo=FALSE}
+tribble(
+  ~forecast, ~feasts,
+  "`autoplot()`", "`autoplot()`",
+  "`ggseasonplot()`", "`gg_season()`",
+  "`ggsubseriesplot()`", "`gg_subseries()`",
+  "`gglagplot()`", "`gg_lag()`",
+  "`ggAcf()`", "`ACF() %>% autoplot()`",
+  "`ggPacf()`", "`PACF() %>% autoplot()`",
+  "`ggtsdisplay()`", "`gg_tsdisplay()`",
+) %>%
+  knitr::kable()
+```
+
+
+The big difference is that tsibbles can contain multiple time series, while `ts` objects can only contain one (possibly multivariate) time series. Note also that the `feasts` functions will only do one thing --- either compute some statistics or produce a plot --- unlike the `ggAcf()` function which did both.
+
+We will illustrate the above functions use the Australian quarterly holiday data by State, created in the last post.
+
+```{r holidays}
+library(tidyverse)
+library(tsibble)
+holidays <- tourism %>%
+  filter(Purpose == "Holiday") %>%
+  group_by(State) %>%
+  summarise(Trips = sum(Trips))
+```
+
+First, a time plot is generated using `autoplot()`.
+
+```{r autoplot, message=FALSE, fig.height=6, fig.width=10}
+library(feasts)
+holidays %>% autoplot(Trips)
+```
+
+When the plotting variable (here `Trips`) is omitted, the first available measurement variable is used by default. When there are no keys, only one time series is shown with no legend.
+
+A season plot is shown below. Here it is clear that the southern states of Australia (Tasmania, Victoria and South Australia) have strongest tourism in Q1 (their summer), while the northern states (Queensland and the Northern Territory) have the strongest tourism in Q3 (their dry season).
+
+```{r gg_season, fig.height=9, fig.width=5}
+holidays %>% gg_season(Trips)
+```
+
+A subseries plot allows changes in seasonality over time to be easily visualized. The blue lines shows the mean across the years in each panel. Here it is clear that Western Australian tourism has jumped markedly in recent years, while Victorian tourism has increased in Q1 and Q4 but not in the middle of the year.
+
+```{r gg_subseries, fig.height=9, fig.width=7}
+holidays %>% gg_subseries(Trips)
+```
+
+The ACF is commonly used to assess the dynamic information in a time series. This is computed using the `ACF()` function for all series. This also produces a tsibble, but with the index being the lag.
+
+```{r ACF, fig.height=8, fig.width=5}
+holidays %>% ACF(Trips)
+```
+
+To plot the ACFs for all series, we can pass the result to `autoplot()`.
+
+```{r ACFplot, fig.height=9, fig.width=6}
+holidays %>% ACF(Trips) %>% autoplot()
+```
+
+Here, the low seasonality in the ACT is evident compared to the other states.
+
+The remaining two graphical methods require only one time series. So we filter out the Tasmanian holiday data to illustrate them.
+
+```{r lagplot, fig.height=6, fig.width=6}
+holidays %>% filter(State=="Tasmania") %>% gg_lag(Trips, geom="point")
+```
+
+This lag plot shows a scatterplot of the lagged observation (vertical axis) against the current observation, with points coloured by the current quarter. The correlations of these lag plots are what make up the ACF. In this example, it is clear that Q1 is a strong quarter for Tasmania, and that the seasonality induces positive correlations at lags 4 and 8, but negative correlations at lags 2 and 6.
+
+Finally, we show a composite plot created using `gg_tsdisplay()`. This is a little different from the corresponding `ggtsdisplay()` function in the forecast package which showed the PACF in the bottom right panel by default. I think the season plot is a little more informative for exploratory data analysis, so that is what is shown by default in this new function. The other panels are the same.
+
+```{r gg_tsdisplay, fig.height=6, fig.width=10}
+holidays %>% filter(State=="Tasmania") %>% gg_tsdisplay(Trips)
+```
+
+## Decompositions
+
+The stats package provides the `stl()` function for STL decomposition of single time series with one seasonal period. The forecast package extended this with `mstl()` to allow for multiple seasonal periods. The feasts package allows for more flexible seasonality and for multiple series to be handled simultaneously.
+
+```{r stl, fig.height=6, fig.width=10}
+holidays %>% STL(Trips) %>% autoplot()
+```
+
+All components from all series are shown here. Note that the annual seasonality has been estimated by default. With time series containing other seasonal periods, more than one seasonal component will be produced. These can be controlled using the `STL` arguments.
+
+To demonstrate on a more difficult series, here is an STL decomposition for half hourly electricity data.
+
+```{r stl2, fig.height=6, fig.width=10}
+library(lubridate)
+tsibbledata::vic_elec %>%
+  filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
+  STL(Demand ~ trend(window=77) + season(window="periodic")
+        ) %>%
+  autoplot()
+```
+
+The hourly seasonality is largely meaningless -- we do not expect electricity demand to have a periodic effect within the hour, and the daily seasonality has been largely captured in the weekly seasonality above it. The confounding of these two components makes it hard to interpret the daily seasonality. So we can drop these two components and just model the weekly seasonality instead.
+
+```{r stl3, fig.height=6, fig.width=10}
+tsibbledata::vic_elec %>%
+  filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
+  STL(Demand ~ trend(window=77) +
+        season("week", window="periodic")
+        ) %>%
+  autoplot()
+```
+
+
