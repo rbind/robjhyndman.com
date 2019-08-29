@@ -17,7 +17,7 @@ options(digits = 3)
 library(tidyverse)
 ```
 
-This is the second post on the new [tidyverts](https://tidyverts.org) packages for tidy time series analysis.
+This is the second post on the new [tidyverts](https://tidyverts.org) packages for tidy time series analysis. The previous post is [here](https://robjhyndman.com/hyndsight/tsibbles).
 
 For users migrating from the `forecast` package, it might be useful to see how to get similar graphics to those they are used to. The `forecast` package is built for `ts` objects, while the `feasts` package provides features, statistics and graphics for `tsibbles`. (See my [first post](https://robjhyndman.com/hyndsight/tsibbles) for a description of tsibbles.)
 
@@ -40,7 +40,7 @@ tribble(
 ```
 
 
-The big difference is that tsibbles can contain multiple time series, while `ts` objects can only contain one (possibly multivariate) time series. Note also that the `feasts` functions will only do one thing --- either compute some statistics or produce a plot --- unlike the `ggAcf()` function which did both.
+The big difference is that tsibbles can contain multiple time series, while `ts` objects can only contain one (possibly multivariate) time series. Note also that the `feasts` functions will only do one thing --- either compute some statistics or produce a plot --- unlike the `ggAcf()` function which does both.
 
 We will illustrate the above functions use the Australian quarterly holiday data by State, created in the last post.
 
@@ -118,20 +118,25 @@ To demonstrate on a more difficult series, here is an STL decomposition for half
 library(lubridate)
 tsibbledata::vic_elec %>%
   filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
-  STL(Demand ~ trend(window=77) + season(window="periodic")
-        ) %>%
+  STL(Demand ~ trend(window=77) + season(window="periodic")) %>%
   autoplot()
 ```
 
-The hourly seasonality is largely meaningless -- we do not expect electricity demand to have a periodic effect within the hour, and the daily seasonality has been largely captured in the weekly seasonality above it. The confounding of these two components makes it hard to interpret the daily seasonality. So we can drop these two components and just model the weekly seasonality instead.
+The hourly seasonality is largely meaningless -- we do not expect electricity demand to have a periodic effect within the hour -- and the daily seasonality has been largely captured in the weekly seasonality above it. The confounding of these two components makes it hard to interpret the daily seasonality. So we can drop the hourly and daily components and just model the weekly seasonality instead.
 
 ```{r stl3, fig.height=6, fig.width=10}
 tsibbledata::vic_elec %>%
   filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
-  STL(Demand ~ trend(window=77) +
+  STL(
+    Demand ~ trend(window=77) +
         season("week", window="periodic")
-        ) %>%
+  ) %>%
   autoplot()
 ```
 
+The remainder term captures the difference from what you would expect if the demand was simply a function of the time of week. The variations from the weekly pattern, due to holidays or unusual weather, will show up in the remainder series.
+
+## Features and statistics
+
+The `feasts` package does much more than graphics, but that can wait until a future post.
 
