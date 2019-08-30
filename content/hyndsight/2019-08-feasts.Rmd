@@ -44,7 +44,7 @@ The big difference is that tsibbles can contain multiple time series, while `ts`
 
 We will illustrate the above functions use the Australian quarterly holiday data by State, created in the last post.
 
-```{r holidays}
+```{r holidays, message=FALSE}
 library(tidyverse)
 library(tsibble)
 holidays <- tourism %>%
@@ -76,13 +76,13 @@ holidays %>% gg_subseries(Trips)
 
 The ACF is commonly used to assess the dynamic information in a time series. This is computed using the `ACF()` function for all series. This also produces a tsibble, but with the index being the lag.
 
-```{r ACF, fig.height=8, fig.width=5}
+```{r ACF, fig.height=8, fig.width=5, warning=FALSE}
 holidays %>% ACF(Trips)
 ```
 
 To plot the ACFs for all series, we can pass the result to `autoplot()`.
 
-```{r ACFplot, fig.height=9, fig.width=6}
+```{r ACFplot, fig.height=9, fig.width=6, warning=FALSE}
 holidays %>% ACF(Trips) %>% autoplot()
 ```
 
@@ -98,7 +98,7 @@ This lag plot shows a scatterplot of the lagged observation (vertical axis) agai
 
 Finally, we show a composite plot created using `gg_tsdisplay()`. This is a little different from the corresponding `ggtsdisplay()` function in the forecast package which showed the PACF in the bottom right panel by default. I think the season plot is a little more informative for exploratory data analysis, so that is what is shown by default in this new function. The other panels are the same.
 
-```{r gg_tsdisplay, fig.height=6, fig.width=10}
+```{r gg_tsdisplay, fig.height=6, fig.width=10, warning=FALSE}
 holidays %>% filter(State=="Tasmania") %>% gg_tsdisplay(Trips)
 ```
 
@@ -114,7 +114,7 @@ All components from all series are shown here. Note that the annual seasonality 
 
 To demonstrate on a more difficult series, here is an STL decomposition for half hourly electricity data.
 
-```{r stl2, fig.height=6, fig.width=10}
+```{r stl2, fig.height=8, fig.width=10, message=FALSE}
 library(lubridate)
 tsibbledata::vic_elec %>%
   filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
