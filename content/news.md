@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [River and reef water quality monitoring revolutionized](https://www.technologynetworks.com/applied-sciences/news/river-and-reef-water-quality-monitoring-revolutionized-323567), *Technology Networks*, 4 September 2019.
   * [Revolutionizing water quality monitoring for our rivers and reef](https://www.eurekalert.org/pub_releases/2019-09/quot-rwq090219.php), *EurekAlert!*, 3 September 2019.
   * [Labor’s climate policy is second-rate – because the government’s policy is fifth-rate](https://thenewdaily.com.au/money/finance-news/2019/05/06/labor-climate-policy-costings/), *The New Daily*, 6 May 2019.
   * [Announcing the winners of the Facebook Statistics for Improving Insights and Decisions research awards](https://research.fb.com/announcing-the-winners-of-the-statistics-for-improving-insights-and-decisions-research-awards/), *Facebook Research*, 25 January 2019.
