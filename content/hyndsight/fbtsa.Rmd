@@ -1,0 +1,250 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-09-16
+slug: fbtsa
+title: "Feature-based time series analysis"
+categories:
+- time series
+- graphics
+- statistics
+- R
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
+```
+
+```{r loadpackages, message=FALSE}
+library(tidyverse)
+library(tsibble)
+library(feasts)
+```
+
+In my [last post](https://robjhyndman.com/hyndsight/feasts/), I showed how the `feasts` package can be used to produce various time series graphics.
+
+The `feasts` package also includes functions for computing FEatures And Statistics from Time Series (hence the name). In this post I will give three examples of how these might be used.
+
+## Exploring Australian tourism data
+
+I used this example in [my talk at useR!2019 in Toulouse](https://robjhyndman.com/seminars/isf-feasts/), and it is also the basis of [a vignette in the package](http://feasts.tidyverts.org/articles/feasts.html), and a recent [blog post by Mitchell O'Hara-Wild](https://blog.mitchelloharawild.com/blog/feasts/). The data set contains domestic tourist visitor nights in Australia, disaggregated by State, Region and Purpose.
+
+```{r tourismdata}
+tourism
+```
+
+An example of a feature would be the autocorrelation function at lag 1 --- it is a numerical summary capturing some aspect of the time series. Autocorrelations at other lags are also features, as are the autocorrelations of the first differenced series, or the seasonally differenced series, etc. Another example of a feature is the strength of seasonality of a time series, as measured by $1-\text{Var}(R_t)/\text{Var}(S_t+R_t)$ where $S_t$ is the seasonal component and $R_t$ is the remainder component in an STL decomposition. Values close to 1 indicate a highly seasonal time series, while values close to 0 indicate a time series with very little seasonality.
+
+The `feasts` package has some inbuilt feature calculation functions. For example `coef_hurst` will calculate the Hurst coefficient of a time series and `feat_spectral` will compute the spectral entropy of a time series. To apply these to for all series in the `tourism` data, we can use the `features` function like this.
+
+```{r entropy}
+tourism %>% features(Trips, list(coef_hurst, feat_spectral))
+```
+
+There are also functions which produce collections of features based on tags. For example, `feature_set(tags="acf")` will produce 7 features based on various autocorrelation coefficients, while `feature_set(tags="stl")` produces 7 features based on an STL decomposition of a time series, including the strength of seasonality mentioned above.
+
+
+```{r features}
+tourism %>% features(Trips, feature_set(tags="stl"))
+```
+
+We can then use these features in plots to identify what type of series are heavily trended and what are most seasonal.
+
+```{r features-plot, fig.height=4.6}
+tourism %>% features(Trips, feature_set(tags="stl")) %>%
+  ggplot(aes(x=trend_strength, y=seasonal_strength_year, col=Purpose)) +
+    geom_point() + facet_wrap(vars(State))
+```
+
+Clearly, holiday series are most seasonal which is unsurprising. The strongest trends tend to be in Western Australia.
+
+The most seasonal series can also be easily identified and plotted.
+
+```{r extreme, fig.height=3}
+tourism %>%
+  features(Trips, feature_set(tags="stl")) %>%
+  filter(seasonal_strength_year == max(seasonal_strength_year)) %>%
+  left_join(tourism, by = c("State","Region","Purpose")) %>%
+  ggplot(aes(x = Quarter, y = Trips)) + geom_line() +
+    facet_grid(vars(State,Region,Purpose))
+```
+
+This is holiday trips to the most popular ski region of Australia.
+
+The `feasts` package currently includes 42 features which can all be computed in one line like this.
+
+```{r all_features}
+# Compute features
+tourism_features <- tourism %>%
+  features(Trips, feature_set(pkgs="feasts"))
+```
+
+Unusual time series can be identified by first doing a principal components decomposition
+
+```{r pca}
+pcs <- tourism_features %>%
+  select(-State, -Region, -Purpose) %>%
+  prcomp(scale=TRUE) %>%
+  augment(tourism_features)
+pcs %>%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2, col=Purpose)) +
+  geom_point() + theme(aspect.ratio=1)
+```
+
+We can then identify some unusual series.
+
+```{r pca_outliers}
+pcs %>%
+  filter(.fittedPC1 > 10.5) %>%
+  select(Region, State, Purpose, .fittedPC1, .fittedPC2)
+```
+
+## Replicating Hyndman, Wang and Laptev (2015)
+
+I used a similar approach to identifying outliers in my [ICDM 2015 paper with Earo Wang and Nikolay Laptev](https://robjhyndman.com/publications/icdm2015/). In that paper, we used hourly data on thousands of mail servers from Yahoo.
+
+The data is stored in the `tsfeatures` package as an `mts` object. Unfortunately, `mts` and `ts` objects are particularly bad at handling hourly and other sub-daily data, as time is stored numerically and the precision is not sufficient to always work properly. So we need to do a little work to create a properly formulated tsibble.
+
+```{r yahoodata, message=FALSE}
+yahoo <- tsfeatures::yahoo_data() %>%
+  as_tsibble() %>%
+  mutate(
+    Time = hms::hms(day = trunc(index) - 1L,
+                    hour = as.integer((round(24*(index-1))) %% 24))
+  ) %>%
+  as_tsibble(index = Time, key=key) %>%
+  select(Time, key, value)
+```
+
+The `key` variable here identifies the particular server and measurement variable on that server. There are 1748 such time series, each with 1437 (almost 60 days) observations.
+
+Now we create the features on all series, matching the original paper as closely as possible. There are a few small differences due to different choices in how features are computed, but they make little difference to the results.
+
+The features are computed in two groups --- the first group uses the original data, while the second group uses the scaled data.
+
+```{r yahoo_features, dependson='yahoo_scaled', message=FALSE, warning=FALSE}
+yahoo_features <- bind_cols(
+    yahoo %>% features(value, features=list(
+      mean = ~ mean(., na.rm = TRUE),
+      var = ~ var(., na.rm = TRUE)
+    )),
+    yahoo %>% features(scale(value), features = list(
+      ~ feat_acf(.),
+      ~ feat_spectral(.),
+      ~ n_flat_spots(.),
+      ~ n_crossing_points(.),
+      ~ var_tiled_var(., .period = 24, .size = 24),
+      ~ shift_level_max(., .period = 24, .size = 24),
+      ~ shift_var_max(., .period = 24, .size = 24),
+      ~ shift_kl_max(., .period = 24, .size = 48),
+      ~ feat_stl(., .period = 24, s.window = "periodic", robust = TRUE)
+    ))
+  ) %>%
+  rename(lumpiness = var_tiled_var) %>%
+  select(key, mean, var, acf1, trend_strength,
+         seasonal_strength_24, linearity, curvature,
+         seasonal_peak_24, seasonal_trough_24,
+         spectral_entropy, lumpiness, spikiness,
+         shift_level_max, shift_var_max,
+         n_flat_spots, n_crossing_points,
+         shift_kl_max, shift_kl_index)
+```
+
+Now we can compute the principal components.
+
+```{r yahoo_pca, dependson='yahoo_features'}
+hwl_pca <- yahoo_features %>%
+  select(-key) %>%
+  na.omit() %>%
+  prcomp(scale=TRUE) %>%
+  augment(na.omit(yahoo_features))
+hwl_pca %>%
+  as_tibble() %>%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2)) +
+    geom_point()
+```
+
+A useful plot for identifying the outlying observations is an HDR scatterplot which highlights regions of high density, and identifies outliers as those observations in very low density regions. The red dots are the 1% highest density observations, the orange dots are in the 50% region, the yellow dots are in the 99% regions, while those shown in black are the 1% most "unusual" observations (having the lowest bivariate density on this plot.) The five most outlying points are highlighted by their row numbers.
+
+
+```{r hdrplot, dependson='yahoo_features'}
+hdrcde::hdrscatterplot(hwl_pca$.fittedPC1, hwl_pca$.fittedPC2, noutliers=5)
+```
+
+## Replicating Kang, Hyndman and Smith-Miles (2017)
+
+Another paper that uses features is this [IJF paper from 2017](https://robjhyndman.com/publications/ts-feature-space/) in which we explored the feature space of the M3 time series data.
+
+First we need to create several tsibbles, corresponding to the different seasonal periods in the M3 data.
+
+```{r m3data, message=FALSE}
+m3totsibble <- function(z) {
+  rbind(
+    as_tsibble(z$x) %>% mutate(Type="Training"),
+    as_tsibble(z$xx) %>% mutate(Type="Test")
+  ) %>%
+  mutate(
+    st = z$st,
+    type = z$type,
+    period = z$period,
+    description = z$description,
+    sn = z$sn,
+  ) %>%
+  as_tibble()
+}
+m3yearly <- Mcomp::M3 %>%
+  subset("yearly") %>%
+  purrr::map_dfr(m3totsibble) %>%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3quarterly <- Mcomp::M3 %>%
+  subset("quarterly") %>%
+  purrr::map_dfr(m3totsibble) %>%
+  mutate(index = yearquarter(index)) %>%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3monthly <- Mcomp::M3 %>%
+  subset("monthly") %>%
+  purrr::map_dfr(m3totsibble) %>%
+  mutate(index = yearmonth(index)) %>%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3other <- Mcomp::M3 %>%
+  subset("other") %>%
+  purrr::map_dfr(m3totsibble) %>%
+  as_tsibble(index=index, key=c(sn,period,st))
+```
+
+There are some bespoke features used by Kang et al (IJF 2017), so rather than use the inbuilt `feasts` functions, we can create our own feature calculation function.
+
+```{r m3_features}
+khs_stl <- function(x, period) {
+  output <- c(frequency=period, feat_spectral(x))
+  lambda <- forecast::BoxCox.lambda(ts(x, frequency=period),
+                      lower=0, upper=1, method='loglik')
+  stlfeatures <- feat_stl(box_cox(x, lambda), .period=period,
+      s.window='periodic', robust=TRUE)
+  output <- c(output, stlfeatures, lambda=lambda)
+  if(period==1L)
+    output <- c(output, seasonal_strength=0)
+  return(output)
+}
+m3_features <- bind_rows(
+    m3yearly %>% features(value, features=list(~ khs_stl(.,1))),
+    m3quarterly %>% features(value, features=list(~ khs_stl(.,4))) %>%
+      rename(seasonal_strength = seasonal_strength_4),
+    m3monthly %>% features(value, features=list(~ khs_stl(.,12))) %>%
+      rename(seasonal_strength = seasonal_strength_12),
+    m3other %>% features(value, features=list(~ khs_stl(.,1)))
+  ) %>%
+  select(sn, spectral_entropy, trend_strength, seasonal_strength,
+         frequency, stl_e_acf1, lambda)
+```
+
+Finally we plot the first two principal componets of the feature space.
+
+```{r m3_pca, dependson='yahoo_features'}
+m3_features %>%
+  select(-sn) %>%
+  prcomp(scale=TRUE) %>%
+  augment(m3_features) %>%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2)) +
+    geom_point(aes(color = factor(frequency)))
+```
