@@ -3,6 +3,7 @@ author: robjhyndman
 comments: true
 date: 2019-09-16
 slug: fbtsa
+mathjax: true
 title: "Feature-based time series analysis"
 categories:
 - time series
@@ -33,9 +34,9 @@ I used this example in [my talk at useR!2019 in Toulouse](https://robjhyndman.co
 tourism
 ```
 
-An example of a feature would be the autocorrelation function at lag 1 --- it is a numerical summary capturing some aspect of the time series. Autocorrelations at other lags are also features, as are the autocorrelations of the first differenced series, or the seasonally differenced series, etc. Another example of a feature is the strength of seasonality of a time series, as measured by $1-\text{Var}(R_t)/\text{Var}(S_t+R_t)$ where $S_t$ is the seasonal component and $R_t$ is the remainder component in an STL decomposition. Values close to 1 indicate a highly seasonal time series, while values close to 0 indicate a time series with very little seasonality.
+An example of a feature would be the autocorrelation function at lag 1 --- it is a numerical summary capturing some aspect of the time series. Autocorrelations at other lags are also features, as are the autocorrelations of the first differenced series, or the seasonally differenced series, etc. Another example of a feature is the strength of seasonality of a time series, as measured by $1-\text{Var}(R_t)/\text{Var}(S_t+R_t)$ where $S_t$ is the seasonal component and $R_t$ is the remainder component in an STL decomposition. Values close to 1 indicate a highly seasonal time series, while values close to 0 indicate a time series with little seasonality.
 
-The `feasts` package has some inbuilt feature calculation functions. For example `coef_hurst` will calculate the Hurst coefficient of a time series and `feat_spectral` will compute the spectral entropy of a time series. To apply these to for all series in the `tourism` data, we can use the `features` function like this.
+The `feasts` package has some inbuilt feature calculation functions. For example `coef_hurst` will calculate the Hurst coefficient of a time series and `feat_spectral` will compute the spectral entropy of a time series. To apply these to all series in the `tourism` data set, we can use the `features` function like this.
 
 ```{r entropy}
 tourism %>% features(Trips, list(coef_hurst, feat_spectral))
@@ -164,7 +165,7 @@ hwl_pca %>%
     geom_point()
 ```
 
-A useful plot for identifying the outlying observations is an HDR scatterplot which highlights regions of high density, and identifies outliers as those observations in very low density regions. The red dots are the 1% highest density observations, the orange dots are in the 50% region, the yellow dots are in the 99% regions, while those shown in black are the 1% most "unusual" observations (having the lowest bivariate density on this plot.) The five most outlying points are highlighted by their row numbers.
+A useful plot for identifying the outlying observations is an HDR scatterplot which highlights regions of high density, and identifies outliers as those observations in low density regions. The red dots are the 1% highest density observations, the orange dots are in the 50% region, the yellow dots are in the 99% regions, while those shown in black are the 1% most "unusual" observations (having the lowest bivariate density on this plot.) The five most outlying points are highlighted by their row numbers.
 
 
 ```{r hdrplot, dependson='yahoo_features'}
@@ -238,7 +239,7 @@ m3_features <- bind_rows(
          frequency, stl_e_acf1, lambda)
 ```
 
-Finally we plot the first two principal componets of the feature space.
+Finally we plot the first two principal components of the feature space.
 
 ```{r m3_pca, dependson='yahoo_features'}
 m3_features %>%
