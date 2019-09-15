@@ -15,15 +15,15 @@ categories:
 knitr::opts_chunk$set(echo = TRUE, cache=TRUE)
 ```
 
+In my [last post](https://robjhyndman.com/hyndsight/feasts/), I showed how the `feasts` package can be used to produce various time series graphics.
+
+The `feasts` package also includes functions for computing FEatures And Statistics from Time Series (hence the name). In this post I will give three examples of how these might be used.
+
 ```{r loadpackages, message=FALSE}
 library(tidyverse)
 library(tsibble)
 library(feasts)
 ```
-
-In my [last post](https://robjhyndman.com/hyndsight/feasts/), I showed how the `feasts` package can be used to produce various time series graphics.
-
-The `feasts` package also includes functions for computing FEatures And Statistics from Time Series (hence the name). In this post I will give three examples of how these might be used.
 
 ## Exploring Australian tourism data
 
