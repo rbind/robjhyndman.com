@@ -1,9 +1,10 @@
 ---
 author: Priyanga Dilini Talagala, Rob&nbsp;J&nbsp;Hyndman, Catherine Leigh, Kerrie Mengersen and Kate Smith-Miles
-date: 2019-02-12
+date: 2019-09-17
 slug: oddwater
 title: "A feature-based framework for detecting technical outliers in water-quality data from in situ sensors"
-kind: unpublished
+kind: article
+citation: <em>Water Resources Research</em>, to appear
 tags:
 - data science
 - anomaly detection
