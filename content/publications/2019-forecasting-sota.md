@@ -8,6 +8,7 @@ tags:
 - forecasting
 - review
 link: /papers/forecasting_state_of_the_art.pdf
+doi: 10.1016/j.ijforecast.2019.05.011
 citation: <em>International Journal of Forecasting</em>, to appear
 ---
 
