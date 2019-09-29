@@ -11,9 +11,9 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**tsibbledata**](https://github.com/tidyverts/tsibbledata): Example datasets for tsibble [[CRAN](https://cloud.r-project.org/package=tsibbledata)]
 
-* [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series
+* [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series [[CRAN](https://cloud.r-project.org/package=feasts)]
 
-* [**fable**](https://fable.tidyverts.org): Forecasting tidy time series
+* [**fable**](https://fable.tidyverts.org): Forecasting Models for Tidy Time Series [[CRAN](https://cloud.r-project.org/package=fable)]
 
 * [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
 
@@ -45,9 +45,11 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**fma**](https://pkg.robjhyndman.com/fma/): Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cloud.r-project.org/package=fma)]
 
-* [**fpp**](https://cloud.r-project.org/package=fpp): Data sets from [Hyndman & Athanasopoulos (2014) *Forecasting: principles and practice*, OTexts: Melbourne](https://www.otexts.org/fpp). [[CRAN](https://cloud.r-project.org/package=fpp)]
+* [**fpp**](https://cloud.r-project.org/package=fpp): Data sets from Hyndman & Athanasopoulos (2014) *Forecasting: principles and practice*, OTexts: Melbourne. [[CRAN](https://cloud.r-project.org/package=fpp)]
 
-* [**fpp2**](https://github.com/robjhyndman/fpp/): Data sets from [Hyndman & Athanasopoulos (2017) *Forecasting: principles and practice*, 2nd edition, OTexts: Melbourne](https://www.otexts.org/fpp2). [[CRAN](https://cloud.r-project.org/package=fpp2)]
+* [**fpp2**](https://github.com/robjhyndman/fpp/): Data sets from [Hyndman & Athanasopoulos (2017) *Forecasting: principles and practice*, 2nd edition, OTexts: Melbourne](https://OTexts.com/fpp2). [[CRAN](https://cloud.r-project.org/package=fpp2)]
+
+* [**fpp3**](https://github.com/robjhyndman/fpp3-package/): Data sets from [Hyndman & Athanasopoulos (2020) *Forecasting: principles and practice*, 3rd edition, OTexts: Melbourne](https://OTexts.com/fpp3). [[CRAN](https://cloud.r-project.org/package=fpp3)]
 
 * [**Mcomp**](https://pkg.robjhyndman.com/Mcomp): The 1001 time series from the M-competition (Makridakis et al. 1982) and the 3003 time series from the IJF-M3 competition (Makridakis and Hibon, 2000). [[CRAN](https://cloud.r-project.org/package=Mcomp)]
 
