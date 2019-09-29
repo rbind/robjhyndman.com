@@ -5,6 +5,7 @@ slug: fforma
 title: "FFORMA: Feature-based Forecast Model Averaging"
 kind: article
 citation: <em>International Journal of Forecasting</em>, to appear
+doi: 10.1016/j.ijforecast.2019.02.011
 tags:
 - data science
 - time series
