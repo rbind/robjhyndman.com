@@ -53,7 +53,7 @@ The class of ETS models (exponential smoothing within a state space framework) a
 
 ### Cyclic ARMA models
 
-The class of ARMA models can handle both seasonality and cyclic behaviour. An ARIMA$(p,q)$ model can be cyclic if $p>1$ although there are some conditions on the parameters in order to obtain cyclicity. For an AR(2), where $y\_t = c + \phi\_1y\_{t-1} + \phi\_2y\_{t-2} + \varepsilon\_t$ and $\varepsilon\_t$ is white noise, cyclic behaviour is observed if ${\phi\_1^2+4\phi\_2 < 0}$. In that case, the average period of the cycles is
+The class of ARMA models can handle both seasonality and cyclic behaviour. An ARIMA$(p,q)$ model can be cyclic if $p>1$ although there are some conditions on the parameters in order to obtain cyclicity. For an AR(2), where $y_t = c + \phi_1y_{t-1} + \phi_2y_{t-2} + \varepsilon_t$ and $\varepsilon_t$ is white noise, cyclic behaviour is observed if ${\phi_1^2+4\phi_2 < 0}$. In that case, the average period of the cycles is
 $$
 \frac{2\pi}{\text{arc cos}\left(-\phi_1(1-\phi_2)/(4\phi_2)\right)}.
 $$
@@ -77,4 +77,4 @@ It is possibly to have both cyclic and seasonal behaviour in an ARMA model, but 
 
 There is also a class of periodic ARMA models where the parameters take different values in different seasons. For example, a periodic AR(2) for quarterly data could be written as
 $$y_t = \phi_{1,s}y_{t-1} + \phi_{2,s}y_{t-2} + \varepsilon_t$$
-where $s=t\mod 4$ denotes the four seasons. A model of this kind could handle data with both cyclic and seasonal patterns more easily than a seasonal ARMA model.
+where $s=t\text{ mod }4$ denotes the four seasons. A model of this kind could handle data with both cyclic and seasonal patterns more easily than a seasonal ARMA model.
