@@ -1,0 +1,235 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-09-29
+title: "Tidy forecasting in R"
+slug: fable
+mathjax: true
+categories:
+- time series
+- graphics
+- statistics
+- R
+- tidyverts
+- forecasting
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(fable)
+```
+
+The **fable** package for doing tidy forecasting in R is now on CRAN. Like **[tsibble](https://tsibble.tidyverts.org)** and **[feasts](https://feasts.tidyverts.org)**, it is also part of the [tidyverts](https:/tidyverts.org) family of packages for analysing, modelling and forecasting many related time series (stored as tsibbles).
+
+For a brief introduction to tsibbles, see [this post](https://robjhyndman.com/hyndsight/tsibbles/) from last month.
+
+Here we will forecast Australian tourism data by state/region and purpose. This data is stored in the `tourism` tsibble where `Trips` contains domestic visitor nights in thousands.
+
+```{r tourismdata, message=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(fable)
+tourism
+```
+
+There are `r NROW(key_data(tourism))` combinations of Region, State and Purpose, each one defining a time series of `r NROW(tourism)/NROW(key_data(tourism))` observations.
+
+To simplify the outputs, we will abbreviate the state names.
+
+```{r tourism}
+tourism <- tourism %>%
+  mutate(
+    State = recode(State,
+      "Australian Capital Territory" = "ACT",
+      "New South Wales" = "NSW",
+      "Northern Territory" = "NT",
+      "Queensland" = "QLD",
+      "South Australia" = "SA",
+      "Tasmania" = "TAS",
+      "Victoria" = "VIC",
+      "Western Australia" = "WA"
+    )
+  )
+```
+
+## Forecasting a single time series
+
+Although the **fable** package is designed to handle many time series, we will be begin by demonstrating its use on a single time series. For this purpose, we will extract the tourism data for holidays in the Snowy Mountains region of NSW.
+
+```{r extract, dependson='tourism'}
+snowy <- tourism %>%
+  filter(
+    Region == "Snowy Mountains",
+    Purpose == "Holiday"
+  )
+snowy
+snowy %>% autoplot(Trips)
+```
+
+For this data set, a reasonable benchmark forecast method is the seasonal naive method, where forecasts are set to be equal to the last observed value from the same quarter. Alternative models for this series are ETS and ARIMA models. All these can be included in a single call to the `model()` function like this.
+
+```{r snowy-models, warning = FALSE, dependson='extract'}
+fit <- snowy %>%
+  model(
+    snaive = SNAIVE(Trips ~ lag("year")),
+    ets = ETS(Trips),
+    arima = ARIMA(Trips)
+  )
+fit
+```
+
+The returned object is called a "mable" or model table, where each cell corresponds to a fitted model. Because we have only fitted models to one time series, this mable has only one row.
+
+To forecast all models, we pass the object to the `forecast` function.
+
+```{r snowy-fc, echo = TRUE, dependson='snowy-models'}
+fc <- fit %>%
+  forecast(h = 12)
+fc
+```
+
+The return object is a "fable" or forecast table with the following characteristics:
+
+  * the `.model` column becomes an additional key;
+  * the `.distribution` column contains the estimated probability distribution of the response variable in future time periods;
+  * the `Trips` column contains the point forecasts equal to the mean of the probability distribution.
+
+The `autoplot()` function will produce a plot of all forecasts. By default, `level=c(80,95)` so 80% and 95% prediction intervals are shown. But to avoid clutter, we will set `level=NULL` to show no prediction intervals.
+
+```{r snowy-fc-plot, warning=FALSE, message=FALSE, dependson='snowy-fc'}
+fc %>%
+  autoplot(snowy, level = NULL) +
+  ggtitle("Forecasts for Snowy Mountains holidays") +
+  xlab("Year") +
+  guides(colour = guide_legend(title = "Forecast"))
+```
+
+If you want to compute the prediction intervals, the `hilo()` function can be used:
+
+```{r hilo, dependson='snowy-fc'}
+hilo(fc, level = 95)
+```
+
+## Forecasting many series
+
+To scale this up to include all series in the `tourism` data set requires no more work --- we use exactly the same code.
+
+```{r scaleup2, warning=FALSE, dependson='tourism'}
+fit <- tourism %>%
+  model(
+    snaive = SNAIVE(Trips ~ lag("year")),
+    ets = ETS(Trips),
+    arima = ARIMA(Trips)
+  )
+fit
+```
+
+Now the mable includes models for every combination of keys in the `tourism` data set.
+
+We can extract information about some specific model using the `filter`, `select` and `report` functions.
+
+```{r ausholidays-report, dependson='scaleup2'}
+fit %>%
+  filter(Region == "Snowy Mountains", Purpose == "Holiday") %>%
+  select(arima) %>%
+  report()
+```
+
+When the mable is passed to the `forecast()` function, forecasts are computed for every model and every key combination.
+
+```{r scaleup3, dependson='scaleup2'}
+fc <- fit %>%
+  forecast(h = "3 years")
+fc
+```
+
+Note the use of natural language to specify the forecast horizon. The `forecast()` function is able to interpret many different time specifications. For quarterly data, `h = "3 years"` is equivalent to setting `h = 12`.
+
+Plots of individual forecasts can also be produced, although filtering is helpful to avoid plotting too many series at once.
+
+```{r ausholidays-forecast-plot, dependson='scaleup3', fig.height=8}
+fc %>%
+  filter(Region == "Snowy Mountains") %>%
+  autoplot(tourism, level = NULL) +
+  xlab("Year") + ylab("Overnight trips (thousands)")
+```
+
+## Forecast accuracy calculations
+
+To compare the forecast accuracy of these models, we will create a training data set containing all data up to 2014. We will then forecast the remaining years in the data set and compare the results with the actual values.
+
+```{r trainall, echo=TRUE, dependson='tourism'}
+train <- tourism %>%
+  filter(year(Quarter) <= 2014)
+fit <- train %>%
+  model(
+    ets = ETS(Trips),
+    arima = ARIMA(Trips),
+    snaive = SNAIVE(Trips)
+  ) %>%
+  mutate(mixed = (ets + arima + snaive) / 3)
+```
+
+Here we have introduced an ensemble forecast (`mixed`) which is a simple average of the three fitted models. Note that `forecast()` will produce distributional forecasts from the ensemble as well, taking into account the correlations between the forecast errors of the component models.
+
+```{r trainfc, dependson='trainall'}
+fc <- fit %>% forecast(h = "3 years")
+```
+
+```{r snowytrain, dependson='trainfc', fig.height=8}
+fc %>%
+  filter(Region == "Snowy Mountains") %>%
+  autoplot(tourism, level = NULL)
+```
+
+Now to check the accuracy, we use the `accuracy()` function. By default it computes several point forecasting accuracy measures such as MAE, RMSE, MAPE and MASE for every key combination.
+
+```{r snowy-test-accuracy, dependson='trainfc'}
+accuracy(fc, tourism)
+```
+
+But because we have generated distributional forecasts, it is also interesting to look at the accuracy using CRPS (Continuous Rank Probability Scores) and Winkler Scores (for 95% prediction intervals).
+
+```{r snowy-test-accuracy1, dependson='trainfc'}
+fc_accuracy <- accuracy(fc, tourism,
+  measures = list(
+    point_accuracy_measures,
+    interval_accuracy_measures,
+    distribution_accuracy_measures
+  )
+)
+```
+
+```{r snowy-test-accuracy2, dependson='snowy-test-accuracy1'}
+fc_accuracy %>%
+  group_by(.model) %>%
+  summarise(
+    RMSE = mean(RMSE),
+    MAE = mean(MAE),
+    MASE = mean(MASE),
+    Winkler = mean(winkler),
+    CRPS = mean(CRPS)
+  ) %>%
+  arrange(RMSE)
+```
+
+In this case, the `mixed` model is doing best on all accuracy measures.
+
+## Moving from **forecast** to **fable**
+
+Many readers will be familiar with the **forecast** package and will wonder about the differences between **forecast** and **fable**. Here are some of the main differences.
+
+ * **fable** is designed for `tsibble` objects, **forecast** is designed for `ts` objects.
+ * **fable** handles many time series at a time, **forecast** handles one time series at a time.
+ * **fable** can fit multiple models at once, **forecast** fits one model at a time.
+ * **forecast** produces point forecasts and prediction intervals. **fable** produces point forecasts and distribution forecasts. In **fable**, you can get prediction intervals from the forecast object using `hilo()` and in plots using `autoplot()`.
+ * **fable** handles ensemble forecasting easily whereas **forecast** has no facilities for ensembles.
+ * **fable** has a more consistent interface with every model specified as a formula.
+ * Automated modelling in **fable** is obtained by simply not specifying the right hand side of the formula. This was shown in the `ARIMA()` and `ETS()` functions here.
+
+Subsequent posts will explore other features of the **fable** package.
