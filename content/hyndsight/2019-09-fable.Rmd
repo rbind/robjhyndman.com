@@ -23,7 +23,7 @@ library(lubridate)
 library(fable)
 ```
 
-The **fable** package for doing tidy forecasting in R is now on CRAN. Like **[tsibble](https://tsibble.tidyverts.org)** and **[feasts](https://feasts.tidyverts.org)**, it is also part of the [tidyverts](https:/tidyverts.org) family of packages for analysing, modelling and forecasting many related time series (stored as tsibbles).
+The **fable** package for doing tidy forecasting in R is now on CRAN. Like **[tsibble](https://tsibble.tidyverts.org)** and **[feasts](https://feasts.tidyverts.org)**, it is also part of the [tidyverts](https://tidyverts.org) family of packages for analysing, modelling and forecasting many related time series (stored as tsibbles).
 
 For a brief introduction to tsibbles, see [this post](https://robjhyndman.com/hyndsight/tsibbles/) from last month.
 

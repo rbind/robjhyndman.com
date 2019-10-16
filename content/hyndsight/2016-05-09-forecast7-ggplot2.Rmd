@@ -13,7 +13,7 @@ categories:
 
 Version 7 of the [forecast package](https://github.com/robjhyndman/forecast) was released on CRAN about a month ago, but I'm only just getting around to posting about the new features.
 
-The most visible feature was the introduction of [ggplot2 graphics](http://ggplot2.org/). I first wrote the forecast package before ggplot2 existed, and so only base graphics were available. But I figured it was time to modernize and use the nice features available from ggplot2. The following examples illustrate the main new graphical functionality.
+The most visible feature was the introduction of [ggplot2 graphics](https://ggplot2.tidyverse.org/). I first wrote the forecast package before ggplot2 existed, and so only base graphics were available. But I figured it was time to modernize and use the nice features available from ggplot2. The following examples illustrate the main new graphical functionality.
 
 For illustration purposes, I'm using the male and female monthly deaths from lung diseases in the UK.
 

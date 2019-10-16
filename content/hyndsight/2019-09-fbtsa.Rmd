@@ -29,7 +29,7 @@ library(feasts)
 
 ## Exploring Australian tourism data
 
-I used this example in [my talk at useR!2019 in Toulouse](https://robjhyndman.com/seminars/isf-feasts/), and it is also the basis of [a vignette in the package](http://feasts.tidyverts.org/articles/feasts.html), and a recent [blog post by Mitchell O'Hara-Wild](https://blog.mitchelloharawild.com/blog/feasts/). The data set contains domestic tourist visitor nights in Australia, disaggregated by State, Region and Purpose.
+I used this example in [my talk at useR!2019 in Toulouse](https://robjhyndman.com/seminars/isf-feasts/), and it is also the basis of [a vignette in the package](http://feasts.tidyverts.org/articles/feasts.html), and a recent [blog post by Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/blog/feasts/). The data set contains domestic tourist visitor nights in Australia, disaggregated by State, Region and Purpose.
 
 ```{r tourismdata}
 tourism

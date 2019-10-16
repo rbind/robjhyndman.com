@@ -16,6 +16,6 @@ This talk is part of a series of three:
 
 1. **[Earo Wang](https://earo.me/)**. *tsibble: The 15th time series standard* &nbsp;&nbsp; [[Slides](http://slides.earo.me/useR18/)] [[Video](https://youtu.be/v6yRmbulxUM)]
 2. **[Rob J Hyndman](https://robjhyndman.com)**. *Tidy forecasting in R* &nbsp;&nbsp;  [[Slides](https://github.com/robjhyndman/fable-talk-2018/raw/master/fable_useR2018.pdf)] [[Video](https://youtu.be/MemnYSGeJ34)]
-3. **[Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/)**. *fasster: Forecasting multiple seasonality with state switching*  &nbsp;&nbsp; [[Slides](https://www.mitchelloharawild.com/user2018/)] [[Video](https://youtu.be/6YlboftSalY)]
+3. **[Mitchell O'Hara-Wild](https://www.mitchelloharawild.com/)**. *fasster: Forecasting multiple seasonality with state switching*  &nbsp;&nbsp; [[Slides](https://slides.mitchelloharawild.com/user2018)] [[Video](https://youtu.be/6YlboftSalY)]
 
 To download the packages: [tidyverts.org](http://tidyverts.org)
