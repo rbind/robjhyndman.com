@@ -16,7 +16,7 @@ Talk given by me, [Earo Wang](http://earo.me) and [Mitchell O'Hara-Wild](https:/
 
 [![](/img/earotalk.png)](http://slides.earo.me/meetup17/)
 
-[![](/img/mitchtalk.png)](http://www.mitchelloharawild.com/melburn17/)
+[![](/img/mitchtalk.png)](http://slides.mitchelloharawild.com/melburn17/)
 
 &nbsp;&nbsp;&nbsp;
 
