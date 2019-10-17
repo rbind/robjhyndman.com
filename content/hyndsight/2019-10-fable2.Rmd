@@ -1,0 +1,151 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-10-18
+title: "Non-Gaussian forecasting using fable"
+slug: fable2
+mathjax: true
+categories:
+  - time series
+  - graphics
+  - statistics
+  - R
+  - tidyverts
+  - forecasting
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+set.seed(20191016)
+```
+
+```{r loadpackages, message=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(fable)
+```
+
+In my [previous post](https://robjhyndman.com/hyndsight/fable/) about the new [**fable** package](https://fable.tidyverts.org), we saw how fable can produce forecast distributions, not just point forecasts. All my examples used Gaussian (normal) distributions, so in this post I want to show how non-Gaussian forecasting can be done.
+
+As an example, we will use eating-out expenditure in my home state of Victoria.
+
+```{r cafe}
+vic_cafe <- tsibbledata::aus_retail %>%
+  filter(
+    State == "Victoria",
+    Industry == "Cafes, restaurants and catering services"
+  ) %>%
+  select(Month, Turnover)
+vic_cafe %>%
+  autoplot(Turnover) + ggtitle("Monthly turnover of Victorian cafes")
+```
+
+## Forecasting with transformations
+
+Clearly the variance is increasing with the level of the series, so we will consider modelling a Box-Cox transformation of the data.
+
+```{r}
+vic_cafe %>% autoplot(box_cox(Turnover, lambda = 0.2))
+```
+
+The variance now looks more homogeneous across the series, allowing us to fit an additive model. I chose the value of $\lambda=0.2$ by eye, but you can use the `guerrero` function for an automated approach.
+
+```{r}
+vic_cafe %>% features(Turnover, guerrero)
+```
+
+It suggests something slightly smaller, but I will stick with 0.2.
+
+Now to fit a model. For this post I will use ETS models
+
+```{r}
+fit <- vic_cafe %>%
+  model(ets = ETS(box_cox(Turnover, 0.2)))
+fit
+```
+
+```{r include=FALSE}
+if(!identical(fabletools:::model_sum(fit$ets[[1]]), "ETS(A,A,A)"))
+  stop("Model not ETS(A,A,A)")
+```
+
+An `r fabletools:::model_sum(fit$ets[[1]])`, or additive Holt-Winters model, has been selected for the transformed data. We can produce forecasts in the usual way.
+
+```{r}
+fc <- fit %>% forecast(h = "3 years")
+fc
+```
+
+Note that the distributions are given as transformed normal, denoted by t(N). The point forecast (in column `Turnover`) is the mean of this distribution. The back-transformation and bias adjustment is done automatically.
+
+One particularly clever part of the package (thanks to Mitchell O'Hara-Wild) is that you can use any transformation in the `model()` function, and the bias adjustment is computed based on a Taylor series expansion using numerical derivatives. So you will always get the approximate mean as the point forecast, even when using some exotic transformation for which you have no analytic expression for the bias.
+
+```{r}
+fc %>% autoplot(vic_cafe)
+```
+
+## Bootstrapped prediction intervals
+
+In the preceding analysis, there was still a normality assumption for the residuals of the model applied to the transformed data. If you want to avoid that as well, you can use bootstrapped intervals. These are constructed from simulated future sample paths where the residuals are resampled as possible future errors.
+
+We can simulate future sample paths using the `generate()` function.
+
+```{r}
+sim <- fit %>% generate(h = "3 years", times = 5, bootstrap = TRUE)
+sim
+```
+
+Here we have generated five possible sample paths for future months. The `.rep` variable provides a new key for the tsibble. The back-transformation of the sample paths is handled automatically. If we had multiple models, each would be used to generate future sample paths provided the corresponding `generate` function existed. (In the current version of **fable**, we have not yet implemented this for ARIMA models.)
+
+The plot below shows the five sample paths along with the last few years of historical data.
+
+```{r}
+vic_cafe %>%
+  filter(year(Month) >= 2008) %>%
+  ggplot(aes(x = Month)) +
+  geom_line(aes(y = Turnover)) +
+  geom_line(aes(y = .sim, colour = as.factor(.rep)), data = sim) +
+  ggtitle("Monthly turnover of Victorian cafes") +
+  guides(col = FALSE)
+```
+
+Prediction intervals are calculated using percentiles of the future sample paths. This is all built into the `forecast()` function so you do not need to call `generate()` directly.
+
+```{r}
+fc <- fit %>% forecast(h = "3 years", bootstrap = TRUE)
+fc
+```
+
+Notice that the forecast distribution is now represented as transformed simulation with 5000 sample paths. This default number can be modified in the `times` argument for `forecast()`.
+
+```{r}
+fc %>% autoplot(vic_cafe) +
+  ggtitle("Monthly turnover of Victorian cafes")
+```
+
+In this example, the resulting forecast intervals are almost identical to those obtained when we assumed the residuals were normally distributed.
+
+## Accuracy calculations
+
+We can check whether the bootstrapping helped by comparing the CRPS values from both models after doing a training/test set split.
+
+```{r}
+train <- vic_cafe %>% filter(year(Month) <= 2014)
+fit <- train %>%
+  model(ets = ETS(box_cox(Turnover, 0.2)))
+fit %>%
+  forecast(h = "4 years", bootstrap = FALSE) %>%
+  accuracy(vic_cafe,
+    measures = distribution_accuracy_measures
+  )
+fit %>%
+  forecast(h = "4 years", bootstrap = TRUE) %>%
+  accuracy(vic_cafe,
+    measures = distribution_accuracy_measures
+  )
+```
+
+In this case it makes almost no difference which of the two approaches is used, so the non-bootstrap approach is preferred because it is much faster.
