@@ -1,7 +1,7 @@
 ---
 author: robjhyndman
 comments: true
-date: 2019-10-18
+date: 2019-10-17
 title: "Non-Gaussian forecasting using fable"
 slug: fable2
 mathjax: true

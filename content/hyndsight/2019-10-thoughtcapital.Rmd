@@ -1,7 +1,7 @@
 ---
 author: robjhyndman
 comments: true
-date: 2019-10-17
+date: 2019-10-18
 slug: thoughtcapital
 mathjax: true
 title: "Forecasts are always wrong"
