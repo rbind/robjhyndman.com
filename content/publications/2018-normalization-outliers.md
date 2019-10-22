@@ -1,9 +1,10 @@
 ---
 author: Sevvandi&nbsp;Kandanaarachchi, Mario&nbsp;A&nbsp;Muñoz, Rob&nbsp;J&nbsp;Hyndman and&nbsp;Kate&nbsp;Smith-Miles
-date: 2018-09-13
+date: 2019-11-01
 slug: normalization-outliers
 title: "On normalization and algorithm selection for unsupervised outlier detection"
-kind: unpublished
+kind: article
+citation: "<em>Data Mining and Knowledge Discovery</em>, to appear."
 tags:
 - data science
 - anomaly detection
