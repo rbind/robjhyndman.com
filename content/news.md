@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [How to boost your career one gigabyte at a time](https://thenewdaily.com.au/sponsored/2019/10/24/how-to-boost-your-career-one-gigabyte-at-a-time/), *The New Daily*, 24 October 2019.
   * [River and reef water quality monitoring revolutionized](https://www.technologynetworks.com/applied-sciences/news/river-and-reef-water-quality-monitoring-revolutionized-323567), *Technology Networks*, 4 September 2019.
   * [Revolutionizing water quality monitoring for our rivers and reef](https://www.eurekalert.org/pub_releases/2019-09/quot-rwq090219.php), *EurekAlert!*, 3 September 2019.
   * [Labor’s climate policy is second-rate – because the government’s policy is fifth-rate](https://thenewdaily.com.au/money/finance-news/2019/05/06/labor-climate-policy-costings/), *The New Daily*, 6 May 2019.
