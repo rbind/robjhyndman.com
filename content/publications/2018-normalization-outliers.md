@@ -4,7 +4,7 @@ date: 2019-11-01
 slug: normalization-outliers
 title: "On normalization and algorithm selection for unsupervised outlier detection"
 kind: article
-citation: "<em>Data Mining and Knowledge Discovery</em>, to appear."
+citation: "<em>Data Mining and Knowledge Discovery</em>, to appear"
 tags:
 - data science
 - anomaly detection
