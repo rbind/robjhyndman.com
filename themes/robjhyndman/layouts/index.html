@@ -7,21 +7,21 @@
 {{ $seminars_count := index .Site.Params "seminars_count" | default 3 }}
 <div class="row">
   <div class="column small-12 medium-7 large-6">
-    {{ range first $posts_count ((where .Data.Pages.ByDate "Section" "hyndsight").Reverse) }}
+    {{ range first $posts_count ((where .Site.RegularPages.ByDate "Section" "hyndsight").Reverse) }}
     {{ partial "post-summary" . }}
     {{ end }}
   </div>
   <div class="column small-12 medium-5 large-offset-1">
     <h2><a href="/publications/">Recent {{ $pubs_title }}</a></h2>
     <ul class="compact fa-ul">
-      {{ range first $pubs_count (where .Data.Pages.ByDate "Section" "publications").Reverse }}
+      {{ range first $pubs_count (where .Site.RegularPages.ByDate "Section" "publications").Reverse }}
       <li style="margin-bottom: 9px;">{{ partial "pub-summary" . }}</li>
       {{ end }}
     </ul>
     <div style="padding-top: 5ex;"></div>
     <h2><a href="/seminars/">Recent and upcoming {{ $seminars_title }}</a></h2>
     <ul class="compact fa-ul">
-    {{ range first $seminars_count ((where .Data.Pages.ByDate "Section" "seminars").Reverse) }}
+    {{ range first $seminars_count ((where .Site.RegularPages.ByDate "Section" "seminars").Reverse) }}
       <li style="margin-bottom: 9px;">{{ partial "seminar-summary" . }}</li>
     {{ end }}
     </ul>

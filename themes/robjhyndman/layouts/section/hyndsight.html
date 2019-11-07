@@ -7,7 +7,7 @@
 <div class="row">
   <div class="column small-12 medium-10 medium-offset-1 end large-offset-0 large-8 large-pull-3">
   <h1>All Hyndsight posts by date</h1>
-    {{ $paginator := .Paginate .Data.Pages }}
+    {{ $paginator := .Paginate .Pages }}
     {{ range $paginator.Pages }}
     {{ partial "post-summary" . }}
     {{ end }}

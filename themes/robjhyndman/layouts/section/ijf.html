@@ -5,7 +5,7 @@
       <div class="row">
   <h1>Instructions for IJF Editors</h1>
   <ul>
-    {{ $paginator := .Paginate .Data.Pages }}
+    {{ $paginator := .Paginate .Pages }}
     {{ range $paginator.Pages }}
     {{ partial "post-title" . }}
     {{ end }}
