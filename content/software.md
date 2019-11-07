@@ -17,6 +17,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
 
+* [**gravitas**](https://sayani07.github.io/gravitas/): Explore Probability Distributions for Bivariate Temporal Granularities. [[CRAN](https://cloud.r-project.org/package=gravitas)]
+
 ## Other time series analysis and forecasting packages
 
 * [**bfast**](https://github.com/verbe039/bfast): Automatic identification of breaks for additive season and trend, designed for use with remote sensing data. [[CRAN](https://cloud.r-project.org/package=bfast)]
