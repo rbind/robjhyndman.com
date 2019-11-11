@@ -1,6 +1,6 @@
 ---
 author: Pablo&nbsp;Montero-Manso, George&nbsp;Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman, Thiyanga&nbsp;S&nbsp;Talagala
-date: 2020-01-01
+date: 2020-01-03
 slug: fforma
 title: "FFORMA: Feature-based Forecast Model Averaging"
 kind: article

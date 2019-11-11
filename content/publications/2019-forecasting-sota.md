@@ -1,6 +1,6 @@
 ---
 author: Spyros Makridakis, Rob&nbsp;J&nbsp;Hyndman, Fotios Petropoulos
-date: 2020-01-01
+date: 2020-01-02
 slug: forecasting-sota
 title: "Forecasting in social settings: the state of the art"
 kind: article
