@@ -11,7 +11,7 @@ title: "Research team"
 
 ## Research fellows
 
-  1. **[Sevvandi Kandanaarachchi](https://sites.google.com/view/sevvandik)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
+  1. **[Sevvandi Kandanaarachchi](https://sevvandi.netlify.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
   1. **Pablo Montera Manso** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
 
