@@ -9,7 +9,7 @@ tags:
 - data science
 ---
 
-Talk given at the [Melbourne Analytics Charity Christmas Gala](http://www.meetup.com/Data-Science-Melbourne/events/212783372/), a combined event of the [Statistical Society of Australia](http://www.meetup.com/Statistical-Society-of-Australia-Victorian-Branch/), [Data Science Melbourne](http://www.meetup.com/Data-Science-Melbourne/), [Big Data Analytics](http://www.meetup.com/BigDataAnalyticsMelbourne/) and [Melbourne Users of R Network](http://www.meetup.com/MelbURN-Melbourne-Users-of-R-Network/).
+Talk given at the [Melbourne Analytics Charity Christmas Gala](http://www.meetup.com/Data-Science-Melbourne/events/212783372/), a combined event of the [Statistical Society of Australia](http://www.meetup.com/Statistical-Society-of-Australia-Victorian-Branch/), [Data Science Melbourne](http://www.meetup.com/Data-Science-Melbourne/), [Big Data Analytics](https://www.meetup.com/Big-Data-Analytics-Meetup-Group/) and [Melbourne Users of R Network](http://www.meetup.com/MelbURN-Melbourne-Users-of-R-Network/).
 
 This is (roughly) what I said.<!-- more -->
 

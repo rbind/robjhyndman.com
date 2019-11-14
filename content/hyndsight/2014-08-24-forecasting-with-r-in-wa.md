@@ -17,7 +17,7 @@ On 23-25 September, I will be running a 3-day workshop in Perth on "Forecasting:
 
 Workshop participants will be assumed to be familiar with basic statistical tools such as multiple regression, but no knowledge of time series or forecasting will be assumed. Some prior experience in R is highly desirable.
 
-**Venue**: [The University Club](http://sponsored.uwa.edu.au/club/), University of Western Australia, Nedlands WA.
+**Venue**: [The University Club](https://universityclub.uwa.edu.au/), University of Western Australia, Nedlands WA.
 
 Day 1
 :    Forecasting tools, seasonality and trends, exponential smoothing.

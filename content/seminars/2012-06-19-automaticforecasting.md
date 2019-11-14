@@ -11,9 +11,9 @@ tags:
 - time series
 ---
 
-+ Invited talk, Australian Statistical Conference, Adelaide, 10 July 2012.  
++ Invited talk, Australian Statistical Conference, Adelaide, 10 July 2012.
 + COMPSTAT 2012, Cyprus, 29 August 2012.
-+ Seminar, Lancaster University, 10 September 2012. 
++ Seminar, Lancaster University, 10 September 2012.
 
 Many applications require a large number of time series to be forecast completely automatically. For example, manufacturing companies often require weekly forecasts of demand for thousands of products at dozens of locations in order to plan distribution and maintain suitable inventory stocks. In population forecasting, there are often a few hundred time series to be forecast, representing various components that make up the population dynamics. In these circumstances, it is not feasible for time series models to be developed for each series by an experienced statistician. Instead, an automatic forecasting algorithm is required.
 
@@ -22,4 +22,4 @@ I will look at some algorithms recently developed for automatically forecasting 
 ### Downloads
 
   * [Long version](/talks/ASC2012_RobJHyndman.pdf) (for ASC2012 and [Lancaster Uni](http://www.stor-i.lancs.ac.uk/))
-  * [Short version](/talks/COMPSTAT12.pdf) (for [COMPSTAT12](http://www.compstat2012.org/))
+  * [Short version](/talks/COMPSTAT12.pdf) (for COMPSTAT12)

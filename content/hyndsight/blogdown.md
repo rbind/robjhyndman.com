@@ -18,7 +18,7 @@ Blogdown is relatively new and the [documentation](https://bookdown.org/yihui/bl
   * Amber Thomas's [blog post](https://amber.rbind.io/blog/2016/12/19/creatingsite/) on making a website using blogdown, hugo and github pages.
   * Justin Dunham's [blog post](http://justindunham.net/migrating-from-wordpress-to-hugo/) on migrating wordpress content to hugo.
 
-Because it is all so new, the theming options are rather limited. I modified the [hugo-finite theme](https://themes.gohugo.io/hugo-finite/), and borrowed some design ideas from [Kieran Healy](https://kieranhealy.org/).
+Because it is all so new, the theming options are rather limited. I modified the [hugo-finite theme](https://github.com/lambdafu/hugo-finite), and borrowed some design ideas from [Kieran Healy](https://kieranhealy.org/).
 
 The source code for the site is now [hosted on github](https://github.com/robjhyndman/robjhyndman.com).
 
