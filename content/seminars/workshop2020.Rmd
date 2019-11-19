@@ -114,7 +114,7 @@ install.packages("fpp3", dependencies=TRUE)
 
 ### Lab Session 4
 
-We have introduced the following functions: `gg_lag` and `ACF`. Explore the same four time series discussed in Lab Session 2.  Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Beer` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
 
 ### Lab Session 5
 
