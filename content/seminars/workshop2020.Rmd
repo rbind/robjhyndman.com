@@ -95,7 +95,7 @@ install.packages("fpp3", dependencies=TRUE)
 
 ### Lab Session 2
 
-- Create time plots of the following time series: `Beer` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`
+- Create time plots of the following four time series: `Bricks` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`, `Demand` from `vic_elec`.
 - Use `help()` to find out about the data in each series.
 - For the last plot, modify the axis labels and title.
 
@@ -104,8 +104,7 @@ install.packages("fpp3", dependencies=TRUE)
 1. Look at the quarterly tourism data for the Snowy Mountains
 
     ```r
-    snowy <- filter(tourism,
-      Region == "Snowy Mountains")
+    snowy <- filter(tourism, Region == "Snowy Mountains")
     ```
 
     - Use `autoplot()`, `gg_season()` and `gg_subseries()` to explore the data.
@@ -115,11 +114,7 @@ install.packages("fpp3", dependencies=TRUE)
 
 ### Lab Session 4
 
-We have introduced the following functions: `gg_lag` and `ACF`. Explore the following time series using these functions. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
-
-  - Bricks from `aus_production`
-  - Lynx from `pelt`
-  - Victorian Electricity Demand from `vic_elec`
+We have introduced the following functions: `gg_lag` and `ACF`. Explore the same four time series discussed in Lab Session 2.  Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
 
 ### Lab Session 5
 
@@ -146,22 +141,28 @@ Consider the GDP information in `global_economy`. Plot the GDP per capita for ea
     * United States GDP from `global_economy`
     * Slaughter of Victorian “Bulls, bullocks and steers” in `aus_livestock`
     * Gas production from `aus_production`
+    * Tobacco from `aus_production`
+    * Economy class passengers between Melbourne and Sydney from `ansett`
+    * Victorian Electricity Demand from `vic_elec`.
 
 2. Why is a Box-Cox transformation unhelpful for the `expsmooth::cangas` data?
 
-3. For each of the following series, make a graph of the data. If transforming seems appropriate, do so and describe the effect. Tobacco from `aus_production`, Economy class passengers between Melbourne and Sydney from `ansett`, and Victorian Electricity Demand from `vic_elec`.
-
 ### Lab Session 8
 
-Produce the following decomposition
+1. Produce the following decomposition
 
-```r
-holidays %>%
-  STL(Trips ~ season(window=7) + trend(window=11)) %>%
-  autoplot()
-```
+    ```r
+    expsmooth::cangas %>%
+      as_tsibble() %>%
+      STL(value ~ season(window=7) + trend(window=11)) %>%
+      autoplot()
+    ```
 
-What happens as you change `season(window = ???)` and `trend(window = ???)`?
+2. What happens as you change the values of the two `window` arguments?
+
+3. How does the seasonal shape change over time? [Hint: Try plotting the seasonal component using `gg_season`.]
+
+4. Can you produce a plausible seasonally adjusted series? [Hint: `season_adjust` is one of the variables returned by `STL`.]
 
 ### Lab Session 9
 
@@ -171,7 +172,7 @@ What happens as you change `season(window = ???)` and `trend(window = ???)`?
 ### Lab Session 10
 
 * Use a feature-based approach to look for outlying series in `PBS`.
-* What is unusual about these series?
+* What is unusual about the series you identify as "outliers".
 
 ### Lab Session 11
 
@@ -180,11 +181,15 @@ What happens as you change `season(window = ???)` and `trend(window = ???)`?
 
 ### Lab Session 12
 
-Compute seasonal naïve forecasts for quarterly Australian beer production from 1992.
-
-Test if the residuals are white noise. What do you conclude?
+  * Compute seasonal naïve forecasts for quarterly Australian beer production from 1992.
+  * Test if the residuals are white noise. What do you conclude?
 
 ### Lab Session 13
+
+ * Split the household wealth (`hh_budget`) into a training and test set, with the last four years in the test set.
+ * Fit all the appropriate benchmark methods to the training set and forecast the periods covered by the test set.
+ * Compute the accuracy of your forecasts. Which method does best?
+ * Repeat the exercise using the Australian takeaway food turnover data (`aus_retail`) with a test set of four years.
 
 ### Lab Session 14
 
