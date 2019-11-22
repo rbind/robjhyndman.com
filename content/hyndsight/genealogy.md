@@ -4,7 +4,6 @@ comments: false
 date: 2009-07-15 00:42:07+00:00
 slug: mathematical-genealogy
 title: Mathematical genealogy
-wordpress_id: 118
 categories:
   - genealogy
   - mathematics
@@ -27,7 +26,7 @@ Professor of Mathematics at Jena University between 1653 and 1699.</td>
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/leibniz.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Leibniz.html">Gottfried Leibniz</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Leibniz.html">Gottfried Leibniz</a></strong>
 <em>Dr. jur. Universität Altdorf, 1666</em>
 B. 1646, Leipzig, Germany
 D. 1716, Hanover, Germany
@@ -35,21 +34,21 @@ German philosopher, mathematician, and logician who is probably best known for h
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/jabernoulli.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Bernoulli_Jacob.html">Jacob Bernoulli</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Jacob.html">Jacob Bernoulli</a></strong>
 B. 1654, Basel, Switzerland
 D. 1705, Basel, Switzerland
 One of the famous Bernoulli family. His contributions include the law of large numbers in probability theory and work on the convergence of infinite series.</td>
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/jobernoulli.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Bernoulli_Johann.html">Johann Bernoulli</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Bernoulli_Johann.html">Johann Bernoulli</a></strong>
 B. 1667, Basel, Switzerland
 D. 1748, Basel, Switzerland
 Jacob's brother. He was elected a fellow of the academies of Paris, Berlin, London, St Petersburg and Bologna. Known as the "Archimedes of his age", he solved the catenary (hanging chain) problem, and the rule for limits of functions commonly attributed to his student, de l'Hôpital.</td>
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/euler.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Euler.html">Leonhard Euler</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Euler.html">Leonhard Euler</a></strong>
 <em>Ph.D. Univerität Basel, 1726</em>
 B. 1707, Basel, Switzerland
 D. 1783, St. Petersburg, Russia
@@ -57,14 +56,14 @@ The most prolific mathematician of all time. He wrote over 800 papers covering e
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/lagrange.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Lagrange.html">Joseph Lagrange</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Lagrange.html">Joseph Lagrange</a></strong>
 B. 1736, Turin, Italy
 D. 1813, Paris, France
 Developed the theory of differential equations, and provided many new results in number theory. Lagrange's classic <em>Theorie des fonctions analytiques</em> laid some of the foundations of group theory and functional analysis. He is remembered in the term "Lagrange multiplier".</td>
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/poisson.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/%7Ehistory/Mathematicians/Poisson.html">Siméon Poisson</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Poisson.html">Siméon Poisson</a></strong>
 B. 1781, Pithiviers, France.
 D. 1840, Sceaux, France
 "Life is only good for two things: to do Mathematics and to teach it". Best known for his work on probability, including the Poisson Distribution.</td>

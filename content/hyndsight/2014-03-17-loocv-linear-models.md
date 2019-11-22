@@ -3,10 +3,8 @@ author: robjhyndman
 comments: true
 date: 2014-03-17 10:08:42+00:00
 mathjax: true
-link: https://robjhyndman.com/hyndsight/loocv-linear-models/
 slug: loocv-linear-models
 title: Fast computation of cross-validation in linear models
-wordpress_id: 2598
 categories:
 - computing
 - forecasting
@@ -35,7 +33,7 @@ Suppose we have a linear regression model $\boldsymbol{Y} = \boldsymbol{X}\bolds
 $$ \text{CV} = \frac{1}{N}\sum_{i=1}^N [e_{i}/(1-h_{i})]^2,$$
 </div>
 
-where $e\_i = y\_i - \hat{y}\_i $ and $\hat{y}\_i$ is the predicted value obtained when the model is estimated with all data included. This is a remarkable result, and is given without proof in [Section 5.5 of my forecasting textbook](http://www.otexts.org/fpp/5/5/).
+where $e\_i = y\_i - \hat{y}\_i $ and $\hat{y}\_i$ is the predicted value obtained when the model is estimated with all data included. This is a remarkable result, and is given without proof in [Section 5.5 of my forecasting textbook](https://otexts.com/fpp2/selecting-predictors.html).
 
 What follows is the simplest proof I know (adapted from [Seber and Lee, 2003](http://amzn.com/0471415405/?tag=prorobjhyn-20)).
 

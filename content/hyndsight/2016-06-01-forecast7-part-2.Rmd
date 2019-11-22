@@ -11,7 +11,7 @@ categories:
 - time series
 ---
 
-As mentioned in [my previous post on the forecast package v7](https://robjhyndman.com/hyndsight/forecast7-ggplot2/), the most visible feature was the introduction of [ggplot2 graphics](http://ggplot2.org/). This post briefly summarizes the remaining new features of forecast v7.
+As mentioned in [my previous post on the forecast package v7](https://robjhyndman.com/hyndsight/forecast7-ggplot2/), the most visible feature was the introduction of [ggplot2 graphics](https://ggplot2.tidyverse.org/). This post briefly summarizes the remaining new features of forecast v7.
 
 ```{r, message=FALSE}
 library(forecast)

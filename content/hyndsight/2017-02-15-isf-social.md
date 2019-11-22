@@ -2,11 +2,8 @@
 author: robjhyndman
 comments: true
 date: 2017-02-15 10:06:20+00:00
-
-link: https://robjhyndman.com/hyndsight/isf-social/
 slug: isf-social
 title: 'Forecasters: bring your family to Cairns'
-wordpress_id: 4007
 categories:
 - conferences
 - forecasting
@@ -26,7 +23,7 @@ During the [International Symposium on Forecasting](http://forecasters.org/isf),
 : [ISF Gala Event](https://forecasters.org/isf/program/gala-event/)
 
 **Wednesday**, 28 June
-: [Two Cairns City tours](https://forecasters.org/wp-content/uploads/ISF17_SocialProgram28Jun.pdf) led by Leanne Hyndman and Angela Athanasopoulos, and both will be complimentary for ISF guests.
+: Two Cairns City tours led by Leanne Hyndman and Angela Athanasopoulos, and both will be complimentary for ISF guests.
 
 **Thursday**, 29 June
 : [Post Symposium Great Barrier Reef tour](http://www.cairnsconferences.com.au/events/isf2017/)

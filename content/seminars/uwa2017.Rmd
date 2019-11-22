@@ -12,7 +12,7 @@ date: 2017-09-26
 **Location**: [The University Club](http://www.uwa.edu.au/contact/map?id=2161), University of Western Australia
 
 
-This page is for people enrolled in my [UWA 3-day workshop](http://www.cas.maths.uwa.edu.au/courses/forecasting2).
+This page is for people enrolled in my UWA 3-day workshop.
 
 
 ## Prerequisites

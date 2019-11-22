@@ -2,11 +2,8 @@
 author: robjhyndman
 comments: true
 date: 2016-08-31 02:07:07+00:00
-
-link: https://robjhyndman.com/hyndsight/isf2017-sponsorship/
 slug: isf2017-sponsorship
 title: Sponsorship for the Cairns forecasting conference
-wordpress_id: 3832
 categories:
 - conferences
 - forecasting
@@ -21,6 +18,6 @@ This is only the second time it has been held in Australia, with the 2004 confer
 
 Right now, I'm looking for organizations who wish to get involved with some sponsorship. Sponsor information is highly visible at the conference, as well as on the website, the program and other publications, so it is an opportunity to support the forecasting community, promote your organization, and perhaps recruit some young rising stars in the analytics world.<!-- more -->
 
-Further details are available in our [sponsorship brochure](https://forecasters.org/wp-content/uploads/ISF-2017_SponsorBrochure.pdf).
+Further details are available in our sponsorship brochure.
 
 Please [email me](mailto:Rob.Hyndman@monash.edu) if you wish to discuss becoming a sponsor.

@@ -2,22 +2,13 @@
 author: robjhyndman
 comments: true
 date: 2006-07-30 10:07:53+00:00
-
-link: https://robjhyndman.com/hyndsight/useful-latex-links/
 slug: useful-latex-links
 title: Useful LaTeX links
-wordpress_id: 317
 categories:
 - LaTeX
 ---
 
 ### Learning LaTeX
-
-
-
-
-
-
     
   * [Introduction to LaTeX](/hyndsight/latex-workshop/):  notes and other materials from a one-day workshop.
 
@@ -34,7 +25,7 @@ categories:
   * [More tutorials](http://www.tug.org/tutorials/tugindia/) from the Indian TeX Users Group.
 
     
-  * [The TeX Catalogue](http://ctan.unsw.edu.au/help/Catalogue/) for finding packages.
+  * [CTAN](https://ctan.org/) for finding packages.
 
 
 

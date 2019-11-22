@@ -2,16 +2,13 @@
 author: robjhyndman
 comments: true
 date: 2009-02-01 08:20:54+00:00
-
-link: https://robjhyndman.com/hyndsight/statistician-the-dream-job/
 slug: statistician-the-dream-job
 title: 'Statistician: the dream job'
-wordpress_id: 89
 categories:
 - statistics
 ---
 
-So what is the ultimate job? According to Hal Varian, chief economist at Google, it is being a statistician (see [this interview](http://freakonomics.blogs.nytimes.com/2008/02/25/hal-varian-answers-your-questions/#more-2345))
+So what is the ultimate job? According to Hal Varian, chief economist at Google, it is being a statistician (see [this interview](https://web.archive.org/web/20090302095555/http://freakonomics.blogs.nytimes.com/2008/02/25/hal-varian-answers-your-questions/))
 
 Here he is on YouTube with a longer comment:
 
