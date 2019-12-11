@@ -114,7 +114,7 @@ install.packages("fpp3", dependencies=TRUE)
 
 ### Lab Session 4
 
-We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Beer` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Bricks` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
 
 ### Lab Session 5
 
@@ -193,7 +193,7 @@ Consider the GDP information in `global_economy`. Plot the GDP per capita for ea
 
 ### Lab Session 14
 
-Consider the data set `eggs`, the price of a dozen eggs in the United States from 1900-1993. Experiment with the various options in the `ETS()` function to see how much the forecasts change with damped trend, or with a Box-Cox transformation. Try to develop an intuition of what each is doing to the forecasts. How can we stop the forecasts becoming negative?
+Consider the data set `fma::eggs`, the price of a dozen eggs in the United States from 1900-1993. Experiment with the various options in the `ETS()` function to see how much the forecasts change with damped trend, or with a Box-Cox transformation. Try to develop an intuition of what each is doing to the forecasts. How can we stop the forecasts becoming negative?
 
 [Hint: use `h=100` when forecasting, so you can clearly see the differences between the various options when plotting the forecasts.]
 
