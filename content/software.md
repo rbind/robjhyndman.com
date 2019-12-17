@@ -31,6 +31,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**robets**](https://cloud.r-project.org/package=robets): Forecasting time series with robust exponential smoothing. [[CRAN](https://cloud.r-project.org/package=robets)]
 
+* [**seer**](https://thiyangt.github.io/seer/): Feature-based Forecast Model Selection (FFORMS)
+
 * [**stR**](https://cloud.r-project.org/package=stR): STR time series decomposition. The methods are described in [Dokumentov & Hyndman (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cloud.r-project.org/package=stR)]
 
 * [**thief**](https://pkg.robjhyndman.com/thief/): Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cloud.r-project.org/package=thief)]
@@ -60,6 +62,14 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**tscompdata**](https://github.com/robjhyndman/tscompdata): Time Series Competition Data
 
 * [**tsdl**](https://pkg.yangzhuoranyang.com/tsdl/): Time Series Data Library
+
+## Anomaly detection packages
+
+* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space
+
+* [**oddstream**](https://github.com/pridiltal/oddstream/): Outlier Detection in Data Streams [[CRAN]](https://cloud.r-project.org/package=oddstream)
+
+* [**oddwater**](https://github.com/pridiltal/oddwater/): A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors
 
 ## Functional data and demography packages
 
@@ -95,3 +105,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**hdrcde**](https://pkg.robjhyndman.com/hdrcde/): Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cloud.r-project.org/package=hdrcde)]
 
+## CRAN task views
+
+* [**Time Series**](https://cran.r-project.org/view=TimeSeries)
+* [**Anomaly Detection**](https://github.com/pridiltal/ctv-AnomalyDetection)
