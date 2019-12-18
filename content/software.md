@@ -25,6 +25,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**forecast**](https://pkg.robjhyndman.com/forecast/): Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cloud.r-project.org/package=forecast)]
 
+* [**gratis**](https://github.com/ykang/gratis): Efficient generation of time series with diverse and controllable characteristics
+
 * [**hts**](https://pkg.earo.me/hts/): Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cloud.r-project.org/package=hts)]
 
 * [**MEFM**](https://github.com/robjhyndman/mefm-package): A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
@@ -38,8 +40,6 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**thief**](https://pkg.robjhyndman.com/thief/): Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cloud.r-project.org/package=thief)]
 
 * [**tsfeatures**](https://pkg.robjhyndman.com/tsfeatures): Time Series Feature Extraction. [[CRAN](https://cloud.r-project.org/package=tsfeatures)]
-
-* [**tsgeneration**](https://github.com/ykang/tsgeneration): Efficient generation of time series with diverse and controllable characteristics
 
 ## Time series data packages
 
@@ -65,7 +65,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 ## Anomaly detection packages
 
-* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space
+* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space [[CRAN]]((https://cloud.r-project.org/package=stray))
 
 * [**oddstream**](https://github.com/pridiltal/oddstream/): Outlier Detection in Data Streams [[CRAN]](https://cloud.r-project.org/package=oddstream)
 
