@@ -6,7 +6,7 @@ date: 2020-01-15
 slug: hierarchical-forecasting
 title: Hierarchical forecasting
 kind: chapter
-citation: <a href="http://www2.hawaii.edu/~fuleky/BigDataSite"><em>Macroeconomic forecasting in the age of big data</em></a>, ed. P. Fuleky, Springer, Chapter 21, pp.689-719
+citation: <a href="http://www2.hawaii.edu/~fuleky/BigDataSite"><em>Macroeconomic forecasting in the era of big data</em></a>, ed. P. Fuleky, Springer, Chapter 21, pp.689-719
 tags:
 - accuracy
 - arima models
