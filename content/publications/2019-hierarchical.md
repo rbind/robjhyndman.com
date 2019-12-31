@@ -2,11 +2,11 @@
 author: George&nbsp;Athanasopoulos, Puwasala&nbsp;Gamakumara, Anastasios&nbsp;Panagiotelis, Rob&nbsp;J&nbsp;Hyndman and Mohamed&nbsp;Affan
 Status: Published
 comments: false
-date: 2019-02-18
+date: 2020-01-15
 slug: hierarchical-forecasting
 title: Hierarchical forecasting
 kind: chapter
-citation: <a href="http://www2.hawaii.edu/~fuleky/BigDataSite"><em>Macroeconomic forecasting in the age of big data</em></a>, ed. P. Fuleky, Chapter 23
+citation: <a href="http://www2.hawaii.edu/~fuleky/BigDataSite"><em>Macroeconomic forecasting in the age of big data</em></a>, ed. P. Fuleky, Springer, Chapter 21, pp.689-719
 tags:
 - accuracy
 - arima models
@@ -17,6 +17,7 @@ tags:
 - time series
 - economics
 link: https://www.monash.edu/business/ebs/research/publications/ebs/wp02-2019.pdf
+doi: 10.1007/978-3-030-31150-6_21
 ---
 
 
