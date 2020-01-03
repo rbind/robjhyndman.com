@@ -9,15 +9,20 @@ mathjax: true
 
 **[Rob J Hyndman](http://robjhyndman.com), [Anne B Koehler](http://www.fsb.muohio.edu/directory/koehleab), [J Keith Ord](https://gufaculty360.georgetown.edu/s/faculty-profile?netid=ordk), [Ralph D Snyder](https://research.monash.edu/en/persons/ralph-snyder)** (Springer, 2008).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<style>
+.verticalhorizontal {
+    display: table-cell;
+    vertical-align: middle;
+}
+</style>
 
-[![Springer](springer.png)](https://www.springer.com/us/book/9783540719168)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![Google books](google_books.png)](https://books.google.com/books?id=GSyzox8Lu9YC&lpg=PP1&pg=PP1)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![Amazon](amazon.png)](http://amzn.com/3540719164/?tag=otexts-20)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="verticalhorizontal">
+<table style="width: 100%; table-layout: fixed;"><tr>
+  <td width="33%" style="text-align:center; padding: 0.5rem"><a href="https://www.springer.com/us/book/9783540719168"><img src="springer.png" alt="Springer"></a></td>
+  <td width="33%" style="text-align:center; padding: 0.5rem"><a href="https://books.google.com/books?id=GSyzox8Lu9YC&amp;lpg=PP1&amp;pg=PP1"><img src="google_books.png" alt="Google books"></a></td>
+  <td width="33%" style="text-align:center; padding: 0.5rem"><a href="http://amzn.com/3540719164/?tag=otexts-20"><img src="amazon.png" alt="Amazon"></a></td>
+</tr></table>
+</div>
 
 <a href="http://amzn.com/3540719164/?tag=otexts-20"><img src='/img/expsmooth.jpg' width=20% align='left' style="margin-right: 20px; margin-bottom: 20px;"></a>
 
