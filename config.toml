@@ -10,6 +10,9 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 pluralizeListTitles = false
 buildFuture = true
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [params]
 
 # Date format (refer to Go's date format: http://flippinggodateformat.com)
