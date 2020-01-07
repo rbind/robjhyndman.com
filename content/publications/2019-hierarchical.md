@@ -2,7 +2,7 @@
 author: George&nbsp;Athanasopoulos, Puwasala&nbsp;Gamakumara, Anastasios&nbsp;Panagiotelis, Rob&nbsp;J&nbsp;Hyndman and Mohamed&nbsp;Affan
 Status: Published
 comments: false
-date: 2020-01-15
+date: 2020-01-06
 slug: hierarchical-forecasting
 title: Hierarchical forecasting
 kind: chapter
