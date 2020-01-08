@@ -4,7 +4,7 @@ Status: Published
 comments: false
 date: 2019-12-08
 slug: colorectal
-citation: "<em>Springer Communications in Computer and Information Science</em>, to appear"
+citation: "<em>Statistics and Data Science</em>, RSSDS 2019 (ed. Nguyen H). Communications in Computer and Information Science <b>1150</b>, pp 162-182. Springer, Singapore"
 title: Predicting the whole distribution with methods for depth data analysis demonstrated on a colorectal cancer treatment study
 kind: chapter
 tags:
