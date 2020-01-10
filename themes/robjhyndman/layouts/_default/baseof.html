@@ -5,6 +5,8 @@
     <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="{{ .Site.BaseURL }}fonts/academicons.ttf?v=1.7.0" as="font">
+    <link rel="preload" href="{{ .Site.BaseURL }}fonts/fontawesome-webfont.woff2?v=4.6.34Cas" as="font">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/foundation.min.css">
