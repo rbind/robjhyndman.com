@@ -10,7 +10,7 @@ tags:
 - R
 - time series
 - machine learning
-link: https://www.eceee.org/library/conference_proceedings/eceee_Summer_Studies/2019/4-monitoring-and-evaluation-for-greater-impact/quantification-of-energy-savings-from-energy-conservation-measures-in-buildings-using-machine-learning/
+link: https://pdfs.semanticscholar.org/90d4/ba536df00c313eba3a3f63739dc50842ff0e.pdf
 citation: "In: <em>ECEEE Summer Study Proceedings</em>. Presqu'île de Giens, France. 3-8 June 2019"
 mathjax: true
 ---
