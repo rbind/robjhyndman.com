@@ -104,7 +104,7 @@ install.packages("fpp3", dependencies=TRUE)
 1. Look at the quarterly tourism data for the Snowy Mountains
 
     ```r
-    snowy <- filter(tourism, Region == "Snowy Mountains")
+    snowy <- tourism %>% filter(Region == "Snowy Mountains")
     ```
 
     - Use `autoplot()`, `gg_season()` and `gg_subseries()` to explore the data.
@@ -114,7 +114,7 @@ install.packages("fpp3", dependencies=TRUE)
 
 ### Lab Session 4
 
-We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Bricks` from `aus_production`, `Lynx` from `pelt`, `Close` from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Bricks` from `aus_production`, `Lynx` from `pelt`, `Close` price of Amazon from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
 
 ### Lab Session 5
 
@@ -186,7 +186,7 @@ Consider the GDP information in `global_economy`. Plot the GDP per capita for ea
 
 ### Lab Session 13
 
- * Split the household wealth (`hh_budget`) into a training and test set, with the last four years in the test set.
+ * Create a training set for household wealth (`hh_budget`) by witholding the last four years as a test set.
  * Fit all the appropriate benchmark methods to the training set and forecast the periods covered by the test set.
  * Compute the accuracy of your forecasts. Which method does best?
  * Repeat the exercise using the Australian takeaway food turnover data (`aus_retail`) with a test set of four years.
