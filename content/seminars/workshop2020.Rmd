@@ -140,21 +140,18 @@ Consider the GDP information in `global_economy`. Plot the GDP per capita for ea
 
     * United States GDP from `global_economy`
     * Slaughter of Victorian “Bulls, bullocks and steers” in `aus_livestock`
-    * Gas production from `aus_production`
-    * Tobacco from `aus_production`
-    * Economy class passengers between Melbourne and Sydney from `ansett`
     * Victorian Electricity Demand from `vic_elec`.
+    * Gas production from `aus_production`
 
-2. Why is a Box-Cox transformation unhelpful for the `expsmooth::cangas` data?
+2. Why is a Box-Cox transformation unhelpful for the `canadian_gas` data?
 
 ### Lab Session 8
 
 1. Produce the following decomposition
 
     ```r
-    expsmooth::cangas %>%
-      as_tsibble() %>%
-      STL(value ~ season(window=7) + trend(window=11)) %>%
+    canadian_gas %>%
+      STL(Volume ~ season(window=7) + trend(window=11)) %>%
       autoplot()
     ```
 
@@ -193,9 +190,11 @@ Consider the GDP information in `global_economy`. Plot the GDP per capita for ea
 
 ### Lab Session 14
 
-Consider the data set `fma::eggs`, the price of a dozen eggs in the United States from 1900-1993. Experiment with the various options in the `ETS()` function to see how much the forecasts change with damped trend, or with a Box-Cox transformation. Try to develop an intuition of what each is doing to the forecasts. How can we stop the forecasts becoming negative?
+Try forecasting the Chinese GDP from the `global_economy` data set using an ETS model.
 
-[Hint: use `h=100` when forecasting, so you can clearly see the differences between the various options when plotting the forecasts.]
+Experiment with the various options in the `ETS()` function to see how much the forecasts change with damped trend, or with a Box-Cox transformation. Try to develop an intuition of what each is doing to the forecasts.
+
+[Hint: use `h=20` when forecasting, so you can clearly see the differences between the various options when plotting the forecasts.]
 
 ### Lab Session 15
 
