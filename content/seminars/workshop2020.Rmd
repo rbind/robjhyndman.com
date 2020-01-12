@@ -49,8 +49,7 @@ Participants should be familiar with the use of R, at least to the point where t
 Please bring your own laptop with a recent version of R and RStudio installed. The following code will install the main packages needed for the workshop.
 
 ```r
-install.packages("tidyverse", dependencies=TRUE)
-install.packages("fpp3", dependencies=TRUE)
+install.packages(c("tidyverse","fpp3"))
 ```
 
 ## Schedule
