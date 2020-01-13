@@ -10,6 +10,7 @@ tags:
 - time series
 - graphics
 file: calendar-vis.pdf
+doi: 10.1080/10618600.2020.1715226
 ---
 
 ![](/img/calendar-vis.png)
