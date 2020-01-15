@@ -10,7 +10,7 @@ categories:
   - time series
 ---
 
-[![](/img/m4.png)](https://www.m4.unic.ac.cy/)
+[![](/img/m4.png)](https://mofc.unic.ac.cy/m4/)
 
 The [official guidelines](https://www.m4.unic.ac.cy/wp-content/uploads/2018/03/M4-Competitors-Guide.pdf) for the M4 competition have now been published, and there have been several developments since my last post on this.
 
@@ -30,4 +30,4 @@ Spyros has provided [an overview of the competition on the IIF blog](https://for
 
 I have agreed to publish a selection of articles on the M4 competition in the IJF. More details about this will be announced at a later date.
 
-For now, please [register to participate](https://www.m4.unic.ac.cy/account/). The more forecasters who get involved the better. 
+For now, please [register to participate](https://mofc.unic.ac.cy/m4/). The more forecasters who get involved the better.

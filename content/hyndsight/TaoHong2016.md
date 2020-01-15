@@ -15,7 +15,7 @@ The award decision was made by a committee consisting of Professors Pierre Pinso
 
 <img src="/img/Weron.jpg" width=300 align='right'>
 
-**The first IIF Tao Hong Award goes to [Professor Rafał Weron](http://www.ioz.pwr.wroc.pl/pracownicy/weron/)** for his 2014 paper
+**The first IIF Tao Hong Award goes to [Professor Rafał Weron](https://www.ii.pwr.edu.pl/~rweron/)** for his 2014 paper
 ["Electricity price forecasting: A review of the state-of-the-art with a look into the future", IJF 30(4), 1030-1081](https://doi.org/10.1016/j.ijforecast.2014.08.008).
 
 Weron’s article is encyclopaedic. It covers the entirety of electricity price forecasting and systematizes a wide field of very disparate models, from statistical models across machine learning to agent models. However, the paper is not only a review; it also presents much needed guidelines for the rigorous use of methods, measures and tests, and it looks ahead and speculates on the directions electricity price forecasting will take in the next decade or so. The paper also has applications beyond electricity price forecasting, and is of particular interest to people in electric load forecasting and call centre forecasting.

@@ -50,9 +50,7 @@ The purpose of this package is to allow researchers to reproduce existing resear
 
 For finance data, see the [Empirical Finance Task View](https://cran.r-project.org/web/views/Finance.html) for many packages that assist with downloading data from online financial databases.
 
-For the physical sciences, see [Ben Fulcher's time series collection](http://www.comp-engine.org/timeseries/time-series_data/) (no R package though).
-
-
+For the physical sciences, see [Ben Fulcher's time series collection](https://www.comp-engine.org/) (R package: [compenginets](https://github.com/robjhyndman/compenginets)).
 
 ## [tsfeatures](https://github.com/robjhyndman/tsfeatures)
 

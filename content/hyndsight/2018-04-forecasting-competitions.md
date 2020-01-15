@@ -118,7 +118,7 @@ One of the great benefits of the Kaggle platform (and others like it) is that it
 
 ## M4-competition
 
-Makridakis is now at it again with the [M4 competition](https://www.m4.unic.ac.cy/). This time there are 100,000 time series, and many more participants. New features of this competition are:
+Makridakis is now at it again with the [M4 competition](https://mofc.unic.ac.cy/m4/). This time there are 100,000 time series, and many more participants. New features of this competition are:
 
  * Weekly, daily and hourly data are included, along with annual, quarterly and monthly data.
  * Participants are invited to submit prediction intervals as well as point forecasts.

@@ -28,7 +28,7 @@ Participants will be assumed to be familiar with basic statistical tools such as
 
 ## Reference
 
-<a href="http://OTexts.org/fpp2" target="_new">
+<a href="http://OTexts.com/fpp2" target="_new">
 ![alt text](/uwa2017/fppcover-small.jpg)
 </a>
 

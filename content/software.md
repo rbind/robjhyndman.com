@@ -65,7 +65,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 ## Anomaly detection packages
 
-* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space [[CRAN]]((https://cloud.r-project.org/package=stray))
+* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space [[CRAN]](https://cloud.r-project.org/package=stray)
 
 * [**oddstream**](https://github.com/pridiltal/oddstream/): Outlier Detection in Data Streams [[CRAN]](https://cloud.r-project.org/package=oddstream)
 

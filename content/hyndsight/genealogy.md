@@ -70,7 +70,7 @@ D. 1840, Sceaux, France
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/dirichelet.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Dirichlet.html">Gustav Dirichlet</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Dirichlet.html">Gustav Dirichlet</a></strong>
 <em>Honorary Rheinische Friedrich-Wilhelms-Universität Bonn, 1827</em>
 B. 13 Feb 1805
 D. 5 May 1859
@@ -78,7 +78,7 @@ He worked in analytic number theory, introduced Dirichlet series and did some im
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/lipschitz.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Lipschitz.html">Rudolf Lipschitz</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Lipschitz.html">Rudolf Lipschitz</a></strong>
 <em>Dr. phil. Universität Berlin, 1853</em>
 B. 14 May 1832
 D. 7 Oct 1903
@@ -86,7 +86,7 @@ Lipschitz worked on a huge range of problems including number theory, the theory
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/klein.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Klein.html">Felix Klein</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Klein.html">Felix Klein</a></strong>
 <em>Ph.D. Rheinische Friedrich-Wilhelms-Universität Bonn, 1868</em>
 B. 25 April 1849
 D. 22 June 1925
@@ -94,7 +94,7 @@ Best known for his work in non-euclidean geometry, for his work on the connectio
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/Story.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-groups.dcs.st-and.ac.uk/~history/Mathematicians/Story.html">William Story</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Story.html">William Story</a></strong>
 <em>Ph.D. Universität Leipzig, 1875</em>
 B. 29 April 1850
 D. 10 April 1930
@@ -102,7 +102,7 @@ He worked on algebraic problems, and was an important player in the development 
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/lefschetz.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-groups.dcs.st-and.ac.uk/~history/Mathematicians/Lefschetz.html">Solomon Lefschetz</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Lefschetz.html">Solomon Lefschetz</a></strong>
 <em>Ph.D. Clark University, 1911</em>
 B. 3 September 1884
 D. 5 October 1972
@@ -110,7 +110,7 @@ A Russian born, Jewish mathematician who was the main source of the algebraic as
 </tr>
 <tr>
 <td><img align="top" src="/genealogy/tukey.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www-gap.dcs.st-and.ac.uk/~history/Mathematicians/Tukey.html">John Tukey</a></strong>
+<td><strong><a class="vt-p" href="http://mathshistory.st-andrews.ac.uk/Biographies/Tukey.html">John Tukey</a></strong>
 <em>Ph.D. Princeton University, 1939</em>
 B. 16 June 1915
 D. 26 July 2000

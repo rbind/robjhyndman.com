@@ -1,13 +1,13 @@
 ---
 date: 2017-05-23
-slug: kpprize2017 
+slug: kpprize2017
 title: ISI Karl Pearson Prize for 2017
 categories:
 - statistics
 - prizes
 ---
 
-Recently I was privileged to sit on the committee that selects the winner of the [Karl Pearson Prize](https://www.isi-web.org/index.php/activities/awards/isi-awards/pearson-award). KP was, of course, an early mathematical statistician, famous for many commonly-used statistical methods and tools including histograms, the correlation coefficient, the method of moments, p-values, the chi-squared test and principal components analysis. He is also infamous for his highly racist views, support for eugenics, anti-semitism and for refusing a knighthood. 
+Recently I was privileged to sit on the committee that selects the winner of the [Karl Pearson Prize](https://isi-web.org/index.php/meetings-and-awards/isi-awards/pearson-award). KP was, of course, an early mathematical statistician, famous for many commonly-used statistical methods and tools including histograms, the correlation coefficient, the method of moments, p-values, the chi-squared test and principal components analysis. He is also infamous for his highly racist views, support for eugenics, anti-semitism and for refusing a knighthood.
 
 All that aside, the job of the committee was to select an English-language article or book published in the last 30 years that has made a stand-alone research contribution, and which has had major influence on one or more of statistical theory, statistical methodology, statistical practice and application.
 
@@ -16,7 +16,7 @@ The previous two winners of the KP Prize were:
  * 2015: Kung-Yee Liang and Scott Zeger for their Biometrika (1986) paper ["Longitudinal data analysis using generalized linear models"](https://www.jstor.org/stable/2336267).
  * 2013: Peter McCullagh and John Nelder for their 1983 monograph [*Generalized linear models*](http://amzn.com/0412317605/?tag=otexts-20).
 
-There were many excellent nominations, but we decided to award the 2017 prize to Rod Little and Don Rubin for their 1987 book ["Statistical analysis with missing data"](http://amzn.com/0471183865/?tag=otexts-20). 
+There were many excellent nominations, but we decided to award the 2017 prize to Rod Little and Don Rubin for their 1987 book ["Statistical analysis with missing data"](http://amzn.com/0471183865/?tag=otexts-20).
 
 These days, we routinely discuss whether data are "missing at random", "missing completely at random", or "missing not at random". These categories were developed by Little and Rubin, and have provided a very useful framework for data analysts to think about missing data.
 

@@ -53,7 +53,7 @@ You can also download [individual csv files for each data set](expsmooth_data.zi
 
  3. Linear innovations state space models [[R code]](chap03.R) [[Exercise solutions](ch3_solutions.pdf)]
  4. Non-linear and heteroscedastic innovations state space models [[Exercise solutions](ch4_solutions.pdf)]
- 5. Estimation of innovations state space models [[R code]](chap05.R) [[Exercise solutions](ch5_solutions.pdf)]
+ 5. Estimation of innovations state space models [[R code]](chap05.R) [[Exercise solutions](ch5_solutions.R)]
  6. Prediction distributions and intervals [[R code]](chap06.R) [[Exercise solutions](ch6_solutions.pdf)]
  7. Selection of models
 
