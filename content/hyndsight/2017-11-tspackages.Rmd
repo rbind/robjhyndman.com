@@ -13,7 +13,6 @@ output:
     fig_width: 6
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
 	echo = TRUE,
@@ -24,7 +23,6 @@ knitr::opts_chunk$set(
 ```
 
 This week I have finished preliminary versions of two new R packages for time series analysis. The first ([**tscompdata**](https://github.com/robjhyndman/tscompdata)) contains several large collections of time series that have been used in forecasting competitions; the second ([**tsfeatures**](https://github.com/robjhyndman/tsfeatures)) is designed to compute features from univariate time series data.  For now, both are only on github. I will probably submit them to CRAN after they've been tested by a few more people.
-
 
 ## [tscompdata](https://github.com/robjhyndman/tscompdata)
 
@@ -59,8 +57,6 @@ For the physical sciences, see [Ben Fulcher's time series collection](https://ww
 Please note that **tsfeatures** requires v8.3 of the forecast package, which is not yet on CRAN. Install it [from github](https://github.com/robjhyndman/forecast).
 
 Some examples, partly reproducing results from the above two papers follow.
-
-
 
 ### [Hyndman, Wang and Laptev (ICDM 2015)](/publications/icdm2015/)
 
@@ -97,11 +93,9 @@ prcomp(na.omit(hwl), scale=TRUE)$x %>%
     geom_point()
 ```
 
-
 ### [Kang, Hyndman & Smith-Miles (IJF 2017)](/publications/ts-feature-space/)
 
 In the following code, I compute the features used in [Kang, Hyndman & Smith-Miles (IJF 2017)](/publications/ts-feature-space/). Note that the trend and ACF1 are computed differently for  non-seasonal data in the tsfeatures package than in Kang et al (2017). **tsfeatures** uses `forecast::mstl()` which uses `supsmu()` for the trend calculation with non-seasonal data, whereas Kang et al used a penalized regression spline computed using mgcv instead.  Other features are the same.
-
 
 ```{r ijf2017}
 library(tsfeatures)
