@@ -9,5 +9,9 @@ RewriteRule ^working(.)papers/(.*) https://robjhyndman.com/publications/$2 [R=30
 RewriteRule ^researchtips/(.*) https://robjhyndman.com/hyndsight/$1 [R=301,L,NC]
 RewriteRule ^papers/(.*(?<!pdf)$) https://robjhyndman.com/publications/$1 [R=301,L,NC]
 RewriteRule ^seminars/workshop2020.* https://github.com/rstudio-conf-2020/time-series-forecasting [R=301,L,NC]
+RewriteRule ^orcid https://orcid.org/0000-0002-2140-5352 [R=301,L,NC]
+RewriteRule ^scholar https://scholar.google.com/citations?user=vamErfkAAAAJ [R=301,L,NC]
+RewriteRule ^scopus https://www.scopus.com/authid/detail.uri?authorId=7006914313 [R=301,L,NC]
+RewriteRule ^publons https://publons.com/researcher/484722/rob-hyndman/ [R=301,L,NC]
 
 ErrorDocument 404 /404.html
