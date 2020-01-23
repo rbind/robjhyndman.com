@@ -13,5 +13,8 @@ RewriteRule ^orcid https://orcid.org/0000-0002-2140-5352 [R=301,L,NC]
 RewriteRule ^scholar https://scholar.google.com/citations?user=vamErfkAAAAJ [R=301,L,NC]
 RewriteRule ^scopus https://www.scopus.com/authid/detail.uri?authorId=7006914313 [R=301,L,NC]
 RewriteRule ^publons https://publons.com/researcher/484722/rob-hyndman/ [R=301,L,NC]
+RewriteRule ^repec http://ideas.repec.org/e/phy3.html [R=301,L,NC]
+RewriteRule ^wikipedia http://en.wikipedia.org/wiki/Rob_J._Hyndman [R=301,L,NC]
+RewriteRule ^github https://github.com/robjhyndman [R=301,L,NC]
 
 ErrorDocument 404 /404.html
