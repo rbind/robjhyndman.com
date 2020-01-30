@@ -2,6 +2,8 @@
 date: 2020-01-30
 title: How Rmarkdown changed my life
 slug: rmarkdown
+aliases:
+  - /rmarkdown2020/
 link: https://github.com/robjhyndman/Rmarkdown2020/raw/master/Rmarkdown.pdf
 ---
 
