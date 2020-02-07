@@ -2,9 +2,9 @@
 author:  D&nbsp;Vicendese, L&nbsp;Te&nbsp;Marvelde, PD&nbsp;McNair, K&nbsp;Whitfield, DR&nbsp;English, S&nbsp;Ben&nbsp;Taieb, RJ&nbsp;Hyndman, R&nbsp;Thomas
 Status: Published
 comments: false
-date: 2019-07-31
+date: 2020-02-01
 slug: hospital-los
-citation: "<em>Australian and New Zealand Journal of Public Health</em>, to appear"
+citation: "<em>Australian and New Zealand Journal of Public Health</em>, <b>44</b>(1), 73-82"
 title: Hospital characteristics, rather than surgical volume, predict length of stay following colorectal cancer surgery
 kind: article
 tags:
