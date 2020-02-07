@@ -1,0 +1,79 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-02-07
+title: "Electricity demand in tsibble format"
+slug: electrictsibbles
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - R
+  - tidyverts
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+```
+
+```{r loadpackages, message=FALSE}
+library(tidyverse)
+library(lubridate)
+library(tsibble)
+```
+
+The `tsibbledata` packages contains the `vic_elec` data set, containing half-hourly electricity demand for the state of Victoria, along with corresponding temperatures from the capital city, Melbourne. These data cover the period 2012-2014.
+
+Other similar data sets are also available, and these may be of interest to researchers in the area.
+
+## Other Australian states
+
+The equivalent data for other states are also stored in the [`tsibbledata` github repository](https://github.com/tidyverts/tsibbledata/) (under the data-raw folder), but these are not included in the package to satisfy CRAN space constraints. However, anyone can still load and use the data with the following code.
+
+```{r ausdata}
+repo <- "https://raw.githubusercontent.com/tidyverts/tsibbledata/master/data-raw/vic_elec/"
+states <- c("NSW","QLD","SA","TAS","VIC")
+dirs <- paste0(repo, states, "2015")
+
+holidays <- paste0(dirs,"/holidays.txt") %>%
+  as.list() %>%
+  map_dfr(read_csv, col_names=FALSE, .id="State") %>%
+  transmute(
+    State = states[as.numeric(State)],
+    Date = dmy(X1), 
+    Holiday = TRUE
+  )
+
+temperatures <- paste0(dirs,"/temperature.csv") %>%
+  as.list() %>%
+  map_dfr(read_csv, .id = "State") %>%
+  mutate(
+    State = states[as.numeric(State)],
+    Date = as_date(Date, origin = ymd("1899-12-30"))
+  )
+
+demands <- paste0(dirs,"/demand.csv") %>%
+  as.list() %>%
+  map_dfr(read_csv, .id = "State") %>%
+  mutate(
+    State = states[as.numeric(State)],
+    Date = as_date(Date, origin = ymd("1899-12-30"))
+  )
+
+aus_elec <- demands %>%
+  left_join(temperatures, by = c("State", "Date", "Period")) %>%
+  transmute(
+    State,
+    Time = as.POSIXct(Date + minutes((Period-1) * 30)),
+    Demand = OperationalLessIndustrial, 
+    Temperature = Temp,
+    Date = as_date(Time)
+  ) %>%
+  left_join(holidays, by = c("State", "Date")) %>%
+  replace_na(list(Holiday = FALSE)) %>%
+  filter(!are_duplicated(aus_elec, index=Time, key=State)) %>%
+  as_tsibble(index = Time, key=State)
+```
+
+
