@@ -76,4 +76,10 @@ aus_elec <- demands %>%
   as_tsibble(index = Time, key=State)
 ```
 
+## GEFCOM 2017
 
+```{r gefcom2017}
+devtools::install_github("camroach87/gefcom2017data")
+library(gefcom2017)
+gefcom %>% as_tsibble(key=Zone, index=Date)
+```
