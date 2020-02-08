@@ -2,7 +2,7 @@
 author: robjhyndman
 comments: true
 date: 2020-02-07
-title: "Electricity demand in tsibble format"
+title: "Electricity demand data in tsibble format"
 slug: electrictsibbles
 mathjax: true
 categories:
@@ -17,25 +17,30 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 options(digits = 3, width = 75)
 ```
 
+The `tsibbledata` packages contains the `vic_elec` data set, containing half-hourly electricity demand for the state of Victoria, along with corresponding temperatures from the capital city, Melbourne. These data cover the period 2012-2014.
+
+Other similar data sets are also available, and these may be of interest to researchers in the area.
+
+For people new to tsibbles, please read my [introductory post](https://robjhyndman.com/hyndsight/tsibbles/).
+
+&nbsp;
+
+## Australian state-level demand
+
+The rawdata for other states are also stored in the [`tsibbledata` github repository](https://github.com/tidyverts/tsibbledata/) (under the data-raw folder), but these are not included in the package to satisfy CRAN space constraints. However, anyone can still load and use the data with the following code.
+
 ```{r loadpackages, message=FALSE}
 library(tidyverse)
 library(lubridate)
 library(tsibble)
 ```
 
-The `tsibbledata` packages contains the `vic_elec` data set, containing half-hourly electricity demand for the state of Victoria, along with corresponding temperatures from the capital city, Melbourne. These data cover the period 2012-2014.
-
-Other similar data sets are also available, and these may be of interest to researchers in the area.
-
-## Other Australian states
-
-The equivalent data for other states are also stored in the [`tsibbledata` github repository](https://github.com/tidyverts/tsibbledata/) (under the data-raw folder), but these are not included in the package to satisfy CRAN space constraints. However, anyone can still load and use the data with the following code.
-
-```{r ausdata}
+```{r ausdata, message=FALSE}
 repo <- "https://raw.githubusercontent.com/tidyverts/tsibbledata/master/data-raw/vic_elec/"
 states <- c("NSW","QLD","SA","TAS","VIC")
 dirs <- paste0(repo, states, "2015")
 
+# Read holidays data
 holidays <- paste0(dirs,"/holidays.txt") %>%
   as.list() %>%
   map_dfr(read_csv, col_names=FALSE, .id="State") %>%
@@ -44,7 +49,7 @@ holidays <- paste0(dirs,"/holidays.txt") %>%
     Date = dmy(X1), 
     Holiday = TRUE
   )
-
+# Read temperature data
 temperatures <- paste0(dirs,"/temperature.csv") %>%
   as.list() %>%
   map_dfr(read_csv, .id = "State") %>%
@@ -52,7 +57,7 @@ temperatures <- paste0(dirs,"/temperature.csv") %>%
     State = states[as.numeric(State)],
     Date = as_date(Date, origin = ymd("1899-12-30"))
   )
-
+# Read demand data
 demands <- paste0(dirs,"/demand.csv") %>%
   as.list() %>%
   map_dfr(read_csv, .id = "State") %>%
@@ -60,26 +65,47 @@ demands <- paste0(dirs,"/demand.csv") %>%
     State = states[as.numeric(State)],
     Date = as_date(Date, origin = ymd("1899-12-30"))
   )
-
+# Join demand, temperatures and holidays
 aus_elec <- demands %>%
   left_join(temperatures, by = c("State", "Date", "Period")) %>%
   transmute(
     State,
     Time = as.POSIXct(Date + minutes((Period-1) * 30)),
+    Period,
+    Date = as_date(Time),
+    DOW = wday(Date, label=TRUE),
     Demand = OperationalLessIndustrial, 
     Temperature = Temp,
-    Date = as_date(Time)
   ) %>%
   left_join(holidays, by = c("State", "Date")) %>%
-  replace_na(list(Holiday = FALSE)) %>%
+  replace_na(list(Holiday = FALSE))
+# Remove duplicates and create a tsibble
+aus_elec <- aus_elec %>%
   filter(!are_duplicated(aus_elec, index=Time, key=State)) %>%
   as_tsibble(index = Time, key=State)
 ```
 
+This block of code reads in raw data files containing holiday information, temperatures and electricity demand for each state, and then joins them into a single tsibble. For some reason, there are duplicated rows from South Australia, so the last few lines removes the duplicates before forming a tsibble, keyed by State.
+
+```{r ausdata2, dependson='ausdata'}
+aus_elec
+```
+
+This data set contains half-hourly data from all states from 1 January 2002 - 1 March 2015 (and in the case of Queensland to 1 April 2015). The temperature variable is from a weather station in the capital city of each state.
+
+&nbsp;
+
 ## GEFCOM 2017
 
-```{r gefcom2017}
+The [Global Energy Forecasting Competition in 2017](http://www.drhongtao.com/gefcom/2017) involved data on hourly zonal loads of ISO New England from March 2003 to April 2017. The data have already been packaged into tibble format by Cameron Roach in the [gefcom2017data Github repository](https://github.com/camroach87/gefcom2017data). So it is relatively easy to convert this to a tsibble.
+
+```{r gefcom2017, message=FALSE, warning=FALSE}
 devtools::install_github("camroach87/gefcom2017data")
-library(gefcom2017)
-gefcom %>% as_tsibble(key=Zone, index=Date)
+library(gefcom2017data)
+gefcom2017 <- gefcom %>% 
+  ungroup() %>%
+  as_tsibble(key=zone, index=ts)
+gefcom2017
 ```
+
+Details of the data (and the competition) are available on [Tao Hong's website](http://blog.drhongtao.com/2016/10/gefcom2017-hierarchical-probabilistic-load-forecasting.html).
