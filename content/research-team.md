@@ -7,7 +7,6 @@ title: "Research team"
 
 ## Current research fellows
 
-  1. **[Sevvandi Kandanaarachchi](https://sevvandi.netlify.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
   1. **Pablo Montera Manso** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
 
 ## Current PhD students
@@ -26,6 +25,7 @@ title: "Research team"
   1. **[Bircan Erbas](https://scholars.latrobe.edu.au/display/berbas)**
   1. **[Shu Fan](http://users.monash.edu.au/~shufan/)**
   1. **Bin Jiang**
+  1. **[Sevvandi Kandanaarachchi](https://sevvandi.netlify.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
   1. **[Yanfei Kang](http://yanfei.site)**
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)**
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
