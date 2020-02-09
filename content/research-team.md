@@ -15,6 +15,7 @@ title: "Research team"
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecast reconciliation: theory and applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
   1. **[Sayani Gupta](https://sayani.netlify.com/)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
+  1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations*, (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
 
 ## Former research fellows
 
