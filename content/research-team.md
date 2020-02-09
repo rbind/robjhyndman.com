@@ -30,7 +30,7 @@ title: "Research team"
   1. **[Yanfei Kang](http://yanfei.site)**
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)**
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
-  1. **[Shanika Wickramasuriya](https://www.stat.auckland.ac.nz/people/swic181)**
+  1. **[Shanika Wickramasuriya](https://unidirectory.auckland.ac.nz/people/profile/s-wickramasuriya)**
 
 ## Former postgraduate students
 
@@ -58,6 +58,6 @@ title: "Research team"
   1. **[Laura Villanova](https://scholar.google.com.au/citations?user=OeZdcD0AAAAJ)**. *Response surface optimization for high-dimensional systems with multiple responses*. (Ph.D., graduated 2010). Now working at the Technische Universität Graz, Austria.
   1. **[Earo Wang](http://earo.me)**, *Tidy tools for supporting fluent workflow in temporal data analysis* (PhD, graduated 2019). Now a Lecturer at the University of Auckland. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/earowang)
   1. **[Xiaozhe Catherine Wang (Lopes)](https://www.linkedin.com/in/catherine-lopes-ph-d-30aa17a6)**. *Characteristic-based forecasting for time series data*, (Ph.D., graduated 2005). Winner of Mollie Holman doctoral medal in IT, 2005. Now head of data science and machine learning at AGL Energy Limited.
-  1. **[Shanika Wickramasuriya](https://www.stat.auckland.ac.nz/people/swic181)**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a lecturer at the University of Auckland.
+  1. **[Shanika Wickramasuriya](https://unidirectory.auckland.ac.nz/people/profile/s-wickramasuriya)**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a Lecturer at the University of Auckland.
   1. **[Farah Yasmeen](https://www.researchgate.net/profile/Farah_Yasmeen)**. *Functional linear models for mortality forecasting*. (Ph.D., graduated 2011). Now a Lecturer at the University of Karachi, Pakistan.
   1. **[Bruce Yu](https://www.linkedin.com/in/bruce-yu-198a3a10)**. *Analysis of flood frequency data*. (M.Sc., graduated 1998). Now Head of Compensation and Benefits with Fortune Fountain Capital.
