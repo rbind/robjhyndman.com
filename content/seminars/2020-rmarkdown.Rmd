@@ -13,8 +13,6 @@ Over the last few years, Rmarkdown seems to have taken over my life, or at least
 
 I will reflect on the journey in getting to this point, what I've lost and what I've gained. I will also speculate on what might be next in the Rmarkdownification of my life.
 
-### [Watch video](https://resources.rstudio.com/rstudio-conf-2020/how-rmarkdown-changed-my-life-rob-hyndman)
-
 ### Templates
 
   * [robjhyndman/MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates)
