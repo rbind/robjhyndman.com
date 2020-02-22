@@ -33,7 +33,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**robets**](https://cloud.r-project.org/package=robets): Forecasting time series with robust exponential smoothing. [[CRAN](https://cloud.r-project.org/package=robets)]
 
-* [**seer**](https://thiyangt.github.io/seer/): Feature-based Forecast Model Selection (FFORMS)
+* [**seer**](https://thiyangt.github.io/seer/): Feature-based Forecast Model Selection (FFORMS). [[CRAN](https://cloud.r-project.org/package=seer)]
 
 * [**stR**](https://cloud.r-project.org/package=stR): STR time series decomposition. The methods are described in [Dokumentov & Hyndman (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cloud.r-project.org/package=stR)]
 
