@@ -1,9 +1,10 @@
 ---
 author: Souhaib Ben Taieb, James W Taylor, Rob&nbsp;J&nbsp;Hyndman
-date: 2017-06-13
+date: 2020-02-29
 slug: hpf-electricity
 title: Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data
-kind: unpublished
+kind: article
+citation: <em>J American Statistical Association</em>, to appear
 tags:
 - data science
 - density estimation
@@ -11,7 +12,8 @@ tags:
 - forecasting
 - hierarchical time series
 link: http://souhaib-bentaieb.com/pdf/2018_prob_hts.pdf
+doi: 10.1080/01621459.2020.1736081
 ---
 
-Electricity smart meters record consumption, on a near real-time basis, at the level of individual commercial and residential properties. From this, a hierarchy can be constructed consisting of time series of demand at the smart meter level, and at various levels of aggregation, such as substations, cities and regions. Forecasts are needed at each level to support the efficient and reliable management of consumption. A limitation of previous research in this area is that it considered only deterministic prediction. To enable improved decision-making, we introduce an algorithm for producing a probability density forecast for each series within a large-scale hierarchy. The resulting forecasts are coherent in the sense that the forecast distribution of each aggregate series is equal to the convolution of the forecast distributions of the corresponding disaggregate series. Our algorithm has the advantage of synthesizing information from different levels in the hierarchy through forecast combination. Distributional assumptions are not required, and dependencies between forecast distributions are imposed through the use of empirical copulas. Scalability to large hierarchies is enabled by decomposing the problem into multiple lower-dimension sub-problems. Results for UK electricity smart meter data show performance gains for our method when compared to benchmarks.
+Decisions regarding the supply of electricity across a power grid must take into consideration the inherent uncertainty in demand. Optimal decision-making requires probabilistic forecasts for demand in a hierarchy with various levels of aggregation, such as substations, cities and regions. The forecasts should be coherent in the sense that the forecast of the aggregated series should equal the sum of the forecasts of the corresponding disaggregated series. Coherency is essential, since the allocation of electricity at one level of the hierarchy relies on the appropriate amount being provided from the previous level. We introduce a new probabilistic forecasting method for a large hierarchy based on UK residential smart meter data. We find our method provides coherent and accurate probabilistic forecasts, as a result of an effective forecast combination. Furthermore, by avoiding distributional assumptions, we find that our method captures the variety of distributions in the smart meter hierarchy. Finally, the results confirm that, to ensure coherency in our large-scale hierarchy, it is sufficient to model a set of lower-dimension dependencies, rather than modeling the entire joint distribution of all series in the hierarchy. In achieving coherent and accurate hierarchical probabilistic forecasts, this work contributes to improved decision-making for smart grids.
 
