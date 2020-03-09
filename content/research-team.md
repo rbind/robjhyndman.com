@@ -8,11 +8,11 @@ title: "Research team"
 ## Current research fellows
 
   1. **Pablo Montera Manso** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
+  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
 
 ## Current PhD students
 
   1. **[Fan Cheng](https://fancheng.me/)**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
-  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecast reconciliation: theory and applications* (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
   1. **[Sayani Gupta](https://sayani.netlify.com/)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations*, (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
@@ -42,6 +42,7 @@ title: "Research team"
   1. **[Ashton de Silva](http://www.rmit.edu.au/contact/staff-contacts/academic-staff/d/de-silva-dr-ashton)**. *Vector innovations structural time series framework*. (Ph.D., graduated 2007). Now an Associate Professor in the School of Economics, Finance and Marketing at RMIT.
   1. **[Alexander Dokumentov](https://www.linkedin.com/in/dokumentov/)**, <em>Smoothing, decomposition and forecasting of multidimensional and functional time series using regularisation</em> (PhD, graduated 2016). Now a data scientist at Growing Data.
   1. **[Bircan Erbas](https://scholars.latrobe.edu.au/display/berbas)**. *Statistical methodological issues in studies of respiratory disease and air pollution*, (Ph.D., Uni of Melbourne, graduated 2001). Now a Professor in the School of Public Health at La Trobe University.
+  1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)**, *Probabilistic forecast reconciliation: theory and applications* (PhD, graduated 2020).  Now a research fellow at Monash University. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
   1. **[Abdul Aziz Hayat](http://www.deakin.edu.au/about-deakin/people/abdul-hayat-muhammad)**. *Identifying GDP volatility and modeling changing seasonality*. (Ph.D., graduated 2007). Now a Senior Lecturer in the Deakin Business School.
   1. **[Atikur Khan](https://scholar.google.com.au/citations?user=CEc-I_cAAAAJ)**. *Singular spectrum analysis.* (Ph.D., graduated 2013). Now a data scientist at Qantares.
   1. **[Yeasmin Khandakar](https://www.linkedin.com/in/yeasminkhandakar/)**. *Automatic ARIMA forecasting*. (Ph.D., graduated 2010). Now a senior data scientist at Officeworks.
