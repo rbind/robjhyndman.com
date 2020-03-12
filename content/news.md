@@ -4,6 +4,7 @@ slug: "in-the-news"
 ---
 
   * [Inaugural Zema Energy Studies Scholarship launched](https://www.energymagazine.com.au/inaugural-zema-energy-studies-scholarship-launched/), *Energy Magazine* 5 March 2020.
+  * [Interview with the inaugural recipient of the Zema Energy Studies scholarship](https://aemo.com.au/en/news/zema-scholarship-winner), *AEMO News* 4 March 2020.
   * [New scholarship program supports Monash students to address Australia's energy sector challenges](https://www.monash.edu/news/articles/new-scholarship-program-supports-monash-students-to-address-australias-energy-sector-challenges), *Monash News* 4 March 2020.
   * [Big data, big deal: what a career in data science really takes](https://thenewdaily.com.au/sponsored/2019/11/27/big-data-big-deal-what-a-career-in-data-science-really-takes/), *The New Daily*, 27 November 2019.
   * [How to boost your career one gigabyte at a time](https://thenewdaily.com.au/sponsored/2019/10/24/how-to-boost-your-career-one-gigabyte-at-a-time/), *The New Daily*, 24 October 2019.
