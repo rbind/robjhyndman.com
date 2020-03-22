@@ -1,0 +1,50 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-03-22
+title: "Forecasting COVID-19"
+slug: forecasting-covid19
+categories:
+  - time series
+  - statistics
+  - forecasting
+  - epidemiology
+---
+
+## What makes forecasting hard?
+
+Forecasting pandemics is harder than many people think. In my book with George Athanasopoulos, we discuss the [contributing factors that make forecasts relatively accurate](https://otexts.com/fpp3/what-can-be-forecast.html). We identify three major factors:
+
+1. how well we understand the factors that contribute to it;
+2. how much data is available;
+3. whether the forecasts can affect the thing we are trying to forecast.
+
+For example, tomorrow's weather can be forecast relatively accurately using modern tools because we have good models of the physical atmosphere, there is tons of data, and our weather forecasts cannot possibly affect what actually happens. On the other hand, forecasts of tomorrow's stock prices are much less accurate because factors 1 and 3 above are not satisfied. First, the factors that contribute to changes in stock prices are not particularly well understood and depend at least partly on human psychology. Second, well-publicised forecasts of the stock market can directly affect the behaviour of many investors.
+
+## Simple models and misleading data
+
+If we apply these ideas to the COVID-19 pandemic, it is easy to see why forecasting its effect is difficult. While we have a good understanding of how it works in terms of person-to-person infections, we have limited and misleading data. The current numbers of confirmed cases are known to be vastly underestimated due to the limited testing available. There are almost certainly many more cases of COVID-19 that have not been diagnosed than those that have. Also, the level of under-estimation varies enormously between countries. In a country like South Korea with a lot of testing, the numbers of confirmed cases are going to be closer to the numbers of actual cases than in the US where there has been much less testing. So we simply cannot easily model the spread of the pandemic using the data that is available.
+
+The second problem is that the forecasts of COVID-19 can affect the thing we are trying to forecast because governments are reacting, some better than others. A simple model using the available data will be misleading unless it can incorporate the various steps being taken to slow transmission.
+
+In summary, fitting simple models to the available data is pointless, misleading and dangerous.
+
+## Time series models vs agent-based models
+
+Time series models work by taking a series of historical observations and extrapolating the patterns into the future. These are great when the data are accurate, the future is similar to the past, and there are not good models of the underlying processes. But if it is possible to build a physical or agent-based model, it is almost always better to do so than rely on a time series forecast.
+
+This is most obvious with weather forecasting where we have excellent models based on the physics of the atmosphere. No time series model will perform as well as a good atmospheric model for forecasting short-term weather. That's why meteorologists don't use time series models.
+
+The same physical or agent-based approach to modelling should be used whenever it is available. For example, if we had data on the contents of everyone's refrigerator, we could potentially build good models of grocery sales, but since we don't have this data we use time series models instead for forecasting grocery sales.
+
+## How can we forecast COVID-19?
+
+The good news is that we do have good models of the spread of epidemics, and we have just enough data to use them.
+
+[Compartmental epidemiological models](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) have been developed over nearly a century and are well tested on data from past epidemics. These models are based on modelling the actual infection process (a bit like weather forecasts model atmospheric processes). The simplest models are based on classifying living individuals in the population as Susceptible, Infectious or Recovered -- hence they are called SIR models. Using differential equations, they describe how people from between groups. More complicated variations allow for several more categories of individuals. These models allow for undiagnosed as well as diagnosed cases, so they can account for limited testing. The available data is used to estimate the various parameters in the models and then simulations are done to see what would happen under various scenarios. Some of the parameters can only be crudely estimated, but we can test what happens to the forecasts by varying the parameters within the likely range.
+
+A good example of using this approach for COVID-19 is by a team from Imperial College London ([Ferguson et al, 2020](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf)) who applied an agent-based modelling approach to the UK.
+
+I'm yet to see a similar model for Australia, but I know there are many good people at places like [PRISM](http://prism.edu.au/) and the [Doherty Institute](https://www.doherty.edu.au/) working on it.
+
+Meanwhile, Dr Alison Hill (Harvard) has created [a great Shiny app](https://alhill.shinyapps.io/COVID19seir/) which allows exploration of the effect of the various parameters in these models.
