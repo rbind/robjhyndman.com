@@ -1,0 +1,116 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-03-31
+title: "Log ratios for COVID-19"
+slug: logratios-covid19
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - epidemiology
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+```
+
+There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from [John Burn-Murdoch](https://twitter.com/jburnmurdoch) in the [*Financial Times*](https://www.ft.com/coronavirus-latest). This is a great visualization and has helped introduce log-scale graphics to a wide audience.
+
+## Reproducing the *Financial Times* cumulative confirmed cases graph
+
+To produce something like it, we can use the `tidycovid19` package from Joachim Gassen:
+
+```{r load, message=FALSE}
+library(tidyverse)
+library(tidycovid19)
+```
+
+```{r hiddenfilter, include=FALSE}
+# Limit data shown to date of post
+# So when post is re-compiled, it doesn't show data future to the post.
+updates <- download_merged_data(cached = TRUE) %>%
+  filter(date <= as.Date("2020-03-31"))
+updates$timestamp <- "2020-03-31 15:43:14 AEDT"
+```
+
+```{r ft, eval=FALSE}
+# Download latest data
+updates <- download_merged_data(cached = TRUE)
+```
+
+```{r ft2}
+# Countries to highlight
+countries <- c("AUS", "NZL", "ITA", "ESP", "USA", "GBR")
+updates %>%
+  plot_covid19_spread(
+    highlight = countries,
+    type = "confirmed",
+    min_by_ctry_obs = 3,
+    edate_cutoff = 35
+  )
+```
+
+If you want to produce this from scratch, rather than use the `tidycov19` package, see Kieran Healy's post on ["Covid 19 Tracking"](https://kieranhealy.org/blog/archives/2020/03/21/covid-19-tracking/). He also has [a nice post on how to produce some of the other plots](https://kieranhealy.org/blog/archives/2020/03/27/a-covid-small-multiple/) produced by John Burn-Murdoch.
+
+## Why not per capita numbers?
+
+There has been some discussion online as to why per capita numbers aren't shown instead. There are good arguments for using total numbers rather than per capita rates, discussed in [this twitter thread](https://twitter.com/jburnmurdoch/status/1242904596856614912). But I wanted to point out something that is often overlooked.
+
+Per capita numbers would only shift the curves vertically, they would not change the shape or slopes of any curves. To see this, remember that
+$$
+\log (Y_t/P_t) = \log(Y_t) - \log(P_t).
+$$
+Here $Y_t$ is the number of cases on day $t$ and $P_t$ is the population on day $t$. The population hardly changes over a period of a few weeks or months, so taking per capita numbers is simply subtracting a constant from the log cases data.
+
+So if we just concentrate on the slope of those lines, not on their vertical position, we are effectively adjusting for population.
+
+## Differences in testing regimes
+
+A similar point applies to the differences in testing regimes between countries. If Country 1 has a testing regime that only identifies $p$% of cases, and Country 2 has a testing regime that identifies $q$% of cases, then these differences will show up as a vertical difference between the curves --- they won't affect the slopes.
+
+Of course, countries have been changing their testing regimes over time, so changes in the slope of the curve could be a result of a change in the rules of who gets tested, or they could be the result of an reduction in the total number of cases. There is no way to tell from the data which of these is likely to be true.
+
+## Focus on log ratios
+
+The preceding discussion shows that we should be looking at the slope of these lines if we are wanting to explore how countries are tracking relative to each other.
+
+That is equivalent to looking at log ratios, since the difference between consecutive log values is the same as the log of the ratios of successive values.
+
+First let's compute the log ratios and plot them for each country with a smooth curve overlaid.
+
+```{r, message=FALSE}
+updates %>%
+  mutate(
+    cases_logratio = difference(log(confirmed))
+  ) %>%
+  filter(
+    iso3c %in% countries,
+    date >= as.Date("2020-03-01")
+  ) %>%
+  mutate(
+    day = lubridate::day(date)
+  ) %>%
+  ggplot(aes(x = day, y = cases_logratio, col = country)) +
+  geom_point() +
+  geom_smooth(method = "loess") +
+  facet_wrap(. ~ country, ncol = 3) +
+  xlab("Date in March 2020") +
+  scale_x_continuous(breaks = seq(1,by=7,l=5), minor_breaks=NULL)
+
+```
+
+There are some obvious reporting issues (Spain had no new cases on ?? March, but roughly twice as many cases as we might expect on the ?? March)
+
+
+```{r}
+updates %>%
+  mutate(
+    cases_logratio = difference(log(confirmed))
+  ) %>%
+  filter(iso3c %in% countries) %>%
+  filter(date >= as.Date("2020-03-01")) %>%
+  ggplot(aes(x = date, y = cases_logratio, col = country)) +
+  geom_smooth(method = "loess", se = FALSE)
+```
