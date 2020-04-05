@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 options(digits = 3, width = 75)
 ```
 
-There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from [John Burn-Murdoch](https://twitter.com/jburnmurdoch) in the [*Financial Times*](https://www.ft.com/coronavirus-latest). To my knowledge, it was [first used by Matt Cowgill](https://blog.grattan.edu.au/2020/03/australian-governments-can-choose-to-slow-the-spread-of-coronavirus-but-they-must-act-immediately/) from the Grattan Institute, and has been widely copied. This is a great visualization and has helped introduce log-scale graphics to a wide audience. 
+There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from [John Burn-Murdoch](https://twitter.com/jburnmurdoch) in the [*Financial Times*](https://www.ft.com/coronavirus-latest). To my knowledge, it was [first used by Matt Cowgill](https://blog.grattan.edu.au/2020/03/australian-governments-can-choose-to-slow-the-spread-of-coronavirus-but-they-must-act-immediately/) from the Grattan Institute, and has been widely copied. This is a great visualization and has helped introduce log-scale graphics to a wide audience.
 
 ## Reproducing the *Financial Times* cumulative confirmed cases graph
 
@@ -93,7 +93,7 @@ updates %>%
     xlab("Date")
 ```
 
-There are some obvious reporting issues (e.g., Spain had no new cases on 12 March, but roughly twice as many cases as we might expect on the 13 March), but the smooth (loess) curve corrects for these discrepancies. We can plot the smoothed log ratios to see how each country is tracking in terms of the slope of the curve. I've added axes that are a little more interpretable than log-ratios.
+There are some obvious reporting issues (e.g., Spain had no new cases on 12 March, but roughly twice as many cases as we might expect on the 13 March), but the smooth (loess) curve corrects for these discrepancies. We can plot the smoothed log ratios to see how each country is tracking in terms of the slope of the curve.
 
 
 ```{r, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
@@ -107,17 +107,19 @@ updates %>%
   geom_hline(yintercept = log(2)/c(2:7,14,21), col='grey') +
   geom_smooth(method = "loess", se = FALSE) +
   scale_y_continuous(
-   "Daily increase in cumulative cases", 
+   "Daily increase in cumulative cases",
     breaks = log(1+seq(0,60,by=10)/100),
     labels = paste0(seq(0,60,by=10),"%"),
     minor_breaks=NULL,
     sec.axis = sec_axis(~ log(2)/(.),
       breaks = c(2:7,14,21),
       name = "Doubling time (days)")
-  ) 
+  )
 ```
 
-This doesn't tell us anything about how the disaster is overwhelming the health systems of each country (the cumulative case graph at the top of this post is best for that), but it does tell us how well each country is managing to slow the rate of infection and reduce the slope of those curves. 
+I've added axes that are a little more interpretable than log-ratios. On the left axis we have daily increase in cumulative cases. If $r$ is the log ratio, then $100(e^r-1)$ is the daily increase as a percentage. On the right axis we have the number of days it takes for the cumulative cases to double. This is easily computed as $d=\log(2)/r$.
+
+While the graph doesn't tell us anything about how the disaster is overwhelming the health systems of each country (the cumulative case graph at the top of this post is best for that), it does tell us how well each country is managing to slow the rate of infection and reduce the slope of those curves. It is also much easier to compare the slopes this way, because we just have to look to see which country is higher.
 
 In a country like Italy where the hospitals are already overwhelmed with cases, any continuing daily increase is much more serious than in Australia and New Zealand where the numbers of cases are still relatively low compared to much of Europe and the US. For Australia and New Zealand, if we can keep the daily increases where they currently are, we can help spread the load on the health system and save lives.
 
