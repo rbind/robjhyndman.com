@@ -79,7 +79,7 @@ All of this shows that we should be looking at the slope of these lines if we ar
 
 First let's compute the log ratios and plot them for each country with a smooth curve overlaid.
 
-```{r, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
+```{r logratios_facetted, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
 updates %>%
   mutate(cases_logratio = difference(log(confirmed))) %>%
   filter(
@@ -90,13 +90,14 @@ updates %>%
     geom_point() +
     geom_smooth(method = "loess") +
     facet_wrap(. ~ country, ncol = 3) +
-    xlab("Date")
+    xlab("Date") +
+    ggthemes::scale_color_colorblind()
 ```
 
 There are some obvious reporting issues (e.g., Spain had no new cases on 12 March, but roughly twice as many cases as we might expect on the 13 March), but the smooth (loess) curve corrects for these discrepancies. We can plot the smoothed log ratios to see how each country is tracking in terms of the slope of the curve.
 
 
-```{r, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
+```{r logratios_overlaid, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
 updates %>%
   mutate(
     cases_logratio = difference(log(confirmed))
@@ -114,7 +115,8 @@ updates %>%
     sec.axis = sec_axis(~ log(2)/(.),
       breaks = c(2:7,14,21),
       name = "Doubling time (days)")
-  )
+  ) +
+  ggthemes::scale_color_colorblind()
 ```
 
 I've added axes that are a little more interpretable than log-ratios. On the left axis we have daily increase in cumulative cases. If $r$ is the log ratio, then $100(e^r-1)$ is the daily increase as a percentage. On the right axis we have the number of days it takes for the cumulative cases to double. This is easily computed as $d=\log(2)/r$.
