@@ -13,9 +13,9 @@ title: "Research team"
 ## Current PhD students
 
   1. **Lakshan Bernard**. *Analytical tools for future power networks* (PhD, begun 2020).
-  1. **[Fan Cheng](https://fancheng.me/)**. *Exploratory data analysis of high-dimensional data using only pairwise distances* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
+  1. **[Fan Cheng](https://fancheng.me/)**. *Manifold learning on empirical probability distributions* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
   1. **[Sayani Gupta](https://sayani.netlify.com/)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
-  1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Optimising commercial building energy efficiency measures*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
+  1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Time series modelling and forecasting of disaggregated electricity data*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations*, (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
 
 ## Former research fellows
