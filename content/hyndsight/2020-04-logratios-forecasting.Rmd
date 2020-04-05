@@ -1,8 +1,8 @@
 ---
 author: robjhyndman
 comments: true
-date: 2020-03-31
-title: "Log ratios for COVID-19"
+date: 2020-04-05
+title: "Why log ratios are useful for tracking COVID-19"
 slug: logratios-covid19
 mathjax: true
 categories:
@@ -12,27 +12,29 @@ categories:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 options(digits = 3, width = 75)
 ```
 
-There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from [John Burn-Murdoch](https://twitter.com/jburnmurdoch) in the [*Financial Times*](https://www.ft.com/coronavirus-latest). This is a great visualization and has helped introduce log-scale graphics to a wide audience.
+There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from [John Burn-Murdoch](https://twitter.com/jburnmurdoch) in the [*Financial Times*](https://www.ft.com/coronavirus-latest). To my knowledge, it was [first used by Matt Cowgill](https://blog.grattan.edu.au/2020/03/australian-governments-can-choose-to-slow-the-spread-of-coronavirus-but-they-must-act-immediately/) from the Grattan Institute, and has been widely copied. This is a great visualization and has helped introduce log-scale graphics to a wide audience. 
 
 ## Reproducing the *Financial Times* cumulative confirmed cases graph
 
 To produce something like it, we can use the `tidycovid19` package from Joachim Gassen:
 
 ```{r load, message=FALSE}
+#remotes::install_github("joachim-gassen/tidycovid19")
 library(tidyverse)
+library(tsibble)
 library(tidycovid19)
 ```
 
-```{r hiddenfilter, include=FALSE}
+```{r hiddenfilter, include=FALSE, eval=TRUE}
 # Limit data shown to date of post
 # So when post is re-compiled, it doesn't show data future to the post.
 updates <- download_merged_data(cached = TRUE) %>%
-  filter(date <= as.Date("2020-03-31"))
-updates$timestamp <- "2020-03-31 15:43:14 AEDT"
+  filter(date <= as.Date("2020-04-05"))
+updates$timestamp <- "2020-04-04 17:49:31 AEDT"
 ```
 
 ```{r ft, eval=FALSE}
@@ -47,8 +49,7 @@ updates %>%
   plot_covid19_spread(
     highlight = countries,
     type = "confirmed",
-    min_by_ctry_obs = 3,
-    edate_cutoff = 35
+    edate_cutoff = 40
   )
 ```
 
@@ -74,37 +75,28 @@ Of course, countries have been changing their testing regimes over time, so chan
 
 ## Focus on log ratios
 
-The preceding discussion shows that we should be looking at the slope of these lines if we are wanting to explore how countries are tracking relative to each other.
-
-That is equivalent to looking at log ratios, since the difference between consecutive log values is the same as the log of the ratios of successive values.
+All of this shows that we should be looking at the slope of these lines if we are wanting to explore how countries are tracking relative to each other. That is equivalent to looking at log ratios, since the slope of the log curve is the same as the log of the ratios of successive values.
 
 First let's compute the log ratios and plot them for each country with a smooth curve overlaid.
 
-```{r, message=FALSE}
+```{r, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
 updates %>%
-  mutate(
-    cases_logratio = difference(log(confirmed))
-  ) %>%
+  mutate(cases_logratio = difference(log(confirmed))) %>%
   filter(
     iso3c %in% countries,
     date >= as.Date("2020-03-01")
   ) %>%
-  mutate(
-    day = lubridate::day(date)
-  ) %>%
-  ggplot(aes(x = day, y = cases_logratio, col = country)) +
-  geom_point() +
-  geom_smooth(method = "loess") +
-  facet_wrap(. ~ country, ncol = 3) +
-  xlab("Date in March 2020") +
-  scale_x_continuous(breaks = seq(1,by=7,l=5), minor_breaks=NULL)
-
+  ggplot(aes(x = date, y = cases_logratio, col = country)) +
+    geom_point() +
+    geom_smooth(method = "loess") +
+    facet_wrap(. ~ country, ncol = 3) +
+    xlab("Date")
 ```
 
-There are some obvious reporting issues (Spain had no new cases on ?? March, but roughly twice as many cases as we might expect on the ?? March)
+There are some obvious reporting issues (e.g., Spain had no new cases on 12 March, but roughly twice as many cases as we might expect on the 13 March), but the smooth (loess) curve corrects for these discrepancies. We can plot the smoothed log ratios to see how each country is tracking in terms of the slope of the curve. I've added axes that are a little more interpretable than log-ratios.
 
 
-```{r}
+```{r, message=FALSE,fig.width=10, fig.height=6, out.width="100%"}
 updates %>%
   mutate(
     cases_logratio = difference(log(confirmed))
@@ -112,5 +104,20 @@ updates %>%
   filter(iso3c %in% countries) %>%
   filter(date >= as.Date("2020-03-01")) %>%
   ggplot(aes(x = date, y = cases_logratio, col = country)) +
-  geom_smooth(method = "loess", se = FALSE)
+  geom_hline(yintercept = log(2)/c(2:7,14,21), col='grey') +
+  geom_smooth(method = "loess", se = FALSE) +
+  scale_y_continuous(
+   "Daily increase in cumulative cases", 
+    breaks = log(1+seq(0,60,by=10)/100),
+    labels = paste0(seq(0,60,by=10),"%"),
+    minor_breaks=NULL,
+    sec.axis = sec_axis(~ log(2)/(.),
+      breaks = c(2:7,14,21),
+      name = "Doubling time (days)")
+  ) 
 ```
+
+This doesn't tell us anything about how the disaster is overwhelming the health systems of each country (the cumulative case graph at the top of this post is best for that), but it does tell us how well each country is managing to slow the rate of infection and reduce the slope of those curves. 
+
+In a country like Italy where the hospitals are already overwhelmed with cases, any continuing daily increase is much more serious than in Australia and New Zealand where the numbers of cases are still relatively low compared to much of Europe and the US. For Australia and New Zealand, if we can keep the daily increases where they currently are, we can help spread the load on the health system and save lives.
+
