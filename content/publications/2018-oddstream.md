@@ -4,7 +4,7 @@ date: 2019-02-19
 slug: oddstream
 title: "Anomaly detection in streaming nonstationary temporal data"
 kind: article
-citation: <em>Journal of Computational and Graphical Statistics</em>, to appear
+citation: <em>Journal of Computational and Graphical Statistics</em>, <b>20</b>(1), 13-27
 doi: 10.1080/10618600.2019.1617160
 tags:
 - data science
