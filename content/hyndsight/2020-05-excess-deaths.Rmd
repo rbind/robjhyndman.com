@@ -33,7 +33,7 @@ library(ggplot2)
 ```
 
 ```{r download, message=FALSE}
-deaths <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv")
+deaths <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip=1)
 deaths
 ```
 
@@ -92,7 +92,7 @@ deaths %>%
     ggtitle("Weekly deaths")
 ```
 
-Clearly there are a few problems with the last week of available data from Finland, Norway and the United States. Most likely, these are simply incomplete counts. The effect of the pandemic results in tragic numbers for Belgium, England & Wales, the Netherlands, Spain, Sweden and the United States.
+Clearly there are a few problems with the last week of available data from Finland, Norway and the United States. These are due to incomplete counts as noted in the [meta data provided by HMD](https://www.mortality.org/Public/STMF_DOC/STMFmetadata.pdf), and the same problem may affect other countries too. As more data are made available, earlier weeks may also be updated.
 
 Note that there is a lag before the data are made available. We can see how far each country is behind by comparing the last week of available data with the current week number.
 
@@ -104,21 +104,19 @@ deaths %>%
   mutate(
     current_week = lubridate::week(Sys.Date()),
     lag = current_week - last_week
-  ) 
+  )
 ```
 
-Before continuing, I'll remove that last week of data for Finland, Norway and the United States (which will make the lag one week longer for those countries)
+Before continuing, I'll remove that last week of data for all countries (which will make the lag one week longer).
 
 ```{r remove_lastweek, message=FALSE}
 deaths <- deaths %>%
   group_by(country, year) %>%
   summarise(last_week = max(week), week=week, deaths=deaths) %>%
   ungroup() %>%
-  filter(!(country %in% c("Finland", "Norway", "United States") & 
-        year==2020 & week==last_week)) %>%
+  filter(!(year==2020 & week==last_week)) %>%
   select(year, week, country, deaths)
 ```
-
 
 ## Estimate excess deaths
 
@@ -147,7 +145,7 @@ excess_deaths %>%
 
 This graph shows the excess deaths of the last six years, with 2020 highlighted in red. The other years help to see the natural variability in this calculation. Interestingly, many countries have negative excess deaths for the first 10 weeks of the year, probably due to precautions being taken before the virus had spread. So there were fewer car accidents, for example.
 
-I'm fairly sure the numbers for the United States in the last week are also incorrect, as the official COVID19 deaths have not stopped decreasing, but the data will presumably get corrected over time.
+I'm fairly sure the numbers for the United States in the last week shown above are also incorrect, as the official COVID19 deaths have not stopped decreasing, but the data will presumably get corrected over time.
 
 Finally, we can summarise the total excess deaths per country for 2020.
 
@@ -160,7 +158,7 @@ excess_deaths %>%
     last_week = max(week),
     as_at = as.Date("2020-01-01") + 7*(last_week-1)
   ) %>%
-  select(country, excess, as_at) 
+  select(country, excess, as_at)
 ```
 
   * Some countries have negative excess deaths, due to early interventions.
