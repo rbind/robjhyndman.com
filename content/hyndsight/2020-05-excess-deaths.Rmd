@@ -112,9 +112,7 @@ Before continuing, I'll remove that last week of data for all countries (which w
 ```{r remove_lastweek, message=FALSE}
 deaths <- deaths %>%
   group_by(country, year) %>%
-  summarise(last_week = max(week), week=week, deaths=deaths) %>%
-  ungroup() %>%
-  filter(!(year==2020 & week==last_week)) %>%
+  filter(!(year==2020 & week==max(week))) %>%
   select(year, week, country, deaths)
 ```
 
