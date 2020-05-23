@@ -165,3 +165,12 @@ excess_deaths %>%
   * The numbers for England & Wales and the United States are substantially lower than what the [*Financial Times*](http://ft.com/coronavirus-latest) is estimating, probably due to the available data. I suspect the data used by the *FT* is more recent.
   * These numbers are substantially larger than the numbers of reported COVID19 deaths at the same date.
   * Further discussion on "excess deaths" is available in [this article](https://voxeu.org/article/excess-mortality-england-european-outlier-covid-19-pandemic) from VoxEU.
+
+<details><summary>Reproducibility details</summary>
+
+```{r}
+options(width=100)
+sessioninfo::session_info()
+```
+
+</details>
