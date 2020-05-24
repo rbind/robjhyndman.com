@@ -32,8 +32,17 @@ library(feasts)
 
 We will first grab the latest data, using similar code to what I used in my recent post on ["excess deaths"](https://robjhyndman.com/hyndsight/excess-deaths/). However, this time we will keep the mortality rates rather than the numbers of deaths.
 
-```{r download, warning=FALSE, message=FALSE}
-mrates <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip = 1) %>%
+```{r hiddenfilter, include=FALSE, eval=TRUE}
+# Load data locally for reproducibility
+stmf <- readRDS("../../static/data/stmf.rds")
+```
+
+```{r download, eval=FALSE}
+stmf <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip=1)
+```
+
+```{r wrangle, warning=FALSE, message=FALSE}
+mrates <- stmf %>%
   janitor::clean_names() %>%
   select(country_code:sex, r0_14:r_total) %>%
   pivot_longer(5:10,

@@ -30,11 +30,12 @@ library(tidycovid19)
 ```
 
 ```{r hiddenfilter, include=FALSE, eval=TRUE}
-# Limit data shown to date of post
-# So when post is re-compiled, it doesn't show data future to the post.
-updates <- download_merged_data(cached = TRUE) %>%
-  filter(date <= as.Date("2020-04-05"))
-updates$timestamp <- "2020-04-04 17:49:31 AEDT"
+# Load data locally for reproducibility
+#updates <- download_merged_data(cached = TRUE) %>%
+#  filter(date <= as.Date("2020-04-05"))
+#updates$timestamp <- "2020-04-04 17:49:31 AEDT"
+#saveRDS(updates, file="static/data/tidycovid.rds")
+updates <- readRDS("../../static/data/tidycovid.rds")
 ```
 
 ```{r ft, eval=FALSE}
@@ -49,7 +50,8 @@ updates %>%
   plot_covid19_spread(
     highlight = countries,
     type = "confirmed",
-    edate_cutoff = 40
+    edate_cutoff = 40,
+    min_cases = 100
   )
 ```
 

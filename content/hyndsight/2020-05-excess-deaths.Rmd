@@ -33,9 +33,19 @@ library(tidyr)
 library(ggplot2)
 ```
 
-```{r download, message=FALSE}
-deaths <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip=1)
-deaths
+```{r hiddenfilter, include=FALSE, eval=TRUE}
+# Load data locally for reproducibility
+#stmf <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip=1)
+#saveRDS(stmf, file="static/data/stmf.rds")
+stmf <- readRDS("../../static/data/stmf.rds")
+```
+
+```{r download, eval=FALSE}
+stmf <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.csv", skip=1)
+```
+
+```{r}
+stmf
 ```
 
 The columns beginning with `D` show deaths for different age groups, while mortality rates are in the columns starting with `R`.
@@ -45,7 +55,7 @@ The columns beginning with `D` show deaths for different age groups, while morta
 Let's drop the rates columns and wrangle it into a form more suitable for analysis. To keep it simple, I'll only keep aggregate deaths over age and sex.
 
 ```{r wrangle, message=FALSE}
-deaths <- deaths %>%
+deaths <- stmf %>%
   janitor::clean_names() %>%
   select(country_code:d_total) %>%
   pivot_longer(5:10,
