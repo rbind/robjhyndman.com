@@ -18,7 +18,11 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 options(digits = 3, width = 75)
 ```
 
-The weekly mortality data recently published by the [Human Mortality Database](https://www.mortality.org) can be used to explore seasonality in mortality rates.
+The weekly mortality data recently published by the [Human Mortality Database](https://www.mortality.org) can be used to explore seasonality in mortality rates. Mortality rates are known to be seasonal due to temperatures and other weather-related effects [(Healy 2003)](http://dx.doi.org/10.1136/jech.57.10.784).
+
+<!--more-->
+
+The weekly mortality data recently published by the [Human Mortality Database](https://www.mortality.org) can be used to explore seasonality in mortality rates. Mortality rates are known to be seasonal due to temperatures and other weather-related effects [(Healy 2003)](http://dx.doi.org/10.1136/jech.57.10.784).
 
 ```{r loadpackages, warning=FALSE, message=FALSE}
 library(dplyr)
@@ -70,7 +74,7 @@ mrates <- stmf %>%
   select(year, week, country, mxt)
 ```
 
-First let's plot the mortality rate against the week of the year for a few countries with interesting data features.
+First let's plot the mortality rate against the week of the year for two countries with interesting data features.
 
 ## England & Wales
 
@@ -84,7 +88,9 @@ mrates %>%
 
 Here we see some annual seasonal pattern, with higher rates in winter, and also a few sudden dips in mortality rates. The latter are almost certainly due to recording discrepancies, where deaths are not recorded until the following week. Note that the dips are generally followed by a higher than usual mortality rate in the following week. Those between weeks 12 and 17 are probably due to Easter; bank holiday effects are seen in weeks 18-19, 22-23 and 35-36 (depending on which year the holiday falls; the Christmas effect is seen in week 52.
 
-Other than the obvious pandemic effect in 2020, this graph shows increased mortality rates at the start of 2015 and 2018, and in the first half of March 2018. Perhaps a reader can shed light on what might have caused these increases.
+The second week of the year always has increased mortality --- this is a reporting issue: delayed deaths from the previous week(s) are included in statistics for the second week of the year.
+
+Other than the obvious pandemic effect in 2020, this graph also shows increased mortality rates at the start of 2015 and 2018, and in the first half of March 2018.  This is probably due to the flu epidemic.
 
 ## Spain
 
@@ -98,21 +104,11 @@ mrates %>%
   geom_line(aes(col = year))
 ```
 
-## Belgium
-
-Belgium shows a huge spike in deaths in week 51 of 2005, but no data at all for week 52. So this is probably due to Week 51 containing deaths from both weeks.
-
-```{r}
-mrates %>%
-  filter(country == "Belgium") %>%
-  mutate(year = as.factor(year)) %>%
-  ggplot(aes(x = week, y = mxt, group = year)) +
-  geom_line(aes(col = year))
-```
-
 # Comparing seasonality across countries
 
-We can compare the seasonal patterns from all countries by using an STL decomposition to estimate the seasonality. First we have to convert the data to a tsibble object.
+We can compare the seasonal patterns from all countries by using an STL decomposition to estimate the seasonality. There will be some differences because some countries provide weekly data by date of registration (instead of the date of occurrence). This is why, for example, we see sudden dips in England & Wales but do not see similar dips in Germany. Information about the type of data available is in [the metadata](https://www.mortality.org/Public/STMF_DOC/STMFmetadata.pdf).
+
+First we have to convert the data to a tsibble object.
 
 ```{r maketsibble}
 mrates <- mrates %>%
@@ -155,9 +151,9 @@ stl_season %>%
   ggthemes::scale_color_colorblind()
 ```
 
-The Icelandic rates show less seasonality than other countries, but contain a dip in weeks 25--35 (mid-June to end of August). As [Dan Simpson pointed out on twitter](https://twitter.com/dan_p_simpson/status/1264406731079237632) after I posted this, the Iceland mortality pattern is possibly due to the weather, with a very short summer and cold conditions for the rest of the year.
+The Icelandic rates show less seasonality than other countries, but contain a dip in weeks 25--35 (mid-June to end of August). The Iceland mortality pattern is possibly due to the weather, with a very short summer and cold conditions for the rest of the year.
 
-It is not clear to me why the Portuguese mortality rates would be so much higher in winter than other countries, and so much lower in summer. After all, it has very similar weather to Spain, but very different mortality rates. Hopefully some readers can help explain what is going on.
+The Portuguese mortality rates are much higher in winter than other countries, and much lower in summer. This is strange as it has very similar weather to Spain, but very different mortality rates. Some [twitter discussion](https://twitter.com/Thoughtfulnz/status/1264426705046786050) suggested some of the increase in January could be delayed reporting, as few deaths are reported in the last week of the year. [Healy (2003)](http://dx.doi.org/10.1136/jech.57.10.784) suggested it was due to poor insulation in Portuguese houses, along with relatively high income poverty and inequality and relatively low public health expenditure compared to other European countries. However, it is not clear that this is still true 17 years after he wrote that article.
 
 <details><summary>Reproducibility details</summary>
 
