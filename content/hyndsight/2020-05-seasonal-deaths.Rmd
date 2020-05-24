@@ -3,6 +3,9 @@ author: robjhyndman
 comments: true
 date: 2020-05-24
 title: "Seasonal mortality rates"
+slug: seasonal-mortality-rates
+aliases:
+  - /hyndsight/2020-05-seasonal-deaths
 mathjax: true
 categories:
   - time series
@@ -15,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
 options(digits = 3, width = 75)
 ```
 
-The weekly mortality data recently published by the [Human Mortality Database](https://www.mortality.org) can be used to explore seasonality in mortality rates. 
+The weekly mortality data recently published by the [Human Mortality Database](https://www.mortality.org) can be used to explore seasonality in mortality rates.
 
 ```{r loadpackages, warning=FALSE, message=FALSE}
 library(dplyr)
@@ -58,7 +61,7 @@ mrates <- readr::read_csv("https://www.mortality.org/Public/STMF/Outputs/stmf.cs
   select(year, week, country, mxt)
 ```
 
-First let's plot the mortality rate against the week of the year for a few countries with interesting data features. 
+First let's plot the mortality rate against the week of the year for a few countries with interesting data features.
 
 ## England & Wales
 
@@ -76,7 +79,7 @@ Other than the obvious pandemic effect in 2020, this graph shows increased morta
 
 ## Spain
 
-A similar plot for Spain shows a jump in mortality from weeks 31--34 (August) in 2003. This was due to an extreme heat wave (see [Robine et al, 2008](https://doi.org/10.1016/j.crvi.2007.12.001)). 
+A similar plot for Spain shows a jump in mortality from weeks 31--34 (August) in 2003. This was due to an extreme heat wave (see [Robine et al, 2008](https://doi.org/10.1016/j.crvi.2007.12.001)).
 
 ```{r}
 mrates %>%
