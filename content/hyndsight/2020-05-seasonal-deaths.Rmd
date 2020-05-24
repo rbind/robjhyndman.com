@@ -146,11 +146,9 @@ stl_season %>%
   ggthemes::scale_color_colorblind()
 ```
 
-It is not clear to me why the Portuguese mortality rates would be so much higher in winter than other countries, and so much lower in summer. After all, it has very similar weather to Spain, but very different mortality rates.
+The Icelandic rates show less seasonality than other countries, but contain a dip in weeks 25--35 (mid-June to end of August). As [Dan Simpson pointed out on twitter](https://twitter.com/dan_p_simpson/status/1264406731079237632) after I posted this, the Iceland mortality pattern is possibly due to the weather, with a very short summer and cold conditions for the rest of the year.
 
-The Icelandic rates show less seasonality than other countries, but contain a dip in weeks 25--35 (mid-June to end of August). Again, I don't know enough about the country to be able to guess what is happening here.
-
-Hopefully some readers can help explain what is going on.
+It is not clear to me why the Portuguese mortality rates would be so much higher in winter than other countries, and so much lower in summer. After all, it has very similar weather to Spain, but very different mortality rates. Hopefully some readers can help explain what is going on.
 
 <details><summary>Reproducibility details</summary>
 
