@@ -1,0 +1,67 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-06-26
+title: "Terminology matters"
+slug: terminology-matters
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - econometrics
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = FALSE)
+options(digits = 3, width = 75)
+library(tidyverse)
+```
+
+I was reminded again this week that getting the right terminology is important. Some of my colleagues who work in machine learning wrote a paper entitled ["Time series regression"](https://arxiv.org/abs/2006.12672) which began with "This paper introduces Time Series Regression (TSR): a little-studied task ...". Statisticians and econometricians have done time series regression for many decades, so this beginning led to the paper being [lampooned on Twitter](https://twitter.com/lukestein/status/1275666782477520896).
+
+The problem arose arose due to clashes in terminology being used in different fields. Sometimes two fields use the same terminology for different things, and sometimes two fields can use different terminology for the same thing. Both situations are involved here.
+
+In machine learning, "Time series classification" has been very widely studied. A [Google scholar search](https://scholar.google.com.au/scholar?hl=en&as_sdt=0%2C5&as_ylo=2019&q=%22time+series+classification%22&btnG=) brings up over 3000 articles on the topic since 2019. The problem here is to classify a collection of time series into distinct groups. In other words, the space of time series is mapped to the space of a categorical variable. Unfortunately, almost none of the researchers involved seem to be aware of the (much smaller) parallel statistical literature on functional data classification, which includes time series classification as a special case (where the data are functions of time). And the statisticians working on functional data classification also appear unaware of the extensive work done on this special case in the machine learning literature. Hence we have the situation of two fields using different terminology for essentially the same thing.
+
+My colleagues wanted to extend this idea to using a whole time series to predict a numerical value. So it involves mapping the space of time series onto the space of real numbers. Naturally, they thought "time series regression" was a good name, as regression is like classification but with a real valued output rather than a categorical output. However, "time series regression" is widely used in statistics and econometrics to mean modelling one value of a time series given the past and present values of other time series. So here is a case of two fields using the same terminology for very different things.
+
+In any case, the problem has received considerable coverage in the statistics literature but under another name. There it is part of "functional data analysis" and involves predicting a scalar output from a functional input. This is called "scalar-on-function" regression; see, for example, this [2016 review article by Reiss et al](https://dx.doi.org/10.1111%2Finsr.12163).
+
+It would also be possible to think of "time series classification" to mean a model for a categorical time series, where each element of the series is a category rather than a number. This would be the natural analogue of "time series regression" as used by statisticians and econometricians. However, this problem tends to be called  "categorical time series analysis" instead.
+
+To summarise, here is a table of the terminologies being used for the different problems.
+
+```{r, echo=FALSE}
+tribble(
+  ~`Output/Response`, ~`Input/Predictor`, ~Terminology, ~Field,
+  "Numerical", "Function/time series", "Scalar-on-function regression", "Statistics",
+  "Numerical", "Function/time series", "Time series regression (proposed)", "Machine learning",
+  "Categorical", "Function/time series", "Classification of functional data", "Statistics",
+  "Categorical", "Function/time series", "Time series classification", "Machine learning",
+  "Numerical element of time series", "Past values of same and/or other time series", "Time series regression/forecasting", "Statistics",
+  "Categorical element of time series", "Past values of same and/or other time series", "Categorical time series analysis", "Statistics",
+  ) %>%
+  knitr::kable()
+```
+
+The latter two don't seem to have their own terminology in machine learning, both being part of supervised learning in general, although specific methods such as LSTM have been developed for time series forecasting.
+
+Clashing terminology arises whenever researchers don't read outside their own discipline area. There are lots of other examples of clashes between statistics and machine learning, and between statistics and econometrics.
+
+## Same concept, different terminology
+
+ * Econometricians use "panel data" while statisticians use "longitudinal data" to refer to collections of time series.
+ * Econometricians use "duration modelling" while statisticians use "survival analysis" when studying data on durations.
+ * What is "estimation" in statistics is "learning" in machine learning.
+ * "Parameters" in statistics are "weights" in machine learning.
+ * "Covariates" in statistics are "features" in machine learning.
+
+## Different concept, same terminology
+
+ * A "robust" estimator in econometrics is one that is insensitive to heteroskedasticity and autocorrelation. In statistics, a "robust" estimator is insensitive to outliers.
+ * A "fixed effect" in statistics is a non-random regression term, while a "fixed effect" in econometrics means that the coefficients in a model are time-invariant.
+
+
+I'm sure readers can provide some additional examples.
+
+&nbsp;
