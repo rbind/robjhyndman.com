@@ -34,11 +34,3 @@ Reliable forecasts of business and economic variables must often be obtained aga
 [**More information . . .**](http://robjhyndman.com/workshop2020/)
 
 * * *
-
-# Datacamp: Forecasting Using R
-
-I also have a (somewhat out-of-date) online course about forecasting on [Datacamp](https://www.datacamp.com/courses/forecasting-using-r).
-
-
-[![](/img/Datacamp.png)](https://www.datacamp.com/courses/forecasting-using-r)
-
