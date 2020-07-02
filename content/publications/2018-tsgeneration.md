@@ -5,7 +5,7 @@ slug: gratis
 alias: publications/tsgeneration
 title: "GRATIS: GeneRAting TIme Series with diverse and controllable characteristics"
 kind: article
-citation: <em>Statistical Analysis and Data Mining</em>, to appear
+citation: <em>Statistical Analysis and Data Mining</em>, <b>13</b>(4), 354-376
 date: 2020-04-30
 tags:
 - data science
