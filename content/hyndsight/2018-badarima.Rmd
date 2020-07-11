@@ -21,7 +21,7 @@ fit1 <- auto.arima(xd, trace=TRUE, allowmean=FALSE, allowdrift = FALSE, max.p=1,
 
 The issue here is to do with the checks carried out by `auto.arima()` in an effort to return a good model. The `auto.arima()` function does not simply find the model with the lowest AICc value. It also carries out several checks to ensure the model is numerically well-behaved.
 
-While the `Arima()` function will never return a model with roots inside the unit circle, the `auto.arima()` function is even stricter and will not select a model with roots close to the unit circle either. The ARIMA(1,0,0)(1,0,0)$_{12}$ model fitted above has roots almost on the unit circle. This is easily seen by plotting them.
+While the `Arima()` function will never return a model with roots inside the unit circle, the `auto.arima()` function is even stricter and will not select a model with roots close to the unit circle either. The ARIMA(1,0,0)(1,0,0)<sub>12</sub> model fitted above has roots almost on the unit circle. This is easily seen by plotting them.
 
 ```{r plotroots}
 Arima(xd, order=c(1,0,0), seasonal=c(1,0,0), xreg=seq_along(xd)) %>%
