@@ -74,7 +74,7 @@ boxplot(sep-aug, main="Sep - Aug: total employed",xlab="Thousands",
         horizontal=TRUE)
 ```
 
-It is rather unlikely that employers behaved differently this year than in all previous years. It is also unlikely that that the survey data was so noisy as to cause this anomaly. Most likely (and this is Westpac's suggestion) is that the problem is due to a change in the methodology for collecting the data.
+It is rather unlikely that employers behaved differently this year than in all previous years. It is also unlikely that the survey data was so noisy as to cause this anomaly. Most likely (and this is Westpac's suggestion) is that the problem is due to a change in the methodology for collecting the data.
 
 Before August 2014, if people in the survey said they were employed, they then had to answer a long list of additional questions. It seems likely that some employed people were wanting to avoid answering lots of questions, so they falsely claimed they were unemployed. From August 2014, the additional questions were no longer asked, and so there was no incentive for people to give a false answer. Consequently, they said they were employed, and the August numbers were much larger than expected. September surveys never had the additional questions, and so September figures were not affected by the change. So this explains that higher August figure, but not the lower September figure. Hence, it may only be a partial explanation.
 
