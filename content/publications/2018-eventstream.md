@@ -1,9 +1,10 @@
 ---
 author: Sevvandi&nbsp;Kandanaarachchi, Rob&nbsp;J&nbsp;Hyndman and&nbsp;Kate&nbsp;Smith&#8209;Miles
-date: 2019-03-07
+date: 2020-07-11
 slug: eventstream
 title: "Early classification of spatio-temporal events using partial information"
-kind: unpublished
+kind: article
+citation: <em>PLOS ONE</em>, to appear
 tags:
 - data science
 - time series
