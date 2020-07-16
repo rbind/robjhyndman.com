@@ -7,16 +7,16 @@ title: "Research team"
 
 ## Current research fellows
 
-  1. **Pablo Montera Manso** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
+  1. [**Pablo Montero-Manso**](https://acems.org.au/our-people/pablo-montero-manso) [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
 
 ## Current PhD students
 
   1. **Lakshan Bernard**. *Analytical tools for future power networks* (PhD, begun 2020).
   1. **[Fan Cheng](https://fancheng.me/)**. *Manifold learning on empirical probability distributions* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
-  1. **[Sayani Gupta](https://sayani.netlify.com/)**  *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
-  1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Time series modelling and forecasting of disaggregated electricity data*, (PhD, begun 2016). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
-  1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations*, (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
+  1. **[Sayani Gupta](https://sayani.netlify.com/)**. *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
+  1. **Nuwani Palihawadana**. *Optimal predictor selection for high-dimensional nonparametric forecasting* (PhD, begun 2020).  [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/nuwani-palihawadana)
+  1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations* (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
 
 ## Former research fellows
 
@@ -49,8 +49,9 @@ title: "Research team"
   1. **[Yeasmin Khandakar](https://www.linkedin.com/in/yeasminkhandakar/)**. *Automatic ARIMA forecasting*. (Ph.D., graduated 2010). Now a senior data scientist at Officeworks.
   1. **[Andrey Kostenko](https://www.linkedin.com/in/akoste01/)**. *Intermittent demand forecasting*. (Ph.D., graduated 2013). Now a senior data scientist at IAG.
   1. **Hugh O'Reilly**. *Analysis of trading strategies for futures markets*. (M.Com., graduated 2004).
-  1. **[Ahmad Farid Osman](https://umexpert.um.edu.my/faridosman)**. *A new approach to forecasting based on exponential smoothing with independent regressors*. (Ph.D., graduate 2012). Now a Lecturer at the University of Malaya.
+  1. **[Ahmad Farid Osman](https://umexpert.um.edu.my/faridosman)**. *A new approach to forecasting based on exponential smoothing with independent regressors*. (Ph.D., graduated 2012). Now a Lecturer at the University of Malaya.
   1. **Ivet Pitrun**. *Smoothing splines in nonparametric regression*, (Ph.D., graduated 2002). Now a teacher at [Monash College](http://www.monash.edu/monashcollege).
+  1. **[Cameron Roach](https://acems.org.au/our-people/cameron-roach)**. *Time series modelling and forecasting of disaggregated electricity data*, (PhD, graduated 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/camroach87/)
   1. **[Han Lin Shang](https://sites.google.com/site/hanlinshangswebsite/)**. *Visualizing and forecasting functional time series*. (Ph.D., graduated 2010). Winner of Mollie Holman doctoral medal in Business &amp; Economics, 2010. Now an Associate Professor at ANU.
   1. **[Thilaksha Silva](https://www.linkedin.com/in/thilakshasilva/)**. *Estimating and forecasting a time series of densities using a functional data approach*. (PhD, graduated 2015). Now a Data Scientist for CitiPower and Powercor.
   1. **Leanna Tedesco**. *Non-Gaussian first order autoregressive time series models*. (M.Sc., Uni of Melbourne, graduated 1995). Now working for [AEMO](http://aemo.com.au/).
@@ -58,7 +59,7 @@ title: "Research team"
   1. **[Thiyanga Talagala](https://thiyanga.netlify.com/)**, *Computationally efficient forecasting methods for large-scale real-time applications* (PhD, graduated 2019). Now a Lecturer at the University of Sri Jayewardenepura. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/thiyangt)
   1. **[Shahid Ullah](https://researchers.adelaide.edu.au/profile/shahid.ullah)**. *Demographic forecasting using functional data analysis*. (Ph.D., graduated 2007). Now a Senior Biostatistician at the South Australian Health and Medical Research Institute.
   1. **[Laura Villanova](https://scholar.google.com.au/citations?user=OeZdcD0AAAAJ)**. *Response surface optimization for high-dimensional systems with multiple responses*. (Ph.D., graduated 2010). Now working at the Technische Universität Graz, Austria.
-  1. **[Earo Wang](http://earo.me)**, *Tidy tools for supporting fluent workflow in temporal data analysis* (PhD, graduated 2019). Now a Lecturer at the University of Auckland. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/earowang)
+  1. **[Earo Wang](http://earo.me)**, *Tidy tools for supporting fluent workflow in temporal data analysis* (PhD, graduated 2019). Winner of Mollie Holman doctoral medal in Business &amp; Economics, 2019. Now a Lecturer at the University of Auckland. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/earowang)
   1. **[Xiaozhe Catherine Wang (Lopes)](https://www.linkedin.com/in/catherine-lopes-ph-d-30aa17a6)**. *Characteristic-based forecasting for time series data*, (Ph.D., graduated 2005). Winner of Mollie Holman doctoral medal in IT, 2005. Now head of data science and machine learning at AGL Energy Limited.
   1. **[Shanika Wickramasuriya](https://unidirectory.auckland.ac.nz/people/profile/s-wickramasuriya)**. *Optimal forecasts for hierarchical and grouped time series*, (PhD, graduated 2017). Now a Lecturer at the University of Auckland.
   1. **[Farah Yasmeen](https://www.researchgate.net/profile/Farah_Yasmeen)**. *Functional linear models for mortality forecasting*. (Ph.D., graduated 2011). Now an Assistant Professor at the University of Karachi, Pakistan.
