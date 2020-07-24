@@ -4,7 +4,7 @@ date: 2020-07-14
 slug: elections
 title: "Spatial modelling of the two-party preferred vote in Australian federal elections: 2001-2016"
 kind: article
-citation: "<em>Australian and New Zealand Journal of Statistics</em>, to appear"
+citation: "<em>Australian and New Zealand Journal of Statistics</em>, <b>62</b>(2), 168-185"
 tags:
 - data science
 - R
