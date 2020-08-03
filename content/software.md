@@ -25,7 +25,7 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**forecast**](https://pkg.robjhyndman.com/forecast/): Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cloud.r-project.org/package=forecast)]
 
-* [**gratis**](https://github.com/ykang/gratis): Efficient generation of time series with diverse and controllable characteristics
+* [**gratis**](https://github.com/ykang/gratis): Efficient generation of time series with diverse and controllable characteristics [[CRAN](https://cloud.r-project.org/package=gratis)]
 
 * [**hts**](https://pkg.earo.me/hts/): Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cloud.r-project.org/package=hts)]
 
