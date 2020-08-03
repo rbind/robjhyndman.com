@@ -1,9 +1,10 @@
 ---
 author: Sevvandi Kandanaarachchi, Rob&nbsp;J&nbsp;Hyndman
-date: 2019-08-22
+date: 2020-08-04
 slug: dobin
 title: Dimension reduction for outlier detection using DOBIN
-kind: unpublished
+kind: article
+citation: <em>Journal of Computational & Graphical Statistics</em>, to appear
 file: dobin.pdf
 tags:
 - data science
