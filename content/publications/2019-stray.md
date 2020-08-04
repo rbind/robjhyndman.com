@@ -1,9 +1,10 @@
 ---
 author: Priyanga Dilini Talagala, Rob&nbsp;J&nbsp;Hyndman, Kate&nbsp;Smith&#8209;Miles,
-date: 2019-08-13
+date: 2020-08-04
 slug: stray
 title: "Anomaly detection in high-dimensional data"
-kind: unpublished
+kind: article
+citation: <em>J Computational & Graphical Statistics</em>, to appear
 link: http://arxiv.org/abs/1908.04000
 tags:
 - data science
