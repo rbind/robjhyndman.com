@@ -9,7 +9,7 @@ tags:
 - forecasting
 - functional data
 - hierarchical time series
-citation: <em>Journal of Computational and Graphical Statistics</em>, <b>26</b>(2), 330-343
+citation: <em>J Computational & Graphical Statistics</em>, <b>26</b>(2), 330-343
 doi: 10.1080/10618600.2016.1237877
 link: http://business.monash.edu/econometrics-and-business-statistics/research/publications/ebs/wp04-16.pdf
 ---

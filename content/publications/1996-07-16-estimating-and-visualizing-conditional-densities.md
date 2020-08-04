@@ -5,7 +5,7 @@ comments: false
 date: 1996-07-16 02:43:49+00:00
 slug: estimating-and-visualizing-conditional-densities
 title: Estimating and visualizing conditional densities
-citation: "<em>Journal of Computational and Graphical Statistics</em>, <b>5</b>, 315-336"
+citation: "<em>J Computational & Graphical Statistics</em>, <b>5</b>, 315-336"
 status: Published
 kind: article
 tag:

@@ -4,7 +4,7 @@ date: 2020-08-04
 slug: dobin
 title: Dimension reduction for outlier detection using DOBIN
 kind: article
-citation: <em>Journal of Computational & Graphical Statistics</em>, to appear
+citation: <em>J Computational & Graphical Statistics</em>, to appear
 file: dobin.pdf
 tags:
 - data science

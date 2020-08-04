@@ -12,7 +12,7 @@ tags:
 - functional data
 - graphics
 - highest density regions
-citation: "<em>Journal of Computational and Graphical Statistics</em> <b>19</b>(1), 29-45"
+citation: "<em>J Computational & Graphical Statistics</em> <b>19</b>(1), 29-45"
 doi: 10.1198/jcgs.2009.08158
 file: Rainbow5.pdf
 ---

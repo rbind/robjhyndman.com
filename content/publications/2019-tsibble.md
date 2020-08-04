@@ -4,7 +4,7 @@ author: Earo Wang, Di Cook and Rob&nbsp;J&nbsp;Hyndman
 date: 2020-01-04
 slug: tsibble
 kind: article
-citation: "<em>Journal of Computational & Graphical Statistics</em>, to appear"
+citation: "<em>J Computational & Graphical Statistics</em>, to appear"
 doi: 10.1080/10618600.2019.1695624
 tags:
   - data science
