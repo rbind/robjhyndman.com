@@ -4,11 +4,12 @@ date: 2020-07-11
 slug: eventstream
 title: "Early classification of spatio-temporal events using partial information"
 kind: article
-citation: <em>PLOS ONE</em>, to appear
+citation: "<em>PLoS ONE</em>, 15(8): e0236331"
 tags:
 - data science
 - time series
 - anomaly detection
+doi: 10.1371/journal.pone.0236331
 link: https://github.com/sevvandi/eventstream_paper/raw/master/manuscript.pdf
 ---
 
