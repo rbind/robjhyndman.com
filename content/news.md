@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [What's the pandemic forecast?](https://acems.org.au/news/covid-forecasting-team), *ACEMS news* 12 August 2020.
   * [Inaugural Zema Energy Studies Scholarship launched](https://www.energymagazine.com.au/inaugural-zema-energy-studies-scholarship-launched/), *Energy Magazine* 5 March 2020.
   * [Interview with the inaugural recipient of the Zema Energy Studies scholarship](https://aemo.com.au/en/news/zema-scholarship-winner), *AEMO News* 4 March 2020.
   * [New scholarship program supports Monash students to address Australia's energy sector challenges](https://www.monash.edu/news/articles/new-scholarship-program-supports-monash-students-to-address-australias-energy-sector-challenges), *Monash News* 4 March 2020.
