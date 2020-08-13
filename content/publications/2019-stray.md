@@ -6,6 +6,7 @@ title: "Anomaly detection in high-dimensional data"
 kind: article
 citation: <em>J Computational & Graphical Statistics</em>, to appear
 link: http://arxiv.org/abs/1908.04000
+doi: 10.1080/10618600.2020.1807997
 tags:
 - data science
 - anomaly detection
