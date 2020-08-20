@@ -4,7 +4,7 @@ date: 2020-04-08
 slug: nnmint
 title: Optimal non-negative forecast reconciliation
 kind: article
-citation: "<em>Statistics & Computing</em>, to appear"
+citation: "<em>Statistics & Computing</em>, <b>30</b>(5), 1167-1182"
 doi: 10.1007/s11222-020-09930-0
 tags:
 - accuracy
