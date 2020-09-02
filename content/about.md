@@ -57,5 +57,5 @@ My [Erdös number](http://www.oakland.edu/enp/) is 3 in two different ways.
 
 ## Other interests
 
- * I play tennis for the [Heathmont Parker Reserve Tennis Club](http://www.hprtc.org.au/), and I'm coached by [Ben Longridge](https://www.advantedgetennis.com/).
+ * I play tennis for the [Heathmont Parker Reserve Tennis Club](http://www.hprtc.org.au/), and I'm coached by [Ben Longridge](https://www.facebook.com/advantedgetennis/).
  * Previously I played cricket for the [Heathwood Cricket Club](https://www.heathwood.cc/). I'm also an accredited umpire with Cricket Australia.
