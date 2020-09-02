@@ -14,3 +14,6 @@ I will describe a geometric interpretation for reconciliation methods used to fo
 Finally, I will show how these ideas can be easily implemented using the fable package in R.
 
  * [Github repo](https://github.com/robjhyndman/geometry_reconciliation)
+ * [Paper on geometry of point forecast reconciliation](https://robjhyndman.com/publications/coherentprob/)
+ * [Paper on probabilistic reconciliation](https://robjhyndman.com/publications/coherentprob/)
+ * [fable package for R](https://fable.tidyverts.org)
