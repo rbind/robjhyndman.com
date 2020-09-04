@@ -9,7 +9,7 @@ kind: chapter
 tags:
 - quantiles
 - forecasting
-citation: 'Chapter in <em>Business Forecasting: The Emerging Role of Artificial Intelligence and Machine Learning</em>, John Wiley & Sons'
+citation: 'Chapter in <em>Business Forecasting: The Emerging Role of Artificial Intelligence and Machine Learning</em>, eds. Gilliland, Tashman & Sglavo. John Wiley & Sons'
 link: https://github.com/robjhyndman/quantile_ensembles/raw/master/quantile_ensembles.pdf
 ---
 
