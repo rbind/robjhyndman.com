@@ -5,11 +5,11 @@ slug: "in-the-news"
 
   * [What's the pandemic forecast?](https://acems.org.au/news/covid-forecasting-team), *ACEMS news* 12 August 2020.
   * [Inaugural Zema Energy Studies Scholarship launched](https://www.energymagazine.com.au/inaugural-zema-energy-studies-scholarship-launched/), *Energy Magazine* 5 March 2020.
-  * [Interview with the inaugural recipient of the Zema Energy Studies scholarship](https://aemo.com.au/en/news/zema-scholarship-winner), *AEMO News* 4 March 2020.
   * [New scholarship program supports Monash students to address Australia's energy sector challenges](https://www.monash.edu/news/articles/new-scholarship-program-supports-monash-students-to-address-australias-energy-sector-challenges), *Monash News* 4 March 2020.
   * [Big data, big deal: what a career in data science really takes](https://thenewdaily.com.au/sponsored/2019/11/27/big-data-big-deal-what-a-career-in-data-science-really-takes/), *The New Daily*, 27 November 2019.
   * [How to boost your career one gigabyte at a time](https://thenewdaily.com.au/sponsored/2019/10/24/how-to-boost-your-career-one-gigabyte-at-a-time/), *The New Daily*, 24 October 2019.
   * [River and reef water quality monitoring revolutionized](https://www.technologynetworks.com/applied-sciences/news/river-and-reef-water-quality-monitoring-revolutionized-323567), *Technology Networks*, 4 September 2019.
+  * [Revolutionizing water quality monitoring for our rivers and reef](https://www.sciencedaily.com/releases/2019/09/190903091446.htm), *Science News*, 3 September 2019.
   * [Revolutionizing water quality monitoring for our rivers and reef](https://www.eurekalert.org/pub_releases/2019-09/quot-rwq090219.php), *EurekAlert!*, 3 September 2019.
   * [Labor’s climate policy is second-rate – because the government’s policy is fifth-rate](https://thenewdaily.com.au/money/finance-news/2019/05/06/labor-climate-policy-costings/), *The New Daily*, 6 May 2019.
   * [Announcing the winners of the Facebook Statistics for Improving Insights and Decisions research awards](https://research.fb.com/announcing-the-winners-of-the-statistics-for-improving-insights-and-decisions-research-awards/), *Facebook Research*, 25 January 2019.
