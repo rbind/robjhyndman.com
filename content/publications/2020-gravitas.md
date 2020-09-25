@@ -16,3 +16,7 @@ Deconstructing a time index into time granularities can assist in exploration an
 Time granularities can be used to create data visualizations to explore for periodicities, associations and anomalies. The granularities form categorical variables (ordered or unordered) which induce groupings of the observations. Assuming a numeric response variable, the resulting graphics are then displays of distributions compared across combinations of categorical variables.
 
 The methods implemented in the open source R package [`gravitas`](https://sayani07.github.io/gravitas/) are consistent with a tidy workflow, with probability distributions examined using the range of graphics available in [`ggplot2`](https://ggplot2.tidyverse.org).
+
+[**R package: `gravitas`**](https://sayani07.github.io/gravitas/)
+
+[**Github repo**](https://github.com/Sayani07/paper-gravitas)
