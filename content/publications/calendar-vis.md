@@ -4,7 +4,7 @@ date: 2020-01-07
 slug: calendar-vis
 title: Calendar-based graphics for visualizing people's daily schedules
 kind: article
-citation: <em>J Computational & Graphical Statistics</em>, to appear
+citation: <em>J Computational & Graphical Statistics</em>, <b>29</b>(3), 490-502
 tags:
 - data science
 - time series
