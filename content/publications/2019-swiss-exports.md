@@ -10,6 +10,7 @@ tags:
 - forecasting
 - macroeconomics
 - time series
+doi: 10.1016/j.ejor.2020.09.046
 link: https://www.research-collection.ethz.ch/handle/20.500.11850/354388
 ---
 
