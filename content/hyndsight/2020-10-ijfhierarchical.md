@@ -17,6 +17,8 @@ There is a new call for papers for a special issue of the *International Journal
 
 **Submission deadline:** 31 August 2021.
 
+<!--more-->
+
 Areas of interest include, but are not limited to:
 
 * New methodologies for hierarchical forecasting
