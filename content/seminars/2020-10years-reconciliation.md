@@ -13,7 +13,7 @@ Ten years ago, anyone doing such forecasts needed to select between bottom-up, t
 
 In the last ten years, the literature on forecast reconciliation has exploded with developments in theory, methods, applications and software. I will provide an up-to-date overview of this work and show how reconciliation methods can lead to better forecasts and better forecasting practices.
 
-I will also show how these ideas can be easily implemented using the [fable package](http://fabletidyverts.org/) in R.
+I will also show how these ideas can be easily implemented using the [fable package](http://fable.tidyverts.org/) in R.
 
  * [Github repo](https://github.com/robjhyndman/reconciliation_review_talk)
  * [fable package for R](https://fable.tidyverts.org)

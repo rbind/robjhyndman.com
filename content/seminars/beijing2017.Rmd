@@ -38,6 +38,6 @@ draft: no
 
 These talks contain many ideas from my coauthors and students. Apart from the coauthors in the papers listed above, the following people have contributed ideas (and I hope they will be coauthors of future papers):
 
- * [Anastasios Panagiotelis](https://research.monash.edu/en/persons/anastasios-panagiotelis)
+ * [Anastasios Panagiotelis](https://anastasiospanagiotelis.netlify.app/)
  * [Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)
  * [Mitchell O'Hara-Wild](http://www.mitchelloharawild.com/)
