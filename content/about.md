@@ -39,7 +39,7 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 I am a member of the following organizations:
 
-  * [International Institute of Forecasters](http://forecasters.org) (director)
+  * [International Institute of Forecasters](http://forecasters.org)
   * [International Statistical Institute](http://isi.cbs.nl)  (elected member)
   * [International Association for Statistical Computing](http://www.iasc-isi.org)
   * [International Society for Business and Industrial Statistics](http://isbis-isi.org)
