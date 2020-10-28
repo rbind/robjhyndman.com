@@ -3,6 +3,7 @@ date: 2020-10-27
 title: Ten years of forecast reconciliation
 slug: "reconciliation_review_talk"
 aliases: "/isf2020/"
+youtube: 5jB09R-sKOc
 link: https://github.com/robjhyndman/reconciliation_review_talk/raw/main/10years_reconciliation.pdf
 ---
 
