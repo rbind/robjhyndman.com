@@ -3,9 +3,7 @@ title: "2017 Beijing Workshop on Forecasting"
 slug: beijing2017
 aliases:
   - /beijing2017/
-author: "Rob J Hyndman"
 date: 2017-11-18
-draft: no
 ---
 
 **Location**: [Central University of Finance and Economics](https://yanfei.site/bjwf/), Beijing, China.
