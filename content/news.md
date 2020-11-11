@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [Respected Business researchers honoured as Fellows of Academy of Social Sciences of Australia](https://www.monash.edu/business/news/2020/respected-business-researchers-honoured-as-fellows-of-academy-of-social-sciences-of-australia), *Monash Business News*, 11 November 2020.
   * [What's the pandemic forecast?](https://www.arc.gov.au/news-publications/media/feature-articles/whats-pandemic-forecast), *ARC feature article* 30 September 2020.
   * [What's the pandemic forecast?](https://acems.org.au/news/covid-forecasting-team), *ACEMS news* 12 August 2020.
   * [Inaugural Zema Energy Studies Scholarship launched](https://www.energymagazine.com.au/inaugural-zema-energy-studies-scholarship-launched/), *Energy Magazine* 5 March 2020.
