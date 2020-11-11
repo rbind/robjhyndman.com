@@ -35,7 +35,9 @@ Here is a list of [recent news articles about me](/in-the-news/).
   * Member of the Interstate Transfer Index Technical Group for the [Australasian Conference of Tertiary Admissions Centres](http://www.actac.edu.au).
   * Member of the Aboriginal and Torres Strait Islander Statistical and Technical Advisory Group for the [Australian Institute of Health and Welfare](http://www.aihw.gov.au).
 
-## Memberships
+## Fellowships and Memberships
+
+I am a fellow of the [Academy of the Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB).
 
 I am a member of the following organizations:
 
