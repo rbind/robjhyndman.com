@@ -17,6 +17,7 @@ tags:
 - time series
 - tourism
 link: https://github.com/robjhyndman/non-negative-mint/raw/master/nonnegativemint.pdf
+github: robjhyndman/non-negative-mint
 ---
 
 The sum of forecasts of disaggregated time series are often required to equal the forecast of the aggregate, giving a set of coherent forecasts. The least squares solution for finding coherent forecasts uses a reconciliation approach known as MinT, proposed by [Wickramasuriya et al (2019)](http://robjhyndman.com/publications/mint). The MinT approach and its variants do not guarantee that the coherent forecasts are non-negative, even when all of the original forecasts are non-negative in nature. This has become a serious issue in applications that are inherently non-negative such as with sales data or tourism numbers. While overcoming this difficulty, we reconsider the least squares minimization problem with non-negativity constraints to ensure that the coherent forecasts are strictly non-negative.

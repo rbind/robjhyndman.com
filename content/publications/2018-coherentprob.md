@@ -11,6 +11,7 @@ tags:
 - hierarchical time series
 - stochastic gradient descent
 link: https://github.com/PuwasalaG/Probabilistic-Forecast-Reconciliation/raw/master/Paper/ProbabilisticCoherence.pdf
+github: PuwasalaG/Probabilistic-Forecast-Reconciliation
 ---
 
 ![](/img/featured.jpg)

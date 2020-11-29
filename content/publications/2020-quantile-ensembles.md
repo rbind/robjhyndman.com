@@ -11,8 +11,7 @@ tags:
 - forecasting
 citation: 'Chapter in <em>Business Forecasting: The Emerging Role of Artificial Intelligence and Machine Learning</em>, eds. Gilliland, Tashman & Sglavo. John Wiley & Sons'
 link: https://github.com/robjhyndman/quantile_ensembles/raw/master/quantile_ensembles.pdf
+github: robjhyndman/quantile_ensembles
 ---
 
-
-[Code to reproduce the examples:](https://github.com/robjhyndman/quantile_ensembles).
 

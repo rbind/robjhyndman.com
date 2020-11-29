@@ -9,6 +9,7 @@ tags:
 - forecasting
 citation: "<em>International Journal of Forecasting</em>, <b>36</b>(1), 7-14"
 link: https://github.com/robjhyndman/history_forecasting_competitions/raw/master/forecasting-competitions.pdf
+github: robjhyndman/history_forecasting_competitions
 doi: 10.1016/j.ijforecast.2019.03.015
 ---
 
