@@ -11,7 +11,7 @@ tags:
 - electricity
 - forecasting
 - hierarchical time series
-link: http://souhaib-bentaieb.com/pdf/2018_prob_hts.pdf
+link: https://souhaib-bentaieb.com/papers/2020_jasa_hts_prob.pdf
 doi: 10.1080/01621459.2020.1736081
 ---
 
