@@ -13,7 +13,9 @@
                   {{ if .Params.filename }} <a href="https://speakerd.s3.amazonaws.com/presentations/{{ .Params.speakerdeck }}/{{ .Params.filename }}" class="badge badge-small badge-red">pdf</a>{{ end }}
                   {{ if .Params.citation }}
                   {{.Params.citation | safeHTML }}
-                  {{ end }} </p>
+                  {{ end }}
+                  {{ if .Params.youtube }}
+                  <a href="https://www.youtube.com/watch?v={{ .Params.youtube }}" class="badge badge-small badge-red">YouTube</a>{{ end }}
     </div>
     <div class="unit-60">
     <article class="pub" itemscope itemtype="http://schema.org/CreativeWork">
@@ -28,35 +30,35 @@
 	</div>
 	{{ end }}
       </div>
-      <div class="pub-content">{{ .Content }}</div>
       {{ if .Params.youtube }}
         <div class="embed video-player" style="padding-bottom: 4ex;">
           <iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/{{ .Params.youtube }}" allowfullscreen frameborder="0">
-          </iframe>
+          </iframe><br>
         </div>
       {{ end }}
       {{ if .Params.speakerdeck }}
         <div id='speakerdeck'>
-        <p><script async class="speakerdeck-embed" data-id="{{ .Params.speakerdeck }}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+        <p><script async class="speakerdeck-embed" data-id="{{ .Params.speakerdeck }}" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script><br>
         </p>
         </div>
       {{ end }}
       {{ if .Params.figshare }}
-      <p><iframe src="https://widgets.figshare.com/articles/{{ .Params.figshare }}/embed?show_title=0" width="600" height="470" frameborder="0"></iframe></p>
+      <p><iframe src="https://widgets.figshare.com/articles/{{ .Params.figshare }}/embed?show_title=0" width="600" height="470" frameborder="0"></iframe><br></p>
       {{ end }}
       {{ if .Params.slideshare }}
       <div class="embed slideshare">
-      <iframe src="https://www.slideshare.net/slideshow/embed_code/key/{{ .Params.slideshare }}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+      <iframe src="https://www.slideshare.net/slideshow/embed_code/key/{{ .Params.slideshare }}" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><br>
       </div>
       {{ end }}
-      {{ if .Params.file }}<a href="/talks/{{.Params.file}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a>{{ end }}
+      {{ if .Params.file }}<a href="/talks/{{.Params.file}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a><br>{{ end }}
       {{ if .Params.file }}
       <iframe src="https://docs.google.com/gview?url=https://robjhyndman.com/talks/{{.Params.file}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
       {{ end }}
-      {{ if .Params.link }}<a href="{{.Params.link}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a>{{ end }}
+      {{ if .Params.link }}<a href="{{.Params.link}}" class="badge badge-small badge-red"><i class="fa fa-file-pdf-o"></i>&nbsp;Download pdf</a><br>{{ end }}
       {{ if .Params.link }}
-      <iframe src="https://docs.google.com/gview?url={{.Params.link}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+      <iframe src="https://docs.google.com/gview?url={{.Params.link}}&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe><br>
       {{ end }}
+       <div class="pub-content">{{ .Content }}</div>
        </article>
 
           <hr>

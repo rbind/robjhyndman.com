@@ -5,4 +5,6 @@
 {{.Params.citation | safeHTML }}.
 {{ end }}
 {{ .Date.Format "(2&nbsp;January&nbsp;2006)" | safeHTML }}
+                  {{ if .Params.youtube }}
+                  <a href="https://www.youtube.com/watch?v={{ .Params.youtube }}" class="badge badge-small badge-red">YouTube</a>{{ end }}
 <a href="{{ .RelPermalink }}" class="badge badge-small">More info...</a>
