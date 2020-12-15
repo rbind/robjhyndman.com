@@ -7,12 +7,12 @@ title: "Research team"
 
 ## Current research fellows
 
-  1. [**Pablo Montero-Manso**](https://acems.org.au/our-people/pablo-montero-manso) [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
   1. **[Puwasala Gamakumara](https://acems.org.au/our-people/puwasala-gamakumara)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
+  1. **[Stuart Lee](https://stuartlee.org/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sa-lee/)
 
 ## Current PhD students
 
-  1. **Lakshan Bernard**. *Analytical tools for future power networks* (PhD, begun 2020).
+  1. **[Lakshan Bernard](https://acems.org.au/our-people/lakshan-bernard)**. *Analytical tools for future power networks* (PhD, begun 2020).
   1. **[Fan Cheng](https://fancheng.me/)**. *Manifold learning on empirical probability distributions* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
   1. **[Sayani Gupta](https://sayani.netlify.com/)**. *Visualization of probability distributions of deconstructed temporal data* (PhD, begun 2018). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **Nuwani Palihawadana**. *Optimal predictor selection for high-dimensional nonparametric forecasting* (PhD, begun 2020).  [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/nuwani-palihawadana)
@@ -23,12 +23,13 @@ title: "Research team"
   1. **[Muhammad Akram](https://www.acu.edu.au/research/our-research-institutes/mary-mackillop-institute-for-health-research/our-people/muhammad-akram)**
   1. **[George Athanasopoulos](https://research.monash.edu/en/persons/george-athanasopoulos)**
   1. **[Baki Billah](https://research.monash.edu/en/persons/md-billah)**
-  1. **Gary Deng**
+  1. **[Gary Deng](https://sg.linkedin.com/in/gary-minfeng-deng)**
   1. **[Bircan Erbas](https://scholars.latrobe.edu.au/display/berbas)**
   1. **[Shu Fan](http://users.monash.edu.au/~shufan/)**
-  1. **Bin Jiang**
+  1. **[Bin Jiang](https://au.linkedin.com/in/bin-jiang-44918b28)**
   1. **[Sevvandi Kandanaarachchi](https://sevvandi.netlify.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
   1. **[Yanfei Kang](http://yanfei.site)**
+  1. **[Pablo Montero-Manso](https://acems.org.au/our-people/pablo-montero-manso)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)**
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
   1. **[Shanika Wickramasuriya](https://unidirectory.auckland.ac.nz/people/profile/s-wickramasuriya)**
