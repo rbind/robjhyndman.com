@@ -1,6 +1,6 @@
 ---
 author: Souhaib Ben Taieb, James W Taylor, Rob&nbsp;J&nbsp;Hyndman
-date: 2020-02-29
+date: 2021-01-01
 slug: hpf-electricity
 title: Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data
 kind: article
