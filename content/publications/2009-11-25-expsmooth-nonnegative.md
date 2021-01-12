@@ -1,5 +1,5 @@
 ---
-author: Md Akram, Rob&nbsp;J&nbsp;Hyndman, J Keith Ord
+author: Md Akram, Rob&nbsp;J&nbsp;Hyndman, J&nbsp;Keith&nbsp;Ord
 Status: Published
 comments: false
 date: 2009-11-25 23:06:04+00:00
@@ -13,6 +13,7 @@ tags:
 - state space models
 - time series
 citation: <em>Australian and New Zealand Journal of Statistics</em> <b>51</b>(4), 415-432
+link: https://www2.gwu.edu/~forcpgm/2008-003.pdf
 doi: 10.1111/j.1467-842X.2009.00555.x
 ---
 

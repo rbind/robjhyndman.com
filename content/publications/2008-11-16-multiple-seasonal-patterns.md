@@ -1,5 +1,5 @@
 ---
-author: Phillip G Gould, Anne B Koehler, J Keith Ord, Ralph D Snyder, Rob&nbsp;J&nbsp;Hyndman, Farshid Vahid-Araghi
+author: Phillip G Gould, Anne B Koehler, J&nbsp;Keith&nbsp;Ord, Ralph D Snyder, Rob&nbsp;J&nbsp;Hyndman, Farshid Vahid-Araghi
 Status: Published
 comments: false
 date: 2008-11-16 05:26:38+00:00
