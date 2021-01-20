@@ -1,7 +1,7 @@
 ---
 author: Anastasios&nbsp;Panagiotelis, Puwasala&nbsp;Gamakumara, George&nbsp;Athanasopoulos, Rob&nbsp;J&nbsp;Hyndman
 comments: false
-date: 2020-06-13
+date: 2021-01-20
 slug: hierarchical-geometry
 title: "Forecast reconciliation: A geometric view with new insights on bias correction"
 kind: article
