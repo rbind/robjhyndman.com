@@ -1,5 +1,5 @@
 ---
-author: Ingrida Steponavičė, Rob&nbsp;J&nbsp;Hyndman, Kate Smith-Miles, Laura Villanova
+author: Ingrida Steponavičė, Rob&nbsp;J&nbsp;Hyndman, Kate&nbsp;Smith&#8209;Miles, Laura&nbsp;Villanova
 Status: Published
 comments: false
 date: 2017-01-18 20:35:24+00:00

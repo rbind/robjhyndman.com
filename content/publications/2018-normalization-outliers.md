@@ -1,5 +1,5 @@
 ---
-author: Sevvandi&nbsp;Kandanaarachchi, Mario&nbsp;A&nbsp;Muñoz, Rob&nbsp;J&nbsp;Hyndman and&nbsp;Kate&nbsp;Smith-Miles
+author: Sevvandi&nbsp;Kandanaarachchi, Mario&nbsp;A&nbsp;Muñoz, Rob&nbsp;J&nbsp;Hyndman and&nbsp;Kate&nbsp;Smith&#8209;Miles
 date: 2020-02-27
 slug: normalization-outliers
 title: "On normalization and algorithm selection for unsupervised outlier detection"

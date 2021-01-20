@@ -1,5 +1,5 @@
 ---
-author: Ingrida Steponavičė, Mojdeh Shirazi-Manesh, Rob J. Hyndman, Kate Smith-Miles, Laura Villanova
+author: Ingrida Steponavičė, Mojdeh&nbsp;Shirazi&#8209;Manesh, Rob&nbsp;J&nbsp;Hyndman, Kate&nbsp;Smith&#8209;Miles, Laura&nbsp;Villanova
 
 Status: Published
 comments: false

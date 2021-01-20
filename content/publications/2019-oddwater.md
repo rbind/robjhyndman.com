@@ -1,5 +1,5 @@
 ---
-author: Priyanga Dilini Talagala, Rob&nbsp;J&nbsp;Hyndman, Catherine Leigh, Kerrie Mengersen and Kate Smith-Miles
+author: Priyanga&nbsp;Dilini&nbsp;Talagala, Rob&nbsp;J&nbsp;Hyndman, Catherine&nbsp;Leigh, Kerrie&nbsp;Mengersen and Kate&nbsp;Smith&#8209;Miles
 date: 2019-09-17
 slug: oddwater
 title: "A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors"

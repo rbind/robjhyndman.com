@@ -1,5 +1,5 @@
 ---
-author: Xiaozhe Wang, Kate A Smith-Miles, Rob&nbsp;J&nbsp;Hyndman
+author: Xiaozhe&nbsp;Wang, Kate&nbsp;A&nbsp;Smith&#8209;Miles, Rob&nbsp;J&nbsp;Hyndman
 Status: Published
 comments: false
 date: 2009-01-16 23:15:43+00:00
