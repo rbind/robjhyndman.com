@@ -9,7 +9,7 @@ build:
 	Rscript -e "blogdown::hugo_build()"
 
 deploy: build
-	rsync -zrvce 'ssh -p 18765' public/ robjhynd@m80.siteground.biz:public_html
+	rsync -zrvce 'ssh -p 18765' public/ u190-dvt18hap6a80@m80.siteground.biz:www/robjhyndman.com/public_html
 
 clean:
 	rm -rf public
