@@ -3,7 +3,7 @@
 title: "Software I've written"
 ---
 
-This page provides links to R packages I have (co)authored. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](https://cran.rstudio.com).
+This page provides links to selected R packages I have (co)authored. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](https://cran.rstudio.com). A few packages are omitted because they are out-dated or because my involvement was minimal.
 
 ## Tidy time series analysis and forecasting packages
 
@@ -14,6 +14,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series [[CRAN](https://cloud.r-project.org/package=feasts)]
 
 * [**fable**](https://fable.tidyverts.org): Forecasting Models for Tidy Time Series [[CRAN](https://cloud.r-project.org/package=fable)]
+
+* [**fasster**](https://fasster.tidyverts.org): Fast Additive Switching of Seasonality, Trend and Exogenous Regressors 
 
 * [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
 
@@ -30,8 +32,6 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**hts**](https://pkg.earo.me/hts/): Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cloud.r-project.org/package=hts)]
 
 * [**MEFM**](https://github.com/robjhyndman/mefm-package): A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
-
-* [**robets**](https://cloud.r-project.org/package=robets): Forecasting time series with robust exponential smoothing. [[CRAN](https://cloud.r-project.org/package=robets)]
 
 * [**seer**](https://thiyangt.github.io/seer/): Feature-based Forecast Model Selection (FFORMS). [[CRAN](https://cloud.r-project.org/package=seer)]
 
@@ -71,6 +71,8 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**oddwater**](https://github.com/pridiltal/oddwater/): A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors
 
+* [**lookout**](https://github.com/sevvandi/lookout): Leave One Out Kernel Density Estimates for Outlier Detection
+
 ## Functional data and demography packages
 
 * [**addb**](https://pkg.robjhyndman.com/addb/):  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
@@ -91,8 +93,6 @@ This page provides links to R packages I have (co)authored. The most recent vers
 
 * [**MonashEBSTemplates**](https://github.com/robjhyndman/MonashEBSTemplates): Rmarkdown templates for use at Monash University, Department of Econometrics & Business Statistics. It contains templates for working papers, letters, exams, reports and memos. Monash beamer templates are in the [binb](https://github.com/eddelbuettel/binb) package.
 
-* [**rmarkdown**](https://cloud.r-project.org/package=rmarkdown): Dynamic documents for R. [[CRAN](https://cloud.r-project.org/package=rmarkdown)]
-
 * [**vitae**](https://pkg.mitchelloharawild.com/vitae/): Provides templates and functions to simplify the production and maintenance of curriculum vitae. [[CRAN](https://cloud.r-project.org/package=vitae)]
 
 ## Other packages
@@ -104,6 +104,10 @@ This page provides links to R packages I have (co)authored. The most recent vers
 * [**emma**](https://cloud.r-project.org/package=emma/): The evolutionary model-based multiresponse approach (EMMA) is a novel methodology to process optimisation and product improvement. The approach is suitable to contexts in which the experimental cost and/or time limit the number of implementable trials. [[CRAN](https://cloud.r-project.org/package=emma)]
 
 * [**hdrcde**](https://pkg.robjhyndman.com/hdrcde/): Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cloud.r-project.org/package=hdrcde)]
+
+* [**ozbabynames**](https://github.com/ropenscilabs/ozbabynames) Australian Popular Baby Names
+
+* [**rcademy**](https://github.com/ropenscilabs/rcademy) Tools to assist with academic promotions
 
 ## CRAN task views
 
