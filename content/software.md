@@ -105,9 +105,9 @@ This page provides links to selected R packages I have (co)authored. The most re
 
 * [**hdrcde**](https://pkg.robjhyndman.com/hdrcde/): Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cloud.r-project.org/package=hdrcde)]
 
-* [**ozbabynames**](https://github.com/ropenscilabs/ozbabynames) Australian Popular Baby Names
+* [**ozbabynames**](https://github.com/ropenscilabs/ozbabynames): Australian Popular Baby Names
 
-* [**rcademy**](https://github.com/ropenscilabs/rcademy) Tools to assist with academic promotions
+* [**rcademy**](https://github.com/ropenscilabs/rcademy): Tools to assist with academic promotions
 
 ## CRAN task views
 
