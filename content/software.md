@@ -71,7 +71,7 @@ This page provides links to selected R packages I have (co)authored. The most re
 
 * [**oddwater**](https://github.com/pridiltal/oddwater/): A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors
 
-* [**lookout**](https://github.com/sevvandi/lookout): Leave One Out Kernel Density Estimates for Outlier Detection
+* [**lookout**](https://sevvandi.github.io/lookout/): Leave One Out Kernel Density Estimates for Outlier Detection
 
 ## Functional data and demography packages
 
