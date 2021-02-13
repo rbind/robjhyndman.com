@@ -15,7 +15,7 @@ This page provides links to selected R packages I have (co)authored. The most re
 
 * [**fable**](https://fable.tidyverts.org): Forecasting Models for Tidy Time Series [[CRAN](https://cloud.r-project.org/package=fable)]
 
-* [**fasster**](https://fasster.tidyverts.org): Fast Additive Switching of Seasonality, Trend and Exogenous Regressors 
+* [**fasster**](https://fasster.tidyverts.org): Fast Additive Switching of Seasonality, Trend and Exogenous Regressors
 
 * [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
 
@@ -71,7 +71,7 @@ This page provides links to selected R packages I have (co)authored. The most re
 
 * [**oddwater**](https://github.com/pridiltal/oddwater/): A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors
 
-* [**lookout**](https://sevvandi.github.io/lookout/): Leave One Out Kernel Density Estimates for Outlier Detection
+* [**lookout**](https://sevvandi.github.io/lookout/): Leave One Out Kernel Density Estimates for Outlier Detection [[CRAN]](https://cloud.r-project.org/package=lookout)
 
 ## Functional data and demography packages
 
