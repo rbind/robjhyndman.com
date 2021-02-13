@@ -1,9 +1,10 @@
 ---
 author: Han Li, Rob&nbsp;J&nbsp;Hyndman
-date: 2020-04-02
+date: 2021-02-13
 slug: us-longevity
 title: "Assessing Longevity Inequality in the US: What Can Be Said About the Future?"
-kind: unpublished
+kind: article
+citation: <em>Insurance, Mathematics and Economics</em>, to appear
 tags:
 - hierarchical forecasting
 - forecasting
