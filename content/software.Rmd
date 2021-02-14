@@ -16,7 +16,6 @@ output: md_document
 library(tidyverse)
 source(here::here("content/software_functions.R"))
 
-
 # Github packages I've coauthored
 github <- c(
   "AU-BURGr/ozdata",
@@ -202,4 +201,3 @@ for(i in seq_along(sections)) {
     package_table()
 }
 ```
-

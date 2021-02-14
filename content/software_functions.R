@@ -132,7 +132,7 @@ get_rjh_packages <- function(github, hex, references, extended_titles) {
   recent_run <- fs::file_exists(here::here("static/files/packages.rds"))
   if(recent_run) {
     info <- fs::file_info(here::here("static/files/packages.rds"))
-    recent_run <- (Sys.Date() == as.Date(info$modification_time))
+    recent_run <- (Sys.Date() == anytime::anydate(info$modification_time))
   }
   if(recent_run)
     return(readRDS(here::here("static/files/packages.rds")))
@@ -165,7 +165,7 @@ get_rjh_packages <- function(github, hex, references, extended_titles) {
     cranlogs::cran_downloads(from = lubridate::ymd(Sys.Date() - 125), to = Sys.Date()) %>%
     as_tibble() %>%
     mutate(month = tsibble::yearmonth(date)) %>%
-    group_by(month,package) %>%
+    group_by(month, package) %>%
     summarise(count = sum(count), .groups = "keep") %>%
     filter(
       month != tsibble::yearmonth(Sys.Date()) &
