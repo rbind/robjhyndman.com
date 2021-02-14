@@ -3,14 +3,14 @@ title: "Software I've written"
 output: md_document
 ---
 
-# CRAN task views 
+# CRAN task views
 
 * [**Time Series**](https://cran.r-project.org/view=TimeSeries)
 * [**Anomaly Detection**](https://github.com/pridiltal/ctv-AnomalyDetection)
 
 &nbsp;<br>
 
-# Selected R packages I've coauthored 
+# Selected R packages I've coauthored
 
 ```{r functions, include=FALSE}
 library(tidyverse)
@@ -176,30 +176,30 @@ packages <- packages %>%
   ) %>%
   add_reference("bfast", "bfast1", "Verbesselt et al (2010a)") %>%
   add_reference("bfast", "bfast2", "Verbesselt et al (2010b)") %>%
+  add_reference("demography", "funcfor", "Hyndman & Ullah (2007)") %>%
+  add_reference("demography", "coherentfdm", "Hyndman, Booth & Yasmeen (2013)") %>%
+  add_reference("eechidna", "elections", "Forbes, Cook & Hyndman (2020)") %>%
+  add_reference("forecast", "automatic-forecasting", "Hyndman & Khandakar (2008)") %>%
   add_reference("gratis","gratis", "Kang, Hyndman & Li (2020)") %>%
   add_reference("gravitas", "gravitas", "Gupta, Hyndman, Cook & Unwin (2020)") %>%
   add_reference("hdrcde","computing-and-graphing-highest-density-regions", "Hyndman (1996)") %>%
   add_reference("hdrcde","estimating-and-visualizing-conditional-densities","Hyndman, Bashtannyk & Grunwald (1996)") %>%
+  add_reference("hts", "hierarchical", "Hyndman, Ahmed, Athanasopoulos & Shang (2011)") %>%
+  add_reference("hts", "mint", "Wickramasuriya, Athanasopoulos & Hyndman (2019)") %>%
+  add_reference("lookout", "lookout", "Kandanaarachchi and Hyndman (2021)") %>%
   add_reference("MEFM", "peak-electricity-demand","Hyndman & Fan (2010)") %>%
+  add_reference("oddstream", "oddstream", "Talagala, Hyndman, Smith-Miles, Kandanaarachichi & Muñoz (2020)") %>%
+  add_reference("oddwater", "oddwater", "Talagala, Hyndman, Leigh, Mengersen & Smith-Miles (2019)") %>%
   add_reference("rainbow", "rainbow-fda", "Hyndman & Shang (2010)") %>%
   add_reference("seer", "fforms", "Talagala, Hyndman & Athanasopoulos (2018)") %>%
   add_reference("smoothAPC", "mortality-smoothing", "Dokumentov, Hyndman & Tickle (2018)") %>%
   add_reference("stR", "str", "Dokumentov & Hyndman (2020)") %>%
+  add_reference("stray", "stray", "Talagala, Hyndman & Smith-Miles (2021)") %>%
   add_reference("sugrrants", "calendar-vis", "Wang, Cook & Hyndman (2020)") %>%
   add_reference("thief", "temporal-hierarchies", "Athanasopoulos et al (2017)") %>%
-  add_reference("tsibble", "tsibble", "Wang, Cook & Hyndman (2020)") %>%
-  add_reference("forecast", "automatic-forecasting", "Hyndman & Khandakar (2008)") %>%
   add_reference("tsfeatures", "icdm2015", "Hyndman, Wang & Laptev (2015)") %>%
   add_reference("tsfeatures", "ts-feature-space", "Kang, Hyndman & Smith-Miles (2017)") %>%
-  add_reference("hts", "hierarchical", "Hyndman, Ahmed, Athanasopoulos & Shang (2011)") %>%
-  add_reference("hts", "mint", "Wickramasuriya, Athanasopoulos & Hyndman (2019)") %>%
-  add_reference("lookout", "lookout", "Kandanaarachchi and Hyndman (2021)") %>%
-  add_reference("stray", "stray", "Talagala, Hyndman & Smith-Miles (2021)") %>%
-  add_reference("oddstream", "oddstream", "Talagala, Hyndman, Smith-Miles, Kandanaarachichi & Muñoz (2020)") %>%
-  add_reference("oddwater", "oddwater", "Talagala, Hyndman, Leigh, Mengersen & Smith-Miles (2019)") %>%
-  add_reference("demography", "funcfor", "Hyndman & Ullah (2007)") %>%
-  add_reference("demography", "coherentfdm", "Hyndman, Booth & Yasmeen (2013)") %>%
-  add_reference("eechidna", "elections", "Forbes, Cook & Hyndman (2020)")
+  add_reference("tsibble", "tsibble", "Wang, Cook & Hyndman (2020)")
 
 # Improved titles for books and others
 extended_titles <- tribble(
