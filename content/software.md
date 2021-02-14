@@ -1,115 +1,706 @@
+# CRAN task views
 
----
-title: "Software I've written"
----
+-   [**Time Series**](https://cran.r-project.org/view=TimeSeries)
+-   [**Anomaly
+    Detection**](https://github.com/pridiltal/ctv-AnomalyDetection)
 
-This page provides links to selected R packages I have (co)authored. The most recent versions of most packages are [on github](https://github.com/robjhyndman/). Most packages are also [on CRAN](https://cran.rstudio.com). A few packages are omitted because they are out-dated or because my involvement was minimal.
+ <br>
+
+# Selected R packages I’ve coauthored
 
 ## Tidy time series analysis and forecasting packages
 
-* [**tsibble**](https://tsibble.tidyverts.org): Tidy Temporal Data Frames and Tools [[CRAN](https://cloud.r-project.org/package=tsibble)]
-
-* [**tsibbledata**](https://github.com/tidyverts/tsibbledata): Example datasets for tsibble [[CRAN](https://cloud.r-project.org/package=tsibbledata)]
-
-* [**feasts**](https://github.com/tidyverts/feasts): Feature Extraction And Statistics for Time Series [[CRAN](https://cloud.r-project.org/package=feasts)]
-
-* [**fable**](https://fable.tidyverts.org): Forecasting Models for Tidy Time Series [[CRAN](https://cloud.r-project.org/package=fable)]
-
-* [**fasster**](https://fasster.tidyverts.org): Fast Additive Switching of Seasonality, Trend and Exogenous Regressors
-
-* [**sugrrants**](https://pkg.earo.me/sugrrants/): Supporting Graphs for Analysing Time Series. Tools for plotting temporal data using the tidyverse and grammar of graphics framework. [[CRAN](https://cloud.r-project.org/package=sugrrants)]
-
-* [**gravitas**](https://sayani07.github.io/gravitas/): Explore Probability Distributions for Bivariate Temporal Granularities. [[CRAN](https://cloud.r-project.org/package=gravitas)]
+<table>
+<tr>
+<td>
+<a href=' https://tsibble.tidyverts.org '><img src=' https://tsibble.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Tidy Temporal Data Frames and Tools: as described in
+<a href='/publications/tsibble'>Wang, Cook & Hyndman (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=tsibble >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 13298
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://tsibbledata.tidyverts.org/ '><img src=' https://tsibbledata.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Diverse Datasets for ‘tsibble’ .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=tsibbledata >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1984
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://feasts.tidyverts.org/ '><img src=' https://feasts.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Feature Extraction and Statistics for Time Series .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=feasts >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 7222
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://fable.tidyverts.org '><img src=' https://fable.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Forecasting Models for Tidy Time Series .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fable >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 8172
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/mitchelloharawild/fasster '><img src=' /img/fasstersticker.resized.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Fast Additive Switching of Seasonality, Trend and Exogenous Regressors .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.earo.me/sugrrants/ '><img src=' /img/sugrrantssticker.resized.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Supporting Graphs for Analysing Time Series: as described in
+<a href='/publications/calendar-vis'>Wang, Cook & Hyndman (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=sugrrants >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1075
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/Sayani07/gravitas/ '><img src=' https://sayani07.github.io/gravitas/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Explore Probability Distributions for Bivariate Temporal Granularities:
+as described in <a href='/publications/gravitas'>Gupta, Hyndman, Cook &
+Unwin (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=gravitas >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 565
+</td>
+</tr>
+</table>
 
 ## Other time series analysis and forecasting packages
 
-* [**bfast**](https://github.com/verbe039/bfast): Automatic identification of breaks for additive season and trend, designed for use with remote sensing data. [[CRAN](https://cloud.r-project.org/package=bfast)]
-
-* [**forecast**](https://pkg.robjhyndman.com/forecast/): Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. [[CRAN](https://cloud.r-project.org/package=forecast)]
-
-* [**gratis**](https://github.com/ykang/gratis): Efficient generation of time series with diverse and controllable characteristics [[CRAN](https://cloud.r-project.org/package=gratis)]
-
-* [**hts**](https://pkg.earo.me/hts/): Methods for visualizing, analysing and forecasting hierarchical time series. [[CRAN](https://cloud.r-project.org/package=hts)]
-
-* [**MEFM**](https://github.com/robjhyndman/mefm-package): A set of tools for implementing the Monash Electricity Forecasting Model based on the paper by [Hyndman and Fan (2010)](https://robjhyndman.com/publications/peak-electricity-demand/).
-
-* [**seer**](https://thiyangt.github.io/seer/): Feature-based Forecast Model Selection (FFORMS). [[CRAN](https://cloud.r-project.org/package=seer)]
-
-* [**stR**](https://cloud.r-project.org/package=stR): STR time series decomposition. The methods are described in [Dokumentov & Hyndman (2016) STR: A Seasonal-Trend Decomposition Procedure Based on Regression](https://robjhyndman.com/publications/str/). [[CRAN](https://cloud.r-project.org/package=stR)]
-
-* [**thief**](https://pkg.robjhyndman.com/thief/): Temporal Hierarchical Forecasting. The methods are described in [Forecasting with temporal hierarchies](https://robjhyndman.com/publications/temporal-hierarchies/), co-authored with George Athanasopoulos, Nikolaos Kourentzes and Fotios Petropoulos. [[CRAN](https://cloud.r-project.org/package=thief)]
-
-* [**tsfeatures**](https://pkg.robjhyndman.com/tsfeatures): Time Series Feature Extraction. [[CRAN](https://cloud.r-project.org/package=tsfeatures)]
+<table>
+<tr>
+<td>
+<a href=' http://bfast.R-Forge.R-project.org/ '><img src=' /img/bfast.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Breaks For Additive Season and Trend (BFAST): as described in
+<a href='/publications/bfast1'>Verbesselt et al (2010a)</a> and
+<a href='/publications/bfast2'>Verbesselt et al (2010b)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=bfast >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1199
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.robjhyndman.com/forecast/ '><img src=' https://pkg.robjhyndman.com/forecast/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Forecasting Functions for Time Series and Linear Models: as described in
+<a href='/publications/automatic-forecasting'>Hyndman & Khandakar
+(2008)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=forecast >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 308715
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/ykang/gratis '><img src=' https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Generating Time Series with Diverse and Controllable Characteristics: as
+described in <a href='/publications/gratis'>Kang, Hyndman & Li
+(2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=gratis >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 478
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://pkg.earo.me/hts '><img src=' /img/htssticker.resized.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Hierarchical and Grouped Time Series: as described in
+<a href='/publications/hierarchical'>Hyndman, Ahmed, Athanasopoulos &
+Shang (2011)</a> and <a href='/publications/mint'>Wickramasuriya,
+Athanasopoulos & Hyndman (2019)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=hts >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 12600
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/MEFM-package '><img src=' /img/MEFM.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Monash Electricity Forecasting Model: as described in
+<a href='/publications/peak-electricity-demand'>Hyndman & Fan (2010)</a>
+.
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/thiyangt/seer '><img src=' https://github.com/thiyangt/seer/raw/master/logo/seer.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Feature-Based Forecast Model Selection: as described in
+<a href='/publications/fforms'>Talagala, Hyndman & Athanasopoulos
+(2018)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=seer >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 460
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://bitbucket.org/alexanderdokumentov/strpackage '><img src=' /img/stR.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+STR Decomposition: as described in
+<a href='/publications/str'>Dokumentov & Hyndman (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=stR >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 786
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://pkg.robjhyndman.com/thief '><img src=' https://pkg.robjhyndman.com/thief/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Temporal Hierarchical Forecasting: as described in
+<a href='/publications/temporal-hierarchies'>Athanasopoulos et al
+(2017)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=thief >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 8103
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.robjhyndman.com/tsfeatures/ '><img src=' /img/tsfeatures.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Time Series Feature Extraction: as described in
+<a href='/publications/icdm2015'>Hyndman, Wang & Laptev (2015)</a> and
+<a href='/publications/ts-feature-space'>Kang, Hyndman & Smith-Miles
+(2017)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=tsfeatures >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 20002
+</td>
+</tr>
+</table>
 
 ## Time series data packages
 
-* [**compenginets**](https://pkg.robjhyndman.com/compenginets/): Time series data from [www.comp-engine.org/](http://www.comp-engine.org/)
-
-* [**expsmooth**](https://pkg.robjhyndman.com/expsmooth/): Data sets from [Hyndman, Koehler, Ord and Snyder (2008) *Forecasting with exponential smoothing: the state space approach*, Springer: Berlin.](http://www.exponentialsmoothing.net/) [[CRAN](https://cloud.r-project.org/package=expsmooth)]
-
-* [**fma**](https://pkg.robjhyndman.com/fma/): Data sets from [Makridakis, Wheelwright and Hyndman (1998) *Forecasting: methods and applications*, Wiley &amp; Sons: New York.](https://robjhyndman.com/forecasting/) [[CRAN](https://cloud.r-project.org/package=fma)]
-
-* [**fpp**](https://cloud.r-project.org/package=fpp): Data sets from Hyndman & Athanasopoulos (2014) *Forecasting: principles and practice*, OTexts: Melbourne. [[CRAN](https://cloud.r-project.org/package=fpp)]
-
-* [**fpp2**](https://pkg.robjhyndman.com/fpp2-package): Data sets from [Hyndman & Athanasopoulos (2017) *Forecasting: principles and practice*, 2nd edition, OTexts: Melbourne](https://OTexts.com/fpp2). [[CRAN](https://cloud.r-project.org/package=fpp2)]
-
-* [**fpp3**](https://pkg.robjhyndman.com/fpp3-package): Data sets from [Hyndman & Athanasopoulos (2020) *Forecasting: principles and practice*, 3rd edition, OTexts: Melbourne](https://OTexts.com/fpp3). [[CRAN](https://cloud.r-project.org/package=fpp3)]
-
-* [**Mcomp**](https://pkg.robjhyndman.com/Mcomp): The 1001 time series from the M-competition (Makridakis et al. 1982) and the 3003 time series from the IJF-M3 competition (Makridakis and Hibon, 2000). [[CRAN](https://cloud.r-project.org/package=Mcomp)]
-
-* [**ozdata**](https://github.com/AU-BURGr/ozdata): Tools to import and explore Australian data sets. Data imported from [data.gov.au](https://data.gov.au) and [ausmacrodata.org](http://ausmacrodata.org).
-
-* [**tscompdata**](https://github.com/robjhyndman/tscompdata): Time Series Competition Data
-
-* [**tsdl**](https://pkg.yangzhuoranyang.com/tsdl/): Time Series Data Library
+<table>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/compenginets '><img src=' /img/compenginets.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Time series data from
+<a href='https://www.comp-engine.org/'>comp-engine.org</a> .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/expsmooth '><img src=' /img/expsmooth.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data sets from <a href='http://www.exponentialsmoothing.net/'>Hyndman,
+Koehler, Ord & Snyder (2008), <i>Forecasting with exponential smoothing:
+the state space approach</i>, Springer</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=expsmooth >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 10066
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.robjhyndman.com/fma/ '><img src=' /img/fma.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data sets from
+<a href='https://robjhyndman.com/forecasting/'>Makridakis, Wheelwright &
+Hyndman (1998), <i>Forecasting: methods and applications</i>, Wiley</a>
+.
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fma >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 10327
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://otexts.com/fpp/ '><img src=' /img/fpp.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data sets from Hyndman & Athanasopoulos (2014) <i>Forecasting:
+principles and practice</i>, OTexts .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fpp >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 3928
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.robjhyndman.com/fpp2-package/ '><img src=' /img/fpp2.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data sets from <a href='https://OTexts.com/fpp2'>Hyndman &
+Athanasopoulos (2018) <i>Forecasting: principles and practice</i>, 2nd
+edition, OTexts</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fpp2 >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 10540
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/fpp3-package '><img src=' /img/fpp3.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data sets from <a href='https://OTexts.com/fpp3'>Hyndman &
+Athanasopoulos (2021) <i>Forecasting: principles and practice</i>, 3rd
+edition, OTexts</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fpp3 >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1909
+</td>
+</tr>
+<tr>
+<td>
+<a href=' http://pkg.robjhyndman.com/Mcomp/ '><img src=' /img/Mcomp.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Data from the M-Competitions .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=Mcomp >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 3199
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/AU-BURGr/ozdata '><img src=' /img/ozdata.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Import and explore freely available Australian data sets .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/tscompdata '><img src=' /img/tscompdata.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Time series data from various forecasting competitions .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://finyang.github.io/tsdl/ '><img src=' /img/tsdl.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Time Series Data Library .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
 
 ## Anomaly detection packages
 
-* [**stray**](https://github.com/pridiltal/stray): Anomaly Detection in High Dimensional Data Space [[CRAN]](https://cloud.r-project.org/package=stray)
-
-* [**oddstream**](https://github.com/pridiltal/oddstream/): Outlier Detection in Data Streams [[CRAN]](https://cloud.r-project.org/package=oddstream)
-
-* [**oddwater**](https://github.com/pridiltal/oddwater/): A feature-based procedure for detecting technical outliers in water-quality data from in situ sensors
-
-* [**lookout**](https://sevvandi.github.io/lookout/): Leave One Out Kernel Density Estimates for Outlier Detection [[CRAN]](https://cloud.r-project.org/package=lookout)
+<table>
+<tr>
+<td>
+<a href=' https://sevvandi.github.io/lookout/ '><img src=' https://sevvandi.github.io/lookout/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Leave One Out Kernel Density Estimates for Outlier Detection: as
+described in <a href='/publications/lookout'>Kandanaarachchi and Hyndman
+(2021)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=lookout >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 0
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/pridiltal/stray '><img src=' https://github.com/pridiltal/stray/raw/master/man/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Anomaly Detection in High Dimensional and Temporal Data: as described in
+<a href='/publications/stray'>Talagala, Hyndman & Smith-Miles (2021)</a>
+.
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=stray >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 346
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/pridiltal/oddstream '><img src=' https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Outlier Detection in Data Streams: as described in
+<a href='/publications/oddstream'>Talagala, Hyndman, Smith-Miles,
+Kandanaarachichi & Muñoz (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=oddstream >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 370
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/pridiltal/oddwater '><img src=' https://github.com/pridiltal/oddwater/raw/master/man/fig/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Outlier Detection in Data from Water-Quality Sensors: as described in
+<a href='/publications/oddwater'>Talagala, Hyndman, Leigh, Mengersen &
+Smith-Miles (2019)</a> .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
 
 ## Functional data and demography packages
 
-* [**addb**](https://pkg.robjhyndman.com/addb/):  Nine data sets, taken from the Australian Demographic Data Bank version 3.2b, courtesy of [Len Smith](mailto:leonard.smith@anu.edu.au).
-
-* [**demography**](https://github.com/robjhyndman/demography): Provides a large number of functions for handling demographic statistics, modelling and forecasting. In particular, it implements lifetable calculations; Lee-Carter modelling and variants; functional data analysis of mortality rates, fertility rates, net migration numbers; and stochastic population forecasting. [[CRAN](https://cloud.r-project.org/package=demography)]
-
-* [**fds**](https://cloud.r-project.org/package=fds): Functional data sets useful for testing new methods. [[CRAN](https://cloud.r-project.org/package=fds)]
-
-* [**ftsa**](https://cloud.r-project.org/package=ftsa): Methods and tools for modelling and forecasting functional time series. [[CRAN](https://cloud.r-project.org/package=ftsa)]
-
-* [**rainbow**](https://cloud.r-project.org/package=rainbow): Plots for functional data: rainbow plot, functional bagplot, functional HDR boxplot. [[CRAN](https://cloud.r-project.org/package=rainbow)]
-
-* [**smoothAPC**](https://cloud.r-project.org/package=smoothAPC): Smoothing demographic data with period and cohort effects. The method uses bivariate thin plate splines, bivariate lasso-type regularization, and allows for both period and cohort effects. Thus the mortality rates are modelled as the sum of four components: a smooth bivariate function of age and time, smooth one-dimensional cohort effects, smooth one-dimensional period effects and random errors. The methods are described in [Dokumentov & Hyndman (2014) Bivariate data with ridges: two-dimensional smoothing of mortality rates](https://robjhyndman.com/publications/mortality-smoothing/). [[CRAN](https://cloud.r-project.org/package=smoothAPC)]
+<table>
+<tr>
+<td>
+<a href=' http://pkg.robjhyndman.com/addb '><img src=' /img/addb.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Australian Demographic Data Bank .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/demography '><img src=' /img/demography.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Forecasting Mortality, Fertility, Migration and Population Data: as
+described in <a href='/publications/funcfor'>Hyndman & Ullah (2007)</a>
+and <a href='/publications/coherentfdm'>Hyndman, Booth & Yasmeen
+(2013)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=demography >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1530
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://cloud.r-project.org/package=fds '><img src=' /img/fds.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Functional Data Sets .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=fds >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 15595
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://cloud.r-project.org/package=ftsa '><img src=' /img/ftsa.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Functional Time Series Analysis .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=ftsa >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 2275
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://cloud.r-project.org/package=rainbow '><img src=' /img/rainbow.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Bagplots, Boxplots and Rainbow Plots for Functional Data: as described
+in <a href='/publications/rainbow-fda'>Hyndman & Shang (2010)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=rainbow >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 15718
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://bitbucket.org/alexanderdokumentov/smoothapcpackage '><img src=' /img/smoothAPC.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Smoothing of Two-Dimensional Demographic Data, Optionally Taking into
+Account Period and Cohort Effects: as described in
+<a href='/publications/mortality-smoothing'>Dokumentov, Hyndman & Tickle
+(2018)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=smoothAPC >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 509
+</td>
+</tr>
+</table>
 
 ## Rmarkdown packages
 
-* [**binb**](https://github.com/eddelbuettel/binb): "binb" is not Beamer. Rmarkdown template for Monash slides.
-
-* [**MonashEBSTemplates**](https://github.com/robjhyndman/MonashEBSTemplates): Rmarkdown templates for use at Monash University, Department of Econometrics & Business Statistics. It contains templates for working papers, letters, exams, reports and memos. Monash beamer templates are in the [binb](https://github.com/eddelbuettel/binb) package.
-
-* [**vitae**](https://pkg.mitchelloharawild.com/vitae/): Provides templates and functions to simplify the production and maintenance of curriculum vitae. [[CRAN](https://cloud.r-project.org/package=vitae)]
+<table>
+<tr>
+<td>
+<a href=' https://github.com/eddelbuettel/binb '><img src=' /img/binb.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+‘binb’ is not ‘Beamer’ .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=binb >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 686
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/robjhyndman/MonashEBSTemplates '><img src=' /img/MonashEBSTemplates.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Monash EBS Rmarkdown Templates .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.mitchelloharawild.com/vitae/ '><img src=' https://pkg.mitchelloharawild.com/vitae/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Curriculum Vitae for R Markdown .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=vitae >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 1215
+</td>
+</tr>
+</table>
 
 ## Other packages
 
-* [**cricketdata**](https://github.com/ropenscilabs/cricketdata): International Cricket Data.
-
-* [**eechidna**](https://github.com/jforbes14/eechidna): Exploring Election and Census Highly Informative Data Nationally for Australia. Data from the 2013 and 2016 Australian Federal Elections and the 2011 and 2016 Australian Censuses for each House of Representatives electorate, along with some tools for visualizing and analysing the data. [[CRAN](https://cloud.r-project.org/package=eechidna)]
-
-* [**emma**](https://cloud.r-project.org/package=emma/): The evolutionary model-based multiresponse approach (EMMA) is a novel methodology to process optimisation and product improvement. The approach is suitable to contexts in which the experimental cost and/or time limit the number of implementable trials. [[CRAN](https://cloud.r-project.org/package=emma)]
-
-* [**hdrcde**](https://pkg.robjhyndman.com/hdrcde/): Tools for the computation of highest density regions in one and two dimensions, kernel estimation of univariate density functions conditional on one covariate, and multimodal regression. [[CRAN](https://cloud.r-project.org/package=hdrcde)]
-
-* [**ozbabynames**](https://github.com/ropenscilabs/ozbabynames): Australian Popular Baby Names
-
-* [**rcademy**](https://github.com/ropenscilabs/rcademy): Tools to assist with academic promotions
-
-## CRAN task views
-
-* [**Time Series**](https://cran.r-project.org/view=TimeSeries)
-* [**Anomaly Detection**](https://github.com/pridiltal/ctv-AnomalyDetection)
+<table>
+<tr>
+<td>
+<a href=' https://github.com/ropenscilabs/cricketdata '><img src=' /img/cricketdata.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+International Cricket Data .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/ropenscilabs/eechidna '><img src=' /img/eechidna.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Exploring Election and Census Highly Informative Data Nationally for
+Australia: as described in <a href='/publications/elections'>Forbes,
+Cook & Hyndman (2020)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=eechidna >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 534
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://cloud.r-project.org/package=emma '><img src=' /img/emma.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Evolutionary model-based multiresponse approach .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=emma >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 609
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://pkg.robjhyndman.com/hdrcde/ '><img src=' /img/hdrcde.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Highest Density Regions and Conditional Density Estimation: as described
+in
+<a href='/publications/computing-and-graphing-highest-density-regions'>Hyndman
+(1996)</a> and
+<a href='/publications/estimating-and-visualizing-conditional-densities'>Hyndman,
+Bashtannyk & Grunwald (1996)</a> .
+</td>
+<td>
+<a href= https://cloud.r-project.org/package=hdrcde >CRAN</a>
+</td>
+<td>
+Monthly downloads:<br> 17015
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/ropenscilabs/ozbabynames '><img src=' /img/ozbabynames.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Australian Popular Baby Names .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href=' https://github.com/ropenscilabs/Rcademy '><img src=' /img/rcademy.png ' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="66%">
+Tools to assist with academic promotions .
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>

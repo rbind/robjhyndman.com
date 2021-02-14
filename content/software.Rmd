@@ -1,0 +1,326 @@
+---
+title: "Software I've written"
+output: md_document
+---
+
+# CRAN task views 
+
+* [**Time Series**](https://cran.r-project.org/view=TimeSeries)
+* [**Anomaly Detection**](https://github.com/pridiltal/ctv-AnomalyDetection)
+
+&nbsp;<br>
+
+# Selected R packages I've coauthored 
+
+```{r functions, include=FALSE}
+library(tidyverse)
+source(here::here("content/software_functions.R"))
+
+# List of github repos containing my packages
+packages <- tibble(
+    github = c(
+      "AU-BURGr/ozdata",
+      "earowang/hts",
+      "earowang/sugrrants",
+      "eddelbuettel/binb",
+      "FinYang/tsdl",
+      "jforbes14/eechidna",
+      "mitchelloharawild/fasster",
+      "mitchelloharawild/vitae",
+      "pridiltal/oddstream",
+      "pridiltal/oddwater",
+      "pridiltal/stray",
+      "robjhyndman/addb",
+      "robjhyndman/anomalous",
+      "robjhyndman/compenginets",
+      "robjhyndman/demography",
+      "robjhyndman/expsmooth",
+      "robjhyndman/fma",
+      "robjhyndman/forecast",
+      "robjhyndman/fpp",
+      "robjhyndman/fpp2-package",
+      "robjhyndman/fpp3-package",
+      "robjhyndman/hdrcde",
+      "robjhyndman/Mcomp",
+      "robjhyndman/MEFM-package",
+      "robjhyndman/MonashEBSTemplates",
+      "robjhyndman/thief",
+      "robjhyndman/tscompdata",
+      "robjhyndman/tsfeatures",
+      "ropenscilabs/cricketdata",
+      "ropenscilabs/ozbabynames",
+      "ropenscilabs/rcademy",
+      "sayani07/gravitas",
+      "sevvandi/lookout",
+      "thiyangt/seer",
+      "tidyverts/fable",
+      "tidyverts/feasts",
+      "tidyverts/tsibble",
+      "tidyverts/tsibbledata",
+      "verbe039/bfast",
+      "ykang/gratis"
+    )
+  ) %>%
+  mutate(
+    package = stringr::str_extract(github,"/[a-zA-Z0-9\\-]*"),
+    package = stringr::str_remove(package,"/"),
+    package = stringr::str_extract(package,"[a-zA-Z0-9]*")
+  ) %>%
+  # Add in CRAN packages
+  full_join(rjh_cran_packages(), by="package") %>%
+  replace_na(list(on_cran = FALSE)) %>%
+  # Add location of hex stickers
+  left_join(
+    hex_stickers <- tribble(
+      ~package, ~hex,
+      "fable", "https://fable.tidyverts.org/reference/figures/logo.png",
+      "fasster", "/img/fasstersticker.resized.png",
+      "feasts", "https://feasts.tidyverts.org/reference/figures/logo.png",
+      "forecast", "https://pkg.robjhyndman.com/forecast/reference/figures/logo.png",
+      "gratis", "https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG",
+      "gravitas", "https://sayani07.github.io/gravitas/reference/figures/logo.png",
+      "hts", "/img/htssticker.resized.png",
+      "lookout","https://sevvandi.github.io/lookout/reference/figures/logo.png",
+      "oddstream","https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png",
+      "oddwater","https://github.com/pridiltal/oddwater/raw/master/man/fig/logo.png",
+      "seer","https://github.com/thiyangt/seer/raw/master/logo/seer.png",
+      "stray","https://github.com/pridiltal/stray/raw/master/man/figures/logo.png",
+      "sugrrants", "/img/sugrrantssticker.resized.png",
+      "thief","https://pkg.robjhyndman.com/thief/reference/figures/logo.png",
+      "tsibble", "https://tsibble.tidyverts.org/reference/figures/logo.png",
+      "tsibbledata", "https://tsibbledata.tidyverts.org/reference/figures/logo.png",
+      "vitae","https://pkg.mitchelloharawild.com/vitae/reference/figures/logo.png"
+    ),
+    by = "package"
+  ) %>%
+  # Remove a few packages where my involvement has been minimal or which are outdated
+  filter(!(package %in% c(
+    "anomalous",
+    "bayesforecast",
+    "DescTools",
+    "fracdiff",
+    "nortsTest",
+    "rmarkdown",
+    "robets"))
+  )
+
+# Create generic hex stickers where they don't exist
+packages %>%
+  filter(is.na(hex)) %>%
+  pull(package) %>%
+  generic_stickers()
+
+packages <- packages %>%
+  mutate(
+    hex = if_else(!is.na(hex), hex,
+                  paste0("/img/",package,".png"))
+  )
+
+# Compute average monthly download counts using last 3 complete months
+downloads <- packages %>%
+  filter(on_cran) %>%
+  pull(package) %>%
+  cranlogs::cran_downloads(
+      from = lubridate::ymd(Sys.Date() - 125),
+      to = Sys.Date()
+  ) %>%
+  as_tibble() %>%
+  mutate(month = tsibble::yearmonth(date)) %>%
+  group_by(month,package) %>%
+  summarise(count = sum(count), .groups = "keep") %>%
+  filter(month != tsibble::yearmonth(Sys.Date())) %>%
+  filter(month >= tsibble::yearmonth(Sys.Date())-3) %>%
+  group_by(package) %>%
+  summarise(count = mean(count))
+
+# CRAN package meta data
+cran_meta <- packages %>%
+  filter(on_cran) %>%
+  get_meta(cran=TRUE)
+
+# Github package meta data (need to install packages)
+packages %>%
+  filter(!on_cran) %>%
+  pull(github) %>%
+  remotes::install_github()
+
+github_meta <- packages %>%
+  filter(!on_cran) %>%
+  get_meta(cran=FALSE)
+
+# Add downloads and titles to packages
+packages <- packages %>%
+  left_join(downloads, by="package") %>%
+  left_join(
+    bind_rows(cran_meta, github_meta),
+    by="package"
+  )
+
+# Add URLs
+packages <- packages %>%
+  mutate(
+    github_url = if_else(is.na(github), NA_character_,
+                   paste0("https://github.com/",github)),
+    cran_url = if_else(!on_cran, NA_character_,
+                   paste0("https://cloud.r-project.org/package=",package)),
+    url = if_else(!is.na(url), url,
+            if_else(!is.na(github), github_url, cran_url))
+  )
+# Add some links to titles
+packages <- packages %>%
+  mutate(
+    publication = NA_character_,
+    citation = NA_character_,
+    publication2 = NA_character_,
+    citation2 = NA_character_,
+  ) %>%
+  add_reference("bfast", "bfast1", "Verbesselt et al (2010a)") %>%
+  add_reference("bfast", "bfast2", "Verbesselt et al (2010b)") %>%
+  add_reference("gratis","gratis", "Kang, Hyndman & Li (2020)") %>%
+  add_reference("gravitas", "gravitas", "Gupta, Hyndman, Cook & Unwin (2020)") %>%
+  add_reference("hdrcde","computing-and-graphing-highest-density-regions", "Hyndman (1996)") %>%
+  add_reference("hdrcde","estimating-and-visualizing-conditional-densities","Hyndman, Bashtannyk & Grunwald (1996)") %>%
+  add_reference("MEFM", "peak-electricity-demand","Hyndman & Fan (2010)") %>%
+  add_reference("rainbow", "rainbow-fda", "Hyndman & Shang (2010)") %>%
+  add_reference("seer", "fforms", "Talagala, Hyndman & Athanasopoulos (2018)") %>%
+  add_reference("smoothAPC", "mortality-smoothing", "Dokumentov, Hyndman & Tickle (2018)") %>%
+  add_reference("stR", "str", "Dokumentov & Hyndman (2020)") %>%
+  add_reference("sugrrants", "calendar-vis", "Wang, Cook & Hyndman (2020)") %>%
+  add_reference("thief", "temporal-hierarchies", "Athanasopoulos et al (2017)") %>%
+  add_reference("tsibble", "tsibble", "Wang, Cook & Hyndman (2020)") %>%
+  add_reference("forecast", "automatic-forecasting", "Hyndman & Khandakar (2008)") %>%
+  add_reference("tsfeatures", "icdm2015", "Hyndman, Wang & Laptev (2015)") %>%
+  add_reference("tsfeatures", "ts-feature-space", "Kang, Hyndman & Smith-Miles (2017)") %>%
+  add_reference("hts", "hierarchical", "Hyndman, Ahmed, Athanasopoulos & Shang (2011)") %>%
+  add_reference("hts", "mint", "Wickramasuriya, Athanasopoulos & Hyndman (2019)") %>%
+  add_reference("lookout", "lookout", "Kandanaarachchi and Hyndman (2021)") %>%
+  add_reference("stray", "stray", "Talagala, Hyndman & Smith-Miles (2021)") %>%
+  add_reference("oddstream", "oddstream", "Talagala, Hyndman, Smith-Miles, Kandanaarachichi & Muñoz (2020)") %>%
+  add_reference("oddwater", "oddwater", "Talagala, Hyndman, Leigh, Mengersen & Smith-Miles (2019)") %>%
+  add_reference("demography", "funcfor", "Hyndman & Ullah (2007)") %>%
+  add_reference("demography", "coherentfdm", "Hyndman, Booth & Yasmeen (2013)") %>%
+  add_reference("eechidna", "elections", "Forbes, Cook & Hyndman (2020)")
+
+# Improved titles for books and others
+extended_titles <- tribble(
+  ~package, ~alt_title,
+  "compenginets", "Time series data from <a href='https://www.comp-engine.org/'>comp-engine.org</a>",
+  "expsmooth", "Data sets from <a href='http://www.exponentialsmoothing.net/'>Hyndman, Koehler, Ord & Snyder (2008), <i>Forecasting with exponential smoothing: the state space approach</i>, Springer</a>",
+  "fma", "Data sets from <a href='https://robjhyndman.com/forecasting/'>Makridakis, Wheelwright & Hyndman (1998), <i>Forecasting: methods and applications</i>, Wiley</a>",
+  "fpp", "Data sets from Hyndman & Athanasopoulos (2014) <i>Forecasting: principles and practice</i>, OTexts",
+  "fpp2", "Data sets from <a href='https://OTexts.com/fpp2'>Hyndman & Athanasopoulos (2018) <i>Forecasting: principles and practice</i>, 2nd edition, OTexts</a>",
+  "fpp3", "Data sets from <a href='https://OTexts.com/fpp3'>Hyndman & Athanasopoulos (2021) <i>Forecasting: principles and practice</i>, 3rd edition, OTexts</a>"
+)
+
+packages <- packages %>%
+  left_join(extended_titles, by='package') %>%
+  mutate(title = if_else(is.na(alt_title), title, alt_title))
+```
+
+## Tidy time series analysis and forecasting packages
+
+```{r table1, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "tsibble",
+    "tsibbledata",
+    "feasts",
+    "fable",
+    "fasster",
+    "sugrrants",
+    "gravitas"
+  )
+)
+```
+
+## Other time series analysis and forecasting packages
+
+```{r table2, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "bfast",
+    "forecast",
+    "gratis",
+    "hts",
+    "MEFM",
+    "seer",
+    "stR",
+    "thief",
+    "tsfeatures"
+  )
+)
+```
+
+## Time series data packages
+
+```{r table3, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "compenginets",
+    "expsmooth",
+    "fma",
+    "fpp",
+    "fpp2",
+    "fpp3",
+    "Mcomp",
+    "ozdata",
+    "tscompdata",
+    "tsdl"
+  )
+)
+```
+
+## Anomaly detection packages
+
+```{r table4, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "lookout",
+    "stray",
+    "oddstream",
+    "oddwater"
+  )
+)
+```
+
+## Functional data and demography packages
+
+```{r table5, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "addb",
+    "demography",
+    "fds",
+    "ftsa",
+    "rainbow",
+    "smoothAPC"
+  )
+)
+```
+
+## Rmarkdown packages
+
+```{r table6, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "binb",
+    "MonashEBSTemplates",
+    "vitae"
+  )
+)
+```
+
+## Other packages
+
+```{r table7, echo=FALSE, results='asis'}
+packages %>%
+  package_table(c(
+    "cricketdata",
+    "eechidna",
+    "emma",
+    "hdrcde",
+    "ozbabynames",
+    "rcademy"
+  )
+)
+```
