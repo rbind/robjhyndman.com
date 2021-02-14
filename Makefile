@@ -3,9 +3,11 @@
 all: serve
 
 serve:
+	Rscript -e "rmarkdown::render('content/software.Rmd', encoding = 'UTF-8')"
 	Rscript -e "blogdown::serve_site()"
 
 build:
+	Rscript -e "rmarkdown::render('content/software.Rmd', encoding = 'UTF-8')"
 	Rscript -e "blogdown::hugo_build()"
 
 deploy: build

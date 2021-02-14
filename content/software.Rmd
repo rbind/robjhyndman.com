@@ -16,164 +16,78 @@ output: md_document
 library(tidyverse)
 source(here::here("content/software_functions.R"))
 
-# List of github repos containing my packages
-packages <- tibble(
-    github = c(
-      "AU-BURGr/ozdata",
-      "earowang/hts",
-      "earowang/sugrrants",
-      "eddelbuettel/binb",
-      "FinYang/tsdl",
-      "jforbes14/eechidna",
-      "mitchelloharawild/fasster",
-      "mitchelloharawild/vitae",
-      "pridiltal/oddstream",
-      "pridiltal/oddwater",
-      "pridiltal/stray",
-      "robjhyndman/addb",
-      "robjhyndman/anomalous",
-      "robjhyndman/compenginets",
-      "robjhyndman/demography",
-      "robjhyndman/expsmooth",
-      "robjhyndman/fma",
-      "robjhyndman/forecast",
-      "robjhyndman/fpp",
-      "robjhyndman/fpp2-package",
-      "robjhyndman/fpp3-package",
-      "robjhyndman/hdrcde",
-      "robjhyndman/Mcomp",
-      "robjhyndman/MEFM-package",
-      "robjhyndman/MonashEBSTemplates",
-      "robjhyndman/thief",
-      "robjhyndman/tscompdata",
-      "robjhyndman/tsfeatures",
-      "ropenscilabs/cricketdata",
-      "ropenscilabs/ozbabynames",
-      "ropenscilabs/rcademy",
-      "sayani07/gravitas",
-      "sevvandi/lookout",
-      "thiyangt/seer",
-      "tidyverts/fable",
-      "tidyverts/feasts",
-      "tidyverts/tsibble",
-      "tidyverts/tsibbledata",
-      "verbe039/bfast",
-      "ykang/gratis"
-    )
-  ) %>%
-  mutate(
-    package = stringr::str_extract(github,"/[a-zA-Z0-9\\-]*"),
-    package = stringr::str_remove(package,"/"),
-    package = stringr::str_extract(package,"[a-zA-Z0-9]*")
-  ) %>%
-  # Add in CRAN packages
-  full_join(rjh_cran_packages(), by="package") %>%
-  replace_na(list(on_cran = FALSE)) %>%
-  # Add location of hex stickers
-  left_join(
-    hex_stickers <- tribble(
-      ~package, ~hex,
-      "fable", "https://fable.tidyverts.org/reference/figures/logo.png",
-      "fasster", "/img/fasstersticker.resized.png",
-      "feasts", "https://feasts.tidyverts.org/reference/figures/logo.png",
-      "forecast", "https://pkg.robjhyndman.com/forecast/reference/figures/logo.png",
-      "gratis", "https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG",
-      "gravitas", "https://sayani07.github.io/gravitas/reference/figures/logo.png",
-      "hts", "/img/htssticker.resized.png",
-      "lookout","https://sevvandi.github.io/lookout/reference/figures/logo.png",
-      "oddstream","https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png",
-      "oddwater","https://github.com/pridiltal/oddwater/raw/master/man/fig/logo.png",
-      "seer","https://github.com/thiyangt/seer/raw/master/logo/seer.png",
-      "stray","https://github.com/pridiltal/stray/raw/master/man/figures/logo.png",
-      "sugrrants", "/img/sugrrantssticker.resized.png",
-      "thief","https://pkg.robjhyndman.com/thief/reference/figures/logo.png",
-      "tsibble", "https://tsibble.tidyverts.org/reference/figures/logo.png",
-      "tsibbledata", "https://tsibbledata.tidyverts.org/reference/figures/logo.png",
-      "vitae","https://pkg.mitchelloharawild.com/vitae/reference/figures/logo.png"
-    ),
-    by = "package"
-  ) %>%
-  # Remove a few packages where my involvement has been minimal or which are outdated
-  filter(!(package %in% c(
-    "anomalous",
-    "bayesforecast",
-    "DescTools",
-    "fracdiff",
-    "nortsTest",
-    "rmarkdown",
-    "robets"))
-  )
 
-# Create generic hex stickers where they don't exist
-packages %>%
-  filter(is.na(hex)) %>%
-  pull(package) %>%
-  generic_stickers()
-
-packages <- packages %>%
-  mutate(
-    hex = if_else(!is.na(hex), hex,
-                  paste0("/img/",package,".png"))
-  )
-
-# Compute average monthly download counts using last 3 complete months
-downloads <- packages %>%
-  filter(on_cran) %>%
-  pull(package) %>%
-  cranlogs::cran_downloads(
-      from = lubridate::ymd(Sys.Date() - 125),
-      to = Sys.Date()
-  ) %>%
-  as_tibble() %>%
-  mutate(month = tsibble::yearmonth(date)) %>%
-  group_by(month,package) %>%
-  summarise(count = sum(count), .groups = "keep") %>%
-  filter(month != tsibble::yearmonth(Sys.Date())) %>%
-  filter(month >= tsibble::yearmonth(Sys.Date())-3) %>%
-  group_by(package) %>%
-  summarise(count = mean(count))
-
-# CRAN package meta data
-cran_meta <- packages %>%
-  filter(on_cran) %>%
-  get_meta(cran=TRUE)
-
-# Github package meta data (need to install packages)
-packages %>%
-  filter(!on_cran) %>%
-  pull(github) %>%
-  remotes::install_github()
-
-github_meta <- packages %>%
-  filter(!on_cran) %>%
-  get_meta(cran=FALSE)
-
-# Add downloads and titles to packages
-packages <- packages %>%
-  left_join(downloads, by="package") %>%
-  left_join(
-    bind_rows(cran_meta, github_meta),
-    by="package"
-  )
-
-# Add URLs
-packages <- packages %>%
-  mutate(
-    github_url = if_else(is.na(github), NA_character_,
-                   paste0("https://github.com/",github)),
-    cran_url = if_else(!on_cran, NA_character_,
-                   paste0("https://cloud.r-project.org/package=",package)),
-    url = if_else(!is.na(url), url,
-            if_else(!is.na(github), github_url, cran_url))
-  )
-# Add some links to titles
-packages <- packages %>%
-  mutate(
-    publication = NA_character_,
-    citation = NA_character_,
-    publication2 = NA_character_,
-    citation2 = NA_character_,
-  ) %>%
+# Github packages I've coauthored
+github <- c(
+  "AU-BURGr/ozdata",
+  "earowang/hts",
+  "earowang/sugrrants",
+  "eddelbuettel/binb",
+  "FinYang/tsdl",
+  "jforbes14/eechidna",
+  "mitchelloharawild/fasster",
+  "mitchelloharawild/vitae",
+  "pridiltal/oddstream",
+  "pridiltal/oddwater",
+  "pridiltal/stray",
+  "robjhyndman/addb",
+  "robjhyndman/anomalous",
+  "robjhyndman/compenginets",
+  "robjhyndman/demography",
+  "robjhyndman/expsmooth",
+  "robjhyndman/fma",
+  "robjhyndman/forecast",
+  "robjhyndman/fpp",
+  "robjhyndman/fpp2-package",
+  "robjhyndman/fpp3-package",
+  "robjhyndman/hdrcde",
+  "robjhyndman/Mcomp",
+  "robjhyndman/MEFM-package",
+  "robjhyndman/MonashEBSTemplates",
+  "robjhyndman/thief",
+  "robjhyndman/tscompdata",
+  "robjhyndman/tsfeatures",
+  "ropenscilabs/cricketdata",
+  "ropenscilabs/ozbabynames",
+  "ropenscilabs/rcademy",
+  "sayani07/gravitas",
+  "sevvandi/lookout",
+  "thiyangt/seer",
+  "tidyverts/fable",
+  "tidyverts/fabletools",
+  "tidyverts/feasts",
+  "tidyverts/tsibble",
+  "tidyverts/tsibbledata",
+  "verbe039/bfast",
+  "ykang/gratis"
+)
+# Hex stickers for my packages
+hex_stickers <- tribble(
+  ~package, ~hex,
+  "fable", "https://fable.tidyverts.org/reference/figures/logo.png",
+  "fasster", "/img/fasstersticker.resized.png",
+  "feasts", "https://feasts.tidyverts.org/reference/figures/logo.png",
+  "forecast", "https://pkg.robjhyndman.com/forecast/reference/figures/logo.png",
+  "gratis", "https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG",
+  "gravitas", "https://sayani07.github.io/gravitas/reference/figures/logo.png",
+  "hts", "/img/htssticker.resized.png",
+  "lookout","https://sevvandi.github.io/lookout/reference/figures/logo.png",
+  "oddstream","https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png",
+  "oddwater","https://github.com/pridiltal/oddwater/raw/master/man/fig/logo.png",
+  "seer","https://github.com/thiyangt/seer/raw/master/logo/seer.png",
+  "stray","https://github.com/pridiltal/stray/raw/master/man/figures/logo.png",
+  "sugrrants", "/img/sugrrantssticker.resized.png",
+  "thief","https://pkg.robjhyndman.com/thief/reference/figures/logo.png",
+  "tsibble", "https://tsibble.tidyverts.org/reference/figures/logo.png",
+  "tsibbledata", "https://tsibbledata.tidyverts.org/reference/figures/logo.png",
+  "vitae","https://pkg.mitchelloharawild.com/vitae/reference/figures/logo.png"
+)
+# References associated with my packages
+# Syntax: package, publication slug, citation
+references <- hex_stickers %>%
+  select(package) %>%
+  mutate(publication = NA_character_, citation = NA_character_,
+         publication2 = NA_character_, citation2 = NA_character_) %>%
   add_reference("bfast", "bfast1", "Verbesselt et al (2010a)") %>%
   add_reference("bfast", "bfast2", "Verbesselt et al (2010b)") %>%
   add_reference("demography", "funcfor", "Hyndman & Ullah (2007)") %>%
@@ -212,115 +126,80 @@ extended_titles <- tribble(
   "fpp3", "Data sets from <a href='https://OTexts.com/fpp3'>Hyndman & Athanasopoulos (2021) <i>Forecasting: principles and practice</i>, 3rd edition, OTexts</a>"
 )
 
+packages <- get_rjh_packages(github, hex_stickers, references, extended_titles) %>%
+  # Exclude packages I haven't had much to do with or are outdated
+  filter(!package %in% c(
+    "anomalous",
+    "bayesforecast",
+    "DescTools",
+    "fracdiff",
+    "nortsTest",
+    "rmarkdown",
+    "robets"
+  ))
+# Add in section information
 packages <- packages %>%
-  left_join(extended_titles, by='package') %>%
-  mutate(title = if_else(is.na(alt_title), title, alt_title))
-```
-
-## Tidy time series analysis and forecasting packages
-
-```{r table1, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "tsibble",
-    "tsibbledata",
-    "feasts",
-    "fable",
-    "fasster",
-    "sugrrants",
-    "gravitas"
-  )
+  arrange(package) %>%
+  add_section("Tidy time series analysis and forecasting",
+    c("tsibble",
+      "tsibbledata",
+      "feasts",
+      "fable",
+      "fabletools",
+      "fasster",
+      "sugrrants",
+      "gravitas")) %>%
+  add_section("Other time series analysis and forecasting",
+    c("bfast",
+      "forecast",
+      "gratis",
+      "hts",
+      "MEFM",
+      "seer",
+      "stR",
+      "thief",
+      "tsfeatures")) %>%
+  add_section("Time series data",
+    c("compenginets",
+      "expsmooth",
+      "fma",
+      "fpp",
+      "fpp2",
+      "fpp3",
+      "Mcomp",
+      "ozdata",
+      "tscompdata",
+      "tsdl")) %>%
+  add_section("Anomaly detection",
+    c("lookout",
+      "stray",
+      "oddstream",
+      "oddwater")) %>%
+  add_section("Functional data and demography",
+    c("addb",
+      "demography",
+      "fds",
+      "ftsa",
+      "rainbow",
+      "smoothAPC")) %>%
+  add_section("Rmarkdown",
+    c("binb",
+      "MonashEBSTemplates",
+      "vitae")) %>%
+  replace_na(list(section = "Other"))
+# Put other packages last
+packages <- bind_rows(
+  packages %>% filter(section != "Other"),
+  packages %>% filter(section == "Other"),
 )
 ```
 
-## Other time series analysis and forecasting packages
-
-```{r table2, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "bfast",
-    "forecast",
-    "gratis",
-    "hts",
-    "MEFM",
-    "seer",
-    "stR",
-    "thief",
-    "tsfeatures"
-  )
-)
+```{r tables, echo=FALSE, results='asis'}
+sections <- unique(packages$section)
+for(i in seq_along(sections)) {
+  packages %>%
+    filter(section == sections[i]) %>%
+    package_table()
+}
 ```
 
-## Time series data packages
-
-```{r table3, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "compenginets",
-    "expsmooth",
-    "fma",
-    "fpp",
-    "fpp2",
-    "fpp3",
-    "Mcomp",
-    "ozdata",
-    "tscompdata",
-    "tsdl"
-  )
-)
-```
-
-## Anomaly detection packages
-
-```{r table4, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "lookout",
-    "stray",
-    "oddstream",
-    "oddwater"
-  )
-)
-```
-
-## Functional data and demography packages
-
-```{r table5, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "addb",
-    "demography",
-    "fds",
-    "ftsa",
-    "rainbow",
-    "smoothAPC"
-  )
-)
-```
-
-## Rmarkdown packages
-
-```{r table6, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "binb",
-    "MonashEBSTemplates",
-    "vitae"
-  )
-)
-```
-
-## Other packages
-
-```{r table7, echo=FALSE, results='asis'}
-packages %>%
-  package_table(c(
-    "cricketdata",
-    "eechidna",
-    "emma",
-    "hdrcde",
-    "ozbabynames",
-    "rcademy"
-  )
-)
-```

@@ -9,3 +9,4 @@ static/hyndsight/*
 *.sublime-workspace
 *.sublime-project
 .directory
+static/files/packages.rds
