@@ -67,9 +67,9 @@ package_table <- function(packages, include) {
     }
     out <- paste(out, "<tr>")
     out <- paste(out, "<td><a href='",z$url[i],"'><img src='",z$hex[i],"' width='70px' style='vertical-align:middle'></a></td>")
-    out <- paste(out, "<td width='66%'>",z$title[i],".</td>")
+    out <- paste0(out, "<td width='66%'>",z$title[i],".</td>")
     if(z$on_cran[i])
-      out <- paste(out, "<td><a href=",z$cran_url[i],">CRAN</a></td>")
+      out <- paste(out, "<td><a href=",z$cran_url[i]," class='badge badge-small badge-blue'>CRAN</a></td>")
     else
       out <- paste(out, "<td></td>")
     if(!is.na(z$count[i])) {
