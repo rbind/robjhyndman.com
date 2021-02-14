@@ -1,5 +1,5 @@
 ---
-author: Rob&nbsp;J&nbsp;Hyndman and David Bashtannyk
+author: Rob&nbsp;J&nbsp;Hyndman, David Bashtannyk, Gary&nbsp;K&nbsp;Grunwald
 Status: Published
 comments: false
 date: 1996-07-16 02:43:49+00:00
