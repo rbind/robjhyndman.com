@@ -2,7 +2,7 @@
 author: Han Li, Rob&nbsp;J&nbsp;Hyndman
 date: 2021-02-13
 slug: us-longevity
-title: "Assessing Longevity Inequality in the US: What Can Be Said About the Future?"
+title: "Assessing mortality inequality in the US: What can be said about the future?"
 kind: article
 citation: <em>Insurance, Mathematics and Economics</em>, to appear
 tags:
