@@ -26,7 +26,7 @@ Tidy Temporal Data Frames and Tools: as described in
 <a href= https://cloud.r-project.org/package=tsibble  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 13298
+Monthly downloads:<br> 14006
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ Diverse Datasets for ‘tsibble’.
 <a href= https://cloud.r-project.org/package=tsibbledata  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1984
+Monthly downloads:<br> 2592
 </td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ Feature Extraction and Statistics for Time Series.
 <a href= https://cloud.r-project.org/package=feasts  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 7222
+Monthly downloads:<br> 8491
 </td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@ Forecasting Models for Tidy Time Series.
 <a href= https://cloud.r-project.org/package=fable  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 8172
+Monthly downloads:<br> 8809
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Core Tools for Packages in the ‘fable’ Framework.
 <a href= https://cloud.r-project.org/package=fabletools  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 9456
+Monthly downloads:<br> 9894
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ Supporting Graphs for Analysing Time Series: as described in
 <a href= https://cloud.r-project.org/package=sugrrants  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1075
+Monthly downloads:<br> 983
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ Unwin (2020)</a>.
 <a href= https://cloud.r-project.org/package=gravitas  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 565
+Monthly downloads:<br> 557
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ Breaks For Additive Season and Trend (BFAST): as described in
 <a href= https://cloud.r-project.org/package=bfast  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1199
+Monthly downloads:<br> 1141
 </td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ Forecasting Functions for Time Series and Linear Models: as described in
 <a href= https://cloud.r-project.org/package=forecast  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 308715
+Monthly downloads:<br> 307475
 </td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ described in <a href='/publications/gratis'>Kang, Hyndman & Li
 <a href= https://cloud.r-project.org/package=gratis  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 478
+Monthly downloads:<br> 470
 </td>
 </tr>
 <tr>
@@ -228,7 +228,7 @@ Athanasopoulos & Hyndman (2019)</a>.
 <a href= https://cloud.r-project.org/package=hts  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 12600
+Monthly downloads:<br> 12406
 </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ Feature-Based Forecast Model Selection: as described in
 <a href= https://cloud.r-project.org/package=seer  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 460
+Monthly downloads:<br> 454
 </td>
 </tr>
 <tr>
@@ -281,7 +281,7 @@ STR Decomposition: as described in
 <a href= https://cloud.r-project.org/package=stR  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 786
+Monthly downloads:<br> 775
 </td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ Temporal Hierarchical Forecasting: as described in
 <a href= https://cloud.r-project.org/package=thief  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 8103
+Monthly downloads:<br> 7651
 </td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ Time Series Feature Extraction: as described in
 <a href= https://cloud.r-project.org/package=tsfeatures  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 20002
+Monthly downloads:<br> 18788
 </td>
 </tr>
 </table>
@@ -360,7 +360,7 @@ the state space approach</i>, Springer</a>.
 <a href= https://cloud.r-project.org/package=expsmooth  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 10066
+Monthly downloads:<br> 10667
 </td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ Hyndman (1998), <i>Forecasting: methods and applications</i>, Wiley</a>.
 <a href= https://cloud.r-project.org/package=fma  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 10327
+Monthly downloads:<br> 10906
 </td>
 </tr>
 <tr>
@@ -397,7 +397,7 @@ principles and practice</i>, OTexts.
 <a href= https://cloud.r-project.org/package=fpp  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 3928
+Monthly downloads:<br> 3944
 </td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ edition, OTexts</a>.
 <a href= https://cloud.r-project.org/package=fpp2  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 10540
+Monthly downloads:<br> 11081
 </td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ edition, OTexts</a>.
 <a href= https://cloud.r-project.org/package=fpp3  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1909
+Monthly downloads:<br> 3047
 </td>
 </tr>
 <tr>
@@ -452,7 +452,7 @@ Data from the M-Competitions.
 <a href= https://cloud.r-project.org/package=Mcomp  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 3199
+Monthly downloads:<br> 2969
 </td>
 </tr>
 <tr>
@@ -521,7 +521,7 @@ described in <a href='/publications/lookout'>Kandanaarachchi and Hyndman
 <a href= https://cloud.r-project.org/package=lookout  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 0
+Monthly downloads:<br> 121
 </td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ Anomaly Detection in High Dimensional and Temporal Data: as described in
 <a href= https://cloud.r-project.org/package=stray  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 346
+Monthly downloads:<br> 360
 </td>
 </tr>
 <tr>
@@ -559,7 +559,7 @@ Kandanaarachichi & Muñoz (2020)</a>.
 <a href= https://cloud.r-project.org/package=oddstream  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 370
+Monthly downloads:<br> 371
 </td>
 </tr>
 <tr>
@@ -616,7 +616,7 @@ and <a href='/publications/coherentfdm'>Hyndman, Booth & Yasmeen
 <a href= https://cloud.r-project.org/package=demography  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1530
+Monthly downloads:<br> 1735
 </td>
 </tr>
 <tr>
@@ -632,7 +632,7 @@ Functional Data Sets.
 <a href= https://cloud.r-project.org/package=fds  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 15595
+Monthly downloads:<br> 21309
 </td>
 </tr>
 <tr>
@@ -648,7 +648,7 @@ Functional Time Series Analysis.
 <a href= https://cloud.r-project.org/package=ftsa  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 2275
+Monthly downloads:<br> 2400
 </td>
 </tr>
 <tr>
@@ -665,7 +665,7 @@ in <a href='/publications/rainbow-fda'>Hyndman & Shang (2010)</a>.
 <a href= https://cloud.r-project.org/package=rainbow  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 15718
+Monthly downloads:<br> 21152
 </td>
 </tr>
 <tr>
@@ -684,7 +684,7 @@ Account Period and Cohort Effects: as described in
 <a href= https://cloud.r-project.org/package=smoothAPC  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 509
+Monthly downloads:<br> 515
 </td>
 </tr>
 </table>
@@ -706,7 +706,7 @@ Monthly downloads:<br> 509
 <a href= https://cloud.r-project.org/package=binb  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 686
+Monthly downloads:<br> 705
 </td>
 </tr>
 <tr>
@@ -738,7 +738,7 @@ Curriculum Vitae for R Markdown.
 <a href= https://cloud.r-project.org/package=vitae  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 1215
+Monthly downloads:<br> 1390
 </td>
 </tr>
 </table>
@@ -763,7 +763,7 @@ International Cricket Data.
 </tr>
 <tr>
 <td>
-<a href=' https://github.com/ropenscilabs/eechidna '><img src=' /img/eechidna.png ' width='70px' style='vertical-align:middle'></a>
+<a href=' https://github.com/jforbes14/eechidna/ '><img src=' /img/eechidna.png ' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Exploring Election and Census Highly Informative Data Nationally for
@@ -777,7 +777,7 @@ Cook & Hyndman (2020)</a>.
 <a href= https://cloud.r-project.org/package=eechidna  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 534
+Monthly downloads:<br> 547
 </td>
 </tr>
 <tr>
@@ -793,7 +793,7 @@ Evolutionary model-based multiresponse approach.
 <a href= https://cloud.r-project.org/package=emma  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 609
+Monthly downloads:<br> 600
 </td>
 </tr>
 <tr>
@@ -815,7 +815,7 @@ Bashtannyk & Grunwald (1996)</a>.
 <a href= https://cloud.r-project.org/package=hdrcde  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br> 17015
+Monthly downloads:<br> 23127
 </td>
 </tr>
 <tr>
