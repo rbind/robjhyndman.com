@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.0.3",
+    "Version": "4.0.4",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -178,13 +178,6 @@
       "Repository": "CRAN",
       "Hash": "a412bc612bb431506fddf174a6c5f9c4"
     },
-    "XML": {
-      "Package": "XML",
-      "Version": "3.99-0.5",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "408d42d1359f2a84d377c1f7f0568624"
-    },
     "abind": {
       "Package": "abind",
       "Version": "1.4-5",
@@ -290,7 +283,7 @@
       "Package": "bookdown",
       "Version": "0.21",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "1bf627f1f77313e345f71e779b658578"
     },
     "brio": {
@@ -332,7 +325,7 @@
       "Package": "cellranger",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "f61dbaec772ccd2e17705c1e872e9e7c"
     },
     "class": {
@@ -432,13 +425,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "2b7d10581cc730804e9ed178c8374bd6"
-    },
-    "data.table": {
-      "Package": "data.table",
-      "Version": "1.13.6",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "813fa8857aaa949b243e2e0b4abb8592"
     },
     "dbplyr": {
       "Package": "dbplyr",
@@ -731,7 +717,7 @@
       "Package": "haven",
       "Version": "2.3.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "221d0ad75dfa03ebf17b1a4cc5c31dfc"
     },
     "hdrcde": {
@@ -739,13 +725,13 @@
       "Version": "3.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "969fb6dd6d4c27d849b92098e33293f0"
+      "Hash": "38efa061badc732dc1419f519b13125c"
     },
     "here": {
       "Package": "here",
       "Version": "1.0.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "24b224366f9c2e7534d2344d10d59211"
     },
     "hexSticker": {
@@ -759,7 +745,7 @@
       "Package": "hexbin",
       "Version": "1.28.2",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "76314b69dc54f8c14204063a2fd6d74a"
     },
     "highr": {
@@ -1018,7 +1004,7 @@
       "Package": "modelr",
       "Version": "0.1.8",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "9fd59716311ee82cba83dc2826fc5577"
     },
     "multicool": {
@@ -1249,14 +1235,14 @@
       "Package": "readxl",
       "Version": "1.3.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "63537c483c2dbec8d9e3183b3735254a"
     },
     "rematch": {
       "Package": "rematch",
       "Version": "1.0.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "c66b930d20bb6d858cd18e1cebcfae5c"
     },
     "rematch2": {
@@ -1277,14 +1263,14 @@
       "Package": "renv",
       "Version": "0.12.5",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "5c0cdb37f063c58cdab3c7e9fbb8bd2c"
     },
     "reprex": {
       "Package": "reprex",
       "Version": "1.0.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "cb4d6f77f163b8d685833f2a59e7cb4c"
     },
     "reshape": {
@@ -1508,7 +1494,7 @@
       "Package": "tidyverse",
       "Version": "1.3.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Hash": "bd51be662f359fa99021f3d51e911490"
     },
     "timeDate": {
