@@ -4,7 +4,7 @@ date: 2021-01-01
 slug: hpf-electricity
 title: Hierarchical Probabilistic Forecasting of Electricity Demand with Smart Meter Data
 kind: article
-citation: <em>J American Statistical Association</em>, to appear
+citation: <em>J American Statistical Association</em>, <b>116</b>(533), 27-43
 tags:
 - data science
 - density estimation
