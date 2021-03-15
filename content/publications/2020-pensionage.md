@@ -8,7 +8,7 @@ tags:
 - R
 - demography
 - functional data
-link: https://github.com/robjhyndman/PensionAge/raw/master/PensionAge.pdf
+link: https://github.com/robjhyndman/PensionAge/raw/master/PensionAge_wp.pdf
 github: robjhyndman/PensionAge
 ---
 
