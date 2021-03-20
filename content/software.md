@@ -31,7 +31,7 @@ Monthly downloads:<br> 14006
 </tr>
 <tr>
 <td>
-<a href=' http://tsibbledata.tidyverts.org/ '><img src=' https://tsibbledata.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
+<a href=' https://tsibbledata.tidyverts.org/ '><img src=' https://tsibbledata.tidyverts.org/reference/figures/logo.png ' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Diverse Datasets for ‘tsibble’.

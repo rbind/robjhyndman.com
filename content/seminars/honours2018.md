@@ -1,6 +1,7 @@
 ---
 date: 2018-08-22
 title: "Developing good research habits"
+slug: research_habits2018
 ---
 
 Presentation for the 2018 honours students

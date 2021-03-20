@@ -1,11 +1,11 @@
 ---
-date: 2020-03-31
+date: 2021-03-23
 title: "Developing good research habits"
 link: https://github.com/robjhyndman/ResearchHabits/raw/master/ResearchHabits.pdf
-slug: research_habits2020
+slug: research_habits
 ---
 
-## Presentation for the 2020 honours and masters students
+## Presentation for the 2021 honours and masters students
 
 ### Magic button for library access to papers
 
