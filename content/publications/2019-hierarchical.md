@@ -6,6 +6,7 @@ date: 2020-01-06
 slug: hierarchical-forecasting
 title: Hierarchical forecasting
 kind: chapter
+amazon: 303031149X
 citation: <a href="https://link.springer.com/book/10.1007%2F978-3-030-31150-6"><em>Macroeconomic forecasting in the era of big data</em></a>, ed. P. Fuleky, Springer, Chapter 21, pp.689-719
 tags:
 - accuracy
