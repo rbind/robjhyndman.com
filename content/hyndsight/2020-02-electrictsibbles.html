@@ -1,0 +1,122 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-02-07
+title: "Electricity demand data in tsibble format"
+slug: electrictsibbles
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - R
+  - tidyverts
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The <code>tsibbledata</code> packages contains the <code>vic_elec</code> data set, containing half-hourly electricity demand for the state of Victoria, along with corresponding temperatures from the capital city, Melbourne. These data cover the period 2012-2014.</p>
+<p>Other similar data sets are also available, and these may be of interest to researchers in the area.</p>
+<p>For people new to tsibbles, please read my <a href="https://robjhyndman.com/hyndsight/tsibbles/">introductory post</a>.</p>
+<p> </p>
+<div id="australian-state-level-demand" class="section level2">
+<h2>Australian state-level demand</h2>
+<p>The rawdata for other states are also stored in the <a href="https://github.com/tidyverts/tsibbledata/"><code>tsibbledata</code> github repository</a> (under the data-raw folder), but these are not included in the package to satisfy CRAN space constraints. However, anyone can still load and use the data with the following code.</p>
+<pre class="r"><code>library(tidyverse)
+library(lubridate)
+library(tsibble)</code></pre>
+<pre class="r"><code>repo &lt;- &quot;https://raw.githubusercontent.com/tidyverts/tsibbledata/master/data-raw/vic_elec/&quot;
+states &lt;- c(&quot;NSW&quot;,&quot;QLD&quot;,&quot;SA&quot;,&quot;TAS&quot;,&quot;VIC&quot;)
+dirs &lt;- paste0(repo, states, &quot;2015&quot;)
+
+# Read holidays data
+holidays &lt;- paste0(dirs,&quot;/holidays.txt&quot;) %&gt;%
+  as.list() %&gt;%
+  map_dfr(read_csv, col_names=FALSE, .id=&quot;State&quot;) %&gt;%
+  transmute(
+    State = states[as.numeric(State)],
+    Date = dmy(X1), 
+    Holiday = TRUE
+  )
+# Read temperature data
+temperatures &lt;- paste0(dirs,&quot;/temperature.csv&quot;) %&gt;%
+  as.list() %&gt;%
+  map_dfr(read_csv, .id = &quot;State&quot;) %&gt;%
+  mutate(
+    State = states[as.numeric(State)],
+    Date = as_date(Date, origin = ymd(&quot;1899-12-30&quot;))
+  )
+# Read demand data
+demands &lt;- paste0(dirs,&quot;/demand.csv&quot;) %&gt;%
+  as.list() %&gt;%
+  map_dfr(read_csv, .id = &quot;State&quot;) %&gt;%
+  mutate(
+    State = states[as.numeric(State)],
+    Date = as_date(Date, origin = ymd(&quot;1899-12-30&quot;))
+  )
+# Join demand, temperatures and holidays
+aus_elec &lt;- demands %&gt;%
+  left_join(temperatures, by = c(&quot;State&quot;, &quot;Date&quot;, &quot;Period&quot;)) %&gt;%
+  transmute(
+    State,
+    Time = as.POSIXct(Date + minutes((Period-1) * 30)),
+    Period,
+    Date = as_date(Time),
+    DOW = wday(Date, label=TRUE),
+    Demand = OperationalLessIndustrial, 
+    Temperature = Temp,
+  ) %&gt;%
+  left_join(holidays, by = c(&quot;State&quot;, &quot;Date&quot;)) %&gt;%
+  replace_na(list(Holiday = FALSE))
+# Remove duplicates and create a tsibble
+aus_elec &lt;- aus_elec %&gt;%
+  filter(!are_duplicated(aus_elec, index=Time, key=State)) %&gt;%
+  as_tsibble(index = Time, key=State)</code></pre>
+<p>This block of code reads in raw data files containing holiday information, temperatures and electricity demand for each state, and then joins them into a single tsibble. For some reason, there are duplicated rows from South Australia, so the last few lines removes the duplicates before forming a tsibble, keyed by State.</p>
+<pre class="r"><code>aus_elec</code></pre>
+<pre><code>## # A tsibble: 1,155,408 x 8 [30m] &lt;UTC&gt;
+## # Key:       State [5]
+##    State Time                Period Date       DOW   Demand Temperature
+##    &lt;chr&gt; &lt;dttm&gt;               &lt;dbl&gt; &lt;date&gt;     &lt;ord&gt;  &lt;dbl&gt;       &lt;dbl&gt;
+##  1 NSW   2002-01-01 00:00:00      1 2002-01-01 Tue    5714.        26.3
+##  2 NSW   2002-01-01 00:30:00      2 2002-01-01 Tue    5360.        26.3
+##  3 NSW   2002-01-01 01:00:00      3 2002-01-01 Tue    5015.        26.3
+##  4 NSW   2002-01-01 01:30:00      4 2002-01-01 Tue    4603.        26.3
+##  5 NSW   2002-01-01 02:00:00      5 2002-01-01 Tue    4285.        26.3
+##  6 NSW   2002-01-01 02:30:00      6 2002-01-01 Tue    4075.        26.3
+##  7 NSW   2002-01-01 03:00:00      7 2002-01-01 Tue    3943.        26.3
+##  8 NSW   2002-01-01 03:30:00      8 2002-01-01 Tue    3884.        26.3
+##  9 NSW   2002-01-01 04:00:00      9 2002-01-01 Tue    3878.        26.3
+## 10 NSW   2002-01-01 04:30:00     10 2002-01-01 Tue    3838.        26.3
+## # … with 1,155,398 more rows, and 1 more variable: Holiday &lt;lgl&gt;</code></pre>
+<p>This data set contains half-hourly data from all states from 1 January 2002 - 1 March 2015 (and in the case of Queensland to 1 April 2015). The temperature variable is from a weather station in the capital city of each state.</p>
+<p> </p>
+</div>
+<div id="gefcom-2017" class="section level2">
+<h2>GEFCOM 2017</h2>
+<p>The <a href="http://www.drhongtao.com/gefcom/2017">Global Energy Forecasting Competition in 2017</a> involved data on hourly zonal loads of ISO New England from March 2003 to April 2017. The data have already been packaged into tibble format by Cameron Roach in the <a href="https://github.com/camroach87/gefcom2017data">gefcom2017data Github repository</a>. So it is relatively easy to convert this to a tsibble.</p>
+<pre class="r"><code>devtools::install_github(&quot;camroach87/gefcom2017data&quot;)
+library(gefcom2017data)
+gefcom2017 &lt;- gefcom %&gt;% 
+  ungroup() %&gt;%
+  as_tsibble(key=zone, index=ts)
+gefcom2017</code></pre>
+<pre><code>## # A tsibble: 1,241,710 x 15 [1h] &lt;UTC&gt;
+## # Key:       zone [10]
+##    ts                  zone  demand drybulb dewpnt date        year month
+##    &lt;dttm&gt;              &lt;chr&gt;  &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;date&gt;     &lt;dbl&gt; &lt;fct&gt;
+##  1 2003-03-01 00:00:00 CT      3386      25     19 2003-03-01  2003 Mar  
+##  2 2003-03-01 01:00:00 CT      3258      23     18 2003-03-01  2003 Mar  
+##  3 2003-03-01 02:00:00 CT      3189      22     18 2003-03-01  2003 Mar  
+##  4 2003-03-01 03:00:00 CT      3157      22     19 2003-03-01  2003 Mar  
+##  5 2003-03-01 04:00:00 CT      3166      23     19 2003-03-01  2003 Mar  
+##  6 2003-03-01 05:00:00 CT      3255      23     20 2003-03-01  2003 Mar  
+##  7 2003-03-01 06:00:00 CT      3430      24     20 2003-03-01  2003 Mar  
+##  8 2003-03-01 07:00:00 CT      3684      24     20 2003-03-01  2003 Mar  
+##  9 2003-03-01 08:00:00 CT      3977      25     21 2003-03-01  2003 Mar  
+## 10 2003-03-01 09:00:00 CT      4129      27     22 2003-03-01  2003 Mar  
+## # … with 1,241,700 more rows, and 7 more variables: hour &lt;dbl&gt;,
+## #   day_of_week &lt;fct&gt;, day_of_year &lt;dbl&gt;, weekend &lt;lgl&gt;,
+## #   holiday_name &lt;chr&gt;, holiday &lt;lgl&gt;, trend &lt;dbl&gt;</code></pre>
+<p>Details of the data (and the competition) are available on <a href="http://blog.drhongtao.com/2016/10/gefcom2017-hierarchical-probabilistic-load-forecasting.html">Tao Hong’s website</a>.</p>
+</div>

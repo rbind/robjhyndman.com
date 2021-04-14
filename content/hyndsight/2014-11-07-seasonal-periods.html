@@ -1,0 +1,182 @@
+---
+date: 2014-11-07 01:43:08+00:00
+slug: seasonal-periods
+title: Seasonal periods
+categories:
+- forecasting
+- R
+- seasonality
+- statistics
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>I get questions about this almost every week. Here is an example from a recent comment on this blog:</p>
+<blockquote>
+<p>I have two large time series data. One is separated by seconds intervals and the other by minutes. The length of each time series is 180 days. I’m using R (3.1.1) for forecasting the data. I’d like to know the value of the “frequency” argument in the ts() function in R, for each data set. Since most of the examples and cases I’ve seen so far are for months or days at the most, it is quite confusing for me when dealing with equally separated seconds or minutes. According to my understanding, the “frequency” argument is the number of observations per season. So what is the “season” in the case of seconds/minutes? My guess is that since there are 86,400 seconds and 1440 minutes a day, these should be the values for the “freq” argument. Is that correct?</p>
+</blockquote>
+<p>The <a href="http://stats.stackexchange.com/q/120806/159">same question was asked on crossvalidated.com</a>.</p>
+<p>Yes, the “frequency” is the number of observations per “cycle” (normally a year, but sometimes a week, a day or an hour). This is the opposite of the definition of frequency in physics, or in Fourier analysis, where “period” is the length of the cycle, and “frequency” is the inverse of period. When using the <code>ts()</code> function in R, the following choices should be used.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Data</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Annual</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Quarterly</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="left">Monthly</td>
+<td align="right">12</td>
+</tr>
+<tr class="even">
+<td align="left">Weekly</td>
+<td align="right">52</td>
+</tr>
+</tbody>
+</table>
+<p>Actually, there are not 52 weeks in a year, but 365.25/7 = 52.18 on average, allowing for a leap year every fourth year. But most functions which use <code>ts</code> objects require integer frequency.</p>
+<p>If the frequency of observations is greater than once per week, then there is usually more than one way of handling the frequency. For example, data with daily observations might have a weekly seasonality (frequency=7) or an annual seasonality (frequency=365.25). Similarly, data that are observed every minute might have an hourly seasonality (frequency=60), a daily seasonality (frequency=24x60=1440), a weekly seasonality (frequency=24x60x7=10080) and an annual seasonality (frequency=24x60x365.25=525960). If you want to use a <code>ts</code> object, then you need to decide which of these is the most important.</p>
+<p>An alternative is to use a <code>msts</code> object (defined in the <code>forecast</code> package) which handles multiple seasonality time series. Then you can specify all the frequencies that might be relevant. It is also flexible enough to handle non-integer frequencies.</p>
+<table class="gmisc_table" style="border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;">
+<thead>
+<tr>
+<th style="border-top: 2px solid grey;">
+</th>
+<th colspan="5" style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+Frequencies
+</th>
+</tr>
+<tr>
+<th style="border-bottom: 1px solid grey; font-weight: 900; text-align: left;">
+Data
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; text-align: right;">
+Minute
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; text-align: right;">
+Hour
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; text-align: right;">
+Day
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; text-align: right;">
+Week
+</th>
+<th style="font-weight: 900; border-bottom: 1px solid grey; text-align: right;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">
+Daily
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+7
+</td>
+<td style="text-align: right;">
+365.25
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+Hourly
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+24
+</td>
+<td style="text-align: right;">
+168
+</td>
+<td style="text-align: right;">
+8766
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+Half-hourly
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+48
+</td>
+<td style="text-align: right;">
+336
+</td>
+<td style="text-align: right;">
+17532
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">
+Minutes
+</td>
+<td style="text-align: right;">
+</td>
+<td style="text-align: right;">
+60
+</td>
+<td style="text-align: right;">
+1440
+</td>
+<td style="text-align: right;">
+10080
+</td>
+<td style="text-align: right;">
+525960
+</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid grey; text-align: left;">
+Seconds
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+60
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+3600
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+86400
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+604800
+</td>
+<td style="border-bottom: 2px solid grey; text-align: right;">
+31557600
+</td>
+</tr>
+</tbody>
+</table>
+<p>You won’t necessarily want to include all of these frequencies — just the ones that are likely to be present in the data. For example, any natural phenomena (e.g., sunshine hours) is unlikely to have a weekly period, and if your data are measured in one-minute intervals over a 3 month period, there is no point including an annual frequency.</p>
+<p>For example, the <code>taylor</code> data set from the <code>forecast</code> package contains half-hourly electricity demand data from England and Wales over about 3 months in 2000. It was defined as</p>
+<pre><code>taylor &lt;- msts(x, seasonal.periods=c(48,336)</code></pre>
+<p>One convenient model for multiple seasonal time series is a TBATS model:</p>
+<pre><code>taylor.fit &lt;- tbats(taylor)
+plot(forecast(taylor.fit))</code></pre>
+<p>(Warning: this takes a few minutes.)</p>
+<p>If an <code>msts</code> object is used with a function designed for <code>ts</code> objects, the largest seasonal period is used as the “frequency” attribute.</p>

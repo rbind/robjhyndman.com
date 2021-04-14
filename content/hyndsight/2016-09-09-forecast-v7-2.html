@@ -1,0 +1,62 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-09-09 10:01:03+00:00
+mathjax: true
+link: https://robjhyndman.com/hyndsight/forecast-v7-2/
+slug: forecast-v7-2
+title: R package forecast v7.2 now on CRAN
+categories:
+- forecasting
+- graphics
+- R
+- seasonality
+- time series
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>I’ve pushed a minor update to the forecast package to CRAN. Some highlights are listed here.</p>
+<!-- more -->
+<div id="plotting-time-series-with-ggplot2" class="section level2">
+<h2>Plotting time series with ggplot2</h2>
+<p>You can now facet a time series plot like this:</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+lungDeaths &lt;- cbind(mdeaths, fdeaths)
+autoplot(lungDeaths, facets=TRUE)</code></pre>
+<p><img src="/hyndsight/2016-09-09-forecast-v7-2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>So <code>autoplot.mts</code> now behaves similarly to <code>plot.mts</code></p>
+</div>
+<div id="multi-step-fitted-values" class="section level2">
+<h2>Multi-step fitted values</h2>
+<p>The <code>fitted</code> function has a new argument <code>h</code> to allow computation of in-sample fitted values of more than one-step-ahead. In time series, fitted values are defined as the one-step-forecasts of the data used in training a model. Sometimes it is useful to have corresponding <span class="math inline">\(h\)</span>-step forecasts, where <span class="math inline">\(h&gt;1\)</span>. This is now possible.</p>
+<pre class="r"><code>fit &lt;- Arima(WWWusage,c(3,1,0))
+tab &lt;- cbind(data=WWWusage,
+  &#39;h=1&#39; = fitted(fit, h=1),
+  &#39;h=2&#39; = fitted(fit, h=2),
+  &#39;h=3&#39; = fitted(fit, h=3))
+autoplot(tab) + ylab(&quot;Internet users&quot;) + xlab(&quot;Minute&quot;)</code></pre>
+<p><img src="/hyndsight/2016-09-09-forecast-v7-2_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="theta-method-now-with-seasonal-adjustment" class="section level2">
+<h2>Theta method now with seasonal adjustment</h2>
+<p>The Theta method was proposed by <a href="http://dx.doi.org/10.1016/S0169-2070(00)00066-2">Assimakopoulos and Nikolopoulos (2000)</a>, and has been repeatedly shown to produce remarkably good forecasts. I included a non-seasonal form of the method (via <code>thetaf</code>) in the forecast package a long time ago, but I’ve now updated it to allow for seasonal time series as well. It is not quite identical to the A&amp;N method, due to differences in optimization criteria, but it is close.</p>
+</div>
+<div id="tiny-time-series" class="section level2">
+<h2>Tiny time series</h2>
+<p>With the forecast package being increasingly used for large scale automatic forecasting, it is important that it does not fail on edge cases such as time series consisting of 2 or 3 observations. I’ve made some new tweaks to allow <code>ets()</code> and <code>auto.arima()</code> to produce sensible results in these cases. I wouldn’t bet my house on forecasts using only 2 observations, but they aren’t too bad.</p>
+</div>
+<div id="seasonal-adjustment-extensions" class="section level2">
+<h2>Seasonal adjustment extensions</h2>
+<p>The package has long offered seasonal adjustment via the <code>seasadj</code> function, applied to objects created using <code>stl</code>, <code>decompose</code>, and <code>tbats</code>. This has now been generalized to an S3 function so other people can write S3 seasonal adjustment methods.</p>
+</div>
+<div id="standardized-first-arguments" class="section level2">
+<h2>Standardized first arguments</h2>
+<p>The various modelling functions have either used <code>x</code> as the first argument or <code>y</code> as the first argument, to refer to the univariate time series to be modelled. To be consistent, this is now <code>y</code> in all functions. However, <code>x</code> will still work to avoid backwards compatibility issues.</p>
+</div>
+<div id="bug-fixes-and-speed-improvements" class="section level2">
+<h2>Bug fixes and speed improvements</h2>
+<p>As usual, there have been lots of bug fixes, mostly in functionality introduced in v7. More details are provided in the <a href="http://pkg.robjhyndman.com/forecast/news/">Changelog</a> or in the <a href="https://github.com/robjhyndman/forecast/commits/master">github commits</a>.</p>
+</div>

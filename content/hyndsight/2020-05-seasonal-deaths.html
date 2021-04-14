@@ -1,0 +1,203 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-05-24
+title: "Seasonal mortality rates"
+slug: seasonal-mortality-rates
+aliases:
+  - /hyndsight/2020-05-seasonal-deaths
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - demography
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The weekly mortality data recently published by the <a href="https://www.mortality.org">Human Mortality Database</a> can be used to explore seasonality in mortality rates. Mortality rates are known to be seasonal due to temperatures and other weather-related effects <a href="http://dx.doi.org/10.1136/jech.57.10.784">(Healy 2003)</a>.</p>
+<!--more-->
+<p>The weekly mortality data recently published by the <a href="https://www.mortality.org">Human Mortality Database</a> can be used to explore seasonality in mortality rates. Mortality rates are known to be seasonal due to temperatures and other weather-related effects <a href="http://dx.doi.org/10.1136/jech.57.10.784">(Healy 2003)</a>.</p>
+<pre class="r"><code>library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(tsibble)
+library(feasts)</code></pre>
+<div id="download-the-data" class="section level2">
+<h2>Download the data</h2>
+<p>We will first grab the latest data, using similar code to what I used in my recent post on <a href="https://robjhyndman.com/hyndsight/excess-deaths/">“excess deaths”</a>. However, this time we will keep the mortality rates rather than the numbers of deaths.</p>
+<pre class="r"><code>stmf &lt;- readr::read_csv(&quot;https://www.mortality.org/Public/STMF/Outputs/stmf.csv&quot;, skip=1)</code></pre>
+<pre class="r"><code>mrates &lt;- stmf %&gt;%
+  janitor::clean_names() %&gt;%
+  select(country_code:sex, r0_14:r_total) %&gt;%
+  pivot_longer(5:10,
+    names_to = &quot;age&quot;, values_to = &quot;mxt&quot;,
+    names_pattern = &quot;[r_]*([a-z0-9_p]*)&quot;
+  ) %&gt;%
+  filter(age == &quot;total&quot;, sex == &quot;b&quot;) %&gt;%
+  mutate(
+    country = recode(country_code,
+      AUT = &quot;Austria&quot;,
+      BEL = &quot;Belgium&quot;,
+      DEUTNP = &quot;Germany&quot;,
+      DNK = &quot;Denmark&quot;,
+      ESP = &quot;Spain&quot;,
+      FIN = &quot;Finland&quot;,
+      GBRTENW = &quot;England &amp; Wales&quot;,
+      ISL = &quot;Iceland&quot;,
+      NLD = &quot;Netherlands&quot;,
+      NOR = &quot;Norway&quot;,
+      PRT = &quot;Portugal&quot;,
+      SWE = &quot;Sweden&quot;,
+      USA = &quot;United States&quot;
+    )
+  ) %&gt;%
+  select(year, week, country, mxt)</code></pre>
+<p>First let’s plot the mortality rate against the week of the year for two countries with interesting data features.</p>
+</div>
+<div id="england-wales" class="section level2">
+<h2>England &amp; Wales</h2>
+<pre class="r"><code>mrates %&gt;%
+  filter(country == &quot;England &amp; Wales&quot;) %&gt;%
+  mutate(year = as.factor(year)) %&gt;%
+  ggplot(aes(x = week, y = mxt, group = year)) +
+  geom_line(aes(col = year))</code></pre>
+<p><img src="/hyndsight/2020-05-seasonal-deaths_files/figure-html/england2-1.png" width="672" /></p>
+<p>Here we see some annual seasonal pattern, with higher rates in winter, and also a few sudden dips in mortality rates. The latter are almost certainly due to recording discrepancies, where deaths are not recorded until the following week. Note that the dips are generally followed by a higher than usual mortality rate in the following week. Those between weeks 12 and 17 are probably due to Easter; bank holiday effects are seen in weeks 18-19, 22-23 and 35-36 (depending on which year the holiday falls; the Christmas effect is seen in week 52.</p>
+<p>The second week of the year always has increased mortality — this is a reporting issue: delayed deaths from the previous week(s) are included in statistics for the second week of the year.</p>
+<p>Other than the obvious pandemic effect in 2020, this graph also shows increased mortality rates at the start of 2015 and 2018, and in the first half of March 2018. This is probably due to the flu epidemic.</p>
+</div>
+<div id="spain" class="section level2">
+<h2>Spain</h2>
+<p>A similar plot for Spain shows a jump in mortality from weeks 31–34 (August) in 2003. This was due to an extreme heat wave (see <a href="https://doi.org/10.1016/j.crvi.2007.12.001">Robine et al, 2008</a>).</p>
+<pre class="r"><code>mrates %&gt;%
+  filter(country == &quot;Spain&quot;) %&gt;%
+  mutate(year = as.factor(year)) %&gt;%
+  ggplot(aes(x = week, y = mxt, group = year)) +
+  geom_line(aes(col = year))</code></pre>
+<p><img src="/hyndsight/2020-05-seasonal-deaths_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="comparing-seasonality-across-countries" class="section level1">
+<h1>Comparing seasonality across countries</h1>
+<p>We can compare the seasonal patterns from all countries by using an STL decomposition to estimate the seasonality. There will be some differences because some countries provide weekly data by date of registration (instead of the date of occurrence). This is why, for example, we see sudden dips in England &amp; Wales but do not see similar dips in Germany. Information about the type of data available is in <a href="https://www.mortality.org/Public/STMF_DOC/STMFmetadata.pdf">the metadata</a>.</p>
+<p>First we have to convert the data to a tsibble object.</p>
+<pre class="r"><code>mrates &lt;- mrates %&gt;%
+  mutate(date = yearweek(paste0(year, &quot;W&quot;, week))) %&gt;%
+  as_tsibble(index = date, key = country)</code></pre>
+<p>Now we estimate the seasonal components using an STL decomposition. The robust argument is used to prevent the unusual years affecting the results, and the seasonal window is set to periodic as we don’t expect the seasonal pattern to change over the last decade or two. STL decompositions are additive, but it would be more interpretable to look at the percentage increase in mortality rates across the year, so I will decompose the log rates and then compute the seasonal effect as a percentage increase (relative to the mean death rate) for each week of the year. There are a couple of missing values, so I will replace them with something small and the robust estimation should ignore them.</p>
+<pre class="r"><code>stl_season &lt;- mrates %&gt;%
+  fill_gaps(mxt = 0.0001) %&gt;%
+  model(STL(log(mxt) ~ season(window = &quot;periodic&quot;), robust = TRUE)) %&gt;%
+  components() %&gt;%
+  mutate(
+    pc_increase = 100*(exp(season_year)-1),
+    week = lubridate::week(date),
+    year = lubridate::year(date)
+  ) %&gt;%
+  filter(year == 2019) %&gt;%
+  as_tibble() %&gt;%
+  select(country, week, pc_increase)</code></pre>
+<p>The smoothed components can now be plotted.</p>
+<pre class="r"><code>stl_season %&gt;%
+  ggplot(aes(x = week, y = pc_increase, group = country)) +
+  geom_smooth(aes(col = country), span = 0.4, se = FALSE, size = .5)</code></pre>
+<p><img src="/hyndsight/2020-05-seasonal-deaths_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Most countries are very similar, probably due to them all being in the northern hemisphere and all having well-developed health services. The two that stand out as different from the rest are Portugal (in purple) and Iceland (in green). Let’s just plot these two with confidence intervals, along with Spain for comparison.</p>
+<pre class="r"><code>stl_season %&gt;%
+  filter(country %in% c(&quot;Iceland&quot;, &quot;Portugal&quot;, &quot;Spain&quot;)) %&gt;%
+  ggplot(aes(x = week, y = pc_increase, group = country)) +
+  geom_smooth(aes(col = country), span = 0.4, size = .5) +
+  ggthemes::scale_color_colorblind()</code></pre>
+<p><img src="/hyndsight/2020-05-seasonal-deaths_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The Icelandic rates show less seasonality than other countries, but contain a dip in weeks 25–35 (mid-June to end of August). The Iceland mortality pattern is possibly due to the weather, with a very short summer and cold conditions for the rest of the year.</p>
+<p>The Portuguese mortality rates are much higher in winter than other countries, and much lower in summer. This is strange as it has very similar weather to Spain, but very different mortality rates. Some <a href="https://twitter.com/Thoughtfulnz/status/1264426705046786050">twitter discussion</a> suggested some of the increase in January could be delayed reporting, as few deaths are reported in the last week of the year. <a href="http://dx.doi.org/10.1136/jech.57.10.784">Healy (2003)</a> suggested it was due to poor insulation in Portuguese houses, along with relatively high income poverty and inequality and relatively low public health expenditure compared to other European countries. However, it is not clear that this is still true 17 years after he wrote that article.</p>
+<details>
+<summary>
+Reproducibility details
+</summary>
+<pre class="r"><code>options(width = 100)
+sessioninfo::session_info()</code></pre>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.5 (2021-03-31)
+##  os       KDE neon User Edition 5.21  
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language en_GB:en_US                 
+##  collate  en_AU.UTF-8                 
+##  ctype    en_AU.UTF-8                 
+##  tz       Australia/Melbourne         
+##  date     2021-04-14                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
+##  ! package        * version    date       lib source                               
+##    anytime          0.3.9      2020-08-27 [1] CRAN (R 4.0.3)                       
+##  P assertthat       0.2.1      2019-03-21 [?] CRAN (R 4.0.3)                       
+##  P blogdown         1.2        2021-03-04 [?] RSPM (R 4.0.3)                       
+##  P bookdown         0.21       2020-10-13 [?] RSPM (R 4.0.3)                       
+##    bslib            0.2.4      2021-01-25 [1] CRAN (R 4.0.3)                       
+##    cli              2.4.0      2021-04-05 [1] CRAN (R 4.0.5)                       
+##  P colorspace       2.0-0      2020-11-11 [?] CRAN (R 4.0.3)                       
+##  P crayon           1.4.1      2021-02-08 [?] CRAN (R 4.0.3)                       
+##    DBI              1.1.1      2021-01-15 [1] CRAN (R 4.0.3)                       
+##  P digest           0.6.27     2020-10-24 [?] CRAN (R 4.0.3)                       
+##    distributional   0.2.2      2021-02-02 [1] CRAN (R 4.0.3)                       
+##  P dplyr          * 1.0.5      2021-03-05 [?] RSPM (R 4.0.3)                       
+##  P ellipsis         0.3.1      2020-05-15 [?] CRAN (R 4.0.3)                       
+##  P evaluate         0.14       2019-05-28 [?] CRAN (R 4.0.3)                       
+##  P fabletools     * 0.3.1.9000 2021-04-13 [?] Github (tidyverts/fabletools@4441118)
+##  P fansi            0.4.2      2021-01-15 [?] CRAN (R 4.0.3)                       
+##  P farver           2.1.0      2021-02-28 [?] CRAN (R 4.0.4)                       
+##  P feasts         * 0.2.1      2021-03-22 [?] CRAN (R 4.0.4)                       
+##    generics         0.1.0      2020-10-31 [1] CRAN (R 4.0.3)                       
+##  P ggplot2        * 3.3.3      2020-12-30 [?] CRAN (R 4.0.3)                       
+##    ggthemes         4.2.4      2021-01-20 [1] CRAN (R 4.0.3)                       
+##  P glue             1.4.2      2020-08-27 [?] CRAN (R 4.0.3)                       
+##  P gtable           0.3.0      2019-03-25 [?] CRAN (R 4.0.3)                       
+##  P highr            0.8        2019-03-20 [?] CRAN (R 4.0.3)                       
+##  P htmltools        0.5.1.1    2021-01-22 [?] CRAN (R 4.0.3)                       
+##  P janitor          2.1.0      2021-01-05 [?] CRAN (R 4.0.3)                       
+##    jquerylib        0.1.3      2020-12-17 [1] CRAN (R 4.0.3)                       
+##  P jsonlite         1.7.2      2020-12-09 [?] CRAN (R 4.0.3)                       
+##  P knitr            1.31       2021-01-27 [?] CRAN (R 4.0.3)                       
+##  P labeling         0.4.2      2020-10-20 [?] CRAN (R 4.0.3)                       
+##  P lattice          0.20-41    2020-04-02 [?] CRAN (R 4.0.0)                       
+##  P lifecycle        1.0.0      2021-02-15 [?] RSPM (R 4.0.4)                       
+##  P lubridate        1.7.10     2021-02-26 [?] CRAN (R 4.0.4)                       
+##  P magrittr         2.0.1      2020-11-17 [?] CRAN (R 4.0.3)                       
+##  P Matrix           1.3-2      2021-01-06 [?] CRAN (R 4.0.3)                       
+##  P mgcv             1.8-34     2021-02-16 [?] RSPM (R 4.0.3)                       
+##  P munsell          0.5.0      2018-06-12 [?] CRAN (R 4.0.3)                       
+##  P nlme             3.1-152    2021-02-04 [?] CRAN (R 4.0.3)                       
+##  P pillar           1.6.0      2021-04-13 [?] CRAN (R 4.0.5)                       
+##  P pkgconfig        2.0.3      2019-09-22 [?] CRAN (R 4.0.3)                       
+##    progressr        0.7.0      2020-12-11 [1] CRAN (R 4.0.3)                       
+##  P purrr            0.3.4      2020-04-17 [?] CRAN (R 4.0.3)                       
+##  P R6               2.5.0      2020-10-28 [?] CRAN (R 4.0.3)                       
+##  P Rcpp             1.0.6      2021-01-15 [?] CRAN (R 4.0.3)                       
+##  P renv             0.13.2     2021-03-30 [?] RSPM (R 4.0.4)                       
+##  P rlang            0.4.10     2020-12-30 [?] CRAN (R 4.0.3)                       
+##  P rmarkdown        2.7        2021-02-19 [?] CRAN (R 4.0.4)                       
+##    sass             0.3.1      2021-01-24 [1] CRAN (R 4.0.3)                       
+##  P scales           1.1.1      2020-05-11 [?] CRAN (R 4.0.3)                       
+##  P sessioninfo      1.1.1      2018-11-05 [?] CRAN (R 4.0.3)                       
+##  P snakecase        0.11.0     2019-05-25 [?] CRAN (R 4.0.3)                       
+##  P stringi          1.5.3      2020-09-09 [?] CRAN (R 4.0.3)                       
+##  P stringr          1.4.0      2019-02-10 [?] CRAN (R 4.0.3)                       
+##  P tibble           3.1.0      2021-02-25 [?] CRAN (R 4.0.4)                       
+##  P tidyr          * 1.1.3      2021-03-03 [?] RSPM (R 4.0.3)                       
+##    tidyselect       1.1.0      2020-05-11 [1] CRAN (R 4.0.3)                       
+##  P tsibble        * 1.0.1      2021-04-13 [?] Github (tidyverts/tsibble@ba2053e)   
+##    utf8             1.2.1      2021-03-12 [1] CRAN (R 4.0.4)                       
+##    vctrs            0.3.7      2021-03-29 [1] CRAN (R 4.0.5)                       
+##  P withr            2.4.1      2021-01-26 [?] CRAN (R 4.0.3)                       
+##  P xfun             0.22       2021-03-11 [?] CRAN (R 4.0.4)                       
+##  P yaml             2.2.1      2020-02-01 [?] CRAN (R 4.0.3)                       
+## 
+## [1] /home/hyndman/git/Website/renv/library/R-4.0/x86_64-pc-linux-gnu
+## [2] /tmp/RtmphKMwQv/renv-system-library
+## 
+##  P ── Loaded and on-disk path mismatch.</code></pre>
+</details>
+</div>

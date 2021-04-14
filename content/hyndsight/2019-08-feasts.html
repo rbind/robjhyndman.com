@@ -1,0 +1,138 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-08-30
+slug: feasts
+title: Time series graphics using feasts
+categories:
+- time series
+- graphics
+- statistics
+- R
+- tidyverts
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This is the second post on the new <a href="https://tidyverts.org">tidyverts</a> packages for tidy time series analysis. The previous post is <a href="https://robjhyndman.com/hyndsight/tsibbles">here</a>.</p>
+<p>For users migrating from the <code>forecast</code> package, it might be useful to see how to get similar graphics to those they are used to. The <code>forecast</code> package is built for <code>ts</code> objects, while the <code>feasts</code> package provides features, statistics and graphics for <code>tsibbles</code>. (See my <a href="https://robjhyndman.com/hyndsight/tsibbles">first post</a> for a description of tsibbles.)</p>
+<div id="exploratory-graphics" class="section level2">
+<h2>Exploratory graphics</h2>
+<p>The <code>forecast</code> package provided facilities for plotting time series in various ways. All of these have a counterpart in the <code>feasts</code> package.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">forecast</th>
+<th align="left">feasts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>autoplot()</code></td>
+<td align="left"><code>autoplot()</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>ggseasonplot()</code></td>
+<td align="left"><code>gg_season()</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>ggsubseriesplot()</code></td>
+<td align="left"><code>gg_subseries()</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>gglagplot()</code></td>
+<td align="left"><code>gg_lag()</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>ggAcf()</code></td>
+<td align="left"><code>ACF() %&gt;% autoplot()</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>ggPacf()</code></td>
+<td align="left"><code>PACF() %&gt;% autoplot()</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>ggtsdisplay()</code></td>
+<td align="left"><code>gg_tsdisplay()</code></td>
+</tr>
+</tbody>
+</table>
+<p>The big difference is that tsibbles can contain multiple time series, while <code>ts</code> objects can only contain one (possibly multivariate) time series. Note also that the <code>feasts</code> functions will only do one thing — either compute some statistics or produce a plot — unlike the <code>ggAcf()</code> function which does both.</p>
+<p>We will illustrate the above functions use the Australian quarterly holiday data by State, created in the last post.</p>
+<pre class="r"><code>library(tidyverse)
+library(tsibble)
+holidays &lt;- tourism %&gt;%
+  filter(Purpose == &quot;Holiday&quot;) %&gt;%
+  group_by(State) %&gt;%
+  summarise(Trips = sum(Trips))</code></pre>
+<p>First, a time plot is generated using <code>autoplot()</code>.</p>
+<pre class="r"><code>library(feasts)
+holidays %&gt;% autoplot(Trips)</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/autoplot-1.png" width="960" /></p>
+<p>When the plotting variable (here <code>Trips</code>) is omitted, the first available measurement variable is used by default. When there are no keys, only one time series is shown with no legend.</p>
+<p>A season plot is shown below. Here it is clear that the southern states of Australia (Tasmania, Victoria and South Australia) have strongest tourism in Q1 (their summer), while the northern states (Queensland and the Northern Territory) have the strongest tourism in Q3 (their dry season).</p>
+<pre class="r"><code>holidays %&gt;% gg_season(Trips)</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/gg_season-1.png" width="480" /></p>
+<p>A subseries plot allows changes in seasonality over time to be easily visualized. The blue lines shows the mean across the years in each panel. Here it is clear that Western Australian tourism has jumped markedly in recent years, while Victorian tourism has increased in Q1 and Q4 but not in the middle of the year.</p>
+<pre class="r"><code>holidays %&gt;% gg_subseries(Trips)</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/gg_subseries-1.png" width="672" /></p>
+<p>The ACF is commonly used to assess the dynamic information in a time series. This is computed using the <code>ACF()</code> function for all series. This also produces a tsibble, but with the index being the lag.</p>
+<pre class="r"><code>holidays %&gt;% ACF(Trips)</code></pre>
+<pre><code>## # A tsibble: 152 x 3 [1Q]
+## # Key:       State [8]
+##    State   lag      acf
+##    &lt;chr&gt; &lt;lag&gt;    &lt;dbl&gt;
+##  1 ACT      1Q  0.0877 
+##  2 ACT      2Q  0.252  
+##  3 ACT      3Q -0.0496 
+##  4 ACT      4Q  0.300  
+##  5 ACT      5Q -0.0741 
+##  6 ACT      6Q  0.269  
+##  7 ACT      7Q -0.00504
+##  8 ACT      8Q  0.236  
+##  9 ACT      9Q -0.0953 
+## 10 ACT     10Q  0.0750 
+## # … with 142 more rows</code></pre>
+<p>To plot the ACFs for all series, we can pass the result to <code>autoplot()</code>.</p>
+<pre class="r"><code>holidays %&gt;% ACF(Trips) %&gt;% autoplot()</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/ACFplot-1.png" width="576" /></p>
+<p>Here, the low seasonality in the ACT is evident compared to the other states.</p>
+<p>The remaining two graphical methods require only one time series. So we filter out the Tasmanian holiday data to illustrate them.</p>
+<pre class="r"><code>holidays %&gt;% filter(State==&quot;Tasmania&quot;) %&gt;% gg_lag(Trips, geom=&quot;point&quot;)</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/lagplot-1.png" width="576" /></p>
+<p>This lag plot shows a scatterplot of the lagged observation (vertical axis) against the current observation, with points coloured by the current quarter. The correlations of these lag plots are what make up the ACF. In this example, it is clear that Q1 is a strong quarter for Tasmania, and that the seasonality induces positive correlations at lags 4 and 8, but negative correlations at lags 2 and 6.</p>
+<p>Finally, we show a composite plot created using <code>gg_tsdisplay()</code>. This is a little different from the corresponding <code>ggtsdisplay()</code> function in the forecast package which showed the PACF in the bottom right panel by default. I think the season plot is a little more informative for exploratory data analysis, so that is what is shown by default in this new function. The other panels are the same.</p>
+<pre class="r"><code>holidays %&gt;% filter(State==&quot;Tasmania&quot;) %&gt;% gg_tsdisplay(Trips)</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/gg_tsdisplay-1.png" width="960" /></p>
+</div>
+<div id="decompositions" class="section level2">
+<h2>Decompositions</h2>
+<p>The stats package provides the <code>stl()</code> function for STL decomposition of single time series with one seasonal period. The forecast package extended this with <code>mstl()</code> to allow for multiple seasonal periods. The feasts package allows for more flexible seasonality and for multiple series to be handled simultaneously.</p>
+<pre class="r"><code>holidays %&gt;% model(STL(Trips)) %&gt;% components() %&gt;% autoplot()</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/stl-1.png" width="960" /></p>
+<p>All components from all series are shown here. Note that the annual seasonality has been estimated by default. With time series containing other seasonal periods, more than one seasonal component will be produced. These can be controlled using the <code>STL</code> arguments.</p>
+<p>To demonstrate on a more difficult series, here is an STL decomposition for half hourly electricity data.</p>
+<pre class="r"><code>library(lubridate)
+tsibbledata::vic_elec %&gt;%
+  filter(yearmonth(Date) &gt;= yearmonth(&quot;2014 Oct&quot;)) %&gt;%
+  model(STL(Demand ~ trend(window=77) + season(window=&quot;periodic&quot;))) %&gt;%
+  components() %&gt;%
+  autoplot()</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/stl2-1.png" width="960" /></p>
+<p>The hourly seasonality is largely meaningless – we do not expect electricity demand to have a periodic effect within the hour – and the daily seasonality has been largely captured in the weekly seasonality above it. The confounding of these two components makes it hard to interpret the daily seasonality. So we can drop the hourly and daily components and just model the weekly seasonality instead.</p>
+<pre class="r"><code>tsibbledata::vic_elec %&gt;%
+  filter(yearmonth(Date) &gt;= yearmonth(&quot;2014 Oct&quot;)) %&gt;%
+  model(STL(
+    Demand ~ trend(window=77) +
+        season(&quot;week&quot;, window=&quot;periodic&quot;)
+  )) %&gt;%
+  components %&gt;%
+  autoplot()</code></pre>
+<p><img src="/hyndsight/2019-08-feasts_files/figure-html/stl3-1.png" width="960" /></p>
+<p>The remainder term captures the difference from what you would expect if the demand was simply a function of the time of week. The variations from the weekly pattern, due to holidays or unusual weather, will show up in the remainder series.</p>
+</div>
+<div id="features-and-statistics" class="section level2">
+<h2>Features and statistics</h2>
+<p>The <code>feasts</code> package does much more than graphics, but that can wait until a future post.</p>
+</div>

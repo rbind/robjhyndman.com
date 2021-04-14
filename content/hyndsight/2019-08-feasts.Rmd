@@ -108,7 +108,7 @@ holidays %>% filter(State=="Tasmania") %>% gg_tsdisplay(Trips)
 The stats package provides the `stl()` function for STL decomposition of single time series with one seasonal period. The forecast package extended this with `mstl()` to allow for multiple seasonal periods. The feasts package allows for more flexible seasonality and for multiple series to be handled simultaneously.
 
 ```{r stl, fig.height=6, fig.width=10}
-holidays %>% STL(Trips) %>% autoplot()
+holidays %>% model(STL(Trips)) %>% components() %>% autoplot()
 ```
 
 All components from all series are shown here. Note that the annual seasonality has been estimated by default. With time series containing other seasonal periods, more than one seasonal component will be produced. These can be controlled using the `STL` arguments.
@@ -119,7 +119,8 @@ To demonstrate on a more difficult series, here is an STL decomposition for half
 library(lubridate)
 tsibbledata::vic_elec %>%
   filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
-  STL(Demand ~ trend(window=77) + season(window="periodic")) %>%
+  model(STL(Demand ~ trend(window=77) + season(window="periodic"))) %>%
+  components() %>%
   autoplot()
 ```
 
@@ -128,10 +129,11 @@ The hourly seasonality is largely meaningless -- we do not expect electricity de
 ```{r stl3, fig.height=6, fig.width=10}
 tsibbledata::vic_elec %>%
   filter(yearmonth(Date) >= yearmonth("2014 Oct")) %>%
-  STL(
+  model(STL(
     Demand ~ trend(window=77) +
         season("week", window="periodic")
-  ) %>%
+  )) %>%
+  components %>%
   autoplot()
 ```
 

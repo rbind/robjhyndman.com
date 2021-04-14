@@ -1,0 +1,48 @@
+---
+date: 2018-04-14
+slug: forecast83
+title: "forecast v8.3 now on CRAN"
+mathjax: true
+categories:
+  - forecasting
+  - time series
+  - R
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The latest version of the <a href="https://cran.r-project.org/package=forecast">forecast package for R is now on CRAN</a>. This is the version used in the <a href="https://OTexts.org/fpp2">2nd edition of my forecasting textbook</a> with George Athanasopoulos. So readers should now be able to replicate all examples in the book using only CRAN packages.</p>
+<p>A few new features of the forecast package may be of interest. A more complete <a href="http://pkg.robjhyndman.com/forecast/news/">Changelog</a> is also available.</p>
+<div id="mstl-handles-multiple-seasonality" class="section level2">
+<h2><code>mstl()</code> handles multiple seasonality</h2>
+<p>STL decomposition was designed to handle a single type of seasonality, but modern data often involves several seasonal periods (e.g., hourly data often has a time of day seasonality, a time of week seasonality and a time of year seasonality). So I introduced the <code>mstl()</code> function to handle this situation. Unlike <code>stl()</code> is it completely automated, so it is not necessary to specify the seasonal window.</p>
+<p>For example, here is a decomposition of some half-hourly electricity demand data from England and Wales.</p>
+<pre class="r"><code>library(forecast)
+library(ggplot2)
+mstl(taylor) %&gt;% autoplot()</code></pre>
+<p><img src="/hyndsight/2018-04-forecast83_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+<p>The daily seasonality is shown as <code>Seasonal48</code> while the weekly seasonality is named <code>Seasonal336</code>, the names indicating the length of the seasonal period.</p>
+<p>This works by iteratively calling the <code>stl()</code> function, each time removing all seasonal components other the one being estimated.</p>
+<p>It also handles non-seasonal time series, in which case it decomposes the series into a trend and a remainder term using Friedman’s super smoother (<code>supsmu</code>) to estimate the trend.</p>
+<p><code>mstl()</code> is now also used internally by <code>stlf()</code>, <code>stlm()</code>, <code>tsoutliers()</code> and <code>tsclean()</code>.</p>
+</div>
+<div id="tscv-handles-multiple-forecast-horizons-and-rolling-windows" class="section level2">
+<h2><code>tsCV()</code> handles multiple forecast horizons and rolling windows</h2>
+<p>The <code>tsCV()</code> function introduced in version 8.0 has proven popular, and it has now been extended to simplify the calculation for multiple forecast horizons. So if you specify a horizon <span class="math inline">\(h&gt;1\)</span>, the cross-validated errors are returned for all horizons up to and including <span class="math inline">\(h\)</span>.</p>
+<p>For example, we can fit an AR(2) model to the lynx data, and compute cross-validation statistics up to horizon 10.</p>
+<pre class="r"><code>#Fit an AR(2) model to each rolling origin subset
+far2 &lt;- function(x, h){forecast(Arima(x, order=c(2,0,0)), h=h)}
+e &lt;- tsCV(lynx, far2, h=10)
+# Compute the MSE values and remove missing values
+mse &lt;- colMeans(e^2, na.rm = T)
+# Plot the MSE values against the forecast horizon
+data.frame(h = 1:10, MSE = mse) %&gt;%
+  ggplot(aes(x = h, y = MSE/1e6)) + geom_point()</code></pre>
+<p><img src="/hyndsight/2018-04-forecast83_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><code>tsCV()</code> now also has a <code>window</code> argument so the training data can be kept at a constant size.</p>
+</div>
+<div id="auto.arima-changes" class="section level2">
+<h2><code>auto.arima()</code> changes</h2>
+<p>One aspect of the automatic ARIMA algorithm that I’ve never been happy with is how it selects the number of seasonal differences. Originally, we used the Canova-Hansen seasonal unit root test, then in v3.0 we switched to using the OCSB test. But neither was particularly satisfactory, partly because neither was designed for this use case. So in v8.3 we have changed again and now use a measure of seasonal strength to determine if a seasonal difference is required or not. The measure is described <a href="https://otexts.org/fpp2/seasonal-strength.html">here</a>. A series with seasonal strength greater than 0.64 is differenced once, otherwise no seasonal differencing is used. We chose the threshold value of 0.64 as that led to the best forecast accuracy on the M3 competition data.</p>
+</div>

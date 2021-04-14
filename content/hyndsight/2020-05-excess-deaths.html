@@ -1,0 +1,271 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-05-21
+title: "Excess deaths for 2020"
+slug: excess-deaths
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - epidemiology
+  - demography
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The reported COVID19 deaths in each country are often undercounts due to different reporting practices, or people dying of COVID19 related causes without ever being tested. One way to explore the true mortality effect of the pandemic is to look at “excess deaths” — the difference between death rates this year and the same time in previous years.</p>
+<p>The <a href="http://ft.com/coronavirus-latest"><em>Financial Times</em></a> (and other media outlets) have been collecting data from many countries to try to measure this effect. Now the <a href="https://www.mortality.org/">Human Mortality Database</a> has made this much easier by publishing weekly deaths data for 13 countries.</p>
+<p>Unfortunately, many countries do not have the processes in place to allow such data to be readily available. In Australia, for example, the <a href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/mf/3302.0">most recent official deaths data</a> is from 2018! The fact that there is no public organized national data collection for deaths during a pandemic is a sad indictment on the responsible government authorities.</p>
+<div id="download-the-data" class="section level2">
+<h2>Download the data</h2>
+<p>Here is some code to download and organize the data from the HMD</p>
+<pre class="r"><code>library(dplyr)
+library(tidyr)
+library(ggplot2)</code></pre>
+<pre class="r"><code>stmf &lt;- readr::read_csv(&quot;https://www.mortality.org/Public/STMF/Outputs/stmf.csv&quot;, skip=1)</code></pre>
+<pre class="r"><code>stmf</code></pre>
+<pre><code>## # A tibble: 29,994 x 19
+##    CountryCode  Year  Week Sex   D0_14 D15_64 D65_74 D75_84  D85p DTotal
+##    &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+##  1 AUT          2000     1 m      6.28   184.   211.   237.  176.    814
+##  2 AUT          2000     1 f      5.35   101.   141.   335.  471.   1053
+##  3 AUT          2000     1 b     11.5    285.   355.   573.  643.   1867
+##  4 AUT          2000     2 m      6.58   192.   217.   244.  180.    840
+##  5 AUT          2000     2 f      5.81   109.   141.   335.  471.   1062
+##  6 AUT          2000     2 b     12.2    302.   359.   580.  650.   1902
+##  7 AUT          2000     3 m      7.73   226.   220.   248.  183.    886
+##  8 AUT          2000     3 f      6.11   115.   152.   361.  507.   1141
+##  9 AUT          2000     3 b     13.8    341.   378.   610.  684.   2027
+## 10 AUT          2000     4 m      7.30   214.   217.   245.  181.    864
+## # … with 29,984 more rows, and 9 more variables: R0_14 &lt;dbl&gt;,
+## #   R15_64 &lt;dbl&gt;, R65_74 &lt;dbl&gt;, R75_84 &lt;dbl&gt;, R85p &lt;dbl&gt;, RTotal &lt;dbl&gt;,
+## #   Split &lt;dbl&gt;, SplitSex &lt;dbl&gt;, Forecast &lt;dbl&gt;</code></pre>
+<p>The columns beginning with <code>D</code> show deaths for different age groups, while mortality rates are in the columns starting with <code>R</code>.</p>
+</div>
+<div id="wrangle-the-data-into-long-form" class="section level2">
+<h2>Wrangle the data into long form</h2>
+<p>Let’s drop the rates columns and wrangle it into a form more suitable for analysis. To keep it simple, I’ll only keep aggregate deaths over age and sex.</p>
+<pre class="r"><code>deaths &lt;- stmf %&gt;%
+  janitor::clean_names() %&gt;%
+  select(country_code:d_total) %&gt;%
+  pivot_longer(5:10,
+    names_to = &quot;age&quot;, values_to = &quot;deaths&quot;,
+    names_pattern = &quot;[d_]*([a-z0-9_p]*)&quot;
+  ) %&gt;%
+  filter(age == &quot;total&quot;, sex == &quot;b&quot;) %&gt;%
+  mutate(
+    country = recode(country_code,
+      AUT = &quot;Austria&quot;,
+      BEL = &quot;Belgium&quot;,
+      DEUTNP = &quot;Germany&quot;,
+      DNK = &quot;Denmark&quot;,
+      ESP = &quot;Spain&quot;,
+      FIN = &quot;Finland&quot;,
+      GBRTENW = &quot;England &amp; Wales&quot;,
+      ISL = &quot;Iceland&quot;,
+      NLD = &quot;Netherlands&quot;,
+      NOR = &quot;Norway&quot;,
+      PRT = &quot;Portugal&quot;,
+      SWE = &quot;Sweden&quot;,
+      USA = &quot;United States&quot;)
+  ) %&gt;%
+  select(year, week, country, deaths)</code></pre>
+<p>The only tricky part here is in converting the age groups which are part of the column names into a variable using a regex via <code>names_pattern</code>.</p>
+<pre class="r"><code>deaths</code></pre>
+<pre><code>## # A tibble: 9,998 x 4
+##     year  week country deaths
+##    &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+##  1  2000     1 Austria   1867
+##  2  2000     2 Austria   1902
+##  3  2000     3 Austria   2027
+##  4  2000     4 Austria   1940
+##  5  2000     5 Austria   1928
+##  6  2000     6 Austria   1760
+##  7  2000     7 Austria   1666
+##  8  2000     8 Austria   1628
+##  9  2000     9 Austria   1566
+## 10  2000    10 Austria   1524
+## # … with 9,988 more rows</code></pre>
+</div>
+<div id="weekly-deaths-highlighting-2020" class="section level2">
+<h2>Weekly deaths highlighting 2020</h2>
+<p>Now we can plot the deaths from this year compared to those from all other available years (the start year ranges from 1990 for Finland to 2017 for Iceland).</p>
+<pre class="r"><code>deaths %&gt;%
+  mutate(thisyear = (year == 2020)) %&gt;%
+  ggplot(aes(x=week, y=deaths, group=year)) +
+    geom_line(aes(col=thisyear)) +
+    facet_wrap(~ country, scales=&#39;free_y&#39;) +
+    scale_color_manual(values=c(&quot;FALSE&quot;=&#39;gray&#39;,&quot;TRUE&quot;=&#39;red&#39;)) +
+    guides(col=FALSE) +
+    ggtitle(&quot;Weekly deaths&quot;)</code></pre>
+<p><img src="/hyndsight/2020-05-excess-deaths_files/figure-html/weekly-1.png" width="672" /></p>
+<p>Clearly there are a few problems with the last week of available data from Finland, Norway and the United States. These are due to incomplete counts as noted in the <a href="https://www.mortality.org/Public/STMF_DOC/STMFmetadata.pdf">meta data provided by HMD</a>, and the same problem may affect other countries too. As more data are made available, earlier weeks may also be updated.</p>
+<p>Note that there is a lag before the data are made available. We can see how far each country is behind by comparing the last week of available data with the current week number.</p>
+<pre class="r"><code>deaths %&gt;%
+  filter(year==2020) %&gt;%
+  group_by(country) %&gt;%
+  summarise(last_week = max(week)) %&gt;%
+  mutate(
+    current_week = lubridate::week(Sys.Date()),
+    lag = current_week - last_week
+  )</code></pre>
+<pre><code>## # A tibble: 13 x 4
+##    country         last_week current_week   lag
+##    &lt;chr&gt;               &lt;dbl&gt;        &lt;dbl&gt; &lt;dbl&gt;
+##  1 Austria                14           15     1
+##  2 Belgium                19           15    -4
+##  3 Denmark                17           15    -2
+##  4 England &amp; Wales        18           15    -3
+##  5 Finland                18           15    -3
+##  6 Germany                16           15    -1
+##  7 Iceland                15           15     0
+##  8 Netherlands            16           15    -1
+##  9 Norway                 17           15    -2
+## 10 Portugal               18           15    -3
+## 11 Spain                  19           15    -4
+## 12 Sweden                 18           15    -3
+## 13 United States          17           15    -2</code></pre>
+<p>Before continuing, I’ll remove that last week of data for all countries (which will make the lag one week longer).</p>
+<pre class="r"><code>deaths &lt;- deaths %&gt;%
+  group_by(country, year) %&gt;%
+  filter(!(year==2020 &amp; week==max(week))) %&gt;%
+  select(year, week, country, deaths)</code></pre>
+</div>
+<div id="estimate-excess-deaths" class="section level2">
+<h2>Estimate excess deaths</h2>
+<p>To estimate the total excess deaths up to the most recent data, we can first compute weekly median deaths over the last five years, then calculate the difference between the 2020 deaths numbers and these weekly medians. I’m using medians because Germany appears to have some big fluctuations at the start of the year and I’m not sure how reliable those numbers are.</p>
+<pre class="r"><code>recent_deaths &lt;- deaths %&gt;%
+  filter(year &gt;= 2015 &amp; year &lt;= 2019) %&gt;%
+  group_by(country,week) %&gt;%
+  summarise(median_deaths = median(deaths)) %&gt;%
+  ungroup()
+excess_deaths &lt;- deaths %&gt;%
+  filter(year &gt;= 2015) %&gt;%
+  left_join(recent_deaths) %&gt;%
+  mutate(excess = deaths - median_deaths)
+excess_deaths %&gt;%
+  mutate(thisyear = (year == 2020)) %&gt;%
+  ggplot(aes(x=week, y=excess, group=year)) +
+  geom_hline(yintercept=0, col=&#39;gray&#39;) +
+  geom_line(aes(col=thisyear)) +
+  facet_wrap(~ country, scales=&#39;free_y&#39;) +
+  scale_color_manual(values=c(&quot;FALSE&quot;=&#39;gray&#39;,&quot;TRUE&quot;=&#39;red&#39;)) +
+  guides(col=FALSE) +
+  ggtitle(&quot;Weekly excess deaths&quot;)</code></pre>
+<p><img src="/hyndsight/2020-05-excess-deaths_files/figure-html/excess-1.png" width="672" /></p>
+<p>This graph shows the excess deaths of the last six years, with 2020 highlighted in red. The other years help to see the natural variability in this calculation. Interestingly, many countries have negative excess deaths for the first 10 weeks of the year, probably due to precautions being taken before the virus had spread. So there were fewer car accidents, for example.</p>
+<p>I’m fairly sure the numbers for the United States in the last week shown above are also incorrect, as the official COVID19 deaths have not stopped decreasing, but the data will presumably get corrected over time.</p>
+<p>Finally, we can summarise the total excess deaths per country for 2020.</p>
+<pre class="r"><code>excess_deaths %&gt;%
+  filter(year==2020) %&gt;%
+  group_by(country) %&gt;%
+  summarise(
+    excess = sum(excess),
+    last_week = max(week),
+    as_at = as.Date(&quot;2020-01-01&quot;) + 7*(last_week-1)
+  ) %&gt;%
+  select(country, excess, as_at)</code></pre>
+<pre><code>## # A tibble: 13 x 3
+##    country         excess as_at     
+##    &lt;chr&gt;            &lt;dbl&gt; &lt;date&gt;    
+##  1 Austria          -204  2020-03-25
+##  2 Belgium          6322  2020-04-29
+##  3 Denmark          -485  2020-04-15
+##  4 England &amp; Wales 33581  2020-04-22
+##  5 Finland          -260  2020-04-22
+##  6 Germany          -602. 2020-04-08
+##  7 Iceland             5  2020-04-01
+##  8 Netherlands      4670  2020-04-08
+##  9 Norway           -558  2020-04-15
+## 10 Portugal         -168  2020-04-22
+## 11 Spain           19530  2020-04-29
+## 12 Sweden           1227  2020-04-22
+## 13 United States    8457  2020-04-15</code></pre>
+<ul>
+<li>Some countries have negative excess deaths, due to early interventions.</li>
+<li>The numbers for England &amp; Wales and the United States are substantially lower than what the <a href="http://ft.com/coronavirus-latest"><em>Financial Times</em></a> is estimating, probably due to the available data. I suspect the data used by the <em>FT</em> is more recent.</li>
+<li>These numbers are substantially larger than the numbers of reported COVID19 deaths at the same date.</li>
+<li>Further discussion on “excess deaths” is available in <a href="https://voxeu.org/article/excess-mortality-england-european-outlier-covid-19-pandemic">this article</a> from VoxEU.</li>
+</ul>
+<details>
+<summary>
+Reproducibility details
+</summary>
+<pre class="r"><code>options(width=100)
+sessioninfo::session_info()</code></pre>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 4.0.5 (2021-03-31)
+##  os       KDE neon User Edition 5.21  
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language en_GB:en_US                 
+##  collate  en_AU.UTF-8                 
+##  ctype    en_AU.UTF-8                 
+##  tz       Australia/Melbourne         
+##  date     2021-04-14                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────────────────────────
+##  ! package     * version date       lib source        
+##  P assertthat    0.2.1   2019-03-21 [?] CRAN (R 4.0.3)
+##  P blogdown      1.2     2021-03-04 [?] RSPM (R 4.0.3)
+##  P bookdown      0.21    2020-10-13 [?] RSPM (R 4.0.3)
+##    bslib         0.2.4   2021-01-25 [1] CRAN (R 4.0.3)
+##    cli           2.4.0   2021-04-05 [1] CRAN (R 4.0.5)
+##  P colorspace    2.0-0   2020-11-11 [?] CRAN (R 4.0.3)
+##  P crayon        1.4.1   2021-02-08 [?] CRAN (R 4.0.3)
+##    DBI           1.1.1   2021-01-15 [1] CRAN (R 4.0.3)
+##  P digest        0.6.27  2020-10-24 [?] CRAN (R 4.0.3)
+##  P dplyr       * 1.0.5   2021-03-05 [?] RSPM (R 4.0.3)
+##  P ellipsis      0.3.1   2020-05-15 [?] CRAN (R 4.0.3)
+##  P evaluate      0.14    2019-05-28 [?] CRAN (R 4.0.3)
+##  P fansi         0.4.2   2021-01-15 [?] CRAN (R 4.0.3)
+##  P farver        2.1.0   2021-02-28 [?] CRAN (R 4.0.4)
+##    generics      0.1.0   2020-10-31 [1] CRAN (R 4.0.3)
+##  P ggplot2     * 3.3.3   2020-12-30 [?] CRAN (R 4.0.3)
+##  P glue          1.4.2   2020-08-27 [?] CRAN (R 4.0.3)
+##  P gtable        0.3.0   2019-03-25 [?] CRAN (R 4.0.3)
+##  P highr         0.8     2019-03-20 [?] CRAN (R 4.0.3)
+##  P htmltools     0.5.1.1 2021-01-22 [?] CRAN (R 4.0.3)
+##  P janitor       2.1.0   2021-01-05 [?] CRAN (R 4.0.3)
+##    jquerylib     0.1.3   2020-12-17 [1] CRAN (R 4.0.3)
+##  P jsonlite      1.7.2   2020-12-09 [?] CRAN (R 4.0.3)
+##  P knitr         1.31    2021-01-27 [?] CRAN (R 4.0.3)
+##  P labeling      0.4.2   2020-10-20 [?] CRAN (R 4.0.3)
+##  P lifecycle     1.0.0   2021-02-15 [?] RSPM (R 4.0.4)
+##  P lubridate     1.7.10  2021-02-26 [?] CRAN (R 4.0.4)
+##  P magrittr      2.0.1   2020-11-17 [?] CRAN (R 4.0.3)
+##  P munsell       0.5.0   2018-06-12 [?] CRAN (R 4.0.3)
+##  P pillar        1.6.0   2021-04-13 [?] CRAN (R 4.0.5)
+##  P pkgconfig     2.0.3   2019-09-22 [?] CRAN (R 4.0.3)
+##  P ps            1.6.0   2021-02-28 [?] CRAN (R 4.0.4)
+##  P purrr         0.3.4   2020-04-17 [?] CRAN (R 4.0.3)
+##  P R6            2.5.0   2020-10-28 [?] CRAN (R 4.0.3)
+##  P Rcpp          1.0.6   2021-01-15 [?] CRAN (R 4.0.3)
+##  P renv          0.13.2  2021-03-30 [?] RSPM (R 4.0.4)
+##  P rlang         0.4.10  2020-12-30 [?] CRAN (R 4.0.3)
+##  P rmarkdown     2.7     2021-02-19 [?] CRAN (R 4.0.4)
+##  P rstudioapi    0.13    2020-11-12 [?] CRAN (R 4.0.3)
+##    sass          0.3.1   2021-01-24 [1] CRAN (R 4.0.3)
+##  P scales        1.1.1   2020-05-11 [?] CRAN (R 4.0.3)
+##  P sessioninfo   1.1.1   2018-11-05 [?] CRAN (R 4.0.3)
+##  P snakecase     0.11.0  2019-05-25 [?] CRAN (R 4.0.3)
+##  P stringi       1.5.3   2020-09-09 [?] CRAN (R 4.0.3)
+##  P stringr       1.4.0   2019-02-10 [?] CRAN (R 4.0.3)
+##  P tibble        3.1.0   2021-02-25 [?] CRAN (R 4.0.4)
+##  P tidyr       * 1.1.3   2021-03-03 [?] RSPM (R 4.0.3)
+##    tidyselect    1.1.0   2020-05-11 [1] CRAN (R 4.0.3)
+##    utf8          1.2.1   2021-03-12 [1] CRAN (R 4.0.4)
+##    vctrs         0.3.7   2021-03-29 [1] CRAN (R 4.0.5)
+##  P withr         2.4.1   2021-01-26 [?] CRAN (R 4.0.3)
+##  P xfun          0.22    2021-03-11 [?] CRAN (R 4.0.4)
+##  P yaml          2.2.1   2020-02-01 [?] CRAN (R 4.0.3)
+## 
+## [1] /home/hyndman/git/Website/renv/library/R-4.0/x86_64-pc-linux-gnu
+## [2] /tmp/RtmpOhh2tU/renv-system-library
+## 
+##  P ── Loaded and on-disk path mismatch.</code></pre>
+</details>
+</div>

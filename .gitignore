@@ -1,12 +1,12 @@
 .RData
 .Rhistory
 .Rproj.user
-blogdown
-public
-content/hyndsight/*.html
-content/seminars/*.html
+/blogdown
+/public
 static/hyndsight/*
 *.sublime-workspace
 *.sublime-project
 .directory
 static/files/packages.rds
+.DS_Store
+Thumbs.db

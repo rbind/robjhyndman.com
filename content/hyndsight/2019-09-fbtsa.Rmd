@@ -133,7 +133,7 @@ yahoo_features <- bind_cols(
     yahoo %>% features(scale(value), features = list(
       ~ feat_acf(.),
       ~ feat_spectral(.),
-      ~ n_flat_spots(.),
+      ~ longest_flat_spot(.),
       ~ n_crossing_points(.),
       ~ var_tiled_var(., .period = 24, .size = 24),
       ~ shift_level_max(., .period = 24, .size = 24),
@@ -142,13 +142,16 @@ yahoo_features <- bind_cols(
       ~ feat_stl(., .period = 24, s.window = "periodic", robust = TRUE)
     ))
   ) %>%
-  rename(lumpiness = var_tiled_var) %>%
+  rename(
+    lumpiness = var_tiled_var,
+    key = key...1
+  ) %>%
   select(key, mean, var, acf1, trend_strength,
          seasonal_strength_24, linearity, curvature,
          seasonal_peak_24, seasonal_trough_24,
          spectral_entropy, lumpiness, spikiness,
          shift_level_max, shift_var_max,
-         n_flat_spots, n_crossing_points,
+         longest_flat_spot, n_crossing_points,
          shift_kl_max, shift_kl_index)
 ```
 
@@ -181,9 +184,9 @@ First we need to create several tsibbles, corresponding to the different seasona
 
 ```{r m3data, message=FALSE}
 m3totsibble <- function(z) {
-  rbind(
-    as_tsibble(z$x) %>% mutate(Type="Training"),
-    as_tsibble(z$xx) %>% mutate(Type="Test")
+  bind_rows(
+    as_tsibble(z$x) %>% mutate(Type="Training") %>% as_tibble(),
+    as_tsibble(z$xx) %>% mutate(Type="Test") %>% as_tibble()
   ) %>%
   mutate(
     st = z$st,
@@ -191,8 +194,7 @@ m3totsibble <- function(z) {
     period = z$period,
     description = z$description,
     sn = z$sn,
-  ) %>%
-  as_tibble()
+  ) 
 }
 m3yearly <- Mcomp::M3 %>%
   subset("yearly") %>%

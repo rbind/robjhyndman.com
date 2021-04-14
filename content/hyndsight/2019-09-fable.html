@@ -1,0 +1,290 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-09-29
+title: "Tidy forecasting in R"
+slug: fable
+mathjax: true
+categories:
+- time series
+- graphics
+- statistics
+- R
+- tidyverts
+- forecasting
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The <strong>fable</strong> package for doing tidy forecasting in R is now on CRAN. Like <strong><a href="https://tsibble.tidyverts.org">tsibble</a></strong> and <strong><a href="https://feasts.tidyverts.org">feasts</a></strong>, it is also part of the <a href="https://tidyverts.org">tidyverts</a> family of packages for analysing, modelling and forecasting many related time series (stored as tsibbles).</p>
+<p>For a brief introduction to tsibbles, see <a href="https://robjhyndman.com/hyndsight/tsibbles/">this post</a> from last month.</p>
+<p>Here we will forecast Australian tourism data by state/region and purpose. This data is stored in the <code>tourism</code> tsibble where <code>Trips</code> contains domestic visitor nights in thousands.</p>
+<pre class="r"><code>library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(fable)
+tourism</code></pre>
+<pre><code>## # A tsibble: 24,320 x 5 [1Q]
+## # Key:       Region, State, Purpose [304]
+##    Quarter Region   State           Purpose  Trips
+##      &lt;qtr&gt; &lt;chr&gt;    &lt;chr&gt;           &lt;chr&gt;    &lt;dbl&gt;
+##  1 1998 Q1 Adelaide South Australia Business  135.
+##  2 1998 Q2 Adelaide South Australia Business  110.
+##  3 1998 Q3 Adelaide South Australia Business  166.
+##  4 1998 Q4 Adelaide South Australia Business  127.
+##  5 1999 Q1 Adelaide South Australia Business  137.
+##  6 1999 Q2 Adelaide South Australia Business  200.
+##  7 1999 Q3 Adelaide South Australia Business  169.
+##  8 1999 Q4 Adelaide South Australia Business  134.
+##  9 2000 Q1 Adelaide South Australia Business  154.
+## 10 2000 Q2 Adelaide South Australia Business  169.
+## # … with 24,310 more rows</code></pre>
+<p>There are 304 combinations of Region, State and Purpose, each one defining a time series of 80 observations.</p>
+<p>To simplify the outputs, we will abbreviate the state names.</p>
+<pre class="r"><code>tourism &lt;- tourism %&gt;%
+  mutate(
+    State = recode(State,
+      &quot;Australian Capital Territory&quot; = &quot;ACT&quot;,
+      &quot;New South Wales&quot; = &quot;NSW&quot;,
+      &quot;Northern Territory&quot; = &quot;NT&quot;,
+      &quot;Queensland&quot; = &quot;QLD&quot;,
+      &quot;South Australia&quot; = &quot;SA&quot;,
+      &quot;Tasmania&quot; = &quot;TAS&quot;,
+      &quot;Victoria&quot; = &quot;VIC&quot;,
+      &quot;Western Australia&quot; = &quot;WA&quot;
+    )
+  )</code></pre>
+<div id="forecasting-a-single-time-series" class="section level2">
+<h2>Forecasting a single time series</h2>
+<p>Although the <strong>fable</strong> package is designed to handle many time series, we will be begin by demonstrating its use on a single time series. For this purpose, we will extract the tourism data for holidays in the Snowy Mountains region of NSW.</p>
+<pre class="r"><code>snowy &lt;- tourism %&gt;%
+  filter(
+    Region == &quot;Snowy Mountains&quot;,
+    Purpose == &quot;Holiday&quot;
+  )
+snowy</code></pre>
+<pre><code>## # A tsibble: 80 x 5 [1Q]
+## # Key:       Region, State, Purpose [1]
+##    Quarter Region          State Purpose Trips
+##      &lt;qtr&gt; &lt;chr&gt;           &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+##  1 1998 Q1 Snowy Mountains NSW   Holiday 101. 
+##  2 1998 Q2 Snowy Mountains NSW   Holiday 112. 
+##  3 1998 Q3 Snowy Mountains NSW   Holiday 310. 
+##  4 1998 Q4 Snowy Mountains NSW   Holiday  89.8
+##  5 1999 Q1 Snowy Mountains NSW   Holiday 112. 
+##  6 1999 Q2 Snowy Mountains NSW   Holiday 103. 
+##  7 1999 Q3 Snowy Mountains NSW   Holiday 254. 
+##  8 1999 Q4 Snowy Mountains NSW   Holiday  74.9
+##  9 2000 Q1 Snowy Mountains NSW   Holiday 118. 
+## 10 2000 Q2 Snowy Mountains NSW   Holiday 114. 
+## # … with 70 more rows</code></pre>
+<pre class="r"><code>snowy %&gt;% autoplot(Trips)</code></pre>
+<p><img src="/hyndsight/2019-09-fable_files/figure-html/extract-1.png" width="672" /></p>
+<p>For this data set, a reasonable benchmark forecast method is the seasonal naive method, where forecasts are set to be equal to the last observed value from the same quarter. Alternative models for this series are ETS and ARIMA models. All these can be included in a single call to the <code>model()</code> function like this.</p>
+<pre class="r"><code>fit &lt;- snowy %&gt;%
+  model(
+    snaive = SNAIVE(Trips ~ lag(&quot;year&quot;)),
+    ets = ETS(Trips),
+    arima = ARIMA(Trips)
+  )
+fit</code></pre>
+<pre><code>## # A mable: 1 x 6
+## # Key:     Region, State, Purpose [1]
+##   Region       State Purpose   snaive          ets                    arima
+##   &lt;chr&gt;        &lt;chr&gt; &lt;chr&gt;    &lt;model&gt;      &lt;model&gt;                  &lt;model&gt;
+## 1 Snowy Mount… NSW   Holiday &lt;SNAIVE&gt; &lt;ETS(M,N,A)&gt; &lt;ARIMA(1,0,0)(0,1,2)[4]&gt;</code></pre>
+<p>The returned object is called a “mable” or model table, where each cell corresponds to a fitted model. Because we have only fitted models to one time series, this mable has only one row.</p>
+<p>To forecast all models, we pass the object to the <code>forecast</code> function.</p>
+<pre class="r"><code>fc &lt;- fit %&gt;%
+  forecast(h = 12)
+fc</code></pre>
+<pre><code>## # A fable: 36 x 7 [1Q]
+## # Key:     Region, State, Purpose, .model [3]
+##    Region          State Purpose .model Quarter        Trips .mean
+##    &lt;chr&gt;           &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;qtr&gt;       &lt;dist&gt; &lt;dbl&gt;
+##  1 Snowy Mountains NSW   Holiday snaive 2018 Q1  N(119, 666) 119. 
+##  2 Snowy Mountains NSW   Holiday snaive 2018 Q2  N(124, 666) 124. 
+##  3 Snowy Mountains NSW   Holiday snaive 2018 Q3  N(378, 666) 378. 
+##  4 Snowy Mountains NSW   Holiday snaive 2018 Q4   N(85, 666)  84.7
+##  5 Snowy Mountains NSW   Holiday snaive 2019 Q1 N(119, 1331) 119. 
+##  6 Snowy Mountains NSW   Holiday snaive 2019 Q2 N(124, 1331) 124. 
+##  7 Snowy Mountains NSW   Holiday snaive 2019 Q3 N(378, 1331) 378. 
+##  8 Snowy Mountains NSW   Holiday snaive 2019 Q4  N(85, 1331)  84.7
+##  9 Snowy Mountains NSW   Holiday snaive 2020 Q1 N(119, 1997) 119. 
+## 10 Snowy Mountains NSW   Holiday snaive 2020 Q2 N(124, 1997) 124. 
+## # … with 26 more rows</code></pre>
+<p>The return object is a “fable” or forecast table with the following characteristics:</p>
+<ul>
+<li>the <code>.model</code> column becomes an additional key;</li>
+<li>the <code>.distribution</code> column contains the estimated probability distribution of the response variable in future time periods;</li>
+<li>the <code>Trips</code> column contains the point forecasts equal to the mean of the probability distribution.</li>
+</ul>
+<p>The <code>autoplot()</code> function will produce a plot of all forecasts. By default, <code>level=c(80,95)</code> so 80% and 95% prediction intervals are shown. But to avoid clutter, we will set <code>level=NULL</code> to show no prediction intervals.</p>
+<pre class="r"><code>fc %&gt;%
+  autoplot(snowy, level = NULL) +
+  ggtitle(&quot;Forecasts for Snowy Mountains holidays&quot;) +
+  xlab(&quot;Year&quot;) +
+  guides(colour = guide_legend(title = &quot;Forecast&quot;))</code></pre>
+<p><img src="/hyndsight/2019-09-fable_files/figure-html/snowy-fc-plot-1.png" width="672" /></p>
+<p>If you want to compute the prediction intervals, the <code>hilo()</code> function can be used:</p>
+<pre class="r"><code>hilo(fc, level = 95)</code></pre>
+<pre><code>## # A tsibble: 36 x 8 [1Q]
+## # Key:       Region, State, Purpose, .model [3]
+##    Region    State Purpose .model Quarter        Trips .mean          `95%`
+##    &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;qtr&gt;       &lt;dist&gt; &lt;dbl&gt;         &lt;hilo&gt;
+##  1 Snowy Mo… NSW   Holiday snaive 2018 Q1  N(119, 666) 119.  [ 68.5, 170]95
+##  2 Snowy Mo… NSW   Holiday snaive 2018 Q2  N(124, 666) 124.  [ 73.9, 175]95
+##  3 Snowy Mo… NSW   Holiday snaive 2018 Q3  N(378, 666) 378.  [327.6, 429]95
+##  4 Snowy Mo… NSW   Holiday snaive 2018 Q4   N(85, 666)  84.7 [ 34.1, 135]95
+##  5 Snowy Mo… NSW   Holiday snaive 2019 Q1 N(119, 1331) 119.  [ 47.5, 191]95
+##  6 Snowy Mo… NSW   Holiday snaive 2019 Q2 N(124, 1331) 124.  [ 53.0, 196]95
+##  7 Snowy Mo… NSW   Holiday snaive 2019 Q3 N(378, 1331) 378.  [306.6, 450]95
+##  8 Snowy Mo… NSW   Holiday snaive 2019 Q4  N(85, 1331)  84.7 [ 13.1, 156]95
+##  9 Snowy Mo… NSW   Holiday snaive 2020 Q1 N(119, 1997) 119.  [ 31.4, 207]95
+## 10 Snowy Mo… NSW   Holiday snaive 2020 Q2 N(124, 1997) 124.  [ 36.9, 212]95
+## # … with 26 more rows</code></pre>
+</div>
+<div id="forecasting-many-series" class="section level2">
+<h2>Forecasting many series</h2>
+<p>To scale this up to include all series in the <code>tourism</code> data set requires no more work — we use exactly the same code.</p>
+<pre class="r"><code>fit &lt;- tourism %&gt;%
+  model(
+    snaive = SNAIVE(Trips ~ lag(&quot;year&quot;)),
+    ets = ETS(Trips),
+    arima = ARIMA(Trips)
+  )
+fit</code></pre>
+<pre><code>## # A mable: 304 x 6
+## # Key:     Region, State, Purpose [304]
+##    Region         State Purpose    snaive          ets
+##    &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;     &lt;model&gt;      &lt;model&gt;
+##  1 Adelaide       SA    Business &lt;SNAIVE&gt; &lt;ETS(M,N,M)&gt;
+##  2 Adelaide       SA    Holiday  &lt;SNAIVE&gt; &lt;ETS(A,N,A)&gt;
+##  3 Adelaide       SA    Other    &lt;SNAIVE&gt; &lt;ETS(M,A,N)&gt;
+##  4 Adelaide       SA    Visiting &lt;SNAIVE&gt; &lt;ETS(A,N,A)&gt;
+##  5 Adelaide Hills SA    Business &lt;SNAIVE&gt; &lt;ETS(A,N,N)&gt;
+##  6 Adelaide Hills SA    Holiday  &lt;SNAIVE&gt; &lt;ETS(A,A,N)&gt;
+##  7 Adelaide Hills SA    Other    &lt;SNAIVE&gt; &lt;ETS(A,N,N)&gt;
+##  8 Adelaide Hills SA    Visiting &lt;SNAIVE&gt; &lt;ETS(M,A,M)&gt;
+##  9 Alice Springs  NT    Business &lt;SNAIVE&gt; &lt;ETS(M,N,M)&gt;
+## 10 Alice Springs  NT    Holiday  &lt;SNAIVE&gt; &lt;ETS(M,N,A)&gt;
+## # … with 294 more rows, and 1 more variable: arima &lt;model&gt;</code></pre>
+<p>Now the mable includes models for every combination of keys in the <code>tourism</code> data set.</p>
+<p>We can extract information about some specific model using the <code>filter</code>, <code>select</code> and <code>report</code> functions.</p>
+<pre class="r"><code>fit %&gt;%
+  filter(Region == &quot;Snowy Mountains&quot;, Purpose == &quot;Holiday&quot;) %&gt;%
+  select(arima) %&gt;%
+  report()</code></pre>
+<pre><code>## Series: Trips 
+## Model: ARIMA(1,0,0)(0,1,2)[4] 
+## 
+## Coefficients:
+##         ar1    sma1    sma2
+##       0.216  -0.371  -0.190
+## s.e.  0.116   0.128   0.116
+## 
+## sigma^2 estimated as 592.9:  log likelihood=-350
+## AIC=707   AICc=708   BIC=716</code></pre>
+<p>When the mable is passed to the <code>forecast()</code> function, forecasts are computed for every model and every key combination.</p>
+<pre class="r"><code>fc &lt;- fit %&gt;%
+  forecast(h = &quot;3 years&quot;)
+fc</code></pre>
+<pre><code>## # A fable: 10,944 x 7 [1Q]
+## # Key:     Region, State, Purpose, .model [912]
+##    Region   State Purpose  .model Quarter        Trips .mean
+##    &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;    &lt;qtr&gt;       &lt;dist&gt; &lt;dbl&gt;
+##  1 Adelaide SA    Business snaive 2018 Q1 N(129, 2018)  129.
+##  2 Adelaide SA    Business snaive 2018 Q2 N(174, 2018)  174.
+##  3 Adelaide SA    Business snaive 2018 Q3 N(185, 2018)  185.
+##  4 Adelaide SA    Business snaive 2018 Q4 N(197, 2018)  197.
+##  5 Adelaide SA    Business snaive 2019 Q1 N(129, 4036)  129.
+##  6 Adelaide SA    Business snaive 2019 Q2 N(174, 4036)  174.
+##  7 Adelaide SA    Business snaive 2019 Q3 N(185, 4036)  185.
+##  8 Adelaide SA    Business snaive 2019 Q4 N(197, 4036)  197.
+##  9 Adelaide SA    Business snaive 2020 Q1 N(129, 6054)  129.
+## 10 Adelaide SA    Business snaive 2020 Q2 N(174, 6054)  174.
+## # … with 10,934 more rows</code></pre>
+<p>Note the use of natural language to specify the forecast horizon. The <code>forecast()</code> function is able to interpret many different time specifications. For quarterly data, <code>h = "3 years"</code> is equivalent to setting <code>h = 12</code>.</p>
+<p>Plots of individual forecasts can also be produced, although filtering is helpful to avoid plotting too many series at once.</p>
+<pre class="r"><code>fc %&gt;%
+  filter(Region == &quot;Snowy Mountains&quot;) %&gt;%
+  autoplot(tourism, level = NULL) +
+  xlab(&quot;Year&quot;) + ylab(&quot;Overnight trips (thousands)&quot;)</code></pre>
+<p><img src="/hyndsight/2019-09-fable_files/figure-html/ausholidays-forecast-plot-1.png" width="672" /></p>
+</div>
+<div id="forecast-accuracy-calculations" class="section level2">
+<h2>Forecast accuracy calculations</h2>
+<p>To compare the forecast accuracy of these models, we will create a training data set containing all data up to 2014. We will then forecast the remaining years in the data set and compare the results with the actual values.</p>
+<pre class="r"><code>train &lt;- tourism %&gt;%
+  filter(year(Quarter) &lt;= 2014)
+fit &lt;- train %&gt;%
+  model(
+    ets = ETS(Trips),
+    arima = ARIMA(Trips),
+    snaive = SNAIVE(Trips)
+  ) %&gt;%
+  mutate(mixed = (ets + arima + snaive) / 3)</code></pre>
+<p>Here we have introduced an ensemble forecast (<code>mixed</code>) which is a simple average of the three fitted models. Note that <code>forecast()</code> will produce distributional forecasts from the ensemble as well, taking into account the correlations between the forecast errors of the component models.</p>
+<pre class="r"><code>fc &lt;- fit %&gt;% forecast(h = &quot;3 years&quot;)</code></pre>
+<pre class="r"><code>fc %&gt;%
+  filter(Region == &quot;Snowy Mountains&quot;) %&gt;%
+  autoplot(tourism, level = NULL)</code></pre>
+<p><img src="/hyndsight/2019-09-fable_files/figure-html/snowytrain-1.png" width="672" /></p>
+<p>Now to check the accuracy, we use the <code>accuracy()</code> function. By default it computes several point forecasting accuracy measures such as MAE, RMSE, MAPE and MASE for every key combination.</p>
+<pre class="r"><code>accuracy(fc, tourism)</code></pre>
+<pre><code>## # A tibble: 1,216 x 13
+##    .model Region State Purpose .type    ME  RMSE   MAE      MPE  MAPE  MASE
+##    &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1 arima  Adela… SA    Busine… Test  22.5  28.5  25.3    11.9    14.0 0.765
+##  2 arima  Adela… SA    Holiday Test  21.9  34.8  28.0     9.93   14.8 1.31 
+##  3 arima  Adela… SA    Other   Test   4.71 17.5  14.6     0.529  20.2 1.11 
+##  4 arima  Adela… SA    Visiti… Test  32.8  37.1  32.8    13.7    13.7 1.05 
+##  5 arima  Adela… SA    Busine… Test   1.31  5.58  3.57 -Inf     Inf   1.09 
+##  6 arima  Adela… SA    Holiday Test   6.46  7.43  6.46   37.4    37.4 1.14 
+##  7 arima  Adela… SA    Other   Test   1.35  2.79  1.93  -31.0    99.4 1.71 
+##  8 arima  Adela… SA    Visiti… Test   8.37 12.6  10.4    -3.98   72.3 1.35 
+##  9 arima  Alice… NT    Busine… Test   9.85 12.2  10.7    34.4    44.3 1.74 
+## 10 arima  Alice… NT    Holiday Test   4.80 11.3   9.30    4.46   35.2 1.00 
+## # … with 1,206 more rows, and 2 more variables: RMSSE &lt;dbl&gt;, ACF1 &lt;dbl&gt;</code></pre>
+<p>But because we have generated distributional forecasts, it is also interesting to look at the accuracy using CRPS (Continuous Rank Probability Scores) and Winkler Scores (for 95% prediction intervals).</p>
+<pre class="r"><code>fc_accuracy &lt;- accuracy(fc, tourism,
+  measures = list(
+    point_accuracy_measures,
+    interval_accuracy_measures,
+    distribution_accuracy_measures
+  )
+)</code></pre>
+<pre class="r"><code>fc_accuracy %&gt;%
+  group_by(.model) %&gt;%
+  summarise(
+    RMSE = mean(RMSE),
+    MAE = mean(MAE),
+    MASE = mean(MASE),
+    Winkler = mean(winkler),
+    CRPS = mean(CRPS)
+  ) %&gt;%
+  arrange(RMSE)</code></pre>
+<pre><code>## # A tibble: 4 x 6
+##   .model  RMSE   MAE  MASE Winkler  CRPS
+##   &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
+## 1 mixed   19.8  16.0 0.997    104.  11.4
+## 2 ets     20.2  16.4 1.00     128.  11.9
+## 3 snaive  21.5  17.3 1.17     121.  12.8
+## 4 arima   21.9  17.8 1.07     140.  13.0</code></pre>
+<p>In this case, the <code>mixed</code> model is doing best on all accuracy measures.</p>
+</div>
+<div id="moving-from-forecast-to-fable" class="section level2">
+<h2>Moving from <strong>forecast</strong> to <strong>fable</strong></h2>
+<p>Many readers will be familiar with the <strong>forecast</strong> package and will wonder about the differences between <strong>forecast</strong> and <strong>fable</strong>. Here are some of the main differences.</p>
+<ul>
+<li><strong>fable</strong> is designed for <code>tsibble</code> objects, <strong>forecast</strong> is designed for <code>ts</code> objects.</li>
+<li><strong>fable</strong> handles many time series at a time, <strong>forecast</strong> handles one time series at a time.</li>
+<li><strong>fable</strong> can fit multiple models at once, <strong>forecast</strong> fits one model at a time.</li>
+<li><strong>forecast</strong> produces point forecasts and prediction intervals. <strong>fable</strong> produces point forecasts and distribution forecasts. In <strong>fable</strong>, you can get prediction intervals from the forecast object using <code>hilo()</code> and in plots using <code>autoplot()</code>.</li>
+<li><strong>fable</strong> handles ensemble forecasting easily whereas <strong>forecast</strong> has no facilities for ensembles.</li>
+<li><strong>fable</strong> has a more consistent interface with every model specified as a formula.</li>
+<li>Automated modelling in <strong>fable</strong> is obtained by simply not specifying the right hand side of the formula. This was shown in the <code>ARIMA()</code> and <code>ETS()</code> functions here.</li>
+</ul>
+<p>Subsequent posts will explore other features of the <strong>fable</strong> package.</p>
+</div>

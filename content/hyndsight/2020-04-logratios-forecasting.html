@@ -1,0 +1,95 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-04-05
+title: "Why log ratios are useful for tracking COVID-19"
+slug: logratios-covid19
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - epidemiology
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>There have been some great data visualizations produced of COVID-19 case and deaths data, the best known of which is the graph from <a href="https://twitter.com/jburnmurdoch">John Burn-Murdoch</a> in the <a href="https://www.ft.com/coronavirus-latest"><em>Financial Times</em></a>. To my knowledge, it was <a href="https://blog.grattan.edu.au/2020/03/australian-governments-can-choose-to-slow-the-spread-of-coronavirus-but-they-must-act-immediately/">first used by Matt Cowgill</a> from the Grattan Institute, and has been widely copied. This is a great visualization and has helped introduce log-scale graphics to a wide audience.</p>
+<div id="reproducing-the-financial-times-cumulative-confirmed-cases-graph" class="section level2">
+<h2>Reproducing the <em>Financial Times</em> cumulative confirmed cases graph</h2>
+<p>To produce something like it, we can use the <code>tidycovid19</code> package from Joachim Gassen:</p>
+<pre class="r"><code>#remotes::install_github(&quot;joachim-gassen/tidycovid19&quot;)
+library(tidyverse)
+library(tsibble)
+library(tidycovid19)</code></pre>
+<pre class="r"><code># Download latest data
+updates &lt;- download_merged_data(cached = TRUE)</code></pre>
+<pre class="r"><code># Countries to highlight
+countries &lt;- c(&quot;AUS&quot;, &quot;NZL&quot;, &quot;ITA&quot;, &quot;ESP&quot;, &quot;USA&quot;, &quot;GBR&quot;)
+updates %&gt;%
+  plot_covid19_spread(
+    highlight = countries,
+    type = &quot;confirmed&quot;,
+    edate_cutoff = 40,
+    min_cases = 100
+  )</code></pre>
+<p><img src="/hyndsight/2020-04-logratios-forecasting_files/figure-html/ft2-1.png" width="672" /></p>
+<p>If you want to produce this from scratch, rather than use the <code>tidycov19</code> package, see Kieran Healy’s post on <a href="https://kieranhealy.org/blog/archives/2020/03/21/covid-19-tracking/">“Covid 19 Tracking”</a>. He also has <a href="https://kieranhealy.org/blog/archives/2020/03/27/a-covid-small-multiple/">a nice post on how to produce some of the other plots</a> produced by John Burn-Murdoch.</p>
+</div>
+<div id="why-not-per-capita-numbers" class="section level2">
+<h2>Why not per capita numbers?</h2>
+<p>There has been some discussion online as to why per capita numbers aren’t shown instead. There are good arguments for using total numbers rather than per capita rates, discussed in <a href="https://twitter.com/jburnmurdoch/status/1242904596856614912">this twitter thread</a>. But I wanted to point out something that is often overlooked.</p>
+<p>Per capita numbers would only shift the curves vertically, they would not change the shape or slopes of any curves. To see this, remember that
+<span class="math display">\[
+\log (Y_t/P_t) = \log(Y_t) - \log(P_t).
+\]</span>
+Here <span class="math inline">\(Y_t\)</span> is the number of cases on day <span class="math inline">\(t\)</span> and <span class="math inline">\(P_t\)</span> is the population on day <span class="math inline">\(t\)</span>. The population hardly changes over a period of a few weeks or months, so taking per capita numbers is simply subtracting a constant from the log cases data.</p>
+<p>So if we just concentrate on the slope of those lines, not on their vertical position, we are effectively adjusting for population.</p>
+</div>
+<div id="differences-in-testing-regimes" class="section level2">
+<h2>Differences in testing regimes</h2>
+<p>A similar point applies to the differences in testing regimes between countries. If Country 1 has a testing regime that only identifies <span class="math inline">\(p\)</span>% of cases, and Country 2 has a testing regime that identifies <span class="math inline">\(q\)</span>% of cases, then these differences will show up as a vertical difference between the curves — they won’t affect the slopes.</p>
+<p>Of course, countries have been changing their testing regimes over time, so changes in the slope of the curve could be a result of a change in the rules of who gets tested, or they could be the result of an reduction in the total number of cases. There is no way to tell from the data which of these is likely to be true.</p>
+</div>
+<div id="focus-on-log-ratios" class="section level2">
+<h2>Focus on log ratios</h2>
+<p>All of this shows that we should be looking at the slope of these lines if we are wanting to explore how countries are tracking relative to each other. That is equivalent to looking at log ratios, since the slope of the log curve is the same as the log of the ratios of successive values.</p>
+<p>First let’s compute the log ratios and plot them for each country with a smooth curve overlaid.</p>
+<pre class="r"><code>updates %&gt;%
+  mutate(cases_logratio = difference(log(confirmed))) %&gt;%
+  filter(
+    iso3c %in% countries,
+    date &gt;= as.Date(&quot;2020-03-01&quot;)
+  ) %&gt;%
+  ggplot(aes(x = date, y = cases_logratio, col = country)) +
+    geom_point() +
+    geom_smooth(method = &quot;loess&quot;) +
+    facet_wrap(. ~ country, ncol = 3) +
+    xlab(&quot;Date&quot;) +
+    ggthemes::scale_color_colorblind()</code></pre>
+<p><img src="/hyndsight/2020-04-logratios-forecasting_files/figure-html/logratios_facetted-1.png" width="100%" /></p>
+<p>There are some obvious reporting issues (e.g., Spain had no new cases on 12 March, but roughly twice as many cases as we might expect on the 13 March), but the smooth (loess) curve corrects for these discrepancies. We can plot the smoothed log ratios to see how each country is tracking in terms of the slope of the curve.</p>
+<pre class="r"><code>updates %&gt;%
+  mutate(
+    cases_logratio = difference(log(confirmed))
+  ) %&gt;%
+  filter(iso3c %in% countries) %&gt;%
+  filter(date &gt;= as.Date(&quot;2020-03-01&quot;)) %&gt;%
+  ggplot(aes(x = date, y = cases_logratio, col = country)) +
+  geom_hline(yintercept = log(2)/c(2:7,14,21), col=&#39;grey&#39;) +
+  geom_smooth(method = &quot;loess&quot;, se = FALSE) +
+  scale_y_continuous(
+   &quot;Daily increase in cumulative cases&quot;,
+    breaks = log(1+seq(0,60,by=10)/100),
+    labels = paste0(seq(0,60,by=10),&quot;%&quot;),
+    minor_breaks=NULL,
+    sec.axis = sec_axis(~ log(2)/(.),
+      breaks = c(2:7,14,21),
+      name = &quot;Doubling time (days)&quot;)
+  ) +
+  ggthemes::scale_color_colorblind()</code></pre>
+<p><img src="/hyndsight/2020-04-logratios-forecasting_files/figure-html/logratios_overlaid-1.png" width="100%" /></p>
+<p>I’ve added axes that are a little more interpretable than log-ratios. On the left axis we have daily increase in cumulative cases. If <span class="math inline">\(r\)</span> is the log ratio, then <span class="math inline">\(100(e^r-1)\)</span> is the daily increase as a percentage. On the right axis we have the number of days it takes for the cumulative cases to double. This is easily computed as <span class="math inline">\(d=\log(2)/r\)</span>.</p>
+<p>While the graph doesn’t tell us anything about how the disaster is overwhelming the health systems of each country (the cumulative case graph at the top of this post is best for that), it does tell us how well each country is managing to slow the rate of infection and reduce the slope of those curves. It is also much easier to compare the slopes this way, because we just have to look to see which country is higher.</p>
+<p>In a country like Italy where the hospitals are already overwhelmed with cases, any continuing daily increase is much more serious than in Australia and New Zealand where the numbers of cases are still relatively low compared to much of Europe and the US. For Australia and New Zealand, if we can keep the daily increases where they currently are, we can help spread the load on the health system and save lives.</p>
+</div>

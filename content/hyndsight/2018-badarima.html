@@ -1,0 +1,59 @@
+---
+date: 2018-12-18
+title: Why doesn't auto.arima() return the model with the lowest AICc value?
+slug: badarima
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This question seems to come up frequently on <a href="http://crossvalidated.com">crossvalidated.com</a> or in my inbox.</p>
+<blockquote>
+<p>I have this time series, however it yields different results when I use the <code>auto.arima</code> and <code>Arima</code> functions.</p>
+</blockquote>
+<pre class="r"><code>library(forecast)
+xd &lt;- ts(c(23786, 25955, 54373, 21561, 14552, 13284, 12714, 11821, 15445, 21307, 17228, 20007, 23065, 32811, 43147, 15127, 13497, 12224, 11412, 11888, 14210,18978, 15782, 17216, 16417, 22861, 42616, 17057,  9741, 10503,  7170, 10686,  9762, 15773, 15280, 13212, 14784, 26104, 29947), frequency = 12, start=c(2014,1), end=c(2017,3))
+
+fit1 &lt;- auto.arima(xd, trace=TRUE, allowmean=FALSE, allowdrift = FALSE, max.p=1, max.q=0, max.P=1, max.Q=0, xreg=seq_along(xd))</code></pre>
+<pre><code>## 
+##  ARIMA(1,0,0)(1,0,0)[12] with zero mean     : Inf
+##  ARIMA(0,0,0)            with zero mean     : 864.3436
+##  ARIMA(1,0,0)(1,0,0)[12] with zero mean     : Inf
+##  ARIMA(0,0,0)(1,0,0)[12] with zero mean     : Inf
+##  ARIMA(1,0,0)            with zero mean     : 837.0974
+## 
+##  Best model: Regression with ARIMA(1,0,0)            errors</code></pre>
+<pre class="r"><code>(fit2 &lt;- Arima(xd, order=c(1,0,0), seasonal=c(1,0,0), xreg=seq_along(xd)))</code></pre>
+<pre><code>## Series: xd 
+## Regression with ARIMA(1,0,0)(1,0,0)[12] errors 
+## 
+## Coefficients:
+##          ar1    sar1  intercept       xreg
+##       0.0236  0.9010  22580.155  -221.3270
+## s.e.  0.1796  0.0461   2864.293    64.5285
+## 
+## sigma^2 estimated as 17536975:  log likelihood=-388.51
+## AIC=787.01   AICc=788.83   BIC=795.33</code></pre>
+<blockquote>
+<p><code>auto.arima()</code> shows an AICc value of <code>Inf</code> for an ARIMA(1,0,0)(1,0,0) model, while the same model has a finite value using <code>Arima()</code>.</p>
+</blockquote>
+<p>The issue here is to do with the checks carried out by <code>auto.arima()</code> in an effort to return a good model. The <code>auto.arima()</code> function does not simply find the model with the lowest AICc value. It also carries out several checks to ensure the model is numerically well-behaved.</p>
+<p>While the <code>Arima()</code> function will never return a model with roots inside the unit circle, the <code>auto.arima()</code> function is even stricter and will not select a model with roots close to the unit circle either. The ARIMA(1,0,0)(1,0,0)<sub>12</sub> model fitted above has roots almost on the unit circle. This is easily seen by plotting them.</p>
+<pre class="r"><code>Arima(xd, order=c(1,0,0), seasonal=c(1,0,0), xreg=seq_along(xd)) %&gt;%
+  autoplot()</code></pre>
+<p><img src="/hyndsight/2018-badarima_files/figure-html/plotroots-1.png" width="672" /></p>
+<p>In fact, there are 12 roots with absolute value 1.009, just outside the unit circle (so the inverse roots that are plotted are just inside the circle). Consequently, this model is rejected by <code>auto.arima()</code> because the forecasts will be numerically unstable, and the AICc value is set to <code>Inf</code> to prevent it being selected.</p>
+<p>In general, unless you know exactly what you’re doing, it is better to leave <code>auto.arima()</code> to select a model for you. In this case, it comes up with the following model which should forecast well.</p>
+<pre class="r"><code>(fit &lt;- auto.arima(xd))</code></pre>
+<pre><code>## Series: xd 
+## ARIMA(0,0,0)(1,1,0)[12] with drift 
+## 
+## Coefficients:
+##          sar1      drift
+##       -0.6830  -240.1478
+## s.e.   0.1389    35.2611
+## 
+## sigma^2 estimated as 9366701:  log likelihood=-257.75
+## AIC=521.5   AICc=522.55   BIC=525.39</code></pre>
+<pre class="r"><code>fit %&gt;% forecast() %&gt;% autoplot()</code></pre>
+<p><img src="/hyndsight/2018-badarima_files/figure-html/bestmodel-1.png" width="672" /></p>

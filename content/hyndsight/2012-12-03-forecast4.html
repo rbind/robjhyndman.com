@@ -1,0 +1,67 @@
+---
+date: 2012-12-03 03:53:53+00:00
+slug: forecast4
+title: New in forecast 4.0
+categories:
+- computing
+- forecasting
+- R
+- statistics
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>A few days ago I released version 4.0 of the <a href="http://cran.r-project.org/web/packages/forecast/">forecast package for R</a>. There were quite a few changes and new features, so I thought it deserved a new version number. I keep a list of changes in the <a href="https://cran.r-project.org/web/packages/forecast/news/news.html">Changelog</a> for the package, but I doubt that many people look at it. So for the record, here are the most important changes to the forecast package made since <a href="https://robjhyndman.com/hyndsight/forecast3/">v3.0 was released</a>.<!-- more --></p>
+<div id="exponential-smoothing" class="section level3">
+<h3>Exponential smoothing</h3>
+<p>The <code>ets()</code> function handles exponential smoothing in the ETS framework, but for teaching purposes it is sometimes useful to discuss a more traditional implementation that does not involve optimizing the initial values. The <code>HoltWinters()</code> function in the <code>stats</code> package attempts to do this, although the initialization used for the Holt and Holt-Winters methods is non-standard, making it unsuitable for teaching.</p>
+<p>Consequently, I’ve now modified the <code>ses()</code>, <code>holt()</code> and <code>hw()</code> functions to allow both traditional heuristic initialization and ETS-style optimization of initial states. These functions also now allow damped trend and multiplicative trend.</p>
+</div>
+<div id="multiple-seasonality-and-bats-and-tbats-models" class="section level3">
+<h3>Multiple seasonality and BATS and TBATS models</h3>
+<p>Time series with multiple seasonal patterns (e.g., hourly data that contains a daily pattern, weekly pattern and an annual pattern) now have their own model class <code>msts</code>. This is useful when plotting the data, and in using the <code>dshw()</code> double seasonal Holt-Winters function for example.</p>
+<p>The BATS and TBATS models (fitted using <code>bats()</code> and <code>tbats()</code>) also handle multiple seasonalities as well as complex seasonalities (such as non-integer seasonality, non-nested seasonality and large period seasonality). The models are in the exponential-smoothing framework and were proposed by <a href="/publications/complex-seasonality/">De Livera, Hyndman and Snyder (JASA 2011)</a>.</p>
+<p>BATS and TBATS models allow a form of time series decomposition, and so the fitted objects can now plotted in the same way as other decomposition objects (e.g., <code>stl</code> objects).</p>
+<p>These models are quite computationally intensive, and so the functions will use parallel processing when it is available.</p>
+</div>
+<div id="auto.arima" class="section level3">
+<h3>auto.arima()</h3>
+<p>This is probably the most popular function in the package, and I am always looking at ways to speed it up and improve the results.</p>
+<ul>
+<li>Default model selection has been switched from AIC to AICc (the bias-corrected form of AIC) which may affect model selection for very short time series.</li>
+<li>The maximum orders are now restricted to less than 1/3 of the length of the data.</li>
+<li>Parallel processing is used where possible when <code>stepwise=FALSE</code>.</li>
+</ul>
+</div>
+<div id="accuracy-calculations" class="section level3">
+<h3>Accuracy calculations</h3>
+<p>The <code>accuracy</code> function now works with both time series forecasts and cross-sectional forecasts.</p>
+<p>The MASE for seasonal time series is now defined using seasonal naive forecasts for the in-sample scaling. The MASE for cross-sectional forecasts is defined using the mean forecasts for in-sample scaling. This is consistent with <a href="https://otexts.com/fpp2/accuracy.html">my new book</a>.</p>
+</div>
+<div id="neural-network-ar-models" class="section level3">
+<h3>Neural network AR models</h3>
+<p>A new experimental function <code>nnetar</code> has been introduced to fit a neural network with lagged values of the time series as inputs. It is a feed-forward network with one hidden layer, specified using the notation NNAR(<span class="math inline">\(p,k\)</span>) to indicate there are <span class="math inline">\(p\)</span> lagged inputs and <span class="math inline">\(k\)</span> nodes in the hidden layer. For example, a NNAR(9,5) model is a neural network with the last nine observations <span class="math inline">\((y\_{t-1},y\_{t-2},\dots,y\_{t-9}\)</span>) used as inputs to forecast the output <span class="math inline">\(y\_t\)</span>, and with five neurons in the hidden layer. A NNAR(<span class="math inline">\(p,0\)</span>) model is equivalent to an ARIMA(<span class="math inline">\(p,0,0\)</span>) model but without the restrictions on the parameters to ensure stationarity.</p>
+<p>With seasonal data, it is useful to also add the last observed values from the same season as inputs. For example, an NNAR(3,1,2)<span class="math inline">\(\_{12}\)</span> model has inputs <span class="math inline">\(y\_{t-1}\)</span>, <span class="math inline">\(y\_{t-2}\)</span>, <span class="math inline">\(y\_{t-3}\)</span> and <span class="math inline">\(y\_{t-12}\)</span>, and two neurons in the hidden layer. More generally, an NNAR(<span class="math inline">\(p,P,k\)</span>)<span class="math inline">\(\_m\)</span> model has inputs <span class="math inline">\((y\_{t-1},y\_{t-2},\dots,y\_{t-p},y\_{t-m},y\_{t-2m},y_{t-Pm})\)</span> and <span class="math inline">\(k\)</span> neurons in the hidden layer. A NNAR(<span class="math inline">\(p,P,0\)</span>)<span class="math inline">\(\_m\)</span> model is equivalent to an ARIMA(<span class="math inline">\(p,0,0\)</span>)(<span class="math inline">\(P,0,0\)</span>)<span class="math inline">\(_m\)</span> model but without the restrictions on the parameters to ensure stationarity.</p>
+<p>The <code>nnetar()</code> function fits an NNAR(<span class="math inline">\(p,P,k\)</span>)<span class="math inline">\(_m\)</span> model. If the values of <span class="math inline">\(p\)</span> and <span class="math inline">\(P\)</span> are not specified, they are automatically selected. For non-seasonal time series, the default is the optimal number of lags (according to the AIC) for a linear AR(<span class="math inline">\(p\)</span>) model. For seasonal time series, the default values are <span class="math inline">\(P=1\)</span> and <span class="math inline">\(p\)</span> is chosen from the optimal linear model fitted to the seasonally adjusted data. If <span class="math inline">\(k\)</span> is not specified, it is set to <span class="math inline">\(k=(p+P+1)/2\)</span> (rounded to the nearest integer).</p>
+<p>By default, 25 networks with random starting values are trained and their predictions averaged.</p>
+<p>Like many of the functions in the forecast package, the default arguments usually give reasonably good forecasts without the user needing to know much. For example:</p>
+<pre class="r"><code>fit &lt;- nnetar(lynx)
+plot(forecast(fit,h=20))</code></pre>
+<p><img src="/hyndsight/2012-12-03-forecast4_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Because random starting values are used, the forecasts will be slightly different each time the function is called.</p>
+<p>It is possibly to compute prediction intervals from NNAR models via simulation, but I have not yet implemented this. The function will only give point forecasts for now.</p>
+</div>
+<div id="new-default-colors-for-forecast-plots" class="section level3">
+<h3>New default colors for forecast plots</h3>
+<p>The old yellow and orange colors have been replaced by shades of blue-grey which are a little easier on the eye. The darker the color, the higher the density. Here is an example with 80% and 95% prediction intervals.</p>
+<pre class="r"><code>library(fpp)</code></pre>
+<pre class="r"><code>fit &lt;- Arima(euretail, order=c(0,1,3), seasonal=c(0,1,1))
+plot(forecast(fit,h=12))</code></pre>
+<p><img src="/hyndsight/2012-12-03-forecast4_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="future-development" class="section level3">
+<h3>Future development</h3>
+<p>Earlier this year I started using the package for an undergraduate forecasting class which gave it a good work-out, and I’m also using it as the basis of <a href="http://otexts.org/fpp/">my new book</a> with George Athanasopoulos. As a result, a lot of new functionality has been added, and lots of bugs have been discovered and fixed.</p>
+<p>The process is continuing and I have lots of ideas I want to implement, and no doubt more bugs will be discovered. The development of the forecast package is now <a href="http://github.com/robjhyndman/forecast">maintained on github</a> where you can see what is in development and report any new problems. Please let me know if you find anything you think is an error, or if you have a suggestion.</p>
+</div>

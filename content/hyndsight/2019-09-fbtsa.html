@@ -1,0 +1,243 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-09-16
+slug: fbtsa
+mathjax: true
+title: "Feature-based time series analysis"
+categories:
+- time series
+- graphics
+- statistics
+- R
+- tidyverts
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>In my <a href="https://robjhyndman.com/hyndsight/feasts/">last post</a>, I showed how the <code>feasts</code> package can be used to produce various time series graphics.</p>
+<p>The <code>feasts</code> package also includes functions for computing FEatures And Statistics from Time Series (hence the name). In this post I will give three examples of how these might be used.</p>
+<pre class="r"><code>library(tidyverse)
+library(tsibble)
+library(feasts)</code></pre>
+<div id="exploring-australian-tourism-data" class="section level2">
+<h2>Exploring Australian tourism data</h2>
+<p>I used this example in <a href="https://robjhyndman.com/seminars/isf-feasts/">my talk at useR!2019 in Toulouse</a>, and it is also the basis of <a href="http://feasts.tidyverts.org/articles/feasts.html">a vignette in the package</a>, and a recent <a href="https://www.mitchelloharawild.com/blog/feasts/">blog post by Mitchell O’Hara-Wild</a>. The data set contains domestic tourist visitor nights in Australia, disaggregated by State, Region and Purpose.</p>
+<pre class="r"><code>tourism</code></pre>
+<pre><code>## # A tsibble: 24,320 x 5 [1Q]
+## # Key:       Region, State, Purpose [304]
+##    Quarter Region   State           Purpose  Trips
+##      &lt;qtr&gt; &lt;chr&gt;    &lt;chr&gt;           &lt;chr&gt;    &lt;dbl&gt;
+##  1 1998 Q1 Adelaide South Australia Business  135.
+##  2 1998 Q2 Adelaide South Australia Business  110.
+##  3 1998 Q3 Adelaide South Australia Business  166.
+##  4 1998 Q4 Adelaide South Australia Business  127.
+##  5 1999 Q1 Adelaide South Australia Business  137.
+##  6 1999 Q2 Adelaide South Australia Business  200.
+##  7 1999 Q3 Adelaide South Australia Business  169.
+##  8 1999 Q4 Adelaide South Australia Business  134.
+##  9 2000 Q1 Adelaide South Australia Business  154.
+## 10 2000 Q2 Adelaide South Australia Business  169.
+## # … with 24,310 more rows</code></pre>
+<p>An example of a feature would be the autocorrelation function at lag 1 — it is a numerical summary capturing some aspect of the time series. Autocorrelations at other lags are also features, as are the autocorrelations of the first differenced series, or the seasonally differenced series, etc. Another example of a feature is the strength of seasonality of a time series, as measured by <span class="math inline">\(1-\text{Var}(R_t)/\text{Var}(S_t+R_t)\)</span> where <span class="math inline">\(S_t\)</span> is the seasonal component and <span class="math inline">\(R_t\)</span> is the remainder component in an STL decomposition. Values close to 1 indicate a highly seasonal time series, while values close to 0 indicate a time series with little seasonality.</p>
+<p>The <code>feasts</code> package has some inbuilt feature calculation functions. For example <code>coef_hurst</code> will calculate the Hurst coefficient of a time series and <code>feat_spectral</code> will compute the spectral entropy of a time series. To apply these to all series in the <code>tourism</code> data set, we can use the <code>features</code> function like this.</p>
+<pre class="r"><code>tourism %&gt;% features(Trips, list(coef_hurst, feat_spectral))</code></pre>
+<pre><code>## # A tibble: 304 x 5
+##    Region         State              Purpose  coef_hurst spectral_entropy
+##    &lt;chr&gt;          &lt;chr&gt;              &lt;chr&gt;         &lt;dbl&gt;            &lt;dbl&gt;
+##  1 Adelaide       South Australia    Business      0.571            0.843
+##  2 Adelaide       South Australia    Holiday       0.558            0.753
+##  3 Adelaide       South Australia    Other         0.862            0.793
+##  4 Adelaide       South Australia    Visiting      0.583            0.768
+##  5 Adelaide Hills South Australia    Business      0.555            0.991
+##  6 Adelaide Hills South Australia    Holiday       0.651            0.928
+##  7 Adelaide Hills South Australia    Other         0.672            0.913
+##  8 Adelaide Hills South Australia    Visiting      0.653            1    
+##  9 Alice Springs  Northern Territory Business      0.713            0.944
+## 10 Alice Springs  Northern Territory Holiday       0.500            0.544
+## # … with 294 more rows</code></pre>
+<p>There are also functions which produce collections of features based on tags. For example, <code>feature_set(tags="acf")</code> will produce 7 features based on various autocorrelation coefficients, while <code>feature_set(tags="stl")</code> produces 7 features based on an STL decomposition of a time series, including the strength of seasonality mentioned above.</p>
+<pre class="r"><code>tourism %&gt;% features(Trips, feature_set(tags=&quot;stl&quot;))</code></pre>
+<pre><code>## # A tibble: 304 x 12
+##    Region    State     Purpose trend_strength seasonal_strengt… seasonal_peak_y…
+##    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;            &lt;dbl&gt;             &lt;dbl&gt;            &lt;dbl&gt;
+##  1 Adelaide  South Au… Busine…          0.451             0.380                3
+##  2 Adelaide  South Au… Holiday          0.541             0.601                1
+##  3 Adelaide  South Au… Other            0.743             0.189                2
+##  4 Adelaide  South Au… Visiti…          0.433             0.446                1
+##  5 Adelaide… South Au… Busine…          0.453             0.140                3
+##  6 Adelaide… South Au… Holiday          0.512             0.244                2
+##  7 Adelaide… South Au… Other            0.584             0.374                2
+##  8 Adelaide… South Au… Visiti…          0.481             0.228                0
+##  9 Alice Sp… Northern… Busine…          0.526             0.224                0
+## 10 Alice Sp… Northern… Holiday          0.377             0.827                3
+## # … with 294 more rows, and 6 more variables: seasonal_trough_year &lt;dbl&gt;,
+## #   spikiness &lt;dbl&gt;, linearity &lt;dbl&gt;, curvature &lt;dbl&gt;, stl_e_acf1 &lt;dbl&gt;,
+## #   stl_e_acf10 &lt;dbl&gt;</code></pre>
+<p>We can then use these features in plots to identify what type of series are heavily trended and what are most seasonal.</p>
+<pre class="r"><code>tourism %&gt;% features(Trips, feature_set(tags=&quot;stl&quot;)) %&gt;%
+  ggplot(aes(x=trend_strength, y=seasonal_strength_year, col=Purpose)) +
+    geom_point() + facet_wrap(vars(State))</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/features-plot-1.png" width="672" /></p>
+<p>Clearly, holiday series are most seasonal which is unsurprising. The strongest trends tend to be in Western Australia.</p>
+<p>The most seasonal series can also be easily identified and plotted.</p>
+<pre class="r"><code>tourism %&gt;%
+  features(Trips, feature_set(tags=&quot;stl&quot;)) %&gt;%
+  filter(seasonal_strength_year == max(seasonal_strength_year)) %&gt;%
+  left_join(tourism, by = c(&quot;State&quot;,&quot;Region&quot;,&quot;Purpose&quot;)) %&gt;%
+  ggplot(aes(x = Quarter, y = Trips)) + geom_line() +
+    facet_grid(vars(State,Region,Purpose))</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/extreme-1.png" width="672" /></p>
+<p>This is holiday trips to the most popular ski region of Australia.</p>
+<p>The <code>feasts</code> package currently includes 42 features which can all be computed in one line like this.</p>
+<pre class="r"><code># Compute features
+tourism_features &lt;- tourism %&gt;%
+  features(Trips, feature_set(pkgs=&quot;feasts&quot;))</code></pre>
+<pre><code>## Warning: `n_flat_spots()` was deprecated in feasts 0.1.5.
+## Please use `longest_flat_spot()` instead.</code></pre>
+<p>Unusual time series can be identified by first doing a principal components decomposition</p>
+<pre class="r"><code>pcs &lt;- tourism_features %&gt;%
+  select(-State, -Region, -Purpose) %&gt;%
+  prcomp(scale=TRUE) %&gt;%
+  augment(tourism_features)
+pcs %&gt;%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2, col=Purpose)) +
+  geom_point() + theme(aspect.ratio=1)</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/pca-1.png" width="672" /></p>
+<p>We can then identify some unusual series.</p>
+<pre class="r"><code>pcs %&gt;%
+  filter(.fittedPC1 &gt; 10.5) %&gt;%
+  select(Region, State, Purpose, .fittedPC1, .fittedPC2)</code></pre>
+<pre><code>## # A tibble: 4 x 5
+##   Region                 State             Purpose  .fittedPC1 .fittedPC2
+##   &lt;chr&gt;                  &lt;chr&gt;             &lt;chr&gt;         &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Australia&#39;s North West Western Australia Business       13.4    -11.4  
+## 2 Australia&#39;s South West Western Australia Holiday        10.9      0.857
+## 3 Melbourne              Victoria          Holiday        12.3    -10.5  
+## 4 South Coast            New South Wales   Holiday        11.9      9.40</code></pre>
+</div>
+<div id="replicating-hyndman-wang-and-laptev-2015" class="section level2">
+<h2>Replicating Hyndman, Wang and Laptev (2015)</h2>
+<p>I used a similar approach to identifying outliers in my <a href="https://robjhyndman.com/publications/icdm2015/">ICDM 2015 paper with Earo Wang and Nikolay Laptev</a>. In that paper, we used hourly data on thousands of mail servers from Yahoo.</p>
+<p>The data is stored in the <code>tsfeatures</code> package as an <code>mts</code> object. Unfortunately, <code>mts</code> and <code>ts</code> objects are particularly bad at handling hourly and other sub-daily data, as time is stored numerically and the precision is not sufficient to always work properly. So we need to do a little work to create a properly formulated tsibble.</p>
+<pre class="r"><code>yahoo &lt;- tsfeatures::yahoo_data() %&gt;%
+  as_tsibble() %&gt;%
+  mutate(
+    Time = hms::hms(day = trunc(index) - 1L,
+                    hour = as.integer((round(24*(index-1))) %% 24))
+  ) %&gt;%
+  as_tsibble(index = Time, key=key) %&gt;%
+  select(Time, key, value)</code></pre>
+<p>The <code>key</code> variable here identifies the particular server and measurement variable on that server. There are 1748 such time series, each with 1437 (almost 60 days) observations.</p>
+<p>Now we create the features on all series, matching the original paper as closely as possible. There are a few small differences due to different choices in how features are computed, but they make little difference to the results.</p>
+<p>The features are computed in two groups — the first group uses the original data, while the second group uses the scaled data.</p>
+<pre class="r"><code>yahoo_features &lt;- bind_cols(
+    yahoo %&gt;% features(value, features=list(
+      mean = ~ mean(., na.rm = TRUE),
+      var = ~ var(., na.rm = TRUE)
+    )),
+    yahoo %&gt;% features(scale(value), features = list(
+      ~ feat_acf(.),
+      ~ feat_spectral(.),
+      ~ longest_flat_spot(.),
+      ~ n_crossing_points(.),
+      ~ var_tiled_var(., .period = 24, .size = 24),
+      ~ shift_level_max(., .period = 24, .size = 24),
+      ~ shift_var_max(., .period = 24, .size = 24),
+      ~ shift_kl_max(., .period = 24, .size = 48),
+      ~ feat_stl(., .period = 24, s.window = &quot;periodic&quot;, robust = TRUE)
+    ))
+  ) %&gt;%
+  rename(
+    lumpiness = var_tiled_var,
+    key = key...1
+  ) %&gt;%
+  select(key, mean, var, acf1, trend_strength,
+         seasonal_strength_24, linearity, curvature,
+         seasonal_peak_24, seasonal_trough_24,
+         spectral_entropy, lumpiness, spikiness,
+         shift_level_max, shift_var_max,
+         longest_flat_spot, n_crossing_points,
+         shift_kl_max, shift_kl_index)</code></pre>
+<p>Now we can compute the principal components.</p>
+<pre class="r"><code>hwl_pca &lt;- yahoo_features %&gt;%
+  select(-key) %&gt;%
+  na.omit() %&gt;%
+  prcomp(scale=TRUE) %&gt;%
+  augment(na.omit(yahoo_features))
+hwl_pca %&gt;%
+  as_tibble() %&gt;%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2)) +
+    geom_point()</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/yahoo_pca-1.png" width="672" /></p>
+<p>A useful plot for identifying the outlying observations is an HDR scatterplot which highlights regions of high density, and identifies outliers as those observations in low density regions. The red dots are the 1% highest density observations, the orange dots are in the 50% region, the yellow dots are in the 99% regions, while those shown in black are the 1% most “unusual” observations (having the lowest bivariate density on this plot.) The five most outlying points are highlighted by their row numbers.</p>
+<pre class="r"><code>hdrcde::hdrscatterplot(hwl_pca$.fittedPC1, hwl_pca$.fittedPC2, noutliers=5)</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/hdrplot-1.png" width="672" /></p>
+</div>
+<div id="replicating-kang-hyndman-and-smith-miles-2017" class="section level2">
+<h2>Replicating Kang, Hyndman and Smith-Miles (2017)</h2>
+<p>Another paper that uses features is this <a href="https://robjhyndman.com/publications/ts-feature-space/">IJF paper from 2017</a> in which we explored the feature space of the M3 time series data.</p>
+<p>First we need to create several tsibbles, corresponding to the different seasonal periods in the M3 data.</p>
+<pre class="r"><code>m3totsibble &lt;- function(z) {
+  bind_rows(
+    as_tsibble(z$x) %&gt;% mutate(Type=&quot;Training&quot;) %&gt;% as_tibble(),
+    as_tsibble(z$xx) %&gt;% mutate(Type=&quot;Test&quot;) %&gt;% as_tibble()
+  ) %&gt;%
+  mutate(
+    st = z$st,
+    type = z$type,
+    period = z$period,
+    description = z$description,
+    sn = z$sn,
+  ) 
+}
+m3yearly &lt;- Mcomp::M3 %&gt;%
+  subset(&quot;yearly&quot;) %&gt;%
+  purrr::map_dfr(m3totsibble) %&gt;%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3quarterly &lt;- Mcomp::M3 %&gt;%
+  subset(&quot;quarterly&quot;) %&gt;%
+  purrr::map_dfr(m3totsibble) %&gt;%
+  mutate(index = yearquarter(index)) %&gt;%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3monthly &lt;- Mcomp::M3 %&gt;%
+  subset(&quot;monthly&quot;) %&gt;%
+  purrr::map_dfr(m3totsibble) %&gt;%
+  mutate(index = yearmonth(index)) %&gt;%
+  as_tsibble(index=index, key=c(sn,period,st))
+m3other &lt;- Mcomp::M3 %&gt;%
+  subset(&quot;other&quot;) %&gt;%
+  purrr::map_dfr(m3totsibble) %&gt;%
+  as_tsibble(index=index, key=c(sn,period,st))</code></pre>
+<p>There are some bespoke features used by Kang et al (IJF 2017), so rather than use the inbuilt <code>feasts</code> functions, we can create our own feature calculation function.</p>
+<pre class="r"><code>khs_stl &lt;- function(x, period) {
+  output &lt;- c(frequency=period, feat_spectral(x))
+  lambda &lt;- forecast::BoxCox.lambda(ts(x, frequency=period),
+                      lower=0, upper=1, method=&#39;loglik&#39;)
+  stlfeatures &lt;- feat_stl(box_cox(x, lambda), .period=period,
+      s.window=&#39;periodic&#39;, robust=TRUE)
+  output &lt;- c(output, stlfeatures, lambda=lambda)
+  if(period==1L)
+    output &lt;- c(output, seasonal_strength=0)
+  return(output)
+}
+m3_features &lt;- bind_rows(
+    m3yearly %&gt;% features(value, features=list(~ khs_stl(.,1))),
+    m3quarterly %&gt;% features(value, features=list(~ khs_stl(.,4))) %&gt;%
+      rename(seasonal_strength = seasonal_strength_4),
+    m3monthly %&gt;% features(value, features=list(~ khs_stl(.,12))) %&gt;%
+      rename(seasonal_strength = seasonal_strength_12),
+    m3other %&gt;% features(value, features=list(~ khs_stl(.,1)))
+  ) %&gt;%
+  select(sn, spectral_entropy, trend_strength, seasonal_strength,
+         frequency, stl_e_acf1, lambda)</code></pre>
+<p>Finally we plot the first two principal components of the feature space.</p>
+<pre class="r"><code>m3_features %&gt;%
+  select(-sn) %&gt;%
+  prcomp(scale=TRUE) %&gt;%
+  augment(m3_features) %&gt;%
+  ggplot(aes(x=.fittedPC1, y=.fittedPC2)) +
+    geom_point(aes(color = factor(frequency)))</code></pre>
+<p><img src="/hyndsight/2019-09-fbtsa_files/figure-html/m3_pca-1.png" width="672" /></p>
+</div>

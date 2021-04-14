@@ -1,0 +1,24 @@
+---
+date: 2018-08-03
+slug: ts2csv
+title: "Saving ts objects as csv files"
+mathjax: true
+categories:
+  - time series
+  - R
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a <code>ts</code> object, the time index can easily get lost. So I wrote a little function to make this easier, using the <code>tsibble</code> package to do almost all of the work in looking after the time index. (Thanks to Earo in the comments for greatly simplifying my original code.)</p>
+<pre class="r"><code># Convert time series data to csv
+ts2csv &lt;- function(x) {
+  fname &lt;- paste0(deparse(substitute(x)), &quot;.csv&quot;)
+  readr::write_csv(tsibble::as_tsibble(x, gather = FALSE), fname)
+}
+
+library(fpp2)
+ts2csv(auscafe)    # Univariate monthly data
+ts2csv(visnights)  # Multivariate quarterly data
+ts2csv(elecdemand) # Multivariate half-hourly data</code></pre>

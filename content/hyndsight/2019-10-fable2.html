@@ -1,0 +1,159 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-10-17
+title: "Non-Gaussian forecasting using fable"
+slug: fable2
+mathjax: true
+categories:
+  - time series
+  - graphics
+  - statistics
+  - R
+  - tidyverts
+  - forecasting
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code>library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(fable)</code></pre>
+<p>In my <a href="https://robjhyndman.com/hyndsight/fable/">previous post</a> about the new <a href="https://fable.tidyverts.org"><strong>fable</strong> package</a>, we saw how fable can produce forecast distributions, not just point forecasts. All my examples used Gaussian (normal) distributions, so in this post I want to show how non-Gaussian forecasting can be done.</p>
+<p>As an example, we will use eating-out expenditure in my home state of Victoria.</p>
+<pre class="r"><code>vic_cafe &lt;- tsibbledata::aus_retail %&gt;%
+  filter(
+    State == &quot;Victoria&quot;,
+    Industry == &quot;Cafes, restaurants and catering services&quot;
+  ) %&gt;%
+  select(Month, Turnover)
+vic_cafe %&gt;%
+  autoplot(Turnover) + ggtitle(&quot;Monthly turnover of Victorian cafes&quot;)</code></pre>
+<p><img src="/hyndsight/2019-10-fable2_files/figure-html/cafe-1.png" width="672" /></p>
+<div id="forecasting-with-transformations" class="section level2">
+<h2>Forecasting with transformations</h2>
+<p>Clearly the variance is increasing with the level of the series, so we will consider modelling a Box-Cox transformation of the data.</p>
+<pre class="r"><code>vic_cafe %&gt;% autoplot(box_cox(Turnover, lambda = 0.2))</code></pre>
+<p><img src="/hyndsight/2019-10-fable2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The variance now looks more homogeneous across the series, allowing us to fit an additive model. I chose the value of <span class="math inline">\(\lambda=0.2\)</span> by eye, but you can use the <code>guerrero</code> function for an automated approach.</p>
+<pre class="r"><code>vic_cafe %&gt;% features(Turnover, guerrero)</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   lambda_guerrero
+##             &lt;dbl&gt;
+## 1           0.124</code></pre>
+<p>It suggests something slightly smaller, but I will stick with 0.2.</p>
+<p>Now to fit a model. For this post I will use ETS models</p>
+<pre class="r"><code>fit &lt;- vic_cafe %&gt;%
+  model(ets = ETS(box_cox(Turnover, 0.2)))
+fit</code></pre>
+<pre><code>## # A mable: 1 x 1
+##            ets
+##        &lt;model&gt;
+## 1 &lt;ETS(A,A,A)&gt;</code></pre>
+<p>An ETS(A,A,A), or additive Holt-Winters model, has been selected for the transformed data. We can produce forecasts in the usual way.</p>
+<pre class="r"><code>fc &lt;- fit %&gt;% forecast(h = &quot;3 years&quot;)
+fc</code></pre>
+<pre><code>## # A fable: 36 x 4 [1M]
+## # Key:     .model [1]
+##    .model    Month        Turnover .mean
+##    &lt;chr&gt;     &lt;mth&gt;          &lt;dist&gt; &lt;dbl&gt;
+##  1 ets    2019 Jan  t(N(13, 0.02))  608.
+##  2 ets    2019 Feb t(N(13, 0.028))  563.
+##  3 ets    2019 Mar t(N(13, 0.036))  629.
+##  4 ets    2019 Apr t(N(13, 0.044))  615.
+##  5 ets    2019 May t(N(13, 0.052))  613.
+##  6 ets    2019 Jun t(N(13, 0.061))  593.
+##  7 ets    2019 Jul t(N(13, 0.069))  624.
+##  8 ets    2019 Aug t(N(13, 0.077))  640.
+##  9 ets    2019 Sep t(N(13, 0.085))  630.
+## 10 ets    2019 Oct t(N(13, 0.093))  642.
+## # … with 26 more rows</code></pre>
+<p>Note that the distributions are given as transformed normal, denoted by t(N). The point forecast (in column <code>Turnover</code>) is the mean of this distribution. The back-transformation and bias adjustment is done automatically.</p>
+<p>One particularly clever part of the package (thanks to Mitchell O’Hara-Wild) is that you can use any transformation in the <code>model()</code> function, and the bias adjustment is computed based on a Taylor series expansion using numerical derivatives. So you will always get the approximate mean as the point forecast, even when using some exotic transformation for which you have no analytic expression for the bias.</p>
+<pre class="r"><code>fc %&gt;% autoplot(vic_cafe)</code></pre>
+<p><img src="/hyndsight/2019-10-fable2_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>
+<div id="bootstrapped-prediction-intervals" class="section level2">
+<h2>Bootstrapped prediction intervals</h2>
+<p>In the preceding analysis, there was still a normality assumption for the residuals of the model applied to the transformed data. If you want to avoid that as well, you can use bootstrapped intervals. These are constructed from simulated future sample paths where the residuals are resampled as possible future errors.</p>
+<p>We can simulate future sample paths using the <code>generate()</code> function.</p>
+<pre class="r"><code>sim &lt;- fit %&gt;% generate(h = &quot;3 years&quot;, times = 5, bootstrap = TRUE)
+sim</code></pre>
+<pre><code>## # A tsibble: 180 x 4 [1M]
+## # Key:       .model, .rep [5]
+##    .model    Month .rep   .sim
+##    &lt;chr&gt;     &lt;mth&gt; &lt;chr&gt; &lt;dbl&gt;
+##  1 ets    2019 Jan 1      583.
+##  2 ets    2019 Feb 1      600.
+##  3 ets    2019 Mar 1      679.
+##  4 ets    2019 Apr 1      669.
+##  5 ets    2019 May 1      671.
+##  6 ets    2019 Jun 1      624.
+##  7 ets    2019 Jul 1      644.
+##  8 ets    2019 Aug 1      689.
+##  9 ets    2019 Sep 1      702.
+## 10 ets    2019 Oct 1      690.
+## # … with 170 more rows</code></pre>
+<p>Here we have generated five possible sample paths for future months. The <code>.rep</code> variable provides a new key for the tsibble. The back-transformation of the sample paths is handled automatically. If we had multiple models, each would be used to generate future sample paths provided the corresponding <code>generate</code> function existed. (In the current version of <strong>fable</strong>, we have not yet implemented this for ARIMA models.)</p>
+<p>The plot below shows the five sample paths along with the last few years of historical data.</p>
+<pre class="r"><code>vic_cafe %&gt;%
+  filter(year(Month) &gt;= 2008) %&gt;%
+  ggplot(aes(x = Month)) +
+  geom_line(aes(y = Turnover)) +
+  geom_line(aes(y = .sim, colour = as.factor(.rep)), data = sim) +
+  ggtitle(&quot;Monthly turnover of Victorian cafes&quot;) +
+  guides(col = FALSE)</code></pre>
+<p><img src="/hyndsight/2019-10-fable2_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Prediction intervals are calculated using percentiles of the future sample paths. This is all built into the <code>forecast()</code> function so you do not need to call <code>generate()</code> directly.</p>
+<pre class="r"><code>fc &lt;- fit %&gt;% forecast(h = &quot;3 years&quot;, bootstrap = TRUE)
+fc</code></pre>
+<pre><code>## # A fable: 36 x 4 [1M]
+## # Key:     .model [1]
+##    .model    Month        Turnover .mean
+##    &lt;chr&gt;     &lt;mth&gt;          &lt;dist&gt; &lt;dbl&gt;
+##  1 ets    2019 Jan t(sample[5000])  608.
+##  2 ets    2019 Feb t(sample[5000])  563.
+##  3 ets    2019 Mar t(sample[5000])  628.
+##  4 ets    2019 Apr t(sample[5000])  615.
+##  5 ets    2019 May t(sample[5000])  612.
+##  6 ets    2019 Jun t(sample[5000])  593.
+##  7 ets    2019 Jul t(sample[5000])  624.
+##  8 ets    2019 Aug t(sample[5000])  640.
+##  9 ets    2019 Sep t(sample[5000])  630.
+## 10 ets    2019 Oct t(sample[5000])  642.
+## # … with 26 more rows</code></pre>
+<p>Notice that the forecast distribution is now represented as transformed simulation with 5000 sample paths. This default number can be modified in the <code>times</code> argument for <code>forecast()</code>.</p>
+<pre class="r"><code>fc %&gt;% autoplot(vic_cafe) +
+  ggtitle(&quot;Monthly turnover of Victorian cafes&quot;)</code></pre>
+<p><img src="/hyndsight/2019-10-fable2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>In this example, the resulting forecast intervals are almost identical to those obtained when we assumed the residuals were normally distributed.</p>
+</div>
+<div id="accuracy-calculations" class="section level2">
+<h2>Accuracy calculations</h2>
+<p>We can check whether the bootstrapping helped by comparing the CRPS values from both models after doing a training/test set split.</p>
+<pre class="r"><code>train &lt;- vic_cafe %&gt;% filter(year(Month) &lt;= 2014)
+fit &lt;- train %&gt;%
+  model(ets = ETS(box_cox(Turnover, 0.2)))
+fit %&gt;%
+  forecast(h = &quot;4 years&quot;, bootstrap = FALSE) %&gt;%
+  accuracy(vic_cafe,
+    measures = distribution_accuracy_measures
+  )</code></pre>
+<pre><code>## # A tibble: 1 x 4
+##   .model .type percentile  CRPS
+##   &lt;chr&gt;  &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
+## 1 ets    Test        24.6  24.4</code></pre>
+<pre class="r"><code>fit %&gt;%
+  forecast(h = &quot;4 years&quot;, bootstrap = TRUE) %&gt;%
+  accuracy(vic_cafe,
+    measures = distribution_accuracy_measures
+  )</code></pre>
+<pre><code>## # A tibble: 1 x 4
+##   .model .type percentile  CRPS
+##   &lt;chr&gt;  &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt;
+## 1 ets    Test        24.7  24.5</code></pre>
+<p>In this case it makes almost no difference which of the two approaches is used, so the non-bootstrap approach is preferred because it is much faster.</p>
+</div>

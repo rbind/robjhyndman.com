@@ -1,0 +1,119 @@
+---
+author: robjhyndman
+comments: true
+date: 2020-01-24
+title: "ABS time series as tsibbles"
+slug: abs2tsibble
+mathjax: true
+categories:
+  - time series
+  - statistics
+  - R
+  - tidyverts
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code>library(tidyverse)
+library(tsibble)
+library(readabs)</code></pre>
+<p>Australian data analysts will know how frustrating it is to work with time series data from the Australian Bureau of Statistics. They are stored as multiple ugly Excel files (each containing multiple sheets) with inconsistent formatting, embedded comments, meta data stored along with the actual data, dates stored in a painful Excel format, and so on.</p>
+<p>Fortunately there is an R package available to make this a little easier.
+The <a href="https://cran.r-project.org/package=readabs"><code>readabs</code></a> package is maintained by <a href="https://grattan.edu.au/people/bio/matt-cowgill/">Matt Cowgill</a> from the Grattan Institute — which means it has probably had a very thorough workout!</p>
+<p>To illustrate it, I will recreate the <code>tsibbledata::aus_retail</code> data, containing monthly Australian retail trade turnover for different combinations of industry and state. Here is the data as provided in the <code>tsibbledata package</code>.</p>
+<pre class="r"><code>tsibbledata::aus_retail</code></pre>
+<pre><code>## # A tsibble: 64,532 x 5 [1M]
+## # Key:       State, Industry [152]
+##    State             Industry                 `Series ID`    Month Turnover
+##    &lt;chr&gt;             &lt;chr&gt;                    &lt;chr&gt;          &lt;mth&gt;    &lt;dbl&gt;
+##  1 Australian Capit… Cafes, restaurants and … A3349849A   1982 Apr      4.4
+##  2 Australian Capit… Cafes, restaurants and … A3349849A   1982 May      3.4
+##  3 Australian Capit… Cafes, restaurants and … A3349849A   1982 Jun      3.6
+##  4 Australian Capit… Cafes, restaurants and … A3349849A   1982 Jul      4  
+##  5 Australian Capit… Cafes, restaurants and … A3349849A   1982 Aug      3.6
+##  6 Australian Capit… Cafes, restaurants and … A3349849A   1982 Sep      4.2
+##  7 Australian Capit… Cafes, restaurants and … A3349849A   1982 Oct      4.8
+##  8 Australian Capit… Cafes, restaurants and … A3349849A   1982 Nov      5.4
+##  9 Australian Capit… Cafes, restaurants and … A3349849A   1982 Dec      6.9
+## 10 Australian Capit… Cafes, restaurants and … A3349849A   1983 Jan      3.8
+## # … with 64,522 more rows</code></pre>
+<p>There are 152 combinations of State and Industry (each corresponding to a <code>Series ID</code>).</p>
+<p>The main function is <code>read_abs()</code> which will download the data, read it into R, and tidy it. While it will do this for all spreadsheets in a given catalogue number, I would not recommend that. Choose the spreadsheet you want. In this case, it is <a href="https://www.abs.gov.au/ausstats/abs@.nsf/mf/8501.0">Cat 8501.0</a>, Table 11.</p>
+<pre class="r"><code>retail1 &lt;- read_abs(&quot;8501.0&quot;, tables = 11)</code></pre>
+<pre><code>## Finding filenames for tables corresponding to ABS catalogue 8501.0</code></pre>
+<pre><code>## Attempting to download files from catalogue 8501.0, Retail Trade, Australia</code></pre>
+<pre><code>## Downloading https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release/8501011.xls</code></pre>
+<pre><code>## Extracting data from downloaded spreadsheets</code></pre>
+<pre><code>## Tidying data from imported ABS spreadsheets</code></pre>
+<pre class="r"><code>retail1</code></pre>
+<pre><code>## # A tibble: 88,263 x 12
+##    table_no sheet_no table_title     date       series    value series_type
+##    &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;           &lt;date&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;      
+##  1 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover… 303.  Original   
+##  2 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  41.7 Original   
+##  3 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  63.9 Original   
+##  4 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover… 409.  Original   
+##  5 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  65.8 Original   
+##  6 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  91.8 Original   
+##  7 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  53.6 Original   
+##  8 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover… 211.  Original   
+##  9 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  94   Original   
+## 10 8501011  Data1    TABLE 11. Reta… 1982-04-01 Turnover…  32.7 Original   
+## # … with 88,253 more rows, and 5 more variables: data_type &lt;chr&gt;,
+## #   collection_month &lt;chr&gt;, frequency &lt;chr&gt;, series_id &lt;chr&gt;, unit &lt;chr&gt;</code></pre>
+<p>Some of those columns are not particularly useful (containing a single unique value), so we will remove them. We also need to fix the date to be a Month (rather than Day), and we will match the names to <code>tsibbledata::aus_retail</code> to make comparisons easier.</p>
+<pre class="r"><code>retail1 &lt;- retail1 %&gt;%
+  mutate(Month = yearmonth(date)) %&gt;%
+  rename(Turnover = value, `Series ID` = series_id) %&gt;%
+  select(Month, `Series ID`, series, Turnover)
+retail1</code></pre>
+<pre><code>## # A tibble: 88,263 x 4
+##       Month `Series ID` series                                     Turnover
+##       &lt;mth&gt; &lt;chr&gt;       &lt;chr&gt;                                         &lt;dbl&gt;
+##  1 1982 Apr A3349335T   Turnover ;  New South Wales ;  Supermarke…    303. 
+##  2 1982 Apr A3349627V   Turnover ;  New South Wales ;  Liquor ret…     41.7
+##  3 1982 Apr A3349338X   Turnover ;  New South Wales ;  Other spec…     63.9
+##  4 1982 Apr A3349398A   Turnover ;  New South Wales ;  Food retai…    409. 
+##  5 1982 Apr A3349468W   Turnover ;  New South Wales ;  Furniture,…     65.8
+##  6 1982 Apr A3349336V   Turnover ;  New South Wales ;  Electrical…     91.8
+##  7 1982 Apr A3349337W   Turnover ;  New South Wales ;  Hardware, …     53.6
+##  8 1982 Apr A3349397X   Turnover ;  New South Wales ;  Household …    211. 
+##  9 1982 Apr A3349399C   Turnover ;  New South Wales ;  Clothing r…     94  
+## 10 1982 Apr A3349874C   Turnover ;  New South Wales ;  Footwear a…     32.7
+## # … with 88,253 more rows</code></pre>
+<p>The <code>series</code> column contains information about the state and industry, so we will need to extract the relevant details. Also, totals are included in addition to the disaggregated data, so let’s remove them.</p>
+<pre class="r"><code>retail1 &lt;- retail1 %&gt;%
+  separate(series, c(&quot;Category&quot;, &quot;State&quot;, &quot;Industry&quot;), 
+           sep = &quot;;&quot;, extra = &quot;drop&quot;) %&gt;%
+  mutate(
+    State = trimws(State),
+    Industry = trimws(Industry),
+  ) %&gt;%
+  select(-Category) %&gt;%
+  filter(
+    Industry  != &quot;Total (Industry)&quot;,
+    State != &quot;Total (State)&quot;
+  )</code></pre>
+<p>Next, we turn it into a tsibble by identifying the index and key variables, and removing any missing combinations.</p>
+<pre class="r"><code>retail1 &lt;- retail1 %&gt;%
+  as_tsibble(index = Month, key = c(State, Industry)) %&gt;%
+  filter(!is.na(Turnover))
+retail1</code></pre>
+<pre><code>## # A tsibble: 68,362 x 5 [1M]
+## # Key:       State, Industry [156]
+##       Month `Series ID` State             Industry                 Turnover
+##       &lt;mth&gt; &lt;chr&gt;       &lt;chr&gt;             &lt;chr&gt;                       &lt;dbl&gt;
+##  1 1982 Apr A3349849A   Australian Capit… Cafes, restaurants and …      4.4
+##  2 1982 May A3349849A   Australian Capit… Cafes, restaurants and …      3.4
+##  3 1982 Jun A3349849A   Australian Capit… Cafes, restaurants and …      3.6
+##  4 1982 Jul A3349849A   Australian Capit… Cafes, restaurants and …      4  
+##  5 1982 Aug A3349849A   Australian Capit… Cafes, restaurants and …      3.6
+##  6 1982 Sep A3349849A   Australian Capit… Cafes, restaurants and …      4.2
+##  7 1982 Oct A3349849A   Australian Capit… Cafes, restaurants and …      4.8
+##  8 1982 Nov A3349849A   Australian Capit… Cafes, restaurants and …      5.4
+##  9 1982 Dec A3349849A   Australian Capit… Cafes, restaurants and …      6.9
+## 10 1983 Jan A3349849A   Australian Capit… Cafes, restaurants and …      3.8
+## # … with 68,352 more rows</code></pre>
+<p>The additional rows here compared to <code>tsibbledata::aus_retail</code> are because the data now extend to November 2019.</p>
+<p>There’s a <a href="https://cran.r-project.org/web/packages/readabs/vignettes/readabs_vignette.html">helpful vignette</a> demonstrating other facilities and features of the <code>readabs</code> package.</p>

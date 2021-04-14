@@ -1,0 +1,59 @@
+---
+date: 2014-03-04 23:57:02+00:00
+mathjax: true
+slug: forecasting-weekly-data
+title: Forecasting weekly data
+categories:
+- forecasting
+- R
+- statistics
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This is another situation where Fourier terms are useful for handling the seasonality. Not only is the seasonal period rather long, it is non-integer (averaging 365.25/7 = 52.18). So ARIMA and ETS models do not tend to give good results, even with a period of 52 as an approximation.</p>
+<div id="regression-with-arima-errors" class="section level2">
+<h2>Regression with ARIMA errors</h2>
+<p>The simplest approach is a regression with ARIMA errors. Here is an example using weekly data on US finished motor gasoline products supplied (in thousands of barrels per day) from February 1991 to May 2005. An updated version of the data is available from <a href="http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=wgfupus2&amp;f=W">the EIA website</a>. I select the number of Fourier terms by minimizing the AICc. The order of the ARIMA model is also selected by minimizing the AICc, although that is done within the <code>auto.arima()</code> function.</p>
+<pre class="r"><code>library(forecast)
+gas &lt;- ts(read.csv(&quot;https://robjhyndman.com/data/gasoline.csv&quot;, header=FALSE)[,1],
+          freq=365.25/7, start=1991+31/365.25)
+bestfit &lt;- list(aicc=Inf)
+for(i in 1:25)
+{
+  fit &lt;- auto.arima(gas, xreg=fourier(gas, K=i), seasonal=FALSE)
+  if(fit$aicc &lt; bestfit$aicc)
+    bestfit &lt;- fit
+  else break;
+}
+fc &lt;- forecast(bestfit, xreg=fourier(gas, K=12, h=104))
+plot(fc)</code></pre>
+<p><img src="/hyndsight/2014-03-04-forecasting-weekly-data_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The fitted model has 12 pairs of Fourier terms and can be written as
+<span class="math display">\[
+y_t = bt + \sum_{j=1}^{12} \left[ \alpha_j\sin\left(\frac{2\pi j t}{52.18}\right) + \beta_j\cos\left(\frac{2\pi j t}{52.18}\right) \right] + n_t
+\]</span>
+where <span class="math inline">\(n_t\)</span> is an ARIMA(3,1,3) process. Because <span class="math inline">\(n_t\)</span> is non-stationary, the model is actually estimated on the differences of the variables on both sides of this equation. That is why there is no need for an intercept term. There are 24 parameters to capture the seasonality which is rather a lot, but apparently required according to the AIC selection. (BIC would have given fewer.) The total number of degrees of freedom is 31 (the other seven coming from the 6 ARMA parameters and the drift parameter).</p>
+</div>
+<div id="tbats" class="section level2">
+<h2>TBATS</h2>
+<p>An alternative approach is the TBATS model introduced by <a href="/publications/complex-seasonality/">De Livera et al (JASA, 2011)</a>. This uses a state space model that is a generalization of those underpinning exponential smoothing. It also allows for automatic Box-Cox transformation and ARMA errors. The modelling algorithm is entirely automated:</p>
+<pre class="r"><code>gastbats &lt;- tbats(gas)
+fc2 &lt;- forecast(gastbats, h=104)
+plot(fc2, ylab=&quot;thousands of barrels per day&quot;)</code></pre>
+<p><img src="/hyndsight/2014-03-04-forecasting-weekly-data_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Here the fitted model is given at the top of the plot as TBATS(0.999, {2,2}, 1, {&lt;52.18,8&gt;}). That is, a Box-Cox transformation of 0.999 (essentially doing nothing), ARMA(2,2) errors, a damping parameter of 1 (doing nothing) and 8 Fourier pairs with period <span class="math inline">\(m=52.18\)</span>. This model can be written as
+<span class="math display">\[\begin{align}
+y_t &amp;= \ell_{t-1} + b_{t-1} + s_{t-1} + \alpha d_t\\
+b_t &amp;= b_{t-1} + \beta d_t\\
+s_t &amp;= \sum_{j=1}^{8} s_{j,t}\\
+s_{j,t} &amp;= s_{j,t-1}\cos \left(\frac{2\pi j t}{52.18}\right) +s_{j,t-1}^{\ast}\sin \left(\frac{2\pi j t}{52.18}\right) + \gamma_1d_t \\
+s_{j,t}^{\ast} &amp;= -s_{j,t-1}\sin\left(\frac{2\pi j t}{52.18}\right) + s_{j,t-1}^{\ast}\cos\left(\frac{2\pi j t}{52.18}\right)+\gamma_2d_t,
+\end{align}\]</span>
+where <span class="math inline">\(d_t\)</span> is an ARMA(2,2) process and <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, <span class="math inline">\(\gamma_1\)</span> and <span class="math inline">\(\gamma_2\)</span> are smoothing parameters. Here the seasonality has been handled with 18 parameters (the sixteen initial values for <span class="math inline">\(s_{j,0}\)</span> and <span class="math inline">\(s_{j,0}^{\ast}\)</span> and the two smoothing parameters <span class="math inline">\(\gamma_1\)</span> and <span class="math inline">\(\gamma_2\)</span>). The total number of degrees of freedom is 26 (the other 8 coming from the two smoothing parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, the four ARMA parameters, and the initial level and slope values <span class="math inline">\(\ell_0\)</span> and <span class="math inline">\(b_0\)</span>).</p>
+<div id="which-to-use" class="section level3">
+<h3>Which to use?</h3>
+<p>In this example, the forecasts are almost identical and there is little to differentiate the two models. The TBATS model is preferable when the seasonality changes over time. The ARIMA approach is preferable if there are covariates that are useful predictors as these can be added as additional regressors.</p>
+</div>
+</div>

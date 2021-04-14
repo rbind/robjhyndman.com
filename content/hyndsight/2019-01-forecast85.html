@@ -1,0 +1,26 @@
+---
+author: robjhyndman
+comments: true
+date: 2019-01-18
+slug: forecast85
+title: forecast 8.5
+categories:
+- forecasting
+- graphics
+- R
+- time series
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>The latest minor release of the forecast package has now been approved on CRAN and should be available in the next day or so.</p>
+<p>Version 8.5 contains the following new features</p>
+<ul>
+<li>Updated <code>tsCV()</code> to handle exogenous regressors.</li>
+<li>Reimplemented <code>naive()</code>, <code>snaive()</code>, <code>rwf()</code> for substantial speed improvements.</li>
+<li>Added support for passing arguments to <code>auto.arima()</code> unit root tests.</li>
+<li>Improved <code>auto.arima()</code> stepwise search algorithm (some neighbouring models were missed previously).</li>
+</ul>
+<p>We haven’t done a major release for two years, and there is unlikely to be another one now. Instead, we are working hard on <a href="https://github.com/tidyverts/fable">fable</a>, a tidyverse replacement for the forecast package.</p>
+<p>The forecast package will continue to be maintained, but no new features will be added.</p>

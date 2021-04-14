@@ -58,7 +58,6 @@ Another plot that has proved popular is to animate this rainbow plot by mapping 
 ```{r frenchanimation, message=FALSE, warning=FALSE, fig.width=7}
 # This requires the transformr package to be installed as well.
 library(gganimate)
-
 frmort %>%
   filter(year > 1900) %>%
   ggplot(aes(x = age, y = mortrate, group = year, col = year)) +
@@ -74,7 +73,6 @@ frmort %>%
 ```
 
 Another way of looking at the data is using an image map. Again, this is extremely easy using ggplot2.
-
 
 ```{r imageplot}
 frmort %>%
@@ -115,12 +113,12 @@ facf <- function(df, xvar, yvar, time, lag.max=20) {
 }
 # Compute FACF for the French mortality data
 fracf <- frmort %>%
-  nest(-sex) %>%
+  nest(data = c(year, age, mortrate)) %>%
   mutate(
     acf = map(data, ~ facf(df=., xvar=age, yvar=mortrate, time=year))
   ) %>%
   select(-data) %>%
-  unnest()
+  unnest(cols=acf)
 
 fracf %>%
   filter(lag < 4) %>%
@@ -135,12 +133,12 @@ Here there is a striking difference between males and females, with relatively l
 ```{r facf_after1950}
 fracf <- frmort %>%
   filter(year > 1950) %>%
-  nest(-sex) %>%
+  nest(data = c(year, age, mortrate)) %>%
   mutate(
     acf = map(data, ~ facf(df=., xvar=age, yvar=mortrate, time=year))
   ) %>%
   select(-data) %>%
-  unnest()
+  unnest(cols=acf)
 fracf %>%
   filter(lag < 4) %>%
   ggplot(aes(x = age1, y = age2, fill = acf)) +
@@ -200,8 +198,7 @@ Again, the first task is to put the data into a suitable form. We will use only 
 
 ```{r pedestriandata, message=FALSE}
 library(sugrrants)
-
-pedestrian <- pedestrian %>%
+pedestrian <- hourly_peds %>%
   filter(
     Sensor_Name == "Flinders Street Station Underpass",
     Date <= as.Date("2016-12-31"),

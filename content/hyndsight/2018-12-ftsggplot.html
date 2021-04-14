@@ -1,0 +1,237 @@
+---
+date: 2018-12-12
+slug: ftsviz
+title: "Using ggplot2 for functional time series"
+mathjax: true
+categories:
+  - time series
+  - R
+  - graphics
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>This week I’ve been attending the <a href="https://www.matrix-inst.org.au/events/functional-data-analysis-and-beyond/">Functional Data and Beyond workshop</a> at the Matrix centre in Creswick.</p>
+<p>I spoke yesterday about using <code>ggplot2</code> for functional data graphics, rather than the custom-built plotting functionality available in the many functional data packages, including my own <a href="https://cran.r-project.org/package=rainbow">rainbow package</a> written with Hanlin Shang.</p>
+<p>It is a much more powerful and flexible way to work, so I thought it would be useful to share some examples.</p>
+<div id="french-mortality-data" class="section level2">
+<h2>French mortality data</h2>
+<p>We will use the French mortality data from the <code>demography</code> package, but we need to convert it into a tibble to begin.</p>
+<pre class="r"><code>library(tidyverse)
+library(demography)
+
+# Combine age groups above 100
+frmort &lt;- set.upperage(fr.mort, 100)
+# Create tibble
+frmort &lt;- tibble(
+      year = rep(frmort$year, rep(length(frmort$age), length(frmort$year))),
+      age = rep(frmort$age, length(frmort$year)),
+      female = c(frmort$rate$female),
+      male = c(frmort$rate$male),
+    ) %&gt;%
+  gather(male, female, key = &quot;sex&quot;, value = &quot;mortrate&quot;)
+frmort</code></pre>
+<pre><code>## # A tibble: 38,582 x 4
+##     year   age sex   mortrate
+##    &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+##  1  1816     0 male   0.223  
+##  2  1816     1 male   0.0467 
+##  3  1816     2 male   0.0343 
+##  4  1816     3 male   0.0232 
+##  5  1816     4 male   0.0161 
+##  6  1816     5 male   0.0136 
+##  7  1816     6 male   0.0116 
+##  8  1816     7 male   0.00991
+##  9  1816     8 male   0.00838
+## 10  1816     9 male   0.00710
+## # … with 38,572 more rows</code></pre>
+<p>The first thing to do is to re-create the rainbow plots that are popular for this type of data (introduced in <a href="https://robjhyndman.com/publications/rainbow-fda/">my paper with Hanlin in JCGS in 2010</a>). Here the year is mapped to colour. This works quite well for mortality data because it has trended consistently over time, allowing the colors to separate. It is one of the few situations where a rainbow palette is preferred to other palettes.</p>
+<pre class="r"><code>frmort %&gt;%
+  ggplot(aes(x = age, y = mortrate, group = year, col = year)) +
+    geom_line() +
+    facet_grid(~sex) +
+    scale_y_log10() +
+    xlab(&quot;Age&quot;) + ylab(&quot;Log mortality&quot;) +
+    scale_color_gradientn(colours = rainbow(10))</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/rainbow-1.png" width="672" /></p>
+<p>Another plot that has proved popular is to animate this rainbow plot by mapping year to animation time. With the new <a href="https://github.com/thomasp85/gganimate"><code>gganimate</code></a> package, that is as easy as adding a few more lines to the end of the above code.</p>
+<pre class="r"><code># This requires the transformr package to be installed as well.
+library(gganimate)
+frmort %&gt;%
+  filter(year &gt; 1900) %&gt;%
+  ggplot(aes(x = age, y = mortrate, group = year, col = year)) +
+    geom_line() +
+    xlab(&quot;Age&quot;) + ylab(&quot;Log mortality&quot;) +
+    facet_grid(~sex) +
+    scale_y_log10() +
+    scale_color_gradientn(colours = rainbow(10)) +
+    transition_time(year) +
+    ease_aes(&#39;linear&#39;) +
+    shadow_mark(colour = &quot;grey70&quot;) +
+    labs(title = &#39;Year: {frame_time}&#39;)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/frenchanimation-1.gif" /><!-- --></p>
+<p>Another way of looking at the data is using an image map. Again, this is extremely easy using ggplot2.</p>
+<pre class="r"><code>frmort %&gt;%
+  ggplot(aes(x = year, y = age, fill = log(mortrate))) +
+    geom_raster() +
+    facet_grid(~sex) +
+    scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/imageplot-1.png" width="672" /></p>
+<p>Note the various wars and epidemics (seen as vertical lines), and the decrease in mortality rates over time (seen as the growing light-coloured area).</p>
+<p>Since this is time series data, we should also look at the autocorrelation function. Because the data are functions of age, the autocorrelation is a surface for each lag value. The function <code>facf</code> below computes a functional ACF surface (giving correlations between different ages and across lagged years). There is some tricky non-standard evaluation used here to allow for non-quoted variables to be used when the function is called.</p>
+<pre class="r"><code>facf &lt;- function(df, xvar, yvar, time, lag.max=20) {
+  key &lt;- enquo(xvar)
+  value &lt;- enquo(yvar)
+  timeindex &lt;- enquo(time)
+  x &lt;- df %&gt;%
+    select(!!key, !!value, !!timeindex) %&gt;%
+    spread(value=!!value, key=!!key) %&gt;%
+    select(-!!timeindex) %&gt;%
+    as.ts() %&gt;%
+    acf(plot=FALSE, lag.max=lag.max, na.action=na.pass)
+  nx &lt;- dim(x$acf)[2]
+  output &lt;- NULL
+  for(i in seq(lag.max+1)) {
+    output &lt;- bind_rows(output,
+      tibble(
+        lag = i-1,
+        x1 = rep(rep(0:(nx-1), nx)),
+        x2 = rep(0:(nx-1), rep(nx,nx)),
+        acf = c(x$acf[i,,])
+    ))
+  }
+  colnames(output)[2:3] &lt;- paste0(rlang::as_name(key),1:2)
+  return(output)
+}
+# Compute FACF for the French mortality data
+fracf &lt;- frmort %&gt;%
+  nest(data = c(year, age, mortrate)) %&gt;%
+  mutate(
+    acf = map(data, ~ facf(df=., xvar=age, yvar=mortrate, time=year))
+  ) %&gt;%
+  select(-data) %&gt;%
+  unnest(cols=acf)
+
+fracf %&gt;%
+  filter(lag &lt; 4) %&gt;%
+  ggplot(aes(x = age1, y = age2, fill = acf)) +
+      geom_raster() +
+      facet_grid(sex~lag) +
+      scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf-1.png" width="672" /></p>
+<p>Here there is a striking difference between males and females, with relatively low correlations between mortality rates of males aged 18-35 and males of other ages. This is largely driven by the wars where males of those ages die at much greater rates than other males, but only for a few years. If we start the analysis from 1950, the effect is much reduced.</p>
+<pre class="r"><code>fracf &lt;- frmort %&gt;%
+  filter(year &gt; 1950) %&gt;%
+  nest(data = c(year, age, mortrate)) %&gt;%
+  mutate(
+    acf = map(data, ~ facf(df=., xvar=age, yvar=mortrate, time=year))
+  ) %&gt;%
+  select(-data) %&gt;%
+  unnest(cols=acf)
+fracf %&gt;%
+  filter(lag &lt; 4) %&gt;%
+  ggplot(aes(x = age1, y = age2, fill = acf)) +
+      geom_raster() +
+      facet_grid(sex~lag) +
+      scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf_after1950-1.png" width="672" /></p>
+<p>There is still a section of low correlation around ages 18-22, with the correlations being lower for males than females. I suspect this is to do with the well-known accident bump, where young people tend to have higher mortality due to accidents and suicides than people of other ages.</p>
+<p>Jim Ramsay pointed out in my talk that it would be nice to remove the redundancy due to symmetry and show the males in the top left triangles, with the females below. It turns that this is also very easy to do.</p>
+<pre class="r"><code>fracf %&gt;%
+  filter(
+    lag &lt; 4,
+    (sex==&quot;male&quot; &amp; age2 &gt; age1) | (sex==&quot;female&quot; &amp; age2 &lt; age1)
+  ) %&gt;%
+  ggplot(aes(x = age1, y = age2, fill = acf)) +
+      geom_raster() +
+      facet_grid(~lag) +
+      scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf_triangles-1.png" width="672" /></p>
+<p>Finally, the diagonals where <code>age1</code>=<code>age2</code> are of particular interest, as these correspond to the ACFs of the univariate time series comprising each age group.</p>
+<p>I will plot them in three different ways – against age, against lag, and as a 2-d image plot.</p>
+<pre class="r"><code>fracf %&gt;%
+  filter(age1==age2) %&gt;%
+  ggplot(aes(x = age1, y = acf, group = lag, col = lag)) +
+      facet_grid(~sex) +
+      geom_line() +
+      scale_color_gradientn(colours = rainbow(10))</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf_diag-1.png" width="672" /></p>
+<pre class="r"><code>fracf %&gt;%
+  filter(age1==age2) %&gt;%
+  ggplot(aes(x = lag, y = acf, group = age1, col = age1)) +
+      geom_line() +
+      facet_grid(~sex) +
+      scale_color_gradientn(colours = rainbow(10))</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf_diag-2.png" width="672" /></p>
+<pre class="r"><code>fracf %&gt;%
+  filter(age1==age2) %&gt;%
+  ggplot(aes(x = lag, y = age1, fill = acf)) +
+      geom_raster() +
+      facet_grid(~sex) +
+      scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/facf_diag-3.png" width="672" /></p>
+</div>
+<div id="melbourne-pedestrian-data" class="section level2">
+<h2>Melbourne pedestrian data</h2>
+<p>My second example involves pedestrian traffic near Flinders St Station in Melbourne city. The data can be downloaded using the <a href="https://cran.r-project.org/package=rwalkr"><code>rwalkr</code></a> package, but some data is pre-packaged in the <a href="https://cran.r-project.org/package=sugrrants"><code>sugrrants</code></a> package, which we will use here.</p>
+<p>Again, the first task is to put the data into a suitable form. We will use only data from Flinders St Station Underpass in 2016, and add in holiday information to the data set.</p>
+<pre class="r"><code>library(sugrrants)
+pedestrian &lt;- hourly_peds %&gt;%
+  filter(
+    Sensor_Name == &quot;Flinders Street Station Underpass&quot;,
+    Date &lt;= as.Date(&quot;2016-12-31&quot;),
+  ) %&gt;%
+  rename_all(tolower) %&gt;%
+  rename(
+    hour = &quot;time&quot;,
+    number = &quot;hourly_counts&quot;
+  ) %&gt;%
+  left_join(tsibble::holiday_aus(2016, state = &quot;VIC&quot;)) %&gt;%
+  mutate(
+    daytype = ifelse(
+      day %in% c(&quot;Saturday&quot;, &quot;Sunday&quot;) | !is.na(holiday),
+      &quot;Holiday&quot;, &quot;Workday&quot;
+    )
+  ) %&gt;%
+  select(date, hour, day, daytype, month, number)
+
+pedestrian</code></pre>
+<pre><code>## # A tibble: 8,783 x 6
+##    date        hour day    daytype month   number
+##    &lt;date&gt;     &lt;dbl&gt; &lt;ord&gt;  &lt;chr&gt;   &lt;ord&gt;    &lt;dbl&gt;
+##  1 2016-01-01     0 Friday Holiday January   3643
+##  2 2016-01-01     1 Friday Holiday January   2009
+##  3 2016-01-01     2 Friday Holiday January   3238
+##  4 2016-01-01     3 Friday Holiday January   2164
+##  5 2016-01-01     4 Friday Holiday January   1161
+##  6 2016-01-01     5 Friday Holiday January    682
+##  7 2016-01-01     6 Friday Holiday January    388
+##  8 2016-01-01     7 Friday Holiday January    373
+##  9 2016-01-01     8 Friday Holiday January    275
+## 10 2016-01-01     9 Friday Holiday January    545
+## # … with 8,773 more rows</code></pre>
+<p>The differences between days is clearly seen. It is also apparent that there were a handful of very unusual days.</p>
+<pre class="r"><code>pedestrian %&gt;%
+  ggplot(aes(x = hour, y = number, group = date)) +
+      geom_line() +
+      facet_grid(~day)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/peddaytypes-1.png" width="672" /></p>
+<p>For sub-daily data, a calendar plot is extremely useful for identifying them, along with other interesting features in the data. The public holidays on weekdays are clearly marked here in a different colour. Can you spot deviations from the regular pattern that are not explained by holidays?</p>
+<pre class="r"><code>p &lt;- pedestrian %&gt;%
+  frame_calendar(x = hour, y = number, date = date) %&gt;%
+  ggplot(aes(x = .hour, y = .number, group = date, colour = daytype)) +
+      geom_line() +
+    theme(legend.position = &quot;bottom&quot;)
+prettify(p)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/calendar-1.png" width="672" /></p>
+<p>For the ACF, I will look only at the “diagonal surface” — the equivalent of the univariate ACFs for each hour, plotted for different lags.</p>
+<pre class="r"><code>pedestrian %&gt;%
+  facf(xvar=hour, yvar=number, time=date, lag.max=20) %&gt;%
+  filter(hour1==hour2) %&gt;%
+  ggplot(aes(x = lag, y = hour1, fill = acf)) +
+      geom_raster() +
+      scale_fill_viridis_c(option = &quot;A&quot;, direction = -1)</code></pre>
+<p><img src="/hyndsight/2018-12-ftsggplot_files/figure-html/pedacf-1.png" width="672" /></p>
+<p>Here it is interesting to note that the weekly seasonality is strongest at hours 6-9am and around 4-5pm, corresponding to the peak hours for workers. There is relatively weak correlation between 10am and 3pm, when workers are mostly working.</p>
+</div>

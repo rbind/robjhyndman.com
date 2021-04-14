@@ -1,0 +1,36 @@
+---
+author: robjhyndman
+comments: true
+date: 2016-03-23 10:19:49+00:00
+link: https://robjhyndman.com/hyndsight/overlappingpi/
+slug: overlappingpi
+title: Plotting overlapping prediction intervals
+categories:
+- forecasting
+- graphics
+- R
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>I often see figures with two sets of prediction intervals plotted on the same graph using different line types to distinguish them. The results are almost always unreadable. A better way to do this is to use semi-transparent shaded regions. Here is an example showing two sets of forecasts for the Nile River flow.</p>
+<pre class="r"><code>library(forecast)
+
+f1 = forecast(auto.arima(Nile, lambda=0), h=20, level=95)
+f2 = forecast(ets(Nile), h=20, level=95)
+
+plot(f1, shadecol=rgb(0,0,1,.4), flwd=1,
+     main=&quot;Forecasts of Nile River flow&quot;,
+     xlab=&quot;Year&quot;, ylab=&quot;Billions of cubic metres&quot;)
+polygon(c(time(f2$mean),rev(time(f2$mean))),
+        c(f2$lower,rev(f2$upper)),
+        col=rgb(1,0,0,.4),
+        border=FALSE)
+lines(f2$mean, col=rgb(.7,0,0))
+legend(&quot;bottomleft&quot;,
+       fill=c(rgb(0,0,1,.4),rgb(1,0,0,.4)),
+       col=c(&quot;blue&quot;,&quot;red&quot;), lty=1,
+       legend=c(&quot;ARIMA&quot;,&quot;ETS&quot;))</code></pre>
+<p><img src="/hyndsight/2016-03-23-overlappingpi_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The blue region shows 95% prediction intervals for the ARIMA forecasts, while the red region shows 95% prediction intervals for the ETS forecasts. Where they overlap, the colors blend to make purple. In this case, the point forecasts are quite close, but the prediction intervals are relatively different.</p>
