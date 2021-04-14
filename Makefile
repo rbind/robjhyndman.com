@@ -8,7 +8,7 @@ serve:
 
 build:
 	Rscript -e "rmarkdown::render('content/software.Rmd', encoding = 'UTF-8')"
-	Rscript -e "blogdown::hugo_build()"
+	Rscript -e "blogdown::build_site(build_rmd = 'md5sum')"
 
 deploy: build
 	rsync -zrvce 'ssh -p 18765' public/ u190-dvt18hap6a80@m80.siteground.biz:www/robjhyndman.com/public_html
@@ -18,4 +18,3 @@ clean:
 	rm -rf blogdown
 	rm -f content/hyndsight/*.html
 	rm -f content/seminars/*.html
-
