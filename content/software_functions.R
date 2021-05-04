@@ -142,7 +142,8 @@ get_rjh_packages <- function(github, hex, references, extended_titles) {
     mutate(
       package = stringr::str_extract(github,"/[a-zA-Z0-9\\-]*"),
       package = stringr::str_remove(package,"/"),
-      package = stringr::str_extract(package,"[a-zA-Z0-9]*")
+      package = stringr::str_extract(package,"[a-zA-Z0-9]*"),
+      package = if_else(package=="sfar", "Rsfar", package)
     ) %>%
     # Add in CRAN packages
     full_join(rjh_cran_packages(), by="package") %>%
