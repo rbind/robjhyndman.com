@@ -1,9 +1,10 @@
 ---
 title: "Principles and Algorithms for Forecasting Groups of Time Series: Locality and Globality"
 author: Pablo Montero-Manso, Rob&nbsp;J&nbsp;Hyndman
-date: 2020-08-10
+date: 2021-05-10
 slug: global-forecasting
-kind: unpublished
+kind: article
+citation: "<em>International J Forecasting</em>, to appear"
 tags:
   - data science
   - time series
