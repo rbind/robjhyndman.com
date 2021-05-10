@@ -681,8 +681,10 @@ Seasonal Functional Autoregressive Models: as described in
 <a href= https://github.com/haghbinh/sfar  class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
+<a href= https://cloud.r-project.org/package=Rsfar  class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
+Monthly downloads:<br> 0
 </td>
 </tr>
 <tr>
