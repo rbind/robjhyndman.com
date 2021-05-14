@@ -21,6 +21,10 @@
                   {{.Params.citation | safeHTML }}
                   {{ end }} </p>
                   {{ partial "pub-icon.html" . }}
+                  {{ if isset .Params "doi" }}
+  <br><br><div class='altmetric-embed' data-doi={{.Params.doi}}></div>
+{{ end }}
+
     </div>
     <div class="unit-60">
     <article class="pub" itemscope itemtype="http://schema.org/CreativeWork">
