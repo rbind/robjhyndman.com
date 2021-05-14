@@ -60,6 +60,7 @@ a:hover {text-decoration:underline;}
 
 a.badge.badge-red { color: #fff;}
 a.badge.badge-blue { color: #fff;}
+a.badge.badge-green { color: #fff;}
 
 .badge-large {
   font-size: 18px;
