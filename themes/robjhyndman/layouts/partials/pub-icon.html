@@ -1,4 +1,4 @@
-{{ if .Params.amazon }}<a href="http://amzn.com/{{.Params.amazon}}/?tag=otexts-20" class="badge badge-small badge-blue">Amazon</a>{{ end }}
+{{ if .Params.amazon }}<a href="http://buy.geni.us/Proxy.ashx?TSID=140570&GR_URL=http%3A%2F%2Fwww.amazon.com%2Fdp%2F{{.Params.amazon}}" class="badge badge-small badge-blue">Amazon</a>{{ end }}
 {{ if .Params.doi }}<a href="http://dx.doi.org/{{.Params.doi}}" class="badge badge-small badge-blue">DOI</a>{{ end }}
 {{ if .Params.jstor }}<a href="http://jstor.org/stable/{{.Params.jstor}}" class="badge badge-small badge-blue">JSTOR</a>{{ end }}
 {{ if isset .Params "link" }}
