@@ -1,0 +1,96 @@
+---
+author: robjhyndman
+comments: true
+date: 2021-05-16
+title: "Time series cross-validation using fable"
+slug: tscv-fable
+mathjax: true
+categories:
+  - time series
+  - forecasting
+  - data science
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+```
+
+[Time series cross-validation](https://otexts.com/fpp3/tscv.html)  is handled in the `fable` package using the `stretch_tsibble()` function to generate the data folds. In this post I will give two examples of how to use it, one without covariates and one with covariates.
+
+## Quarterly Australian beer production
+
+Here is a simple example using quarterly Australian beer production from 1956 Q1 to 2010 Q2. First we create a data object containing many training sets starting with 3 years (12 observations), and adding one quarter at a time until all data are included.
+
+```{r beer, message=FALSE}
+library(fpp3)
+beer <- aus_production %>%
+  select(Beer) %>%
+  stretch_tsibble(.init = 12, .step=1)
+beer
+```
+
+This gives 207 training sets of increasing size. We fit an ETS model to each training set and produce one year of forecasts from each model. Because I want to compute RMSE for each forecast horizon, I will add the horizon `h` to the resulting object.
+
+```{r beer2}
+fc <- beer %>%
+  model(ETS(Beer)) %>%
+  forecast(h = "1 year") %>%
+  group_by(.id) %>%
+  mutate(h = row_number()) %>%
+  ungroup()
+```
+
+Finally, we compare the forecasts against the actual values and average over the folds.
+
+```{r beer3, warning=FALSE}
+fc %>%
+  accuracy(aus_production, by="h") %>%
+  select(h, RMSE)
+```
+
+Forecasts of 1 and 2 quarters ahead both have about the same accuracy here, but then the error increases for horizons 3 and 4.
+
+## Insurance quotes with TV advertisements
+
+Things are a little more complicated when we want to use covariates in the model. Here is an example of monthly quotations issued by a US insurance company modelled as a function of the TV advertising expenditure in the same month.
+
+The first step is the same, where we stretch the tsibble. This time we will start with one year of data.
+
+```{r insurance1}
+stretch <- insurance %>%
+  stretch_tsibble(.step=1, .init=12)
+stretch
+```
+
+Next we fit a regression model with AR(1) errors to each fold.
+
+```{r insurance2}
+fit <- stretch %>%
+  model(ARIMA(Quotes ~ 1 + pdq(1,0,0) + TVadverts))
+```
+
+Before we forecast, we need to provide the advertising expenditure for the future periods. We will forecast up to 3 steps ahead, so the test data needs to have 3 observations per fold.
+
+```{r insurance3}
+test <- new_data(stretch, n=3) %>%
+  # Add in covariates from corresponding month
+  left_join(insurance, by="Month")
+test
+```
+
+The actual value in each month is also included, but that will be ignored when forecasting.
+
+```{r insurance4}
+fc <- forecast(fit, new_data = test) %>%
+  group_by(.id) %>%
+  mutate(h = row_number()) %>%
+  ungroup()
+```
+
+Finally, we can compare the forecasts against the actual values, averaged across each forecast horizon.
+
+```{r insurance5, warning=FALSE}
+fc %>% accuracy(insurance, by="h") %>%
+  select(h, RMSE)
+```
