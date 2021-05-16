@@ -333,3 +333,7 @@ input.input-email, input[type=email] {
     margin-bottom: 0;
     border-radius: 15px;
 }
+
+.altmetric-embed a {
+  border-bottom: none;
+}
