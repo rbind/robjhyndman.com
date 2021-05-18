@@ -10,7 +10,7 @@ tags:
 - forecasting
 - time series
 link: https://arxiv.org/abs/2105.06643
-bitbucket: cbergmeir/godahewa2020archive
+github: rakshitha123/TSForecasting
 online: http://forecastingdata.org/
 ---
 
