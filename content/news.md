@@ -3,6 +3,8 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * [The Australia Academy of Science Elects ACEMS Chief Investigator as New Fellow](https://acems.org.au/news/rob-hyndman-science-academy-fellow), *ACEMS News*, 25 May 2021.
+  * [Distinguished statistician elected Fellow of the Australian Academy of Science](https://www.monash.edu/news/articles/distinguished-statistician-elected-fellow-of-the-australian-academy-of-science), *Monash News*, 25 May 2021.
   * [Twenty-two Australians recognised among our nation’s most distinguished scientists](https://www.science.org.au/news-and-events/news-and-media-releases/twenty-two-australians-recognised-among-nations-distinguished-scientists), *Australian Academy of Science*, 25 May 2021.
   * [Two ACEMS Researchers Named Fellows by Social Sciences Academy](https://acems.org.au/news/acems-social-sciences-fellows), *ACEMS News*, 16 November 2020.
   * [Cybersecurity: How data scrutiny can thwart attacks](https://www2.monash.edu/impact/articles/big-data/cybersecurity-how-data-scrutiny-can-thwart-attacks/), *Monash Impact*, 12 November 2020.
