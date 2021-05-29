@@ -9,6 +9,8 @@ categories:
 
 I've been interviewed for several podcasts over the last year or so. It's always fun to talk about my work, and I hope there is enough differences between them to make it interesting for listeners. Here is a full list of them.
 
+*(Updated: 30 May 2021)*
+
 <table>
 <thead>
 <tr>
@@ -18,6 +20,11 @@ I've been interviewed for several podcasts over the last year or so. It's always
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left">24 May 2021</td>
+<td style="text-align:left"><strong>Data Skeptic</strong></td>
+<td style="text-align:left"><a href="https://podcastaddict.com/episode/123511469">Forecasting principles and practice</a></td>
+</tr>
 <tr>
 <td style="text-align:left">12 April 2021</td>
 <td style="text-align:left"><strong>Seriously Social</strong></td>
