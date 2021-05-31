@@ -213,7 +213,7 @@ Monthly downloads:<br> 471
 </tr>
 <tr>
 <td>
-<a href=' http://pkg.earo.me/hts '><img src=' /img/htssticker.resized.png ' width='70px' style='vertical-align:middle'></a>
+<a href=' https://pkg.earo.me/hts/ '><img src=' /img/htssticker.resized.png ' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Hierarchical and Grouped Time Series: as described in
