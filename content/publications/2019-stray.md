@@ -4,7 +4,7 @@ date: 2021-01-01
 slug: stray
 title: "Anomaly detection in high-dimensional data"
 kind: article
-citation: <em>J Computational & Graphical Statistics</em>, to appear
+citation: <em>J Computational & Graphical Statistics</em>, <b>30</b>(2), 360-374
 link: http://arxiv.org/abs/1908.04000
 doi: 10.1080/10618600.2020.1807997
 tags:
