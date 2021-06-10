@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * ["All eyes online"](https://www.monash.edu/business/awards/george-athanasopoulos-and-rob-hyndman), "Monash Awards", 10 June 2021.
   * [“This is really a marathon.” Meet the statistician helping forecast the spread of COVID-19](https://www2.monash.edu/impact/articles/covid-19/this-is-really-a-marathon-meet-the-statistician-helping-forecast-the-spread-of-covid-19/), *Monash Impact*, 25 May 2021.
   * [The Australia Academy of Science Elects ACEMS Chief Investigator as New Fellow](https://acems.org.au/news/rob-hyndman-science-academy-fellow), *ACEMS News*, 25 May 2021.
   * [Leading Monash University scientists elected Fellows of Australian Academy of Science](https://www.monash.edu/news/articles/leading-monash-university-scientists-elected-fellow-of-australian-academy-of-science), *Monash News*, 25 May 2021.
