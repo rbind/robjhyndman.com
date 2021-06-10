@@ -337,3 +337,7 @@ input.input-email, input[type=email] {
 .altmetric-embed a {
   border-bottom: none;
 }
+
+#mlb2-4240669.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-4240669.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+    padding: 0px;
+}
