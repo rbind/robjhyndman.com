@@ -11,11 +11,11 @@ title: 'Forecasting: methods and applications'
 
 This book was published in 1998, and for nearly 20 years I maintained an associated website at this address.
 
-The data sets from the book can be found in the [**fma** package for R](http://cran.r-project.org/package=fma).
+The data sets from the book can be found in the [**fma** package for R](http://pkg.robjhyndman.com/fma/).
 
 The solutions to exercises can be [downloaded here](/files/solutions.pdf).
 
-The book is now out-of-date. I recommend my new book entitled [*Forecasting: principles and practice*](http://Otexts.org/fpp2/).
+The book is now out-of-date. I recommend my new book entitled [*Forecasting: principles and practice*](http://Otexts.org/fpp3/).
 
 
 

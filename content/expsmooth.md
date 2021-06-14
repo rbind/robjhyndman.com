@@ -36,7 +36,7 @@ The readership is assumed to have a statistical background at about honours leve
 
 ## R packages and data
 
-The [**forecast**](http://pkg.robjhyndman.com/forecast) package for [R](http://www.r-project.org) implements the methods described in the book. The [**expsmooth**](http://pkg.robjhyndman.com/expsmooth) package contains the data for the exercises and most of the examples in the book.
+The R packages [**forecast**](http://pkg.robjhyndman.com/forecast) and [**fable**](https://fable.tidyverts.org/) both implement the methods described in the book. The [**expsmooth**](http://pkg.robjhyndman.com/expsmooth) package contains the data for the exercises and most of the examples in the book.
 
 You can also download [individual csv files for each data set](expsmooth_data.zip).
 
