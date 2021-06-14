@@ -20,11 +20,11 @@ mathjax: true
 <table style="width: 100%; table-layout: fixed;"><tr>
   <td width="33%" style="text-align:center; padding: 0.5rem"><a href="https://www.springer.com/us/book/9783540719168"><img src="springer.png" alt="Springer"></a></td>
   <td width="33%" style="text-align:center; padding: 0.5rem"><a href="https://books.google.com/books?id=GSyzox8Lu9YC&amp;lpg=PP1&amp;pg=PP1"><img src="google_books.png" alt="Google books"></a></td>
-  <td width="33%" style="text-align:center; padding: 0.5rem"><a href="http://amzn.com/3540719164/?tag=otexts-20"><img src="amazon.png" alt="Amazon"></a></td>
+  <td width="33%" style="text-align:center; padding: 0.5rem"><a href="https://geni.us/expsmooth"><img src="amazon.png" alt="Amazon"></a></td>
 </tr></table>
 </div>
 
-<a href="http://amzn.com/3540719164/?tag=otexts-20"><img src='/img/expsmooth.jpg' width=20% align='left' style="margin-right: 20px; margin-bottom: 20px;"></a>
+<a href="https://geni.us/expsmooth"><img src='/img/expsmooth.jpg' width=20% align='left' style="margin-right: 20px; margin-bottom: 20px;"></a>
 
 Exponential smoothing methods have been around since the 1950s, and are still the most popular forecasting methods used in business and industry. However, a modelling framework incorporating stochastic models, likelihood calculation, prediction intervals and procedures for model selection, was not developed until relatively recently. Two key papers were [Ord, Koehler and Snyder (JASA, 1997)](https://www.jstor.org/stable/2965433) and [Hyndman, Koehler, Snyder and Grose (IJF, 2002)](http://robjhyndman.com/papers/hksg) although there have been many others filling in some of the details.
 
