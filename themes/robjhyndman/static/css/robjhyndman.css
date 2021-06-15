@@ -339,5 +339,5 @@ input.input-email, input[type=email] {
 }
 
 #mlb2-4240669.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody, #mlb2-4240669.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
-    padding: 0px;
+    padding: 0px !important;
 }
