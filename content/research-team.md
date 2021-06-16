@@ -9,7 +9,7 @@ title: "Research team"
 
   1. **[Puwasala Gamakumara](https://puwasala.netlify.app/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
   1. **[Stuart Lee](https://stuartlee.org/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sa-lee/)
-  2. **[Zhuo Li](https://research.monash.edu/en/persons/zhuo-li)**
+  2. **[Zhuo Li](https://sites.google.com/view/zhuo-li/home)**
 
 ## Current PhD students
 
