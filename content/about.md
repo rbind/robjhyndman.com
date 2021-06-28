@@ -37,7 +37,11 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Fellowships and Memberships
 
-I am a fellow of the [Australian Academy of Science](https://www.science.org.au/profile/rob-hyndman) and the [Academy of the Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB)..
+I am a fellow of the following organizations:
+
+  * [Australian Academy of Science](https://www.science.org.au/profile/rob-hyndman)
+  * [Academy of the Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB)
+  * [International Institute of Forecasters](https://forecasters.org/about/fellows/)
 
 I am a member of the following organizations:
 
