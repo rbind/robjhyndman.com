@@ -2,7 +2,7 @@
 
 Reliable forecasts of business and economic variables must often be obtained against a backdrop of structural change in markets and the economy. This unit introduces methods suitable for forecasting in these circumstances including the decomposition of time series, exponential smoothing methods, ARIMA modelling, and regression with auto-correlated disturbances. Students can expect to enhance their computer skills with exercises using R.
 
-**[Handbook entry](http://www.monash.edu.au/pubs/handbooks/units/ETC3550.html)**
+**[Handbook entry](https://handbook.monash.edu/current/units/ETC3550)**
 
 **Textbook:** [*Forecasting: Principles and Practice*, Hyndman & Athanasopoulos (3rd ed., 2020)](https://OTexts.org/fpp3/)
 
@@ -25,7 +25,7 @@ Reliable forecasts of business and economic variables must often be obtained aga
 
 # Tidy time series & forecasting in R
 
-*This is a 2-day workshop held once or twice per year.*
+*This is a 2-day workshop held no more than once per year.*
 
 **Day 1**: We look at the tsibble data structure for flexibly managing collections of related time series. We look at how to do data wrangling, data visualizations and exploratory data analysis. We explore feature-based methods to explore time series data in high dimensions. A similar feature-based approach can be used to identify anomalous time series within a collection of time series, or to cluster or classify time series. Primary packages for day 1 are [tsibble](https://cran.r-project.org/package=tsibble), [lubridate](https://cran.r-project.org/package=lubridate) and [feasts](https://cran.r-project.org/package=feasts) (along with the [tidyverse](http://tidyverse.org) of course).
 
