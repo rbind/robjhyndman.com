@@ -5,6 +5,7 @@ slug: covid-forecasting
 aliases:
   - "/covidtalk"
 link: https://github.com/robjhyndman/covidtalk/raw/main/COVID_ensemble_forecasting.pdf
+youtube: "i-mTP94bpHU?t=3688"
 ---
 
 ## Talk for the International Symposium on Forecasting, 29 June 2021 and the Australian and New Zealand Statistics Conference, 8 July 2021.
@@ -13,3 +14,4 @@ In March 2020, I joined a team responsible for providing probabilistic forecasts
 
  * [Tech report 1](https://robjhyndman.com/publications/covid19/)
  * [Tech report 2](https://robjhyndman.com/publications/covid19b/)
+ * [YouTube for ANZSC version of talk](https://youtu.be/i-mTP94bpHU?t=3688)
