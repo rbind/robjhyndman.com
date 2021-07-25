@@ -1,9 +1,10 @@
 ---
 author: Evangelos&nbsp;Spiliotis, Mahdi&nbsp;Abolghasemi, Rob&nbsp;J&nbsp;Hyndman, Fotios&nbsp;Petropoulos, Vassilios&nbsp;Assimakopoulos
-date: 2020-06-03
+date: 2021-07-25
 slug: hfrml
 title: "Hierarchical forecast reconciliation with machine learning"
-kind: unpublished
+kind: article
+citation: <em>Applied Soft Computing</em>, to appear
 tags:
 - hierarchical forecasting
 - forecasting
