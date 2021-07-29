@@ -3,6 +3,7 @@ title: "In the news"
 slug: "in-the-news"
 ---
 
+  * ["Monash University’s Rob Hyndman awarded the Pitman Medal 2021"](https://busycontinent.com/monash-universitys-rob-hyndman-awarded/), Busy Continent, 28 July 2021.
   * ["Rob Hyndman awarded the Pitman Medal 2021"](https://statsoc.org.au/News-and-media-releases/10736720), Statistical Society of Australia, 8 July 2021.
   * ["IIF Fellow & Distinguished Researcher: Rob Hyndman"](https://forecasters.org/blog/2021/07/02/iif-fellow-distinguished-researcher-rob-hyndman/), International Institute of Forecasters, 2 July 2021.
   * ["International Journal of Forecasting Announces Best Papers from the M4 special issue"](https://forecasters.org/blog/2021/06/30/international-journal-of-forecasting-announces-best-papers-from-the-m4-special-issue/), International Institute of Forecasters, 30 June 2021.
