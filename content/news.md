@@ -4,6 +4,7 @@ slug: "in-the-news"
 ---
 
   * ["Monash University’s Rob Hyndman awarded the Pitman Medal 2021"](https://busycontinent.com/monash-universitys-rob-hyndman-awarded/), Busy Continent, 28 July 2021.
+  * ["Top Stats Society Honour for ACEMS Chief Investigator"](https://acems.org.au/news/rob-hyndman-pitman-medal), ACEMS, 9 July 2021.
   * ["Rob Hyndman awarded the Pitman Medal 2021"](https://statsoc.org.au/News-and-media-releases/10736720), Statistical Society of Australia, 8 July 2021.
   * ["IIF Fellow & Distinguished Researcher: Rob Hyndman"](https://forecasters.org/blog/2021/07/02/iif-fellow-distinguished-researcher-rob-hyndman/), International Institute of Forecasters, 2 July 2021.
   * ["International Journal of Forecasting Announces Best Papers from the M4 special issue"](https://forecasters.org/blog/2021/06/30/international-journal-of-forecasting-announces-best-papers-from-the-m4-special-issue/), International Institute of Forecasters, 30 June 2021.
@@ -13,6 +14,7 @@ slug: "in-the-news"
   * [Leading Monash University scientists elected Fellows of Australian Academy of Science](https://www.monash.edu/news/articles/leading-monash-university-scientists-elected-fellow-of-australian-academy-of-science), *Monash News*, 25 May 2021.
   * [Distinguished statistician elected Fellow of the Australian Academy of Science](https://www.monash.edu/news/articles/distinguished-statistician-elected-fellow-of-the-australian-academy-of-science), *Monash News*, 25 May 2021.
   * [Twenty-two Australians recognised among our nation’s most distinguished scientists](https://www.science.org.au/news-and-events/news-and-media-releases/twenty-two-australians-recognised-among-nations-distinguished-scientists), *Australian Academy of Science*, 25 May 2021.
+  * [Hundreds of academics back self-ID sex question in Scottish census](https://www.heraldscotland.com/news/19208054.hundreds-academics-back-self-id-sex-question-scottish-census/), *The Herald* (Scotland), 4 April 2021.
   * [Two ACEMS Researchers Named Fellows by Social Sciences Academy](https://acems.org.au/news/acems-social-sciences-fellows), *ACEMS News*, 16 November 2020.
   * [Cybersecurity: How data scrutiny can thwart attacks](https://www2.monash.edu/impact/articles/big-data/cybersecurity-how-data-scrutiny-can-thwart-attacks/), *Monash Impact*, 12 November 2020.
   * [Respected Business researchers honoured as Fellows of Academy of Social Sciences of Australia](https://www.monash.edu/business/news/2020/respected-business-researchers-honoured-as-fellows-of-academy-of-social-sciences-of-australia), *Monash Business News*, 11 November 2020.
