@@ -4,7 +4,7 @@ author: Cameron&nbsp;Roach, Rob&nbsp;J&nbsp;Hyndman, Souhaib&nbsp;Ben&nbsp;Taieb
 date: 2021-01-01
 slug: nlme-smart-meters
 kind: article
-citation: <em>Journal of Forecasting</em>, to appear
+citation: <em>Journal of Forecasting</em>, <b>40</b>(6), 1118-1130
 tags:
   - data science
   - time series
