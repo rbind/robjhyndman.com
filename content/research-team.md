@@ -8,7 +8,6 @@ title: "Research team"
 ## Current research fellows
 
   1. **[Puwasala Gamakumara](https://puwasala.netlify.app/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
-  1. **[Stuart Lee](https://stuartlee.org/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sa-lee/)
   2. **[Zhuo Li](https://sites.google.com/view/zhuo-li/home)**
 
 ## Current PhD students
@@ -30,6 +29,7 @@ title: "Research team"
   1. **[Bin Jiang](https://www.linkedin.com/in/bin-jiang-44918b28/)**
   1. **[Sevvandi Kandanaarachchi](https://sevvandi.netlify.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sevvandi)
   1. **[Yanfei Kang](http://yanfei.site)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ykang)
+  1. **[Stuart Lee](https://stuartlee.org/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/sa-lee/)
   1. **[Pablo Montero-Manso](https://www.sydney.edu.au/business/about/our-people/academic-staff/pablo-monteromanso.html)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/pmontman)
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)**
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
