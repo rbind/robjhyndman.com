@@ -5,6 +5,7 @@ slug: uncertain_futures
 aliases:
   - "/uncertain_futures"
 link: https://github.com/robjhyndman/uncertain_futures/raw/main/uncertain_futures.pdf
+youtube: YOeDTt_JJx0
 ---
 
 ### Statistical Society of Australia AGM, 17 August 2021<br> Australian Centre of Excellence for Mathematical and Statistical Frontiers, 24 August 2021.

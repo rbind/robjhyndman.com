@@ -15,3 +15,4 @@ In March 2020, I joined a team responsible for providing probabilistic forecasts
  * [Tech report 1](https://robjhyndman.com/publications/covid19/)
  * [Tech report 2](https://robjhyndman.com/publications/covid19b/)
  * [YouTube for ANZSC version of talk](https://youtu.be/i-mTP94bpHU?t=3688)
+ * [YouTube for IIF version of talk](https://youtu.be/WLrDEIyhQz4?t=2354)
