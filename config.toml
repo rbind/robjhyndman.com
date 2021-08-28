@@ -6,7 +6,7 @@ paginate = 10
 theme = "robjhyndman"
 DisqusShortname = "researchtips"
 googleAnalytics = "UA-5004894-1"
-ignoreFiles = ["\\.Rmd$", "_cache$","\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["_cache$","\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 pluralizeListTitles = false
 buildFuture = true
 
