@@ -31,16 +31,19 @@ A seasonal strength threshold is used here because the estimate of <span class="
 If <span class="math inline">\(Q1\)</span> denotes the 25th percentile and <span class="math inline">\(Q3\)</span> denotes the 75th percentile of the remainder values, then the interquartile range is defined as <span class="math inline">\(IQR = Q3-Q1\)</span>. Observations are labelled as outliers if they are less than <span class="math inline">\(Q1 - 3\times IQR\)</span> or greater than <span class="math inline">\(Q3 + 3\times IQR\)</span>. This is the definition used by <a href="http://buy.geni.us/Proxy.ashx?TSID=140570&amp;GR_URL=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0134995457">Tukey (1977, p44)</a> in his original boxplot proposal for “far out” values.</p>
 <p>If the remainder values are normally distributed, then the probability of an observation being identified as an outlier is approximately 1 in 427000.</p>
 <p>Any outliers identified in this manner are replaced with linearly interpolated values using the neighbouring observations, and the process is repeated.</p>
-<p>Here is a short example.</p>
+<div id="example-gold-data" class="section level2">
+<h2>Example: Gold data</h2>
+<p>The gold price data contains daily morning gold prices in US dollars from 1 January 1985 to 31 March 1989. The data was given to me by a client who wanted me to forecast the gold price. (I told him it would be almost impossible to beat a naive forecast). The data are shown below.</p>
 <pre class="r"><code>library(fpp2)</code></pre>
+<pre class="r"><code>autoplot(gold)</code></pre>
+<p><img src="/hyndsight/2021-08-tsoutliers_files/figure-html/plot-1.png" width="672" /></p>
+<p>There are periods of missing values, and one obvious outlier which is about $100 greater than what would be expected. This was simply a typo, with someone typing $593.70 rather than $493.70. Let’s see if the <code>tsoutliers()</code> function can spot it.</p>
 <pre class="r"><code>tsoutliers(gold)</code></pre>
 <pre><code>## $index
 ## [1] 770
 ## 
 ## $replacements
 ## [1] 495</code></pre>
-<p>This suggests that observation 770 is an outlier, and an estimated replacement is 495.</p>
-<p>The <code>tsclean()</code> function removes outliers identified in this way, and replaces them (and any missing values) with estimates obtained using linear interpolation.</p>
-<pre class="r"><code>plot(tsclean(gold), col=&#39;red&#39;)
-lines(gold)</code></pre>
-<p><img src="/hyndsight/2021-08-tsoutliers_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Sure enough, it is easily found and the suggested replacement (linearly interpolated) is close to the true value.</p>
+<p>The <code>tsclean()</code> function removes outliers identified in this way, and replaces them (and any missing values) with linearly interpolated replacements.</p>
+</div>
