@@ -66,7 +66,7 @@ library(fpp2)
 autoplot(gold)
 ```
 
-There are periods of missing values, and one obvious outlier which is about $100 greater than what would be expected. This was simply a typo, with someone typing $593.70 rather than $493.70. Let's see if the `tsoutliers()` function can spot it.
+There are periods of missing values, and one obvious outlier which is about $100 greater than what would be expected. This was simply a typo, with someone typing 593.70 rather than 493.70. Let's see if the `tsoutliers()` function can spot it.
 
 
 ```{r, message=FALSE}
@@ -77,13 +77,13 @@ Sure enough, it is easily found and the suggested replacement (linearly interpol
 
 The `tsclean()` function removes outliers identified in this way, and replaces them (and any missing values) with linearly interpolated replacements.
 
-```{r include=FALSE}
+```{r}
 autoplot(tsclean(gold), series="clean", color='red', lwd=0.9) +
   autolayer(gold, series="original", color='gray', lwd=1) +
   geom_point(data = tsoutliers(gold) %>% as.data.frame(), 
-             aes(x=index, y=replacements), col='red') +
+             aes(x=index, y=replacements), col='blue') +
   labs(x = "Day", y = "Gold price ($US)")
 ```
 
-
+The blue dot shows the replacement for the outlier, the red lines show the replacements for the missing values.
 

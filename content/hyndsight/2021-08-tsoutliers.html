@@ -37,7 +37,7 @@ If <span class="math inline">\(Q1\)</span> denotes the 25th percentile and <span
 <pre class="r"><code>library(fpp2)</code></pre>
 <pre class="r"><code>autoplot(gold)</code></pre>
 <p><img src="/hyndsight/2021-08-tsoutliers_files/figure-html/plot-1.png" width="672" /></p>
-<p>There are periods of missing values, and one obvious outlier which is about $100 greater than what would be expected. This was simply a typo, with someone typing $593.70 rather than $493.70. Let’s see if the <code>tsoutliers()</code> function can spot it.</p>
+<p>There are periods of missing values, and one obvious outlier which is about $100 greater than what would be expected. This was simply a typo, with someone typing 593.70 rather than 493.70. Let’s see if the <code>tsoutliers()</code> function can spot it.</p>
 <pre class="r"><code>tsoutliers(gold)</code></pre>
 <pre><code>## $index
 ## [1] 770
@@ -46,4 +46,11 @@ If <span class="math inline">\(Q1\)</span> denotes the 25th percentile and <span
 ## [1] 495</code></pre>
 <p>Sure enough, it is easily found and the suggested replacement (linearly interpolated) is close to the true value.</p>
 <p>The <code>tsclean()</code> function removes outliers identified in this way, and replaces them (and any missing values) with linearly interpolated replacements.</p>
+<pre class="r"><code>autoplot(tsclean(gold), series=&quot;clean&quot;, color=&#39;red&#39;, lwd=0.9) +
+  autolayer(gold, series=&quot;original&quot;, color=&#39;gray&#39;, lwd=1) +
+  geom_point(data = tsoutliers(gold) %&gt;% as.data.frame(), 
+             aes(x=index, y=replacements), col=&#39;blue&#39;) +
+  labs(x = &quot;Day&quot;, y = &quot;Gold price ($US)&quot;)</code></pre>
+<p><img src="/hyndsight/2021-08-tsoutliers_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>The blue dot shows the replacement for the outlier, the red lines show the replacements for the missing values.</p>
 </div>
