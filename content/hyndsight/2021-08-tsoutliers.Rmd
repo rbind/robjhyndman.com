@@ -1,0 +1,83 @@
+---
+title: "Detecting time series outliers"
+date: 2021-08-27
+comments: yes
+slug: tsoutliers
+mathjax: yes
+categories:
+- time series
+- data science
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+library(fpp2)
+```
+
+The `tsoutliers()` function in the *forecast* package is useful for identifying anomalies in a time series. However, it is not properly documented anywhere. This post is intended to fill that gap.
+
+The function began as [an answer on CrossValidated](https://stats.stackexchange.com/a/1153/159) and was later added to the *forecast* package because I thought it might be useful to other people. It has since been updated and made more reliable.
+
+The procedure [decomposes the time series into trend, seasonal and remainder components](https://otexts.com/fpp2/components.html):
+$$y_t = T_t + S_t + R_t.$$
+The seasonal component is optional, and it may containing several seasonal patterns corresponding to the seasonal periods in the data. The idea is to first remove any seasonality and trend in the data, and then find outliers in the remainder series, $R_t$. 
+
+For data observed more frequently than annually, we use a robust approach to estimate $T_t$ and $S_t$ by first applying the [MSTL method](https://robjhyndman.com/publications/mstl/) to the data. MSTL will iteratively estimate the seasonal component(s).
+
+Then the strength of seasonality is measured using
+$$F_s = 1-\frac{\text{Var}(y_t - \hat{T}_t - \hat{S}_t)}{\text{Var}(y_t - \hat{T}_t)}.$$
+If $F_s>0.6$, a seasonally adjusted series is computed:
+$$y_t^* = y_t - \hat{S}_t.$$
+A seasonal strength threshold is used here because the estimate of $\hat{S}_t$ is likely to be overfitted and very noisy if the underlying seasonality is too weak (or non-existent), potentially masking any outliers by having them absorbed into the seasonal component. 
+
+If $F_s \le 0.6$, or if the data is observed annually or less frequently, we simply set $y_t^*=y_t$.
+
+Next, we re-estimate the trend component from the $y_t^*$ values. For non-seasonal time series such as annual data, this is necessary as we don't have the trend estimate from the STL decomposition. But even if we *have* computed an STL decomposition, we may not have used it if $F_s \le 0.6$. 
+
+The trend component $T_t$ is estimated by applying Friedman's super smoother (via `supsmu()`) to the $y_t^*$ data. This function has been tested on lots of data and tends to work well on a wide range of problems.
+
+We look for outliers in the estimated remainder series
+$$\hat{R}_t = y^*_t - \hat{T}_t.$$
+If $Q1$ denotes the 25th percentile and $Q3$ denotes the 75th percentile of the remainder values, then the interquartile range is defined as $IQR = Q3-Q1$. Observations are labelled as outliers if they are less than $Q1 - 3\times IQR$ or greater than $Q3 + 3\times IQR$. This is the definition used by [Tukey (1977, p44)](http://buy.geni.us/Proxy.ashx?TSID=140570&GR_URL=http%3A%2F%2Fwww.amazon.com%2Fdp%2F0134995457
+) in his original boxplot proposal for "far out" values.
+
+```{r include=FALSE}
+Q1 <- qnorm(0.25)
+Q3 <- qnorm(0.75)
+IQR <- Q3-Q1
+lower <- Q1 - 3*IQR
+prob <- pnorm(lower)*2
+```
+
+If the remainder values are normally distributed, then the probability of an observation being identified as an outlier is approximately 1 in `r sprintf("%d", round(1/prob/1e3)*1e3)`.
+
+Any outliers identified in this manner are replaced with linearly interpolated values using the neighbouring observations, and the process is repeated.
+
+Here is a short example.
+
+
+```r
+library(fpp2)
+```
+
+```{r, message=FALSE}
+tsoutliers(gold)
+```
+
+```{r include=FALSE}
+z <- tsoutliers(gold)
+```
+
+This suggests that observation `r z$index` is an outlier, and an estimated replacement is `r round(z$replacement)`.
+
+
+The `tsclean()` function removes outliers identified in this way, and replaces them (and any missing values) with estimates obtained using linear interpolation.
+
+```{r}
+plot(tsclean(gold), col='red')
+lines(gold)
+```
+
+
+
