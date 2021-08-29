@@ -6,13 +6,15 @@ slug: tsoutliers
 mathjax: yes
 categories:
 - time series
+- R
 - data science
+- anomalies
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
-<p>The <code>tsoutliers()</code> function in the <em>forecast</em> package is useful for identifying anomalies in a time series. However, it is not properly documented anywhere. This post is intended to fill that gap.</p>
+<p>The <a href="https://pkg.robjhyndman.com/forecast/reference/tsoutliers.html"><code>tsoutliers()</code> function</a> in the <a href="https://pkg.robjhyndman.com/forecast/"><em>forecast</em> package for R</a> is useful for identifying anomalies in a time series. However, it is not properly documented anywhere. This post is intended to fill that gap.</p>
 <p>The function began as <a href="https://stats.stackexchange.com/a/1153/159">an answer on CrossValidated</a> and was later added to the <em>forecast</em> package because I thought it might be useful to other people. It has since been updated and made more reliable.</p>
 <p>The procedure <a href="https://otexts.com/fpp2/components.html">decomposes the time series into trend, seasonal and remainder components</a>:
 <span class="math display">\[y_t = T_t + S_t + R_t.\]</span>

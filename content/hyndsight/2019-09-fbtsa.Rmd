@@ -11,6 +11,8 @@ categories:
 - statistics
 - R
 - tidyverts
+- anomalies
+- data science
 ---
 
 ```{r setup, include=FALSE}

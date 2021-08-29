@@ -6,7 +6,9 @@ slug: tsoutliers
 mathjax: yes
 categories:
 - time series
+- R
 - data science
+- anomalies
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +17,7 @@ options(digits = 3, width = 75)
 library(fpp2)
 ```
 
-The `tsoutliers()` function in the *forecast* package is useful for identifying anomalies in a time series. However, it is not properly documented anywhere. This post is intended to fill that gap.
+The [`tsoutliers()` function](https://pkg.robjhyndman.com/forecast/reference/tsoutliers.html) in the [*forecast* package for R](https://pkg.robjhyndman.com/forecast/) is useful for identifying anomalies in a time series. However, it is not properly documented anywhere. This post is intended to fill that gap.
 
 The function began as [an answer on CrossValidated](https://stats.stackexchange.com/a/1153/159) and was later added to the *forecast* package because I thought it might be useful to other people. It has since been updated and made more reliable.
 
