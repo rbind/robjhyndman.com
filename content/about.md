@@ -43,9 +43,8 @@ I am a fellow of the following organizations:
   * [Academy of the Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB)
   * [International Institute of Forecasters](https://forecasters.org/about/fellows/)
 
-I am a member of the following organizations:
+I am additionally a member of the following organizations:
 
-  * [International Institute of Forecasters](http://forecasters.org)
   * [International Statistical Institute](http://isi.cbs.nl)  (elected member)
   * [International Association for Statistical Computing](http://www.iasc-isi.org)
   * [International Society for Business and Industrial Statistics](http://isbis-isi.org)
