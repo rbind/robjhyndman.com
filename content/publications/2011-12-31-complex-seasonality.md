@@ -1,5 +1,5 @@
 ---
-author: Alysha M De Livera, Rob&nbsp;J&nbsp;Hyndman, Ralph D Snyder
+author: Alysha&nbsp;M&nbsp;De Livera, Rob&nbsp;J&nbsp;Hyndman, Ralph&nbsp;D&nbsp;Snyder
 Status: Published
 comments: false
 date: 2011-12-31 02:38:49+00:00
@@ -60,6 +60,7 @@ To read the data into R:
 
 #### Errata
 
+  * p.1516. In (4c), replace $s_{j,t-1}$ by $s_{j,t-1}^{(i)}$.
   * p.1517. $\boldsymbol{\theta}=(\theta_1,\theta_2,\dots,\theta_q)$.
 
 
