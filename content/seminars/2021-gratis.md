@@ -11,3 +11,4 @@ Synthetic time series are useful for benchmarking and testing methods for foreca
 
 * [gratis package](https://github.com/ykang/gratis)
 * [GRATIS paper](https://robjhyndman.com/publications/gratis/)
+* [Example code](https://github.com/robjhyndman/gratis-talk/raw/main/gratis.R)
