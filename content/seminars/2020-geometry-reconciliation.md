@@ -1,11 +1,11 @@
 ---
-date: 2020-08-28
+date: 2021-09-16
 title: The geometry of forecast reconciliation
 slug: geometry-reconciliation
-link: https://github.com/robjhyndman/geometry_reconciliation/raw/master/Macquarie_2020.pdf
+link: https://github.com/robjhyndman/geometry_reconciliation/raw/master/CUHK.pdf
 ---
 
-## Talk given at Macquarie University, Sydney.
+## Talk given at Macquarie University, Sydney (28 August 2020) and City University of Hong Kong (16 September 2021)
 
 It is common to forecast at different levels of aggregation. For example, a retail company will want national forecasts, state forecasts, and store-level forecasts. And they will want them for all products, for groups of products, and for individual products. Forecast reconciliation methods allow for the forecasts at all levels of aggregation to be adjusted so they are consistent with each other.
 
