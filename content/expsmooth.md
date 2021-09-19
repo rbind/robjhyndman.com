@@ -114,6 +114,10 @@ p85
 p90
 : last line: the last term should be just $\varepsilon_{n+j}$ not $\varepsilon q_{n+j}$
 
+
+p92
+: the sum on the first line should be multiplied by $\sigma^2$.
+
 p102
 : For the ETS(M,A<sub>d</sub>,M) model, $\boldsymbol{w}_1 = [1 ~ \phi]^\prime$ and the matrix $\boldsymbol{G}_1 = \left[\begin{array}{ll}
 \alpha & \alpha\phi \\\\ \beta & \beta\phi\end{array}\right]$.
