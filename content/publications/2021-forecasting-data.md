@@ -5,7 +5,7 @@ date: 2021-10-12
 slug: monash-forecasting-data
 title: "Monash Time Series Forecasting Archive"
 kind: article
-citation: "NeurIPS 2021 Datasets and Benchmarks"
+citation: "<em>NeurIPS 2021 Datasets and Benchmarks</em>"
 tags:
 - data science
 - forecasting
