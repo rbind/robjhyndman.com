@@ -1,10 +1,11 @@
 ---
 author: Rakshitha&nbsp;Godahewa, Christoph&nbsp;Bergmeir, Geoffrey&nbsp;I&nbsp;Webb, Rob&nbsp;J&nbsp;Hyndman, Pablo&nbsp;Montero-Manso
 
-date: 2021-05-17
+date: 2021-10-12
 slug: monash-forecasting-data
 title: "Monash Time Series Forecasting Archive"
-kind: unpublished
+kind: article
+citation: "NeurIPS 2021 Datasets and Benchmarks"
 tags:
 - data science
 - forecasting
