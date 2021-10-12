@@ -4,7 +4,6 @@ title: "Uncertain futures: what can we forecast and when should we give up?"
 slug: uncertain_futures
 aliases:
   - "/uncertain_futures"
-  - "/aas2021"
 link: https://github.com/robjhyndman/uncertain_futures/raw/main/uncertain_futures.pdf
 youtube: YOeDTt_JJx0
 ---
