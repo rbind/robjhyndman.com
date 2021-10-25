@@ -28,10 +28,10 @@ pubs_count = 5
 seminars_count = 5
 
 # options for highlight.js (version, additional languages, and theme)
-  highlightjsVersion = "10.5.0"
+  highlightjsVersion = "11.3.1"
   highlightjsCDN = "//cdn.bootcss.com"
   highlightjsLang = ["r", "yaml", "tex"]
-  highlightjsTheme = "github"
+  highlightjsTheme = "stackoverflow-light"
 
 [[params.social]]
   icon = "university"
