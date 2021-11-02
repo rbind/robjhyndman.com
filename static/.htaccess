@@ -17,5 +17,6 @@ RewriteRule ^repec http://ideas.repec.org/e/phy3.html [R=301,L,NC]
 RewriteRule ^wikipedia http://en.wikipedia.org/wiki/Rob_J._Hyndman [R=301,L,NC]
 RewriteRule ^github https://github.com/robjhyndman [R=301,L,NC]
 RewriteRule ^arxiv https://arxiv.org/a/hyndman_r_1.html [R=301,L,NC]
+RewriteRule ^youtube https://www.youtube.com/playlist?list=PL12D676032C3A6B70 [R=301,L,NC]
 
 ErrorDocument 404 /404.html
