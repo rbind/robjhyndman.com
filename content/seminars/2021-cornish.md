@@ -6,6 +6,7 @@ aliases:
   - "/cornish2021"
   - "/whyR2021"
 link: https://github.com/robjhyndman/tidyverts2021/raw/main/cornish2021.pdf
+youtube: v2QIuB-TjZo
 ---
 
 ## EA Cornish Lecture given to the Statistical Society of Australia (South Australian branch): 17 November 2021

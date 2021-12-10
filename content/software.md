@@ -250,7 +250,7 @@ Monash Electricity Forecasting Model: as described in
 </tr>
 <tr>
 <td>
-<a href=' https://github.com/thiyangt/seer '><img src=' https://github.com/thiyangt/seer/raw/master/logo/seer.png ' width='70px' style='vertical-align:middle'></a>
+<a href=' https://thiyangt.github.io/seer/ '><img src=' https://github.com/thiyangt/seer/raw/master/logo/seer.png ' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Feature-Based Forecast Model Selection: as described in
