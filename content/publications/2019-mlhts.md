@@ -5,7 +5,7 @@ date: 2019-12-08
 slug: mlhts
 title: Machine learning applications in time series hierarchical forecasting
 kind: unpublished
-link: https://arxiv.org/abs/1912.00370
+arxiv: 1912.00370
 tags:
 - applied statistics
 ---

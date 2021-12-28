@@ -6,7 +6,7 @@ slug: moderntsreg
 kind: article
 citation: <em>International Statistical Review</em>, <b>88</b>(S1), S179-S204
 doi: 10.1111/insr.12432
-link: https://arxiv.org/abs/2010.15997
+arxiv: 2010.15997
 tags:
   - data science
   - time series

@@ -9,7 +9,7 @@ tags:
 - hierarchical forecasting
 - forecasting
 - time series
-link: https://arxiv.org/abs/2006.02043
+arxiv: 2006.02043
 doi: 10.1016/j.asoc.2021.107756
 ---
 

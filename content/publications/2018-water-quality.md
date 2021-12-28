@@ -9,7 +9,7 @@ tags:
 - data science
 - time series
 - environment
-link: https://arxiv.org/abs/1810.12499
+arxiv: 1810.12499
 doi: 10.1371/journal.pone.0215503
 ---
 

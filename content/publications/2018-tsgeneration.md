@@ -9,7 +9,7 @@ date: 2020-04-30
 tags:
 - data science
 - time series
-link: https://arxiv.org/pdf/1903.02787.pdf
+arxiv: 1903.02787
 doi: 10.1002/sam.11461
 ---
 

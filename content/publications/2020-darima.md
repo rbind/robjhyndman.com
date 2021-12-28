@@ -7,7 +7,7 @@ kind: unpublished
 tags:
   - data science
   - time series
-link: https://arxiv.org/abs/2007.09577
+arxiv: 2007.09577
 github: xqnwang/darima
 ---
 
