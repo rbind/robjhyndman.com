@@ -134,7 +134,7 @@ His research interests include uses of stochastic models in scientific applicati
 </tr>
 <tr>
 <td><img align="top" src="/img/GaryGrunwald.jpg" width="200" /></td>
-<td><strong><a class="vt-p" href="http://www.ucdenver.edu/academics/colleges/PublicHealth/Academics/departments/Biostatistics/About/Faculty/Pages/GrunwaldGary.aspx">Gary Grunwald</a></strong>
+<td><strong><a class="vt-p" href="https://coloradosph.cuanschutz.edu/resources/directory/directory-profile/Grunwald-Gary-UCD13990">Gary Grunwald</a></strong>
 <em>Ph.D. University of Washington, 1987</em>
 B. 1954
 D. --
