@@ -733,7 +733,7 @@ Monthly downloads:<br>752
 <a href='https://github.com/numbats/monash'><img src='/img/monash.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
-Consolidated tools and templates for staffs at Monash University.
+Consolidated tools and templates for staff at Monash University.
 </td>
 <td>
 <a href=https://github.com/numbats/monash class='badge badge-small badge-green'>Github</a>

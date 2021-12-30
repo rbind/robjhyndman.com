@@ -153,13 +153,13 @@ add_reference <- function(packages, pkg, pub, cite) {
 
 get_rjh_packages <- function(github, hex, references, extended_titles) {
   # Check if this has been run in last day
-  recent_run <- fs::file_exists(here::here("packages.rds"))
+  recent_run <- fs::file_exists(here::here("static/files/packages.rds"))
   if (recent_run) {
-    info <- fs::file_info(here::here("packages.rds"))
+    info <- fs::file_info(here::here("static/files/packages.rds"))
     recent_run <- (Sys.Date() == anytime::anydate(info$modification_time))
   }
   if (recent_run) {
-    return(readRDS(here::here("packages.rds")))
+    return(readRDS(here::here("static/files/packages.rds")))
   }
   packages <- tibble(github = github) %>%
     # Extract packages from github repos
