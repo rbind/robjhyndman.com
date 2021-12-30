@@ -7,21 +7,46 @@ rjh_cran_packages <- function() {
     select(package) %>%
     mutate(on_cran = TRUE)
 }
-# Get meta data for vector of package names
-get_meta <- function(packages, cran=TRUE) {
-  get_meta_fn <- ifelse(cran, pkgsearch::cran_package, packageDescription)
-  #description <-
-  title <- url <- rep(NA_character_, NROW(packages))
-  for(i in seq_along(packages$package)) {
-    meta <- get_meta_fn(packages$package[i])
+# Get meta data for vector of packages on CRAN
+get_meta_cran <- function(packages) {
+  title <- version <- date <- authors <- url <- rep(NA_character_, NROW(packages))
+  for (i in seq_along(packages$package)) {
+    meta <- pkgsearch::cran_package(packages$package[i])
+    date[i] <- meta$date
     title[i] <- meta$Title
-    #description[i] <- meta$Description
-    if(!is.null(meta$URL))
-      url[i] <- (str_split(meta$URL,",") %>% unlist())[1]
+    version[i] <- meta$Version
+    # Replace new line unicodes with spaces
+    authors[i] <- gsub("<U\\+000a>", " ", meta$Author, perl=TRUE)
+    # Trim final period
+    authors[i] <- gsub("\\.$","",authors[i])
+    if (!is.null(meta$URL)) {
+      url[i] <- (str_split(meta$URL, ",") %>% unlist())[1]
+    }
   }
-  tibble(package=packages$package, url=url, title=title)
+  tibble(package = packages$package, date = date, url = url, title = title, version = version, authors = authors)
 }
-
+# Get meta data for vector of packages on github
+get_meta_github <- function(repos) {
+  title <- version <- date <- authors <- url <- package <- character(length(repos))
+  tmp <- tempfile()
+  for (i in seq_along(repos)) {
+    date[i] <- gh::gh(paste0("/repos/", repos[i]))$updated_at
+    download.file(gh::gh(paste0("/repos/", repos[i], "/contents/DESCRIPTION"))$download_url, tmp)
+    package[i] <- desc::desc_get_field("Package", file=tmp)
+    title[i] <- desc::desc_get_field("Title", file = tmp)
+    version[i] <- as.character(desc::desc_get_version(tmp))
+    auth <- desc::desc_get_author("aut", tmp)
+    if(!is.null(auth))
+      authors[i] <- paste(as.character(auth), sep = "\n", collapse = "\n")
+    else
+      authors[i] <- desc::desc_get_field("Author",file=tmp)
+    url[i] <- desc::desc_get_field("URL", file = tmp,
+                                   default = gh::gh(paste0("/repos/", repos[i]))$html_url
+    )
+    url[i] <- (str_split(url[i], ",") %>% unlist())[1]
+  }
+  tibble(package = package, date = date, url = url, title = title, version = version, authors = authors)
+}
 # Create generic hex stickers for vector of package names
 generic_stickers <- function(packages) {
   # Check if the stickers already exist
@@ -36,7 +61,6 @@ generic_stickers <- function(packages) {
   for(name in packages)
     create_generic_sticker(name)
 }
-
 # Create a generic hex stick
 create_generic_sticker <- function(name) {
   empty <- ggplot() +
@@ -73,24 +97,24 @@ package_table <- function(packages) {
       z$title[i] <- paste0(z$title[i], " and <a href='/publications/", z$publication2[i], "'>",
                            z$citation2[i],"</a>")
     }
-    out <- paste(out, "<tr>")
-    out <- paste(out, "<td><a href='",z$url[i],"'><img src='",z$hex[i],"' width='70px' style='vertical-align:middle'></a></td>")
+    out <- paste0(out, "<tr>")
+    out <- paste0(out, "<td><a href='",z$url[i],"'><img src='",z$hex[i],"' width='70px' style='vertical-align:middle'></a></td>")
     out <- paste0(out, "<td width='60%'>",z$title[i],".</td>")
     if(is.na(z$github[i]))
-      out <- paste(out, "<td></td>")
+      out <- paste0(out, "<td></td>")
     else
-      out <- paste(out, "<td><a href=",z$github_url[i]," class='badge badge-small badge-green'>Github</a></td>")
+      out <- paste0(out, "<td><a href=",z$github_url[i]," class='badge badge-small badge-green'>Github</a></td>")
     if(z$on_cran[i])
-      out <- paste(out, "<td><a href=",z$cran_url[i]," class='badge badge-small badge-blue'>CRAN</a></td>")
+      out <- paste0(out, "<td><a href=",z$cran_url[i]," class='badge badge-small badge-blue'>CRAN</a></td>")
     else
-      out <- paste(out, "<td></td>")
+      out <- paste0(out, "<td></td>")
     if(!is.na(z$count[i])) {
-      out <- paste(out, "<td>Monthly downloads:<br>", round(z$count[i]), "</td>")
+      out <- paste0(out, "<td>Monthly downloads:<br>", round(z$count[i]), "</td>")
     } else
-      out <- paste(out, "<td></td>")
-    out <- paste(out, "</tr>")
+      out <- paste0(out, "<td></td>")
+    out <- paste0(out, "</tr>")
   }
-  out <- paste(out, "</table>")
+  out <- paste0(out, "</table>")
   cat(out)
 }
 
@@ -129,24 +153,24 @@ add_reference <- function(packages, pkg, pub, cite) {
 
 get_rjh_packages <- function(github, hex, references, extended_titles) {
   # Check if this has been run in last day
-  recent_run <- fs::file_exists(here::here("static/files/packages.rds"))
-  if(recent_run) {
-    info <- fs::file_info(here::here("static/files/packages.rds"))
+  recent_run <- fs::file_exists(here::here("packages.rds"))
+  if (recent_run) {
+    info <- fs::file_info(here::here("packages.rds"))
     recent_run <- (Sys.Date() == anytime::anydate(info$modification_time))
   }
-  if(recent_run)
-    return(readRDS(here::here("static/files/packages.rds")))
-
+  if (recent_run) {
+    return(readRDS(here::here("packages.rds")))
+  }
   packages <- tibble(github = github) %>%
     # Extract packages from github repos
     mutate(
-      package = stringr::str_extract(github,"/[a-zA-Z0-9\\-]*"),
-      package = stringr::str_remove(package,"/"),
-      package = stringr::str_extract(package,"[a-zA-Z0-9]*"),
+      package = stringr::str_extract(github, "/[a-zA-Z0-9\\-]*"),
+      package = stringr::str_remove(package, "/"),
+      package = stringr::str_extract(package, "[a-zA-Z0-9]*"),
       package = if_else(package=="sfar", "Rsfar", package)
     ) %>%
     # Add in CRAN packages
-    full_join(rjh_cran_packages(), by="package") %>%
+    full_join(rjh_cran_packages(), by = "package") %>%
     replace_na(list(on_cran = FALSE)) %>%
     # Add location of hex stickers
     left_join(hex, by = "package")
@@ -178,16 +202,13 @@ get_rjh_packages <- function(github, hex, references, extended_titles) {
   # CRAN package meta data
   cran_meta <- packages %>%
     filter(on_cran) %>%
-    get_meta(cran=TRUE)
+    get_meta_cran()
 
   # Github package meta data (need to install packages)
-  packages %>%
-    filter(!on_cran) %>%
-    pull(github) %>%
-    remotes::install_github()
   github_meta <- packages %>%
     filter(!on_cran) %>%
-    get_meta(cran=FALSE)
+    pull(github) %>%
+    get_meta_github()
 
   # Add downloads and titles to packages
   packages <- packages %>%

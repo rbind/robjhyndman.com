@@ -43,7 +43,7 @@ github <- c(
   "robjhyndman/hdrcde",
   "robjhyndman/Mcomp",
   "robjhyndman/MEFM-package",
-  "robjhyndman/MonashEBSTemplates",
+  "numbats/monash",
   "robjhyndman/thief",
   "robjhyndman/tscompdata",
   "robjhyndman/tsfeatures",
@@ -187,7 +187,7 @@ packages <- packages %>%
       "smoothAPC")) %>%
   add_section("Rmarkdown",
     c("binb",
-      "MonashEBSTemplates",
+      "monash",
       "vitae")) %>%
   replace_na(list(section = "Other"))
 # Put other packages last
