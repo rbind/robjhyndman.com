@@ -23,10 +23,10 @@ Tidy Temporal Data Frames and Tools: as described in
 <a href=https://github.com/tidyverts/tsibble class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=tsibble class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=tsibble class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>18193
+Monthly downloads:<br>17589
 </td>
 </tr>
 <tr>
@@ -40,10 +40,10 @@ Diverse Datasets for ‘tsibble’.
 <a href=https://github.com/tidyverts/tsibbledata class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=tsibbledata class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=tsibbledata class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>5484
+Monthly downloads:<br>5250
 </td>
 </tr>
 <tr>
@@ -57,10 +57,10 @@ Feature Extraction and Statistics for Time Series.
 <a href=https://github.com/tidyverts/feasts class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=feasts class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=feasts class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>9536
+Monthly downloads:<br>9178
 </td>
 </tr>
 <tr>
@@ -74,10 +74,10 @@ Forecasting Models for Tidy Time Series.
 <a href=https://github.com/tidyverts/fable class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fable class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fable class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>8937
+Monthly downloads:<br>8566
 </td>
 </tr>
 <tr>
@@ -91,10 +91,10 @@ Core Tools for Packages in the ‘fable’ Framework.
 <a href=https://github.com/tidyverts/fabletools class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fabletools class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fabletools class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>10588
+Monthly downloads:<br>10227
 </td>
 </tr>
 <tr>
@@ -124,10 +124,10 @@ Supporting Graphs for Analysing Time Series: as described in
 <a href=https://github.com/earowang/sugrrants class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=sugrrants class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=sugrrants class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>899
+Monthly downloads:<br>844
 </td>
 </tr>
 <tr>
@@ -143,10 +143,10 @@ Unwin (2020)</a>.
 <a href=https://github.com/sayani07/gravitas class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=gravitas class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=gravitas class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>581
+Monthly downloads:<br>551
 </td>
 </tr>
 </table>
@@ -167,10 +167,10 @@ Breaks for Additive Season and Trend: as described in
 <a href=https://github.com/verbe039/bfast class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=bfast class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=bfast class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>1997
+Monthly downloads:<br>1880
 </td>
 </tr>
 <tr>
@@ -186,10 +186,10 @@ Forecasting Functions for Time Series and Linear Models: as described in
 <a href=https://github.com/robjhyndman/forecast class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=forecast class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=forecast class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>265636
+Monthly downloads:<br>257953
 </td>
 </tr>
 <tr>
@@ -205,10 +205,10 @@ described in <a href='/publications/gratis'>Kang, Hyndman & Li
 <a href=https://github.com/ykang/gratis class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=gratis class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=gratis class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>587
+Monthly downloads:<br>554
 </td>
 </tr>
 <tr>
@@ -225,10 +225,10 @@ Athanasopoulos & Hyndman (2019)</a>.
 <a href=https://github.com/earowang/hts class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=hts class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=hts class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>26716
+Monthly downloads:<br>24043
 </td>
 </tr>
 <tr>
@@ -261,10 +261,10 @@ Feature-Based Forecast Model Selection: as described in
 <a href=https://github.com/thiyangt/seer class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=seer class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=seer class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>714
+Monthly downloads:<br>684
 </td>
 </tr>
 <tr>
@@ -278,10 +278,10 @@ STR Decomposition: as described in
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=stR class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=stR class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>836
+Monthly downloads:<br>788
 </td>
 </tr>
 <tr>
@@ -297,10 +297,10 @@ Temporal Hierarchical Forecasting: as described in
 <a href=https://github.com/robjhyndman/thief class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=thief class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=thief class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>15094
+Monthly downloads:<br>14644
 </td>
 </tr>
 <tr>
@@ -317,10 +317,10 @@ Time Series Feature Extraction: as described in
 <a href=https://github.com/robjhyndman/tsfeatures class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=tsfeatures class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=tsfeatures class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>9723
+Monthly downloads:<br>9340
 </td>
 </tr>
 </table>
@@ -357,10 +357,10 @@ the state space approach</i>, Springer</a>.
 <a href=https://github.com/robjhyndman/expsmooth class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=expsmooth class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=expsmooth class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>19931
+Monthly downloads:<br>17518
 </td>
 </tr>
 <tr>
@@ -376,10 +376,10 @@ Hyndman (1998), <i>Forecasting: methods and applications</i>, Wiley</a>.
 <a href=https://github.com/robjhyndman/fma class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fma class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fma class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>20099
+Monthly downloads:<br>17632
 </td>
 </tr>
 <tr>
@@ -391,13 +391,12 @@ Data sets from Hyndman & Athanasopoulos (2014) <i>Forecasting:
 principles and practice</i>, OTexts.
 </td>
 <td>
-<a href=https://github.com/robjhyndman/fpp class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fpp class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fpp class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>4047
+Monthly downloads:<br>3857
 </td>
 </tr>
 <tr>
@@ -413,15 +412,15 @@ edition, OTexts</a>.
 <a href=https://github.com/robjhyndman/fpp2-package class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fpp2 class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fpp2 class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>20904
+Monthly downloads:<br>18402
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://github.com/robjhyndman/fpp3-package'><img src='/img/fpp3.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://OTexts.com/fpp3/'><img src='/img/fpp3.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Data sets from <a href='https://OTexts.com/fpp3'>Hyndman &
@@ -432,10 +431,10 @@ edition, OTexts</a>.
 <a href=https://github.com/robjhyndman/fpp3-package class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fpp3 class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fpp3 class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>6035
+Monthly downloads:<br>5731
 </td>
 </tr>
 <tr>
@@ -449,10 +448,10 @@ Data from the M-Competitions.
 <a href=https://github.com/robjhyndman/Mcomp class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=Mcomp class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=Mcomp class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>7348
+Monthly downloads:<br>7067
 </td>
 </tr>
 <tr>
@@ -518,15 +517,15 @@ described in <a href='/publications/lookout'>Kandanaarachchi and Hyndman
 <a href=https://github.com/sevvandi/lookout class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=lookout class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=lookout class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>438
+Monthly downloads:<br>405
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://github.com/pridiltal/stray'><img src='https://github.com/pridiltal/stray/raw/master/man/figures/logo.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=stray'><img src='https://github.com/pridiltal/stray/raw/master/man/figures/logo.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Anomaly Detection in High Dimensional and Temporal Data: as described in
@@ -537,15 +536,15 @@ Anomaly Detection in High Dimensional and Temporal Data: as described in
 <a href=https://github.com/pridiltal/stray class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=stray class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=stray class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>435
+Monthly downloads:<br>403
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://github.com/pridiltal/oddstream'><img src='https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=oddstream'><img src='https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Outlier Detection in Data Streams: as described in
@@ -556,10 +555,10 @@ Kandanaarachichi & Muñoz (2020)</a>.
 <a href=https://github.com/pridiltal/oddstream class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=oddstream class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=oddstream class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>451
+Monthly downloads:<br>419
 </td>
 </tr>
 <tr>
@@ -613,15 +612,15 @@ Yasmeen (2013)</a> and <a href='/publications/funcfor'>Hyndman & Ullah
 <a href=https://github.com/robjhyndman/demography class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=demography class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=demography class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>1994
+Monthly downloads:<br>1866
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://cloud.r-project.org/package=fds'><img src='/img/fds.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=fds'><img src='/img/fds.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Functional Data Sets.
@@ -629,15 +628,15 @@ Functional Data Sets.
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=fds class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=fds class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14096
+Monthly downloads:<br>13453
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://cloud.r-project.org/package=ftsa'><img src='/img/ftsa.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=ftsa'><img src='/img/ftsa.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Functional Time Series Analysis.
@@ -645,15 +644,15 @@ Functional Time Series Analysis.
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=ftsa class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=ftsa class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>2425
+Monthly downloads:<br>2355
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://cloud.r-project.org/package=rainbow'><img src='/img/rainbow.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=rainbow'><img src='/img/rainbow.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Bagplots, Boxplots and Rainbow Plots for Functional Data: as described
@@ -662,10 +661,10 @@ in <a href='/publications/rainbow-fda'>Hyndman & Shang (2010)</a>.
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=rainbow class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=rainbow class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14230
+Monthly downloads:<br>13588
 </td>
 </tr>
 <tr>
@@ -681,10 +680,10 @@ Seasonal Functional Autoregressive Models: as described in
 <a href=https://github.com/haghbinh/sfar class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=Rsfar class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=Rsfar class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>529
+Monthly downloads:<br>497
 </td>
 </tr>
 <tr>
@@ -700,10 +699,10 @@ Account Period and Cohort Effects: as described in
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=smoothAPC class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=smoothAPC class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>487
+Monthly downloads:<br>452
 </td>
 </tr>
 </table>
@@ -722,10 +721,10 @@ Monthly downloads:<br>487
 <a href=https://github.com/eddelbuettel/binb class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=binb class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=binb class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>729
+Monthly downloads:<br>689
 </td>
 </tr>
 <tr>
@@ -754,10 +753,10 @@ Curriculum Vitae for R Markdown.
 <a href=https://github.com/mitchelloharawild/vitae class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=vitae class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=vitae class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>2283
+Monthly downloads:<br>2245
 </td>
 </tr>
 </table>
@@ -767,13 +766,13 @@ Monthly downloads:<br>2283
 <table>
 <tr>
 <td>
-<a href='https://github.com/robjhyndman/cricketdata'><img src='/img/cricketdata.png' width='70px' style='vertical-align:middle'></a>
+<a href='http://pkg.robjhyndman.com/cricketdata/'><img src='/img/cricketdata.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 International Cricket Data.
 </td>
 <td>
-<a href=https://github.com/ropenscilabs/cricketdata class='badge badge-small badge-green'>Github</a>
+<a href=https://github.com/robjhyndman/cricketdata class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
 </td>
@@ -782,7 +781,7 @@ International Cricket Data.
 </tr>
 <tr>
 <td>
-<a href='https://github.com/jforbes14/eechidna/'><img src='/img/eechidna.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://jforbes14.github.io/eechidna/'><img src='/img/eechidna.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Exploring Election and Census Highly Informative Data Nationally for
@@ -793,15 +792,15 @@ Cook & Hyndman (2020)</a>.
 <a href=https://github.com/jforbes14/eechidna class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=eechidna class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=eechidna class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>702
+Monthly downloads:<br>647
 </td>
 </tr>
 <tr>
 <td>
-<a href='https://cloud.r-project.org/package=emma'><img src='/img/emma.png' width='70px' style='vertical-align:middle'></a>
+<a href='https://CRAN.R-project.org/package=emma'><img src='/img/emma.png' width='70px' style='vertical-align:middle'></a>
 </td>
 <td width="60%">
 Evolutionary model-based multiresponse approach.
@@ -809,10 +808,10 @@ Evolutionary model-based multiresponse approach.
 <td>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=emma class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=emma class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>558
+Monthly downloads:<br>518
 </td>
 </tr>
 <tr>
@@ -831,10 +830,10 @@ Bashtannyk & Grunwald (1996)</a>.
 <a href=https://github.com/robjhyndman/hdrcde class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
-<a href=https://cloud.r-project.org/package=hdrcde class='badge badge-small badge-blue'>CRAN</a>
+<a href=https://CRAN.R-project.org/package=hdrcde class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>13968
+Monthly downloads:<br>13314
 </td>
 </tr>
 <tr>
@@ -846,6 +845,21 @@ Australian Popular Baby Names.
 </td>
 <td>
 <a href=https://github.com/ropenscilabs/ozbabynames class='badge badge-small badge-green'>Github</a>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href='https://github.com/robjhyndman/pkgmeta'><img src='/img/pkgmeta.png' width='70px' style='vertical-align:middle'></a>
+</td>
+<td width="60%">
+Find details about my R packages.
+</td>
+<td>
+<a href=https://github.com/robjhyndman/pkgmeta class='badge badge-small badge-green'>Github</a>
 </td>
 <td>
 </td>
