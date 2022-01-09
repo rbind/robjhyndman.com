@@ -5,18 +5,19 @@ RewriteRule ^(.*)$ https://robjhyndman.com/$1 [R=301,L]
 
 RewriteCond %{SERVER_PORT} 80
 
-RewriteRule ^working(.)papers/(.*) https://robjhyndman.com/publications/$2 [R=301,L,NC]
-RewriteRule ^researchtips/(.*) https://robjhyndman.com/hyndsight/$1 [R=301,L,NC]
-RewriteRule ^papers/(.*(?<!pdf)$) https://robjhyndman.com/publications/$1 [R=301,L,NC]
-RewriteRule ^seminars/workshop2020.* https://github.com/rstudio-conf-2020/time-series-forecasting [R=301,L,NC]
+RewriteRule ^arxiv https://arxiv.org/a/hyndman_r_1.html [R=301,L,NC]
+RewriteRule ^github https://github.com/robjhyndman [R=301,L,NC]
 RewriteRule ^orcid https://orcid.org/0000-0002-2140-5352 [R=301,L,NC]
-RewriteRule ^scholar https://scholar.google.com/citations?user=vamErfkAAAAJ [R=301,L,NC]
-RewriteRule ^scopus https://www.scopus.com/authid/detail.uri?authorId=7006914313 [R=301,L,NC]
+RewriteRule ^papers/(.*(?<!pdf)$) https://robjhyndman.com/publications/$1 [R=301,L,NC]
 RewriteRule ^publons https://publons.com/researcher/484722/rob-hyndman/ [R=301,L,NC]
 RewriteRule ^repec http://ideas.repec.org/e/phy3.html [R=301,L,NC]
+RewriteRule ^researchtips/(.*) https://robjhyndman.com/hyndsight/$1 [R=301,L,NC]
+RewriteRule ^runiverse https://robjhyndman.r-universe.dev/ [R=301,L,NC]
+RewriteRule ^scholar https://scholar.google.com/citations?user=vamErfkAAAAJ [R=301,L,NC]
+RewriteRule ^scopus https://www.scopus.com/authid/detail.uri?authorId=7006914313 [R=301,L,NC]
+RewriteRule ^seminars/workshop2020.* https://github.com/rstudio-conf-2020/time-series-forecasting [R=301,L,NC]
 RewriteRule ^wikipedia http://en.wikipedia.org/wiki/Rob_J._Hyndman [R=301,L,NC]
-RewriteRule ^github https://github.com/robjhyndman [R=301,L,NC]
-RewriteRule ^arxiv https://arxiv.org/a/hyndman_r_1.html [R=301,L,NC]
+RewriteRule ^working(.)papers/(.*) https://robjhyndman.com/publications/$2 [R=301,L,NC]
 RewriteRule ^youtube https://www.youtube.com/playlist?list=PL12D676032C3A6B70 [R=301,L,NC]
 
 ErrorDocument 404 /404.html
