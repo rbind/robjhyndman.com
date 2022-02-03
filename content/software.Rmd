@@ -42,6 +42,7 @@ if (recent_run) {
     "fasster", "/img/fasstersticker.resized.png",
     "feasts", "https://feasts.tidyverts.org/reference/figures/logo.png",
     "forecast", "https://pkg.robjhyndman.com/forecast/reference/figures/logo.png",
+    "gghdr", "https://sayani07.github.io/gghdr/reference/figures/logo.png",
     "gratis", "https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG",
     "gravitas", "https://sayani07.github.io/gravitas/reference/figures/logo.png",
     "hts", "/img/htssticker.resized.png",
@@ -78,6 +79,7 @@ if (recent_run) {
     add_reference("demography", "funcfor", "Hyndman & Ullah (2007)") %>%
     add_reference("eechidna", "elections", "Forbes, Cook & Hyndman (2020)") %>%
     add_reference("forecast", "automatic-forecasting", "Hyndman & Khandakar (2008)") %>%
+    add_reference("gghdr","computing-and-graphing-highest-density-regions", "Hyndman (1996)") %>%
     add_reference("gratis","gratis", "Kang, Hyndman & Li (2020)") %>%
     add_reference("gravitas", "gravitas", "Gupta, Hyndman, Cook & Unwin (2020)") %>%
     add_reference("hdrcde","computing-and-graphing-highest-density-regions", "Hyndman (1996)") %>%
