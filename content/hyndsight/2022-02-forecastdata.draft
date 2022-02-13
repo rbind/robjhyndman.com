@@ -95,12 +95,11 @@ m3_accuracy <- function(data, horizon) {
     forecast(h=horizon)
   # Compute and return accuracy
    forecasts %>% 
-      group_by(.model, series_name) %>%
-      mutate(h = row_number()) %>%
-      ungroup() %>%
-      accuracy(data) %>%
-      group_by(.model) %>%
-     summarise(MASE = mean(MASE))#, by=c(".model"))#,"h"))
+     group_by(.model, series_name) %>%
+     mutate(h = row_number()) %>%
+     ungroup() %>%
+     group_by(h) %>%
+     accuracy(data)
 }
 ```
 
@@ -109,14 +108,14 @@ Now we can produce a table of how well each method does for each observational p
 ```{r m3accuracy, warning=FALSE}
 accuracy_table <- bind_rows(
     m3_accuracy(m3_yearly, 6) %>% mutate(period = "Yearly"),
-    #m3_accuracy(m3_quarterly, 8) %>% mutate(period = "Quarterly"),
-    #m3_accuracy(m3_monthly, 18) %>% mutate(period = "Monthly"),
-    #m3_accuracy(m3_other, 6) %>% mutate(period = "Other")
+    m3_accuracy(m3_quarterly, 8) %>% mutate(period = "Quarterly"),
+    m3_accuracy(m3_monthly, 18) %>% mutate(period = "Monthly"),
+    m3_accuracy(m3_other, 6) %>% mutate(period = "Other")
   ) 
 accuracy_table %>%
-  group_by(.model, period) %>%
+  group_by(.model, h) %>%
   summarise(RMSSE = mean(RMSSE), MASE = mean(MASE), .groups="drop") %>%
-  arrange(period, MASE)
+  arrange(h, MASE)
 ```
 
 And we can plot the accuracy statistics against the forecast horizon. 
