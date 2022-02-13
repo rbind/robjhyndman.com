@@ -10,3 +10,5 @@ static/hyndsight/*
 static/files/packages.rds
 .DS_Store
 Thumbs.db
+*_cache
+*_files
