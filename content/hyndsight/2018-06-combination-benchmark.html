@@ -1,0 +1,258 @@
+---
+date: 2018-06-24
+slug: benchmark-combination
+title: "A forecast ensemble benchmark"
+mathjax: true
+categories:
+  - forecasting
+  - time series
+  - R
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><a href="/hyndsight/benchmarks">Forecasting benchmarks</a> are very important when testing new forecasting methods, to see how well they perform against some simple alternatives. Every week I get sent papers proposing new forecasting methods that fail to do better than even the simplest benchmark. They are rejected without review.</p>
+<p><a href="https://otexts.org/fpp2/simple-methods.html">Typical benchmarks</a> include the naïve method (especially for finance and economic data), the seasonal naïve method (for seasonal data), an automatically selected <a href="https://otexts.org/fpp2/ets.html">ETS model</a>, and an automatically selected <a href="https://otexts.org/fpp2/arima.html">ARIMA model</a>. These are easily calculated using the <code>naive()</code>, <code>snaive()</code>, <code>ets()</code> and <code>auto.arima()</code> functions in the forecast package. Note that the seasonal naïve method is equivalent to the naïve method for annual data (or any other data with frequency=1).</p>
+<p>Another benchmark worth considering is the Theta method which did very well in the M3 forecasting competition. The <code>thetaf()</code> function provides a convenient implementation.</p>
+<p>At the <a href="http://isf.forecasters.org">International Symposium on Forecasting</a> held in Boulder last week, <a href="https://forecasters.org/blog/2017/01/30/member-profile-srihari-jaganathan/">Srihari Jaganathan</a> proposed that a simple average of these forecasts should be used as a standard forecast combination (or ensemble) benchmark. This is a good idea as it is very easy to do, relatively fast to compute, and often provides an excellent forecast. (For other combinations, the <a href="https://cran.r-project.org/package=forecastHybrid">forecastHybrid</a> package might be useful.)</p>
+<p>In this post, I will test various subsets of the four benchmark methods mentioned above to see which performs best. Here is some R code to compute all possible subset ensembles from these four benchmarks. That gives 15 (<span class="math inline">\(=2^4-1\)</span>) possible combinations.</p>
+<p>The code is general enough that it is easy to add additional methods if anyone wants to include other possible benchmark methods. Just name them with a unique letter in the following function; no other code in this post needs to be changed.</p>
+<pre class="r"><code>benchmarks &lt;- function(y, h) {
+  require(forecast)
+  # Compute four benchmark methods
+  fcasts &lt;- rbind(
+    N = snaive(y, h)$mean,
+    E = forecast(ets(y), h)$mean,
+    A = forecast(auto.arima(y), h)$mean,
+    T = thetaf(y, h)$mean)
+  colnames(fcasts) &lt;- seq(h)
+  method_names &lt;- rownames(fcasts)
+  # Compute all possible combinations
+  method_choice &lt;- rep(list(0:1), length(method_names))
+  names(method_choice) &lt;- method_names
+  combinations &lt;- expand.grid(method_choice) %&gt;% tail(-1) %&gt;% as.matrix()
+  # Construct names for all combinations
+  for (i in seq(NROW(combinations))) {
+    rownames(combinations)[i] &lt;- paste0(method_names[which(combinations[i, ] &gt; 0)],
+      collapse = &quot;&quot;)
+  }
+  # Compute combination weights
+  combinations &lt;- sweep(combinations, 1, rowSums(combinations), FUN = &quot;/&quot;)
+  # Compute combinations of forecasts
+  return(combinations %*% fcasts)
+}</code></pre>
+<p>Let’s try it out on the M3 competition data.</p>
+<pre class="r"><code>library(Mcomp)
+library(tidyverse)
+# Compute &quot;symmetric&quot; percentage errors and scaled errors
+errors &lt;- map(M3, function(u) {
+  train &lt;- u$x
+  test &lt;- u$xx
+  f &lt;- benchmarks(train, u$h)
+  error &lt;- -sweep(f, 2, test)
+  pcerror &lt;- (200 * abs(error) / sweep(abs(f), 2, abs(test), FUN = &quot;+&quot;)) %&gt;%
+    as_tibble() %&gt;%
+    mutate(Method = rownames(f)) %&gt;%
+    gather(key = h, value = sAPE, -Method)
+  scalederror &lt;- (abs(error) / mean(abs(diff(train, lag = frequency(train))))) %&gt;%
+    as_tibble() %&gt;%
+    mutate(Method = rownames(f)) %&gt;%
+    gather(key = h, value = ASE, -Method)
+  return(list(pcerror = pcerror, scalederror = scalederror))
+})
+# Construct a tibble with all results
+M3errors &lt;- tibble(
+    Series = names(M3),
+    Period = map_chr(M3, &quot;period&quot;),
+    se = map(errors, &quot;scalederror&quot;),
+    pce = map(errors, &quot;pcerror&quot;)) %&gt;%
+  unnest() %&gt;%
+  select(-h1, -Method1) %&gt;%
+  mutate(h = as.integer(h),
+         Period = factor(str_to_title(Period),
+                         levels = c(&quot;Monthly&quot;,&quot;Quarterly&quot;,&quot;Yearly&quot;,&quot;Other&quot;)))</code></pre>
+<p>We need to average the accuracy measures for each period, horizon and method.</p>
+<pre class="r"><code>accuracy &lt;- M3errors %&gt;%
+  group_by(Period, Method, h) %&gt;%
+  summarize(MASE=mean(ASE), sMAPE=mean(sAPE)) %&gt;%
+  ungroup()</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;Period&#39;, &#39;Method&#39;. You can override using the `.groups` argument.</code></pre>
+<p>To keep the table of results of a manageable size, I have summarised the accuracy statistics over all forecast horizons, and included only the best combination approach plus the original benchmark methods. The table is ordered by MASE value with the best method at the top for each period.</p>
+<pre class="r"><code># Find names of original methods
+original_methods &lt;- unique(accuracy[[&quot;Method&quot;]])
+original_methods &lt;- original_methods[str_length(original_methods)==1L]
+# Compute summary table of accuracy measures
+accuracy_table &lt;- accuracy %&gt;%
+  group_by(Method,Period) %&gt;%
+  summarise(
+    sMAPE = mean(sMAPE, na.rm = TRUE),
+    MASE = mean(MASE, na.rm = TRUE) ) %&gt;%
+  arrange(MASE) %&gt;% ungroup()</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;Method&#39;. You can override using the `.groups` argument.</code></pre>
+<pre class="r"><code>best &lt;- accuracy_table %&gt;% filter(MASE==min(MASE))
+accuracy_table &lt;- accuracy_table %&gt;%
+  filter(Method %in% original_methods | Method %in% best$Method) %&gt;%
+  arrange(Period, MASE) %&gt;%
+  select(Period, Method, sMAPE, MASE)
+knitr::kable(accuracy_table)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Period</th>
+<th align="left">Method</th>
+<th align="right">sMAPE</th>
+<th align="right">MASE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Monthly</td>
+<td align="left">EAT</td>
+<td align="right">13.53</td>
+<td align="right">0.828</td>
+</tr>
+<tr class="even">
+<td align="left">Monthly</td>
+<td align="left">T</td>
+<td align="right">13.86</td>
+<td align="right">0.864</td>
+</tr>
+<tr class="odd">
+<td align="left">Monthly</td>
+<td align="left">E</td>
+<td align="right">14.14</td>
+<td align="right">0.865</td>
+</tr>
+<tr class="even">
+<td align="left">Monthly</td>
+<td align="left">A</td>
+<td align="right">15.02</td>
+<td align="right">0.868</td>
+</tr>
+<tr class="odd">
+<td align="left">Monthly</td>
+<td align="left">N</td>
+<td align="right">17.23</td>
+<td align="right">1.146</td>
+</tr>
+<tr class="even">
+<td align="left">Quarterly</td>
+<td align="left">EAT</td>
+<td align="right">9.01</td>
+<td align="right">1.064</td>
+</tr>
+<tr class="odd">
+<td align="left">Quarterly</td>
+<td align="left">T</td>
+<td align="right">9.20</td>
+<td align="right">1.117</td>
+</tr>
+<tr class="even">
+<td align="left">Quarterly</td>
+<td align="left">E</td>
+<td align="right">9.68</td>
+<td align="right">1.170</td>
+</tr>
+<tr class="odd">
+<td align="left">Quarterly</td>
+<td align="left">A</td>
+<td align="right">10.01</td>
+<td align="right">1.189</td>
+</tr>
+<tr class="even">
+<td align="left">Quarterly</td>
+<td align="left">N</td>
+<td align="right">11.06</td>
+<td align="right">1.425</td>
+</tr>
+<tr class="odd">
+<td align="left">Yearly</td>
+<td align="left">EAT</td>
+<td align="right">16.03</td>
+<td align="right">2.688</td>
+</tr>
+<tr class="even">
+<td align="left">Yearly</td>
+<td align="left">T</td>
+<td align="right">16.76</td>
+<td align="right">2.774</td>
+</tr>
+<tr class="odd">
+<td align="left">Yearly</td>
+<td align="left">E</td>
+<td align="right">17.00</td>
+<td align="right">2.860</td>
+</tr>
+<tr class="even">
+<td align="left">Yearly</td>
+<td align="left">A</td>
+<td align="right">17.10</td>
+<td align="right">2.959</td>
+</tr>
+<tr class="odd">
+<td align="left">Yearly</td>
+<td align="left">N</td>
+<td align="right">17.88</td>
+<td align="right">3.172</td>
+</tr>
+<tr class="even">
+<td align="left">Other</td>
+<td align="left">EAT</td>
+<td align="right">4.32</td>
+<td align="right">1.807</td>
+</tr>
+<tr class="odd">
+<td align="left">Other</td>
+<td align="left">E</td>
+<td align="right">4.37</td>
+<td align="right">1.814</td>
+</tr>
+<tr class="even">
+<td align="left">Other</td>
+<td align="left">A</td>
+<td align="right">4.51</td>
+<td align="right">1.841</td>
+</tr>
+<tr class="odd">
+<td align="left">Other</td>
+<td align="left">T</td>
+<td align="right">4.92</td>
+<td align="right">2.271</td>
+</tr>
+<tr class="even">
+<td align="left">Other</td>
+<td align="left">N</td>
+<td align="right">6.30</td>
+<td align="right">3.089</td>
+</tr>
+</tbody>
+</table>
+<p>The best performing ensemble method is EAT – a combination of an ETS model, an ARIMA model and the Theta method.</p>
+<p>Next, we can plot the accuracy statistics against the forecast horizon. The legend has been ordered to correspond roughly to the order of the series in the MASE plots.</p>
+<pre class="r"><code>order &lt;- accuracy_table %&gt;% group_by(Method) %&gt;%
+  summarise(MASE = mean(MASE)) %&gt;% arrange(MASE) %&gt;%
+  pull(&quot;Method&quot;) %&gt;% rev()
+accuracy %&gt;%
+  gather(key = &quot;Measure&quot;, value = &quot;accuracy&quot;, sMAPE, MASE) %&gt;%
+  filter(Method %in% unique(accuracy_table$Method)) %&gt;%
+  mutate(Method = factor(Method, levels=order)) %&gt;%
+  ggplot(aes(x = h, y = accuracy), group = Method) +
+    geom_line(aes(col = Method)) +
+    facet_grid(rows = vars(Measure), cols=vars(Period), scale = &quot;free&quot;) +
+    xlab(&quot;Forecast horizon&quot;) + ylab(&quot;Forecast accuracy&quot;)</code></pre>
+<p><img src="/hyndsight/2018-06-combination-benchmark_files/figure-html/plots-1.png" width="960" /></p>
+<p>From the graph we can see that the EAT ensemble works well for all periods and almost all horizons. To finish, here is a function which produces the EAT ensemble as a forecast object.</p>
+<pre class="r"><code>eat_ensemble &lt;- function(y, h = ifelse(frequency(y) &gt; 1, 2*frequency(y), 10)) {
+  require(forecast)
+  fets &lt;- forecast(ets(y), h)
+  farima &lt;- forecast(auto.arima(y), h)
+  ftheta &lt;- thetaf(y, h)
+  comb &lt;- fets
+  comb$mean &lt;-(fets$mean + farima$mean + ftheta$mean)/3
+  comb$method &lt;- &quot;ETS-ARIMA-Theta Combination&quot;
+  return(comb)
+}
+USAccDeaths %&gt;% eat_ensemble() %&gt;% autoplot()</code></pre>
+<p><img src="/hyndsight/2018-06-combination-benchmark_files/figure-html/eat-1.png" width="672" /></p>
+<p>The prediction intervals shown are simply those from the ETS model. Combining prediction intervals is more difficult, and I’ll leave that to another post.</p>

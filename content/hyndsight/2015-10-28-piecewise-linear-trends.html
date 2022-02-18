@@ -52,7 +52,7 @@ trend &lt;- ts(b0 + b1*t, start=start(livestock))
 
 plot(fc, main=&quot;Linear trend with AR(1) errors&quot;)
 lines(trend, col=&#39;red&#39;)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-1"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
 <img src="/hyndsight/2015-10-28-piecewise-linear-trends_files/figure-html/unnamed-chunk-1-1.png" alt="*A linear trend fitted to the Asian sheep data. The automatically selected error term is an AR(1) process.*" width="672" />
 <p class="caption">
 Figure 1: <em>A linear trend fitted to the Asian sheep data. The automatically selected error term is an AR(1) process.</em>
@@ -60,8 +60,8 @@ Figure 1: <em>A linear trend fitted to the Asian sheep data. The automatically s
 </div>
 <p>A more flexible approach is to use a piecewise linear trend which bends at some time. If the trend bends at time <span class="math inline">\(\tau\)</span>, then it can be specified by including the following predictors in the model.
 <span class="math display">\[\begin{align}
- x_{1,t}  &amp;=  t \\
- x_{2,t} &amp;=  \begin{cases}
+x_{1,t}  &amp;=  t \\
+x_{2,t} &amp;=  \begin{cases}
 0 &amp; t &lt; \tau;\\
 (t-\tau) &amp;  t \ge \tau.
 \end{cases}
@@ -99,7 +99,7 @@ trend &lt;- ts(b0 + b1*t + b2*pmax(0,t-30) + b3*pmax(0,t-32),
 
 plot(fc, main=&quot;Piecewise linear trend with AR(1) errors&quot;)
 lines(trend, col=&#39;red&#39;)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
 <img src="/hyndsight/2015-10-28-piecewise-linear-trends_files/figure-html/unnamed-chunk-2-1.png" alt="*A piecewise-linear trend fitted to the Asian sheep data.*" width="672" />
 <p class="caption">
 Figure 2: <em>A piecewise-linear trend fitted to the Asian sheep data.</em>

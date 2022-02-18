@@ -29,7 +29,7 @@ tsoutliers(melsyd[,3])</code></pre>
 ## [1] 114 115 116 117 118 119 120
 ## 
 ## $replacements
-## [1]  7.529476  8.129252  9.493871 10.869695 10.726863 11.540066 10.902935</code></pre>
+## [1]  7.495170  8.156601  9.519452 10.847749 10.624490 11.428028 10.871882</code></pre>
 <p>A more general function is <code>tsclean</code> which is a combination of <code>na.interp</code> and <code>tsoutliers</code>, so it handles both missing values and outliers. It will return a cleaned version of a time series with outliers and missing values replaced by estimated values.</p>
 <pre class="r"><code>plot(melsyd[,3], main=&quot;Economy class passengers: Melbourne-Sydney&quot;)
 lines(tsclean(melsyd[,3]), col=&#39;red&#39;)</code></pre>

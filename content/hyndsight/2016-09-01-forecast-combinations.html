@@ -40,9 +40,9 @@ weights &lt;- predict(MLpol0, X, test, type=&#39;weights&#39;)
 head(weights)</code></pre>
 <pre><code>##         ETS  ARIMA    STL
 ## [1,] 0.3333 0.3333 0.3333
-## [2,] 0.5404 0.0000 0.4596
-## [3,] 0.6531 0.0000 0.3469
-## [4,] 0.4638 0.0000 0.5362
+## [2,] 0.5447 0.0000 0.4553
+## [3,] 0.6352 0.0000 0.3648
+## [4,] 0.5416 0.0000 0.4584
 ## [5,] 0.0000 0.0000 1.0000
 ## [6,] 0.0000 0.0000 1.0000</code></pre>
 <pre class="r"><code>tail(weights)</code></pre>
@@ -93,5 +93,5 @@ round(mse,2)</code></pre>
           STL=mean((test-STL$mean)^2))
 round(mse2,2)</code></pre>
 <pre><code>##   ETS ARIMA   STL 
-##  1.34  0.68  2.10</code></pre>
+##  1.34  0.68  2.04</code></pre>
 </div>

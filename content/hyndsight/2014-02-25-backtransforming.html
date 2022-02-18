@@ -22,20 +22,20 @@ categories:
 <h3>Box-Cox transformations</h3>
 <p>For a Box-Cox transformation,
 <span class="math display">\[f(x) = \begin{cases}
- (\lambda x+1)^{1/\lambda} &amp; \text{if $\lambda\ne0$;}\\
- e^x &amp; \text{if $\lambda=0$.}
+(\lambda x+1)^{1/\lambda} &amp; \text{if $\lambda\ne0$;}\\
+e^x &amp; \text{if $\lambda=0$.}
 \end{cases}
 \]</span>
 So
 <span class="math display">\[f&#39;&#39;(x) = \begin{cases}
 (1-\lambda)(\lambda x+1)^{1/\lambda-2} &amp; \text{if $\lambda\ne0$;}\\
- e^x &amp; \text{if $\lambda=0$.}\end{cases}
+e^x &amp; \text{if $\lambda=0$.}\end{cases}
 \]</span>
 and the backtransformed mean is given by
 <span class="math display">\[\begin{cases}
- (\lambda \mu+1)^{1/\lambda}\left[1 + \frac{\sigma^2(1-\lambda)}{2(\lambda \mu+1)^{2}}\right] &amp; \text{if $\lambda\ne0$;}\\
- e^\mu\left[1 + \frac{\sigma^2}{2}\right] &amp; \text{if $\lambda=0$.}\end{cases}
- \]</span>
+(\lambda \mu+1)^{1/\lambda}\left[1 + \frac{\sigma^2(1-\lambda)}{2(\lambda \mu+1)^{2}}\right] &amp; \text{if $\lambda\ne0$;}\\
+e^\mu\left[1 + \frac{\sigma^2}{2}\right] &amp; \text{if $\lambda=0$.}\end{cases}
+\]</span>
 Therefore, to adjust the back-transformed mean obtained by R, the following code can be used.</p>
 <pre class="r"><code>library(fpp)
 
