@@ -79,7 +79,7 @@ We will use the MASE and RMSSE forecast accuracy measures (as discussed at https
 To avoid a lot of repetition, we will write a small function to produce the accuracy statistics for each tsibble.
 
 ```{r functions}
-m3_accuracy <- function(data, horizon) {
+benchmarks <- function(data, horizon) {
   # Keep only training data
   training <- data %>%
     group_by(series_name) %>%
@@ -88,10 +88,10 @@ m3_accuracy <- function(data, horizon) {
   # Produce forecasts
   forecasts <- training %>%
     model(
-      N = NAIVE(value), T = THETA(value),
-      E = ETS(value), A = ARIMA(value)
+      N = NAIVE(value)#, T = THETA(value),
+      #E = ETS(value), A = ARIMA(value)
     ) %>%
-    mutate(EAT = (E+A+T)/3) %>%
+    #mutate(EAT = (E+A+T)/3) %>%
     forecast(h=horizon)
   # Compute and return accuracy
    forecasts %>% 
@@ -99,7 +99,8 @@ m3_accuracy <- function(data, horizon) {
      mutate(h = row_number()) %>%
      ungroup() %>%
      group_by(h) %>%
-     accuracy(data)
+     as_fable(response="value", distribution=value) %>%
+     accuracy(data, measures=point_accuracy_measures[c("MASE","RMSSE")])
 }
 ```
 
@@ -107,22 +108,27 @@ Now we can produce a table of how well each method does for each observational p
 
 ```{r m3accuracy, warning=FALSE}
 accuracy_table <- bind_rows(
-    m3_accuracy(m3_yearly, 6) %>% mutate(period = "Yearly"),
-    m3_accuracy(m3_quarterly, 8) %>% mutate(period = "Quarterly"),
-    m3_accuracy(m3_monthly, 18) %>% mutate(period = "Monthly"),
-    m3_accuracy(m3_other, 6) %>% mutate(period = "Other")
+    benchmarks(m3_yearly, 6) %>% mutate(period = "Yearly"),
+    benchmarks(m3_quarterly, 8) %>% mutate(period = "Quarterly"),
+    benchmarks(m3_monthly, 18) %>% mutate(period = "Monthly"),
+    benchmarks(m3_other, 6) %>% mutate(period = "Other")
   ) 
+```
+
+```{r accuracy_table}
 accuracy_table %>%
-  group_by(.model, h) %>%
+  group_by(.model, period) %>%
   summarise(RMSSE = mean(RMSSE), MASE = mean(MASE), .groups="drop") %>%
-  arrange(h, MASE)
+  arrange(period, MASE)
 ```
 
 And we can plot the accuracy statistics against the forecast horizon. 
 
 ```{r m3accuracygraphs}
 accuracy_table %>%
-  select(period, .model, h, RMSSE, MASE) %>%
+  group_by(.model, h, period) %>%
+  summarise(RMSSE = mean(RMSSE), MASE = mean(MASE), .groups="drop") %>%
+  select(period, h, .model, RMSSE, MASE) %>%
   pivot_longer(RMSSE:MASE, values_to = "accuracy", names_to="measure") %>%
   mutate(
     period = factor(period, levels=c("Monthly","Quarterly","Yearly","Other")),
