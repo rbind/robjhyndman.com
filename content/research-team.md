@@ -16,7 +16,7 @@ title: "Research team"
 
 ## Former research fellows
 
-  1. **[Muhammad Akram](https://scholar.google.com.au/citations?user=MCPaEzoAAAAJ)**
+  1. **[Muhammad Akram](https://www.acu.edu.au/research-and-enterprise/our-research-institutes/mary-mackillop-institute-for-health-research/our-people/muhammad-akram)**
   1. **[George Athanasopoulos](https://research.monash.edu/en/persons/george-athanasopoulos)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/georgeAthana)
   1. **[Baki Billah](https://research.monash.edu/en/persons/md-billah)**
   1. **[Gary Deng](https://www.linkedin.com/in/gary-minfeng-deng)**
@@ -37,7 +37,7 @@ title: "Research team"
 ## Former postgraduate students
 
   1. **[Roman Ahmed](https://www.linkedin.com/in/romanahmed)**. *Forecasting hierarchical time series*. (Ph.D., graduated 2010). Now a Consultant Data Scientist, Australian Taxation Office.
-  1. **[Muhammad Akram](https://scholar.google.com.au/citations?user=MCPaEzoAAAAJ)**. *Stability properties of state space models for exponential smoothing*, (Ph.D., graduated 2005). Now a Research Fellow at the ACU Mary MacKillop Institute for Health Research.
+  1. **[Muhammad Akram](https://www.acu.edu.au/research-and-enterprise/our-research-institutes/mary-mackillop-institute-for-health-research/our-people/muhammad-akram)**. *Stability properties of state space models for exponential smoothing*, (Ph.D., graduated 2005). Now a Research Fellow at the ACU Mary MacKillop Institute for Health Research.
   1. **[Sengarapillai Arivalzahan](https://scholar.google.com/citations?user=jOoVou0AAAAJ)**. *Discrimination and classification in functional data analysis*, (Ph.D., graduated 2008). Now a Senior Lecturer at University of Jaffna, Sri Lanka.
   1. **[David Bashtannyk](https://www.linkedin.com/in/david-bashtannyk-53b30796)**. *Kernel conditional density estimation*, (Ph.D., graduated 2001). Now Retail Credit Risk Manager at ANZ Bank.
   1. **[Souhaib Ben Taieb](http://souhaib-bentaieb.com/)**, *Machine-learning strategies for multi-step time series forecasting* (PhD, graduated 2014). Winner of a Solvay Award for his PhD thesis. Now Associate Professor at University of Mons. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/bsouhaib/)

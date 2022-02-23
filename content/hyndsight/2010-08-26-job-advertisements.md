@@ -16,8 +16,8 @@ In statistics, there are well-established job websites that are the best places 
 
   * Australia & New Zealand: [careers.statsoc.org.au](https://careers.statsoc.org.au). This is a fantastic service from the Statistical Society of Australia and includes a lot of jobs, especially those requiring higher degrees.
   * Melbourne Data Science Meetup has a [job board with local data science jobs](https://www.meetup.com/Data-Science-Melbourne/messages/boards/forum/20509896).
-  * United States: [amstat.org/jobweb](http://amstat.org/jobweb/). This is a similar service from the American Statistical Association for jobs in the USA.
-  * United Kingdom: [rss.org.uk/jobs-careers/jobs-board/](https://rss.org.uk/jobs-careers/jobs-board/). The Royal Statistical Society offers a similar job board for the UK.
+  * United States: [ASA JobWeb](https://www.amstat.org/your-career/asa-jobweb). This is a similar service from the American Statistical Association for jobs in the USA.
+  * United Kingdom: [RSS Jobs Board](https://rss.org.uk/jobs-careers/jobs-board/). The Royal Statistical Society offers a similar job board for the UK.
   * [Math jobs](http://math-jobs.com) covers jobs in the mathematical sciences.
 
 I do not know what is provided in other countries, but check with your national statistical association.
