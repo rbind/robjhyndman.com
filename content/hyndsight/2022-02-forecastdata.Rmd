@@ -1,0 +1,91 @@
+---
+author: robjhyndman
+comments: true
+date: 2022-02-23
+title: "Monash time series forecasting repository"
+slug: forecastingdata
+output: 
+  html_document:
+    keep_md: true
+mathjax: true
+categories:
+  - time series
+  - R
+  - forecasting
+  - data science
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+options(digits = 3, width = 75)
+```
+
+The [Monash time series forecasting respository](https://forecastingdata.org) is a comprehensive collection of time series data made available in a convenient form to encourage empirical forecast evaluations. The repository includes the data from many forecasting competitions including the M1, M3, M4, NN5, tourism, and KDD cup 2018, as well as many other data sets from diverse applications. The [associated paper](https://robjhyndman.com/publications/monash-forecasting-data/) discusses the various data sets and their characteristics. Where a time series collection contains data with different observation frequencies, they are split into different data sets so that the series within each data set has the same frequency.
+
+Some of these data sets have been made available in R packages previously, based on `ts` objects which worked ok for annual, quarterly and monthly data, but is not a good format for daily and sub-daily data.
+
+The [`tsibbledata` package](https://tsibbledata.tidyverts.org) provides the function `monash_forecasting_respository()` to download the data and return it as a [`tsibble` object](https://tsibble.tidyverts.org/articles/intro-tsibble.html). These can be analysed and plotted using the [`feasts` package](https://feasts.tidyverts.org), and modelled and forecast using the [`fable` package](https://fable.tidyverts.org). It is convenient to simply load the `fpp3` package which will then load all the necessary packages.
+
+```{r packages, echo=TRUE, message=TRUE}
+library(fpp3)
+```
+
+## M3 data
+
+To download the M3 data, we need to know the unique zenodo identifiers for each data set. From the [forecastingdata.org](https://forecastingdata.org) page, find the M3 links (there are four, one for each observational frequency). For example, the Yearly link takes you to https://zenodo.org/record/4656222, so the Zenodo identifier for this data set is 4656222. Similarly, the Quarterly, Monthly and Other links have identifiers 4656262, 4656298 and 4656335 respectively. 
+
+```{r m3}
+m3_yearly <- monash_forecasting_repository(4656222)
+m3_quarterly <- monash_forecasting_repository(4656262)
+m3_monthly <- monash_forecasting_repository(4656298)
+m3_other <- monash_forecasting_repository(4656335)
+```
+
+The first three data sets are stored with a date index, so they are read as daily data. Therefore we first need to convert them to yearly, quarterly and monthly data.
+
+```{r m3b}
+m3_yearly <- m3_yearly %>%
+  mutate(year = year(start_timestamp)) %>%
+  as_tsibble(index=year) %>%
+  select(-start_timestamp)
+m3_quarterly <- m3_quarterly %>%
+  mutate(quarter = yearquarter(start_timestamp)) %>%
+  as_tsibble(index=quarter) %>%
+  select(-start_timestamp)
+m3_monthly <- m3_monthly %>%
+  mutate(month = yearmonth(start_timestamp)) %>%
+  as_tsibble(index=month) %>%
+  select(-start_timestamp)
+```
+
+The resulting monthly data set is shown below.
+
+```{r m3data}
+m3_monthly
+```
+
+The series names are `T1`, `T2`, ... The M3 data included both training and test data. These have been combined in this data set.
+
+## Australian electricity demand data
+
+This data set contains total half-hourly electricity demand by state from 1 January 2002 to 1 April 2015, for five states of Australia: New South Wales, Queensland, South Australia, Tasmania, and Victoria. A subset of this data (one state and only three years) is provided as `tsibbledata::vic_elec`.
+
+```{r auselec}
+aus_elec <- monash_forecasting_repository(4659727)
+aus_elec
+```
+
+```{r auselec_plot}
+aus_elec %>% 
+  filter(state=="VIC") %>%
+  autoplot(value) +
+  labs(x = "Time", y="Electricity demand (MWh)")
+```
+
+## Forecasting benchmarks
+
+We also provide some [accuracy measures](https://forecastingdata.org/#results) of the performance of 13 baseline forecasting methods applied to the data sets in the repository. This makes it easy for anyone proposing a new method to compare against some standard existing methods, without having to do all the calculations themselves.
+
+## What about Python?
+
+The data can be loaded as a Pandas dataframe by following [this example in the github repository](https://github.com/rakshitha123/TSForecasting/blob/master/utils/data_loader.R). Download the `.tsf` files as required from Zenodo and put them into `tsf_data` folder.
