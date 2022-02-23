@@ -28,6 +28,29 @@ The [`tsibbledata` package](https://tsibbledata.tidyverts.org) provides the func
 library(fpp3)
 ```
 
+```
+## ── Attaching packages ────────────────────────────────── fpp3 0.4.0.9000 ──
+```
+
+```
+## ✓ tibble      3.1.6          ✓ tsibble     1.1.1     
+## ✓ dplyr       1.0.7          ✓ tsibbledata 0.4.0.9000
+## ✓ tidyr       1.1.4          ✓ feasts      0.2.2     
+## ✓ lubridate   1.8.0          ✓ fable       0.3.1     
+## ✓ ggplot2     3.3.5          ✓ fabletools  0.3.2
+```
+
+```
+## ── Conflicts ──────────────────────────────────────────── fpp3_conflicts ──
+## x lubridate::date()    masks base::date()
+## x dplyr::filter()      masks stats::filter()
+## x tsibble::intersect() masks base::intersect()
+## x tsibble::interval()  masks lubridate::interval()
+## x dplyr::lag()         masks stats::lag()
+## x tsibble::setdiff()   masks base::setdiff()
+## x tsibble::union()     masks base::union()
+```
+
 ## M3 data
 
 To download the M3 data, we need to know the unique zenodo identifiers for each data set. From the [forecastingdata.org](https://forecastingdata.org) page, find the M3 links (there are four, one for each observational frequency). For example, the Yearly link takes you to https://zenodo.org/record/4656222, so the Zenodo identifier for this data set is 4656222. Similarly, the Quarterly, Monthly and Other links have identifiers 4656262, 4656298 and 4656335 respectively. 
@@ -121,7 +144,7 @@ aus_elec %>%
   labs(x = "Time", y="Electricity demand (MWh)")
 ```
 
-![](2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
+![](/hyndsight/2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
 
 ## Forecasting benchmarks
 
