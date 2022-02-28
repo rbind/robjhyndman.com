@@ -1,10 +1,10 @@
 ---
 title: "Visualizing probability distributions across bivariate cyclic temporal granularities"
 author: Sayani Gupta, Rob&nbsp;J&nbsp;Hyndman, Dianne&nbsp;Cook and Antony&nbsp;Unwin
-date: 2021-06-01
+date: 2022-03-01
 slug: gravitas
 kind: article
-citation: <em>J Computational & Graphical Statistics</em>, to&nbsp;appear
+citation: <em>J Computational & Graphical Statistics</em>, <b>31</b>(1), 14-25
 tags:
   - data science
   - time series
