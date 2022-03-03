@@ -53,9 +53,8 @@ Here are some examples in using the Cricinfo functions. This is based on the oth
 wt20 <- fetch_cricinfo("T20", "Women", "Bowling")
 ```
 
-```{r woment20, message=FALSE}
+```{r woment20}
 wt20 %>%
-  mutate(Economy = parse_number(Economy)) %>%
   select(Player, Country, Matches, Runs, Wickets, Economy, StrikeRate)
 ```
 
@@ -72,12 +71,12 @@ wt20 %>%
 
 ## Australian men's ODI data by innings
 
-```{r, message=FALSE}
+```{r}
 # Fetch all Australian Men's ODI data by innings
 menODI <- fetch_cricinfo("ODI", "Men", "Batting", type = "innings", country = "Australia")
 ```
 
-```{r menodi, message=FALSE}
+```{r menodi}
 menODI 
 ```
 
@@ -91,7 +90,7 @@ menODI %>%
 
 ## Indian test fielding data
 
-```{r, message=FALSE}
+```{r}
 Indfielding <- fetch_cricinfo("Test", "Men", "Fielding", country = "India")
 ```
 
@@ -109,7 +108,7 @@ Indfielding %>%
 
 ## Meg Lanning's ODI batting
 
-```{r, message=FALSE}
+```{r}
 meg_lanning_id <- find_player_id("Meg Lanning")$ID
 MegLanning <- fetch_player_data(meg_lanning_id, "ODI") %>%
   mutate(NotOut = (Dismissal == "not out"))
@@ -131,7 +130,7 @@ names(MLave) <- paste("Average =", round(MLave, 2))
 # Plot ODI scores
 ggplot(MegLanning) +
   geom_hline(aes(yintercept = MLave), col="gray") +
-  geom_point(aes(x = Start_Date, y = Runs, col = NotOut)) +
+  geom_point(aes(x = Date, y = Runs, col = NotOut)) +
   ggtitle("Meg Lanning ODI Scores") +
   scale_y_continuous(sec.axis = sec_axis(~., breaks = MLave))
 ```
