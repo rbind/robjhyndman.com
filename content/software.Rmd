@@ -44,7 +44,7 @@ if (recent_run) {
     "forecast", "https://pkg.robjhyndman.com/forecast/reference/figures/logo.png",
     "gghdr", "https://sayani07.github.io/gghdr/reference/figures/logo.png",
     "gratis", "https://github.com/ykang/gratis/raw/master/man/figures/logo.PNG",
-    "gravitas", "https://sayani07.github.io/gravitas/reference/figures/logo.png",
+    "gravitas", "https://github.com/Sayani07/gravitas/raw/master/man/figures/logo.png",
     "hts", "/img/htssticker.resized.png",
     "lookout","https://sevvandi.github.io/lookout/reference/figures/logo.png",
     "oddstream","https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png",
