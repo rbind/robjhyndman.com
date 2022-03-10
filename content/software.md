@@ -520,7 +520,7 @@ described in <a href='/publications/lookout'>Kandanaarachchi and Hyndman
 <a href=https://CRAN.R-project.org/package=lookout class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>201
+Monthly downloads:<br>202
 </td>
 </tr>
 <tr>
@@ -756,7 +756,7 @@ Article Formats for R Markdown.
 <a href=https://CRAN.R-project.org/package=rticles class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>10213
+Monthly downloads:<br>10158
 </td>
 </tr>
 <tr>
@@ -917,23 +917,6 @@ Tools to assist with academic promotions.
 <td>
 </td>
 <td>
-</td>
-</tr>
-<tr>
-<td>
-<a href='https://github.com/rstudio/rticles'><img src='/img/rticles.png' width='70px' style='vertical-align:middle'></a>
-</td>
-<td width="60%">
-Article Formats for R Markdown.
-</td>
-<td>
-<a href=https://github.com/rstudio/rticles class='badge badge-small badge-green'>Github</a>
-</td>
-<td>
-<a href=https://CRAN.R-project.org/package=rticles class='badge badge-small badge-blue'>CRAN</a>
-</td>
-<td>
-Monthly downloads:<br>10158
 </td>
 </tr>
 </table>
