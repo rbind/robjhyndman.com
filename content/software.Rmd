@@ -49,6 +49,7 @@ if (recent_run) {
     "lookout","https://sevvandi.github.io/lookout/reference/figures/logo.png",
     "oddstream","https://github.com/pridiltal/oddstream/raw/master/man/figures/logo.png",
     "oddwater","https://github.com/pridiltal/oddwater/raw/master/man/fig/logo.png",
+    "rticles","https://pkgs.rstudio.com/rticles/logo.png",
     "seer","https://github.com/thiyangt/seer/raw/master/logo/seer.png",
     "stray","https://github.com/pridiltal/stray/raw/master/man/figures/logo.png",
     "sugrrants", "/img/sugrrantssticker.resized.png",
@@ -178,6 +179,7 @@ if (recent_run) {
     add_section("Rmarkdown",
       c("binb",
         "monash",
+        "rticles",
         "vitae")) %>%
     replace_na(list(section = "Other"))
   # Put other packages last
