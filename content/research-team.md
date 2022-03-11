@@ -10,7 +10,6 @@ title: "Research team"
 
   1. **[Lakshan Bernard](https://acems.org.au/our-people/lakshan-bernard)**. *Analytical tools for future power networks* (PhD, begun 2020).
   1. **[Fan Cheng](https://fancheng.me/)**. *Manifold learning on empirical probability distributions* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
-  1. **[Sayani Gupta](https://sayani.netlify.com/)**. *Visualization of probability distributions of deconstructed temporal data* (PhD, submitted 2021). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **Nuwani Palihawadana**. *Optimal predictor selection for high-dimensional nonparametric forecasting* (PhD, begun 2020).  [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/nuwani-palihawadana)
   1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations* (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
 
@@ -45,6 +44,7 @@ title: "Research team"
   1. **[Alexander Dokumentov](https://www.linkedin.com/in/dokumentov/)**, <em>Smoothing, decomposition and forecasting of multidimensional and functional time series using regularisation</em> (PhD, graduated 2016). Now a Data Scientist at Growing Data. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/dokal01/)
   1. **[Bircan Erbas](https://scholars.latrobe.edu.au/display/berbas)**. *Statistical methodological issues in studies of respiratory disease and air pollution*, (Ph.D., Uni of Melbourne, graduated 2001). Now a Professor in the School of Public Health at La Trobe University.
   1. **[Puwasala Gamakumara](https://puwasala.netlify.app/)**, *Probabilistic forecast reconciliation: theory and applications* (PhD, graduated 2020).  Now a Data Scientist at the Australian Energy Market Operator. [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/PuwasalaG)
+  1. **[Sayani Gupta](https://sayani.netlify.com/)**. *Visualization of probability distributions of deconstructed temporal data* (PhD, graduated 2022). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/Sayani07)
   1. **[Abdul Aziz Hayat](http://www.deakin.edu.au/about-deakin/people/abdul-hayat-muhammad)**. *Identifying GDP volatility and modeling changing seasonality*. (Ph.D., graduated 2007). Now a Senior Lecturer in the Deakin Business School.
   1. **[Atikur Khan](https://atikurkhan.net/)**. *Singular spectrum analysis.* (Ph.D., graduated 2013). Now an Associate Professor at North South University, Bangladesh.
   1. **[Yeasmin Khandakar](https://www.linkedin.com/in/yeasminkhandakar/)**. *Automatic ARIMA forecasting*. (Ph.D., graduated 2010). Now a Senior Data Scientist at Transurban.
