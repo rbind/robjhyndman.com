@@ -12,3 +12,4 @@ static/files/packages.rds
 Thumbs.db
 *_cache
 *_files
+.vscode/*
