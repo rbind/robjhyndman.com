@@ -53,7 +53,7 @@ library(fpp3)
 
 ## M3 data
 
-To download the M3 data, we need to know the unique zenodo identifiers for each data set. From the [forecastingdata.org](https://forecastingdata.org) page, find the M3 links (there are four, one for each observational frequency). For example, the Yearly link takes you to https://zenodo.org/record/4656222, so the Zenodo identifier for this data set is 4656222. Similarly, the Quarterly, Monthly and Other links have identifiers 4656262, 4656298 and 4656335 respectively. 
+To download the M3 data, we need to know the unique zenodo identifiers for each data set. From the [forecastingdata.org](https://forecastingdata.org) page, find the M3 links (there are four, one for each observational frequency). For example, the Yearly link takes you to [https://zenodo.org/record/4656222](https://zenodo.org/record/4656222), so the Zenodo identifier for this data set is 4656222. Similarly, the Quarterly, Monthly and Other links have identifiers 4656262, 4656298 and 4656335 respectively. 
 
 
 ```r
@@ -144,7 +144,7 @@ aus_elec %>%
   labs(x = "Time", y="Electricity demand (MWh)")
 ```
 
-![](/hyndsight/2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
+![](2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
 
 ## Forecasting benchmarks
 

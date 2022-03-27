@@ -25,7 +25,7 @@ Researchers need to write a lot: theses, papers, reviewer reports, responses to 
 
  * [TeXlive](http://texlive.org)
  * [Rmarkdown](https://rmarkdown.rstudio.com/)
- * [Rmarkdown thesis template](https://github.com/robjhyndman/MonashHonoursThesis)
+ * [Rmarkdown thesis template](https://github.com/numbats/monash)
  * [Rmarkdown templates for papers](https://cran.r-project.org/package=rticles)
 
 ## Text Editors
@@ -39,4 +39,3 @@ Researchers need to write a lot: theses, papers, reviewer reports, responses to 
 
  * [Happy git with R](http://happygitwithr.com)
  * [Github](https://github.com/)
-
