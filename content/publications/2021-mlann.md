@@ -8,7 +8,7 @@ tags:
 - data science
 - anomaly detection
 - manifold learning
-link: https://github.com/ffancheng/paper-mlann/raw/public/paper/mlann_ebs.pdf
+link: https://github.com/ffancheng/paper-mlann/raw/public/paper/arxiv.pdf
 github: ffancheng/paper-mlann
 ---
 
