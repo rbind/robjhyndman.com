@@ -5,12 +5,12 @@ title: "Research team"
   * **Potential PhD students:** please read [Advice to PhD Applicants](/hyndsight/phdapplicants/)
   * **Potential research fellows:** All available positions are filled.
 
-
 ## Current PhD students
 
   1. **[Lakshan Bernard](https://acems.org.au/our-people/lakshan-bernard)**. *Analytical tools for future power networks* (PhD, begun 2020).
   1. **[Fan Cheng](https://fancheng.me/)**. *Manifold learning on empirical probability distributions* (PhD, begun 2019). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ffancheng)
   1. **Nuwani Palihawadana**. *Optimal predictor selection for high-dimensional nonparametric forecasting* (PhD, begun 2020).  [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/nuwani-palihawadana)
+  1. **Sixian (Alice) Tang**. *Mortality forecasting* (PhD, begun 2020).
   1. **[Fin Yang](https://yangzhuoranyang.com/)**. *Forecast reconciliation with linear combinations* (PhD, begun 2020). [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/finyang/)
 
 ## Former research fellows
@@ -31,7 +31,6 @@ title: "Research team"
   1. **[Ingrida Steponavičė](http://users.monash.edu/~ingridas/)**
   1. **[Nick Tierney](https://www.njtierney.com/)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/njtierney)
   1. **[Shanika Wickramasuriya](https://unidirectory.auckland.ac.nz/people/profile/s-wickramasuriya)** [<i class="fa fa-github-alt" style="color:#03396c;font-size:80%;padding-top:6px;"></i>](https://github.com/ShanikaLW)
-
 
 ## Former postgraduate students
 

@@ -76,4 +76,3 @@ slug: "in-the-news"
   * [Research warns of health system pressure from elderly', *ABC News*](http://www.abc.net.au/news/2004-05-12/research-warns-of-health-system-pressure-from/1974408), 12 May 2004.
   * [Australia's aged population is increasing faster than the government realises, *News-Medical.Net*](http://www.news-medical.net/news/2004/05/10/1367.aspx), 10 May 2004.
   * [Uncertainty over population forecasting and the elderly, *Monash News*](https://web.archive.org/web/20120422042523/http://www.monash.edu.au/news/releases/show/95), 4 May 2004.
-
