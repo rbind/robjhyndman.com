@@ -34,8 +34,8 @@ library(fpp3)
 
 ```
 ## ✓ tibble      3.1.6          ✓ tsibble     1.1.1     
-## ✓ dplyr       1.0.7          ✓ tsibbledata 0.4.0.9000
-## ✓ tidyr       1.1.4          ✓ feasts      0.2.2     
+## ✓ dplyr       1.0.8          ✓ tsibbledata 0.4.0.9000
+## ✓ tidyr       1.2.0          ✓ feasts      0.2.2     
 ## ✓ lubridate   1.8.0          ✓ fable       0.3.1     
 ## ✓ ggplot2     3.3.5          ✓ fabletools  0.3.2
 ```

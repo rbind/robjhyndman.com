@@ -256,6 +256,7 @@ if (window.hljs) {
 
 
 
+
 <style type="text/css">
 .main-container {
   max-width: 940px;
@@ -276,6 +277,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -392,8 +396,8 @@ load all the necessary packages.</p>
 <pre class="r"><code>library(fpp3)</code></pre>
 <pre><code>## ── Attaching packages ────────────────────────────────── fpp3 0.4.0.9000 ──</code></pre>
 <pre><code>## ✓ tibble      3.1.6          ✓ tsibble     1.1.1     
-## ✓ dplyr       1.0.7          ✓ tsibbledata 0.4.0.9000
-## ✓ tidyr       1.1.4          ✓ feasts      0.2.2     
+## ✓ dplyr       1.0.8          ✓ tsibbledata 0.4.0.9000
+## ✓ tidyr       1.2.0          ✓ feasts      0.2.2     
 ## ✓ lubridate   1.8.0          ✓ fable       0.3.1     
 ## ✓ ggplot2     3.3.5          ✓ fabletools  0.3.2</code></pre>
 <pre><code>## ── Conflicts ──────────────────────────────────────────── fpp3_conflicts ──
@@ -409,10 +413,10 @@ load all the necessary packages.</p>
 <p>To download the M3 data, we need to know the unique zenodo
 identifiers for each data set. From the <a href="https://forecastingdata.org">forecastingdata.org</a> page, find
 the M3 links (there are four, one for each observational frequency). For
-example, the Yearly link takes you to <a href="https://zenodo.org/record/4656222" class="uri">https://zenodo.org/record/4656222</a>, so the Zenodo
-identifier for this data set is 4656222. Similarly, the Quarterly,
-Monthly and Other links have identifiers 4656262, 4656298 and 4656335
-respectively.</p>
+example, the Yearly link takes you to <a href="https://zenodo.org/record/4656222">https://zenodo.org/record/4656222</a>,
+so the Zenodo identifier for this data set is 4656222. Similarly, the
+Quarterly, Monthly and Other links have identifiers 4656262, 4656298 and
+4656335 respectively.</p>
 <pre class="r"><code>m3_yearly &lt;- monash_forecasting_repository(4656222)
 m3_quarterly &lt;- monash_forecasting_repository(4656262)
 m3_monthly &lt;- monash_forecasting_repository(4656298)

@@ -6,7 +6,7 @@ paginate = 10
 theme = "robjhyndman"
 DisqusShortname = "researchtips"
 googleAnalytics = "UA-5004894-1"
-ignoreFiles = ["_cache$","\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+ignoreFiles = ["_cache$","\\.Rmd$", "(^|/)renv$", "renv\\.lock$","\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 pluralizeListTitles = false
 buildFuture = true
 
@@ -14,7 +14,6 @@ buildFuture = true
 unsafe= true
 
 [params]
-
 # Date format (refer to Go's date format: http://flippinggodateformat.com)
 date_format = "2 January 2006"
 

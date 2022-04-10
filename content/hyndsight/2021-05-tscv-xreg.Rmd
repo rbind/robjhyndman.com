@@ -42,7 +42,8 @@ fc <- beer %>%
   forecast(h = "1 year") %>%
   group_by(.id) %>%
   mutate(h = row_number()) %>%
-  ungroup()
+  ungroup() %>%
+  as_fable(response="Beer", distribution=Beer)
 ```
 
 Finally, we compare the forecasts against the actual values and average over the folds.
@@ -89,7 +90,8 @@ The actual value in each month is also included, but that will be ignored when f
 fc <- forecast(fit, new_data = test) %>%
   group_by(.id) %>%
   mutate(h = row_number()) %>%
-  ungroup()
+  ungroup() %>%
+  as_fable(response = "Quotes", distribution=Quotes)
 ```
 
 Finally, we can compare the forecasts against the actual values, averaged across each forecast horizon.

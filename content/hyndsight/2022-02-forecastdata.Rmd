@@ -1,12 +1,7 @@
 ---
-author: robjhyndman
-comments: true
 date: 2022-02-23
 title: "Monash time series forecasting repository"
 slug: forecastingdata
-output: 
-  html_document:
-    keep_md: true
 mathjax: true
 categories:
   - time series
