@@ -23,9 +23,9 @@ There are a large number of different definitions used for sample quantiles in s
 
   * Table 1, p361. P2 should have lower bound equal to $\lfloor np\rfloor$.
   * p363, left column. P2 is satisfied if and only if $\alpha\ge0$ and $\beta\le1$.
+  * p364, right column. Definition $\hat{Q}_7(p)$ only satisfies four of the six properies.
 
-Thanks to Eric Langford and Alan Dorfman for pointing out the errors. 8 May 2007.
+Thanks to Eric Langford and Alan Dorfman for pointing out the first two errors. 8 May 2007. <br>
+Thanks to Ati Ghoreyshi for spotting the third error. 27 April 2022.
 
 For further discussion, see [Sample quantiles 20 years later](/hyndsight/sample-quantiles-20-years-later/) on Hyndsight.
-
-
