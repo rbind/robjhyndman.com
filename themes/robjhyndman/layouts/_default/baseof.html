@@ -27,6 +27,21 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 var ml_account = ml('accounts', '3217732', 'q9y4a1d8i3', 'load');
 </script>
 <!-- End MailerLite Universal -->
+
+    <!-- LaTeX math rendering -->
+    {{ if and (isset .Params "mathjax") (eq .Params.mathjax true) }}
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+      </script>
+      <script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+    {{ end }}
+
 </head>
   <body>
     <header>
@@ -96,16 +111,6 @@ var ml_account = ml('accounts', '3217732', 'q9y4a1d8i3', 'load');
     hljs.initHighlightingOnLoad();
     </script>
 
-    <!-- LaTeX math rendering -->
-    {{ if and (isset .Params "mathjax") (eq .Params.mathjax true) }}
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    {{ end }}
     <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
 {{ template "_internal/google_analytics.html" . }}
