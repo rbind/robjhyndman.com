@@ -15,8 +15,6 @@ categories:
   - data science
 ---
 
-
-
 The [Monash time series forecasting respository](https://forecastingdata.org) is a comprehensive collection of time series data made available in a convenient form to encourage empirical forecast evaluations. The repository includes the data from many forecasting competitions including the M1, M3, M4, NN5, tourism, and KDD cup 2018, as well as many other data sets from diverse applications. The [associated paper](https://robjhyndman.com/publications/monash-forecasting-data/) discusses the various data sets and their characteristics. Where a time series collection contains data with different observation frequencies, they are split into different data sets so that the series within each data set has the same frequency.
 
 Some of these data sets have been made available in R packages previously, based on `ts` objects which worked ok for annual, quarterly and monthly data, but is not a good format for daily and sub-daily data.
@@ -144,7 +142,7 @@ aus_elec %>%
   labs(x = "Time", y="Electricity demand (MWh)")
 ```
 
-![](2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
+![](http://robjhyndman.com/hyndsight/2022-02-forecastdata_files/figure-html/auselec_plot-1.png)<!-- -->
 
 ## Forecasting benchmarks
 
