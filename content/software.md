@@ -26,7 +26,7 @@ Tidy Temporal Data Frames and Tools: as described in
 <a href=https://CRAN.R-project.org/package=tsibble class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>27019
+Monthly downloads:<br>26908
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ Diverse Datasets for ‘tsibble’.
 <a href=https://CRAN.R-project.org/package=tsibbledata class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>6850
+Monthly downloads:<br>6838
 </td>
 </tr>
 <tr>
@@ -60,7 +60,7 @@ Feature Extraction and Statistics for Time Series.
 <a href=https://CRAN.R-project.org/package=feasts class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>11316
+Monthly downloads:<br>11309
 </td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@ Forecasting Models for Tidy Time Series.
 <a href=https://CRAN.R-project.org/package=fable class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>11810
+Monthly downloads:<br>11796
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Core Tools for Packages in the ‘fable’ Framework.
 <a href=https://CRAN.R-project.org/package=fabletools class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>13412
+Monthly downloads:<br>13397
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ Supporting Graphs for Analysing Time Series: as described in
 <a href=https://CRAN.R-project.org/package=sugrrants class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>936
+Monthly downloads:<br>932
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ Unwin (2020)</a>.
 <a href=https://CRAN.R-project.org/package=gravitas class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>332
+Monthly downloads:<br>333
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ Breaks for Additive Season and Trend: as described in
 <a href=https://CRAN.R-project.org/package=bfast class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>1577
+Monthly downloads:<br>1594
 </td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ Forecasting Functions for Time Series and Linear Models: as described in
 <a href=https://CRAN.R-project.org/package=forecast class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>280022
+Monthly downloads:<br>277374
 </td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ described in <a href='/publications/gratis'>Kang, Hyndman & Li
 <a href=https://CRAN.R-project.org/package=gratis class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>441
+Monthly downloads:<br>440
 </td>
 </tr>
 <tr>
@@ -228,7 +228,7 @@ Athanasopoulos & Hyndman (2019)</a>.
 <a href=https://CRAN.R-project.org/package=hts class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14019
+Monthly downloads:<br>13916
 </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ Feature-Based Forecast Model Selection: as described in
 <a href=https://CRAN.R-project.org/package=seer class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>450
+Monthly downloads:<br>454
 </td>
 </tr>
 <tr>
@@ -281,7 +281,7 @@ STR Decomposition: as described in
 <a href=https://CRAN.R-project.org/package=stR class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>902
+Monthly downloads:<br>909
 </td>
 </tr>
 <tr>
@@ -300,7 +300,7 @@ Temporal Hierarchical Forecasting: as described in
 <a href=https://CRAN.R-project.org/package=thief class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14129
+Monthly downloads:<br>14070
 </td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ Time Series Feature Extraction: as described in
 <a href=https://CRAN.R-project.org/package=tsfeatures class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>48319
+Monthly downloads:<br>48161
 </td>
 </tr>
 </table>
@@ -360,7 +360,7 @@ the state space approach</i>, Springer</a>.
 <a href=https://CRAN.R-project.org/package=expsmooth class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>13619
+Monthly downloads:<br>13524
 </td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ Hyndman (1998), <i>Forecasting: methods and applications</i>, Wiley</a>.
 <a href=https://CRAN.R-project.org/package=fma class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>13916
+Monthly downloads:<br>13815
 </td>
 </tr>
 <tr>
@@ -396,7 +396,7 @@ principles and practice</i>, OTexts.
 <a href=https://CRAN.R-project.org/package=fpp class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>4477
+Monthly downloads:<br>4458
 </td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ edition, OTexts</a>.
 <a href=https://CRAN.R-project.org/package=fpp2 class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>16536
+Monthly downloads:<br>16379
 </td>
 </tr>
 <tr>
@@ -434,7 +434,7 @@ edition, OTexts</a>.
 <a href=https://CRAN.R-project.org/package=fpp3 class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>8087
+Monthly downloads:<br>8079
 </td>
 </tr>
 <tr>
@@ -451,7 +451,7 @@ Data from the M-Competitions.
 <a href=https://CRAN.R-project.org/package=Mcomp class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>10146
+Monthly downloads:<br>10132
 </td>
 </tr>
 <tr>
@@ -539,7 +539,7 @@ Anomaly Detection in High Dimensional and Temporal Data: as described in
 <a href=https://CRAN.R-project.org/package=stray class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>307
+Monthly downloads:<br>308
 </td>
 </tr>
 <tr>
@@ -558,7 +558,7 @@ Kandanaarachichi & Muñoz (2020)</a>.
 <a href=https://CRAN.R-project.org/package=oddstream class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>256
+Monthly downloads:<br>257
 </td>
 </tr>
 <tr>
@@ -615,7 +615,7 @@ Yasmeen (2013)</a> and <a href='/publications/funcfor'>Hyndman & Ullah
 <a href=https://CRAN.R-project.org/package=demography class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>2098
+Monthly downloads:<br>2103
 </td>
 </tr>
 <tr>
@@ -631,7 +631,7 @@ Functional Data Sets.
 <a href=https://CRAN.R-project.org/package=fds class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14006
+Monthly downloads:<br>13938
 </td>
 </tr>
 <tr>
@@ -647,7 +647,7 @@ Functional Time Series Analysis.
 <a href=https://CRAN.R-project.org/package=ftsa class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>2206
+Monthly downloads:<br>2207
 </td>
 </tr>
 <tr>
@@ -664,7 +664,7 @@ in <a href='/publications/rainbow-fda'>Hyndman & Shang (2010)</a>.
 <a href=https://CRAN.R-project.org/package=rainbow class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14345
+Monthly downloads:<br>14278
 </td>
 </tr>
 <tr>
@@ -683,7 +683,7 @@ Seasonal Functional Autoregressive Models: as described in
 <a href=https://CRAN.R-project.org/package=Rsfar class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>314
+Monthly downloads:<br>315
 </td>
 </tr>
 <tr>
@@ -702,7 +702,7 @@ Account Period and Cohort Effects: as described in
 <a href=https://CRAN.R-project.org/package=smoothAPC class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>307
+Monthly downloads:<br>309
 </td>
 </tr>
 </table>
@@ -756,7 +756,7 @@ Article Formats for R Markdown.
 <a href=https://CRAN.R-project.org/package=rticles class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>11111
+Monthly downloads:<br>11048
 </td>
 </tr>
 <tr>
@@ -814,7 +814,7 @@ Cook & Hyndman (2020)</a>.
 <a href=https://CRAN.R-project.org/package=eechidna class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>416
+Monthly downloads:<br>420
 </td>
 </tr>
 <tr>
@@ -830,7 +830,7 @@ Evolutionary model-based multiresponse approach.
 <a href=https://CRAN.R-project.org/package=emma class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>185
+Monthly downloads:<br>186
 </td>
 </tr>
 <tr>
@@ -871,7 +871,7 @@ Bashtannyk & Grunwald (1996)</a>.
 <a href=https://CRAN.R-project.org/package=hdrcde class='badge badge-small badge-blue'>CRAN</a>
 </td>
 <td>
-Monthly downloads:<br>14065
+Monthly downloads:<br>14011
 </td>
 </tr>
 <tr>
