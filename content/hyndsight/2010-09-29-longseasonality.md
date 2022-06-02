@@ -19,13 +19,9 @@ The `ets()` function in the forecast package restricts seasonality to be a maxim
 The `arima()` function will allow a seasonal period up to $m=350$ but in practice will usually run out of memory whenever the seasonal period is more than about 200. I haven't dug into the code to find out why this is the case --- theoretically it would be possible to have any length of seasonality as the number of parameters to be estimated does not depend on the seasonal order. However, seasonal differencing of very high order does not make a lot of sense --- for daily data it involves comparing what happened today with what happened exactly a year ago and there is no constraint that the seasonal pattern is smooth.
 
 For such data I prefer a Fourier series approach where the seasonal pattern is modelled using Fourier terms with short-term time series dynamics allowed in the error. For example, consider the following model:
-
-<div>
 $$
   y_t = a + \sum_{k=1}^K \left[ \alpha_k\sin(2\pi kt/m) + \beta_k\cos(2\pi kt/m)\right] + N_t,
 $$
-</div>
-
 where $N_t$ is an ARIMA process. The value of $K$ can be chosen by minimizing the AIC.
 
 This is easily fitted using R. Here is an example with $m=200$, $K=4$ and $N_t$ an ARIMA(2,0,1) process:
@@ -33,11 +29,11 @@ This is easily fitted using R. Here is an example with $m=200$, $K=4$ and $N_t$ 
     n <- 2000
     m <- 200
     y <- ts(rnorm(n) + (1:n)%%100/30, f=m)
-    
+
     library(forecast)
     fit <- Arima(y, order=c(2,0,1), xreg=fourier(y, K=4))
     plot(forecast(fit, h=2*m, xreg=fourier(y, K=4, h=2*m)))
-    
+
 The advantages of this approach are:
 
  * it allows any length seasonality;
