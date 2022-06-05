@@ -1,0 +1,171 @@
+---
+author: robjhyndman
+comments: true
+date: 2022-06-05
+title: "The cricketdata package"
+slug: cricketdata
+output:
+  html_document:
+    keep_md: true
+mathjax: true
+categories:
+  - R
+  - data
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE,
+  cache = TRUE
+)
+options(digits = 3, width = 75)
+
+# Okabi-Ito colours
+options(
+  ggplot2.discrete.colour = c("#D55E00", "#0072B2","#009E73", "#CC79A7", "#E69F00", "#56B4E9", "#F0E442")
+)
+```
+
+## Four functions
+
+[The cricketdata package](http://pkg.robjhyndman.com/cricketdata/) has been around for a few years [on github](https://github.com/robjhyndman/cricketdata), and it has been on [CRAN](https://cloud.r-project.org/package=cricketdata) since February 2022. There are only four functions:
+
+ * `fetch_cricinfo()`: Fetch team data on international cricket matches provided by [ESPNCricinfo](https://www.espncricinfo.com/).
+ * `fetch_player_data()`: Fetch individual player data on international cricket matches provided by [ESPNCricinfo](https://www.espncricinfo.com/).
+ * `find_player_id()`: Search for the player ID on [ESPNCricinfo](https://www.espncricinfo.com/).
+ * `fetch_cricsheet()`: Fetch ball-by-ball, match and player data from [Cricsheet](https://cricsheet.org).
+
+[Jacquie Tran](https://www.jacquietran.com) wrote the first version of the `fetch_cricsheet()` function, and [the vignette](http://pkg.robjhyndman.com/cricketdata/articles/cricsheet.html) which demonstrates it.
+
+Here are some examples demonstrating the Cricinfo functions.
+
+```{r packages, message=FALSE}
+library(cricketdata)
+library(tidyverse)
+```
+
+## Women's T20 bowling data
+
+The `fetch_cricinfo()` function downloads data for international T20, ODI or Test matches, for men or women, and for batting, bowling or fielding. By default, it downloads career-level statistics for individual players. Here is an example for women T20 bowlers.
+
+```{r wt20}
+# Fetch all Women's T20 data
+wt20 <- fetch_cricinfo("T20", "Women", "Bowling")
+```
+
+```{r woment20}
+wt20 %>%
+  select(Player, Country, Matches, Runs, Wickets, Economy, StrikeRate)
+```
+
+We can plot a bowler's strike rate (balls per wicket) vs economy rate (runs per wicket). Each observation represents one player, who has taken at least 50 international wickets.
+
+```{r woment20graph}
+wt20 %>%
+  filter(Wickets >= 50) %>%
+  ggplot(aes(y = StrikeRate, x = Average)) +
+  geom_point(alpha = 0.3, col = "blue") +
+  ggtitle("Women International T20 Bowlers") +
+  ylab("Balls per wicket") + xlab("Runs per wicket")
+```
+
+```{r boochatham, echo=FALSE}
+boochatham <- wt20 %>%
+  filter(Player == "N Boochatham")
+```
+
+The extraordinary result on the bottom left is due to the Thai all-rounder, Nattaya Boochatham, who has taken `r boochatham$Wickets` wickets, with a strike rate of `r boochatham$StrikeRate`, an average of `r boochatham$Average`, and an economy rate of `r boochatham$Economy`.
+
+## Australian men's ODI data by innings
+
+The next example shows Australian men's ODI batting results by innings.
+
+```{r menodidownlaod}
+# Fetch all Australian Men's ODI data by innings
+menODI <- fetch_cricinfo("ODI", "Men", "Batting", type = "innings", country = "Australia")
+```
+
+```{r menodi}
+menODI %>%
+  select(Date, Player, Runs, StrikeRate, NotOut)
+```
+
+```{r menodiave, echo=FALSE}
+ave <- menODI %>%
+  filter(
+    Date >= "2000-01-01",
+    !is.na(Runs) & !is.na(NotOut)
+  ) %>%
+  select(Runs, NotOut)
+
+ave <- sum(ave$Runs)/sum(!ave$NotOut)
+```
+
+```{r menodigraph, warning=FALSE, message=FALSE}
+menODI %>%
+  ggplot(aes(y = Runs, x = Date)) +
+  geom_point(alpha = 0.2, col = "#D55E00") +
+  geom_smooth() +
+  ggtitle("Australia Men ODI: Runs per Innings")
+```
+
+The average number of runs per innings slowly increased until about 2000, after which it has remained largely constant at about `r round(ave,1)`. This is a little higher than the smooth line shown on the plot, which has not taken account of not-out results.
+
+## Indian test fielding data
+
+Next, we demonstrate some of the fielding data available, using Test match fielding from Indian men's players.
+
+```{r indiafieldingdownload}
+Indfielding <- fetch_cricinfo("Test", "Men", "Fielding", country = "India")
+```
+
+```{r indiafielding}
+Indfielding
+```
+
+We can plot the number of dismissals by number of matches for all male test players. Because wicket keepers typically have a lot more dismissals than other players, they are shown in a different colour.
+
+```{r indiafieldinggraph}
+Indfielding %>%
+  mutate(wktkeeper = (CaughtBehind > 0) | (Stumped > 0)) %>%
+  ggplot(aes(x = Matches, y = Dismissals, col = wktkeeper)) +
+  geom_point() +
+  ggtitle("Indian Men Test Fielding")
+```
+
+The high number of dismissals, close to 300, is of course due to MS Dhoni. Another interesting one here is the non-wicketkeeper with over 200 dismissals, which is Rahul Dravid who took 209 catches during his career.
+
+## Meg Lanning's ODI batting
+
+Finally, let's look at individual player data. The `fetch_player_data()` requires the Cricinfo player ID, which you can either look up on their website, or use the `find_player_id()` function. We will look at the ODI results of Australia's captain, Meg Lanning.
+
+```{r meglanningsetup}
+meg_lanning_id <- find_player_id("Meg Lanning")$ID
+MegLanning <- fetch_player_data(meg_lanning_id, "ODI") %>%
+  mutate(NotOut = (Dismissal == "not out"))
+```
+
+```{r meglanning}
+MegLanning
+```
+
+We can plot her runs per innings on the vertical axis over time on the horizontal axis.
+
+```{r meglanninggraph}
+# Compute batting average
+MLave <- MegLanning %>%
+  filter(!is.na(Runs)) %>%
+  summarise(Average = sum(Runs) / (n() - sum(NotOut))) %>%
+  pull(Average)
+names(MLave) <- paste("Average =", round(MLave, 2))
+# Plot ODI scores
+ggplot(MegLanning) +
+  geom_hline(aes(yintercept = MLave), col="gray") +
+  geom_point(aes(x = Date, y = Runs, col = NotOut)) +
+  ggtitle("Meg Lanning ODI Scores") +
+  scale_y_continuous(sec.axis = sec_axis(~., breaks = MLave))
+```
+
+She has shown amazing consistency over her career, with centuries scored in every year of her career except for 2021, when her highest score from 6 matches was 53.
