@@ -8,18 +8,18 @@ Reliable forecasts of business and economic variables must often be obtained aga
 
 **Slides**
 
- * [Introduction](https://github.com/robjhyndman/ETC3550Slides/raw/fable/etc3550_intro.pdf)
- * [1. Getting started](https://github.com/robjhyndman/ETC3550Slides/raw/fable/1-getting-started.pdf)
- * [2. Time series graphics](https://github.com/robjhyndman/ETC3550Slides/raw/fable/2-tsgraphics.pdf)
- * [3. Time series decomposition](https://github.com/robjhyndman/ETC3550Slides/raw/fable/3-decomposition.pdf)
- * [5. The forecasters toolbox](https://github.com/robjhyndman/ETC3550Slides/raw/fable/5-toolbox.pdf)
- * [7. Time series regression](https://github.com/robjhyndman/ETC3550Slides/raw/fable/7-regression.pdf)
- * [8. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/fable/8-ets.pdf)
- * [9. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/fable/9-arima.pdf)
- * [10. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/fable/10-dynamic-regression.pdf)
- * [11. Advanced forecasting methods](https://github.com/robjhyndman/ETC3550Slides/raw/fable/11-advanced.pdf)
- * [12. Some practical forecasting issues](https://github.com/robjhyndman/ETC3550Slides/raw/fable/12-practical.pdf)
- * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/fable/revision.pdf)
+ * [Introduction](https://github.com/robjhyndman/ETC3550Slides/raw/master/etc3550_intro.pdf)
+ * [1. Getting started](https://github.com/robjhyndman/ETC3550Slides/raw/master/1-getting-started.pdf)
+ * [2. Time series graphics](https://github.com/robjhyndman/ETC3550Slides/raw/master/2-tsgraphics.pdf)
+ * [3. Time series decomposition](https://github.com/robjhyndman/ETC3550Slides/raw/master/3-decomposition.pdf)
+ * [5. The forecasters toolbox](https://github.com/robjhyndman/ETC3550Slides/raw/master/5-toolbox.pdf)
+ * [7. Time series regression](https://github.com/robjhyndman/ETC3550Slides/raw/master/7-regression.pdf)
+ * [8. Exponential smoothing](https://github.com/robjhyndman/ETC3550Slides/raw/master/8-ets.pdf)
+ * [9. ARIMA models](https://github.com/robjhyndman/ETC3550Slides/raw/master/9-arima.pdf)
+ * [10. Dynamic regression models](https://github.com/robjhyndman/ETC3550Slides/raw/master/10-dynamic-regression.pdf)
+ * [11. Advanced forecasting methods](https://github.com/robjhyndman/ETC3550Slides/raw/master/11-advanced.pdf)
+ * [12. Some practical forecasting issues](https://github.com/robjhyndman/ETC3550Slides/raw/master/12-practical.pdf)
+ * [Revision](https://github.com/robjhyndman/ETC3550Slides/raw/master/revision.pdf)
 
 * * *
 
