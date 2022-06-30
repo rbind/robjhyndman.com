@@ -1,9 +1,10 @@
 ---
 author: Dilini&nbsp;Rajapaksha, Christoph&nbsp;Bergmeir, Rob&nbsp;J&nbsp;Hyndman
-date: 2021-11-15
+date: 2022-06-30
 slug: lomef
 title: "LoMEF: A Framework to Produce Local Explanations for Global Model Time Series Forecasts"
-kind: unpublished
+kind: article
+citation: "<em>International J Forecasting</em>, to appear"
 tags:
 - time series
 arxiv: 2111.07001
