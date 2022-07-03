@@ -1,118 +1,135 @@
 <!doctype html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="{{ .Site.BaseURL }}fonts/academicons.ttf?v=1.7.0" as="font">
-    <link rel="preload" href="{{ .Site.BaseURL }}fonts/fontawesome-webfont.woff2?v=4.6.34Cas" as="font">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/foundation.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/stackoverflow-light.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/academicons.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/finite.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/kube.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/robjhyndman.min.css">
-    <!-- MailerLite Universal -->
-<script>
-(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-var ml_account = ml('accounts', '3217732', 'q9y4a1d8i3', 'load');
-</script>
-<!-- End MailerLite Universal -->
+<head>
+  <meta charset="utf-8">
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="{{ .Site.BaseURL }}fonts/academicons.ttf?v=1.7.0" as="font">
+  <link rel="preload" href="{{ .Site.BaseURL }}fonts/fontawesome-webfont.woff2?v=4.6.34Cas" as="font">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/foundation.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/stackoverflow-light.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/academicons.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/finite.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/kube.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/robjhyndman.min.css">
+  <!-- MailerLite Universal -->
+  <script>
+    (function (m, a, i, l, e, r) {
+      m['MailerLiteObject'] = e; function f() {
+        var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+      }
+      f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+      _.parentNode.insertBefore(r, _);
+    })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
-    <!-- LaTeX math rendering -->
-    {{ if and (isset .Params "mathjax") (eq .Params.mathjax true) }}
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      };
-      </script>
-      <script type="text/javascript" id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    var ml_account = ml('accounts', '3217732', 'q9y4a1d8i3', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  <!-- LaTeX math rendering -->
+  {{ if and (isset .Params "mathjax") (eq .Params.mathjax true) }}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
-    {{ end }}
+  {{ end }}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCCBMBK051"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CCCBMBK051');
+  </script>
 
 </head>
-  <body>
-    <header>
-      <nav class="nav-bar">
-	<!-- The title bar is used for small sizes.  -->
-	  <div class="title-bar" data-responsive-toggle="site-menu" data-hide-for="medium">
-	    <button class="site-hamburger" type="button" data-toggle>
-	      <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-	    </button>
-	    <div class="title-bar-title site-title">
-	      <a href="{{ .Site.BaseURL }}"  style="color: #b3cde0">{{ .Site.Title }}</a>
-	    </div>
-	    <div class="title-bar-right pull-right">
-	      {{ block "title-bar-right" . }}
-	      {{ end }}
-	    </div>
-	  </div>
 
-	  <!-- The top bar is used for medium and up.  -->
-	    <div class="top-bar" id="site-menu" >
-	      <div class="top-bar-title show-for-medium site-title">
-		<a href="{{ .Site.BaseURL }}"  style="color: #b3cde0;">{{ .Site.Title }}</a>
-	      </div>
-	      <div class="top-bar-left">
-		<ul class="menu vertical medium-horizontal">
-		  {{ $currentNode := . }}
-		  {{ range .Site.Menus.main }}
-		  <li><a href="{{.URL}}">{{ .Name }}</a></li>
-		  {{ end }}
-		</ul>
-	      </div>
-	      <div class="top-bar-right show-for-medium">
-		{{ block "top-bar-right" . }}
-		{{ end }}
-	      </div>
-	    </div>
-	  <!-- /div-->
-	</nav>
-    </header>
-    <main>
-      {{ block "main" . }}
-      (add a main block to your template)
-      {{ end }}
-    </main>
-    {{ partial "whatisthis" . }}
-    <div class="endofpage">
+<body>
+  <header>
+    <nav class="nav-bar">
+      <!-- The title bar is used for small sizes.  -->
+      <div class="title-bar" data-responsive-toggle="site-menu" data-hide-for="medium">
+        <button class="site-hamburger" type="button" data-toggle>
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </button>
+        <div class="title-bar-title site-title">
+          <a href="{{ .Site.BaseURL }}" style="color: #b3cde0">{{ .Site.Title }}</a>
+        </div>
+        <div class="title-bar-right pull-right">
+          {{ block "title-bar-right" . }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- The top bar is used for medium and up.  -->
+      <div class="top-bar" id="site-menu">
+        <div class="top-bar-title show-for-medium site-title">
+          <a href="{{ .Site.BaseURL }}" style="color: #b3cde0;">{{ .Site.Title }}</a>
+        </div>
+        <div class="top-bar-left">
+          <ul class="menu vertical medium-horizontal">
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.main }}
+            <li><a href="{{.URL}}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="top-bar-right show-for-medium">
+          {{ block "top-bar-right" . }}
+          {{ end }}
+        </div>
+      </div>
+      <!-- /div-->
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}
+    (add a main block to your template)
+    {{ end }}
+  </main>
+  {{ partial "whatisthis" . }}
+  <div class="endofpage">
     <footer id="footer">
-    <section class="wrapper small">Powered by <a href="http://gohugo.io">Hugo</a>
-    and <a href="https://github.com/rstudio/blogdown">Blogdown</a>.
-     &copy; <a href="https://robjhyndman.com">Rob&nbsp;J&nbsp;Hyndman</a> 1993&ndash;{{ now.Format "2006" }}.
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index.xml"><img src="/img/rss2.png" width=12 align="bottom" alt="RSS icon"  style="padding-top: 0.7ex"></a>
-    </section>
+      <section class="wrapper small">Powered by <a href="http://gohugo.io">Hugo</a>
+        and <a href="https://github.com/rstudio/blogdown">Blogdown</a>.
+        &copy; <a href="https://robjhyndman.com">Rob&nbsp;J&nbsp;Hyndman</a> 1993&ndash;{{ now.Format "2006" }}.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index.xml"><img src="/img/rss2.png" width=12 align="bottom"
+            alt="RSS icon" style="padding-top: 0.7ex"></a>
+      </section>
     </footer>
-    </div>
+  </div>
 
-    <script src="/js/jquery.js"></script>
-    <script src="/js/what-input.js"></script>
-    <script src="/js/foundation.min.js"></script>
-    <script src="/js/finite.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/what-input.js"></script>
+  <script src="/js/foundation.min.js"></script>
+  <script src="/js/finite.js"></script>
 
-    <!-- Code highlighting -->
-    <script src="//cdn.bootcss.com/highlight.js/11.3.1/highlight.min.js"></script>
-    <script src="//cdn.bootcss.com/highlight.js/11.3.1/languages/r.min.js"></script>
+  <!-- Code highlighting -->
+  <script src="//cdn.bootcss.com/highlight.js/11.3.1/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/11.3.1/languages/r.min.js"></script>
 
-    <script>
-    hljs.configure({languages: []});
+  <script>
+    hljs.configure({ languages: [] });
     hljs.initHighlightingOnLoad();
-    </script>
+  </script>
 
-    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+  <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
-{{ template "_internal/google_analytics.html" . }}
- </body>
+  {{ template "_internal/google_analytics.html" . }}
+
+</body>
+
 </html>
