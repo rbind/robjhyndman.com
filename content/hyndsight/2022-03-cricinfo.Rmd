@@ -142,7 +142,7 @@ The high number of dismissals, close to 300, is of course due to MS Dhoni. Anoth
 Finally, let's look at individual player data. The `fetch_player_data()` requires the Cricinfo player ID, which you can either look up on their website, or use the `find_player_id()` function. We will look at the ODI results of Australia's captain, Meg Lanning.
 
 ```{r meglanningsetup}
-meg_lanning_id <- find_player_id("Meg Lanning")$ID
+meg_lanning_id <- find_player_id("Lanning")$ID
 MegLanning <- fetch_player_data(meg_lanning_id, "ODI") %>%
   mutate(NotOut = (Dismissal == "not out"))
 ```
