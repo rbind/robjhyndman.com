@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.0",
+    "Version": "4.2.1",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -2630,10 +2630,15 @@
     },
     "pkgsearch": {
       "Package": "pkgsearch",
-      "Version": "3.1.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "c1daaccbee26c895d10a455556f40b4e",
+      "Version": "3.1.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "pkgsearch",
+      "RemoteUsername": "r-hub",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "260cc7ebdaf13e5ab393516a2765ee6bb169ad41",
+      "Hash": "b31a683cda9229e4f9d3a55129f60ac8",
       "Requirements": [
         "curl",
         "jsonlite",
@@ -2975,10 +2980,10 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.15.5",
+      "Version": "0.15.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "6a38294e7d12f5d8e656b08c5bd8ae34",
+      "Hash": "c1078316e1d4f70275fc1ea60c0bc431",
       "Requirements": []
     },
     "reprex": {
