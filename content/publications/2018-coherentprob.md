@@ -12,6 +12,7 @@ tags:
 - stochastic gradient descent
 link: https://github.com/PuwasalaG/Probabilistic-Forecast-Reconciliation/raw/master/Paper_EJOR_R1_submitted_latex/ProbabilisticReconciliationR1.pdf
 github: PuwasalaG/Probabilistic-Forecast-Reconciliation
+doi: 10.1016/j.ejor.2022.07.040
 ---
 
 ![](/img/featured.jpg)
