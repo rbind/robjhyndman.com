@@ -27,7 +27,6 @@ Here is a list of [recent news articles about me](/in-the-news/).
 
 ## Administrative responsibilities
 
-  * Head, [Department of Econometrics and Business Statistics, Monash University](https://www.monash.edu/business/ebs).
   * Editor, *[Journal of Statistical Software](http://www.jstatsoft.org/)*.
   * Associate Editor, *[International Journal of Forecasting](http://ijf.forecasters.org/)*.
   * Editor of the [NEP forecasting report](http://ideas.repec.org/n/nep-for/).
